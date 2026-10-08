@@ -1,0 +1,630 @@
+[
+ {
+  "id": "ue",
+  "nom": "Prélèvement sur recettes UE",
+  "bloc": "État",
+  "montant_mds": 28.44,
+  "annee_montant": 2026,
+  "source_montant": {
+   "titre": "Assemblée nationale - PSR-UE 2026 tel qu'inscrit au PLF après amendement : 28 439 880 549 EUR (texte initial art. 45 : 28 781 025 011 EUR)",
+   "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2269/AN/18.pdf",
+   "ouverte": true
+  },
+  "note_montant": "Arbitrage 28,8 vs 28,44 : 28,8 Md€ = montant initial de l'article 45 du PLF 2026 (28 781 025 011 EUR, amendement AN I-598 et Sénat Essentiel) ; 28,44 Md€ = montant 'tel qu'inscrit dans le PLF2026' en décembre 2025 (amendement AN n°18), soit -341 M€ vs le texte initial (écart attribué à un amendement du Gouvernement adopté au Sénat selon Public Sénat ; page non ouverte, non citée). 28,44 retenu (version la plus récente). Texte de la LFI promulguée non ouvert : montant définitif à confirmer sur Légifrance. Hausse vs 2025 : +5,7 Md€ au lieu de +7,3 Md€ prévus (Public Sénat).",
+  "crans": [
+   {
+    "niveau": 1,
+    "mesure": "Aucun levier unilatéral sur le montant : il découle du budget annuel de l'UE et des plafonds de la décision ressources propres",
+    "gain_mds": 0,
+    "faisabilite": 1,
+    "arguments": [
+     "Le PSR 2026 (28,4-28,8 Md€) est déjà inférieur de ~1,6 Md€ à la trajectoire anticipée en 2025 (30,4 Md€ selon la direction du budget) : la marge de pilotage passe par la négociation annuelle du budget UE, sans gain additionnel chiffrable ici."
+    ],
+    "obstacles": [
+     "Budget annuel établi par le PE et le Conseil, équilibré en recettes et dépenses (TFUE art. 310 par.1)",
+     "Plafonds de ressources propres : 1,40 % du RNB de l'UE en paiements, 1,46 % en engagements (décision 2020/2053, art. 3)"
+    ],
+    "sources": [
+     {
+      "titre": "TFUE art. 310 (JOUE C 202 du 7.6.2016, p.181) - budget équilibré en recettes et dépenses, financé dans la limite des ressources propres (ouvert via publications.europa.eu, EUR-Lex HTML bloqué par WAF)",
+      "url": "https://publications.europa.eu/resource/celex/12016E310",
+      "ouverte": true
+     },
+     {
+      "titre": "Décision (UE, Euratom) 2020/2053 du Conseil du 14.12.2020 relative au système de ressources propres (art. 2 par.4 corrections forfaitaires, art. 3 plafonds 1,40 %/1,46 % du RNB, art. 12 entrée en vigueur) (ouvert via publications.europa.eu)",
+      "url": "https://publications.europa.eu/resource/celex/32020D2053",
+      "ouverte": true
+     },
+     {
+      "titre": "Sénat - Mission Affaires européennes, Essentiel post-commission PLF 2026 (PSR-UE 28,8 Md€ ; CFP 2028-2034 : PSR moyen de 26 à 38 Md€)",
+      "url": "https://www.senat.fr/fileadmin/cru-1762483659/Commissions/Finances/2025-2026/PLF_2026/Essentiel/Mission_Affaires_europeennes_Essentiel_post-commission.pdf",
+      "ouverte": true
+     },
+     {
+      "titre": "Sénat - Rapport général PLF 2026, Participation de la France au budget de l'UE (retours 2024 : 16,456 Md€ dont PAC 9,6 Md€ ; solde net 2024 : -7,9 Md€)",
+      "url": "https://www.senat.fr/rap/l25-139-22/l25-139-221.pdf",
+      "ouverte": true
+     }
+    ],
+    "non_verifie": false,
+    "notes": "Gain 0 : le PSR est une conséquence mécanique du budget UE ; aucune mesure nationale unilatérale n'est légale. Faisabilité 1 car rien à débloquer, mais gain nul."
+   },
+   {
+    "niveau": 2,
+    "mesure": "Négocier des corrections forfaitaires (rabais) dans le CFP 2028-2034",
+    "gain_mds": 2,
+    "faisabilite": 2,
+    "arguments": [
+     "La décision 2020/2053 (art. 2 par.4) accorde déjà des réductions brutes annuelles (prix 2020) : Autriche 565 M€, Danemark 377 M€, Allemagne 3 671 M€, Pays-Bas 1 921 M€, Suède 1 069 M€ : précédent pour la France.",
+     "La proposition de CFP 2028-2034 ferait passer le PSR annuel moyen français de 26 à 38 Md€ (Sénat) : forte incitation à négocier."
+    ],
+    "obstacles": [
+     "Décision ressources propres adoptée à l'unanimité du Conseil après consultation du PE (TFUE art. 311 al.3)",
+     "Entrée en vigueur seulement après approbation par tous les États membres selon leurs règles constitutionnelles (TFUE art. 311 al.3 ; décision 2020/2053 art. 12)",
+     "Les réductions brutes sont financées par l'ensemble des États membres, France comprise (décision 2020/2053, art. 2 par.4) : le gain net est inférieur au rabais obtenu",
+     "Horizon 2028 au plus tôt"
+    ],
+    "sources": [
+     {
+      "titre": "TFUE art. 311 (JOUE C 202 du 7.6.2016, p.181) - décision ressources propres à l'unanimité, après consultation du PE, approbation des États membres (ouvert via publications.europa.eu)",
+      "url": "https://publications.europa.eu/resource/celex/12016E311",
+      "ouverte": true
+     },
+     {
+      "titre": "Décision (UE, Euratom) 2020/2053 du Conseil du 14.12.2020 relative au système de ressources propres (art. 2 par.4 corrections forfaitaires, art. 3 plafonds 1,40 %/1,46 % du RNB, art. 12 entrée en vigueur) (ouvert via publications.europa.eu)",
+      "url": "https://publications.europa.eu/resource/celex/32020D2053",
+      "ouverte": true
+     },
+     {
+      "titre": "Sénat - Mission Affaires européennes, Essentiel post-commission PLF 2026 (PSR-UE 28,8 Md€ ; CFP 2028-2034 : PSR moyen de 26 à 38 Md€)",
+      "url": "https://www.senat.fr/fileadmin/cru-1762483659/Commissions/Finances/2025-2026/PLF_2026/Essentiel/Mission_Affaires_europeennes_Essentiel_post-commission.pdf",
+      "ouverte": true
+     },
+     {
+      "titre": "Assemblée nationale - amendement I-598 au PLF 2026 (texte initial de l'art. 45 : 28 781 025 011 EUR ; corrections forfaitaires AT/DE/DK/NL/SE)",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1906A/AN/598.pdf",
+      "ouverte": true
+     }
+    ],
+    "non_verifie": true,
+    "notes": "Aucun chiffrage officiel d'un rabais français. Ordre de grandeur 2 Md€ = rabais néerlandais (1 921 M€, prix 2020), non cumulable avec le cran 1. Gain net réel plus faible (la France finance ~sa part des rabais)."
+   },
+   {
+    "niveau": 3,
+    "mesure": "Refus unilatéral de payer le PSR (solde net après perte des retours européens)",
+    "gain_mds": 12.0,
+    "faisabilite": 3,
+    "arguments": [
+     "Contribution brute 28,44 Md€ ; mais en cas de rupture les retours (16,456 Md€ de dépenses de l'UE en France en 2024, dont PAC 9,6 Md€, compétitivité 3,4 Md€, cohésion 1,4 Md€) disparaîtraient ou devraient être financés nationalement."
+    ],
+    "obstacles": [
+     "Le budget de l'Union est intégralement financé par des ressources propres fixées par décision à l'unanimité ; la France ne peut s'en exonérer unilatéralement (TFUE art. 311 al.2 et 3)",
+     "Décision 2020/2053 applicable depuis le 1er janvier 2021 et contraignante pour les États membres (art. 12 et 13)",
+     "Remplacement national de la PAC (9,6 Md€) non inclus si l'on veut maintenir le revenu agricole : gain net alors ~2,4 Md€ seulement"
+    ],
+    "sources": [
+     {
+      "titre": "TFUE art. 311 (JOUE C 202 du 7.6.2016, p.181) - décision ressources propres à l'unanimité, après consultation du PE, approbation des États membres (ouvert via publications.europa.eu)",
+      "url": "https://publications.europa.eu/resource/celex/12016E311",
+      "ouverte": true
+     },
+     {
+      "titre": "Décision (UE, Euratom) 2020/2053 du Conseil du 14.12.2020 relative au système de ressources propres (art. 2 par.4 corrections forfaitaires, art. 3 plafonds 1,40 %/1,46 % du RNB, art. 12 entrée en vigueur) (ouvert via publications.europa.eu)",
+      "url": "https://publications.europa.eu/resource/celex/32020D2053",
+      "ouverte": true
+     },
+     {
+      "titre": "Sénat - Rapport général PLF 2026, Participation de la France au budget de l'UE (retours 2024 : 16,456 Md€ dont PAC 9,6 Md€ ; solde net 2024 : -7,9 Md€)",
+      "url": "https://www.senat.fr/rap/l25-139-22/l25-139-221.pdf",
+      "ouverte": true
+     },
+     {
+      "titre": "Assemblée nationale - amendement n°18 (loi spéciale, 23 déc. 2025) : PSR-UE 'tel qu'inscrit dans le PLF2026' = 28 439 880 549 EUR",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2269/AN/18.pdf",
+      "ouverte": true
+     }
+    ],
+    "non_verifie": true,
+    "notes": "Gain net = PSR 2026 (28,44) - retours 2024 (16,456) = 11,98 ≈ 12,0 Md€ (années différentes ; hors ressources propres traditionnelles/droits de douane reversés à l'UE). Référence : solde net comptable 2024 = -7,9 Md€ (Sénat). Si la PAC (9,6 Md€) est compensée nationalement, gain ≈ 2,4 Md€. Les mentions 'recours en manquement CJUE' et 'art. 88-1 Constitution' de la version précédente sont retirées faute de texte ouvert."
+   }
+  ],
+  "sources": [
+   {
+    "titre": "Sénat - Mission Affaires européennes, Essentiel post-commission PLF 2026 (PSR-UE 28,8 Md€ ; CFP 2028-2034 : PSR moyen de 26 à 38 Md€)",
+    "url": "https://www.senat.fr/fileadmin/cru-1762483659/Commissions/Finances/2025-2026/PLF_2026/Essentiel/Mission_Affaires_europeennes_Essentiel_post-commission.pdf",
+    "ouverte": true
+   },
+   {
+    "titre": "Sénat - Rapport général PLF 2026, Participation de la France au budget de l'UE (retours 2024 : 16,456 Md€ dont PAC 9,6 Md€ ; solde net 2024 : -7,9 Md€)",
+    "url": "https://www.senat.fr/rap/l25-139-22/l25-139-221.pdf",
+    "ouverte": true
+   },
+   {
+    "titre": "Assemblée nationale - amendement n°18 (loi spéciale, 23 déc. 2025) : PSR-UE 'tel qu'inscrit dans le PLF2026' = 28 439 880 549 EUR",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2269/AN/18.pdf",
+    "ouverte": true
+   },
+   {
+    "titre": "Assemblée nationale - amendement I-598 au PLF 2026 (texte initial de l'art. 45 : 28 781 025 011 EUR ; corrections forfaitaires AT/DE/DK/NL/SE)",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1906A/AN/598.pdf",
+    "ouverte": true
+   },
+   {
+    "titre": "TFUE art. 310 (JOUE C 202 du 7.6.2016, p.181) - budget équilibré en recettes et dépenses, financé dans la limite des ressources propres (ouvert via publications.europa.eu, EUR-Lex HTML bloqué par WAF)",
+    "url": "https://publications.europa.eu/resource/celex/12016E310",
+    "ouverte": true
+   },
+   {
+    "titre": "TFUE art. 311 (JOUE C 202 du 7.6.2016, p.181) - décision ressources propres à l'unanimité, après consultation du PE, approbation des États membres (ouvert via publications.europa.eu)",
+    "url": "https://publications.europa.eu/resource/celex/12016E311",
+    "ouverte": true
+   },
+   {
+    "titre": "Décision (UE, Euratom) 2020/2053 du Conseil du 14.12.2020 relative au système de ressources propres (art. 2 par.4 corrections forfaitaires, art. 3 plafonds 1,40 %/1,46 % du RNB, art. 12 entrée en vigueur) (ouvert via publications.europa.eu)",
+    "url": "https://publications.europa.eu/resource/celex/32020D2053",
+    "ouverte": true
+   },
+   {
+    "titre": "Public Sénat - Budget 2026 : hausse de la contribution à l'UE de 5,7 Md€ au lieu de 7,3 Md€ (17 juil. 2025)",
+    "url": "https://www.publicsenat.fr/actualites/economie/budget-2026-pourquoi-la-france-a-obtenu-une-hausse-moins-importante-de-sa-contribution-a-lunion-europeenne",
+    "ouverte": true
+   }
+  ]
+ },
+ {
+  "id": "fonctionnement_etat",
+  "nom": "Fonctionnement courant de l'État (titre 3 hors subventions aux opérateurs)",
+  "bloc": "État",
+  "montant_mds": 36.2,
+  "annee_montant": 2025,
+  "source_montant": {
+   "titre": "Cour des comptes - Budget de l'État en 2025 : titre 3 Fonctionnement 70,1 Md€ (exéc. 2025) moins SCSP 33,9 Md€ = 36,2 Md€",
+   "url": "https://www.vie-publique.fr/files/rapport/pdf/302978.pdf",
+   "ouverte": true
+  },
+  "note_montant": "Ancien 40 Md€ non vérifié remplacé. Titre 3 exécuté 2025 = 70,1 Md€ (Cour, tableau 29), dont subventions pour charges de service public aux opérateurs 33,9 Md€ : retranchées pour éviter un double compte avec le poste 'operateurs'. Reste 36,2 Md€ (calcul). Cette base inclut encore la Défense (≈ 21 Md€ : +1 Md€ = +4,9 % en 2025 selon la Cour). Montant PLF 2026 du titre 3 non retrouvé dans un document ouvert : année 2025 (exécution) retenue.",
+  "crans": [
+   {
+    "niveau": 1,
+    "mesure": "-3 % du fonctionnement courant (achats, immobilier, communication, informatique) ; le conseil n'en est qu'une petite part",
+    "gain_mds": 1.1,
+    "faisabilite": 1,
+    "arguments": [
+     "Le conseil seul pèse ~200 M€ (2022) : il ne peut justifier le gain. Les prestations informatiques (890 M€ en 2021) et les achats courants/immobilier portent l'essentiel des ~1,1 Md€.",
+     "Précédent : circulaire 2022 fixant -15 % puis -35 % sur le conseil vs 2021 ; le rapport général du Sénat reprend un objectif de -20 % sur la communication et de stabilité en valeur hors défense."
+    ],
+    "obstacles": [
+     "Gain sur le conseil (≤ 0,1 Md€ avec -35 % sur ~0,2 Md€) négligeable : l'effort doit porter sur les autres postes de la base",
+     "Base de 36,2 Md€ contenant ~21 Md€ de Défense : effort réel concentré sur le reste (~15 Md€)"
+    ],
+    "sources": [
+     {
+      "titre": "Cour des comptes - Le budget de l'État en 2025, résultats et gestion (avril 2026), tableau n°29 : titre 3 = 70,1 Md€, SCSP 33,9 Md€",
+      "url": "https://www.vie-publique.fr/files/rapport/pdf/302978.pdf",
+      "ouverte": true
+     },
+     {
+      "titre": "Public Sénat - Cabinets de conseil : rapport Cour des comptes (conseil hors IT ~200 M€ en 2022 ; IT 890 M€ en 2021 ; circulaire 2022 : -15 % puis -35 % vs 2021)",
+      "url": "https://www.publicsenat.fr/actualites/politique/cabinets-de-conseil-apres-le-rapport-de-la-cour-des-comptes-le-senat-exige-plus-de-transparence",
+      "ouverte": true
+     },
+     {
+      "titre": "Sénat - Rapport général PLF 2026, tome I (stabilité en valeur hors défense ; -20 % sur les dépenses de communication)",
+      "url": "https://www.senat.fr/rap/l25-139-1/l25-139-1_mono.html",
+      "ouverte": true
+     }
+    ],
+    "non_verifie": true,
+    "notes": "Gain = 3 % x 36,2 = 1,09 Md€ (arithmétique sur montant Cour des comptes). Aucun chiffrage officiel de l'effet d'un -3 %."
+   },
+   {
+    "niveau": 2,
+    "mesure": "-7 % du fonctionnement courant (hors produits de cession immobilière, non comptés)",
+    "gain_mds": 2.5,
+    "faisabilite": 1,
+    "arguments": [
+     "Poursuite de l'effort cran 1 ; même base de 36,2 Md€."
+    ],
+    "obstacles": [
+     "Cessions immobilières : recettes ponctuelles non chiffrées ici, donc exclues du gain",
+     "Effort difficile à absorber hors Défense sans réduire le service rendu"
+    ],
+    "sources": [
+     {
+      "titre": "Cour des comptes - Le budget de l'État en 2025, résultats et gestion (avril 2026), tableau n°29 : titre 3 = 70,1 Md€, SCSP 33,9 Md€",
+      "url": "https://www.vie-publique.fr/files/rapport/pdf/302978.pdf",
+      "ouverte": true
+     },
+     {
+      "titre": "Sénat - Rapport général PLF 2026, tome I (stabilité en valeur hors défense ; -20 % sur les dépenses de communication)",
+      "url": "https://www.senat.fr/rap/l25-139-1/l25-139-1_mono.html",
+      "ouverte": true
+     }
+    ],
+    "non_verifie": true,
+    "notes": "Gain = 7 % x 36,2 = 2,53 Md€. Aucun chiffrage officiel des cessions."
+   },
+   {
+    "niveau": 3,
+    "mesure": "-12 % du fonctionnement courant",
+    "gain_mds": 4.3,
+    "faisabilite": 2,
+    "arguments": [
+     "Même base ; ordre de grandeur supérieur au tendanciel d'économies de fonctionnement observé (effort 2025 hors périmètre Covid : quasi stable, -0,36 %)."
+    ],
+    "obstacles": [
+     "Une baisse de -0,36 % seulement a été obtenue en 2025 à périmètre constant (Cour des comptes) : -12 % est très au-delà de l'effort constaté",
+     "Investissements numériques et immobiliers nécessaires pour obtenir des économies durables"
+    ],
+    "sources": [
+     {
+      "titre": "Cour des comptes - Le budget de l'État en 2025, résultats et gestion (avril 2026), tableau n°29 : titre 3 = 70,1 Md€, SCSP 33,9 Md€",
+      "url": "https://www.vie-publique.fr/files/rapport/pdf/302978.pdf",
+      "ouverte": true
+     }
+    ],
+    "non_verifie": true,
+    "notes": "Gain = 12 % x 36,2 = 4,34 Md€."
+   }
+  ],
+  "sources": [
+   {
+    "titre": "Cour des comptes - Le budget de l'État en 2025, résultats et gestion (avril 2026), tableau n°29 : titre 3 = 70,1 Md€, SCSP 33,9 Md€",
+    "url": "https://www.vie-publique.fr/files/rapport/pdf/302978.pdf",
+    "ouverte": true
+   },
+   {
+    "titre": "Public Sénat - Cabinets de conseil : rapport Cour des comptes (conseil hors IT ~200 M€ en 2022 ; IT 890 M€ en 2021 ; circulaire 2022 : -15 % puis -35 % vs 2021)",
+    "url": "https://www.publicsenat.fr/actualites/politique/cabinets-de-conseil-apres-le-rapport-de-la-cour-des-comptes-le-senat-exige-plus-de-transparence",
+    "ouverte": true
+   },
+   {
+    "titre": "Sénat - Rapport général PLF 2026, tome I (stabilité en valeur hors défense ; -20 % sur les dépenses de communication)",
+    "url": "https://www.senat.fr/rap/l25-139-1/l25-139-1_mono.html",
+    "ouverte": true
+   }
+  ]
+ },
+ {
+  "id": "audiovisuel",
+  "nom": "Audiovisuel public",
+  "bloc": "État",
+  "montant_mds": 3.878,
+  "annee_montant": 2026,
+  "source_montant": {
+   "titre": "Assemblée nationale - amendement 1970 au PLF 2026 : 3,878 Md€ (trajectoire 4,026 / 3,949 / 3,878) ; confirmé par Sénat (3,88 Md€)",
+   "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2247/AN/1970.pdf",
+   "ouverte": true
+  },
+  "note_montant": "3,878 Md€ au PLF 2026, soit -70,8 M€ vs LFI 2025 (France Télévisions -65,3 M€, Radio France -4,1 M€, INA -1,5 M€). Il s'agit du projet de loi ; versions amendées (Sénat/AN) non toutes vérifiées.",
+  "crans": [
+   {
+    "niveau": 1,
+    "mesure": "-5 % des dotations",
+    "gain_mds": 0.19,
+    "faisabilite": 1,
+    "arguments": [
+     "Une baisse de 70,8 M€ est déjà inscrite au PLF 2026 : -5 % supplémentaire poursuit une trajectoire de troisième baisse consécutive."
+    ],
+    "obstacles": [
+     "Les sociétés ont déjà absorbé des réductions en cours d'exécution en 2024 et 2025 ; France Télévisions alerte sur la baisse de l'investissement dans la création (amendement 1970)"
+    ],
+    "sources": [
+     {
+      "titre": "Assemblée nationale - amendement 1970 (PLF 2026) : crédits audiovisuel public 4,026 Md€ (LFI 2024), 3,949 (LFI 2025), 3,878 (PLF 2026) ; -70,8 M€",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2247/AN/1970.pdf",
+      "ouverte": true
+     },
+     {
+      "titre": "Sénat - Avis PLF 2026 Audiovisuel extérieur : crédits de l'audiovisuel public -1,79 % à 3,88 Md€",
+      "url": "https://www.senat.fr/rap/a25-141-10/a25-141-10-syn.pdf",
+      "ouverte": true
+     }
+    ],
+    "non_verifie": false,
+    "notes": "Gain = 5 % x 3,878 = 0,194 Md€ (arithmétique sur montant vérifié)."
+   },
+   {
+    "niveau": 2,
+    "mesure": "Holding (France Médias) et mutualisation des fonctions support, en plus du cran 1",
+    "gain_mds": 0.2,
+    "faisabilite": 1,
+    "arguments": [
+     "Le rapport Bloch juge la holding réalisable à coût quasi nul ; l'IGF estime la mutualisation des fonctions support entre France Télévisions et Radio France à ~10 M€/an."
+    ],
+    "obstacles": [
+     "Coût d'alignement des statuts des salariés : ~30 M€ (IGF) ; économies limitées dans un premier temps",
+     "Risque pour l'indépendance éditoriale (débat parlementaire) ; un amendement conteste l'existence d'économies réelles"
+    ],
+    "sources": [
+     {
+      "titre": "CB News - Rapport Bloch sur France Médias : coût quasi nul, alignement statuts 30 M€ (IGF), mutualisation fonctions support ~10 M€/an",
+      "url": "https://www.cbnews.fr/node/93572",
+      "ouverte": true
+     },
+     {
+      "titre": "Assemblée nationale - amendement 1970 (PLF 2026) : crédits audiovisuel public 4,026 Md€ (LFI 2024), 3,949 (LFI 2025), 3,878 (PLF 2026) ; -70,8 M€",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2247/AN/1970.pdf",
+      "ouverte": true
+     }
+    ],
+    "non_verifie": true,
+    "notes": "Gain cumulé = cran 1 (0,19) + ~0,01 Md€ (IGF, 10 M€/an, relayé par CB News ; rapport IGF/Bloch non ouvert). L'ancienne valeur de 0,5 Md€ n'avait aucun chiffrage et est abandonnée."
+   },
+   {
+    "niveau": 3,
+    "mesure": "Privatisation de France Télévisions et Radio France (Arte, TV5, France Médias Monde, INA maintenus publics)",
+    "gain_mds": 3.2,
+    "faisabilite": 2,
+    "arguments": [
+     "Un amendement parlementaire chiffre à près de 3,2 Md€ la charge supprimée pour l'État en phase finale (privatisation FT + Radio France)."
+    ],
+    "obstacles": [
+     "Le pluralisme des courants d'expression socioculturels est un objectif de valeur constitutionnelle (Cons. const., décision n° 86-217 DC du 18 septembre 1986, cons. 11) : la cession à un acteur privé doit être encadrée",
+     "La même décision valide dans son principe le transfert de TF1 au secteur privé mais impose une cession à un prix au moins égal à la valeur de la société (cons. 48) et la prévention des concentrations",
+     "Perte de recettes publicitaires et de mission de service public non chiffrée"
+    ],
+    "sources": [
+     {
+      "titre": "Assemblée nationale - amendement II-CF714 (RN) : privatisation de France Télévisions et Radio France, -3,2 Md€ de charge pour l'État en phase finale",
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1906C/CION_FIN/CF714.pdf",
+      "ouverte": true
+     },
+     {
+      "titre": "Conseil constitutionnel - Décision n° 86-217 DC du 18 septembre 1986 (liberté de communication), cons. 11 : pluralisme = objectif de valeur constitutionnelle",
+      "url": "https://www.conseil-constitutionnel.fr/decision/1986/86217DC.htm",
+      "ouverte": true
+     }
+    ],
+    "non_verifie": true,
+    "notes": "3,2 Md€ = chiffrage d'un amendement (groupe RN), non officiel ni vérifié par l'administration ; ordre de grandeur cohérent avec les dotations de FT + Radio France. Gain brut, sans coût de transition ni contrepartie de service public."
+   }
+  ],
+  "sources": [
+   {
+    "titre": "Assemblée nationale - amendement 1970 (PLF 2026) : crédits audiovisuel public 4,026 Md€ (LFI 2024), 3,949 (LFI 2025), 3,878 (PLF 2026) ; -70,8 M€",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2247/AN/1970.pdf",
+    "ouverte": true
+   },
+   {
+    "titre": "Sénat - Avis PLF 2026 Audiovisuel extérieur : crédits de l'audiovisuel public -1,79 % à 3,88 Md€",
+    "url": "https://www.senat.fr/rap/a25-141-10/a25-141-10-syn.pdf",
+    "ouverte": true
+   },
+   {
+    "titre": "CB News - Rapport Bloch sur France Médias : coût quasi nul, alignement statuts 30 M€ (IGF), mutualisation fonctions support ~10 M€/an",
+    "url": "https://www.cbnews.fr/node/93572",
+    "ouverte": true
+   },
+   {
+    "titre": "Assemblée nationale - amendement II-CF714 (RN) : privatisation de France Télévisions et Radio France, -3,2 Md€ de charge pour l'État en phase finale",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1906C/CION_FIN/CF714.pdf",
+    "ouverte": true
+   },
+   {
+    "titre": "Conseil constitutionnel - Décision n° 86-217 DC du 18 septembre 1986 (liberté de communication), cons. 11 : pluralisme = objectif de valeur constitutionnelle",
+    "url": "https://www.conseil-constitutionnel.fr/decision/1986/86217DC.htm",
+    "ouverte": true
+   }
+  ]
+ },
+ {
+  "id": "minima_sociaux",
+  "nom": "Minima sociaux (RSA, AAH, ASPA, ASS...) - hors prime d'activité",
+  "bloc": "État / Départements",
+  "montant_mds": 33.3,
+  "annee_montant": 2024,
+  "source_montant": {
+   "titre": "DREES - communiqué du 4 déc. 2025 : 33,3 Md€ de minima sociaux versés en 2024 (≈ 1,1 % du PIB)",
+   "url": "https://drees.solidarites-sante.gouv.fr/communique-de-presse/communique-de-presse/251204-nombre-allocataires-minima-sociaux",
+   "ouverte": true
+  },
+  "note_montant": "Mise à jour 30,6 Md€ (2022) -> 33,3 Md€ (2024, DREES, édition 2025). DÉCISION : la prime d'activité est EXCLUE du montant et des crans (ce n'est pas un minimum social au sens DREES ; 10,5 Md€ en 2023, 4,81 M de foyers fin 2024). Pour un périmètre élargi, ajouter ~10,5 Md€ (≈ 43,8 Md€). L'ancien intitulé citait la prime d'activité à tort. Effectifs fin 2024 : 4,25 M allocataires, RSA 1,84 M, AAH 1,40 M.",
+  "crans": [
+   {
+    "niveau": 1,
+    "mesure": "Lutte contre la fraude renforcée (RSA, AAH...)",
+    "gain_mds": 0.5,
+    "faisabilite": 1,
+    "arguments": [
+     "449 M€ de fraudes détectés par les Caf en 2024 (+20 %), et la solidarité à la source (depuis mars 2025) doit réduire une partie de la fraude."
+    ],
+    "obstacles": [
+     "Non-recours important ; les 449 M€ couvrent toutes les prestations Caf (aides au logement, etc.), pas seulement les minima",
+     "La fraude estimée au RSA (~1,5 Md€/an) provient de l'IFRAP, pas d'une source officielle ouverte"
+    ],
+    "sources": [
+     {
+      "titre": "CNAF - La lutte contre la fraude à la Caf (5 mai 2025) : 449 M€ de fraudes détectées en 2024",
+      "url": "https://caf.fr/sites/default/files/medias/cnaf/250505%20DPLa%20lutte%20contre%20la%20fraude%20%C3%A0%20la%20Caf%20%C3%A9volue%20avec%20la%20solidarit%C3%A9%20%C3%A0%20la%20source%20et%20le%20SNLFE.pdf",
+      "ouverte": true
+     },
+     {
+      "titre": "IFRAP (think tank, non officiel) - Fraudes branche famille 2024 : 449 M€ détectés ; fraude RSA estimée ~1,5 Md€/an",
+      "url": "https://www.ifrap.org/budget-et-fiscalite/fraudes-dans-la-branche-famille-des-resultats-2024-en-demi-teinte",
+      "ouverte": true
+     }
+    ],
+    "non_verifie": true,
+    "notes": "Ordre de grandeur 0,5 Md€ ≈ un tiers de la fraude RSA estimée (~1,5 Md€) ; aucun chiffrage officiel de l'économie additionnelle. Montants détectés ≠ économies nettes (une partie est recouvrée a posteriori)."
+   },
+   {
+    "niveau": 2,
+    "mesure": "Gel des minima pendant 1 an (non-revalorisation)",
+    "gain_mds": 0.4,
+    "faisabilite": 1,
+    "arguments": [
+     "Le PLF 2026 prévoit déjà un gel de l'ensemble des prestations (AAH, prime d'activité notamment) ; le Sénat chiffre l'économie de la mission Solidarité à 300-450 M€."
+    ],
+    "obstacles": [
+     "Perte de pouvoir d'achat pour les allocataires les plus pauvres",
+     "L'économie du gel n'est pas entièrement documentée par le Gouvernement (Sénat)"
+    ],
+    "sources": [
+     {
+      "titre": "Sénat - Avis PLF 2026 mission Solidarité : gel des prestations (AAH, prime d'activité), économie de 300 à 450 M€ pour la mission",
+      "url": "https://www.senat.fr/rap/a25-142-5/a25-142-5-syn.pdf",
+      "ouverte": true
+     },
+     {
+      "titre": "DREES - Nombre d'allocataires de minima sociaux en 2024 (communiqué 4 déc. 2025) : 33,3 Md€ versés en 2024",
+      "url": "https://drees.solidarites-sante.gouv.fr/communique-de-presse/communique-de-presse/251204-nombre-allocataires-minima-sociaux",
+      "ouverte": true
+     }
+    ],
+    "non_verifie": true,
+    "notes": "Gain = inflation (~1,3 %) x 33,3 Md€ ≈ 0,43 Md€, cohérent avec la fourchette Sénat 300-450 M€ (périmètre AAH + prime d'activité). Ancienne valeur 1 Md€ corrigée (non étayée). Le chiffre gouvernemental de 3,6 Md€ (toutes prestations) n'a pas été ouvert dans un document source."
+   },
+   {
+    "niveau": 3,
+    "mesure": "Allocation sociale unique plafonnée",
+    "gain_mds": 3.0,
+    "faisabilite": 2,
+    "arguments": [
+     "Simplification et lisibilité : fusion des prestations en une seule allocation, avec plafonnement du cumul des aides."
+    ],
+    "obstacles": [
+     "Perdants nombreux parmi les allocataires cumulant plusieurs aides",
+     "Aucun chiffrage institutionnel (Sénat, Cour des comptes, DREES) trouvé"
+    ],
+    "sources": [
+     {
+      "titre": "IFRAP (think tank, non officiel) - Plafonnement d'une allocation sociale unique : 12 à 34 Md€ selon le plafond (périmètre large)",
+      "url": "https://www.ifrap.org/emploi-et-politiques-sociales/12-34-milliards-deuros-deconomies-les-differents-scenarios-dun-plafonnement-dune-allocation-sociale-unique-par-rapport",
+      "ouverte": true
+     },
+     {
+      "titre": "DREES - Nombre d'allocataires de minima sociaux en 2024 (communiqué 4 déc. 2025) : 33,3 Md€ versés en 2024",
+      "url": "https://drees.solidarites-sante.gouv.fr/communique-de-presse/communique-de-presse/251204-nombre-allocataires-minima-sociaux",
+      "ouverte": true
+     }
+    ],
+    "non_verifie": true,
+    "notes": "Ordre de grandeur 3 Md€ ≈ 9 % de 33,3 Md€ : gain non vérifiable. L'IFRAP (12 à 34 Md€) porte sur un périmètre bien plus large (logement, famille...) : non transposable au périmètre minima."
+   }
+  ],
+  "sources": [
+   {
+    "titre": "DREES - Nombre d'allocataires de minima sociaux en 2024 (communiqué 4 déc. 2025) : 33,3 Md€ versés en 2024",
+    "url": "https://drees.solidarites-sante.gouv.fr/communique-de-presse/communique-de-presse/251204-nombre-allocataires-minima-sociaux",
+    "ouverte": true
+   },
+   {
+    "titre": "DREES - Barèmes, effectifs et dépenses de minima sociaux et de la prime d'activité en 2024 (jeu de données, déc. 2025)",
+    "url": "https://drees.solidarites-sante.gouv.fr/communique-de-presse-jeux-de-donnees/jeux-de-donnees/251204-baremes-effectifs-depenses-minima-sociaux",
+    "ouverte": true
+   },
+   {
+    "titre": "DREES - Minima sociaux et prestations de solidarité, édition 2025, fiche 30 : prime d'activité, 10,5 Md€ en 2023",
+    "url": "https://www.drees.solidarites-sante.gouv.fr/sites/default/files/2025-12/MS2025%20-%20Fiche%2030%20-%20La%20prime%20d%27activit%C3%A9.pdf",
+    "ouverte": true
+   },
+   {
+    "titre": "Sénat - Avis PLF 2026 mission Solidarité : gel des prestations (AAH, prime d'activité), économie de 300 à 450 M€ pour la mission",
+    "url": "https://www.senat.fr/rap/a25-142-5/a25-142-5-syn.pdf",
+    "ouverte": true
+   },
+   {
+    "titre": "CNAF - La lutte contre la fraude à la Caf (5 mai 2025) : 449 M€ de fraudes détectées en 2024",
+    "url": "https://caf.fr/sites/default/files/medias/cnaf/250505%20DPLa%20lutte%20contre%20la%20fraude%20%C3%A0%20la%20Caf%20%C3%A9volue%20avec%20la%20solidarit%C3%A9%20%C3%A0%20la%20source%20et%20le%20SNLFE.pdf",
+    "ouverte": true
+   },
+   {
+    "titre": "IFRAP (think tank, non officiel) - Fraudes branche famille 2024 : 449 M€ détectés ; fraude RSA estimée ~1,5 Md€/an",
+    "url": "https://www.ifrap.org/budget-et-fiscalite/fraudes-dans-la-branche-famille-des-resultats-2024-en-demi-teinte",
+    "ouverte": true
+   },
+   {
+    "titre": "IFRAP (think tank, non officiel) - Plafonnement d'une allocation sociale unique : 12 à 34 Md€ selon le plafond (périmètre large)",
+    "url": "https://www.ifrap.org/emploi-et-politiques-sociales/12-34-milliards-deuros-deconomies-les-differents-scenarios-dun-plafonnement-dune-allocation-sociale-unique-par-rapport",
+    "ouverte": true
+   }
+  ]
+ },
+ {
+  "id": "dette",
+  "nom": "Charge de la dette",
+  "bloc": "État",
+  "montant_mds": 58.0,
+  "annee_montant": 2026,
+  "source_montant": {
+   "titre": "Sénat - PLF 2026, Engagements financiers de l'État : charge de la dette 58,0 Md€ en comptabilité budgétaire (+7,49 % vs LFI 2025 : 53,5 Md€)",
+   "url": "https://www.senat.fr/rap/l25-139-312/l25-139-3120.html",
+   "ouverte": true
+  },
+  "note_montant": "58,0 Md€ en comptabilité budgétaire ; 60,4 Md€ en comptabilité générale. Les crans 1 et 2 à 0 sont voulus : la charge de la dette n'est pas un poste sur lequel agir directement, elle baisse seulement par effet indirect (moindre déficit donc moindres émissions, baisse des taux). Les économies correspondantes sont comptées dans les autres postes, pas ici.",
+  "crans": [
+   {
+    "niveau": 1,
+    "mesure": "Aucun levier direct : la charge baisse indirectement si le déficit est réduit via les autres postes",
+    "gain_mds": 0,
+    "faisabilite": 1,
+    "arguments": [
+     "Chaque point de taux compte : +1 pt = +3,2 Md€ à 1 an, +23,5 Md€ à 5 ans (AFT), donc tout moindre besoin d'émission réduit la charge à terme."
+    ],
+    "obstacles": [
+     "Effet décalé : la charge est un flux d'intérêts sur un stock déjà émis"
+    ],
+    "sources": [
+     {
+      "titre": "Sénat - Rapport général PLF 2026, Engagements financiers de l'État : charge de la dette 58,0 Md€ ; sensibilité AFT +1 pt = +3,2 / +23,5 / +33,5 Md€ à 1 / 5 / 9 ans ; OAT 10 ans 3,7 % fin 2025, 3,8 % fin 2026",
+      "url": "https://www.senat.fr/rap/l25-139-312/l25-139-3120.html",
+      "ouverte": true
+     }
+    ],
+    "non_verifie": false,
+    "notes": "Gain 0 volontaire : double compte évité avec les économies des autres postes."
+   },
+   {
+    "niveau": 2,
+    "mesure": "Gestion active de la dette et de la trajectoire de taux (stabilité politique, programme d'émission AFT)",
+    "gain_mds": 0,
+    "faisabilite": 1,
+    "arguments": [
+     "Hypothèses PLF : OAT 10 ans à 3,7 % fin 2025 et 3,8 % fin 2026 ; la stabilité politique conditionne la prime de risque."
+    ],
+    "obstacles": [
+     "Les taux de marché ne sont pas pilotables par l'État ; la baisse des taux directeurs de la BCE n'a pas d'effet direct sur les taux longs (Sénat)"
+    ],
+    "sources": [
+     {
+      "titre": "Sénat - Rapport général PLF 2026, Engagements financiers de l'État : charge de la dette 58,0 Md€ ; sensibilité AFT +1 pt = +3,2 / +23,5 / +33,5 Md€ à 1 / 5 / 9 ans ; OAT 10 ans 3,7 % fin 2025, 3,8 % fin 2026",
+      "url": "https://www.senat.fr/rap/l25-139-312/l25-139-3120.html",
+      "ouverte": true
+     }
+    ],
+    "non_verifie": false,
+    "notes": "Gain 0 volontaire : une baisse de 0,5 pt des taux ne vaudrait que ≈ 1,6 Md€ à 1 an (calcul sur la sensibilité AFT) mais n'est pas une mesure activable."
+   },
+   {
+    "niveau": 3,
+    "mesure": "Défaut ou restructuration de la dette",
+    "gain_mds": 0,
+    "faisabilite": 3,
+    "arguments": [
+     "Seule mesure agissant directement sur le stock de dette."
+    ],
+    "obstacles": [
+     "Exclusion des marchés et crise bancaire : coût net probablement négatif, non chiffré",
+     "Aucune source ouverte ne chiffre l'effet d'un défaut français"
+    ],
+    "sources": [
+     {
+      "titre": "Sénat - Rapport général PLF 2026, Engagements financiers de l'État : charge de la dette 58,0 Md€ ; sensibilité AFT +1 pt = +3,2 / +23,5 / +33,5 Md€ à 1 / 5 / 9 ans ; OAT 10 ans 3,7 % fin 2025, 3,8 % fin 2026",
+      "url": "https://www.senat.fr/rap/l25-139-312/l25-139-3120.html",
+      "ouverte": true
+     }
+    ],
+    "non_verifie": true,
+    "notes": "Gain 0 conservé : un défaut produit un coût, pas une économie. Aucun chiffrage officiel trouvé ; les mentions juridiques non sourcées sont retirées."
+   }
+  ],
+  "sources": [
+   {
+    "titre": "Sénat - Rapport général PLF 2026, Engagements financiers de l'État : charge de la dette 58,0 Md€ ; sensibilité AFT +1 pt = +3,2 / +23,5 / +33,5 Md€ à 1 / 5 / 9 ans ; OAT 10 ans 3,7 % fin 2025, 3,8 % fin 2026",
+    "url": "https://www.senat.fr/rap/l25-139-312/l25-139-3120.html",
+    "ouverte": true
+   }
+  ]
+ }
+]

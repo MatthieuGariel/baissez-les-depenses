@@ -1,8 +1,8 @@
-"""Fusionne data/sourcing/groupe*.json dans data/postes.json (remplace les postes par id)."""
+"""Fusionne data/sourcing/passe2/groupe*.json dans data/postes.json (remplace les postes par id)."""
 import json, glob
 base = json.load(open("data/postes.json"))
 idx = {p["id"]: i for i, p in enumerate(base["postes"])}
-for f in sorted(glob.glob("data/sourcing/groupe*.json")):
+for f in sorted(glob.glob("data/sourcing/passe2/groupe*.json")):
     d = json.load(open(f))
     postes = d["postes"] if isinstance(d, dict) else d
     if isinstance(d, dict) and "meta" in d:

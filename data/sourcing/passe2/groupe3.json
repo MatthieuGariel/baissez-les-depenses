@@ -1,0 +1,681 @@
+[
+ {
+  "id": "aide_developpement",
+  "nom": "Aide publique au développement",
+  "bloc": "État",
+  "montant_mds": 3.67,
+  "annee_montant": "2026 (crédits de paiement du PLF 2026 ; la LFI 2026 promulguée est citée à ~3,6 Md€ par une question écrite, non vérifiée à l'état B)",
+  "source_montant": {
+   "titre": "Sénat, commission des finances — L'essentiel sur le PLF 2026, mission Aide publique au développement (rapporteurs Canévet et Daubet)",
+   "url": "https://www.senat.fr/rap/l25-139-34/l25-139-34-syn.pdf",
+   "ouverte": true
+  },
+  "crans": [
+   {
+    "niveau": 1,
+    "mesure": "Ramener la mission APD à son niveau de 2019 corrigé de l'inflation (−200 M€)",
+    "gain_mds": 0.2,
+    "faisabilite": 1,
+    "arguments": [
+     "Amendement de la commission des finances du Sénat : −200 M€ en AE comme en CP, réparti à parts égales entre les programmes 110 et 209",
+     "Les moyens de la mission ont augmenté de 20 % entre l'exécution 2017 et le PLF 2026 (hors titre 2, FSD inclus) ; stables en volume après inflation (Sénat)",
+     "Aide bilatérale dans 124 pays, soit en moyenne 5 % de l'APD reçue : risque de dilution (Sénat)"
+    ],
+    "obstacles": [
+     "Le PLF 2026 baisse déjà la mission de 16,1 % en CP (4,37 → 3,67 Md€) : l'économie s'ajoute à un effort déjà fort",
+     "Objectif de 0,7 % du RNB en 2025 formulé « s'efforcera » dans la loi n° 2021-1031 : pas d'obligation chiffrée contraignante"
+    ],
+    "sources": [
+     {
+      "titre": "Sénat, commission des finances — L'essentiel sur le PLF 2026, mission Aide publique au développement (rapporteurs Canévet et Daubet)",
+      "url": "https://www.senat.fr/rap/l25-139-34/l25-139-34-syn.pdf",
+      "ouverte": true
+     },
+     {
+      "titre": "Sénat, commission des finances — amendement de crédits APD (niveau 2019 corrigé de l'inflation, -200 M€)",
+      "url": "https://www.senat.fr/fileadmin/cru-1762483659/Commissions/Finances/2025-2026/PLF_2026/Amendements/APD_Amendement_de_credits.pdf",
+      "ouverte": true
+     },
+     {
+      "titre": "Banque des Territoires — La loi de programmation développement solidaire enfin publiée (loi n° 2021-1031)",
+      "url": "https://www.banquedesterritoires.fr/la-loi-de-programmation-developpement-solidaire-enfin-publiee",
+      "ouverte": true
+     }
+    ],
+    "non_verifie": false,
+    "notes": "Gain = 200 M€ de CP, chiffrage de l'amendement de la commission des finances du Sénat (PLF 2026). Sort de cet amendement dans la LFI 2026 non vérifié."
+   },
+   {
+    "niveau": 2,
+    "mesure": "−15 % des crédits de paiement de la mission APD",
+    "gain_mds": 0.55,
+    "faisabilite": 2,
+    "arguments": [
+     "Calcul : 15 % × 3,67 Md€ de CP (PLF 2026)",
+     "Le programme 209 porte déjà l'essentiel de l'effort (−22 % de CP en 2026) ; les fonds verticaux environnementaux sont jugés redondants par les rapporteurs (Sénat)"
+    ],
+    "obstacles": [
+     "Cumul avec les baisses 2024-2025 (−28 % en AE, −35 % en CP à périmètre constant, Sénat)",
+     "Aide humanitaire déjà en baisse de 41 % dans le PLF 2026"
+    ],
+    "sources": [
+     {
+      "titre": "Sénat, commission des finances — L'essentiel sur le PLF 2026, mission Aide publique au développement (rapporteurs Canévet et Daubet)",
+      "url": "https://www.senat.fr/rap/l25-139-34/l25-139-34-syn.pdf",
+      "ouverte": true
+     },
+     {
+      "titre": "Banque des Territoires — La loi de programmation développement solidaire enfin publiée (loi n° 2021-1031)",
+      "url": "https://www.banquedesterritoires.fr/la-loi-de-programmation-developpement-solidaire-enfin-publiee",
+      "ouverte": true
+     }
+    ],
+    "non_verifie": false,
+    "notes": "Calcul direct sur la base officielle 3,67 Md€ (CP PLF 2026) ; pas de chiffrage officiel propre à ce taux."
+   },
+   {
+    "niveau": 3,
+    "mesure": "−30 % des crédits de paiement de la mission APD",
+    "gain_mds": 1.1,
+    "faisabilite": 3,
+    "arguments": [
+     "Calcul : 30 % × 3,67 Md€ de CP (PLF 2026)"
+    ],
+    "obstacles": [
+     "Contributions obligatoires à des institutions multilatérales (programme 110, engagements souvent triennaux, restes à payer élevés) : peu compressibles à court terme (Sénat)",
+     "Aucune base juridique de plancher, mais perte de crédibilité vis-à-vis des engagements de la loi n° 2021-1031 (« s'efforcera » 0,7 % RNB)"
+    ],
+    "sources": [
+     {
+      "titre": "Sénat, commission des finances — L'essentiel sur le PLF 2026, mission Aide publique au développement (rapporteurs Canévet et Daubet)",
+      "url": "https://www.senat.fr/rap/l25-139-34/l25-139-34-syn.pdf",
+      "ouverte": true
+     },
+     {
+      "titre": "Banque des Territoires — La loi de programmation développement solidaire enfin publiée (loi n° 2021-1031)",
+      "url": "https://www.banquedesterritoires.fr/la-loi-de-programmation-developpement-solidaire-enfin-publiee",
+      "ouverte": true
+     }
+    ],
+    "non_verifie": false,
+    "notes": "Calcul direct sur la base officielle 3,67 Md€. Ancien cran à −50 % (1,84 Md€) supprimé : aucun chiffrage ni soutien documentaire. Recul APD en % RNB (0,42 % en 2025, OCDE) non repris : page OCDE non ouvrable (403)."
+   }
+  ],
+  "sources": [
+   {
+    "titre": "Sénat, commission des finances — L'essentiel sur le PLF 2026, mission Aide publique au développement (rapporteurs Canévet et Daubet)",
+    "url": "https://www.senat.fr/rap/l25-139-34/l25-139-34-syn.pdf",
+    "ouverte": true
+   },
+   {
+    "titre": "Sénat, commission des finances — amendement de crédits APD (niveau 2019 corrigé de l'inflation, -200 M€)",
+    "url": "https://www.senat.fr/fileadmin/cru-1762483659/Commissions/Finances/2025-2026/PLF_2026/Amendements/APD_Amendement_de_credits.pdf",
+    "ouverte": true
+   },
+   {
+    "titre": "Banque des Territoires — La loi de programmation développement solidaire enfin publiée (loi n° 2021-1031)",
+    "url": "https://www.banquedesterritoires.fr/la-loi-de-programmation-developpement-solidaire-enfin-publiee",
+    "ouverte": true
+   },
+   {
+    "titre": "OCDE — Profils de coopération au développement, France (page non ouvrable : HTTP 403)",
+    "url": "https://www.oecd.org/fr/publications/2025/06/development-co-operation-profiles_02ffa45c/france_c200dc7f.html",
+    "ouverte": false
+   }
+  ]
+ },
+ {
+  "id": "ame",
+  "nom": "Aide médicale d'État",
+  "bloc": "État",
+  "montant_mds": 1.31,
+  "annee_montant": "2025 (dépense réelle estimée de l'AME de droit commun : 1,314 Md€ ; AME totale 1,443 Md€ avec soins urgents ; crédits PLF 2026 : 1,208 Md€ puis 1,21 Md€)",
+  "source_montant": {
+   "titre": "Sénat, commission des finances — avis PLF 2026, mission Santé (AME) : dépenses réelles, rapport Evin-Stefanini, recommandations du rapporteur spécial",
+   "url": "https://www.senat.fr/fileadmin/cru-1762483659/Commissions/Finances/2025-2026/PLF_2026/NP/Sante_PLF_2026_NP.pdf",
+   "ouverte": true
+  },
+  "crans": [
+   {
+    "niveau": 1,
+    "mesure": "Accord préalable de l'Assurance maladie étendu à tous les bénéficiaires pour les soins programmés non urgents + exclusion de l'extrait d'acte de naissance des justificatifs",
+    "gain_mds": 0.2,
+    "faisabilite": 1,
+    "arguments": [
+     "Le rapporteur spécial du Sénat (Delahaye) propose de minorer de 200 M€ les dépenses d'AME au PLF 2026 ; le Sénat a voté −200 M€ (197 voix contre 118), contre l'avis du gouvernement",
+     "Rapport Evin-Stefanini (4 déc. 2023) : recommande l'extension du recours à l'accord préalable (au-delà de 9 mois, à d'autres actes)",
+     "Exclure l'extrait d'acte de naissance : économie estimée de 138 à 275 M€ en 2026 si 10 à 20 % des bénéficiaires sont concernés (hypothèse du rapporteur)",
+     "Délai d'ancienneté de 9 mois déjà en vigueur depuis le 1er janv. 2021 pour certaines prestations non urgentes (art. L. 251-1 et R. 251-4 CASF)"
+    ],
+    "obstacles": [
+     "Les rapporteurs du Sénat admettent ne pas chiffrer les économies des actes visés ; le gouvernement indique que les concertations sur Evin-Stefanini sont « en cours »",
+     "Sous-budgétisation chronique : les dépenses réelles dépassent les crédits (dette de l'État envers la CNAM)"
+    ],
+    "sources": [
+     {
+      "titre": "Sénat, commission des finances — avis PLF 2026, mission Santé (AME) : dépenses réelles, rapport Evin-Stefanini, recommandations du rapporteur spécial",
+      "url": "https://www.senat.fr/fileadmin/cru-1762483659/Commissions/Finances/2025-2026/PLF_2026/NP/Sante_PLF_2026_NP.pdf",
+      "ouverte": true
+     },
+     {
+      "titre": "Public Sénat — Budget 2026 : le Sénat durcit les conditions de l'AME et vote une baisse de 200 M€ (11/12/2025)",
+      "url": "https://www.publicsenat.fr/actualites/sante/budget-2026-le-senat-durcit-les-conditions-de-laide-medicale-detat-et-vote-une-baisse-de-ses-credits-de-200-millions",
+      "ouverte": true
+     },
+     {
+      "titre": "LCP — Le rapport Stefanini/Évin fait réagir à l'Assemblée (audition du 6/12/2023)",
+      "url": "https://lcp.fr/actualites/aide-medicale-d-etat-le-rapport-stefanini-evin-fait-reagir-a-l-assemblee-244989",
+      "ouverte": true
+     }
+    ],
+    "non_verifie": false,
+    "notes": "Gain 0,2 Md€ = chiffrage du rapporteur spécial du Sénat (rapport PLF 2026). Issue du vote dans la LFI 2026 définitive non vérifiée. Aucun chiffrage dans le rapport Evin-Stefanini lui-même retrouvé en ligne (rapport non ouvert)."
+   },
+   {
+    "niveau": 2,
+    "mesure": "Panier de soins restreint : soins urgents, maladies graves, grossesse, vaccinations et prévention (modèle allemand, recommandation n° 8 du rapporteur spécial)",
+    "gain_mds": 0.4,
+    "faisabilite": 2,
+    "arguments": [
+     "Le Sénat recommande depuis plusieurs années un panier limité aux maladies graves, soins urgents, grossesse, vaccinations réglementaires et prévention",
+     "L'Allemagne ne rembourse pas les soins programmés non urgents aux étrangers en situation irrégulière (rapport Sénat)"
+    ],
+    "obstacles": [
+     "Le rapport Evin-Stefanini juge l'AME « utile » et « globalement maîtrisée » ; Évin rejette la conditionnalité des soins de longue durée",
+     "Report probable sur les urgences hospitalières et risque sanitaire (pas de chiffrage officiel du report)",
+     "Décision n° 2003-488 DC : le Conseil a validé les restrictions d'accès à l'AME car les soins urgents restent assurés (considérant 18)"
+    ],
+    "sources": [
+     {
+      "titre": "Sénat, commission des finances — avis PLF 2026, mission Santé (AME) : dépenses réelles, rapport Evin-Stefanini, recommandations du rapporteur spécial",
+      "url": "https://www.senat.fr/fileadmin/cru-1762483659/Commissions/Finances/2025-2026/PLF_2026/NP/Sante_PLF_2026_NP.pdf",
+      "ouverte": true
+     },
+     {
+      "titre": "LCP — Le rapport Stefanini/Évin fait réagir à l'Assemblée (audition du 6/12/2023)",
+      "url": "https://lcp.fr/actualites/aide-medicale-d-etat-le-rapport-stefanini-evin-fait-reagir-a-l-assemblee-244989",
+      "ouverte": true
+     },
+     {
+      "titre": "Conseil constitutionnel — décision n° 2003-488 DC du 29 décembre 2003 (LFR 2003, art. 97, AME)",
+      "url": "https://www.conseil-constitutionnel.fr/decision/2003/2003488DC.htm",
+      "ouverte": true
+     }
+    ],
+    "non_verifie": true,
+    "notes": "Aucun chiffrage officiel du panier restreint trouvé. Ordre de grandeur : environ 30 % de la dépense AME de droit commun 2025 (1,314 Md€), soit ~0,4 Md€, hypothèse de l'auteur. Ancien raisonnement « pas de preuve d'attractivité » retiré (non vérifié)."
+   },
+   {
+    "niveau": 3,
+    "mesure": "Suppression de l'AME de droit commun (maintien des soins urgents et de l'AME pour soins urgents)",
+    "gain_mds": 0.8,
+    "faisabilite": 3,
+    "arguments": [
+     "Dépense AME de droit commun 2025 : 1,314 Md€ (estimée), 1,256 Md€ en 2024, +68,5 % en dix ans pour l'AME totale (Sénat)"
+    ],
+    "obstacles": [
+     "Décision n° 2003-488 DC du 29 déc. 2003 : au regard du 11e alinéa du Préambule de 1946 (protection de la santé), le Conseil a jugé la condition de 3 mois de présence conforme parce que les soins urgents restent assurés : une suppression sans soins urgents serait juridiquement risquée",
+     "Report de dépenses vers l'hôpital (urgences, soins tardifs) : gain net inférieur au brut, non chiffré officiellement",
+     "CEDH art. 3 : aucune jurisprudence précise retrouvée sur l'AME, argument retiré"
+    ],
+    "sources": [
+     {
+      "titre": "Sénat, commission des finances — avis PLF 2026, mission Santé (AME) : dépenses réelles, rapport Evin-Stefanini, recommandations du rapporteur spécial",
+      "url": "https://www.senat.fr/fileadmin/cru-1762483659/Commissions/Finances/2025-2026/PLF_2026/NP/Sante_PLF_2026_NP.pdf",
+      "ouverte": true
+     },
+     {
+      "titre": "Conseil constitutionnel — décision n° 2003-488 DC du 29 décembre 2003 (LFR 2003, art. 97, AME)",
+      "url": "https://www.conseil-constitutionnel.fr/decision/2003/2003488DC.htm",
+      "ouverte": true
+     }
+    ],
+    "non_verifie": true,
+    "notes": "0,8 Md€ = ordre de grandeur de l'auteur (environ 60 % du brut de 1,314 Md€ après report estimé vers l'hôpital), pas de chiffrage officiel. Borne haute brute : 1,314 Md€."
+   }
+  ],
+  "sources": [
+   {
+    "titre": "Sénat, commission des finances — avis PLF 2026, mission Santé (AME) : dépenses réelles, rapport Evin-Stefanini, recommandations du rapporteur spécial",
+    "url": "https://www.senat.fr/fileadmin/cru-1762483659/Commissions/Finances/2025-2026/PLF_2026/NP/Sante_PLF_2026_NP.pdf",
+    "ouverte": true
+   },
+   {
+    "titre": "Public Sénat — Budget 2026 : le Sénat durcit les conditions de l'AME et vote une baisse de 200 M€ (11/12/2025)",
+    "url": "https://www.publicsenat.fr/actualites/sante/budget-2026-le-senat-durcit-les-conditions-de-laide-medicale-detat-et-vote-une-baisse-de-ses-credits-de-200-millions",
+    "ouverte": true
+   },
+   {
+    "titre": "LCP — Le rapport Stefanini/Évin fait réagir à l'Assemblée (audition du 6/12/2023)",
+    "url": "https://lcp.fr/actualites/aide-medicale-d-etat-le-rapport-stefanini-evin-fait-reagir-a-l-assemblee-244989",
+    "ouverte": true
+   },
+   {
+    "titre": "Conseil constitutionnel — décision n° 2003-488 DC du 29 décembre 2003 (LFR 2003, art. 97, AME)",
+    "url": "https://www.conseil-constitutionnel.fr/decision/2003/2003488DC.htm",
+    "ouverte": true
+   }
+  ]
+ },
+ {
+  "id": "collectivites_fonctionnement",
+  "nom": "Collectivités — fonctionnement",
+  "bloc": "Collectivités",
+  "montant_mds": 235.3,
+  "annee_montant": "2025 (Cour des comptes, via iFRAP mars 2026 ; 230 Md€ en 2024). Le rapport de juillet 2026 ramène la hausse 2025 à +1,4 % (+3,2 Md€) sans publier le niveau dans la source ouverte.",
+  "source_montant": {
+   "titre": "iFRAP — tableau Cour des comptes : fonctionnement 230 → 235,3 Md€, investissement 69,5 → 70,8 Md€ (2024 → 2025), mars 2026",
+   "url": "https://www.ifrap.org/etat-et-collectivites/collectivites-locales-depuis-2019-les-recettes-ont-augmente-plus-que-linflation",
+   "ouverte": true
+  },
+  "crans": [
+   {
+    "niveau": 1,
+    "mesure": "Reconduire un prélèvement de type DILICO (740 M€ en 2026) sans restitution",
+    "gain_mds": 0.74,
+    "faisabilite": 1,
+    "arguments": [
+     "DILICO 2026 voté en LFI 2026 : 740 M€ (EPCI 250 M€, départements 140 M€, régions 350 M€), communes exemptées ; il était de 1 Md€ en 2025 ; le doublement à 2 Md€ prévu au PLF a été abandonné",
+     "Le Conseil constitutionnel a validé le dispositif (décision n° 2026-901 DC)",
+     "Cour des comptes (juill. 2026) : contribution nette des collectivités de 2,4 Md€ en CP en 2026"
+    ],
+    "obstacles": [
+     "Le DILICO est restitué à 90 % sur trois ans : le gain net annuel est ~0,07 Md€, le 0,74 Md€ n'existe que sans restitution",
+     "La décision 2026-901 DC s'appuie sur le plafond de 2 % des recettes réelles de fonctionnement et le reversement en trois ans (§164-165) ; supprimer le reversement fragiliserait l'analyse au regard des art. 72 et 72-2",
+     "La Cour des comptes juge le DILICO « inadapté » et propose de l'éteindre après les derniers reversements en 2029",
+     "Art. 72 et 72-2 de la Constitution (libre administration, ressources propres en part déterminante) ; dotations de type variables d'ajustement non considérées comme ressources propres par le Conseil"
+    ],
+    "sources": [
+     {
+      "titre": "Conseil constitutionnel — décision n° 2026-901 DC du 19 février 2026 (LFI 2026, DILICO art. 196)",
+      "url": "https://www.conseil-constitutionnel.fr/decision/2026/2026901DC.htm",
+      "ouverte": true
+     },
+     {
+      "titre": "Conseil constitutionnel — Constitution du 4 octobre 1958 en vigueur (art. 72 et 72-2)",
+      "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+      "ouverte": true
+     },
+     {
+      "titre": "Weka — La loi de finances 2026 enfin adoptée (DILICO 740 M€, reversé à 90 %)",
+      "url": "https://www.weka.fr/actualite/finances-locales/article/la-loi-de-finances-2026-enfin-adoptee-211064/",
+      "ouverte": true
+     },
+     {
+      "titre": "iFRAP — Cour des comptes, Les finances publiques locales : résultats 2025 et perspectives 2026 (juillet 2026)",
+      "url": "https://www.ifrap.org/etat-et-collectivites/finances-locales-de-meilleurs-resultats-2025-un-redressement-2026-confirmer",
+      "ouverte": true
+     },
+     {
+      "titre": "Banque des Territoires — Ponctions sur les budgets locaux : bilan et préconisations de la Cour des comptes (9/07/2026)",
+      "url": "https://www.banquedesterritoires.fr/ponctions-sur-les-budgets-locaux-le-bilan-et-les-preconisations-de-la-cour-des-comptes",
+      "ouverte": true
+     },
+     {
+      "titre": "Banque des Territoires — Validation quasi intégrale du budget 2026 par le Conseil constitutionnel (loi n° 2026-103)",
+      "url": "https://www.banquedesterritoires.fr/apres-sa-validation-quasi-integrale-par-le-conseil-constitutionnel-le-budget-2026-est-publie",
+      "ouverte": true
+     }
+    ],
+    "non_verifie": false,
+    "notes": "Gain = prélèvement brut 2026 (0,74 Md€) supposé non restitué ; le gain net reste faible. Ancienne mention « DILICO doublé à 2 Md€ en 2026 » corrigée (version PLF). DGF 2026 = 27,406 Md€ (art. 129 LFI 2026, stabilité globale) : un gel de la DGF ne dégage pas d'économie nominale."
+   },
+   {
+    "niveau": 2,
+    "mesure": "Contrats de maîtrise de la dépense de fonctionnement (plafond +1,2 %/an, type contrats de Cahors)",
+    "gain_mds": 2.4,
+    "faisabilite": 2,
+    "arguments": [
+     "Décision n° 2017-760 DC du 18 janv. 2018 : le Conseil a jugé conformes aux art. 72 et 72-2 les contrats de l'art. 29 de la LPFP 2018-2022 : plafond de référence 1,2 %, reprise de 75 % du dépassement (100 % pour les non-signataires), plafonnée à 2 % des recettes réelles de fonctionnement, après procédure contradictoire",
+     "Bilan 2018 annoncé par le gouvernement : les 322 collectivités concernées ont globalement respecté le plafond de 1,2 %",
+     "Cour des comptes (juill. 2026) : prévision 2026 de dépenses de fonctionnement à +2,2 % en valeur"
+    ],
+    "obstacles": [
+     "La Cour des comptes (juin 2018) jugeait le dispositif peu efficace : cible calculée sur l'ensemble des dépenses alors que les contrats couvrent moins de la moitié",
+     "Seules 229 des 322 collectivités concernées avaient signé (plus de 70 %) ; refus = notification d'un plafond et reprise à 100 %",
+     "Validité constitutionnelle conditionnée aux garanties relevées en 2017-760 DC (modulation, procédure contradictoire, plafond de 2 %)"
+    ],
+    "sources": [
+     {
+      "titre": "Conseil constitutionnel — décision n° 2017-760 DC du 18 janvier 2018 (LPFP 2018-2022, art. 29)",
+      "url": "https://www.conseil-constitutionnel.fr/decision/2018/2017760DC.htm",
+      "ouverte": true
+     },
+     {
+      "titre": "Conseil constitutionnel — Constitution du 4 octobre 1958 en vigueur (art. 72 et 72-2)",
+      "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+      "ouverte": true
+     },
+     {
+      "titre": "Acteurs publics — Pari réussi pour les contrats financiers État-collectivités (bilan 2018, 3/07/2019)",
+      "url": "https://acteurspublics.fr/articles/pari-reussi-pour-les-contrats-financiers-etat-collectivites/",
+      "ouverte": true
+     },
+     {
+      "titre": "Maire-info — La Cour des comptes juge le dispositif de contractualisation inefficace (28/06/2018)",
+      "url": "https://www.maire-info.com/finances-locales/situation-des-finances-publiques-la-cour-des-comptes-juge-le-dispositif-de-contractualisation-inefficace-article-22052",
+      "ouverte": true
+     },
+     {
+      "titre": "iFRAP — Cour des comptes, Les finances publiques locales : résultats 2025 et perspectives 2026 (juillet 2026)",
+      "url": "https://www.ifrap.org/etat-et-collectivites/finances-locales-de-meilleurs-resultats-2025-un-redressement-2026-confirmer",
+      "ouverte": true
+     }
+    ],
+    "non_verifie": true,
+    "notes": "Gain = (2,2 % − 1,2 %) × 235,3 Md€ ≈ 2,4 Md€/an, calcul de l'auteur (hypothèse : croissance spontanée +2,2 %, prévision Cour des comptes 2026). Les mentions de censure d'un taux (2021) et de décision du Conseil d'État (2023) de l'ancien texte retirées : sources non ouvertes. Bilan en euros des économies de Cahors non trouvé dans une source ouverte."
+   },
+   {
+    "niveau": 3,
+    "mesure": "Suppression d'un échelon territorial et fusion de communes",
+    "gain_mds": 10,
+    "faisabilite": 3,
+    "arguments": [
+     "En 2015 le secrétaire d'État à la réforme territoriale avait avancé ~10 Md€ d'économies à moyen terme (rapporté par la presse)"
+    ],
+    "obstacles": [
+     "Cour des comptes (24 sept. 2019) : trois ans après la fusion des régions, les économies de gestion annoncées ne sont « pas encore au rendez-vous » ; seules 3 régions ont réduit leurs dépenses de fonctionnement à périmètre constant",
+     "L'art. 72 de la Constitution cite communes, départements et régions : supprimer un échelon suppose une révision constitutionnelle"
+    ],
+    "sources": [
+     {
+      "titre": "Weka — Réforme territoriale : les économies de gestion ne sont « pas au rendez-vous » (Cour des comptes, 24/09/2019)",
+      "url": "https://www.weka.fr/actualite/administration/article/reforme-territoriale-les-economies-de-gestion-ne-sont-pas-au-rendez-vous-88000/",
+      "ouverte": true
+     },
+     {
+      "titre": "Conseil constitutionnel — Constitution du 4 octobre 1958 en vigueur (art. 72 et 72-2)",
+      "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+      "ouverte": true
+     }
+    ],
+    "non_verifie": true,
+    "notes": "10 Md€ = chiffre politique de 2015, jamais confirmé par un chiffrage officiel ; l'expérience des régions suggère un gain très inférieur. Valeur conservée comme borne haute, non vérifiée."
+   }
+  ],
+  "sources": [
+   {
+    "titre": "iFRAP — tableau Cour des comptes : fonctionnement 230 → 235,3 Md€, investissement 69,5 → 70,8 Md€ (2024 → 2025), mars 2026",
+    "url": "https://www.ifrap.org/etat-et-collectivites/collectivites-locales-depuis-2019-les-recettes-ont-augmente-plus-que-linflation",
+    "ouverte": true
+   },
+   {
+    "titre": "iFRAP — Cour des comptes, Les finances publiques locales : résultats 2025 et perspectives 2026 (juillet 2026)",
+    "url": "https://www.ifrap.org/etat-et-collectivites/finances-locales-de-meilleurs-resultats-2025-un-redressement-2026-confirmer",
+    "ouverte": true
+   },
+   {
+    "titre": "Banque des Territoires — Ponctions sur les budgets locaux : bilan et préconisations de la Cour des comptes (9/07/2026)",
+    "url": "https://www.banquedesterritoires.fr/ponctions-sur-les-budgets-locaux-le-bilan-et-les-preconisations-de-la-cour-des-comptes",
+    "ouverte": true
+   },
+   {
+    "titre": "Banque des Territoires — Comptes publics 2025 : hausse contenue des dépenses des collectivités",
+    "url": "https://www.banquedesterritoires.fr/comptes-publics-2025-hausse-contenue-des-depenses-des-collectivites",
+    "ouverte": true
+   },
+   {
+    "titre": "Conseil constitutionnel — décision n° 2026-901 DC du 19 février 2026 (LFI 2026, DILICO art. 196)",
+    "url": "https://www.conseil-constitutionnel.fr/decision/2026/2026901DC.htm",
+    "ouverte": true
+   },
+   {
+    "titre": "Conseil constitutionnel — décision n° 2017-760 DC du 18 janvier 2018 (LPFP 2018-2022, art. 29)",
+    "url": "https://www.conseil-constitutionnel.fr/decision/2018/2017760DC.htm",
+    "ouverte": true
+   },
+   {
+    "titre": "Conseil constitutionnel — Constitution du 4 octobre 1958 en vigueur (art. 72 et 72-2)",
+    "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+    "ouverte": true
+   },
+   {
+    "titre": "La Banque Postale — DOB 2026, commentaires LFI 2026 (art. 129 : DGF 27,406 Md€)",
+    "url": "https://www.labanquepostale.com/content/dam/lbp/documents/etudes/finances-locales/2026/dob-2026-lbp-commentaires.pdf",
+    "ouverte": true
+   },
+   {
+    "titre": "Maire-info — DILICO : montant de l'épargne forcée (1 Md€ en 2025, doublement envisagé en 2026 : superseded par la LFI)",
+    "url": "https://www.maire-info.com/budget-etat/dilico-montant-epargne-forcee-collectivites-va-etre-double-en-2026-article-29904",
+    "ouverte": true
+   }
+  ]
+ },
+ {
+  "id": "collectivites_investissement",
+  "nom": "Collectivités — investissement",
+  "bloc": "Collectivités",
+  "montant_mds": 70.8,
+  "annee_montant": "2025 (dépenses d'investissement des collectivités, Cour des comptes via iFRAP mars 2026 ; 69,5 Md€ en 2024). Ancienne valeur : ~61 Md€ en 2023 (OFGL, périmètre investissement public avec syndicats).",
+  "source_montant": {
+   "titre": "iFRAP — tableau Cour des comptes : fonctionnement 230 → 235,3 Md€, investissement 69,5 → 70,8 Md€ (2024 → 2025), mars 2026",
+   "url": "https://www.ifrap.org/etat-et-collectivites/collectivites-locales-depuis-2019-les-recettes-ont-augmente-plus-que-linflation",
+   "ouverte": true
+  },
+  "crans": [
+   {
+    "niveau": 1,
+    "mesure": "−10 % des dotations d'investissement de l'État (DETR, DSIL, DSID, DPV, FNADT ≈ 2 Md€ en 2026)",
+    "gain_mds": 0.2,
+    "faisabilite": 1,
+    "arguments": [
+     "Circulaire 2026 : dotations d'investissement ≈ 2 Md€ au total, Fonds vert ≈ 837 M€",
+     "Fusion DETR/DSIL/DPV dans le FIT abandonnée ; la baisse de 200 M€ qui accompagnait le FIT n'a pas été reprise dans la LFI 2026 (à corriger par rapport à la version précédente)",
+     "Aide aux maires bâtisseurs (100 M€) déjà supprimée en 2026"
+    ],
+    "obstacles": [
+     "Nombre de projets soutenus en baisse : plus de 23 300 en 2024 contre plus de 30 000 en 2023",
+     "Cible de transition écologique de 35 % (DSIL), 25 % (DETR) : arbitrages locaux déjà contraints"
+    ],
+    "sources": [
+     {
+      "titre": "Maire-info — Dotations de soutien : fin de l'aide aux maires bâtisseurs (circulaire 2026 : dotations d'investissement ~2 Md€, Fonds vert ~837 M€)",
+      "url": "https://www.maire-info.com/dotations-etat/dotations-soutien-gouvernement-acte-la-fin-aide-aux-maires-batisseurs-article-30666",
+      "ouverte": true
+     },
+     {
+      "titre": "Banque des Territoires / Localtis — Investissement local, le mandat devrait s'achever sur un bilan mitigé (OFGL, oct. 2024 : ~61 Md€ en 2023)",
+      "url": "https://www.banquedesterritoires.fr/investissement-local-le-mandat-devrait-sachever-sur-un-bilan-mitige",
+      "ouverte": true
+     }
+    ],
+    "non_verifie": false,
+    "notes": "Gain = 10 % × 2 Md€ (base officielle circulaire 2026 relayée par Maire-info). Correction : la baisse de 200 M€ de la DSIL en LFI 2026 n'est pas confirmée ; elle découlait du FIT, rejeté."
+   },
+   {
+    "niveau": 2,
+    "mesure": "−20 % des dotations d'investissement et du Fonds vert (≈ 2,84 Md€)",
+    "gain_mds": 0.57,
+    "faisabilite": 2,
+    "arguments": [
+     "Fonds vert : 2,5 Md€ en 2024, 1,15 Md€ en 2025, ~837 M€ en 2026 (Maire-info) : déjà en forte baisse",
+     "Investissement des collectivités attendu en recul de 3,1 % en 2026 (Cour des comptes, juill. 2026)"
+    ],
+    "obstacles": [
+     "Transition écologique : le Fonds vert est déjà divisé par trois depuis 2024",
+     "Autonomie financière des collectivités (art. 72-2) : les dotations d'investissement ne sont pas des ressources propres, pas d'obstacle constitutionnel direct identifié dans les sources ouvertes"
+    ],
+    "sources": [
+     {
+      "titre": "Maire-info — Dotations de soutien : fin de l'aide aux maires bâtisseurs (circulaire 2026 : dotations d'investissement ~2 Md€, Fonds vert ~837 M€)",
+      "url": "https://www.maire-info.com/dotations-etat/dotations-soutien-gouvernement-acte-la-fin-aide-aux-maires-batisseurs-article-30666",
+      "ouverte": true
+     },
+     {
+      "titre": "iFRAP — Cour des comptes, Les finances publiques locales : résultats 2025 et perspectives 2026 (juillet 2026)",
+      "url": "https://www.ifrap.org/etat-et-collectivites/finances-locales-de-meilleurs-resultats-2025-un-redressement-2026-confirmer",
+      "ouverte": true
+     },
+     {
+      "titre": "Conseil constitutionnel — Constitution du 4 octobre 1958 en vigueur (art. 72 et 72-2)",
+      "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+      "ouverte": true
+     }
+    ],
+    "non_verifie": false,
+    "notes": "Gain = 20 % × (2,0 + 0,837) Md€ ≈ 0,57 Md€, calcul sur base officielle."
+   },
+   {
+    "niveau": 3,
+    "mesure": "Moratoire d'un an sur les projets d'investissement non engagés",
+    "gain_mds": 5,
+    "faisabilite": 3,
+    "arguments": [
+     "Investissement local : +2,2 % en 2025 après +6,8 % en 2024 ; prévu en recul de 3,1 % en 2026 (Cour des comptes, juill. 2026)",
+     "Investissement 2025 : 70,8 Md€ (Cour des comptes via iFRAP)"
+    ],
+    "obstacles": [
+     "Les départements et régions ont déjà réduit leur investissement en 2025 ; le bloc communal porte l'essentiel",
+     "Emploi local et BTP (pas de chiffrage officiel)",
+     "Libre administration (art. 72) : l'État ne peut pas imposer directement un moratoire sur les budgets locaux sans loi ; non analysé par une décision citée"
+    ],
+    "sources": [
+     {
+      "titre": "iFRAP — tableau Cour des comptes : fonctionnement 230 → 235,3 Md€, investissement 69,5 → 70,8 Md€ (2024 → 2025), mars 2026",
+      "url": "https://www.ifrap.org/etat-et-collectivites/collectivites-locales-depuis-2019-les-recettes-ont-augmente-plus-que-linflation",
+      "ouverte": true
+     },
+     {
+      "titre": "iFRAP — Cour des comptes, Les finances publiques locales : résultats 2025 et perspectives 2026 (juillet 2026)",
+      "url": "https://www.ifrap.org/etat-et-collectivites/finances-locales-de-meilleurs-resultats-2025-un-redressement-2026-confirmer",
+      "ouverte": true
+     },
+     {
+      "titre": "Banque des Territoires — Comptes publics 2025 : hausse contenue des dépenses des collectivités",
+      "url": "https://www.banquedesterritoires.fr/comptes-publics-2025-hausse-contenue-des-depenses-des-collectivites",
+      "ouverte": true
+     },
+     {
+      "titre": "Conseil constitutionnel — Constitution du 4 octobre 1958 en vigueur (art. 72 et 72-2)",
+      "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+      "ouverte": true
+     }
+    ],
+    "non_verifie": true,
+    "notes": "Aucun chiffrage officiel. Ordre de grandeur : ~7 % de 70,8 Md€ ≈ 5 Md€ (projets non engagés, hypothèse de l'auteur)."
+   }
+  ],
+  "sources": [
+   {
+    "titre": "iFRAP — tableau Cour des comptes : fonctionnement 230 → 235,3 Md€, investissement 69,5 → 70,8 Md€ (2024 → 2025), mars 2026",
+    "url": "https://www.ifrap.org/etat-et-collectivites/collectivites-locales-depuis-2019-les-recettes-ont-augmente-plus-que-linflation",
+    "ouverte": true
+   },
+   {
+    "titre": "iFRAP — Cour des comptes, Les finances publiques locales : résultats 2025 et perspectives 2026 (juillet 2026)",
+    "url": "https://www.ifrap.org/etat-et-collectivites/finances-locales-de-meilleurs-resultats-2025-un-redressement-2026-confirmer",
+    "ouverte": true
+   },
+   {
+    "titre": "Maire-info — Dotations de soutien : fin de l'aide aux maires bâtisseurs (circulaire 2026 : dotations d'investissement ~2 Md€, Fonds vert ~837 M€)",
+    "url": "https://www.maire-info.com/dotations-etat/dotations-soutien-gouvernement-acte-la-fin-aide-aux-maires-batisseurs-article-30666",
+    "ouverte": true
+   },
+   {
+    "titre": "Banque des Territoires / Localtis — Investissement local, le mandat devrait s'achever sur un bilan mitigé (OFGL, oct. 2024 : ~61 Md€ en 2023)",
+    "url": "https://www.banquedesterritoires.fr/investissement-local-le-mandat-devrait-sachever-sur-un-bilan-mitige",
+    "ouverte": true
+   },
+   {
+    "titre": "Banque des Territoires — Comptes publics 2025 : hausse contenue des dépenses des collectivités",
+    "url": "https://www.banquedesterritoires.fr/comptes-publics-2025-hausse-contenue-des-depenses-des-collectivites",
+    "ouverte": true
+   },
+   {
+    "titre": "Conseil constitutionnel — Constitution du 4 octobre 1958 en vigueur (art. 72 et 72-2)",
+    "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+    "ouverte": true
+   }
+  ]
+ },
+ {
+  "id": "defense",
+  "nom": "Défense",
+  "bloc": "État",
+  "montant_mds": 57.1,
+  "annee_montant": "2026 (crédits de paiement, trajectoire actualisée, loi n° 2026-791 du 16 août 2026, art. 3)",
+  "source_montant": {
+   "titre": "Légifrance — Loi n° 2026-791 du 16 août 2026 actualisant la programmation militaire 2024-2030",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFSCTA000054694833",
+   "ouverte": true
+  },
+  "crans": [
+   {
+    "niveau": 1,
+    "mesure": "Annuler la moitié de la « surmarche » 2026 de la LPM actualisée",
+    "gain_mds": 1.7,
+    "faisabilite": 1,
+    "arguments": [
+     "Loi n° 2026-791, art. 3 : CP 2026 de 57,1 Md€ contre 53,7 Md€ dans la trajectoire initiale, soit +3,4 Md€ (la loi indique +3,5 en arrondi)",
+     "Hausse 2025 → 2026 : 50,5 → 57,1 Md€"
+    ],
+    "obstacles": [
+     "Loi votée : toute modification suppose une nouvelle loi",
+     "Art. 1 de la loi : effort de défense à 2,5 % du PIB au minimum en 2030, objectif de 3,5 % en 2035"
+    ],
+    "sources": [
+     {
+      "titre": "Légifrance — Loi n° 2026-791 du 16 août 2026 actualisant la programmation militaire 2024-2030",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFSCTA000054694833",
+      "ouverte": true
+     }
+    ],
+    "non_verifie": false,
+    "notes": "Gain = 0,5 × (57,1 − 53,7). Ancien cran « étalement de programmes, 1 Md€ » supprimé (aucun chiffrage officiel)."
+   },
+   {
+    "niveau": 2,
+    "mesure": "Revenir à la trajectoire initiale de la LPM 2024-2030 (annuler la surmarche de l'actualisation)",
+    "gain_mds": 3.4,
+    "faisabilite": 2,
+    "arguments": [
+     "Loi n° 2026-791, art. 3 : trajectoire initiale 400 Md€ → 436 Md€ sur 2024-2030 ; surplus de 3,5 Md€ en 2026 (57,1 − 53,7 = 3,4), 6,5 en 2027, 9,1 en 2028"
+    ],
+    "obstacles": [
+     "Loi n° 2026-791 : abandonner l'actualisation exige une nouvelle loi",
+     "Art. 1 : 2,5 % du PIB minimum en 2030 et 3,5 % en 2035 (objectif inscrit dans la loi)",
+     "Effectifs : cible de +800 ETP en 2026 et +2 150 en 2027 (art. 5)"
+    ],
+    "sources": [
+     {
+      "titre": "Légifrance — Loi n° 2026-791 du 16 août 2026 actualisant la programmation militaire 2024-2030",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFSCTA000054694833",
+      "ouverte": true
+     }
+    ],
+    "non_verifie": false,
+    "notes": "Gain 2026 = 57,1 − 53,7 = 3,4 Md€ (3,5 d'après la colonne « surplus » arrondie). L'ancien cran « gel de la marche LPM 1 an = 3,2 Md€ » mélangeait la marche initiale (50,5 → 53,7 = 3,2) et la surmarche."
+   },
+   {
+    "niveau": 3,
+    "mesure": "Geler les crédits de paiement au niveau de 2025 (50,5 Md€)",
+    "gain_mds": 6.6,
+    "faisabilite": 3,
+    "arguments": [
+     "Loi n° 2026-791 : CP 2025 = 50,5 Md€ ; CP 2026 = 57,1 Md€ ; l'écart est de 6,6 Md€ (contre « 6,7 » cité auparavant)"
+    ],
+    "obstacles": [
+     "Contradiction avec la LPM initiale elle-même (53,7 Md€ en 2026) et avec l'actualisation (loi n° 2026-791)",
+     "Art. 1 : 2,5 % du PIB en 2030, 3,5 % en 2035 : remise en cause des objectifs légaux, nouvelle loi nécessaire",
+     "Provision OPEX et missions intérieures de 1 450 M€ en 2026 (art. 4) à financer"
+    ],
+    "sources": [
+     {
+      "titre": "Légifrance — Loi n° 2026-791 du 16 août 2026 actualisant la programmation militaire 2024-2030",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFSCTA000054694833",
+      "ouverte": true
+     }
+    ],
+    "non_verifie": false,
+    "notes": "Gain 2026 = 57,1 − 50,5. Ancien cran « retour au niveau 2023 = 6 Md€ » remplacé : niveau 2023 non retrouvé dans les sources ouvertes."
+   }
+  ],
+  "sources": [
+   {
+    "titre": "Légifrance — Loi n° 2026-791 du 16 août 2026 actualisant la programmation militaire 2024-2030",
+    "url": "https://www.legifrance.gouv.fr/jorf/id/JORFSCTA000054694833",
+    "ouverte": true
+   }
+  ]
+ }
+]
