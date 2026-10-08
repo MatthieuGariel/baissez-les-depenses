@@ -6,7 +6,7 @@ Site : https://matthieugariel.github.io/baissez-les-depenses/
 
 | Scénario | Économies | % du déficit |
 |---|---|---|
-| Uniquement les mesures « faisables » (sans obstacle juridique ou politique fort) | 15,0 Md€ | 10 % |
+| Uniquement les mesures « faisables » (sans obstacle juridique ou politique fort) | 14,8 Md€ | 10 % |
 | Faisables + risquées | 60,8 Md€ | 40 % |
 | Tout au maximum, y compris mesures bloquées | 86,5 Md€ | 57 % |
 

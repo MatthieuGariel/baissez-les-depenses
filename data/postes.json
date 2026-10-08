@@ -660,26 +660,22 @@
       "crans": [
         {
           "niveau": 1,
-          "mesure": "Nouvelles évolutions des règles d'indemnisation négociées (ex. affiliation portée de 6 à 7 mois sur 24)",
-          "gain_mds": 0.6,
+          "mesure": "Durée d'affiliation minimale portée de 6 à 8 mois travaillés sur 24 pour ouvrir des droits",
+          "gain_mds": 0.45,
           "faisabilite": 1,
           "arguments": [
-            "PLFSS 2026 (annexe 8) : économies de 0,6 Md€ en 2026 attendues d'évolutions des règles du régime, 'selon l'aboutissement de futures négociations'",
-            "Ordre de grandeur cohérent : affiliation à 7 mois = ~0,4 Md€/an (scénario Unédic, mai 2024)"
+            "CAE (avril 2026), tableau 1 : 446 M€ d'économies par an (modèle comptable ; 511 M€ en modèle simulé)",
+            "Précédent : le décret de 2019 avait déjà porté l'affiliation de 4 à 6 mois",
+            "Mesure distincte des ruptures conventionnelles, déjà réformées par la loi du 2 juin 2026 et donc hors simulateur"
           ],
           "obstacles": [
-            "Gouvernance paritaire : le décret ne peut se substituer aux partenaires sociaux qu'en cas d'échec de la négociation (art. L. 5422-20 du code du travail, Conseil d'État, n° 434920 du 25/11/2020)",
-            "Les mesures par décret doivent rester compatibles avec le document de cadrage (même décision)"
+            "Le CAE juge ce durcissement peu efficace : pas d'effet emploi attendu, publics précaires pénalisés",
+            "Gouvernance paritaire : le décret ne peut se substituer aux partenaires sociaux qu'en cas d'échec de la négociation (art. L. 5422-20 du code du travail, Conseil d'État n° 434920 du 25/11/2020)"
           ],
           "sources": [
             {
-              "titre": "PLFSS 2026 — Annexe 8 (assurance chômage) : contracyclicité 3,8 Md€ en 2026 ; évolutions des règles 0,6 Md€",
-              "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1089899/file/PLFSS2026-Annexe8-20251011-230957-13-4.pdf",
-              "ouverte": true
-            },
-            {
-              "titre": "Public Sénat (21/05/2024) — scénarios Unédic : affiliation 7 mois 0,4 Md€/an ; 12 mois 2,3 Md€ ; durée 12 mois ~6 Md€",
-              "url": "https://www.publicsenat.fr/actualites/emploi/assurance-chomage-la-reforme-pourrait-affecter-jusqua-un-tiers-des-allocataires-selon-lunedic",
+              "titre": "Conseil d'analyse économique — Note n° 90 « Mesurer l'efficacité de l'assurance chômage » (14/04/2026), tableau 1 « Chiffrages budgétaires » p. 11",
+              "url": "https://cae-eco.fr/static/pdf/CAE090_Assurance-chomage_260414.pdf",
               "ouverte": true
             },
             {
@@ -689,11 +685,11 @@
             }
           ],
           "non_verifie": false,
-          "notes": "Montant officiel mais mesure précise non spécifiée dans l'annexe 8 ; la mesure 'affiliation à 7 mois' est un exemple, l'estimation Unédic de 0,4 Md€/an (relayée par la presse) étant inférieure."
+          "notes": "Chiffrage officiel CAE, modèle comptable. Remplace l'ancien cran (0,6 Md€ PLFSS 2026, mesure non spécifiée, recoupement probable avec les ruptures conventionnelles)."
         },
         {
           "niveau": 2,
-          "mesure": "Affiliation portée de 6 à 8 mois travaillés sur 24 + plafonnement de l'allocation mensuelle à 2 500 € (au lieu de 8 826 €)",
+          "mesure": "Cran 1 + plafonnement de l'allocation mensuelle à 2 500 € (au lieu de 8 826 €)",
           "gain_mds": 1.6,
           "faisabilite": 2,
           "arguments": [

@@ -1,6 +1,6 @@
 const CRANS = ['Aucune', 'Légère', 'Moyenne', 'Maximale'];
 const FAISA = { 1: 'Faisable', 2: 'Risqué', 3: 'Bloqué / très contestable' };
-const fmt = n => n.toLocaleString('fr-FR', { maximumFractionDigits: 1 });
+const fmt = n => n.toLocaleString('fr-FR', { maximumFractionDigits: Math.abs(n) < 1 ? 2 : 1 });
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
 let data, state = {};
