@@ -2,38 +2,99 @@
   "meta": {
     "titre": "Simulateur de baisse des dépenses publiques",
     "perimetre": "Administrations publiques (APU) : État, Sécurité sociale, collectivités, opérateurs",
-    "depenses_totales_mds": 1670,
-    "deficit_mds": 169,
-    "annee_reference": 2024,
-    "statut": "BROUILLON v0.1 — montants et chiffrages en ordre de grandeur, chaque ligne doit être vérifiée contre la source citée avant publication",
+    "depenses_totales_mds": 1714.1,
+    "deficit_mds": 152.5,
+    "annee_reference": 2025,
+    "statut": "v0.2 — montants des postes sourcés (1re passe automatique). Les crans marqués « non vérifié » n'ont pas de chiffrage officiel trouvé.",
     "faisabilite": {
       "1": "Faisable par loi ordinaire / LFI-LFSS, précédents existants",
       "2": "Faisable mais risque juridique ou politique fort (Conseil constitutionnel, partenaires sociaux, collectivités)",
       "3": "Très contestable : obstacle constitutionnel, droit UE ou engagement international probable"
     },
-    "licence": "CC BY 4.0"
+    "licence": "CC BY 4.0",
+    "sources_meta": []
   },
   "postes": [
     {
       "id": "retraites",
       "nom": "Retraites (base + complémentaires)",
       "bloc": "Sécurité sociale",
-      "montant_mds": 400,
-      "source_montant": { "titre": "COR — Rapport annuel 2025", "url": "https://www.cor-retraites.fr/" },
+      "montant_mds": 407,
+      "annee_montant": 2024,
+      "source_montant": {
+        "titre": "COR — Rapport annuel juin 2025 (chiffre 2024 cité par note Solidaires/Unirs, non vérifié dans le PDF)",
+        "url": "https://www.cor-retraites.fr/sites/default/files/2025-06/Synth%C3%A8se_Def_.pdf"
+      },
+      "verification": "Montant d'origine 400 corrigé à 406,9 Md€ (13,9 % du PIB, dépenses brutes 2024) d'après une note syndicale citant le COR. À confirmer dans le PDF COR.",
       "crans": [
-        { "niveau": 1, "mesure": "Sous-indexation de 0,8 pt des pensions au-dessus de 2 000 €/mois pendant 1 an", "gain_mds": 2, "faisabilite": 1,
-          "arguments": ["Précédent : sous-indexations 2018-2019 (loi de financement)", "Préserve les petites pensions"],
-          "obstacles": ["Rupture d'égalité si seuil mal justifié (contrôle CC)", "AGIRC-ARRCO hors champ direct de l'État"] },
-        { "niveau": 2, "mesure": "Gel de toutes les pensions de base pendant 1 an (année blanche)", "gain_mds": 6, "faisabilite": 1,
-          "arguments": ["Mesure envisagée PLFSS 2026", "Chiffrage ~6 Md€ par point d'inflation non revalorisé ×2"],
-          "obstacles": ["Perte de pouvoir d'achat retraités modestes", "Forte opposition politique"] },
-        { "niveau": 3, "mesure": "Gel 1 an + âge légal porté à 65 ans + alignement régimes spéciaux résiduels", "gain_mds": 18, "faisabilite": 2,
-          "arguments": ["Montée en charge progressive (gain plein ~2035)", "Moyenne UE âge légal ≈ 65 ans"],
-          "obstacles": ["Gain de court terme faible", "Effets reports vers chômage/invalidité (DREES)"] }
+        {
+          "niveau": 1,
+          "mesure": "Sous-indexation de 0,8 pt des pensions au-dessus de 2 000 €/mois pendant 1 an",
+          "gain_mds": 2,
+          "faisabilite": 1,
+          "arguments": [
+            "Précédent : sous-indexations 2018-2019 (à sourcer)",
+            "Préserve les petites pensions"
+          ],
+          "obstacles": [
+            "Rupture d'égalité si seuil mal justifié (contrôle Conseil constitutionnel, décision non identifiée)",
+            "AGIRC-ARRCO hors champ direct de l'État"
+          ],
+          "non_verifie": true,
+          "sources": []
+        },
+        {
+          "niveau": 2,
+          "mesure": "Gel des pensions de base 1 an (année blanche), épargnant les petites pensions selon le vote du Sénat",
+          "gain_mds": 2.5,
+          "faisabilite": 1,
+          "arguments": [
+            "Mesure du PLFSS 2026 (projet du gouvernement) : gel de l'ensemble des prestations sociales de 3,6 Md€ en 2026, dont 2,5 Md€ Sécurité sociale et 1,1 Md€ État. Gain propre aux pensions non isolé dans les sources."
+          ],
+          "obstacles": [
+            "Perte de pouvoir d'achat des retraités modestes",
+            "Forte opposition politique: l'Assemblée a supprimé la mesure (308 voix contre 99), le Sénat a réintroduit un blocage épargnant les pensions de moins de 1 400 €/mois brut"
+          ],
+          "non_verifie": true,
+          "verification": "Correction: 6 Md€ non étayé et formule '~6 Md€ par point d'inflation ×2' non sourcée. Le chiffrage officiel disponible est 3,6 Md€ pour l'ensemble des prestations gelées, dont part pensions non isolée. Issue finale (CMP, vote) non trouvée.",
+          "sources": [
+            {
+              "titre": "Public Sénat — PLFSS 2026 prévoit un gel des pensions de retraite",
+              "url": "https://www.publicsenat.fr/actualites/sante/securite-sociale-le-budget-plfss-2026-prevoit-un-gel-des-pensions-de-retraite-effort-depenses-de-sante"
+            },
+            {
+              "titre": "Moneyvox — Gel des retraites de base, année blanche du budget 2026",
+              "url": "https://www.moneyvox.fr/votre-argent/actualites/105519/retraite-carsat-caf-bareme-de-impot-combien-va-vous-couter-annee-blanche-du-budget-2026"
+            }
+          ]
+        },
+        {
+          "niveau": 3,
+          "mesure": "Gel 1 an + âge légal porté à 65 ans + alignement régimes spéciaux résiduels",
+          "gain_mds": 18,
+          "faisabilite": 2,
+          "arguments": [
+            "Montée en charge progressive (gain plein ~2035, à sourcer)",
+            "Moyenne UE âge légal ≈ 65 ans (à sourcer)"
+          ],
+          "obstacles": [
+            "Gain de court terme faible",
+            "Effets reports vers chômage/invalidité (DREES, à sourcer)"
+          ],
+          "non_verifie": true,
+          "verification": "Aucun chiffrage officiel trouvé pour le cran 3. Valeur conservée.",
+          "sources": []
+        }
       ],
       "sources": [
-        { "titre": "Conseil d'orientation des retraites", "url": "https://www.cor-retraites.fr/" },
-        { "titre": "Cour des comptes — situation financière des retraites", "url": "https://www.ccomptes.fr/" }
+        {
+          "titre": "COR — Synthèse rapport annuel 2025",
+          "url": "https://www.cor-retraites.fr/sites/default/files/2025-06/Synth%C3%A8se_Def_.pdf"
+        },
+        {
+          "titre": "Public Sénat — PLFSS 2026 gel des pensions",
+          "url": "https://www.publicsenat.fr/actualites/sante/securite-sociale-le-budget-plfss-2026-prevoit-un-gel-des-pensions-de-retraite-effort-depenses-de-sante"
+        }
       ]
     },
     {
@@ -41,250 +102,1459 @@
       "nom": "Assurance maladie — soins de ville",
       "bloc": "Sécurité sociale",
       "montant_mds": 110,
-      "source_montant": { "titre": "LFSS — annexe ONDAM", "url": "https://www.securite-sociale.fr/" },
+      "annee_montant": null,
+      "source_montant": {
+        "titre": "Montant non vérifié (valeur d'origine conservée)",
+        "url": "https://www.senat.fr/rap/a25-747/a25-7476.html"
+      },
+      "verification": "Montant non confirmé. Sénat (rapport 2025 sur la LFSS): sous-objectif soins de ville en hausse de 3,5 % en 2025, soit +0,5 Md€ par rapport à la LFSS, selon la Cour des comptes citée.",
       "crans": [
-        { "niveau": 1, "mesure": "Doublement des franchises médicales (plafond 100 €/an)", "gain_mds": 0.8, "faisabilite": 1,
-          "arguments": ["Fait par décret en 2024", "Plafond protège malades chroniques"], "obstacles": ["Renoncement aux soins chez les précaires"] },
-        { "niveau": 2, "mesure": "Franchises + baisse de prix médicaments/génériques + contrôle arrêts maladie", "gain_mds": 3.5, "faisabilite": 1,
-          "arguments": ["IJ en forte hausse depuis 2019 (Cnam)", "Rapports Charges et produits Cnam chiffrent ces leviers"], "obstacles": ["Négociation conventionnelle", "Pénuries de médicaments"] },
-        { "niveau": 3, "mesure": "Déremboursement des affections non ALD vers complémentaires + jour de carence d'ordre public", "gain_mds": 8, "faisabilite": 2,
-          "arguments": ["Transfert vers complémentaires (modèle débattu)"], "obstacles": ["Hausse des cotisations mutuelles : transfert, pas économie nette", "Préambule 1946 al. 11 (protection de la santé)"] }
+        {
+          "niveau": 1,
+          "mesure": "Doublement des franchises médicales (plafond 100 → 200 €/an) — ABANDONNÉ dans la LFSS 2026",
+          "gain_mds": 0.8,
+          "faisabilite": 1,
+          "arguments": [
+            "Mesure ciblée par le gouvernement (article 18 PLFSS 2026), retirée par la commission des affaires sociales en octobre 2025, abandonnée le 8 décembre 2025 faute de majorité"
+          ],
+          "obstacles": [
+            "Renoncement aux soins chez les précaires",
+            "Opposition des syndicats et professionnels"
+          ],
+          "non_verifie": true,
+          "verification": "Correction: la mesure n'était pas 'faite par décret en 2024'. Elle a été portée par le PLFSS 2026 puis abandonnée. Presse (juillet-août 2026) évoque une relance par décret (plafond 100 → 140 €, indexé): non confirmé par une source officielle. Gain 0,8 Md€ non chiffré officiellement.",
+          "sources": [
+            {
+              "titre": "Previssima — Doublement des franchises médicales en pleine crise politique",
+              "url": "https://www.previssima.fr/actualite/doublement-des-franchises-medicales-en-pleine-crise-politique-des-syndicats-sinsurgent.html"
+            }
+          ]
+        },
+        {
+          "niveau": 2,
+          "mesure": "Paquet Cnam: franchises + baisse de prix des médicaments/génériques + contrôle des arrêts maladie",
+          "gain_mds": 3.9,
+          "faisabilite": 1,
+          "arguments": [
+            "La Cnam propose 3,9 Md€ d'économies (produits de santé 1,3 Md€ en 2027)",
+            "Rapport Charges et produits de la Cnam"
+          ],
+          "obstacles": [
+            "Négociation conventionnelle",
+            "Pénuries de médicaments"
+          ],
+          "non_verifie": false,
+          "verification": "Correction: 3,5 Md€ remplacé par 3,9 Md€ (paquet Cnam global, pas seulement ce cran). Presse divergente sur l'année: Vidal parle de PLFSS 2027, LCP de 2026. Vérifier le rapport Charges et produits.",
+          "sources": [
+            {
+              "titre": "Vidal — PLFSS 2027: la Cnam propose 3,9 Md€ d'économies",
+              "url": "https://www.vidal.fr/actualites/38039-plfss-2027-la-cnam-propose-3-9-milliards-d-euros-d-economies.html"
+            },
+            {
+              "titre": "LCP — Dépenses de santé: l'Assurance maladie fait 60 propositions et envisage 3,9 Md€ d'économies",
+              "url": "https://lcp.fr/actualites/depenses-de-sante-l-assurance-maladie-fait-60-propositions-et-envisage-39-milliards-d"
+            }
+          ]
+        },
+        {
+          "niveau": 3,
+          "mesure": "Déremboursement des affections non ALD vers complémentaires + jour de carence d'ordre public",
+          "gain_mds": 8,
+          "faisabilite": 2,
+          "arguments": [
+            "Transfert vers complémentaires (modèle débattu)"
+          ],
+          "obstacles": [
+            "Hausse des cotisations mutuelles: transfert, pas économie nette",
+            "Préambule de 1946, alinéa 11 (protection de la santé): référence non sourcée dans la recherche"
+          ],
+          "non_verifie": true,
+          "verification": "Aucun chiffrage officiel trouvé. Valeur conservée.",
+          "sources": []
+        }
       ],
-      "sources": [{ "titre": "Cnam — Rapport Charges et produits", "url": "https://www.assurance-maladie.ameli.fr/" }]
+      "sources": [
+        {
+          "titre": "Sénat — rapport LFSS 2026 (ONDAM 2025, soins de ville)",
+          "url": "https://www.senat.fr/rap/a25-747/a25-7476.html"
+        },
+        {
+          "titre": "Vidal — PLFSS 2027 Cnam 3,9 Md€",
+          "url": "https://www.vidal.fr/actualites/38039-plfss-2027-la-cnam-propose-3-9-milliards-d-euros-d-economies.html"
+        }
+      ]
     },
     {
       "id": "ondam_hopital",
       "nom": "Assurance maladie — hôpital",
       "bloc": "Sécurité sociale",
       "montant_mds": 115,
-      "source_montant": { "titre": "LFSS — annexe ONDAM", "url": "https://www.securite-sociale.fr/" },
+      "annee_montant": null,
+      "source_montant": {
+        "titre": "Montant non vérifié (valeur d'origine conservée)",
+        "url": "https://www.senat.fr/rap/a25-747/a25-7476.html"
+      },
+      "verification": "Non confirmé. Un amendement de juin 2026 cite la Cour des comptes: 1,2 Md€ d'économies supplémentaires sur hôpitaux et médico-social en 2025, déficit des hôpitaux publics 2,5 Md€ (contre 2,6 Md€ en 2024). Source militante reprenant la Cour: à vérifier dans le rapport 'Sécurité sociale 2025' de la Cour.",
       "crans": [
-        { "niveau": 1, "mesure": "Achats groupés et réduction intérim médical", "gain_mds": 1, "faisabilite": 1, "arguments": ["Programme PHARE", "Loi Rist plafonnement intérim"], "obstacles": ["Tension effectifs"] },
-        { "niveau": 2, "mesure": "Virage ambulatoire accéléré + fermeture lits sous-occupés", "gain_mds": 3, "faisabilite": 2, "arguments": ["Cour des comptes : écarts d'efficience entre établissements"], "obstacles": ["Acceptabilité locale", "Déserts médicaux"] },
-        { "niveau": 3, "mesure": "Restructuration carte hospitalière (fusions, regroupement plateaux techniques)", "gain_mds": 6, "faisabilite": 2, "arguments": ["Gains à moyen terme"], "obstacles": ["Coûts de transition", "Forte opposition élus"] }
+        {
+          "niveau": 1,
+          "mesure": "Achats groupés et réduction intérim médical",
+          "gain_mds": 1,
+          "faisabilite": 1,
+          "arguments": [
+            "Programme PHARE (à sourcer)",
+            "Loi Rist plafonnement intérim (à sourcer)"
+          ],
+          "obstacles": [
+            "Tension effectifs"
+          ],
+          "non_verifie": true,
+          "verification": "Aucun chiffrage officiel trouvé. Valeur conservée.",
+          "sources": []
+        },
+        {
+          "niveau": 2,
+          "mesure": "Virage ambulatoire accéléré + fermeture lits sous-occupés",
+          "gain_mds": 3,
+          "faisabilite": 2,
+          "arguments": [
+            "Cour des comptes: écarts d'efficience entre établissements"
+          ],
+          "obstacles": [
+            "Acceptabilité locale",
+            "Déserts médicaux"
+          ],
+          "non_verifie": true,
+          "verification": "Aucun chiffrage officiel trouvé pour 3 Md€. Référence Cour non précisée.",
+          "sources": []
+        },
+        {
+          "niveau": 3,
+          "mesure": "Restructuration carte hospitalière (fusions, regroupement plateaux techniques)",
+          "gain_mds": 6,
+          "faisabilite": 2,
+          "arguments": [
+            "Gains à moyen terme"
+          ],
+          "obstacles": [
+            "Coûts de transition",
+            "Forte opposition élus"
+          ],
+          "non_verifie": true,
+          "verification": "Aucun chiffrage officiel trouvé. Valeur conservée.",
+          "sources": []
+        }
       ],
-      "sources": [{ "titre": "Cour des comptes — rapports sécurité sociale", "url": "https://www.ccomptes.fr/" }]
+      "sources": [
+        {
+          "titre": "Sénat — rapport LFSS 2026 (ONDAM 2025)",
+          "url": "https://www.senat.fr/rap/a25-747/a25-7476.html"
+        }
+      ]
     },
     {
       "id": "famille",
       "nom": "Prestations familiales",
       "bloc": "Sécurité sociale",
-      "montant_mds": 55,
-      "source_montant": { "titre": "Cnaf — chiffres clés", "url": "https://www.caf.fr/" },
+      "montant_mds": 65.8,
+      "annee_montant": 2024,
+      "source_montant": {
+        "titre": "DREES — Comptes de la protection sociale 2025, fiche 08 'Le risque famille' (tous régimes, 2024)",
+        "url": "https://drees.solidarites-sante.gouv.fr/sites/default/files/2026-03/CPS2025%20-%20Fiche%2008%20-%20Le%20risque%20famille.pdf"
+      },
+      "verification": "Montant d'origine 55 remplacé par 65,8 Md€ (prestations du risque famille tous régimes 2024, y compris garde d'enfants et ASE). Périmètre Caf seul 2024: 24,5 Md€ (Cnaf, étude n°7 2026) pour l'entretien et l'éducation de l'enfant. Le périmètre retenu doit être choisi explicitement.",
       "crans": [
-        { "niveau": 1, "mesure": "Gel 1 an des prestations", "gain_mds": 0.8, "faisabilite": 1, "arguments": ["Mécanique simple"], "obstacles": ["Pouvoir d'achat familles"] },
-        { "niveau": 2, "mesure": "Modulation renforcée des allocations familiales selon revenus", "gain_mds": 1.5, "faisabilite": 1, "arguments": ["Précédent modulation 2015"], "obstacles": ["Fin de l'universalité"] },
-        { "niveau": 3, "mesure": "Suppression allocations familiales au-dessus du 8e décile", "gain_mds": 3, "faisabilite": 2, "arguments": ["Ciblage"], "obstacles": ["Natalité en baisse", "Égalité devant charges publiques"] }
+        {
+          "niveau": 1,
+          "mesure": "Gel 1 an des prestations familiales",
+          "gain_mds": 0.8,
+          "faisabilite": 1,
+          "arguments": [
+            "Mécanique simple",
+            "Gel 2026 de l'ensemble des prestations sociales: 3,6 Md€ dont 2,5 Md€ Sécurité sociale (part famille non isolée)"
+          ],
+          "obstacles": [
+            "Pouvoir d'achat des familles"
+          ],
+          "non_verifie": true,
+          "verification": "Gain 0,8 Md€ non confirmé. Référence globale 2026 utilisée comme repère, part famille non isolée.",
+          "sources": [
+            {
+              "titre": "Public Sénat — PLFSS 2026 gel des prestations",
+              "url": "https://www.publicsenat.fr/actualites/sante/securite-sociale-le-budget-plfss-2026-prevoit-un-gel-des-pensions-de-retraite-effort-depenses-de-sante"
+            }
+          ]
+        },
+        {
+          "niveau": 2,
+          "mesure": "Modulation renforcée des allocations familiales selon les revenus",
+          "gain_mds": 1.5,
+          "faisabilite": 1,
+          "arguments": [
+            "Précédent: modulation introduite par la LFSS 2015 (article 85), validée par le Conseil constitutionnel en 2014 (numéro de décision non trouvé)"
+          ],
+          "obstacles": [
+            "Fin de l'universalité"
+          ],
+          "non_verifie": true,
+          "verification": "Constitutionnalité: le Conseil a jugé que la modulation selon les ressources n'est pas contraire au préambule de 1946. Chiffrage 1,5 Md€ non vérifié.",
+          "sources": []
+        },
+        {
+          "niveau": 3,
+          "mesure": "Suppression allocations familiales au-dessus du 8e décile",
+          "gain_mds": 3,
+          "faisabilite": 2,
+          "arguments": [
+            "Ciblage"
+          ],
+          "obstacles": [
+            "Natalité en baisse",
+            "Égalité devant les charges publiques"
+          ],
+          "non_verifie": true,
+          "verification": "Aucun chiffrage officiel trouvé. Valeur conservée.",
+          "sources": []
+        }
       ],
-      "sources": [{ "titre": "HCFEA", "url": "https://www.hcfea.fr/" }]
+      "sources": [
+        {
+          "titre": "DREES — Fiche 08 'Le risque famille' (CPS 2025)",
+          "url": "https://drees.solidarites-sante.gouv.fr/sites/default/files/2026-03/CPS2025%20-%20Fiche%2008%20-%20Le%20risque%20famille.pdf"
+        },
+        {
+          "titre": "Cnaf — Analyses statistiques n°7 (2026)",
+          "url": "https://caf.fr/sites/default/files/medias/cnaf/Nous_connaitre/Recherche_et_statistiques/Analyses_statistiques/CNAF_n%C2%B07_Analyses_statistiques.pdf"
+        }
+      ]
     },
     {
       "id": "chomage",
       "nom": "Assurance chômage",
       "bloc": "Sécurité sociale",
-      "montant_mds": 40,
-      "source_montant": { "titre": "Unédic — situation financière", "url": "https://www.unedic.org/" },
+      "montant_mds": 45.2,
+      "annee_montant": 2025,
+      "source_montant": {
+        "titre": "Unédic — Prévisions financières octobre 2025 (dépenses 2025 prévues: 45,2 Md€, toutes dépenses, pas seulement allocations)",
+        "url": "https://www.unedic.org/publications/previsions-financieres-de-l-unedic-octobre-2025"
+      },
+      "verification": "Montant d'origine 40 remplacé par 45,2 Md€ (dépenses totales du régime, prévision 2025). Allocations seules non isolées. Comptes définitifs 2025: déficit de 23 M€.",
       "crans": [
-        { "niveau": 1, "mesure": "Durée d'indemnisation réduite de 10 % (contracyclicité)", "gain_mds": 1, "faisabilite": 1, "arguments": ["Réforme 2023 déjà appliquée"], "obstacles": ["Gouvernance paritaire"] },
-        { "niveau": 2, "mesure": "Durée max 18 mois + durcissement ruptures conventionnelles", "gain_mds": 3, "faisabilite": 1, "arguments": ["Moyenne OCDE plus basse"], "obstacles": ["Seniors"] },
-        { "niveau": 3, "mesure": "Allocation dégressive pour tous + fin des droits rechargeables", "gain_mds": 5, "faisabilite": 2, "arguments": ["Incitation retour emploi (études Dares mitigées)"], "obstacles": ["Report vers RSA (départements)"] }
+        {
+          "niveau": 1,
+          "mesure": "Contracyclicité: durée d'indemnisation réduite de 25 % en période verte (et non 10 %)",
+          "gain_mds": 1,
+          "faisabilite": 1,
+          "arguments": [
+            "Réforme 2023 déjà appliquée: décret n°2023-33 du 26 janvier 2023, en vigueur le 1er février 2023, durée minimale 6 mois"
+          ],
+          "obstacles": [
+            "Gouvernance paritaire"
+          ],
+          "non_verifie": true,
+          "verification": "Correction: le mécanisme réel est une réduction de 25 %, pas 10 %. Gain 1 Md€ non chiffré officiellement (Dares: évaluation non trouvée; Unédic: premiers éléments de suivi déc. 2025).",
+          "sources": [
+            {
+              "titre": "Unédic — Réforme 2023: premiers effets de la contracyclicité",
+              "url": "https://www.unedic.org/publications/reforme-2023-premiers-effets-de-la-reforme-de-contracyclicite"
+            }
+          ]
+        },
+        {
+          "niveau": 2,
+          "mesure": "Durée maximale 18 mois + durcissement ruptures conventionnelles (projet de réforme mai 2024)",
+          "gain_mds": 3.6,
+          "faisabilite": 1,
+          "arguments": [
+            "Projet exécutif mai 2024: 3,6 Md€ d'économies pour l'ensemble des mesures"
+          ],
+          "obstacles": [
+            "Seniors",
+            "Retrait ou non-aboutissement du projet à vérifier"
+          ],
+          "non_verifie": true,
+          "verification": "Correction: 3 Md€ remplacé par 3,6 Md€, chiffre de l'ensemble du projet 2024, non isolé pour la seule durée de 18 mois. Référence 'moyenne OCDE' non sourcée.",
+          "sources": []
+        },
+        {
+          "niveau": 3,
+          "mesure": "Allocation dégressive pour tous + fin des droits rechargeables",
+          "gain_mds": 5,
+          "faisabilite": 2,
+          "arguments": [
+            "Incitation au retour à l'emploi (études Dares mitigées, à sourcer)"
+          ],
+          "obstacles": [
+            "Report vers RSA (départements)"
+          ],
+          "non_verifie": true,
+          "verification": "Aucun chiffrage officiel trouvé. Valeur conservée.",
+          "sources": []
+        }
       ],
-      "sources": [{ "titre": "Dares", "url": "https://dares.travail-emploi.gouv.fr/" }]
+      "sources": [
+        {
+          "titre": "Unédic — Prévisions financières octobre 2025",
+          "url": "https://www.unedic.org/publications/previsions-financieres-de-l-unedic-octobre-2025"
+        },
+        {
+          "titre": "Unédic — Réforme 2023 contracyclicité",
+          "url": "https://www.unedic.org/publications/reforme-2023-premiers-effets-de-la-reforme-de-contracyclicite"
+        }
+      ]
     },
     {
       "id": "aides_entreprises",
       "nom": "Aides aux entreprises (subventions, niches, allègements)",
       "bloc": "État / Sécu",
-      "montant_mds": 160,
-      "source_montant": { "titre": "Rapport Sénat 2025 — commission d'enquête aides publiques", "url": "https://www.senat.fr/" },
+      "montant_mds": 211,
+      "annee_montant": 2023,
+      "montant_verifie": true,
+      "source_montant": {
+        "titre": "Sénat — commission d'enquête aides publiques aux entreprises (rapport publié 8 juillet 2025), via Public Sénat",
+        "url": "https://www.publicsenat.fr/actualites/economie/un-cout-annuel-de-211-milliards-deuros-la-commission-denquete-du-senat-sur-les-aides-publiques-aux-entreprises-reclame-un-choc-de-transparence"
+      },
+      "note_correction": "Montant 160 remplacé par 211 Md€ (2023) : total de la commission (subventions État, Bpifrance, dépenses fiscales ~43 Md€, allègements sociaux ~80 Md€). Hors communes, régions (~2 Md€) et UE (jusqu'à 10 Md€). Autre estimation (Plan) : 187 Md€, méthode différente. Le chiffre 211 est une estimation de la commission faute de données administratives fines.",
       "crans": [
-        { "niveau": 1, "mesure": "Suppression des niches fiscales jugées inefficaces par l'IGF", "gain_mds": 3, "faisabilite": 1, "arguments": ["Revue des dépenses IGF"], "obstacles": ["Lobbying sectoriel"] },
-        { "niveau": 2, "mesure": "Recentrage CIR + resserrement allègements au-delà de 2,5 SMIC", "gain_mds": 8, "faisabilite": 1, "arguments": ["Rapport Bozio-Wasmer 2024"], "obstacles": ["Compétitivité, risque emploi qualifié"] },
-        { "niveau": 3, "mesure": "Réduction de 25 % de l'enveloppe globale", "gain_mds": 40, "faisabilite": 2, "arguments": ["Montant total jamais évalué globalement"], "obstacles": ["Hausse du coût du travail", "Aides d'État : cadre UE à respecter"] }
+        {
+          "niveau": 1,
+          "mesure": "Suppression des niches fiscales jugées inefficaces (dépenses fiscales)",
+          "gain_mds": 3,
+          "faisabilite": 1,
+          "arguments": [
+            "Dépenses fiscales ~43 Md€ en 2023, suivi et évaluation jugés défaillants (commission Sénat)",
+            "Recommandation Sénat : diviser par trois le nombre de dépenses fiscales et subventions aux entreprises d'ici 2030",
+            "Évaluation tous les trois ans des dépenses fiscales > 50 M€ (recommandation Sénat)"
+          ],
+          "obstacles": [
+            "Lobbying sectoriel"
+          ],
+          "sources": [
+            {
+              "titre": "Public Sénat — commission d'enquête aides publiques",
+              "url": "https://www.publicsenat.fr/actualites/economie/un-cout-annuel-de-211-milliards-deuros-la-commission-denquete-du-senat-sur-les-aides-publiques-aux-entreprises-reclame-un-choc-de-transparence"
+            }
+          ],
+          "non_verifie": true,
+          "note": "Le gain de 3 Md€ n'a pas de chiffrage officiel trouvé. L'argument 'Revue des dépenses IGF' n'a pas été retrouvé."
+        },
+        {
+          "niveau": 2,
+          "mesure": "Recentrage CIR + resserrement allègements au-delà de 2,5 SMIC",
+          "gain_mds": 8,
+          "faisabilite": 1,
+          "arguments": [
+            "Allègements de cotisations sociales ~80 Md€ en 2023 (commission Sénat)",
+            "CIR : réduire le périmètre de la sous-traitance éligible (recommandation Sénat)",
+            "Correction : le rapport Bozio-Wasmer (octobre 2024) est construit à coût budgétaire nul (hausse des cotisations patronales entre 1 et 1,2 SMIC, baisse entre 1,2 et 1,9 SMIC). Il ne chiffre pas une économie de 8 Md€. Argument retiré."
+          ],
+          "obstacles": [
+            "Compétitivité, risque emploi qualifié",
+            "Effets sur l'emploi des allègements contestés (estimations variables selon dispositifs)"
+          ],
+          "sources": [
+            {
+              "titre": "Public Sénat — commission d'enquête aides publiques",
+              "url": "https://www.publicsenat.fr/actualites/economie/un-cout-annuel-de-211-milliards-deuros-la-commission-denquete-du-senat-sur-les-aides-publiques-aux-entreprises-reclame-un-choc-de-transparence"
+            },
+            {
+              "titre": "Public Sénat — réforme des allègements de cotisations (Bozio)",
+              "url": "https://www.publicsenat.fr/actualites/economie/pour-2025-vous-aurez-des-destructions-demplois-estime-leconomiste-antoine-bozio-a-propos-de-la-reforme-des-allegements-de-cotisations-sociales"
+            }
+          ],
+          "non_verifie": true,
+          "note": "Gain 8 Md€ non verifie. Le PLFSS évoque plus de 5 Md€ d'économies sur les allègements (amendements parlementaires, non officiel)."
+        },
+        {
+          "niveau": 3,
+          "mesure": "Réduction de 25 % de l'enveloppe globale",
+          "gain_mds": 40,
+          "faisabilite": 2,
+          "arguments": [
+            "Enveloppe totale estimée à 211 Md€ (2023) par la commission Sénat : première estimation globale publiée",
+            "Mécaniquement, 25 % de 211 Md€ ≈ 53 Md€ (calcul non officiel, gain 40 conservé à défaut de chiffrage)"
+          ],
+          "obstacles": [
+            "Hausse du coût du travail",
+            "Aides d'État : cadre UE à respecter (art. 107 TFUE)"
+          ],
+          "sources": [
+            {
+              "titre": "Public Sénat — commission d'enquête aides publiques",
+              "url": "https://www.publicsenat.fr/actualites/economie/un-cout-annuel-de-211-milliards-deuros-la-commission-denquete-du-senat-sur-les-aides-publiques-aux-entreprises-reclame-un-choc-de-transparence"
+            }
+          ],
+          "non_verifie": true,
+          "note": "Gain non verifie. Calcul mécanique à 25 % de 211 Md€ ≈ 53 Md€, à arbitrer."
+        }
       ],
-      "sources": [{ "titre": "France Stratégie", "url": "https://www.strategie.gouv.fr/" }]
+      "sources": [
+        {
+          "titre": "Public Sénat — commission d'enquête aides publiques (211 Md€, 2023)",
+          "url": "https://www.publicsenat.fr/actualites/economie/un-cout-annuel-de-211-milliards-deuros-la-commission-denquete-du-senat-sur-les-aides-publiques-aux-entreprises-reclame-un-choc-de-transparence"
+        }
+      ]
     },
     {
       "id": "masse_salariale_etat",
       "nom": "Masse salariale de l'État",
       "bloc": "État",
       "montant_mds": 150,
-      "source_montant": { "titre": "PLF — jaune fonction publique", "url": "https://www.budget.gouv.fr/" },
+      "annee_montant": null,
+      "montant_verifie": false,
+      "source_montant": {
+        "titre": "PLF 2026 — jaune Rémunérations et effectifs (non ouvert, montant non trouvé)",
+        "url": "https://www.budget.gouv.fr/"
+      },
+      "note_correction": "Montant 150 Md€ non verifie : le jaune 'Rémunérations et effectifs' n'a pas pu être ouvert. Croissance masse salariale État 2026 : +1,7 % (après +1,5 % en 2025), selon Bercy.",
       "crans": [
-        { "niveau": 1, "mesure": "Gel du point d'indice 1 an", "gain_mds": 2, "faisabilite": 1, "arguments": ["Fait 2011-2016"], "obstacles": ["Attractivité"] },
-        { "niveau": 2, "mesure": "Gel du point + non-remplacement 1 départ sur 3 hors régaliens", "gain_mds": 4, "faisabilite": 1, "arguments": ["RGPP 2007-2012"], "obstacles": ["Qualité service public"] },
-        { "niveau": 3, "mesure": "Non-remplacement 1 sur 2 + 3 jours de carence", "gain_mds": 8, "faisabilite": 1, "arguments": ["Montée en charge"], "obstacles": ["Éducation, santé déjà en tension"] }
+        {
+          "niveau": 1,
+          "mesure": "Gel du point d'indice 1 an",
+          "gain_mds": 2,
+          "faisabilite": 1,
+          "arguments": [
+            "Pas de hausse du point d'indice en 2025 ni en 2026 (PLF 2026 : aucune mesure catégorielle hors GVT). Le gel est donc déjà en vigueur : gain 2 Md€ à reconsidérer comme économie 'nouvelle' ou 'prolongation'",
+            "Précédent gel 2011-2016"
+          ],
+          "obstacles": [
+            "Attractivité",
+            "Pouvoir d'achat des agents"
+          ],
+          "sources": [
+            {
+              "titre": "Acteurs publics — serrage de vis salaires fonction publique 2026",
+              "url": "https://acteurspublics.fr/articles/salaires-de-la-fonction-publique-le-serrage-de-vis-va-se-poursuivre-en-2026/"
+            }
+          ],
+          "non_verifie": true,
+          "note": "Gain 2 Md€ non verifie. Le gel 2026 est déjà acté : la mesure ne peut pas être présentée comme une économie additionnelle sans précision."
+        },
+        {
+          "niveau": 2,
+          "mesure": "Gel du point + non-remplacement 1 départ sur 3 hors régaliens",
+          "gain_mds": 4,
+          "faisabilite": 1,
+          "arguments": [
+            "Précédent RGPP 2007-2012"
+          ],
+          "obstacles": [
+            "Qualité service public"
+          ],
+          "sources": [],
+          "non_verifie": true,
+          "note": "Gain non verifie, aucune source chiffrée trouvée."
+        },
+        {
+          "niveau": 3,
+          "mesure": "Non-remplacement 1 sur 2 + 3 jours de carence",
+          "gain_mds": 8,
+          "faisabilite": 1,
+          "arguments": [
+            "Montée en charge"
+          ],
+          "obstacles": [
+            "Éducation, santé déjà en tension"
+          ],
+          "sources": [],
+          "non_verifie": true,
+          "note": "Gain non verifie, aucune source chiffrée trouvée. Le jour de carence seul est une mesure distincte (loi de financement, voir débat 2025)."
+        }
       ],
-      "sources": [{ "titre": "DGAFP", "url": "https://www.fonction-publique.gouv.fr/" }]
+      "sources": [
+        {
+          "titre": "Acteurs publics — serrage de vis salaires fonction publique 2026",
+          "url": "https://acteurspublics.fr/articles/salaires-de-la-fonction-publique-le-serrage-de-vis-va-se-poursuivre-en-2026/"
+        },
+        {
+          "titre": "Acteurs publics — reprise en main de la masse salariale",
+          "url": "https://acteurspublics.fr/articles/fonction-publique-le-gouvernement-met-en-avant-une-reprise-en-main-de-la-masse-salariale/"
+        }
+      ]
     },
     {
       "id": "education",
       "nom": "Enseignement scolaire (hors masse salariale)",
       "bloc": "État",
       "montant_mds": 15,
-      "source_montant": { "titre": "PLF mission Enseignement scolaire", "url": "https://www.budget.gouv.fr/" },
+      "annee_montant": 2026,
+      "montant_verifie": false,
+      "source_montant": {
+        "titre": "Sénat — rapport général PLF 2026, mission Enseignement scolaire",
+        "url": "https://www.senat.fr/rap/l25-139-313/l25-139-313_mono.html"
+      },
+      "note_correction": "Mission Enseignement scolaire PLF 2026 : 64,49 Md€ en CP hors pensions (64,46 Md€ AE), +0,26 % vs 2025 ; 89,6 Md€ avec pensions. Le montant 15 Md€ 'hors masse salariale' n'est pas vérifié (la part hors titre 2 n'a pas pu être extraite). Le Sénat note que le projet a été considéré comme rejeté à l'AN : vérifier le statut définitif de la loi.",
       "crans": [
-        { "niveau": 1, "mesure": "Adaptation des moyens à la baisse démographique", "gain_mds": 0.5, "faisabilite": 1, "arguments": ["−500 000 élèves d'ici 2030 (DEPP)"], "obstacles": ["Fermetures classes rurales"] },
-        { "niveau": 2, "mesure": "Rationalisation des options/filières lycée", "gain_mds": 1, "faisabilite": 1, "arguments": ["Cour des comptes"], "obstacles": ["Choix pédagogique"] },
-        { "niveau": 3, "mesure": "Fusion d'établissements et rectorats", "gain_mds": 2, "faisabilite": 2, "arguments": [], "obstacles": ["Transports scolaires (coût collectivités)"] }
+        {
+          "niveau": 1,
+          "mesure": "Adaptation des moyens à la baisse démographique",
+          "gain_mds": 0.5,
+          "faisabilite": 1,
+          "arguments": [
+            "−500 000 élèves d'ici 2030 (DEPP) : source DEPP à citer précisément, non ouverte"
+          ],
+          "obstacles": [
+            "Fermetures classes rurales"
+          ],
+          "sources": [],
+          "non_verifie": true
+        },
+        {
+          "niveau": 2,
+          "mesure": "Rationalisation des options/filières lycée",
+          "gain_mds": 1,
+          "faisabilite": 1,
+          "arguments": [
+            "Cour des comptes (référence non ouverte)"
+          ],
+          "obstacles": [
+            "Choix pédagogique"
+          ],
+          "sources": [],
+          "non_verifie": true
+        },
+        {
+          "niveau": 3,
+          "mesure": "Fusion d'établissements et rectorats",
+          "gain_mds": 2,
+          "faisabilite": 2,
+          "arguments": [],
+          "obstacles": [
+            "Transports scolaires (coût collectivités)"
+          ],
+          "sources": [],
+          "non_verifie": true
+        }
       ],
-      "sources": [{ "titre": "DEPP", "url": "https://www.education.gouv.fr/" }]
+      "sources": [
+        {
+          "titre": "Sénat — rapport général PLF 2026, mission Enseignement scolaire",
+          "url": "https://www.senat.fr/rap/l25-139-313/l25-139-313_mono.html"
+        }
+      ]
     },
     {
       "id": "operateurs",
       "nom": "Opérateurs et agences de l'État",
       "bloc": "État",
-      "montant_mds": 80,
-      "source_montant": { "titre": "PLF — jaune opérateurs", "url": "https://www.budget.gouv.fr/" },
+      "montant_mds": 81.1,
+      "annee_montant": 2024,
+      "montant_verifie": false,
+      "source_montant": {
+        "titre": "Amendement Assemblée nationale 1112 (charge budget État pour les opérateurs, 81,1 Md€ en 2024) — source parlementaire, non officielle",
+        "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/0324A/AN/1112.pdf"
+      },
+      "note_correction": "Montant 80 remplacé par 81,1 Md€ (2024) selon un amendement parlementaire. Autres chiffres trouvés : 77 Md€ (LF 2025, amendement 1878), 91 Md€ (PLR 2023, amendement CF2303). Estimations non officielles à consolider avec le jaune 'Opérateurs de l'État' et la Cour des comptes (non ouverts). Nombre d'entités : 103 agences et 434 opérateurs selon amendement 2233 (non daté).",
       "crans": [
-        { "niveau": 1, "mesure": "Baisse de 5 % des frais de fonctionnement", "gain_mds": 1, "faisabilite": 1, "arguments": ["Mutualisation fonctions support"], "obstacles": [] },
-        { "niveau": 2, "mesure": "Fusion/suppression ~1/3 des agences redondantes", "gain_mds": 3, "faisabilite": 1, "arguments": ["Rapport Sénat 2025 agences"], "obstacles": ["Gains réels souvent faibles (missions transférées)"] },
-        { "niveau": 3, "mesure": "Réintégration en administration centrale + suppression de missions", "gain_mds": 8, "faisabilite": 2, "arguments": [], "obstacles": ["Il faut supprimer des missions, pas juste des structures"] }
+        {
+          "niveau": 1,
+          "mesure": "Baisse de 5 % des frais de fonctionnement",
+          "gain_mds": 1,
+          "faisabilite": 1,
+          "arguments": [
+            "Mutualisation fonctions support"
+          ],
+          "obstacles": [],
+          "sources": [],
+          "non_verifie": true
+        },
+        {
+          "niveau": 2,
+          "mesure": "Fusion/suppression ~1/3 des agences redondantes",
+          "gain_mds": 3,
+          "faisabilite": 1,
+          "arguments": [
+            "Annonce de la ministre Amélie de Montchalin (PLF 2026) : économie attendue de 2 à 3 Md€ ; chiffrage non justifié publiquement (rapporté par Solidaires)",
+            "Correction : la référence 'Rapport Sénat 2025 agences' n'a pas pu être lue (PDF non exploitable)"
+          ],
+          "obstacles": [
+            "Gains réels souvent faibles (missions transférées)"
+          ],
+          "sources": [
+            {
+              "titre": "Solidaires — opérateurs publics (annonce 2 à 3 Md€)",
+              "url": "https://nouveau.solidaires.org/documents/9910/op%C3%A9rateur_publics.pdf"
+            }
+          ],
+          "non_verifie": true,
+          "note": "Gain 3 Md€ cohérent avec l'annonce gouvernementale (2 à 3 Md€), mais chiffrage non officiel."
+        },
+        {
+          "niveau": 3,
+          "mesure": "Réintégration en administration centrale + suppression de missions",
+          "gain_mds": 8,
+          "faisabilite": 2,
+          "arguments": [],
+          "obstacles": [
+            "Il faut supprimer des missions, pas juste des structures"
+          ],
+          "sources": [],
+          "non_verifie": true
+        }
       ],
-      "sources": [{ "titre": "Cour des comptes", "url": "https://www.ccomptes.fr/" }]
+      "sources": [
+        {
+          "titre": "Amendement AN 1112 — charge opérateurs 81,1 Md€ (2024)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/0324A/AN/1112.pdf"
+        },
+        {
+          "titre": "Solidaires — opérateurs publics",
+          "url": "https://nouveau.solidaires.org/documents/9910/op%C3%A9rateur_publics.pdf"
+        }
+      ]
     },
     {
       "id": "logement",
       "nom": "Aides au logement (APL, niches)",
       "bloc": "État",
-      "montant_mds": 38,
-      "source_montant": { "titre": "Compte du logement", "url": "https://www.statistiques.developpement-durable.gouv.fr/" },
+      "montant_mds": 43.1,
+      "annee_montant": 2024,
+      "montant_verifie": true,
+      "source_montant": {
+        "titre": "SDES — Rapport du compte du logement 2024 (aides au logement 43,1 Md€ ; aides personnelles 15,9 Md€)",
+        "url": "https://www.statistiques.developpement-durable.gouv.fr/rapport-du-compte-du-logement-2024"
+      },
+      "note_correction": "Montant 38 remplacé par 43,1 Md€ (SDES 2024, total incluant réductions d'impôt). Les seules aides personnelles (APL/ALS/ALF) représentent 15,9 Md€ (SDES) ; DREES fiche risque logement CPS2025 : prestations 16,1 Md€ en 2024 (APL 7,1, ALS 5,5, ALF 3,3). Si le poste doit se limiter aux APL, retenir ~16 Md€.",
       "crans": [
-        { "niveau": 1, "mesure": "Gel des APL 1 an", "gain_mds": 0.3, "faisabilite": 1, "arguments": [], "obstacles": ["Ménages modestes"] },
-        { "niveau": 2, "mesure": "Fin des niches investissement locatif + recentrage PTZ", "gain_mds": 2, "faisabilite": 1, "arguments": ["Pinel jugé inefficient (IGF)"], "obstacles": ["Construction en crise"] },
-        { "niveau": 3, "mesure": "Prise en compte du patrimoine dans les APL + baisse forfait", "gain_mds": 4, "faisabilite": 1, "arguments": [], "obstacles": ["Étudiants"] }
+        {
+          "niveau": 1,
+          "mesure": "Gel des APL 1 an",
+          "gain_mds": 0.3,
+          "faisabilite": 1,
+          "arguments": [
+            "Base APL ~16 Md€ (DREES CPS2025) : un gel d'un an rapporte moins que l'inflation annuelle sur ce montant (ordre de grandeur, non chiffré officiellement)"
+          ],
+          "obstacles": [
+            "Ménages modestes"
+          ],
+          "sources": [
+            {
+              "titre": "DREES — CPS2025 fiche 10 Le risque logement",
+              "url": "https://drees.solidarites-sante.gouv.fr/sites/default/files/2026-03/CPS2025%20-%20Fiche%2010%20-%20Le%20risque%20logement.pdf"
+            }
+          ],
+          "non_verifie": true
+        },
+        {
+          "niveau": 2,
+          "mesure": "Fin des niches investissement locatif + recentrage PTZ",
+          "gain_mds": 2,
+          "faisabilite": 1,
+          "arguments": [
+            "Pinel jugé inefficient (IGF) : source IGF non retrouvée, à citer si confirmée"
+          ],
+          "obstacles": [
+            "Construction en crise"
+          ],
+          "sources": [],
+          "non_verifie": true
+        },
+        {
+          "niveau": 3,
+          "mesure": "Prise en compte du patrimoine dans les APL + baisse forfait",
+          "gain_mds": 4,
+          "faisabilite": 1,
+          "arguments": [],
+          "obstacles": [
+            "Étudiants"
+          ],
+          "sources": [],
+          "non_verifie": true
+        }
       ],
-      "sources": [{ "titre": "IGF — revue de dépenses", "url": "https://www.igf.finances.gouv.fr/" }]
+      "sources": [
+        {
+          "titre": "SDES — Rapport du compte du logement 2024",
+          "url": "https://www.statistiques.developpement-durable.gouv.fr/rapport-du-compte-du-logement-2024"
+        },
+        {
+          "titre": "DREES — CPS2025 fiche 10 Le risque logement",
+          "url": "https://drees.solidarites-sante.gouv.fr/sites/default/files/2026-03/CPS2025%20-%20Fiche%2010%20-%20Le%20risque%20logement.pdf"
+        }
+      ]
     },
     {
       "id": "aide_developpement",
       "nom": "Aide publique au développement",
       "bloc": "État",
-      "montant_mds": 6,
-      "source_montant": { "titre": "PLF mission APD", "url": "https://www.budget.gouv.fr/" },
+      "montant_mds": 3.67,
+      "annee_montant": "2026 (crédits de paiement, PLF 2026 déposé ; montant final LFI 2026 non vérifié)",
+      "source_montant": {
+        "titre": "Sénat — commission des finances, PLF 2026, mission APD (synthèse)",
+        "url": "https://www.senat.fr/rap/l25-139-34/l25-139-34-syn.pdf"
+      },
       "crans": [
-        { "niveau": 1, "mesure": "−15 %", "gain_mds": 0.8, "faisabilite": 1, "arguments": ["Déjà baissée en 2025"], "obstacles": [] },
-        { "niveau": 2, "mesure": "−30 %", "gain_mds": 1.8, "faisabilite": 1, "arguments": [], "obstacles": ["Objectif loi 2021 (0,7 % RNB) non contraignant"] },
-        { "niveau": 3, "mesure": "−50 %", "gain_mds": 3, "faisabilite": 2, "arguments": [], "obstacles": ["Engagements internationaux, influence"] }
+        {
+          "niveau": 1,
+          "mesure": "−15 % des crédits de la mission APD",
+          "gain_mds": 0.55,
+          "faisabilite": 1,
+          "arguments": [
+            "Déjà en baisse : 3,67 Md€ CP en PLF 2026 contre 4,37 Md€ en LFI 2025 (−16 %)",
+            "Baisses cumulées 2024-2025 : −28 % en AE et −35 % en CP à périmètre constant (Sénat)"
+          ],
+          "obstacles": [
+            "APD française déjà en recul : 0,42 % du RNB en 2025 (données préliminaires OCDE)"
+          ],
+          "sources": [
+            {
+              "titre": "Sénat — PLF 2026, mission APD (synthèse, PDF non lisible, chiffres repris des résultats de recherche)",
+              "url": "https://www.senat.fr/rap/l25-139-34/l25-139-34-syn.pdf"
+            },
+            {
+              "titre": "OCDE — Profils de coopération au développement, France",
+              "url": "https://www.oecd.org/fr/publications/2025/06/development-co-operation-profiles_02ffa45c/france_c200dc7f.html"
+            }
+          ],
+          "non_verifie": false,
+          "note": "Gain = 15 % x 3,67 Md€ (calcul sur base PLF 2026). Montant initial 0,8 corrigé."
+        },
+        {
+          "niveau": 2,
+          "mesure": "−30 % des crédits de la mission APD",
+          "gain_mds": 1.1,
+          "faisabilite": 1,
+          "arguments": [
+            "Calcul : 30 % x 3,67 Md€. Montant initial 1,8 corrigé"
+          ],
+          "obstacles": [
+            "Loi n° 2021-1031 du 4 août 2021 : trajectoire indicative (0,70 % RNB en 2025), le texte dit « s'efforcera » : non contraignant",
+            "Recul de l'APD française 3e année consécutive (OCDE)"
+          ],
+          "sources": [
+            {
+              "titre": "OCDE — Profils de coopération au développement, France",
+              "url": "https://www.oecd.org/fr/publications/2025/06/development-co-operation-profiles_02ffa45c/france_c200dc7f.html"
+            },
+            {
+              "titre": "OCDE : l'aide internationale en fort recul en 2025 (résumé des données préliminaires)",
+              "url": "https://fr.hespress.com/469028-ocde-laide-internationale-en-fort-recul-en-2025.html"
+            }
+          ],
+          "non_verifie": false,
+          "note": "Gain = 30 % x 3,67 Md€."
+        },
+        {
+          "niveau": 3,
+          "mesure": "−50 % des crédits de la mission APD",
+          "gain_mds": 1.84,
+          "faisabilite": 2,
+          "arguments": [
+            "Calcul : 50 % x 3,67 Md€. Montant initial 3 corrigé"
+          ],
+          "obstacles": [
+            "Engagements internationaux : cible 0,7 % RNB d'ici 2030, que l'OCDE juge compromise par les coupes 2025",
+            "Influence diplomatique et sécurité (non sourcé)"
+          ],
+          "sources": [
+            {
+              "titre": "OCDE — Profils de coopération au développement, France",
+              "url": "https://www.oecd.org/fr/publications/2025/06/development-co-operation-profiles_02ffa45c/france_c200dc7f.html"
+            }
+          ],
+          "non_verifie": false,
+          "note": "Gain = 50 % x 3,67 Md€."
+        }
       ],
-      "sources": [{ "titre": "OCDE CAD", "url": "https://www.oecd.org/" }]
+      "sources": [
+        {
+          "titre": "Sénat — PLF 2026, mission APD",
+          "url": "https://www.senat.fr/rap/l25-139-34/l25-139-34-syn.pdf"
+        },
+        {
+          "titre": "OCDE — Profils de coopération au développement, France",
+          "url": "https://www.oecd.org/fr/publications/2025/06/development-co-operation-profiles_02ffa45c/france_c200dc7f.html"
+        }
+      ]
     },
     {
       "id": "ame",
       "nom": "Aide médicale d'État",
       "bloc": "État",
-      "montant_mds": 1.3,
-      "source_montant": { "titre": "PLF mission Santé", "url": "https://www.budget.gouv.fr/" },
+      "montant_mds": 1.34,
+      "annee_montant": "2025 (dépense réelle AME de droit commun ; crédits PLF 2026 = 1,21 Md€)",
+      "source_montant": {
+        "titre": "Sénat — avis PLF 2026 mission Santé (AME), extrait de recherche (PDF non lisible)",
+        "url": "https://www.senat.fr/fileadmin/cru-1762483659/Commissions/Finances/2025-2026/PLF_2026/NP/Sante_PLF_2026_NP.pdf"
+      },
       "crans": [
-        { "niveau": 1, "mesure": "Panier de soins restreint (rapport Evin-Stefanini)", "gain_mds": 0.1, "faisabilite": 1, "arguments": ["Rapport 2023"], "obstacles": [] },
-        { "niveau": 2, "mesure": "Transformation en aide médicale d'urgence", "gain_mds": 0.4, "faisabilite": 2, "arguments": [], "obstacles": ["Report vers urgences hospitalières", "Santé publique"] },
-        { "niveau": 3, "mesure": "Suppression", "gain_mds": 0.8, "faisabilite": 3, "arguments": [], "obstacles": ["CEDH art. 3, Préambule 1946", "Gain net incertain"] }
+        {
+          "niveau": 1,
+          "mesure": "Panier de soins restreint (rapport Evin-Stefanini)",
+          "gain_mds": 0.1,
+          "faisabilite": 1,
+          "arguments": [
+            "Rapport Evin-Stefanini 2023 : pas de preuve d'effet d'attractivité du système de soins",
+            "Réforme du panier possible par simples arrêtés (retrait de quelques lignes), selon la ministre de la Santé"
+          ],
+          "obstacles": [
+            "Impact budgétaire limité, chiffrage du rapport non retrouvé"
+          ],
+          "sources": [
+            {
+              "titre": "Le Quotidien du Médecin — débat AME (Retailleau, rapport Evin-Stefanini)",
+              "url": "https://cardiologie.lequotidiendumedecin.fr/sante-societe/politique-de-sante/entre-approximation-et-confusion-retailleau-relance-le-debat-de-lame"
+            }
+          ],
+          "non_verifie": true,
+          "note": "Chiffrage 0,1 Md€ non retrouvé dans les sources. Valeur conservée."
+        },
+        {
+          "niveau": 2,
+          "mesure": "Transformation en aide médicale d'urgence",
+          "gain_mds": 0.4,
+          "faisabilite": 2,
+          "arguments": [],
+          "obstacles": [
+            "Report vers urgences hospitalières",
+            "Santé publique (risque épidémique)"
+          ],
+          "sources": [
+            {
+              "titre": "Public Sénat — Budget 2026 : le Sénat durcit les conditions de l'AME",
+              "url": "https://www.publicsenat.fr/actualites/sante/budget-2026-le-senat-durcit-les-conditions-de-laide-medicale-detat-et-vote-une-baisse-de-ses-credits-de-200-millions"
+            }
+          ],
+          "non_verifie": true,
+          "note": "Aucun chiffrage officiel trouvé. Valeur conservée."
+        },
+        {
+          "niveau": 3,
+          "mesure": "Suppression",
+          "gain_mds": 0.8,
+          "faisabilite": 3,
+          "arguments": [],
+          "obstacles": [
+            "Préambule de la Constitution de 1946, alinéa 11 (protection de la santé)",
+            "CEDH article 3 (traitements inhumains ou dégradants), non sourcé dans cette vérification",
+            "Gain net incertain : report de soins vers l'hôpital"
+          ],
+          "sources": [
+            {
+              "titre": "Public Sénat — Budget 2026 : AME (crédits 2026 et dépassements)",
+              "url": "https://www.publicsenat.fr/actualites/sante/budget-2026-le-senat-durcit-les-conditions-de-laide-medicale-detat-et-vote-une-baisse-de-ses-credits-de-200-millions"
+            }
+          ],
+          "non_verifie": true,
+          "note": "Gain 0,8 Md€ = majorant non chiffré officiellement, proche de la dépense réelle 2025 (1,34 Md€)."
+        }
       ],
-      "sources": [{ "titre": "Rapport Evin-Stefanini 2023", "url": "https://www.vie-publique.fr/" }]
+      "sources": [
+        {
+          "titre": "Public Sénat — Budget 2026 : AME (crédits 1,21 Md€, baisse votée de 200 M€, article du 11/12/2025)",
+          "url": "https://www.publicsenat.fr/actualites/sante/budget-2026-le-senat-durcit-les-conditions-de-laide-medicale-detat-et-vote-une-baisse-de-ses-credits-de-200-millions"
+        },
+        {
+          "titre": "Sénat — avis PLF 2026 Santé (PDF non lisible, chiffre 1,341 Md€ repris d'un extrait de recherche)",
+          "url": "https://www.senat.fr/fileadmin/cru-1762483659/Commissions/Finances/2025-2026/PLF_2026/NP/Sante_PLF_2026_NP.pdf"
+        }
+      ]
     },
     {
       "id": "collectivites_fonctionnement",
       "nom": "Collectivités — fonctionnement",
       "bloc": "Collectivités",
-      "montant_mds": 200,
-      "source_montant": { "titre": "OFGL — finances locales", "url": "https://www.collectivites-locales.gouv.fr/" },
+      "montant_mds": 235.3,
+      "annee_montant": "2025 (provisoire, Cour des comptes fév. 2026 ; 230 Md€ en 2024)",
+      "source_montant": {
+        "titre": "Cour des comptes (rapport finances publiques locales, fév. 2026), restitution iFRAP",
+        "url": "https://www.ifrap.org/etat-et-collectivites/collectivites-locales-depuis-2019-les-recettes-ont-augmente-plus-que-linflation"
+      },
       "crans": [
-        { "niveau": 1, "mesure": "Gel de la DGF", "gain_mds": 1, "faisabilite": 1, "arguments": [], "obstacles": ["Libre administration (art. 72 C)"] },
-        { "niveau": 2, "mesure": "Contrats de maîtrise de dépense (+1,2 %/an max)", "gain_mds": 5, "faisabilite": 1, "arguments": ["Contrats de Cahors 2018 validés par CC"], "obstacles": ["Adhésion"] },
-        { "niveau": 3, "mesure": "Suppression d'un échelon + fusion communes", "gain_mds": 10, "faisabilite": 3, "arguments": ["Doublons de compétences"], "obstacles": ["Révision constitutionnelle (départements cités art. 72)", "Gains historiquement décevants (fusion régions 2015)"] }
+        {
+          "niveau": 1,
+          "mesure": "Gel de la DGF",
+          "gain_mds": 1,
+          "faisabilite": 1,
+          "arguments": [
+            "Dépenses de fonctionnement 2025 : +2,3 % seulement (Cour des comptes), donc modération en cours",
+            "DILICO (épargne forcée) : environ 1 Md€ en 2025, doublé à 2 Md€ en 2026 : mesure déjà en vigueur, à ne pas compter deux fois"
+          ],
+          "obstacles": [
+            "Libre administration des collectivités (art. 72 C)",
+            "Gain réel d'un gel = écart à l'inflation, pas le montant de la DGF"
+          ],
+          "sources": [
+            {
+              "titre": "Maire-info — DILICO doublé à 2 Md€ en 2026",
+              "url": "https://www.maire-info.com/budget-etat/dilico-montant-epargne-forcee-collectivites-va-etre-double-en-2026-article-29904"
+            },
+            {
+              "titre": "Banque des Territoires — Comptes publics 2025 : hausse contenue des dépenses des collectivités",
+              "url": "https://www.banquedesterritoires.fr/comptes-publics-2025-hausse-contenue-des-depenses-des-collectivites"
+            }
+          ],
+          "non_verifie": true,
+          "note": "Chiffrage 1 Md€ non vérifié. Valeur conservée."
+        },
+        {
+          "niveau": 2,
+          "mesure": "Contrats de maîtrise de dépense (+1,2 %/an max)",
+          "gain_mds": 5,
+          "faisabilite": 1,
+          "arguments": [
+            "Contrats de Cahors (art. 29 LPFP 2018-2022) validés par le Conseil constitutionnel, décision n° 2017-760 DC du 18 janvier 2018",
+            "Reprise financière de 75 % de l'écart (100 % si refus de signer), plafonnée à 2 % des recettes réelles de fonctionnement"
+          ],
+          "obstacles": [
+            "Adhésion des collectivités : refus = reprise à 100 %",
+            "Application contestée : censure d'un taux appliqué à un département refusant de signer (2021), interprétation défavorable validée par le Conseil d'État (2023)"
+          ],
+          "sources": [
+            {
+              "titre": "Landot & Associés — Loi de programmation des finances publiques 2018-2022 : libre administration validée (CC, janv. 2018)",
+              "url": "https://blog.landot-avocats.net/2018/01/18/la-loi-de-programmation-des-finances-publiques-2018-2022-ne-meconnait-pas-le-principe-de-libre-administration-des-collectivites-locales-vient-de-juger-le-conseil-constitutionnel/"
+            },
+            {
+              "titre": "Landot & Associés — Contrats de Cahors : le Conseil d'État valide une interprétation défavorable (2023)",
+              "url": "https://blog.landot-avocats.net/2023/06/29/contrats-de-cahors-le-conseil-detat-valide-une-interpretation-defavorable-a-nombre-de-collectivites/"
+            }
+          ],
+          "non_verifie": true,
+          "note": "Gain 5 Md€ non chiffré officiellement. Valeur conservée. Le plafond d'évolution (+1,2 %) reprend le dispositif de Cahors."
+        },
+        {
+          "niveau": 3,
+          "mesure": "Suppression d'un échelon + fusion communes",
+          "gain_mds": 10,
+          "faisabilite": 3,
+          "arguments": [
+            "Doublons de compétences entre échelons (argument du débat public, non chiffré ici)"
+          ],
+          "obstacles": [
+            "Révision de la Constitution : l'art. 72 C mentionne les départements",
+            "Gains historiquement décevants (fusion des régions 2015) : à sourcer"
+          ],
+          "sources": [],
+          "non_verifie": true,
+          "note": "Gain 10 Md€ non chiffré officiellement. Valeur conservée."
+        }
       ],
-      "sources": [{ "titre": "Cour des comptes — finances publiques locales", "url": "https://www.ccomptes.fr/" }]
+      "sources": [
+        {
+          "titre": "Banque des Territoires — Comptes publics 2025 (Cour des comptes, fév. 2026)",
+          "url": "https://www.banquedesterritoires.fr/comptes-publics-2025-hausse-contenue-des-depenses-des-collectivites"
+        },
+        {
+          "titre": "iFRAP — tableau Cour des comptes : dépenses de fonctionnement 230 Md€ (2024) et 235,3 Md€ (2025)",
+          "url": "https://www.ifrap.org/etat-et-collectivites/collectivites-locales-depuis-2019-les-recettes-ont-augmente-plus-que-linflation"
+        }
+      ]
     },
     {
       "id": "collectivites_investissement",
       "nom": "Collectivités — investissement",
       "bloc": "Collectivités",
-      "montant_mds": 70,
-      "source_montant": { "titre": "OFGL", "url": "https://www.collectivites-locales.gouv.fr/" },
+      "montant_mds": 61,
+      "annee_montant": "2023 (investissement public collectivités et syndicats, Banque des Territoires ; à confirmer OFGL)",
+      "source_montant": {
+        "titre": "Banque des Territoires — Investissement local : le mandat devrait s'achever sur un bilan mitigé",
+        "url": "https://www.banquedesterritoires.fr/investissement-local-le-mandat-devrait-sachever-sur-un-bilan-mitige"
+      },
       "crans": [
-        { "niveau": 1, "mesure": "Réduction dotations d'investissement (DSIL/DETR) −10 %", "gain_mds": 0.2, "faisabilite": 1, "arguments": [], "obstacles": [] },
-        { "niveau": 2, "mesure": "−20 %", "gain_mds": 0.5, "faisabilite": 1, "arguments": [], "obstacles": ["Transition écologique"] },
-        { "niveau": 3, "mesure": "Moratoire 1 an projets non engagés", "gain_mds": 5, "faisabilite": 2, "arguments": [], "obstacles": ["BTP, emploi local", "Investissement = dépense productive"] }
+        {
+          "niveau": 1,
+          "mesure": "Réduction des dotations d'investissement (DSIL/DETR) −10 %",
+          "gain_mds": 0.2,
+          "faisabilite": 1,
+          "arguments": [
+            "LFI 2026 : baisse de 200 M€ de la DSIL déjà retenue selon Maire-info, donc une partie du cran est déjà acquise",
+            "Fusion DETR/DSIL/DPV dans un FIT : abandonnée dans la version finale"
+          ],
+          "obstacles": [],
+          "sources": [
+            {
+              "titre": "iFRAP — Maire-info : budget 2026, DSIL −200 M€, fonds vert ~840 M€",
+              "url": "https://www.ifrap.org/etat-et-collectivites/collectivites-locales-depuis-2019-les-recettes-ont-augmente-plus-que-linflation"
+            }
+          ],
+          "non_verifie": true,
+          "note": "Gain 0,2 Md€ non chiffré officiellement (base de dotations non retrouvée). Valeur conservée."
+        },
+        {
+          "niveau": 2,
+          "mesure": "Réduction des dotations d'investissement −20 %",
+          "gain_mds": 0.5,
+          "faisabilite": 1,
+          "arguments": [],
+          "obstacles": [
+            "Transition écologique : le fonds vert passe d'environ 1,15 Md€ (2025) à 0,84 Md€ (2026), déjà en baisse"
+          ],
+          "sources": [
+            {
+              "titre": "iFRAP — Maire-info : budget 2026 (fonds vert)",
+              "url": "https://www.ifrap.org/etat-et-collectivites/collectivites-locales-depuis-2019-les-recettes-ont-augmente-plus-que-linflation"
+            }
+          ],
+          "non_verifie": true,
+          "note": "Gain 0,5 Md€ non chiffré officiellement. Valeur conservée."
+        },
+        {
+          "niveau": 3,
+          "mesure": "Moratoire 1 an sur projets non engagés",
+          "gain_mds": 5,
+          "faisabilite": 2,
+          "arguments": [],
+          "obstacles": [
+            "BTP et emploi local",
+            "Investissement local encore en hausse en 2025 (+1,9 % en valeur, Cour des comptes), surtout bloc communal"
+          ],
+          "sources": [
+            {
+              "titre": "Banque des Territoires — Comptes publics 2025 (investissement +1,9 % en 2025)",
+              "url": "https://www.banquedesterritoires.fr/comptes-publics-2025-hausse-contenue-des-depenses-des-collectivites"
+            }
+          ],
+          "non_verifie": true,
+          "note": "Gain 5 Md€ non chiffré officiellement. Valeur conservée."
+        }
       ],
-      "sources": []
+      "sources": [
+        {
+          "titre": "Banque des Territoires — Investissement local (mandat)",
+          "url": "https://www.banquedesterritoires.fr/investissement-local-le-mandat-devrait-sachever-sur-un-bilan-mitige"
+        },
+        {
+          "titre": "Banque des Territoires — Comptes publics 2025 (Cour des comptes)",
+          "url": "https://www.banquedesterritoires.fr/comptes-publics-2025-hausse-contenue-des-depenses-des-collectivites"
+        }
+      ]
     },
     {
       "id": "defense",
       "nom": "Défense",
       "bloc": "État",
-      "montant_mds": 50,
-      "source_montant": { "titre": "LPM 2024-2030", "url": "https://www.defense.gouv.fr/" },
+      "montant_mds": 57.1,
+      "annee_montant": "2026 (crédits de paiement, trajectoire de la LPM actualisée, loi n° 2026-791)",
+      "source_montant": {
+        "titre": "Légifrance — LOI n° 2026-791 du 16 août 2026 actualisant la programmation militaire 2024-2030",
+        "url": "https://www.legifrance.gouv.fr/jorf/id/JORFSCTA000054694833"
+      },
       "crans": [
-        { "niveau": 1, "mesure": "Étalement de programmes", "gain_mds": 1, "faisabilite": 1, "arguments": [], "obstacles": ["Coûts unitaires augmentent"] },
-        { "niveau": 2, "mesure": "Gel de la marche LPM 1 an", "gain_mds": 3, "faisabilite": 2, "arguments": [], "obstacles": ["Engagement OTAN 2 %→3,5 %"] },
-        { "niveau": 3, "mesure": "Retour niveau 2023", "gain_mds": 6, "faisabilite": 3, "arguments": [], "obstacles": ["Contexte Ukraine, OTAN", "LPM votée"] }
+        {
+          "niveau": 1,
+          "mesure": "Étalement de programmes",
+          "gain_mds": 1,
+          "faisabilite": 1,
+          "arguments": [],
+          "obstacles": [
+            "Coûts unitaires qui augmentent quand les commandes sont étalées"
+          ],
+          "sources": [],
+          "non_verifie": true,
+          "note": "Chiffrage non trouvé. Valeur conservée."
+        },
+        {
+          "niveau": 2,
+          "mesure": "Gel de la marche LPM 1 an",
+          "gain_mds": 3.2,
+          "faisabilite": 2,
+          "arguments": [
+            "Hausse 2026 de 6,7 Md€ = 3,2 Md€ prévus par la LPM + 3,5 Md€ de surmarche : le gel de la marche LPM vaut 3,2 Md€"
+          ],
+          "obstacles": [
+            "Engagement OTAN : objectif de 3,5 % du PIB en dépenses militaires d'ici 2035",
+            "Loi votée : modifier la trajectoire exige une nouvelle loi"
+          ],
+          "sources": [
+            {
+              "titre": "Public Sénat — Budget de la défense : le Sénat adopte des crédits en hausse (11/12/2025)",
+              "url": "https://www.publicsenat.fr/actualites/politique/budget-de-la-defense-le-senat-adopte-des-credits-en-hausse-mais-demande-une-actualisation-de-la-loi-de-programmation-militaire"
+            },
+            {
+              "titre": "Légifrance — LOI n° 2026-791 du 16 août 2026",
+              "url": "https://www.legifrance.gouv.fr/jorf/id/JORFSCTA000054694833"
+            }
+          ],
+          "non_verifie": false,
+          "note": "Montant initial 3 corrigé à 3,2 Md€."
+        },
+        {
+          "niveau": 3,
+          "mesure": "Retour au niveau 2023",
+          "gain_mds": 6,
+          "faisabilite": 3,
+          "arguments": [],
+          "obstacles": [
+            "Contexte Ukraine et OTAN",
+            "LPM actualisée votée par la loi n° 2026-791 : revenir en arrière demande une nouvelle loi"
+          ],
+          "sources": [
+            {
+              "titre": "Légifrance — LOI n° 2026-791 du 16 août 2026",
+              "url": "https://www.legifrance.gouv.fr/jorf/id/JORFSCTA000054694833"
+            }
+          ],
+          "non_verifie": true,
+          "note": "Niveau 2023 non retrouvé dans les sources. Valeur conservée."
+        }
       ],
-      "sources": []
+      "sources": [
+        {
+          "titre": "Légifrance — LOI n° 2026-791 du 16 août 2026 (CP 2026 = 57,1 Md€ ; total 2024-2030 = 435,7 Md€)",
+          "url": "https://www.legifrance.gouv.fr/jorf/id/JORFSCTA000054694833"
+        },
+        {
+          "titre": "Public Sénat — Budget de la défense 2026 (hausse de 6,7 Md€)",
+          "url": "https://www.publicsenat.fr/actualites/politique/budget-de-la-defense-le-senat-adopte-des-credits-en-hausse-mais-demande-une-actualisation-de-la-loi-de-programmation-militaire"
+        }
+      ]
     },
     {
       "id": "ue",
       "nom": "Prélèvement sur recettes UE",
       "bloc": "État",
-      "montant_mds": 23,
-      "source_montant": { "titre": "PLF — PSR-UE", "url": "https://www.budget.gouv.fr/" },
+      "montant_mds": 28.8,
+      "annee_montant": 2026,
+      "source_montant": {
+        "titre": "Sénat — Mission Affaires européennes, Essentiel post-commission PLF 2026 (article 45 : PSR UE 28,8 Md€)",
+        "url": "https://www.senat.fr/fileadmin/cru-1762483659/Commissions/Finances/2025-2026/PLF_2026/Essentiel/Mission_Affaires_europeennes_Essentiel_post-commission.pdf"
+      },
+      "note_montant": "Ancienne valeur 23 Md€ fausse pour PLF 2026. Des amendements AN citent 28,44 Md€ (28 439 880 549 €) : écart non tranché, 28,4 à 28,8 Md€ selon le texte. Hausse de +5,7 Md€ retenue après discussion (Public Sénat), contre +7,3 Md€ prévus.",
       "crans": [
-        { "niveau": 1, "mesure": "Aucun levier unilatéral", "gain_mds": 0, "faisabilite": 3, "arguments": [], "obstacles": ["Décision ressources propres, CFP adopté à l'unanimité"] },
-        { "niveau": 2, "mesure": "Négocier rabais CFP 2028-2034", "gain_mds": 2, "faisabilite": 2, "arguments": ["Allemagne, Pays-Bas ont des rabais"], "obstacles": ["Unanimité, horizon 2028"] },
-        { "niveau": 3, "mesure": "Refus unilatéral de payer", "gain_mds": 23, "faisabilite": 3, "arguments": [], "obstacles": ["Violation traités (art. 310-311 TFUE)", "Recours en manquement CJUE", "Perte retours PAC ~9 Md€"] }
+        {
+          "niveau": 1,
+          "mesure": "Aucun levier unilatéral",
+          "gain_mds": 0,
+          "faisabilite": 3,
+          "arguments": [],
+          "obstacles": [
+            "Décision ressources propres, CFP adopté à l'unanimité (unanimité du Conseil après consultation du PE, art. 311 TFUE)"
+          ],
+          "sources": [
+            {
+              "titre": "Doctrine — TFUE article 311 (ressources propres, décision à l'unanimité)",
+              "url": "https://www.doctrine.fr/l/traite-fonctionnement-union-europeenne/article-311/UE_TFUE_311"
+            }
+          ],
+          "non_verifie": false
+        },
+        {
+          "niveau": 2,
+          "mesure": "Négocier rabais CFP 2028-2034",
+          "gain_mds": 2,
+          "faisabilite": 2,
+          "arguments": [
+            "Allemagne, Pays-Bas ont des rabais (à vérifier dans la décision CFP)"
+          ],
+          "obstacles": [
+            "Unanimité, horizon 2028"
+          ],
+          "sources": [
+            {
+              "titre": "Public Sénat — Budget 2026 : pourquoi la France a obtenu une hausse moins importante de sa contribution à l'UE",
+              "url": "https://www.publicsenat.fr/actualites/economie/budget-2026-pourquoi-la-france-a-obtenu-une-hausse-moins-importante-de-sa-contribution-a-lunion-europeenne"
+            }
+          ],
+          "non_verifie": true
+        },
+        {
+          "niveau": 3,
+          "mesure": "Refus unilatéral de payer",
+          "gain_mds": 28.8,
+          "faisabilite": 3,
+          "arguments": [],
+          "obstacles": [
+            "Violation traités (art. 311 TFUE vérifié ; art. 310 non vérifié en ligne)",
+            "Recours en manquement CJUE (non sourcé)",
+            "Perte retours PAC ~9 Md€ (non sourcé, à déduire du gain net)"
+          ],
+          "sources": [
+            {
+              "titre": "Doctrine — TFUE article 311",
+              "url": "https://www.doctrine.fr/l/traite-fonctionnement-union-europeenne/article-311/UE_TFUE_311"
+            }
+          ],
+          "non_verifie": true,
+          "note": "Gain brut = montant PSR (28,8 Md€). Gain net inférieur à cause des retours PAC, non chiffrés ici."
+        }
       ],
-      "sources": [{ "titre": "Commission européenne — budget", "url": "https://commission.europa.eu/" }]
+      "arguments": [],
+      "obstacles": [
+        "Traités UE (ressources propres, art. 311 TFUE)"
+      ],
+      "sources": [
+        {
+          "titre": "Sénat — Mission Affaires européennes, Essentiel PLF 2026",
+          "url": "https://www.senat.fr/fileadmin/cru-1762483659/Commissions/Finances/2025-2026/PLF_2026/Essentiel/Mission_Affaires_europeennes_Essentiel_post-commission.pdf"
+        },
+        {
+          "titre": "Doctrine — TFUE article 311",
+          "url": "https://www.doctrine.fr/l/traite-fonctionnement-union-europeenne/article-311/UE_TFUE_311"
+        }
+      ]
     },
     {
       "id": "fonctionnement_etat",
       "nom": "Fonctionnement courant de l'État",
       "bloc": "État",
       "montant_mds": 40,
-      "source_montant": { "titre": "PLF titre 3", "url": "https://www.budget.gouv.fr/" },
+      "annee_montant": 2026,
+      "montant_non_verifie": true,
+      "source_montant": {
+        "titre": "PLF titre 3 — non retrouvé dans les recherches (valeur conservée)",
+        "url": "https://www.budget.gouv.fr/"
+      },
+      "note_montant": "Aucun document PLF 2026 titre 3 trouvé. Valeur 40 Md€ conservée et marquée non vérifiée.",
       "crans": [
-        { "niveau": 1, "mesure": "−3 % (achats, immobilier, conseil)", "gain_mds": 1.2, "faisabilite": 1, "arguments": ["Rapport cabinets de conseil Sénat 2022"], "obstacles": [] },
-        { "niveau": 2, "mesure": "−7 % + cession immobilier", "gain_mds": 3, "faisabilite": 1, "arguments": [], "obstacles": [] },
-        { "niveau": 3, "mesure": "−12 %", "gain_mds": 5, "faisabilite": 2, "arguments": [], "obstacles": ["Investissements numériques nécessaires"] }
+        {
+          "niveau": 1,
+          "mesure": "−3 % (achats, immobilier, conseil)",
+          "gain_mds": 1.2,
+          "faisabilite": 1,
+          "arguments": [
+            "Rapport Sénat 2022 sur les cabinets de conseil : dépenses de conseil ~1 Md€ en 2021 (prestations informatiques comprises)"
+          ],
+          "obstacles": [
+            "Conseil seul = 200,2 M€ en 2022 (Cour des comptes) : un −3 % sur le seul conseil ne rapporte que ~6 M€"
+          ],
+          "sources": [
+            {
+              "titre": "Consultor — « État : le Sénat siffle la fin du tout consulting » (rapport Sénat mars 2022)",
+              "url": "https://www.consultor.fr/articles/etat-le-senat-siffle-la-fin-du-tout-consulting"
+            },
+            {
+              "titre": "Public Sénat — Cabinets de conseil, après le rapport de la Cour des comptes (200,2 M€ en 2022)",
+              "url": "https://www.publicsenat.fr/actualites/politique/cabinets-de-conseil-apres-le-rapport-de-la-cour-des-comptes-le-senat-exige-plus-de-transparence"
+            }
+          ],
+          "non_verifie": true,
+          "note": "Gain = 3 % x 40 Md€ (arithmétique sur montant non vérifié)."
+        },
+        {
+          "niveau": 2,
+          "mesure": "−7 % + cession immobilier",
+          "gain_mds": 2.8,
+          "faisabilite": 1,
+          "arguments": [],
+          "obstacles": [
+            "Cession immobilière non chiffrée"
+          ],
+          "sources": [],
+          "non_verifie": true,
+          "note": "Gain = 7 % x 40 Md€ ; cession non chiffrée."
+        },
+        {
+          "niveau": 3,
+          "mesure": "−12 %",
+          "gain_mds": 4.8,
+          "faisabilite": 2,
+          "arguments": [],
+          "obstacles": [
+            "Investissements numériques nécessaires"
+          ],
+          "sources": [],
+          "non_verifie": true,
+          "note": "Gain = 12 % x 40 Md€."
+        }
       ],
-      "sources": []
+      "arguments": [],
+      "obstacles": [],
+      "sources": [
+        {
+          "titre": "Consultor — rapport Sénat 2022 cabinets de conseil",
+          "url": "https://www.consultor.fr/articles/etat-le-senat-siffle-la-fin-du-tout-consulting"
+        }
+      ]
     },
     {
       "id": "audiovisuel",
       "nom": "Audiovisuel public",
       "bloc": "État",
-      "montant_mds": 4,
-      "source_montant": { "titre": "PLF", "url": "https://www.budget.gouv.fr/" },
+      "montant_mds": 3.9,
+      "annee_montant": 2026,
+      "source_montant": {
+        "titre": "Sénat — rapport sur les crédits Médias, livre et industries culturelles, PLF 2026 (crédits audiovisuel public 3,878 Md€)",
+        "url": "https://www.senat.fr/rap/a25-141-10/a25-141-10-syn.pdf"
+      },
+      "note_montant": "Ancienne valeur 4 Md€ arrondie. Crédits PLF 2026 : 3,878 Md€, soit -71 M€ (-1,79 %) déjà inscrits. France Télévisions 2,44 Md€ (-2,6 %), Radio France 648 M€, INA 103,46 M€, FMM 303,9 M€ (stable).",
       "crans": [
-        { "niveau": 1, "mesure": "−5 %", "gain_mds": 0.2, "faisabilite": 1, "arguments": [], "obstacles": [] },
-        { "niveau": 2, "mesure": "Holding + fusion des structures", "gain_mds": 0.5, "faisabilite": 1, "arguments": [], "obstacles": ["Indépendance"] },
-        { "niveau": 3, "mesure": "Privatisation partielle", "gain_mds": 1.5, "faisabilite": 2, "arguments": [], "obstacles": ["Pluralisme (objectif de valeur constitutionnelle)"] }
+        {
+          "niveau": 1,
+          "mesure": "−5 %",
+          "gain_mds": 0.19,
+          "faisabilite": 1,
+          "arguments": [
+            "Une baisse de 71 M€ (-1,79 %) est déjà inscrite dans le PLF 2026"
+          ],
+          "obstacles": [],
+          "sources": [
+            {
+              "titre": "Sénat — rapport Médias 2026 (crédits audiovisuel public)",
+              "url": "https://www.senat.fr/rap/a25-141-10/a25-141-10-syn.pdf"
+            }
+          ],
+          "non_verifie": false,
+          "note": "Gain = 5 % x 3,878 Md€ (arithmétique sur montant vérifié)."
+        },
+        {
+          "niveau": 2,
+          "mesure": "Holding + fusion des structures",
+          "gain_mds": 0.5,
+          "faisabilite": 1,
+          "arguments": [],
+          "obstacles": [
+            "Indépendance éditoriale"
+          ],
+          "sources": [],
+          "non_verifie": true
+        },
+        {
+          "niveau": 3,
+          "mesure": "Privatisation partielle",
+          "gain_mds": 1.5,
+          "faisabilite": 2,
+          "arguments": [],
+          "obstacles": [
+            "Pluralisme (objectif de valeur constitutionnelle)",
+            "Décision Conseil constitutionnel sur le pluralisme à citer (numéro non vérifié en ligne)"
+          ],
+          "sources": [],
+          "non_verifie": true
+        }
       ],
-      "sources": []
+      "arguments": [],
+      "obstacles": [
+        "Indépendance",
+        "Pluralisme"
+      ],
+      "sources": [
+        {
+          "titre": "Sénat — rapport Médias, livre et industries culturelles PLF 2026",
+          "url": "https://www.senat.fr/rap/a25-141-10/a25-141-10-syn.pdf"
+        }
+      ]
     },
     {
       "id": "minima_sociaux",
       "nom": "Minima sociaux (RSA, prime d'activité, AAH)",
       "bloc": "État / Départements",
-      "montant_mds": 45,
-      "source_montant": { "titre": "DREES — Minima sociaux", "url": "https://drees.solidarites-sante.gouv.fr/" },
+      "montant_mds": 30.6,
+      "annee_montant": 2022,
+      "source_montant": {
+        "titre": "Banque des Territoires — « Minima sociaux : le RSA et l'AAH ont coûté chacun 12 milliards d'euros en 2022 » (DREES : 30,6 Md€ versés en 2022)",
+        "url": "https://www.banquedesterritoires.fr/minima-sociaux-le-rsa-et-laah-ont-coute-chacun-12-milliards-deuros-en-2022"
+      },
+      "note_montant": "Ancienne valeur 45 Md€ fausse : 30,6 Md€ en 2022 (dernière année trouvée ; 2024 non trouvée). Périmètre DREES : minima sociaux, prime d'activité non incluse et non chiffrée. Effectifs fin 2024 (DREES) : 4,25 M allocataires de minima, dont RSA 1,84 M et AAH 1,40 M.",
       "crans": [
-        { "niveau": 1, "mesure": "Lutte contre la fraude renforcée", "gain_mds": 0.5, "faisabilite": 1, "arguments": ["Cour des comptes estime fraude prestations"], "obstacles": ["Non-recours aussi important"] },
-        { "niveau": 2, "mesure": "Gel 1 an", "gain_mds": 1, "faisabilite": 1, "arguments": [], "obstacles": ["Pauvreté"] },
-        { "niveau": 3, "mesure": "Allocation sociale unique plafonnée", "gain_mds": 3, "faisabilite": 2, "arguments": ["Simplification"], "obstacles": ["Perdants nombreux"] }
+        {
+          "niveau": 1,
+          "mesure": "Lutte contre la fraude renforcée",
+          "gain_mds": 0.5,
+          "faisabilite": 1,
+          "arguments": [
+            "Cour des comptes estime fraude prestations (chiffrage non retrouvé)"
+          ],
+          "obstacles": [
+            "Non-recours aussi important"
+          ],
+          "sources": [],
+          "non_verifie": true
+        },
+        {
+          "niveau": 2,
+          "mesure": "Gel 1 an",
+          "gain_mds": 1,
+          "faisabilite": 1,
+          "arguments": [],
+          "obstacles": [
+            "Pauvreté"
+          ],
+          "sources": [],
+          "non_verifie": true,
+          "note": "Ordre de grandeur indicatif : un gel d'un an vaut environ l'inflation x 30,6 Md€ (≈ 0,6 Md€ si inflation ~2 %). Valeur 1 Md€ conservée faute de chiffrage officiel."
+        },
+        {
+          "niveau": 3,
+          "mesure": "Allocation sociale unique plafonnée",
+          "gain_mds": 3,
+          "faisabilite": 2,
+          "arguments": [
+            "Simplification"
+          ],
+          "obstacles": [
+            "Perdants nombreux"
+          ],
+          "sources": [],
+          "non_verifie": true
+        }
       ],
-      "sources": []
+      "arguments": [],
+      "obstacles": [
+        "Non-recours"
+      ],
+      "sources": [
+        {
+          "titre": "DREES — Nombre d'allocataires de minima sociaux en 2024 (communiqué 4 déc. 2025)",
+          "url": "https://drees.solidarites-sante.gouv.fr/communique-de-presse/communique-de-presse/251204-nombre-allocataires-minima-sociaux"
+        },
+        {
+          "titre": "DREES — Fiche 07 MS24 : les dépenses d'allocations des minima sociaux (PDF, valeurs illisibles lors de la vérification)",
+          "url": "https://www.drees.solidarites-sante.gouv.fr/sites/default/files/2024-10/MS24%20-%20Fiche%2007%20-%20Les%20d%C3%A9penses%20d%E2%80%99allocations%20des%20minima%20sociaux.pdf"
+        }
+      ]
     },
     {
       "id": "dette",
       "nom": "Charge de la dette",
       "bloc": "État",
-      "montant_mds": 60,
-      "source_montant": { "titre": "Agence France Trésor", "url": "https://www.aft.gouv.fr/" },
+      "montant_mds": 58.0,
+      "annee_montant": 2026,
+      "source_montant": {
+        "titre": "Sénat — rapport PLF 2026, mission Engagements financiers de l'État (charge de la dette 58,0 Md€ en comptabilité budgétaire)",
+        "url": "https://www.senat.fr/rap/l25-139-312/l25-139-3120.html"
+      },
+      "note_montant": "Ancienne valeur 60 Md€ : 58,0 Md€ en comptabilité budgétaire (LFI 2025 : 53,5 Md€), 60,4 Md€ en comptabilité générale. Sensibilité AFT : +1 point de taux = +3,2 Md€ à 1 an, +23,5 Md€ à 5 ans.",
       "crans": [
-        { "niveau": 1, "mesure": "Non pilotable directement", "gain_mds": 0, "faisabilite": 1, "arguments": ["Baisse indirecte si déficit et taux baissent"], "obstacles": [] },
-        { "niveau": 2, "mesure": "Non pilotable directement", "gain_mds": 0, "faisabilite": 1, "arguments": [], "obstacles": [] },
-        { "niveau": 3, "mesure": "Défaut / restructuration", "gain_mds": 0, "faisabilite": 3, "arguments": [], "obstacles": ["Exclusion des marchés, crise bancaire — gain négatif"] }
+        {
+          "niveau": 1,
+          "mesure": "Non pilotable directement",
+          "gain_mds": 0,
+          "faisabilite": 1,
+          "arguments": [
+            "Baisse indirecte si déficit et taux baissent (sensibilité AFT : +1 pt de taux = +3,2 Md€ à 1 an)"
+          ],
+          "obstacles": [],
+          "sources": [
+            {
+              "titre": "Sénat — rapport PLF 2026, Engagements financiers de l'État",
+              "url": "https://www.senat.fr/rap/l25-139-312/l25-139-3120.html"
+            }
+          ],
+          "non_verifie": false
+        },
+        {
+          "niveau": 2,
+          "mesure": "Non pilotable directement",
+          "gain_mds": 0,
+          "faisabilite": 1,
+          "arguments": [],
+          "obstacles": [],
+          "sources": [],
+          "non_verifie": false
+        },
+        {
+          "niveau": 3,
+          "mesure": "Défaut / restructuration",
+          "gain_mds": 0,
+          "faisabilite": 3,
+          "arguments": [],
+          "obstacles": [
+            "Exclusion des marchés, crise bancaire : coût net négatif (non chiffré)"
+          ],
+          "sources": [],
+          "non_verifie": true,
+          "note": "Gain 0 conservé ; un défaut produit un coût, pas une économie. Aucun chiffrage trouvé."
+        }
       ],
-      "sources": []
+      "arguments": [],
+      "obstacles": [],
+      "sources": [
+        {
+          "titre": "Sénat — rapport PLF 2026, Engagements financiers de l'État",
+          "url": "https://www.senat.fr/rap/l25-139-312/l25-139-3120.html"
+        }
+      ]
     }
   ]
 }

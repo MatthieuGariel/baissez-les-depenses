@@ -24,3 +24,4 @@ input[type=range]{width:100%;margin:10px 0 2px}
 .gain{font-weight:700}
 footer{text-align:center;padding:24px 16px;color:var(--muted);font-size:.85rem}
 a{color:var(--acc)}
+.nv{background:#777}

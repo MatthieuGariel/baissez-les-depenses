@@ -1,0 +1,257 @@
+[
+  {
+    "id": "aides_entreprises",
+    "nom": "Aides aux entreprises (subventions, niches, allègements)",
+    "bloc": "État / Sécu",
+    "montant_mds": 211,
+    "annee_montant": 2023,
+    "montant_verifie": true,
+    "source_montant": { "titre": "Sénat — commission d'enquête aides publiques aux entreprises (rapport publié 8 juillet 2025), via Public Sénat", "url": "https://www.publicsenat.fr/actualites/economie/un-cout-annuel-de-211-milliards-deuros-la-commission-denquete-du-senat-sur-les-aides-publiques-aux-entreprises-reclame-un-choc-de-transparence" },
+    "note_correction": "Montant 160 remplacé par 211 Md€ (2023) : total de la commission (subventions État, Bpifrance, dépenses fiscales ~43 Md€, allègements sociaux ~80 Md€). Hors communes, régions (~2 Md€) et UE (jusqu'à 10 Md€). Autre estimation (Plan) : 187 Md€, méthode différente. Le chiffre 211 est une estimation de la commission faute de données administratives fines.",
+    "crans": [
+      {
+        "niveau": 1,
+        "mesure": "Suppression des niches fiscales jugées inefficaces (dépenses fiscales)",
+        "gain_mds": 3,
+        "faisabilite": 1,
+        "arguments": [
+          "Dépenses fiscales ~43 Md€ en 2023, suivi et évaluation jugés défaillants (commission Sénat)",
+          "Recommandation Sénat : diviser par trois le nombre de dépenses fiscales et subventions aux entreprises d'ici 2030",
+          "Évaluation tous les trois ans des dépenses fiscales > 50 M€ (recommandation Sénat)"
+        ],
+        "obstacles": ["Lobbying sectoriel"],
+        "sources": [{ "titre": "Public Sénat — commission d'enquête aides publiques", "url": "https://www.publicsenat.fr/actualites/economie/un-cout-annuel-de-211-milliards-deuros-la-commission-denquete-du-senat-sur-les-aides-publiques-aux-entreprises-reclame-un-choc-de-transparence" }],
+        "non_verifie": true,
+        "note": "Le gain de 3 Md€ n'a pas de chiffrage officiel trouvé. L'argument 'Revue des dépenses IGF' n'a pas été retrouvé."
+      },
+      {
+        "niveau": 2,
+        "mesure": "Recentrage CIR + resserrement allègements au-delà de 2,5 SMIC",
+        "gain_mds": 8,
+        "faisabilite": 1,
+        "arguments": [
+          "Allègements de cotisations sociales ~80 Md€ en 2023 (commission Sénat)",
+          "CIR : réduire le périmètre de la sous-traitance éligible (recommandation Sénat)",
+          "Correction : le rapport Bozio-Wasmer (octobre 2024) est construit à coût budgétaire nul (hausse des cotisations patronales entre 1 et 1,2 SMIC, baisse entre 1,2 et 1,9 SMIC). Il ne chiffre pas une économie de 8 Md€. Argument retiré."
+        ],
+        "obstacles": ["Compétitivité, risque emploi qualifié", "Effets sur l'emploi des allègements contestés (estimations variables selon dispositifs)"],
+        "sources": [
+          { "titre": "Public Sénat — commission d'enquête aides publiques", "url": "https://www.publicsenat.fr/actualites/economie/un-cout-annuel-de-211-milliards-deuros-la-commission-denquete-du-senat-sur-les-aides-publiques-aux-entreprises-reclame-un-choc-de-transparence" },
+          { "titre": "Public Sénat — réforme des allègements de cotisations (Bozio)", "url": "https://www.publicsenat.fr/actualites/economie/pour-2025-vous-aurez-des-destructions-demplois-estime-leconomiste-antoine-bozio-a-propos-de-la-reforme-des-allegements-de-cotisations-sociales" }
+        ],
+        "non_verifie": true,
+        "note": "Gain 8 Md€ non verifie. Le PLFSS évoque plus de 5 Md€ d'économies sur les allègements (amendements parlementaires, non officiel)."
+      },
+      {
+        "niveau": 3,
+        "mesure": "Réduction de 25 % de l'enveloppe globale",
+        "gain_mds": 40,
+        "faisabilite": 2,
+        "arguments": [
+          "Enveloppe totale estimée à 211 Md€ (2023) par la commission Sénat : première estimation globale publiée",
+          "Mécaniquement, 25 % de 211 Md€ ≈ 53 Md€ (calcul non officiel, gain 40 conservé à défaut de chiffrage)"
+        ],
+        "obstacles": ["Hausse du coût du travail", "Aides d'État : cadre UE à respecter (art. 107 TFUE)"],
+        "sources": [{ "titre": "Public Sénat — commission d'enquête aides publiques", "url": "https://www.publicsenat.fr/actualites/economie/un-cout-annuel-de-211-milliards-deuros-la-commission-denquete-du-senat-sur-les-aides-publiques-aux-entreprises-reclame-un-choc-de-transparence" }],
+        "non_verifie": true,
+        "note": "Gain non verifie. Calcul mécanique à 25 % de 211 Md€ ≈ 53 Md€, à arbitrer."
+      }
+    ],
+    "sources": [
+      { "titre": "Public Sénat — commission d'enquête aides publiques (211 Md€, 2023)", "url": "https://www.publicsenat.fr/actualites/economie/un-cout-annuel-de-211-milliards-deuros-la-commission-denquete-du-senat-sur-les-aides-publiques-aux-entreprises-reclame-un-choc-de-transparence" }
+    ]
+  },
+  {
+    "id": "masse_salariale_etat",
+    "nom": "Masse salariale de l'État",
+    "bloc": "État",
+    "montant_mds": 150,
+    "annee_montant": null,
+    "montant_verifie": false,
+    "source_montant": { "titre": "PLF 2026 — jaune Rémunérations et effectifs (non ouvert, montant non trouvé)", "url": "https://www.budget.gouv.fr/" },
+    "note_correction": "Montant 150 Md€ non verifie : le jaune 'Rémunérations et effectifs' n'a pas pu être ouvert. Croissance masse salariale État 2026 : +1,7 % (après +1,5 % en 2025), selon Bercy.",
+    "crans": [
+      {
+        "niveau": 1,
+        "mesure": "Gel du point d'indice 1 an",
+        "gain_mds": 2,
+        "faisabilite": 1,
+        "arguments": [
+          "Pas de hausse du point d'indice en 2025 ni en 2026 (PLF 2026 : aucune mesure catégorielle hors GVT). Le gel est donc déjà en vigueur : gain 2 Md€ à reconsidérer comme économie 'nouvelle' ou 'prolongation'",
+          "Précédent gel 2011-2016"
+        ],
+        "obstacles": ["Attractivité", "Pouvoir d'achat des agents"],
+        "sources": [{ "titre": "Acteurs publics — serrage de vis salaires fonction publique 2026", "url": "https://acteurspublics.fr/articles/salaires-de-la-fonction-publique-le-serrage-de-vis-va-se-poursuivre-en-2026/" }],
+        "non_verifie": true,
+        "note": "Gain 2 Md€ non verifie. Le gel 2026 est déjà acté : la mesure ne peut pas être présentée comme une économie additionnelle sans précision."
+      },
+      {
+        "niveau": 2,
+        "mesure": "Gel du point + non-remplacement 1 départ sur 3 hors régaliens",
+        "gain_mds": 4,
+        "faisabilite": 1,
+        "arguments": ["Précédent RGPP 2007-2012"],
+        "obstacles": ["Qualité service public"],
+        "sources": [],
+        "non_verifie": true,
+        "note": "Gain non verifie, aucune source chiffrée trouvée."
+      },
+      {
+        "niveau": 3,
+        "mesure": "Non-remplacement 1 sur 2 + 3 jours de carence",
+        "gain_mds": 8,
+        "faisabilite": 1,
+        "arguments": ["Montée en charge"],
+        "obstacles": ["Éducation, santé déjà en tension"],
+        "sources": [],
+        "non_verifie": true,
+        "note": "Gain non verifie, aucune source chiffrée trouvée. Le jour de carence seul est une mesure distincte (loi de financement, voir débat 2025)."
+      }
+    ],
+    "sources": [
+      { "titre": "Acteurs publics — serrage de vis salaires fonction publique 2026", "url": "https://acteurspublics.fr/articles/salaires-de-la-fonction-publique-le-serrage-de-vis-va-se-poursuivre-en-2026/" },
+      { "titre": "Acteurs publics — reprise en main de la masse salariale", "url": "https://acteurspublics.fr/articles/fonction-publique-le-gouvernement-met-en-avant-une-reprise-en-main-de-la-masse-salariale/" }
+    ]
+  },
+  {
+    "id": "education",
+    "nom": "Enseignement scolaire (hors masse salariale)",
+    "bloc": "État",
+    "montant_mds": 15,
+    "annee_montant": 2026,
+    "montant_verifie": false,
+    "source_montant": { "titre": "Sénat — rapport général PLF 2026, mission Enseignement scolaire", "url": "https://www.senat.fr/rap/l25-139-313/l25-139-313_mono.html" },
+    "note_correction": "Mission Enseignement scolaire PLF 2026 : 64,49 Md€ en CP hors pensions (64,46 Md€ AE), +0,26 % vs 2025 ; 89,6 Md€ avec pensions. Le montant 15 Md€ 'hors masse salariale' n'est pas vérifié (la part hors titre 2 n'a pas pu être extraite). Le Sénat note que le projet a été considéré comme rejeté à l'AN : vérifier le statut définitif de la loi.",
+    "crans": [
+      {
+        "niveau": 1,
+        "mesure": "Adaptation des moyens à la baisse démographique",
+        "gain_mds": 0.5,
+        "faisabilite": 1,
+        "arguments": ["−500 000 élèves d'ici 2030 (DEPP) : source DEPP à citer précisément, non ouverte"],
+        "obstacles": ["Fermetures classes rurales"],
+        "sources": [],
+        "non_verifie": true
+      },
+      {
+        "niveau": 2,
+        "mesure": "Rationalisation des options/filières lycée",
+        "gain_mds": 1,
+        "faisabilite": 1,
+        "arguments": ["Cour des comptes (référence non ouverte)"],
+        "obstacles": ["Choix pédagogique"],
+        "sources": [],
+        "non_verifie": true
+      },
+      {
+        "niveau": 3,
+        "mesure": "Fusion d'établissements et rectorats",
+        "gain_mds": 2,
+        "faisabilite": 2,
+        "arguments": [],
+        "obstacles": ["Transports scolaires (coût collectivités)"],
+        "sources": [],
+        "non_verifie": true
+      }
+    ],
+    "sources": [
+      { "titre": "Sénat — rapport général PLF 2026, mission Enseignement scolaire", "url": "https://www.senat.fr/rap/l25-139-313/l25-139-313_mono.html" }
+    ]
+  },
+  {
+    "id": "operateurs",
+    "nom": "Opérateurs et agences de l'État",
+    "bloc": "État",
+    "montant_mds": 81.1,
+    "annee_montant": 2024,
+    "montant_verifie": false,
+    "source_montant": { "titre": "Amendement Assemblée nationale 1112 (charge budget État pour les opérateurs, 81,1 Md€ en 2024) — source parlementaire, non officielle", "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/0324A/AN/1112.pdf" },
+    "note_correction": "Montant 80 remplacé par 81,1 Md€ (2024) selon un amendement parlementaire. Autres chiffres trouvés : 77 Md€ (LF 2025, amendement 1878), 91 Md€ (PLR 2023, amendement CF2303). Estimations non officielles à consolider avec le jaune 'Opérateurs de l'État' et la Cour des comptes (non ouverts). Nombre d'entités : 103 agences et 434 opérateurs selon amendement 2233 (non daté).",
+    "crans": [
+      {
+        "niveau": 1,
+        "mesure": "Baisse de 5 % des frais de fonctionnement",
+        "gain_mds": 1,
+        "faisabilite": 1,
+        "arguments": ["Mutualisation fonctions support"],
+        "obstacles": [],
+        "sources": [],
+        "non_verifie": true
+      },
+      {
+        "niveau": 2,
+        "mesure": "Fusion/suppression ~1/3 des agences redondantes",
+        "gain_mds": 3,
+        "faisabilite": 1,
+        "arguments": [
+          "Annonce de la ministre Amélie de Montchalin (PLF 2026) : économie attendue de 2 à 3 Md€ ; chiffrage non justifié publiquement (rapporté par Solidaires)",
+          "Correction : la référence 'Rapport Sénat 2025 agences' n'a pas pu être lue (PDF non exploitable)"
+        ],
+        "obstacles": ["Gains réels souvent faibles (missions transférées)"],
+        "sources": [{ "titre": "Solidaires — opérateurs publics (annonce 2 à 3 Md€)", "url": "https://nouveau.solidaires.org/documents/9910/op%C3%A9rateur_publics.pdf" }],
+        "non_verifie": true,
+        "note": "Gain 3 Md€ cohérent avec l'annonce gouvernementale (2 à 3 Md€), mais chiffrage non officiel."
+      },
+      {
+        "niveau": 3,
+        "mesure": "Réintégration en administration centrale + suppression de missions",
+        "gain_mds": 8,
+        "faisabilite": 2,
+        "arguments": [],
+        "obstacles": ["Il faut supprimer des missions, pas juste des structures"],
+        "sources": [],
+        "non_verifie": true
+      }
+    ],
+    "sources": [
+      { "titre": "Amendement AN 1112 — charge opérateurs 81,1 Md€ (2024)", "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/0324A/AN/1112.pdf" },
+      { "titre": "Solidaires — opérateurs publics", "url": "https://nouveau.solidaires.org/documents/9910/op%C3%A9rateur_publics.pdf" }
+    ]
+  },
+  {
+    "id": "logement",
+    "nom": "Aides au logement (APL, niches)",
+    "bloc": "État",
+    "montant_mds": 43.1,
+    "annee_montant": 2024,
+    "montant_verifie": true,
+    "source_montant": { "titre": "SDES — Rapport du compte du logement 2024 (aides au logement 43,1 Md€ ; aides personnelles 15,9 Md€)", "url": "https://www.statistiques.developpement-durable.gouv.fr/rapport-du-compte-du-logement-2024" },
+    "note_correction": "Montant 38 remplacé par 43,1 Md€ (SDES 2024, total incluant réductions d'impôt). Les seules aides personnelles (APL/ALS/ALF) représentent 15,9 Md€ (SDES) ; DREES fiche risque logement CPS2025 : prestations 16,1 Md€ en 2024 (APL 7,1, ALS 5,5, ALF 3,3). Si le poste doit se limiter aux APL, retenir ~16 Md€.",
+    "crans": [
+      {
+        "niveau": 1,
+        "mesure": "Gel des APL 1 an",
+        "gain_mds": 0.3,
+        "faisabilite": 1,
+        "arguments": ["Base APL ~16 Md€ (DREES CPS2025) : un gel d'un an rapporte moins que l'inflation annuelle sur ce montant (ordre de grandeur, non chiffré officiellement)"],
+        "obstacles": ["Ménages modestes"],
+        "sources": [{ "titre": "DREES — CPS2025 fiche 10 Le risque logement", "url": "https://drees.solidarites-sante.gouv.fr/sites/default/files/2026-03/CPS2025%20-%20Fiche%2010%20-%20Le%20risque%20logement.pdf" }],
+        "non_verifie": true
+      },
+      {
+        "niveau": 2,
+        "mesure": "Fin des niches investissement locatif + recentrage PTZ",
+        "gain_mds": 2,
+        "faisabilite": 1,
+        "arguments": ["Pinel jugé inefficient (IGF) : source IGF non retrouvée, à citer si confirmée"],
+        "obstacles": ["Construction en crise"],
+        "sources": [],
+        "non_verifie": true
+      },
+      {
+        "niveau": 3,
+        "mesure": "Prise en compte du patrimoine dans les APL + baisse forfait",
+        "gain_mds": 4,
+        "faisabilite": 1,
+        "arguments": [],
+        "obstacles": ["Étudiants"],
+        "sources": [],
+        "non_verifie": true
+      }
+    ],
+    "sources": [
+      { "titre": "SDES — Rapport du compte du logement 2024", "url": "https://www.statistiques.developpement-durable.gouv.fr/rapport-du-compte-du-logement-2024" },
+      { "titre": "DREES — CPS2025 fiche 10 Le risque logement", "url": "https://drees.solidarites-sante.gouv.fr/sites/default/files/2026-03/CPS2025%20-%20Fiche%2010%20-%20Le%20risque%20logement.pdf" }
+    ]
+  }
+]

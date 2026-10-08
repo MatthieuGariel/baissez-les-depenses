@@ -1,0 +1,292 @@
+{
+  "meta": {
+    "titre": "Simulateur de baisse des dépenses publiques — groupe 4 (vérification sourcée)",
+    "perimetre": "Administrations publiques (APU) : État, Sécurité sociale, collectivités, opérateurs",
+    "depenses_totales_mds": 1714.1,
+    "annee_depenses_totales": 2025,
+    "deficit_mds": 152.5,
+    "annee_deficit": 2025,
+    "deficit_pib_pct": 5.1,
+    "dette_pib_pct": 115.6,
+    "sources_meta": [
+      { "titre": "INSEE — Informations rapides n°78 (27 mars 2026), comptes des APU 2025", "url": "https://www.insee.fr/fr/statistiques/8956575" },
+      { "titre": "INSEE — Insee Première n°2106 (mai 2026), comptes APU 2025", "url": "https://www.insee.fr/fr/statistiques/8997691" },
+      { "titre": "INSEE — Informations rapides, comptes APU 2024 (version 2024, pour comparaison : 1 670,2 Md€ de dépenses, déficit révisé 169,1 Md€)", "url": "https://www.insee.fr/fr/statistiques/8540375" }
+    ],
+    "note_meta": "Ancienne valeur (1670 / 169, année 2024) remplacée par les comptes 2025 publiés par l'INSEE en mars 2026. Le déficit 2024 a été révisé à 169,1 Md€ dans la publication 2025.",
+    "statut": "GROUPE 4 — vérifié partiellement : 5 postes traités, plusieurs chiffrages de crans non trouvés (voir non_verifie)",
+    "faisabilite": {
+      "1": "Faisable par loi ordinaire / LFI-LFSS, précédents existants",
+      "2": "Faisable mais risque juridique ou politique fort (Conseil constitutionnel, partenaires sociaux, collectivités)",
+      "3": "Très contestable : obstacle constitutionnel, droit UE ou engagement international probable"
+    },
+    "licence": "CC BY 4.0"
+  },
+  "postes": [
+    {
+      "id": "ue",
+      "nom": "Prélèvement sur recettes UE",
+      "bloc": "État",
+      "montant_mds": 28.8,
+      "annee_montant": 2026,
+      "source_montant": {
+        "titre": "Sénat — Mission Affaires européennes, Essentiel post-commission PLF 2026 (article 45 : PSR UE 28,8 Md€)",
+        "url": "https://www.senat.fr/fileadmin/cru-1762483659/Commissions/Finances/2025-2026/PLF_2026/Essentiel/Mission_Affaires_europeennes_Essentiel_post-commission.pdf"
+      },
+      "note_montant": "Ancienne valeur 23 Md€ fausse pour PLF 2026. Des amendements AN citent 28,44 Md€ (28 439 880 549 €) : écart non tranché, 28,4 à 28,8 Md€ selon le texte. Hausse de +5,7 Md€ retenue après discussion (Public Sénat), contre +7,3 Md€ prévus.",
+      "crans": [
+        {
+          "niveau": 1,
+          "mesure": "Aucun levier unilatéral",
+          "gain_mds": 0,
+          "faisabilite": 3,
+          "arguments": [],
+          "obstacles": ["Décision ressources propres, CFP adopté à l'unanimité (unanimité du Conseil après consultation du PE, art. 311 TFUE)"],
+          "sources": [
+            { "titre": "Doctrine — TFUE article 311 (ressources propres, décision à l'unanimité)", "url": "https://www.doctrine.fr/l/traite-fonctionnement-union-europeenne/article-311/UE_TFUE_311" }
+          ],
+          "non_verifie": false
+        },
+        {
+          "niveau": 2,
+          "mesure": "Négocier rabais CFP 2028-2034",
+          "gain_mds": 2,
+          "faisabilite": 2,
+          "arguments": ["Allemagne, Pays-Bas ont des rabais (à vérifier dans la décision CFP)"],
+          "obstacles": ["Unanimité, horizon 2028"],
+          "sources": [
+            { "titre": "Public Sénat — Budget 2026 : pourquoi la France a obtenu une hausse moins importante de sa contribution à l'UE", "url": "https://www.publicsenat.fr/actualites/economie/budget-2026-pourquoi-la-france-a-obtenu-une-hausse-moins-importante-de-sa-contribution-a-lunion-europeenne" }
+          ],
+          "non_verifie": true
+        },
+        {
+          "niveau": 3,
+          "mesure": "Refus unilatéral de payer",
+          "gain_mds": 28.8,
+          "faisabilite": 3,
+          "arguments": [],
+          "obstacles": ["Violation traités (art. 311 TFUE vérifié ; art. 310 non vérifié en ligne)", "Recours en manquement CJUE (non sourcé)", "Perte retours PAC ~9 Md€ (non sourcé, à déduire du gain net)"],
+          "sources": [
+            { "titre": "Doctrine — TFUE article 311", "url": "https://www.doctrine.fr/l/traite-fonctionnement-union-europeenne/article-311/UE_TFUE_311" }
+          ],
+          "non_verifie": true,
+          "note": "Gain brut = montant PSR (28,8 Md€). Gain net inférieur à cause des retours PAC, non chiffrés ici."
+        }
+      ],
+      "arguments": [],
+      "obstacles": ["Traités UE (ressources propres, art. 311 TFUE)"],
+      "sources": [
+        { "titre": "Sénat — Mission Affaires européennes, Essentiel PLF 2026", "url": "https://www.senat.fr/fileadmin/cru-1762483659/Commissions/Finances/2025-2026/PLF_2026/Essentiel/Mission_Affaires_europeennes_Essentiel_post-commission.pdf" },
+        { "titre": "Doctrine — TFUE article 311", "url": "https://www.doctrine.fr/l/traite-fonctionnement-union-europeenne/article-311/UE_TFUE_311" }
+      ]
+    },
+    {
+      "id": "fonctionnement_etat",
+      "nom": "Fonctionnement courant de l'État",
+      "bloc": "État",
+      "montant_mds": 40,
+      "annee_montant": 2026,
+      "montant_non_verifie": true,
+      "source_montant": { "titre": "PLF titre 3 — non retrouvé dans les recherches (valeur conservée)", "url": "https://www.budget.gouv.fr/" },
+      "note_montant": "Aucun document PLF 2026 titre 3 trouvé. Valeur 40 Md€ conservée et marquée non vérifiée.",
+      "crans": [
+        {
+          "niveau": 1,
+          "mesure": "−3 % (achats, immobilier, conseil)",
+          "gain_mds": 1.2,
+          "faisabilite": 1,
+          "arguments": ["Rapport Sénat 2022 sur les cabinets de conseil : dépenses de conseil ~1 Md€ en 2021 (prestations informatiques comprises)"],
+          "obstacles": ["Conseil seul = 200,2 M€ en 2022 (Cour des comptes) : un −3 % sur le seul conseil ne rapporte que ~6 M€"],
+          "sources": [
+            { "titre": "Consultor — « État : le Sénat siffle la fin du tout consulting » (rapport Sénat mars 2022)", "url": "https://www.consultor.fr/articles/etat-le-senat-siffle-la-fin-du-tout-consulting" },
+            { "titre": "Public Sénat — Cabinets de conseil, après le rapport de la Cour des comptes (200,2 M€ en 2022)", "url": "https://www.publicsenat.fr/actualites/politique/cabinets-de-conseil-apres-le-rapport-de-la-cour-des-comptes-le-senat-exige-plus-de-transparence" }
+          ],
+          "non_verifie": true,
+          "note": "Gain = 3 % x 40 Md€ (arithmétique sur montant non vérifié)."
+        },
+        {
+          "niveau": 2,
+          "mesure": "−7 % + cession immobilier",
+          "gain_mds": 2.8,
+          "faisabilite": 1,
+          "arguments": [],
+          "obstacles": ["Cession immobilière non chiffrée"],
+          "sources": [],
+          "non_verifie": true,
+          "note": "Gain = 7 % x 40 Md€ ; cession non chiffrée."
+        },
+        {
+          "niveau": 3,
+          "mesure": "−12 %",
+          "gain_mds": 4.8,
+          "faisabilite": 2,
+          "arguments": [],
+          "obstacles": ["Investissements numériques nécessaires"],
+          "sources": [],
+          "non_verifie": true,
+          "note": "Gain = 12 % x 40 Md€."
+        }
+      ],
+      "arguments": [],
+      "obstacles": [],
+      "sources": [
+        { "titre": "Consultor — rapport Sénat 2022 cabinets de conseil", "url": "https://www.consultor.fr/articles/etat-le-senat-siffle-la-fin-du-tout-consulting" }
+      ]
+    },
+    {
+      "id": "audiovisuel",
+      "nom": "Audiovisuel public",
+      "bloc": "État",
+      "montant_mds": 3.9,
+      "annee_montant": 2026,
+      "source_montant": {
+        "titre": "Sénat — rapport sur les crédits Médias, livre et industries culturelles, PLF 2026 (crédits audiovisuel public 3,878 Md€)",
+        "url": "https://www.senat.fr/rap/a25-141-10/a25-141-10-syn.pdf"
+      },
+      "note_montant": "Ancienne valeur 4 Md€ arrondie. Crédits PLF 2026 : 3,878 Md€, soit -71 M€ (-1,79 %) déjà inscrits. France Télévisions 2,44 Md€ (-2,6 %), Radio France 648 M€, INA 103,46 M€, FMM 303,9 M€ (stable).",
+      "crans": [
+        {
+          "niveau": 1,
+          "mesure": "−5 %",
+          "gain_mds": 0.19,
+          "faisabilite": 1,
+          "arguments": ["Une baisse de 71 M€ (-1,79 %) est déjà inscrite dans le PLF 2026"],
+          "obstacles": [],
+          "sources": [
+            { "titre": "Sénat — rapport Médias 2026 (crédits audiovisuel public)", "url": "https://www.senat.fr/rap/a25-141-10/a25-141-10-syn.pdf" }
+          ],
+          "non_verifie": false,
+          "note": "Gain = 5 % x 3,878 Md€ (arithmétique sur montant vérifié)."
+        },
+        {
+          "niveau": 2,
+          "mesure": "Holding + fusion des structures",
+          "gain_mds": 0.5,
+          "faisabilite": 1,
+          "arguments": [],
+          "obstacles": ["Indépendance éditoriale"],
+          "sources": [],
+          "non_verifie": true
+        },
+        {
+          "niveau": 3,
+          "mesure": "Privatisation partielle",
+          "gain_mds": 1.5,
+          "faisabilite": 2,
+          "arguments": [],
+          "obstacles": ["Pluralisme (objectif de valeur constitutionnelle)", "Décision Conseil constitutionnel sur le pluralisme à citer (numéro non vérifié en ligne)"],
+          "sources": [],
+          "non_verifie": true
+        }
+      ],
+      "arguments": [],
+      "obstacles": ["Indépendance", "Pluralisme"],
+      "sources": [
+        { "titre": "Sénat — rapport Médias, livre et industries culturelles PLF 2026", "url": "https://www.senat.fr/rap/a25-141-10/a25-141-10-syn.pdf" }
+      ]
+    },
+    {
+      "id": "minima_sociaux",
+      "nom": "Minima sociaux (RSA, prime d'activité, AAH)",
+      "bloc": "État / Départements",
+      "montant_mds": 30.6,
+      "annee_montant": 2022,
+      "source_montant": {
+        "titre": "Banque des Territoires — « Minima sociaux : le RSA et l'AAH ont coûté chacun 12 milliards d'euros en 2022 » (DREES : 30,6 Md€ versés en 2022)",
+        "url": "https://www.banquedesterritoires.fr/minima-sociaux-le-rsa-et-laah-ont-coute-chacun-12-milliards-deuros-en-2022"
+      },
+      "note_montant": "Ancienne valeur 45 Md€ fausse : 30,6 Md€ en 2022 (dernière année trouvée ; 2024 non trouvée). Périmètre DREES : minima sociaux, prime d'activité non incluse et non chiffrée. Effectifs fin 2024 (DREES) : 4,25 M allocataires de minima, dont RSA 1,84 M et AAH 1,40 M.",
+      "crans": [
+        {
+          "niveau": 1,
+          "mesure": "Lutte contre la fraude renforcée",
+          "gain_mds": 0.5,
+          "faisabilite": 1,
+          "arguments": ["Cour des comptes estime fraude prestations (chiffrage non retrouvé)"],
+          "obstacles": ["Non-recours aussi important"],
+          "sources": [],
+          "non_verifie": true
+        },
+        {
+          "niveau": 2,
+          "mesure": "Gel 1 an",
+          "gain_mds": 1,
+          "faisabilite": 1,
+          "arguments": [],
+          "obstacles": ["Pauvreté"],
+          "sources": [],
+          "non_verifie": true,
+          "note": "Ordre de grandeur indicatif : un gel d'un an vaut environ l'inflation x 30,6 Md€ (≈ 0,6 Md€ si inflation ~2 %). Valeur 1 Md€ conservée faute de chiffrage officiel."
+        },
+        {
+          "niveau": 3,
+          "mesure": "Allocation sociale unique plafonnée",
+          "gain_mds": 3,
+          "faisabilite": 2,
+          "arguments": ["Simplification"],
+          "obstacles": ["Perdants nombreux"],
+          "sources": [],
+          "non_verifie": true
+        }
+      ],
+      "arguments": [],
+      "obstacles": ["Non-recours"],
+      "sources": [
+        { "titre": "DREES — Nombre d'allocataires de minima sociaux en 2024 (communiqué 4 déc. 2025)", "url": "https://drees.solidarites-sante.gouv.fr/communique-de-presse/communique-de-presse/251204-nombre-allocataires-minima-sociaux" },
+        { "titre": "DREES — Fiche 07 MS24 : les dépenses d'allocations des minima sociaux (PDF, valeurs illisibles lors de la vérification)", "url": "https://www.drees.solidarites-sante.gouv.fr/sites/default/files/2024-10/MS24%20-%20Fiche%2007%20-%20Les%20d%C3%A9penses%20d%E2%80%99allocations%20des%20minima%20sociaux.pdf" }
+      ]
+    },
+    {
+      "id": "dette",
+      "nom": "Charge de la dette",
+      "bloc": "État",
+      "montant_mds": 58.0,
+      "annee_montant": 2026,
+      "source_montant": {
+        "titre": "Sénat — rapport PLF 2026, mission Engagements financiers de l'État (charge de la dette 58,0 Md€ en comptabilité budgétaire)",
+        "url": "https://www.senat.fr/rap/l25-139-312/l25-139-3120.html"
+      },
+      "note_montant": "Ancienne valeur 60 Md€ : 58,0 Md€ en comptabilité budgétaire (LFI 2025 : 53,5 Md€), 60,4 Md€ en comptabilité générale. Sensibilité AFT : +1 point de taux = +3,2 Md€ à 1 an, +23,5 Md€ à 5 ans.",
+      "crans": [
+        {
+          "niveau": 1,
+          "mesure": "Non pilotable directement",
+          "gain_mds": 0,
+          "faisabilite": 1,
+          "arguments": ["Baisse indirecte si déficit et taux baissent (sensibilité AFT : +1 pt de taux = +3,2 Md€ à 1 an)"],
+          "obstacles": [],
+          "sources": [
+            { "titre": "Sénat — rapport PLF 2026, Engagements financiers de l'État", "url": "https://www.senat.fr/rap/l25-139-312/l25-139-3120.html" }
+          ],
+          "non_verifie": false
+        },
+        {
+          "niveau": 2,
+          "mesure": "Non pilotable directement",
+          "gain_mds": 0,
+          "faisabilite": 1,
+          "arguments": [],
+          "obstacles": [],
+          "sources": [],
+          "non_verifie": false
+        },
+        {
+          "niveau": 3,
+          "mesure": "Défaut / restructuration",
+          "gain_mds": 0,
+          "faisabilite": 3,
+          "arguments": [],
+          "obstacles": ["Exclusion des marchés, crise bancaire : coût net négatif (non chiffré)"],
+          "sources": [],
+          "non_verifie": true,
+          "note": "Gain 0 conservé ; un défaut produit un coût, pas une économie. Aucun chiffrage trouvé."
+        }
+      ],
+      "arguments": [],
+      "obstacles": [],
+      "sources": [
+        { "titre": "Sénat — rapport PLF 2026, Engagements financiers de l'État", "url": "https://www.senat.fr/rap/l25-139-312/l25-139-3120.html" }
+      ]
+    }
+  ]
+}

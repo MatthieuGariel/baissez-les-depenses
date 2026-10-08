@@ -21,11 +21,13 @@ const list = (titre, arr) => arr.length ? `<strong>${titre}</strong><ul>${arr.ma
 function detail(poste, n) {
   if (!n) return '<p class="muted">Pas de baisse.</p>';
   const c = poste.crans[n - 1];
-  const src = [poste.source_montant, ...poste.sources]
+  const src = [...(c.sources || []), poste.source_montant, ...(poste.sources || [])]
+    .filter(s => s && s.url).filter((s, i, a) => a.findIndex(x => x.url === s.url) === i)
     .map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.titre)}</a></li>`).join('');
   return `<p><strong>${esc(c.mesure)}</strong><br>
     <span class="gain">−${fmt(c.gain_mds)} Md€</span>
-    <span class="badge f${c.faisabilite}">${FAISA[c.faisabilite]}</span></p>
+    <span class="badge f${c.faisabilite}">${FAISA[c.faisabilite]}</span>
+    ${c.non_verifie ? '<span class="badge nv">Chiffrage non vérifié</span>' : ''}</p>
     ${list('Pourquoi c\'est faisable', c.arguments)}
     ${list('Obstacles juridiques / UE / politiques', c.obstacles)}
     <strong>Sources</strong><ul>${src}</ul>`;

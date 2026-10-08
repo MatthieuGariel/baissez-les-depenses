@@ -1,0 +1,275 @@
+{
+  "meta": {
+    "groupe": 1,
+    "postes": ["retraites", "ondam_ville", "ondam_hopital", "famille", "chomage"],
+    "date_recherche": "2026-10-08",
+    "avertissement": "Recherche web courte. Plusieurs chiffres proviennent de presse ou de notes syndicales citant les sources officielles; ils sont signalés dans le champ verification. Les crans marqués non_verifie=true n'ont pas de chiffrage officiel trouvé: la valeur d'origine est conservée. Aucune URL n'est inventée: seules les URL vues dans les résultats sont listées."
+  },
+  "postes": [
+    {
+      "id": "retraites",
+      "nom": "Retraites (base + complémentaires)",
+      "bloc": "Sécurité sociale",
+      "montant_mds": 407,
+      "annee_montant": 2024,
+      "source_montant": {
+        "titre": "COR — Rapport annuel juin 2025 (chiffre 2024 cité par note Solidaires/Unirs, non vérifié dans le PDF)",
+        "url": "https://www.cor-retraites.fr/sites/default/files/2025-06/Synth%C3%A8se_Def_.pdf"
+      },
+      "verification": "Montant d'origine 400 corrigé à 406,9 Md€ (13,9 % du PIB, dépenses brutes 2024) d'après une note syndicale citant le COR. À confirmer dans le PDF COR.",
+      "crans": [
+        {
+          "niveau": 1,
+          "mesure": "Sous-indexation de 0,8 pt des pensions au-dessus de 2 000 €/mois pendant 1 an",
+          "gain_mds": 2,
+          "faisabilite": 1,
+          "arguments": ["Précédent : sous-indexations 2018-2019 (à sourcer)", "Préserve les petites pensions"],
+          "obstacles": ["Rupture d'égalité si seuil mal justifié (contrôle Conseil constitutionnel, décision non identifiée)", "AGIRC-ARRCO hors champ direct de l'État"],
+          "non_verifie": true,
+          "sources": []
+        },
+        {
+          "niveau": 2,
+          "mesure": "Gel des pensions de base 1 an (année blanche), épargnant les petites pensions selon le vote du Sénat",
+          "gain_mds": 2.5,
+          "faisabilite": 1,
+          "arguments": ["Mesure du PLFSS 2026 (projet du gouvernement) : gel de l'ensemble des prestations sociales de 3,6 Md€ en 2026, dont 2,5 Md€ Sécurité sociale et 1,1 Md€ État. Gain propre aux pensions non isolé dans les sources."],
+          "obstacles": ["Perte de pouvoir d'achat des retraités modestes", "Forte opposition politique: l'Assemblée a supprimé la mesure (308 voix contre 99), le Sénat a réintroduit un blocage épargnant les pensions de moins de 1 400 €/mois brut"],
+          "non_verifie": true,
+          "verification": "Correction: 6 Md€ non étayé et formule '~6 Md€ par point d'inflation ×2' non sourcée. Le chiffrage officiel disponible est 3,6 Md€ pour l'ensemble des prestations gelées, dont part pensions non isolée. Issue finale (CMP, vote) non trouvée.",
+          "sources": [
+            {"titre": "Public Sénat — PLFSS 2026 prévoit un gel des pensions de retraite", "url": "https://www.publicsenat.fr/actualites/sante/securite-sociale-le-budget-plfss-2026-prevoit-un-gel-des-pensions-de-retraite-effort-depenses-de-sante"},
+            {"titre": "Moneyvox — Gel des retraites de base, année blanche du budget 2026", "url": "https://www.moneyvox.fr/votre-argent/actualites/105519/retraite-carsat-caf-bareme-de-impot-combien-va-vous-couter-annee-blanche-du-budget-2026"}
+          ]
+        },
+        {
+          "niveau": 3,
+          "mesure": "Gel 1 an + âge légal porté à 65 ans + alignement régimes spéciaux résiduels",
+          "gain_mds": 18,
+          "faisabilite": 2,
+          "arguments": ["Montée en charge progressive (gain plein ~2035, à sourcer)", "Moyenne UE âge légal ≈ 65 ans (à sourcer)"],
+          "obstacles": ["Gain de court terme faible", "Effets reports vers chômage/invalidité (DREES, à sourcer)"],
+          "non_verifie": true,
+          "verification": "Aucun chiffrage officiel trouvé pour le cran 3. Valeur conservée.",
+          "sources": []
+        }
+      ],
+      "sources": [
+        {"titre": "COR — Synthèse rapport annuel 2025", "url": "https://www.cor-retraites.fr/sites/default/files/2025-06/Synth%C3%A8se_Def_.pdf"},
+        {"titre": "Public Sénat — PLFSS 2026 gel des pensions", "url": "https://www.publicsenat.fr/actualites/sante/securite-sociale-le-budget-plfss-2026-prevoit-un-gel-des-pensions-de-retraite-effort-depenses-de-sante"}
+      ]
+    },
+    {
+      "id": "ondam_ville",
+      "nom": "Assurance maladie — soins de ville",
+      "bloc": "Sécurité sociale",
+      "montant_mds": 110,
+      "annee_montant": null,
+      "source_montant": {
+        "titre": "Montant non vérifié (valeur d'origine conservée)",
+        "url": "https://www.senat.fr/rap/a25-747/a25-7476.html"
+      },
+      "verification": "Montant non confirmé. Sénat (rapport 2025 sur la LFSS): sous-objectif soins de ville en hausse de 3,5 % en 2025, soit +0,5 Md€ par rapport à la LFSS, selon la Cour des comptes citée.",
+      "crans": [
+        {
+          "niveau": 1,
+          "mesure": "Doublement des franchises médicales (plafond 100 → 200 €/an) — ABANDONNÉ dans la LFSS 2026",
+          "gain_mds": 0.8,
+          "faisabilite": 1,
+          "arguments": ["Mesure ciblée par le gouvernement (article 18 PLFSS 2026), retirée par la commission des affaires sociales en octobre 2025, abandonnée le 8 décembre 2025 faute de majorité"],
+          "obstacles": ["Renoncement aux soins chez les précaires", "Opposition des syndicats et professionnels"],
+          "non_verifie": true,
+          "verification": "Correction: la mesure n'était pas 'faite par décret en 2024'. Elle a été portée par le PLFSS 2026 puis abandonnée. Presse (juillet-août 2026) évoque une relance par décret (plafond 100 → 140 €, indexé): non confirmé par une source officielle. Gain 0,8 Md€ non chiffré officiellement.",
+          "sources": [
+            {"titre": "Previssima — Doublement des franchises médicales en pleine crise politique", "url": "https://www.previssima.fr/actualite/doublement-des-franchises-medicales-en-pleine-crise-politique-des-syndicats-sinsurgent.html"}
+          ]
+        },
+        {
+          "niveau": 2,
+          "mesure": "Paquet Cnam: franchises + baisse de prix des médicaments/génériques + contrôle des arrêts maladie",
+          "gain_mds": 3.9,
+          "faisabilite": 1,
+          "arguments": ["La Cnam propose 3,9 Md€ d'économies (produits de santé 1,3 Md€ en 2027)", "Rapport Charges et produits de la Cnam"],
+          "obstacles": ["Négociation conventionnelle", "Pénuries de médicaments"],
+          "non_verifie": false,
+          "verification": "Correction: 3,5 Md€ remplacé par 3,9 Md€ (paquet Cnam global, pas seulement ce cran). Presse divergente sur l'année: Vidal parle de PLFSS 2027, LCP de 2026. Vérifier le rapport Charges et produits.",
+          "sources": [
+            {"titre": "Vidal — PLFSS 2027: la Cnam propose 3,9 Md€ d'économies", "url": "https://www.vidal.fr/actualites/38039-plfss-2027-la-cnam-propose-3-9-milliards-d-euros-d-economies.html"},
+            {"titre": "LCP — Dépenses de santé: l'Assurance maladie fait 60 propositions et envisage 3,9 Md€ d'économies", "url": "https://lcp.fr/actualites/depenses-de-sante-l-assurance-maladie-fait-60-propositions-et-envisage-39-milliards-d"}
+          ]
+        },
+        {
+          "niveau": 3,
+          "mesure": "Déremboursement des affections non ALD vers complémentaires + jour de carence d'ordre public",
+          "gain_mds": 8,
+          "faisabilite": 2,
+          "arguments": ["Transfert vers complémentaires (modèle débattu)"],
+          "obstacles": ["Hausse des cotisations mutuelles: transfert, pas économie nette", "Préambule de 1946, alinéa 11 (protection de la santé): référence non sourcée dans la recherche"],
+          "non_verifie": true,
+          "verification": "Aucun chiffrage officiel trouvé. Valeur conservée.",
+          "sources": []
+        }
+      ],
+      "sources": [
+        {"titre": "Sénat — rapport LFSS 2026 (ONDAM 2025, soins de ville)", "url": "https://www.senat.fr/rap/a25-747/a25-7476.html"},
+        {"titre": "Vidal — PLFSS 2027 Cnam 3,9 Md€", "url": "https://www.vidal.fr/actualites/38039-plfss-2027-la-cnam-propose-3-9-milliards-d-euros-d-economies.html"}
+      ]
+    },
+    {
+      "id": "ondam_hopital",
+      "nom": "Assurance maladie — hôpital",
+      "bloc": "Sécurité sociale",
+      "montant_mds": 115,
+      "annee_montant": null,
+      "source_montant": {
+        "titre": "Montant non vérifié (valeur d'origine conservée)",
+        "url": "https://www.senat.fr/rap/a25-747/a25-7476.html"
+      },
+      "verification": "Non confirmé. Un amendement de juin 2026 cite la Cour des comptes: 1,2 Md€ d'économies supplémentaires sur hôpitaux et médico-social en 2025, déficit des hôpitaux publics 2,5 Md€ (contre 2,6 Md€ en 2024). Source militante reprenant la Cour: à vérifier dans le rapport 'Sécurité sociale 2025' de la Cour.",
+      "crans": [
+        {
+          "niveau": 1,
+          "mesure": "Achats groupés et réduction intérim médical",
+          "gain_mds": 1,
+          "faisabilite": 1,
+          "arguments": ["Programme PHARE (à sourcer)", "Loi Rist plafonnement intérim (à sourcer)"],
+          "obstacles": ["Tension effectifs"],
+          "non_verifie": true,
+          "verification": "Aucun chiffrage officiel trouvé. Valeur conservée.",
+          "sources": []
+        },
+        {
+          "niveau": 2,
+          "mesure": "Virage ambulatoire accéléré + fermeture lits sous-occupés",
+          "gain_mds": 3,
+          "faisabilite": 2,
+          "arguments": ["Cour des comptes: écarts d'efficience entre établissements"],
+          "obstacles": ["Acceptabilité locale", "Déserts médicaux"],
+          "non_verifie": true,
+          "verification": "Aucun chiffrage officiel trouvé pour 3 Md€. Référence Cour non précisée.",
+          "sources": []
+        },
+        {
+          "niveau": 3,
+          "mesure": "Restructuration carte hospitalière (fusions, regroupement plateaux techniques)",
+          "gain_mds": 6,
+          "faisabilite": 2,
+          "arguments": ["Gains à moyen terme"],
+          "obstacles": ["Coûts de transition", "Forte opposition élus"],
+          "non_verifie": true,
+          "verification": "Aucun chiffrage officiel trouvé. Valeur conservée.",
+          "sources": []
+        }
+      ],
+      "sources": [
+        {"titre": "Sénat — rapport LFSS 2026 (ONDAM 2025)", "url": "https://www.senat.fr/rap/a25-747/a25-7476.html"}
+      ]
+    },
+    {
+      "id": "famille",
+      "nom": "Prestations familiales",
+      "bloc": "Sécurité sociale",
+      "montant_mds": 65.8,
+      "annee_montant": 2024,
+      "source_montant": {
+        "titre": "DREES — Comptes de la protection sociale 2025, fiche 08 'Le risque famille' (tous régimes, 2024)",
+        "url": "https://drees.solidarites-sante.gouv.fr/sites/default/files/2026-03/CPS2025%20-%20Fiche%2008%20-%20Le%20risque%20famille.pdf"
+      },
+      "verification": "Montant d'origine 55 remplacé par 65,8 Md€ (prestations du risque famille tous régimes 2024, y compris garde d'enfants et ASE). Périmètre Caf seul 2024: 24,5 Md€ (Cnaf, étude n°7 2026) pour l'entretien et l'éducation de l'enfant. Le périmètre retenu doit être choisi explicitement.",
+      "crans": [
+        {
+          "niveau": 1,
+          "mesure": "Gel 1 an des prestations familiales",
+          "gain_mds": 0.8,
+          "faisabilite": 1,
+          "arguments": ["Mécanique simple", "Gel 2026 de l'ensemble des prestations sociales: 3,6 Md€ dont 2,5 Md€ Sécurité sociale (part famille non isolée)"],
+          "obstacles": ["Pouvoir d'achat des familles"],
+          "non_verifie": true,
+          "verification": "Gain 0,8 Md€ non confirmé. Référence globale 2026 utilisée comme repère, part famille non isolée.",
+          "sources": [
+            {"titre": "Public Sénat — PLFSS 2026 gel des prestations", "url": "https://www.publicsenat.fr/actualites/sante/securite-sociale-le-budget-plfss-2026-prevoit-un-gel-des-pensions-de-retraite-effort-depenses-de-sante"}
+          ]
+        },
+        {
+          "niveau": 2,
+          "mesure": "Modulation renforcée des allocations familiales selon les revenus",
+          "gain_mds": 1.5,
+          "faisabilite": 1,
+          "arguments": ["Précédent: modulation introduite par la LFSS 2015 (article 85), validée par le Conseil constitutionnel en 2014 (numéro de décision non trouvé)"],
+          "obstacles": ["Fin de l'universalité"],
+          "non_verifie": true,
+          "verification": "Constitutionnalité: le Conseil a jugé que la modulation selon les ressources n'est pas contraire au préambule de 1946. Chiffrage 1,5 Md€ non vérifié.",
+          "sources": []
+        },
+        {
+          "niveau": 3,
+          "mesure": "Suppression allocations familiales au-dessus du 8e décile",
+          "gain_mds": 3,
+          "faisabilite": 2,
+          "arguments": ["Ciblage"],
+          "obstacles": ["Natalité en baisse", "Égalité devant les charges publiques"],
+          "non_verifie": true,
+          "verification": "Aucun chiffrage officiel trouvé. Valeur conservée.",
+          "sources": []
+        }
+      ],
+      "sources": [
+        {"titre": "DREES — Fiche 08 'Le risque famille' (CPS 2025)", "url": "https://drees.solidarites-sante.gouv.fr/sites/default/files/2026-03/CPS2025%20-%20Fiche%2008%20-%20Le%20risque%20famille.pdf"},
+        {"titre": "Cnaf — Analyses statistiques n°7 (2026)", "url": "https://caf.fr/sites/default/files/medias/cnaf/Nous_connaitre/Recherche_et_statistiques/Analyses_statistiques/CNAF_n%C2%B07_Analyses_statistiques.pdf"}
+      ]
+    },
+    {
+      "id": "chomage",
+      "nom": "Assurance chômage",
+      "bloc": "Sécurité sociale",
+      "montant_mds": 45.2,
+      "annee_montant": 2025,
+      "source_montant": {
+        "titre": "Unédic — Prévisions financières octobre 2025 (dépenses 2025 prévues: 45,2 Md€, toutes dépenses, pas seulement allocations)",
+        "url": "https://www.unedic.org/publications/previsions-financieres-de-l-unedic-octobre-2025"
+      },
+      "verification": "Montant d'origine 40 remplacé par 45,2 Md€ (dépenses totales du régime, prévision 2025). Allocations seules non isolées. Comptes définitifs 2025: déficit de 23 M€.",
+      "crans": [
+        {
+          "niveau": 1,
+          "mesure": "Contracyclicité: durée d'indemnisation réduite de 25 % en période verte (et non 10 %)",
+          "gain_mds": 1,
+          "faisabilite": 1,
+          "arguments": ["Réforme 2023 déjà appliquée: décret n°2023-33 du 26 janvier 2023, en vigueur le 1er février 2023, durée minimale 6 mois"],
+          "obstacles": ["Gouvernance paritaire"],
+          "non_verifie": true,
+          "verification": "Correction: le mécanisme réel est une réduction de 25 %, pas 10 %. Gain 1 Md€ non chiffré officiellement (Dares: évaluation non trouvée; Unédic: premiers éléments de suivi déc. 2025).",
+          "sources": [
+            {"titre": "Unédic — Réforme 2023: premiers effets de la contracyclicité", "url": "https://www.unedic.org/publications/reforme-2023-premiers-effets-de-la-reforme-de-contracyclicite"}
+          ]
+        },
+        {
+          "niveau": 2,
+          "mesure": "Durée maximale 18 mois + durcissement ruptures conventionnelles (projet de réforme mai 2024)",
+          "gain_mds": 3.6,
+          "faisabilite": 1,
+          "arguments": ["Projet exécutif mai 2024: 3,6 Md€ d'économies pour l'ensemble des mesures"],
+          "obstacles": ["Seniors", "Retrait ou non-aboutissement du projet à vérifier"],
+          "non_verifie": true,
+          "verification": "Correction: 3 Md€ remplacé par 3,6 Md€, chiffre de l'ensemble du projet 2024, non isolé pour la seule durée de 18 mois. Référence 'moyenne OCDE' non sourcée.",
+          "sources": []
+        },
+        {
+          "niveau": 3,
+          "mesure": "Allocation dégressive pour tous + fin des droits rechargeables",
+          "gain_mds": 5,
+          "faisabilite": 2,
+          "arguments": ["Incitation au retour à l'emploi (études Dares mitigées, à sourcer)"],
+          "obstacles": ["Report vers RSA (départements)"],
+          "non_verifie": true,
+          "verification": "Aucun chiffrage officiel trouvé. Valeur conservée.",
+          "sources": []
+        }
+      ],
+      "sources": [
+        {"titre": "Unédic — Prévisions financières octobre 2025", "url": "https://www.unedic.org/publications/previsions-financieres-de-l-unedic-octobre-2025"},
+        {"titre": "Unédic — Réforme 2023 contracyclicité", "url": "https://www.unedic.org/publications/reforme-2023-premiers-effets-de-la-reforme-de-contracyclicite"}
+      ]
+    }
+  ]
+}
