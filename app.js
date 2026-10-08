@@ -28,7 +28,7 @@ function detail(poste, n) {
     <span class="gain">−${fmt(c.gain_mds)} Md€</span>
     <span class="badge f${c.faisabilite}">${FAISA[c.faisabilite]}</span>
     ${c.non_verifie ? '<span class="badge nv">Chiffrage non vérifié</span>' : ''}</p>
-    ${list('Pourquoi c\'est faisable', c.arguments)}
+    ${list('Arguments', c.arguments)}
     ${list('Obstacles juridiques / UE / politiques', c.obstacles)}
     <strong>Sources</strong><ul>${src}</ul>`;
 }
