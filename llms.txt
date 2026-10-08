@@ -1,0 +1,10 @@
+# Baissez les dépenses
+
+> Simulateur citoyen de baisse des dépenses publiques françaises (APU). ~20 postes, 3 niveaux de baisse chacun, chaque niveau = mesure concrète chiffrée, avec arguments, obstacles juridiques/UE et sources.
+
+## Données
+- [postes.json](data/postes.json): jeu de données complet (montants Md€, mesures, gain, faisabilité 1-3, sources)
+
+## Usage
+- Scénario encodé dans l'URL : `#<id_poste>=<niveau 0-3>&...` (ex. `#retraites=2&ue=1`)
+- Faisabilité : 1 = faisable par loi ordinaire, 2 = risque juridique/politique fort, 3 = obstacle constitutionnel/UE probable

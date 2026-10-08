@@ -1,0 +1,290 @@
+{
+  "meta": {
+    "titre": "Simulateur de baisse des dépenses publiques",
+    "perimetre": "Administrations publiques (APU) : État, Sécurité sociale, collectivités, opérateurs",
+    "depenses_totales_mds": 1670,
+    "deficit_mds": 169,
+    "annee_reference": 2024,
+    "statut": "BROUILLON v0.1 — montants et chiffrages en ordre de grandeur, chaque ligne doit être vérifiée contre la source citée avant publication",
+    "faisabilite": {
+      "1": "Faisable par loi ordinaire / LFI-LFSS, précédents existants",
+      "2": "Faisable mais risque juridique ou politique fort (Conseil constitutionnel, partenaires sociaux, collectivités)",
+      "3": "Très contestable : obstacle constitutionnel, droit UE ou engagement international probable"
+    },
+    "licence": "CC BY 4.0"
+  },
+  "postes": [
+    {
+      "id": "retraites",
+      "nom": "Retraites (base + complémentaires)",
+      "bloc": "Sécurité sociale",
+      "montant_mds": 400,
+      "source_montant": { "titre": "COR — Rapport annuel 2025", "url": "https://www.cor-retraites.fr/" },
+      "crans": [
+        { "niveau": 1, "mesure": "Sous-indexation de 0,8 pt des pensions au-dessus de 2 000 €/mois pendant 1 an", "gain_mds": 2, "faisabilite": 1,
+          "arguments": ["Précédent : sous-indexations 2018-2019 (loi de financement)", "Préserve les petites pensions"],
+          "obstacles": ["Rupture d'égalité si seuil mal justifié (contrôle CC)", "AGIRC-ARRCO hors champ direct de l'État"] },
+        { "niveau": 2, "mesure": "Gel de toutes les pensions de base pendant 1 an (année blanche)", "gain_mds": 6, "faisabilite": 1,
+          "arguments": ["Mesure envisagée PLFSS 2026", "Chiffrage ~6 Md€ par point d'inflation non revalorisé ×2"],
+          "obstacles": ["Perte de pouvoir d'achat retraités modestes", "Forte opposition politique"] },
+        { "niveau": 3, "mesure": "Gel 1 an + âge légal porté à 65 ans + alignement régimes spéciaux résiduels", "gain_mds": 18, "faisabilite": 2,
+          "arguments": ["Montée en charge progressive (gain plein ~2035)", "Moyenne UE âge légal ≈ 65 ans"],
+          "obstacles": ["Gain de court terme faible", "Effets reports vers chômage/invalidité (DREES)"] }
+      ],
+      "sources": [
+        { "titre": "Conseil d'orientation des retraites", "url": "https://www.cor-retraites.fr/" },
+        { "titre": "Cour des comptes — situation financière des retraites", "url": "https://www.ccomptes.fr/" }
+      ]
+    },
+    {
+      "id": "ondam_ville",
+      "nom": "Assurance maladie — soins de ville",
+      "bloc": "Sécurité sociale",
+      "montant_mds": 110,
+      "source_montant": { "titre": "LFSS — annexe ONDAM", "url": "https://www.securite-sociale.fr/" },
+      "crans": [
+        { "niveau": 1, "mesure": "Doublement des franchises médicales (plafond 100 €/an)", "gain_mds": 0.8, "faisabilite": 1,
+          "arguments": ["Fait par décret en 2024", "Plafond protège malades chroniques"], "obstacles": ["Renoncement aux soins chez les précaires"] },
+        { "niveau": 2, "mesure": "Franchises + baisse de prix médicaments/génériques + contrôle arrêts maladie", "gain_mds": 3.5, "faisabilite": 1,
+          "arguments": ["IJ en forte hausse depuis 2019 (Cnam)", "Rapports Charges et produits Cnam chiffrent ces leviers"], "obstacles": ["Négociation conventionnelle", "Pénuries de médicaments"] },
+        { "niveau": 3, "mesure": "Déremboursement des affections non ALD vers complémentaires + jour de carence d'ordre public", "gain_mds": 8, "faisabilite": 2,
+          "arguments": ["Transfert vers complémentaires (modèle débattu)"], "obstacles": ["Hausse des cotisations mutuelles : transfert, pas économie nette", "Préambule 1946 al. 11 (protection de la santé)"] }
+      ],
+      "sources": [{ "titre": "Cnam — Rapport Charges et produits", "url": "https://www.assurance-maladie.ameli.fr/" }]
+    },
+    {
+      "id": "ondam_hopital",
+      "nom": "Assurance maladie — hôpital",
+      "bloc": "Sécurité sociale",
+      "montant_mds": 115,
+      "source_montant": { "titre": "LFSS — annexe ONDAM", "url": "https://www.securite-sociale.fr/" },
+      "crans": [
+        { "niveau": 1, "mesure": "Achats groupés et réduction intérim médical", "gain_mds": 1, "faisabilite": 1, "arguments": ["Programme PHARE", "Loi Rist plafonnement intérim"], "obstacles": ["Tension effectifs"] },
+        { "niveau": 2, "mesure": "Virage ambulatoire accéléré + fermeture lits sous-occupés", "gain_mds": 3, "faisabilite": 2, "arguments": ["Cour des comptes : écarts d'efficience entre établissements"], "obstacles": ["Acceptabilité locale", "Déserts médicaux"] },
+        { "niveau": 3, "mesure": "Restructuration carte hospitalière (fusions, regroupement plateaux techniques)", "gain_mds": 6, "faisabilite": 2, "arguments": ["Gains à moyen terme"], "obstacles": ["Coûts de transition", "Forte opposition élus"] }
+      ],
+      "sources": [{ "titre": "Cour des comptes — rapports sécurité sociale", "url": "https://www.ccomptes.fr/" }]
+    },
+    {
+      "id": "famille",
+      "nom": "Prestations familiales",
+      "bloc": "Sécurité sociale",
+      "montant_mds": 55,
+      "source_montant": { "titre": "Cnaf — chiffres clés", "url": "https://www.caf.fr/" },
+      "crans": [
+        { "niveau": 1, "mesure": "Gel 1 an des prestations", "gain_mds": 0.8, "faisabilite": 1, "arguments": ["Mécanique simple"], "obstacles": ["Pouvoir d'achat familles"] },
+        { "niveau": 2, "mesure": "Modulation renforcée des allocations familiales selon revenus", "gain_mds": 1.5, "faisabilite": 1, "arguments": ["Précédent modulation 2015"], "obstacles": ["Fin de l'universalité"] },
+        { "niveau": 3, "mesure": "Suppression allocations familiales au-dessus du 8e décile", "gain_mds": 3, "faisabilite": 2, "arguments": ["Ciblage"], "obstacles": ["Natalité en baisse", "Égalité devant charges publiques"] }
+      ],
+      "sources": [{ "titre": "HCFEA", "url": "https://www.hcfea.fr/" }]
+    },
+    {
+      "id": "chomage",
+      "nom": "Assurance chômage",
+      "bloc": "Sécurité sociale",
+      "montant_mds": 40,
+      "source_montant": { "titre": "Unédic — situation financière", "url": "https://www.unedic.org/" },
+      "crans": [
+        { "niveau": 1, "mesure": "Durée d'indemnisation réduite de 10 % (contracyclicité)", "gain_mds": 1, "faisabilite": 1, "arguments": ["Réforme 2023 déjà appliquée"], "obstacles": ["Gouvernance paritaire"] },
+        { "niveau": 2, "mesure": "Durée max 18 mois + durcissement ruptures conventionnelles", "gain_mds": 3, "faisabilite": 1, "arguments": ["Moyenne OCDE plus basse"], "obstacles": ["Seniors"] },
+        { "niveau": 3, "mesure": "Allocation dégressive pour tous + fin des droits rechargeables", "gain_mds": 5, "faisabilite": 2, "arguments": ["Incitation retour emploi (études Dares mitigées)"], "obstacles": ["Report vers RSA (départements)"] }
+      ],
+      "sources": [{ "titre": "Dares", "url": "https://dares.travail-emploi.gouv.fr/" }]
+    },
+    {
+      "id": "aides_entreprises",
+      "nom": "Aides aux entreprises (subventions, niches, allègements)",
+      "bloc": "État / Sécu",
+      "montant_mds": 160,
+      "source_montant": { "titre": "Rapport Sénat 2025 — commission d'enquête aides publiques", "url": "https://www.senat.fr/" },
+      "crans": [
+        { "niveau": 1, "mesure": "Suppression des niches fiscales jugées inefficaces par l'IGF", "gain_mds": 3, "faisabilite": 1, "arguments": ["Revue des dépenses IGF"], "obstacles": ["Lobbying sectoriel"] },
+        { "niveau": 2, "mesure": "Recentrage CIR + resserrement allègements au-delà de 2,5 SMIC", "gain_mds": 8, "faisabilite": 1, "arguments": ["Rapport Bozio-Wasmer 2024"], "obstacles": ["Compétitivité, risque emploi qualifié"] },
+        { "niveau": 3, "mesure": "Réduction de 25 % de l'enveloppe globale", "gain_mds": 40, "faisabilite": 2, "arguments": ["Montant total jamais évalué globalement"], "obstacles": ["Hausse du coût du travail", "Aides d'État : cadre UE à respecter"] }
+      ],
+      "sources": [{ "titre": "France Stratégie", "url": "https://www.strategie.gouv.fr/" }]
+    },
+    {
+      "id": "masse_salariale_etat",
+      "nom": "Masse salariale de l'État",
+      "bloc": "État",
+      "montant_mds": 150,
+      "source_montant": { "titre": "PLF — jaune fonction publique", "url": "https://www.budget.gouv.fr/" },
+      "crans": [
+        { "niveau": 1, "mesure": "Gel du point d'indice 1 an", "gain_mds": 2, "faisabilite": 1, "arguments": ["Fait 2011-2016"], "obstacles": ["Attractivité"] },
+        { "niveau": 2, "mesure": "Gel du point + non-remplacement 1 départ sur 3 hors régaliens", "gain_mds": 4, "faisabilite": 1, "arguments": ["RGPP 2007-2012"], "obstacles": ["Qualité service public"] },
+        { "niveau": 3, "mesure": "Non-remplacement 1 sur 2 + 3 jours de carence", "gain_mds": 8, "faisabilite": 1, "arguments": ["Montée en charge"], "obstacles": ["Éducation, santé déjà en tension"] }
+      ],
+      "sources": [{ "titre": "DGAFP", "url": "https://www.fonction-publique.gouv.fr/" }]
+    },
+    {
+      "id": "education",
+      "nom": "Enseignement scolaire (hors masse salariale)",
+      "bloc": "État",
+      "montant_mds": 15,
+      "source_montant": { "titre": "PLF mission Enseignement scolaire", "url": "https://www.budget.gouv.fr/" },
+      "crans": [
+        { "niveau": 1, "mesure": "Adaptation des moyens à la baisse démographique", "gain_mds": 0.5, "faisabilite": 1, "arguments": ["−500 000 élèves d'ici 2030 (DEPP)"], "obstacles": ["Fermetures classes rurales"] },
+        { "niveau": 2, "mesure": "Rationalisation des options/filières lycée", "gain_mds": 1, "faisabilite": 1, "arguments": ["Cour des comptes"], "obstacles": ["Choix pédagogique"] },
+        { "niveau": 3, "mesure": "Fusion d'établissements et rectorats", "gain_mds": 2, "faisabilite": 2, "arguments": [], "obstacles": ["Transports scolaires (coût collectivités)"] }
+      ],
+      "sources": [{ "titre": "DEPP", "url": "https://www.education.gouv.fr/" }]
+    },
+    {
+      "id": "operateurs",
+      "nom": "Opérateurs et agences de l'État",
+      "bloc": "État",
+      "montant_mds": 80,
+      "source_montant": { "titre": "PLF — jaune opérateurs", "url": "https://www.budget.gouv.fr/" },
+      "crans": [
+        { "niveau": 1, "mesure": "Baisse de 5 % des frais de fonctionnement", "gain_mds": 1, "faisabilite": 1, "arguments": ["Mutualisation fonctions support"], "obstacles": [] },
+        { "niveau": 2, "mesure": "Fusion/suppression ~1/3 des agences redondantes", "gain_mds": 3, "faisabilite": 1, "arguments": ["Rapport Sénat 2025 agences"], "obstacles": ["Gains réels souvent faibles (missions transférées)"] },
+        { "niveau": 3, "mesure": "Réintégration en administration centrale + suppression de missions", "gain_mds": 8, "faisabilite": 2, "arguments": [], "obstacles": ["Il faut supprimer des missions, pas juste des structures"] }
+      ],
+      "sources": [{ "titre": "Cour des comptes", "url": "https://www.ccomptes.fr/" }]
+    },
+    {
+      "id": "logement",
+      "nom": "Aides au logement (APL, niches)",
+      "bloc": "État",
+      "montant_mds": 38,
+      "source_montant": { "titre": "Compte du logement", "url": "https://www.statistiques.developpement-durable.gouv.fr/" },
+      "crans": [
+        { "niveau": 1, "mesure": "Gel des APL 1 an", "gain_mds": 0.3, "faisabilite": 1, "arguments": [], "obstacles": ["Ménages modestes"] },
+        { "niveau": 2, "mesure": "Fin des niches investissement locatif + recentrage PTZ", "gain_mds": 2, "faisabilite": 1, "arguments": ["Pinel jugé inefficient (IGF)"], "obstacles": ["Construction en crise"] },
+        { "niveau": 3, "mesure": "Prise en compte du patrimoine dans les APL + baisse forfait", "gain_mds": 4, "faisabilite": 1, "arguments": [], "obstacles": ["Étudiants"] }
+      ],
+      "sources": [{ "titre": "IGF — revue de dépenses", "url": "https://www.igf.finances.gouv.fr/" }]
+    },
+    {
+      "id": "aide_developpement",
+      "nom": "Aide publique au développement",
+      "bloc": "État",
+      "montant_mds": 6,
+      "source_montant": { "titre": "PLF mission APD", "url": "https://www.budget.gouv.fr/" },
+      "crans": [
+        { "niveau": 1, "mesure": "−15 %", "gain_mds": 0.8, "faisabilite": 1, "arguments": ["Déjà baissée en 2025"], "obstacles": [] },
+        { "niveau": 2, "mesure": "−30 %", "gain_mds": 1.8, "faisabilite": 1, "arguments": [], "obstacles": ["Objectif loi 2021 (0,7 % RNB) non contraignant"] },
+        { "niveau": 3, "mesure": "−50 %", "gain_mds": 3, "faisabilite": 2, "arguments": [], "obstacles": ["Engagements internationaux, influence"] }
+      ],
+      "sources": [{ "titre": "OCDE CAD", "url": "https://www.oecd.org/" }]
+    },
+    {
+      "id": "ame",
+      "nom": "Aide médicale d'État",
+      "bloc": "État",
+      "montant_mds": 1.3,
+      "source_montant": { "titre": "PLF mission Santé", "url": "https://www.budget.gouv.fr/" },
+      "crans": [
+        { "niveau": 1, "mesure": "Panier de soins restreint (rapport Evin-Stefanini)", "gain_mds": 0.1, "faisabilite": 1, "arguments": ["Rapport 2023"], "obstacles": [] },
+        { "niveau": 2, "mesure": "Transformation en aide médicale d'urgence", "gain_mds": 0.4, "faisabilite": 2, "arguments": [], "obstacles": ["Report vers urgences hospitalières", "Santé publique"] },
+        { "niveau": 3, "mesure": "Suppression", "gain_mds": 0.8, "faisabilite": 3, "arguments": [], "obstacles": ["CEDH art. 3, Préambule 1946", "Gain net incertain"] }
+      ],
+      "sources": [{ "titre": "Rapport Evin-Stefanini 2023", "url": "https://www.vie-publique.fr/" }]
+    },
+    {
+      "id": "collectivites_fonctionnement",
+      "nom": "Collectivités — fonctionnement",
+      "bloc": "Collectivités",
+      "montant_mds": 200,
+      "source_montant": { "titre": "OFGL — finances locales", "url": "https://www.collectivites-locales.gouv.fr/" },
+      "crans": [
+        { "niveau": 1, "mesure": "Gel de la DGF", "gain_mds": 1, "faisabilite": 1, "arguments": [], "obstacles": ["Libre administration (art. 72 C)"] },
+        { "niveau": 2, "mesure": "Contrats de maîtrise de dépense (+1,2 %/an max)", "gain_mds": 5, "faisabilite": 1, "arguments": ["Contrats de Cahors 2018 validés par CC"], "obstacles": ["Adhésion"] },
+        { "niveau": 3, "mesure": "Suppression d'un échelon + fusion communes", "gain_mds": 10, "faisabilite": 3, "arguments": ["Doublons de compétences"], "obstacles": ["Révision constitutionnelle (départements cités art. 72)", "Gains historiquement décevants (fusion régions 2015)"] }
+      ],
+      "sources": [{ "titre": "Cour des comptes — finances publiques locales", "url": "https://www.ccomptes.fr/" }]
+    },
+    {
+      "id": "collectivites_investissement",
+      "nom": "Collectivités — investissement",
+      "bloc": "Collectivités",
+      "montant_mds": 70,
+      "source_montant": { "titre": "OFGL", "url": "https://www.collectivites-locales.gouv.fr/" },
+      "crans": [
+        { "niveau": 1, "mesure": "Réduction dotations d'investissement (DSIL/DETR) −10 %", "gain_mds": 0.2, "faisabilite": 1, "arguments": [], "obstacles": [] },
+        { "niveau": 2, "mesure": "−20 %", "gain_mds": 0.5, "faisabilite": 1, "arguments": [], "obstacles": ["Transition écologique"] },
+        { "niveau": 3, "mesure": "Moratoire 1 an projets non engagés", "gain_mds": 5, "faisabilite": 2, "arguments": [], "obstacles": ["BTP, emploi local", "Investissement = dépense productive"] }
+      ],
+      "sources": []
+    },
+    {
+      "id": "defense",
+      "nom": "Défense",
+      "bloc": "État",
+      "montant_mds": 50,
+      "source_montant": { "titre": "LPM 2024-2030", "url": "https://www.defense.gouv.fr/" },
+      "crans": [
+        { "niveau": 1, "mesure": "Étalement de programmes", "gain_mds": 1, "faisabilite": 1, "arguments": [], "obstacles": ["Coûts unitaires augmentent"] },
+        { "niveau": 2, "mesure": "Gel de la marche LPM 1 an", "gain_mds": 3, "faisabilite": 2, "arguments": [], "obstacles": ["Engagement OTAN 2 %→3,5 %"] },
+        { "niveau": 3, "mesure": "Retour niveau 2023", "gain_mds": 6, "faisabilite": 3, "arguments": [], "obstacles": ["Contexte Ukraine, OTAN", "LPM votée"] }
+      ],
+      "sources": []
+    },
+    {
+      "id": "ue",
+      "nom": "Prélèvement sur recettes UE",
+      "bloc": "État",
+      "montant_mds": 23,
+      "source_montant": { "titre": "PLF — PSR-UE", "url": "https://www.budget.gouv.fr/" },
+      "crans": [
+        { "niveau": 1, "mesure": "Aucun levier unilatéral", "gain_mds": 0, "faisabilite": 3, "arguments": [], "obstacles": ["Décision ressources propres, CFP adopté à l'unanimité"] },
+        { "niveau": 2, "mesure": "Négocier rabais CFP 2028-2034", "gain_mds": 2, "faisabilite": 2, "arguments": ["Allemagne, Pays-Bas ont des rabais"], "obstacles": ["Unanimité, horizon 2028"] },
+        { "niveau": 3, "mesure": "Refus unilatéral de payer", "gain_mds": 23, "faisabilite": 3, "arguments": [], "obstacles": ["Violation traités (art. 310-311 TFUE)", "Recours en manquement CJUE", "Perte retours PAC ~9 Md€"] }
+      ],
+      "sources": [{ "titre": "Commission européenne — budget", "url": "https://commission.europa.eu/" }]
+    },
+    {
+      "id": "fonctionnement_etat",
+      "nom": "Fonctionnement courant de l'État",
+      "bloc": "État",
+      "montant_mds": 40,
+      "source_montant": { "titre": "PLF titre 3", "url": "https://www.budget.gouv.fr/" },
+      "crans": [
+        { "niveau": 1, "mesure": "−3 % (achats, immobilier, conseil)", "gain_mds": 1.2, "faisabilite": 1, "arguments": ["Rapport cabinets de conseil Sénat 2022"], "obstacles": [] },
+        { "niveau": 2, "mesure": "−7 % + cession immobilier", "gain_mds": 3, "faisabilite": 1, "arguments": [], "obstacles": [] },
+        { "niveau": 3, "mesure": "−12 %", "gain_mds": 5, "faisabilite": 2, "arguments": [], "obstacles": ["Investissements numériques nécessaires"] }
+      ],
+      "sources": []
+    },
+    {
+      "id": "audiovisuel",
+      "nom": "Audiovisuel public",
+      "bloc": "État",
+      "montant_mds": 4,
+      "source_montant": { "titre": "PLF", "url": "https://www.budget.gouv.fr/" },
+      "crans": [
+        { "niveau": 1, "mesure": "−5 %", "gain_mds": 0.2, "faisabilite": 1, "arguments": [], "obstacles": [] },
+        { "niveau": 2, "mesure": "Holding + fusion des structures", "gain_mds": 0.5, "faisabilite": 1, "arguments": [], "obstacles": ["Indépendance"] },
+        { "niveau": 3, "mesure": "Privatisation partielle", "gain_mds": 1.5, "faisabilite": 2, "arguments": [], "obstacles": ["Pluralisme (objectif de valeur constitutionnelle)"] }
+      ],
+      "sources": []
+    },
+    {
+      "id": "minima_sociaux",
+      "nom": "Minima sociaux (RSA, prime d'activité, AAH)",
+      "bloc": "État / Départements",
+      "montant_mds": 45,
+      "source_montant": { "titre": "DREES — Minima sociaux", "url": "https://drees.solidarites-sante.gouv.fr/" },
+      "crans": [
+        { "niveau": 1, "mesure": "Lutte contre la fraude renforcée", "gain_mds": 0.5, "faisabilite": 1, "arguments": ["Cour des comptes estime fraude prestations"], "obstacles": ["Non-recours aussi important"] },
+        { "niveau": 2, "mesure": "Gel 1 an", "gain_mds": 1, "faisabilite": 1, "arguments": [], "obstacles": ["Pauvreté"] },
+        { "niveau": 3, "mesure": "Allocation sociale unique plafonnée", "gain_mds": 3, "faisabilite": 2, "arguments": ["Simplification"], "obstacles": ["Perdants nombreux"] }
+      ],
+      "sources": []
+    },
+    {
+      "id": "dette",
+      "nom": "Charge de la dette",
+      "bloc": "État",
+      "montant_mds": 60,
+      "source_montant": { "titre": "Agence France Trésor", "url": "https://www.aft.gouv.fr/" },
+      "crans": [
+        { "niveau": 1, "mesure": "Non pilotable directement", "gain_mds": 0, "faisabilite": 1, "arguments": ["Baisse indirecte si déficit et taux baissent"], "obstacles": [] },
+        { "niveau": 2, "mesure": "Non pilotable directement", "gain_mds": 0, "faisabilite": 1, "arguments": [], "obstacles": [] },
+        { "niveau": 3, "mesure": "Défaut / restructuration", "gain_mds": 0, "faisabilite": 3, "arguments": [], "obstacles": ["Exclusion des marchés, crise bancaire — gain négatif"] }
+      ],
+      "sources": []
+    }
+  ]
+}

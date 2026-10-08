@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Baissez les dépenses — simulateur sourcé</title>
+<meta name="description" content="Choisissez quelles dépenses publiques baisser. Chaque mesure est chiffrée, sourcée, avec ses obstacles juridiques et européens.">
+<meta property="og:title" content="Baissez les dépenses — simulateur sourcé">
+<meta property="og:description" content="Faites votre budget. Chaque curseur affiche sources, arguments et obstacles juridiques.">
+<meta property="og:image" content="og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" type="application/json" href="data/postes.json">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Baissez les dépenses</h1>
+  <p class="sub">Dépenses publiques (APU) : <strong id="total"></strong> · Déficit : <strong id="deficit"></strong></p>
+  <div class="score">
+    <div><span id="eco">0</span> Md€ économisés</div>
+    <div class="bar"><div id="fill"></div></div>
+    <div id="pct" class="muted"></div>
+    <div id="risk" class="muted"></div>
+    <button id="share">Partager mon budget</button>
+  </div>
+  <p class="warn" id="statut"></p>
+</header>
+<main id="postes"></main>
+<footer>
+  Données ouvertes : <a href="data/postes.json">postes.json</a> · <a href="llms.txt">llms.txt</a> · Licence CC BY 4.0
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
