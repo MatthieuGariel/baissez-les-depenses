@@ -35,8 +35,8 @@ Message : **même en baissant tout au maximum, on ne comble pas le déficit par 
 > Premier jet en ligne 👉 https://matthieugariel.github.io/baissez-les-depenses/
 > 20 postes de dépenses (toutes APU), 3 crans chacun, chaque cran = mesure concrète avec gain, arguments, obstacles juridiques/UE et sources. Le bouton « Partager mon budget » génère une image de ton scénario.
 > Résultat qui pique : tout au max = 96 Md€ pour 152 Md€ de déficit, et seulement 14 Md€ sans risque juridique ou politique.
-> Encore v0.3 : 32 crans sur 60 sont des ordres de grandeur calculés (badge gris « non vérifié »). Relis ce que tu connais, dis-moi ce qui cloche.
+> Encore v0.3 : 33 crans sur 60 sont des ordres de grandeur calculés (badge gris « non vérifié »). Relis ce que tu connais, dis-moi ce qui cloche.
 
 ## Avant de diffuser largement
 
-- 32 crans « non vérifiés » : assumé et affiché, mais à réduire.
+- 33 crans « non vérifiés » : assumé et affiché, mais à réduire.
