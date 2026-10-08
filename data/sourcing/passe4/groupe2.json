@@ -1,0 +1,686 @@
+[
+  {
+    "id": "ondam_ville",
+    "nom": "Assurance maladie — soins de ville",
+    "bloc": "Sécurité sociale",
+    "montant_mds": 113.6,
+    "annee_montant": 2025,
+    "source_montant": {
+      "titre": "Cour des comptes — RALFSS 2026, tableau n° 19 : ONDAM 2025, constat provisoire, soins de ville = 113,6 Md€ (Sénat, rapport a25-747 : 113,7 Md€)",
+      "url": "https://www.ccomptes.fr/sites/default/files/2026-05/20260527-RALFSS-2026_0.pdf",
+      "ouverte": true
+    },
+    "verification": "Plafonds 2026 tranchés : le décret n° 2026-858 du 11 septembre 2026 (JO du 12/09/2026, en vigueur le 1er octobre 2026) porte le plafond annuel des franchises de 50 à 70 € ET celui des participations forfaitaires de 50 à 70 €, soit 140 € cumulés (contre 100 € avant). Les « 100 € » de Vidal (23/07/2026) sont l'annonce initiale de la ministre (puis un projet à 200 € cumulés abandonné) ; ce 100 € correspondait aussi à l'ancien cumul. Le texte de Légifrance n'a pu être ouvert (blocage anti-robot) : confirmation par Service-Public.fr (DILA), Vidal (JO) et Legisocial. Aucun rendement officiel publié pour le décret à 140 €.",
+    "crans": [
+      {
+        "niveau": 1,
+        "mesure": "Régulation des prix des produits de santé (baisses de tarifs CEPS, biosimilaires, dispositifs médicaux)",
+        "gain_mds": 1.3,
+        "faisabilite": 1,
+        "arguments": [
+          "Cnam, Charges et produits 2027 : régulation des produits de santé de l'ordre de 1,3 Md€ en 2027",
+          "Cour des comptes : poursuivre la baisse des prix des produits de santé = 5,3 Md€ (proposition n° 5, avril 2025)",
+          "Levier pur prix, sans transfert de reste à charge aux patients"
+        ],
+        "obstacles": [
+          "Politique : négociation avec l'industrie pharmaceutique (CEPS) et risque de pénuries/relocalisations",
+          "La régulation repose de plus en plus sur des remises et la clause de sauvegarde (10,7 Md€ en 2024), contestées en contentieux (Cour des comptes)"
+        ],
+        "sources": [
+          {
+            "titre": "Cnam — Charges et produits pour 2027 (rapport complet, copie hébergée sur onsil.fr ; page ameli.fr non ouverte), §5.1 : 3,9 Md€ d'économies 2027",
+            "url": "https://onsil.fr/wp-content/uploads/2026/07/1783175664493.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "Vidal — PLFSS 2027 : la Cnam propose 3,9 Md€ d'économies (2 juillet 2026)",
+            "url": "https://www.vidal.fr/actualites/38039-plfss-2027-la-cnam-propose-3-9-milliards-d-euros-d-economies.html",
+            "ouverte": true
+          },
+          {
+            "titre": "Cour des comptes — ONDAM, contribution à la revue des dépenses publiques, note de synthèse avril 2025 (15 propositions chiffrées)",
+            "url": "https://www.ccomptes.fr/sites/default/files/2025-04/20250414-Lobjectif-national-de-depenses-dassurance-maladie-Ondam.pdf",
+            "ouverte": true
+          }
+        ],
+        "non_verifie": false,
+        "notes": "Chiffre repris tel quel du rapport Cnam Charges et produits 2027, §5.1 (document lu via une copie hébergée sur onsil.fr, la page ameli.fr n'ayant pas été ouverte)."
+      },
+      {
+        "niveau": 2,
+        "mesure": "Paquet d'économies Cnam 2027 (produits de santé, régulation sectorielle, parcours ville-hôpital, arrêts de travail, fraude/pertinence, articulation AMO-AMC)",
+        "gain_mds": 3.9,
+        "faisabilite": 2,
+        "arguments": [
+          "Cnam : 3,9 Md€ d'économies proposées pour 2027, dont 1,3 produits de santé, 0,3 régulation sectorielle, 0,2 parcours, 0,6 AMO/AMC, ~1,3 fraude et pertinence (dont 0,45 fraude)",
+          "Trajectoire Cnam : 22,5 Md€ d'économies à l'horizon 2030 pour stabiliser l'ONDAM dans le PIB",
+          "Déficit de la branche maladie : 13,8 Md€ attendus en 2026"
+        ],
+        "obstacles": [
+          "Négociations conventionnelles avec les professionnels de santé (baisses de tarifs imposées à défaut d'accord)",
+          "600 M€ transférés aux complémentaires : transfert de charge, pas économie nette pour les ménages (hausse des cotisations)",
+          "Aucun obstacle juridique identifié dans les documents ouverts"
+        ],
+        "sources": [
+          {
+            "titre": "Cnam — Charges et produits pour 2027 (rapport complet, copie hébergée sur onsil.fr ; page ameli.fr non ouverte), §5.1 : 3,9 Md€ d'économies 2027",
+            "url": "https://onsil.fr/wp-content/uploads/2026/07/1783175664493.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "Vidal — PLFSS 2027 : la Cnam propose 3,9 Md€ d'économies (2 juillet 2026)",
+            "url": "https://www.vidal.fr/actualites/38039-plfss-2027-la-cnam-propose-3-9-milliards-d-euros-d-economies.html",
+            "ouverte": true
+          }
+        ],
+        "non_verifie": false,
+        "notes": "Total Cnam 3,9 Md€ (§5.1 et tableau 49). Les composantes ci-dessus sont celles citées dans le texte du rapport ; leur somme (3,7) n'atteint pas exactement 3,9 faute de montant publié pour les arrêts de travail."
+      },
+      {
+        "niveau": 3,
+        "mesure": "Paquet Cnam 2027 + doublement des montants unitaires et des plafonds de franchises et participations (projets de décrets de l'été 2025 chiffrés par la Cour des comptes)",
+        "gain_mds": 6.2,
+        "faisabilite": 3,
+        "arguments": [
+          "Cour des comptes (RALFSS 2026, ch. V) : les projets de décrets de l'été 2025 (doublement des montants unitaires et des plafonds journaliers et annuels) étaient estimés à 2,3 Md€ en année pleine (1,1 franchises + 1,2 participations)",
+          "Rendement actuel des franchises et participations : 2,5 Md€ en 2025 ; optimisation du recouvrement, du périmètre et des exemptions : > 1 Md€ supplémentaire (Cour)",
+          "Franchises françaises inférieures à celles d'autres pays européens (Cour)",
+          "Décret n° 2026-858 : plafonds portés à 70 € (franchises) + 70 € (participations) au 1er octobre 2026, soit 140 € ; revalorisation annuelle selon l'inflation à partir de 2028 ; montants unitaires inchangés (1 € la boîte, 2 € la consultation, 4 € le transport)"
+        ],
+        "obstacles": [
+          "Juridique : le Conseil constitutionnel impose que le montant des franchises et le niveau des plafonds ne remettent pas en cause le onzième alinéa du Préambule de 1946 (2007-558 DC, cons. 7) ; la Cour relève un risque de renoncement aux soins des assurés modestes",
+          "Politique : doublement des montants abandonné par le gouvernement le 5 décembre 2025 et supprimé par le Parlement ; le décret de septembre 2026 s'est limité à 140 € de plafond cumulé (après avoir envisagé 200 €)",
+          "Chevauchement : le rendement du décret à 140 € n'est pas publié (le chiffre de ~750 M€ de presse concerne le projet à 200 €) ; le gain de 2,3 Md€ du doublement complet inclut une part de plafonds désormais en partie actée, d'où un possible double compte avec la référence 2026"
+        ],
+        "sources": [
+          {
+            "titre": "Cour des comptes — La sécurité sociale 2026 (RALFSS, 27 mai 2026), rapport complet",
+            "url": "https://www.ccomptes.fr/sites/default/files/2026-05/20260527-RALFSS-2026_0.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "Conseil constitutionnel — Décision n° 2007-558 DC du 13 décembre 2007",
+            "url": "https://www.conseil-constitutionnel.fr/decision/2007/2007558DC.htm",
+            "ouverte": true
+          },
+          {
+            "titre": "Cnam — Charges et produits pour 2027 (rapport complet, copie hébergée sur onsil.fr ; page ameli.fr non ouverte), §5.1 : 3,9 Md€ d'économies 2027",
+            "url": "https://onsil.fr/wp-content/uploads/2026/07/1783175664493.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "Caducée — PLFSS 2026 : le gouvernement renonce au doublement des franchises (5/12/2025, 2,3 Md€)",
+            "url": "https://www.caducee.net/actualite-medicale/16714/plfss-2026-le-gouvernement-renonce-au-doublement-des-franchises-medicales.html",
+            "ouverte": true
+          },
+          {
+            "titre": "Legisocial — Décret n° 2026-858 du 11 septembre 2026 : plafonds franchises et participations 50 → 70 € chacun (JORF 12/09/2026, JORFTEXT000054833929)",
+            "url": "https://www.legisocial.fr/actualites-sociales/8139-franchises-medicales-participations-forfaitaires-plafonds-passent-70.html",
+            "ouverte": true
+          },
+          {
+            "titre": "Service-Public.fr (DILA) — Les plafonds annuels des franchises médicales et participations forfaitaires augmentent dès le 1er octobre 2026 (16/09/2026) : décret n° 2026-858 du 11 septembre 2026, JO du 12 septembre 2026",
+            "url": "https://www.service-public.gouv.fr/particuliers/actualites/A17166?lang=fr",
+            "ouverte": true
+          },
+          {
+            "titre": "Vidal — Franchises médicales : le plafond annuel passe à 140 euros le 1er octobre (décret publié au JO du 12/09/2026)",
+            "url": "https://www.vidal.fr/actualites/38296-franchises-medicales-le-plafond-annuel-passe-a-140-euros-le-1er-octobre.html",
+            "ouverte": true
+          }
+        ],
+        "non_verifie": false,
+        "notes": "Gain = 3,9 Md€ (Cnam, Charges et produits 2027, §5.1 ; le paquet ne comprend pas de mesure sur les franchises) + 2,3 Md€ (Cour des comptes, RALFSS 2026, ch. V : doublement des montants unitaires et des plafonds journaliers et annuels, 1,1 Md€ franchises + 1,2 Md€ participations, année pleine) = 6,2 Md€. Les deux chiffres sont officiels. Réserve : le décret n° 2026-858 a déjà porté les plafonds annuels de 100 à 140 € cumulés (rendement non publié) ; une part des 2,3 Md€ est donc en partie acquise, d'où un possible double compte avec la référence 2026."
+      }
+    ],
+    "sources": [
+      {
+        "titre": "Cour des comptes — La sécurité sociale 2026 (RALFSS, 27 mai 2026), rapport complet",
+        "url": "https://www.ccomptes.fr/sites/default/files/2026-05/20260527-RALFSS-2026_0.pdf",
+        "ouverte": true
+      },
+      {
+        "titre": "Cour des comptes — RALFSS 2026, chapitre III : l'ONDAM, outil de régulation",
+        "url": "https://www.ccomptes.fr/sites/default/files/2026-05/20260527-RALFSS-2026-3-Ondam-outil-regulation-des-depenses-de-sante-necessaire-et-a-renforcer.pdf",
+        "ouverte": true
+      },
+      {
+        "titre": "Sénat — Rapport LFSS 2026 (ONDAM 2025 : soins de ville 113,7 Md€, établissements 109,4 Md€)",
+        "url": "https://www.senat.fr/rap/a25-747/a25-7476.html",
+        "ouverte": true
+      },
+      {
+        "titre": "Cnam — Charges et produits pour 2027 (rapport complet, copie hébergée sur onsil.fr ; page ameli.fr non ouverte), §5.1 : 3,9 Md€ d'économies 2027",
+        "url": "https://onsil.fr/wp-content/uploads/2026/07/1783175664493.pdf",
+        "ouverte": true
+      },
+      {
+        "titre": "Cour des comptes — ONDAM, contribution à la revue des dépenses publiques, note de synthèse avril 2025 (15 propositions chiffrées)",
+        "url": "https://www.ccomptes.fr/sites/default/files/2025-04/20250414-Lobjectif-national-de-depenses-dassurance-maladie-Ondam.pdf",
+        "ouverte": true
+      },
+      {
+        "titre": "Service-Public.fr (DILA) — Les plafonds annuels des franchises médicales et participations forfaitaires augmentent dès le 1er octobre 2026 (16/09/2026) : décret n° 2026-858 du 11 septembre 2026, JO du 12 septembre 2026",
+        "url": "https://www.service-public.gouv.fr/particuliers/actualites/A17166?lang=fr",
+        "ouverte": true
+      }
+    ]
+  },
+  {
+    "id": "aides_entreprises",
+    "nom": "Aides aux entreprises (subventions, niches, allègements)",
+    "bloc": "État / Sécu",
+    "montant_mds": 211,
+    "annee_montant": 2023,
+    "montant_verifie": true,
+    "source_montant": {
+      "titre": "Sénat — commission d'enquête aides publiques aux grandes entreprises, « L'essentiel » (rapport n° 808, 2024-2025)",
+      "url": "https://www.senat.fr/rap/r24-808-1/r24-808-1-syn.pdf",
+      "ouverte": true
+    },
+    "note_correction": "211 Md€ (2023) = estimation « au sens large » de la commission d'enquête du Sénat (subventions État, Bpifrance, dépenses fiscales dont « déclassées », allègements de cotisations). Hors Bpifrance, dépenses fiscales déclassées et TVA : 108 Md€. Le ministre de l'Économie a donné 150 Md€ (40 fiscal, 30 budgétaire, 80 allègements) ; l'IGF 2024 retient 88 Md€ (2022) hors allègements généraux. Les crans sont désormais fondés sur la revue de dépenses IGF (mars 2024), qui exclut les allègements généraux de cotisations (soutien général à l'économie, par analogie avec l'art. 107 TFUE). Crans 2 et 3 de la passe précédente (hausses de TVA, recettes) supprimés (le site ne traite que des baisses de dépenses) et remplacés par des réductions d'allègements généraux de cotisations chiffrées par la Cour des comptes (RALFSS 2025, ch. III). Les gains des crans sont cumulatifs.",
+    "crans": [
+      {
+        "niveau": 1,
+        "mesure": "Suppression des aides et niches identifiées par l'IGF (hors TVA) : accompagnement CCI/CMA/Bpifrance, tarifs réduits d'accises, réforme du CIR (jeunes docteurs, périmètre Frascati, forfait 43→40 %), patent box 10→15 %, jeux vidéo, OGA, FCPI/FIP, Dutreil recentré",
+        "gain_mds": 2.8,
+        "faisabilite": 1,
+        "arguments": [
+          "IGF : pistes d'économies de 935 M€ en dépenses budgétaires et 1 880 M€ en dépenses fiscales (hors TVA), soit ~3 Md€ d'ici 2027",
+          "Dont 450 M€ sur le CIR (suppression du dispositif jeunes docteurs, activités éligibles limitées au manuel de Frascati OCDE, forfait de fonctionnement 43 % → 40 %), 800 M€ sur l'accompagnement des entreprises (CCI/CMA 700 M€, Bpifrance ~130 M€), 200 M€ patent box",
+          "Cour des comptes : le CIR est devenu la dépense fiscale la plus coûteuse (~7 Md€) ; les évaluations concluent à une efficacité limitée, avec des effets positifs concentrés sur les PME ; elle recommande de supprimer les dépenses fiscales jugées inefficientes",
+          "Sénat (recommandation n° 12) : diviser par trois le nombre de dépenses fiscales et subventions aux entreprises d'ici 2030 ; recommandation n° 16 : réduire le plafond de sous-traitance et le taux du CIR"
+        ],
+        "obstacles": [
+          "Juridique : modifier un avantage conditionné à un engagement du contribuable (ex. pacte Dutreil) expose à la protection des situations légalement acquises — Conseil constitutionnel, décision n° 2013-682 DC du 19 décembre 2013, cons. 14 (https://www.conseil-constitutionnel.fr/decision/2013/2013682DC.htm)",
+          "Politique : l'IGF précise que ses pistes sont une base à approfondir (temps limité, sensibilité politique) ; lobbying sectoriel (chambres consulaires, buralistes, jeux vidéo, capital-investissement)",
+          "UE : l'art. 107 TFUE encadre l'octroi des aides, pas leur suppression ; il n'est donc pas un obstacle à ce cran (EUR-Lex inaccessible lors de la vérification, non cité)"
+        ],
+        "sources": [
+          {
+            "titre": "IGF — Revue de dépenses : les aides aux entreprises (n° 2023-M-105-03, mars/avril 2024), copie vie-publique.fr",
+            "url": "https://www.vie-publique.fr/files/rapport/pdf/295437.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "Cour des comptes — Piloter et évaluer les dépenses fiscales (note thématique, juillet 2023)",
+            "url": "https://www.ccomptes.fr/system/files/2023-07/20230707-note-thematique-Depenses-fiscales.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "Sénat — commission d'enquête aides publiques aux grandes entreprises, « L'essentiel » (rapport n° 808, 2024-2025)",
+            "url": "https://www.senat.fr/rap/r24-808-1/r24-808-1-syn.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "Conseil constitutionnel — décision n° 2013-682 DC du 19 décembre 2013, cons. 14",
+            "url": "https://www.conseil-constitutionnel.fr/decision/2013/2013682DC.htm",
+            "ouverte": true
+          }
+        ],
+        "non_verifie": false,
+        "notes": "Gain = 935 + 1 880 = 2 815 M€ (IGF, tableau 2 de la note de synthèse, horizon 2027). Estimation IGF de premier niveau, à approfondir avant mise en oeuvre selon la mission elle-même."
+      },
+      {
+        "niveau": 2,
+        "mesure": "Cran 1 + reprofilage du barème de la réduction générale dégressive (~0,3 point du taux d'exonération) + plafond d'éligibilité de la baisse de cotisations familiales ramené de 3 à 2,5 Smic",
+        "gain_mds": 5.8,
+        "faisabilite": 2,
+        "arguments": [
+          "Cour des comptes (RALFSS 2025, ch. III) : le reprofilage par décret de la future réduction générale dégressive unique pourrait dégager « de l'ordre de 2 Md€ » supplémentaires, soit environ 0,3 point du taux d'exonération (estimation obtenue du Gouvernement)",
+          "Cour : le coût de la baisse de cotisations familiales pour les rémunérations de 2,5 à 3 Smic est « de l'ordre de 1 Md€ en 2023 » ; les évaluations (CAE 2019, Assemblée 2023, Bozio-Wasmer 2024) concluent à une efficacité limitée et à des effets marginaux sur l'emploi à ces niveaux",
+          "Les allègements généraux ont presque quadruplé entre 2014 et 2024 (20,9 → 77,3 Md€) ; ils sont sous-compensés par l'État (5,5 Md€ de perte pour la Sécurité sociale en 2024, selon la Cour)",
+          "Précédent : la LFSS 2025 a déjà limité les allègements pour 2 Md€ (1,6 Md€ Sécu + 0,4 Md€ État), contre 5,1 Md€ visés initialement dans le PLFSS"
+        ],
+        "obstacles": [
+          "Économique : la Cour souligne que toute limitation peut se traduire par des destructions d'emplois et donc par des pertes de recettes, effet non intégré dans le chiffrage de 2 Md€",
+          "Politique : forte opposition du patronat (coût du travail, industrie exportatrice) ; la LFSS 2025 avait été adoptée à 2 Md€ au lieu de 5,1 Md€",
+          "Chevauchement possible avec la réforme déjà engagée par la LFSS 2026 (fusion en 2026, baisse de ~2 points des taux) : le chiffrage de la Cour date de mai 2025 et n'a pas été actualisé ; les deux sous-mesures ne sont pas forcément strictement additives",
+          "Aucune décision du Conseil constitutionnel pertinente identifiée dans les documents ouverts : le barème est fixé par loi et décret, sans droit acquis"
+        ],
+        "sources": [
+          {
+            "titre": "Cour des comptes — RALFSS 2025, chapitre III : Maîtriser la dynamique des allègements généraux de cotisations sociales (mai 2025), §B pistes d'économie",
+            "url": "https://www.ccomptes.fr/sites/default/files/2025-05/20250526-RALFSS-2025-Maitriser-dynamique-allegements-generaux-de-cotisations-sociales.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "IGF — Revue de dépenses : les aides aux entreprises (n° 2023-M-105-03, mars/avril 2024), copie vie-publique.fr",
+            "url": "https://www.vie-publique.fr/files/rapport/pdf/295437.pdf",
+            "ouverte": true
+          }
+        ],
+        "non_verifie": false,
+        "notes": "Gain = 2,815 (cran 1, IGF) + 2,0 (reprofilage de la réduction générale dégressive, ~0,3 point du taux d'exonération : Cour des comptes, RALFSS 2025, ch. III, « de l'ordre de 2 Md€ », estimation obtenue du Gouvernement) + 1,0 (coût de la baisse de cotisations famille entre 2,5 et 3 Smic, « de l'ordre de 1 Md€ en 2023 », même chapitre) = 5,8 Md€. Chiffres relus dans le PDF de la Cour ouvert en passe 4. Réserves : effets sur l'emploi non inclus ; chiffrage antérieur à la réforme des allègements LFSS 2026, additivité non garantie."
+      },
+      {
+        "niveau": 3,
+        "mesure": "Cran 2 + intégration de l'intéressement et de la participation dans l'assiette de calcul de la réduction générale dégressive",
+        "gain_mds": 8.8,
+        "faisabilite": 2,
+        "arguments": [
+          "Cour des comptes (RALFSS 2025, ch. III) : l'élargissement de l'assiette aux versements de participation et d'intéressement permettrait « près de 3 Md€ » d'économie en 2025, à comportements inchangés",
+          "Le coût des allègements lié aux exemptions d'assiette de l'ensemble des compléments de salaire a atteint 4,7 Md€ en 2023 (Cour)",
+          "Précédent : la LFSS 2025 a déjà intégré la prime de partage de la valeur dans l'assiette (recette attendue 0,4 Md€ Sécu + 0,1 Unédic + 0,1 Agirc-Arrco)",
+          "Réduit l'incitation à substituer des compléments exonérés au salaire de base"
+        ],
+        "obstacles": [
+          "Politique : mesure touchant l'épargne salariale (partenaires sociaux, employeurs, syndicats attachés à l'intéressement) ; risque de baisse de la distribution d'intéressement",
+          "Économique : chiffrage « à comportements inchangés » ; la Cour rappelle le risque d'effets sur l'emploi des limitations d'allègements",
+          "Mesure de recettes sociales (suppression d'une exonération de cotisations dans l'assiette de l'allègement) : classée ici comme réduction d'allègement de cotisations, à arbitrer par le lecteur",
+          "Aucune décision du Conseil constitutionnel pertinente identifiée dans les documents ouverts"
+        ],
+        "sources": [
+          {
+            "titre": "Cour des comptes — RALFSS 2025, chapitre III : Maîtriser la dynamique des allègements généraux de cotisations sociales (mai 2025), §B pistes d'économie",
+            "url": "https://www.ccomptes.fr/sites/default/files/2025-05/20250526-RALFSS-2025-Maitriser-dynamique-allegements-generaux-de-cotisations-sociales.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "Sénat — commission d'enquête aides publiques aux grandes entreprises, « L'essentiel » (rapport n° 808, 2024-2025)",
+            "url": "https://www.senat.fr/rap/r24-808-1/r24-808-1-syn.pdf",
+            "ouverte": true
+          }
+        ],
+        "non_verifie": false,
+        "notes": "Gain = 5,8 (cran 2) + 3,0 (Cour des comptes, RALFSS 2025, ch. III : élargissement de l'assiette de la réduction générale dégressive à la participation et à l'intéressement, « près de 3 Md€ en 2025 » à comportements inchangés) = 8,8 Md€. Chiffre relu dans le PDF de la Cour ouvert en passe 4. Réserves : chiffre 2025 non actualisé ; antérieur à la réforme LFSS 2026, additivité non garantie ; le Sénat (reco n° 17) ne chiffre pas de réduction."
+      }
+    ],
+    "sources": [
+      {
+        "titre": "Sénat — commission d'enquête aides publiques aux grandes entreprises, « L'essentiel » (rapport n° 808, 2024-2025)",
+        "url": "https://www.senat.fr/rap/r24-808-1/r24-808-1-syn.pdf",
+        "ouverte": true
+      },
+      {
+        "titre": "Sénat — page de la commission d'enquête (2 200 dispositifs, 26 recommandations)",
+        "url": "https://www.senat.fr/travaux-parlementaires/structures-temporaires/commissions-denquete/commission-denquete-sur-lutilisation-des-aides-publiques-aux-grandes-entreprises-et-a-leurs-sous-traitants.html",
+        "ouverte": true
+      },
+      {
+        "titre": "IGF — Revue de dépenses : les aides aux entreprises (n° 2023-M-105-03, mars/avril 2024), copie vie-publique.fr",
+        "url": "https://www.vie-publique.fr/files/rapport/pdf/295437.pdf",
+        "ouverte": true
+      },
+      {
+        "titre": "Cour des comptes — Piloter et évaluer les dépenses fiscales (note thématique, juillet 2023)",
+        "url": "https://www.ccomptes.fr/system/files/2023-07/20230707-note-thematique-Depenses-fiscales.pdf",
+        "ouverte": true
+      },
+      {
+        "titre": "Cour des comptes (plateforme évaluations) — « Renforcer l'impact du CIR » (synthèse de l'évaluation CAE, 2022)",
+        "url": "https://www.ccomptes.fr/fr/plateformes-citoyennes/plateforme-evaluations-politique-publique/explorer-evaluations/renforcer",
+        "ouverte": true
+      },
+      {
+        "titre": "Conseil constitutionnel — décision n° 2013-682 DC du 19 décembre 2013, cons. 14",
+        "url": "https://www.conseil-constitutionnel.fr/decision/2013/2013682DC.htm",
+        "ouverte": true
+      },
+      {
+        "titre": "Cour des comptes — RALFSS 2025, chapitre III : Maîtriser la dynamique des allègements généraux de cotisations sociales (mai 2025), §B pistes d'économie",
+        "url": "https://www.ccomptes.fr/sites/default/files/2025-05/20250526-RALFSS-2025-Maitriser-dynamique-allegements-generaux-de-cotisations-sociales.pdf",
+        "ouverte": true
+      }
+    ]
+  },
+  {
+    "id": "masse_salariale_etat",
+    "nom": "Masse salariale de l'État (hors CAS Pensions, hors Enseignement scolaire)",
+    "bloc": "État",
+    "montant_mds": 50.24,
+    "annee_montant": 2026,
+    "montant_verifie": true,
+    "source_montant": {
+      "titre": "Sénat — rapport spécial PLF 2026, programme 148 Fonction publique, « L'essentiel » (25 nov. 2025) : masse salariale de l'État hors pensions 109,47 Md€, +1,30 %",
+      "url": "https://www.senat.fr/rap/a25-145-5/a25-145-5-syn.pdf",
+      "ouverte": true
+    },
+    "note_correction": "150 Md€ non confirmé : le jaune « Rémunérations et effectifs » n'a pas pu être ouvert. Chiffre officiel retenu : 109,47 Md€ hors pensions (PLF 2026, via rapport spécial du Sénat). Avec le CAS Pensions, l'ordre de grandeur est supérieur à 160 Md€ (non sourcé officiellement, non retenu). Chevauchement : ~59 Md€ de titre 2 relèvent de la mission Enseignement scolaire (poste education). Gel du point d'indice déjà acquis en 2026 (coût des mesures générales : 14 M€) : ancien cran 1 remplacé. Les gains sont cumulatifs.",
+    "crans": [
+      {
+        "niveau": 1,
+        "mesure": "Passage à 3 jours de carence en cas d'arrêt maladie (fonction publique d'État)",
+        "gain_mds": 0.112,
+        "faisabilite": 2,
+        "arguments": [
+          "Mesure adoptée par le Sénat le 6 décembre 2025 (article 79 bis du PLF 2026), puis supprimée par le gouvernement dans la version de janvier 2026",
+          "Économie estimée à 112 M€ pour le budget de l'État (FPE et opérateurs en PAF) et 289 M€ pour l'ensemble de la fonction publique (2e et 3e jours de carence, hors CAS Pensions, données 2022 de la Direction du budget) : IGF-IGAS, juillet 2024",
+          "Précédent : rétablissement d'un jour de carence en 2018, économie estimée à 108 M€"
+        ],
+        "obstacles": [
+          "Politique : mesure rejetée par le gouvernement en janvier 2026 ; contestation syndicale",
+          "Chiffrages divergents selon le périmètre : 112 M€ (FPE, amendement Nougein), 216 M€ (base 108 M€ × 2, toute la fonction publique selon Public Sénat), 289 M€ (IGF-IGAS, ensemble de la fonction publique, rapporté par la presse)",
+          "Le rapporteur général du budget (Juvin) juge le périmètre rédactionnel incohérent avec le chiffrage"
+        ],
+        "sources": [
+          {
+            "titre": "IGF-IGAS — Revue de dépenses : réduction des absences dans la fonction publique (juillet 2024), copie vie-publique.fr (synthèse tableau 1, §3.2.7 tableau 12 Direction du budget)",
+            "url": "https://vie-publique.fr/files/rapport/pdf/295386.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "Acteurs publics — le gouvernement ne retient pas les mesures du Sénat (27 janv. 2026)",
+            "url": "https://acteurspublics.fr/articles/fonction-publique-le-gouvernement-ne-retient-pas-les-mesures-controversees-du-senat-dans-le-nouveau-budget-2026/",
+            "ouverte": true
+          },
+          {
+            "titre": "Public Sénat — trois jours de carence (6 déc. 2025)",
+            "url": "https://www.publicsenat.fr/actualites/economie/arrets-maladie-les-senateurs-augmentent-a-trois-jours-le-delai-de-carence-dans-la-fonction-publique",
+            "ouverte": true
+          },
+          {
+            "titre": "Acteurs publics — non-remplacement 1 sur 2 jugé inapplicable (14 janv. 2026)",
+            "url": "https://acteurspublics.fr/articles/non-remplacement-d1-fonctionnaire-sur-2-une-mesure-approuvee-mais-jugee-inapplicable-a-date-selon-philippe-juvin",
+            "ouverte": true
+          }
+        ],
+        "non_verifie": false,
+        "notes": "Chiffrage officiel relu dans le rapport IGF-IGAS (juillet 2024, tableau 1 et tableau 12 : FPE 112 M€ pour le passage de 1 à 3 jours de carence). Réserve : estimation brute, hors effets comportementaux sur l'absentéisme ; le périmètre FPE inclut des enseignants (aucun double compte avec le poste education, qui ne comporte pas de mesure de ce type)."
+      },
+      {
+        "niveau": 2,
+        "mesure": "Cran 1 + non-remplacement d'un départ à la retraite sur deux dans la FPE hors Enseignement scolaire (périmètre du poste)",
+        "gain_mds": 0.456,
+        "faisabilite": 2,
+        "arguments": [
+          "Cour des comptes (2015) : la reprise d'un non-remplacement d'un départ sur deux dans tous les ministères engendrerait une économie annuelle brute immédiate de 750 M€ pour le budget de l'État (980 M€ à moyen terme)",
+          "Mesure adoptée par le Sénat le 6 décembre 2025 : 350 M€ pour 23 000 ETP à 30 000 € de coût moyen, ordre de grandeur cohérent avec la mise à l'échelle du chiffre de la Cour (344 M€)",
+          "Le PLF 2026 crée au contraire 8 459 emplois d'État (dont +5 400 à l'Éducation nationale), selon le Sénat : la marge existe au regard de la LPFP 2023-2027"
+        ],
+        "obstacles": [
+          "Politique : supprimée par le gouvernement en janvier 2026 ; la ministre Montchalin juge les mesures mécaniques peu efficaces",
+          "Le rapporteur général Juvin la juge « inapplicable en l'état » et son chiffrage surestimé ; la Cour (2015) conditionne l'effort à une réflexion sur le périmètre des missions",
+          "Le chiffre de la Cour date de 2015 (masse salariale 2014) et le flux de départs en retraite a diminué depuis ; exemptions possibles (armées, intérieur, justice) non déduites"
+        ],
+        "sources": [
+          {
+            "titre": "Cour des comptes — La masse salariale de l'État : enjeux et leviers (juillet 2015), §« Une illustration des économies envisageables »",
+            "url": "https://www.ccomptes.fr/sites/default/files/EzPublish/20150909-rapport-masse-salariale-Etat.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "IGF-IGAS — Revue de dépenses : réduction des absences dans la fonction publique (juillet 2024), copie vie-publique.fr (synthèse tableau 1, §3.2.7 tableau 12 Direction du budget)",
+            "url": "https://vie-publique.fr/files/rapport/pdf/295386.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "Acteurs publics — non-remplacement 1 sur 2 jugé inapplicable (14 janv. 2026)",
+            "url": "https://acteurspublics.fr/articles/non-remplacement-d1-fonctionnaire-sur-2-une-mesure-approuvee-mais-jugee-inapplicable-a-date-selon-philippe-juvin",
+            "ouverte": true
+          },
+          {
+            "titre": "Acteurs publics — le gouvernement ne retient pas les mesures du Sénat (27 janv. 2026)",
+            "url": "https://acteurspublics.fr/articles/fonction-publique-le-gouvernement-ne-retient-pas-les-mesures-controversees-du-senat-dans-le-nouveau-budget-2026/",
+            "ouverte": true
+          },
+          {
+            "titre": "Sénat — rapport spécial PLF 2026 programme 148 (schéma d'emplois +6 724 ETP)",
+            "url": "https://www.senat.fr/rap/a25-145-5/a25-145-5-syn.pdf",
+            "ouverte": true
+          }
+        ],
+        "non_verifie": true,
+        "notes": "Aucun chiffrage officiel pour ce périmètre précis. Formule : 0,112 (cran 1, IGF-IGAS) + 0,75 Md€ (Cour 2015, 1 sur 2, tous ministères, économie brute annuelle) × 50,24/109,47 (part de la masse salariale hors Enseignement scolaire dans la masse salariale hors pensions de l'État, Sénat PLF 2026) = 0,112 + 0,344 = 0,456 Md€. Recoupe l'amendement du Sénat (350 M€). Hypothèse : proportionnalité à la masse salariale, chiffre 2015 non actualisé."
+      },
+      {
+        "niveau": 3,
+        "mesure": "Cran 2 maintenu trois ans (effet cumulé des cohortes non remplacées)",
+        "gain_mds": 1.14,
+        "faisabilite": 2,
+        "arguments": [
+          "Les économies de non-remplacement s'accumulent d'année en année tant que la règle est appliquée",
+          "Sénat : atteindre la stabilisation des emplois 2023-2027 supposerait un schéma d'emplois d'environ -28 000 ETP en 2027"
+        ],
+        "obstacles": [
+          "Politique : qualité du service public, régaliens et éducation déjà en tension",
+          "Aucun obstacle juridique sourcé ; pas de décision du Conseil constitutionnel identifiée sur le non-remplacement"
+        ],
+        "sources": [
+          {
+            "titre": "Cour des comptes — La masse salariale de l'État : enjeux et leviers (juillet 2015), §« Une illustration des économies envisageables »",
+            "url": "https://www.ccomptes.fr/sites/default/files/EzPublish/20150909-rapport-masse-salariale-Etat.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "IGF-IGAS — Revue de dépenses : réduction des absences dans la fonction publique (juillet 2024), copie vie-publique.fr (synthèse tableau 1, §3.2.7 tableau 12 Direction du budget)",
+            "url": "https://vie-publique.fr/files/rapport/pdf/295386.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "Acteurs publics — non-remplacement 1 sur 2 jugé inapplicable (14 janv. 2026)",
+            "url": "https://acteurspublics.fr/articles/non-remplacement-d1-fonctionnaire-sur-2-une-mesure-approuvee-mais-jugee-inapplicable-a-date-selon-philippe-juvin",
+            "ouverte": true
+          },
+          {
+            "titre": "Sénat — rapport spécial PLF 2026 programme 148",
+            "url": "https://www.senat.fr/rap/a25-145-5/a25-145-5-syn.pdf",
+            "ouverte": true
+          }
+        ],
+        "non_verifie": true,
+        "notes": "Formule : cohorte annuelle = 0,75 Md€ (Cour 2015) × 50,24/109,47 = 0,344 Md€ ; 3 cohortes cumulées = 1,03 Md€ ; + 0,112 (carence, IGF-IGAS) = 1,14 Md€. Ancien chiffre de 2,2 Md€ abandonné (23 000 ETP × 30 000 € non justifié). Hypothèses : proportionnalité à la masse salariale, chiffre Cour 2015 non actualisé, économies brutes (rétrocession catégorielle non déduite)."
+      }
+    ],
+    "sources": [
+      {
+        "titre": "Sénat — rapport spécial PLF 2026, programme 148 Fonction publique (« L'essentiel »)",
+        "url": "https://www.senat.fr/rap/a25-145-5/a25-145-5-syn.pdf",
+        "ouverte": true
+      },
+      {
+        "titre": "Acteurs publics — mesures du Sénat écartées (27 janv. 2026)",
+        "url": "https://acteurspublics.fr/articles/fonction-publique-le-gouvernement-ne-retient-pas-les-mesures-controversees-du-senat-dans-le-nouveau-budget-2026/",
+        "ouverte": true
+      },
+      {
+        "titre": "Acteurs publics — non-remplacement 1 sur 2 (14 janv. 2026)",
+        "url": "https://acteurspublics.fr/articles/non-remplacement-d1-fonctionnaire-sur-2-une-mesure-approuvee-mais-jugee-inapplicable-a-date-selon-philippe-juvin",
+        "ouverte": true
+      },
+      {
+        "titre": "Public Sénat — 3 jours de carence (6 déc. 2025)",
+        "url": "https://www.publicsenat.fr/actualites/economie/arrets-maladie-les-senateurs-augmentent-a-trois-jours-le-delai-de-carence-dans-la-fonction-publique",
+        "ouverte": true
+      }
+    ]
+  },
+  {
+    "id": "education",
+    "nom": "Enseignement scolaire (mission, hors CAS Pensions)",
+    "bloc": "État",
+    "montant_mds": 64.49,
+    "annee_montant": 2026,
+    "montant_verifie": true,
+    "source_montant": {
+      "titre": "Sénat — rapport général PLF 2026, mission Enseignement scolaire (64,49 Md€ CP hors CAS Pensions, +0,26 %)",
+      "url": "https://www.senat.fr/rap/l25-139-313/l25-139-313_mono.html",
+      "ouverte": true
+    },
+    "note_correction": "Poste redéfini : l'ancien montant de 15 Md€ « hors masse salariale » est non sourcé et abandonné. Périmètre : mission Enseignement scolaire PLF 2026 = 64,49 Md€ CP hors CAS Pensions (89,64 Md€ avec pensions), dont 59,23 Md€ de titre 2 (~94 %) et 5,19 Md€ hors titre 2. Chevauchement avec masse_salariale_etat. Ancien cran « fusion d'établissements et rectorats » (2 Md€) supprimé : aucun chiffrage. Gains cumulatifs.",
+    "crans": [
+      {
+        "niveau": 1,
+        "mesure": "Suppression de 4 000 emplois d'enseignants supplémentaires et réduction des subventions d'opérateurs (Canopé, CNED, Onisep)",
+        "gain_mds": 0.19,
+        "faisabilite": 1,
+        "arguments": [
+          "Le PLF 2026 supprime déjà 4 018 ETP d'enseignants (2 373 premier degré, 1 645 second degré) ; le rapporteur spécial du Sénat propose 4 000 suppressions de plus (8 018 au total)",
+          "Amendement du Sénat : 75 M€ pour 2 000 emplois, soit ~150 M€ pour 4 000",
+          "Subventions d'opérateurs : Canopé -20 M€, CNED -15 M€, Onisep -5 M€",
+          "Baisse démographique : -455 126 élèves au premier degré (-7,4 %) et -212 179 au second (-3,8 %) sur 2025-2029"
+        ],
+        "obstacles": [
+          "Politique : fermetures de classes, notamment en zone rurale",
+          "Rapporteur spécial lui-même : 75 M€ correspond au coût d'une année pleine de 2 000 emplois selon le débat, effet d'une année seulement"
+        ],
+        "sources": [
+          {
+            "titre": "Sénat — rapport général PLF 2026, Enseignement scolaire",
+            "url": "https://www.senat.fr/rap/l25-139-313/l25-139-313_mono.html",
+            "ouverte": true
+          }
+        ],
+        "non_verifie": false,
+        "notes": "Gain = 0,150 + 0,040 = 0,19 Md€. Source : amendements de la commission des finances du Sénat (document officiel, non adoptés définitivement)."
+      },
+      {
+        "niveau": 2,
+        "mesure": "Cran 1 + suppression du Pacte enseignant",
+        "gain_mds": 0.67,
+        "faisabilite": 2,
+        "arguments": [
+          "Le Pacte enseignant coûte 780 M€ en LFI 2025 et 480 M€ prévus en 2026 ; 27,8 % des enseignants du public y avaient adhéré à la rentrée 2024 (gain moyen 2 408 €/an)",
+          "Heures supplémentaires : coût de 1,2 Md€ dans le public en 2024-2025 (752 563 HSA)"
+        ],
+        "obstacles": [
+          "Politique : revalorisation indirecte des enseignants, risque sur le remplacement de courte durée (le taux de remplacement a été multiplié par 2,5 en un an grâce au Pacte)",
+          "Aucun obstacle juridique sourcé"
+        ],
+        "sources": [
+          {
+            "titre": "Sénat — rapport général PLF 2026, Enseignement scolaire",
+            "url": "https://www.senat.fr/rap/l25-139-313/l25-139-313_mono.html",
+            "ouverte": true
+          }
+        ],
+        "non_verifie": false,
+        "notes": "Gain = 0,19 + 0,48 = 0,67 Md€ (montant de 480 M€ prévu au PLF 2026)."
+      },
+      {
+        "niveau": 3,
+        "mesure": "Ajuster intégralement les moyens à la baisse démographique (-667 000 élèves) à encadrement constant",
+        "gain_mds": 2.16,
+        "faisabilite": 2,
+        "arguments": [
+          "-667 305 élèves entre 2025 et 2029 (-455 126 premier degré, -212 179 second degré)",
+          "Le titre 2 représente 59,23 Md€ soit ~94 % de la mission : l'ajustement passe par les emplois ; le Sénat chiffre à 75 M€ le coût moyen de 2 000 enseignants sur une année pleine (37 500 € par ETP)",
+          "Sénat : une application stricte de la démographie aurait supprimé 9 415 ETP d'enseignants en 2026 et 17 473 ETP entre 2024 et 2026 (plafond de 839 679 ETPT)"
+        ],
+        "obstacles": [
+          "Politique : dégradation possible du taux d'encadrement, fermetures de classes et d'établissements, transports scolaires à la charge des collectivités",
+          "Aucun obstacle constitutionnel sourcé (l'alinéa 13 du Préambule de 1946 n'impose pas un taux d'encadrement ; décision non ouverte, non citée)"
+        ],
+        "sources": [
+          {
+            "titre": "Sénat — rapport général PLF 2026, Enseignement scolaire",
+            "url": "https://www.senat.fr/rap/l25-139-313/l25-139-313_mono.html",
+            "ouverte": true
+          }
+        ],
+        "non_verifie": true,
+        "notes": "Aucun chiffrage officiel du scénario complet. Formule : -667 305 élèves / 11,73 M d'élèves = -5,69 % ; × 839 679 ETPT d'enseignants (Sénat) = 47 800 ETP ; moins 4 018 ETP déjà prévus au PLF 2026 = 43 800 ETP ; × 37 500 €/ETP (75 M€ pour 2 000 ETP, Sénat) = 1,64 Md€ (inclut les 4 000 postes du cran 1) ; + 0,48 (Pacte, PLF 2026) + 0,04 (opérateurs) = 2,16 Md€. Hypothèses : proportionnalité enseignants/élèves (le Sénat retient un ratio un peu plus élevé), personnels non enseignants exclus, effet en année pleine après étalement jusqu'en 2029. Ancien chiffre de 3,9 Md€ (coût moyen par élève tous personnels) abandonné."
+      }
+    ],
+    "sources": [
+      {
+        "titre": "Sénat — rapport général PLF 2026, Enseignement scolaire",
+        "url": "https://www.senat.fr/rap/l25-139-313/l25-139-313_mono.html",
+        "ouverte": true
+      }
+    ]
+  },
+  {
+    "id": "operateurs",
+    "nom": "Opérateurs et agences de l'État",
+    "bloc": "État",
+    "montant_mds": 73,
+    "annee_montant": 2026,
+    "montant_verifie": true,
+    "source_montant": {
+      "titre": "Assemblée nationale, commission des finances — compte rendu n° 71 du 25 février 2026 : 431 opérateurs, 401 310 emplois sous plafond, 73 Md€ de financements publics (jaune PLF 2026 cité par le rapporteur)",
+      "url": "https://questions.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526071_compte-rendu.pdf",
+      "ouverte": true
+    },
+    "note_correction": "Montant 81,1 Md€ (amendement 2024) remplacé par 73 Md€ de financements publics (jaune PLF 2026 cité par le rapporteur Mattei ; jaune lui-même non ouvert). Autres chiffres vus : 77 Md€ (PLF 2025). Les gains sont cumulatifs.",
+    "crans": [
+      {
+        "niveau": 1,
+        "mesure": "Réduction de 20 % du coût des fonctions support des opérateurs",
+        "gain_mds": 0.54,
+        "faisabilite": 1,
+        "arguments": [
+          "Sénat (commission d'enquête sur les agences, rapport n° 807, juillet 2025) : -20 % du coût des fonctions support, à missions constantes, ≈ 540 M€",
+          "Mutualisation RH, finances, informatique recommandée par le Sénat"
+        ],
+        "obstacles": [
+          "Le Sénat qualifie lui-même cette réduction de « très volontariste » pour les opérateurs hors fusion",
+          "Politique : mutualisations lourdes à mettre en oeuvre ; 540 M€ à comparer aux 40 Md€ d'économies visés en 2026"
+        ],
+        "sources": [
+          {
+            "titre": "Sénat — commission d'enquête sur les agences, opérateurs et organismes consultatifs, « L'essentiel » (rapport n° 807)",
+            "url": "https://www.senat.fr/rap/r24-807-1/r24-807-1-syn.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "Sénat — exposé des motifs de la PPL n° 566 (gains ~540 M€)",
+            "url": "https://www.senat.fr/leg/exposes-des-motifs/ppl25-566-expose.html",
+            "ouverte": true
+          }
+        ],
+        "non_verifie": false,
+        "notes": "Chiffrage parlementaire officiel (commission d'enquête du Sénat)."
+      },
+      {
+        "niveau": 2,
+        "mesure": "Réduction de 8 % des charges de personnel et de fonctionnement des opérateurs (fusions et suppressions de missions comprises)",
+        "gain_mds": 2.2,
+        "faisabilite": 2,
+        "arguments": [
+          "Sénat : -8 % des charges de personnel et de fonctionnement ≈ 2,2 Md€, mais « pas à missions constantes »",
+          "Annonce du gouvernement (ministre Montchalin) : 2 à 3 Md€ de la restructuration des agences ; le Sénat note qu'elle n'a pas pu expliquer le calcul",
+          "Les fusions/suppressions d'opérateurs 2015-2019 n'ont réduit les emplois que de 0,8 % à périmètre constant"
+        ],
+        "obstacles": [
+          "Il faut supprimer ou réduire des missions, pas seulement des structures (diminution du nombre d'organes consultatifs : ~10 M€ seulement pour -20 %)",
+          "Aucun obstacle juridique sourcé"
+        ],
+        "sources": [
+          {
+            "titre": "Sénat — commission d'enquête sur les agences, « L'essentiel » (rapport n° 807)",
+            "url": "https://www.senat.fr/rap/r24-807-1/r24-807-1-syn.pdf",
+            "ouverte": true
+          }
+        ],
+        "non_verifie": false,
+        "notes": "Gain cumulé = 2,2 Md€ (inclut le cran 1). L'annonce gouvernementale de 2 à 3 Md€ est cohérente mais non justifiée publiquement."
+      },
+      {
+        "niveau": 3,
+        "mesure": "Cran 2 + baisse de 10 % des charges d'intervention de l'AFITF, de l'Anah et de France Travail",
+        "gain_mds": 3.2,
+        "faisabilite": 2,
+        "arguments": [
+          "Cinq structures portent les trois quarts des charges d'intervention : France compétences 15,1 Md€, AFITF 4,6 Md€, Anah 3,8 Md€, France Travail 2,0 Md€, agences de l'eau 1,9 Md€",
+          "Le Sénat souligne que de vraies économies exigent de réduire les politiques publiques mises en oeuvre"
+        ],
+        "obstacles": [
+          "Il faut renoncer à des politiques (rénovation énergétique, infrastructures, emploi) ; France compétences et agences de l'eau sont financées par des cotisations/redevances affectées, donc exclues du calcul",
+          "Aucun obstacle juridique sourcé"
+        ],
+        "sources": [
+          {
+            "titre": "Sénat — commission d'enquête sur les agences, « L'essentiel » (rapport n° 807)",
+            "url": "https://www.senat.fr/rap/r24-807-1/r24-807-1-syn.pdf",
+            "ouverte": true
+          }
+        ],
+        "non_verifie": true,
+        "notes": "Aucun chiffrage officiel trouvé d'une baisse des charges d'intervention (la commission d'enquête du Sénat n'en propose pas ; l'annonce de 2 à 3 Md€ de la ministre n'est pas justifiée). Formule : 10 % × (4,6 AFITF + 3,8 Anah + 2,0 France Travail = 10,4 Md€, Sénat rapport n° 807) = 1,04 Md€ ; + 2,2 Md€ (cran 2) = 3,2 Md€. France compétences et agences de l'eau (financées par cotisations/redevances) exclues. Hypothèse : financements issus du budget de l'État ; pas de chevauchement avec le poste chomage (Unédic) ni logement."
+      }
+    ],
+    "sources": [
+      {
+        "titre": "Sénat — commission d'enquête sur les agences, « L'essentiel » (rapport n° 807, juillet 2025)",
+        "url": "https://www.senat.fr/rap/r24-807-1/r24-807-1-syn.pdf",
+        "ouverte": true
+      },
+      {
+        "titre": "AN — commission des finances, compte rendu n° 71 (25 fév. 2026)",
+        "url": "https://questions.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526071_compte-rendu.pdf",
+        "ouverte": true
+      }
+    ]
+  }
+]

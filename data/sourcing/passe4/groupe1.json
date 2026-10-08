@@ -1,0 +1,503 @@
+[
+  {
+    "id": "retraites",
+    "nom": "Retraites (base + complémentaires)",
+    "bloc": "Sécurité sociale",
+    "montant_mds": 407,
+    "annee_montant": 2024,
+    "source_montant": {
+      "titre": "COR — Rapport annuel juin 2025, synthèse p.2 : dépenses de retraite 2024 = 407 Md€ (13,9 % du PIB, 24,4 % des dépenses publiques)",
+      "url": "https://www.cor-retraites.fr/sites/default/files/2025-06/Synth%C3%A8se_Def_.pdf",
+      "ouverte": true
+    },
+    "verification": "407 Md€ confirmé dans le PDF COR (texte extrait). Mesures réécrites sur la base de la Cour des comptes (févr. 2025) : sous-indexation d'1 pt des pensions de base = 2,9 Md€ (dépenses de base 2025 : 288 Md€) ; relèvement d'un an de l'âge d'ouverture des droits = +8,4 Md€ sur le solde du système en 2035 (17,7 Md€ pour l'ensemble des finances publiques). Ancien cran 1 (+2 000 €/mois) abandonné : aucun chiffrage officiel du seuil. Passe 4 : crans 1 et 2 chiffrés par l'évaluation préalable de l'article 44 du PLFSS 2026 (lettre rectificative du 23/10/2025) et par l'audition de la Cnav au Sénat (1 point de sous-indexation du régime de base = 2,6 Md€ ; indexation à zéro en 2026 = 2,6 Md€), reproduits dans le rapport Sénat n° 131. Cran 3 : somme de deux chiffrages officiels d'horizons différents, laissée non vérifiée.",
+    "crans": [
+      {
+        "niveau": 1,
+        "mesure": "Sous-indexation de 0,5 point des pensions de base pendant 1 an (mesure de la lettre rectificative au PLFSS 2026, pour 2027)",
+        "gain_mds": 1.5,
+        "faisabilite": 1,
+        "arguments": [
+          "Évaluation préalable de l'article 44 (lettre rectificative du 23/10/2025) : une sous-indexation supplémentaire de 0,5 point en 2027 rapporte 1,5 Md€ (ensemble des administrations publiques) ; la Cnav l'évalue à 1,3 Md€ pour le seul régime de base (1 point = 2,6 Md€)",
+          "Cour des comptes (2025) : 1 point de sous-indexation = 2,9 Md€ la même année ; l'indexation actuelle est jugée peu adaptée au pilotage des dépenses",
+          "Précédent : revalorisation limitée à 0,3 % en 2019, validée par le Conseil constitutionnel"
+        ],
+        "obstacles": [
+          "Politique : l'article 44 du PLFSS 2026 (gel 2026 puis sous-indexation 2027-2030) a été supprimé par l'Assemblée nationale en première lecture (rapport Sénat n° 131)",
+          "Juridique : la sous-indexation doit être fixée année par année dans la LFSS ; en 2018 le Conseil constitutionnel a censuré les mots « et 2020 » de l'art. 68 LFSS 2019 comme dépourvus de caractère permanent (2018-776 DC, cons. 42), tout en validant la dérogation pour 2019 (cons. 43-47)",
+          "Politique : l'Agirc-Arrco relève des partenaires sociaux (hors champ de la loi)"
+        ],
+        "sources": [
+          {
+            "titre": "Sénat — Rapport n° 131 (2025-2026) sur le PLFSS 2026, tome I : évaluation préalable de l'article 44 (gel et sous-indexation), audition de la Cnav et de la Cnaf (22/10/2025)",
+            "url": "https://www.senat.fr/rap/l25-131-1/l25-131-1_mono.html",
+            "ouverte": true
+          },
+          {
+            "titre": "Cour des comptes — Situation financière et perspectives du système de retraites, février 2025 (copie vie-publique.fr)",
+            "url": "https://www.vie-publique.fr/files/rapport/pdf/297428.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "Conseil constitutionnel — Décision n° 2018-776 DC du 21 décembre 2018",
+            "url": "https://www.conseil-constitutionnel.fr/decision/2018/2018776DC.htm",
+            "ouverte": true
+          }
+        ],
+        "non_verifie": false,
+        "notes": "Chiffrage officiel direct : évaluation préalable de l'art. 44 du PLFSS 2026 après lettre rectificative, majoration de 0,5 point de la sous-indexation en 2027 = 1,5 Md€ (APU) ; DSS : dépenses -1,4 Md€, recettes -0,3 Md€, solde Sécu +1,1 Md€ (rapport Sénat n° 131). Recoupement Cnav : 0,5 x 2,6 = 1,3 Md€ (régime de base) ; Cour des comptes : 0,5 x 2,9 = 1,45 Md€. Remplace l'ancien calcul 0,4 pt x 2,9 = 1,2 Md€ (non publié tel quel)."
+      },
+      {
+        "niveau": 2,
+        "mesure": "Gel des pensions de base pendant 1 an (année blanche, sans exception pour les petites pensions)",
+        "gain_mds": 2.6,
+        "faisabilite": 2,
+        "arguments": [
+          "Audition de la Cnav au Sénat (oct. 2025) : « en 2026, avec une indexation à zéro et une hypothèse d'inflation à 1 point, le rendement serait de 2,6 Md€ » pour le régime de base (1 point de sous-indexation = 2,6 Md€) ; recoupement Cour des comptes : 0,9 pt x 2,9 Md€ = 2,6 Md€",
+          "Mesure inscrite au PLFSS 2026 initial (art. 44) puis supprimée par l'Assemblée (308 voix contre 99) ; le Sénat l'avait rétabli en épargnant les pensions ≤ 1 400 € bruts (198 voix contre 120)",
+          "Le gel de l'ensemble des prestations et pensions était évalué à 3,6 Md€ en 2026 (2,5 Sécu, 1,1 État) par l'évaluation préalable : seule la part pensions est retenue ici pour éviter tout double compte avec les prestations familiales et sociales"
+        ],
+        "obstacles": [
+          "Politique : rejet net à l'Assemblée en 2025 ; la revalorisation 2026 aurait finalement été maintenue (source secondaire)",
+          "Juridique : une différence de traitement entre catégories de prestations a été jugée justifiée en 2018 (2018-776 DC, cons. 44-46, art. 68 LFSS 2019) ; un gel sans exception pour les minima serait plus exposé (non tranché par le Conseil)",
+          "Perte de pouvoir d'achat pour les retraités modestes"
+        ],
+        "sources": [
+          {
+            "titre": "Sénat — Rapport n° 131 (2025-2026) sur le PLFSS 2026, tome I : évaluation préalable de l'article 44 (gel et sous-indexation), audition de la Cnav et de la Cnaf (22/10/2025)",
+            "url": "https://www.senat.fr/rap/l25-131-1/l25-131-1_mono.html",
+            "ouverte": true
+          },
+          {
+            "titre": "Cour des comptes — Situation financière et perspectives du système de retraites, février 2025 (copie vie-publique.fr)",
+            "url": "https://www.vie-publique.fr/files/rapport/pdf/297428.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "Sénat — L'essentiel PLF 2026, mission RSR / CAS Pensions (pensions des régimes de base 2026 : 307,4 Md€ ; économies gel : CAS 0,6 Md€)",
+            "url": "https://www.senat.fr/rap/l25-139-324/l25-139-324-syn.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "Public Sénat — PLFSS 2026 : gel des pensions et effort sur les dépenses de santé",
+            "url": "https://www.publicsenat.fr/actualites/sante/securite-sociale-le-budget-plfss-2026-prevoit-un-gel-des-pensions-de-retraite-effort-depenses-de-sante",
+            "ouverte": true
+          },
+          {
+            "titre": "Public Sénat — Le Sénat rétablit le gel des pensions et des prestations en l'assouplissant (vote 198 contre 120)",
+            "url": "https://www.publicsenat.fr/actualites/politique/dans-une-ambiance-tendue-le-senat-retablit-le-gel-des-pensions-et-des-prestations-sociales-en-lassouplissant",
+            "ouverte": true
+          },
+          {
+            "titre": "franceinfo — L'Assemblée rejette le gel des pensions et des minima sociaux en 2026 (art. 44 supprimé, 308 voix contre 99)",
+            "url": "https://www.franceinfo.fr/economie/budget/budget-de-la-securite-sociale-l-assemblee-nationale-rejette-largement-le-gel-des-pensions-de-retraites-et-des-minima-sociaux_7612064.html",
+            "ouverte": true
+          },
+          {
+            "titre": "Conseil constitutionnel — Décision n° 2018-776 DC du 21 décembre 2018",
+            "url": "https://www.conseil-constitutionnel.fr/decision/2018/2018776DC.htm",
+            "ouverte": true
+          }
+        ],
+        "non_verifie": false,
+        "notes": "Chiffrage officiel direct : Cnav (audition Sénat du 22/10/2025, rapport n° 131) : indexation à zéro en 2026 = 2,6 Md€ pour le régime obligatoire de base. Recoupements : Cour des comptes 0,9 pt x 2,9 Md€/pt = 2,6 Md€ ; 307,4 Md€ de pensions de base 2026 (Sénat) x 0,9 % = 2,8 Md€. Le chiffre de 3,6 Md€ de l'évaluation préalable agrège pensions et prestations (APU) et n'est pas utilisé. Cran 2 (2,6) inclut l'effet du cran 1 (sous-indexation) : un gel est une sous-indexation de l'intégralité de l'inflation."
+      },
+      {
+        "niveau": 3,
+        "mesure": "Gel 1 an des pensions de base + relèvement de l'âge légal à 65 ans (génération 1968 et suivantes)",
+        "gain_mds": 11.0,
+        "faisabilite": 2,
+        "arguments": [
+          "Cour des comptes (2025) : +1 an d'âge d'ouverture des droits améliore le solde du système de retraites de 8,4 Md€ en 2035 (17,7 Md€ pour l'ensemble des finances publiques)",
+          "Effet rapide en montée en charge puis stabilisé (8,4 Md€ aussi en 2045)",
+          "Le Conseil constitutionnel a validé le report à 64 ans (2023-849 DC, cons. 93-94)"
+        ],
+        "obstacles": [
+          "Politique : réforme de 2023 déjà très contestée et suspendue en partie ; forte opposition syndicale et parlementaire",
+          "Aucun obstacle juridique identifié : le report à 64 ans a été jugé non inapproprié à l'objectif d'équilibre financier (2023-849 DC, cons. 93) ; un nouveau report relèverait du même raisonnement",
+          "Effets de report (chômage, invalidité) qui réduisent le gain net"
+        ],
+        "sources": [
+          {
+            "titre": "Cour des comptes — Situation financière et perspectives du système de retraites, février 2025 (copie vie-publique.fr)",
+            "url": "https://www.vie-publique.fr/files/rapport/pdf/297428.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "Conseil constitutionnel — Décision n° 2023-849 DC du 14 avril 2023",
+            "url": "https://www.conseil-constitutionnel.fr/decision/2023/2023849DC.htm",
+            "ouverte": true
+          },
+          {
+            "titre": "Sénat — L'essentiel PLF 2026, mission RSR / CAS Pensions (pensions des régimes de base 2026 : 307,4 Md€ ; économies gel : CAS 0,6 Md€)",
+            "url": "https://www.senat.fr/rap/l25-139-324/l25-139-324-syn.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "Sénat — Rapport n° 131 (2025-2026) sur le PLFSS 2026, tome I : évaluation préalable de l'article 44 (gel et sous-indexation), audition de la Cnav et de la Cnaf (22/10/2025)",
+            "url": "https://www.senat.fr/rap/l25-131-1/l25-131-1_mono.html",
+            "ouverte": true
+          }
+        ],
+        "non_verifie": true,
+        "notes": "Calcul : 2,6 Md€ (gel 2026, Cnav, voir cran 2) + 8,4 Md€ (+1 an d'âge d'ouverture des droits, amélioration du solde du système de retraites en 2035, Cour des comptes févr. 2025) = 11,0 Md€. Les deux chiffres sont officiels mais d'horizons différents (2026 et 2035) et le solde du système de retraites inclut des cotisations supplémentaires : l'addition est faite ici, non publiée telle quelle, et les effets ne sont pas strictement cumulables (le gel réduit un peu l'assiette). Les 17,7 Md€ de la Cour incluent 9,3 Md€ de recettes hors retraites : non retenus. Aucun chiffrage officiel publié pour la mesure combinée."
+      }
+    ],
+    "sources": [
+      {
+        "titre": "COR — Synthèse du rapport annuel, juin 2025 (dépenses 2024 : 407 Md€, 13,9 % du PIB)",
+        "url": "https://www.cor-retraites.fr/sites/default/files/2025-06/Synth%C3%A8se_Def_.pdf",
+        "ouverte": true
+      },
+      {
+        "titre": "Cour des comptes — Situation financière et perspectives du système de retraites, février 2025 (copie vie-publique.fr)",
+        "url": "https://www.vie-publique.fr/files/rapport/pdf/297428.pdf",
+        "ouverte": true
+      },
+      {
+        "titre": "Sénat — L'essentiel PLF 2026, mission RSR / CAS Pensions (pensions des régimes de base 2026 : 307,4 Md€ ; économies gel : CAS 0,6 Md€)",
+        "url": "https://www.senat.fr/rap/l25-139-324/l25-139-324-syn.pdf",
+        "ouverte": true
+      },
+      {
+        "titre": "Cour des comptes — La sécurité sociale 2026 (RALFSS, 27 mai 2026), rapport complet",
+        "url": "https://www.ccomptes.fr/sites/default/files/2026-05/20260527-RALFSS-2026_0.pdf",
+        "ouverte": true
+      },
+      {
+        "titre": "Sénat — Rapport n° 131 (2025-2026) sur le PLFSS 2026, tome I : évaluation préalable de l'article 44 (gel et sous-indexation), audition de la Cnav et de la Cnaf (22/10/2025)",
+        "url": "https://www.senat.fr/rap/l25-131-1/l25-131-1_mono.html",
+        "ouverte": true
+      }
+    ]
+  },
+  {
+    "id": "famille",
+    "nom": "Branche famille — prestations légales (Caf)",
+    "bloc": "Sécurité sociale",
+    "montant_mds": 34.2,
+    "annee_montant": 2025,
+    "source_montant": {
+      "titre": "Cour des comptes — RALFSS 2026, tableau n° 9 : prestations légales de la branche famille 2025 = 34,2 Md€ (total prestations 41,3 Md€ avec extra-légales 7,2 ; charges nettes 58,5 Md€)",
+      "url": "https://www.ccomptes.fr/sites/default/files/2026-05/20260527-RALFSS-2026_0.pdf",
+      "ouverte": true
+    },
+    "verification": "Périmètre fixé : branche famille / prestations légales versées par les Caf (34,2 Md€ en 2025). Ancien montant 65,8 Md€ (risque famille tous régimes, y compris garde d'enfants et ASE) abandonné. Les mesures portent sur les prestations d'entretien et d'éducation de l'enfant indexées sur la Bmaf (24,5 Md€ en 2024, dont allocations familiales 13,4 Md€ — Cnaf n° 7). Aucun chiffrage officiel à jour trouvé pour les trois crans : tous marqués non vérifiés avec formule. Passe 4 : les trois crans sont désormais chiffrés par des sources officielles ouvertes : étude d'impact du PLFSS 2026 (gel des prestations familiales, 0,3 Md€, citée dans le rapport Sénat n° 131) et revue de dépenses IGF-IGAS d'août 2026 (seuils de dégressivité des allocations familiales). L'ancien cran 3 (suppression au-delà du 8e décile, 2,7 Md€) était une extrapolation uniforme surestimée : les AF sont déjà très concentrées sur les premiers déciles (IGF-IGAS, annexe IV) ; il est remplacé par la suppression de la 3e tranche. Le report de 14 à 18 ans de la majoration pour âge des AF (0,2 Md€, LFSS 2026) est déjà en vigueur et n'est pas compté.",
+    "crans": [
+      {
+        "niveau": 1,
+        "mesure": "Gel 1 an de la Bmaf et des prestations familiales qui en dépendent (PAJE, allocations familiales, complément familial, ASF, ARS)",
+        "gain_mds": 0.3,
+        "faisabilite": 1,
+        "arguments": [
+          "Étude d'impact du PLFSS 2026 (art. 44) : l'absence de revalorisation en 2026 de la PAJE, des allocations familiales, du complément familial, de l'ASF et de l'ARS économise 0,3 Md€, dont 0,1 Md€ pour les seules allocations familiales (chiffre cité par la rapporteure du Sénat lors de l'audition de la Cnaf)",
+          "Le directeur général de la Cnaf estimait le chiffre global des prestations familiales à 0,4-0,5 Md€ (à vérifier selon lui) : le chiffre officiel le plus bas est retenu",
+          "24,5 Md€ de prestations d'entretien de l'enfant versées par les Caf en 2024, toutes revalorisées via la Bmaf"
+        ],
+        "obstacles": [
+          "Politique : l'article 44 du PLFSS 2026 a été supprimé par l'Assemblée nationale en première lecture ; pouvoir d'achat des familles, natalité en baisse (645 000 naissances en 2025, -2,1 %)",
+          "Juridique : une revalorisation dérogatoire a été jugée conforme en 2018 pour des prestations dont les titulaires ne sont pas dans la même situation que les minima sociaux (2018-776 DC, cons. 43-46)"
+        ],
+        "sources": [
+          {
+            "titre": "Sénat — Rapport n° 131 (2025-2026) sur le PLFSS 2026, tome I : évaluation préalable de l'article 44 (gel et sous-indexation), audition de la Cnav et de la Cnaf (22/10/2025)",
+            "url": "https://www.senat.fr/rap/l25-131-1/l25-131-1_mono.html",
+            "ouverte": true
+          },
+          {
+            "titre": "Cnaf — Analyses statistiques n° 7 (2026) : prestations d'entretien de l'enfant 2024 = 24,5 Md€ dont allocations familiales 13,4 Md€",
+            "url": "https://caf.fr/sites/default/files/medias/cnaf/Nous_connaitre/Recherche_et_statistiques/Analyses_statistiques/CNAF_n%C2%B07_Analyses_statistiques.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "Cour des comptes — La sécurité sociale 2026 (RALFSS, 27 mai 2026), rapport complet",
+            "url": "https://www.ccomptes.fr/sites/default/files/2026-05/20260527-RALFSS-2026_0.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "Conseil constitutionnel — Décision n° 2018-776 DC du 21 décembre 2018",
+            "url": "https://www.conseil-constitutionnel.fr/decision/2018/2018776DC.htm",
+            "ouverte": true
+          }
+        ],
+        "non_verifie": false,
+        "notes": "Chiffrage officiel direct : étude d'impact du PLFSS 2026, art. 44 : 0,3 Md€ en 2026 pour les prestations familiales (dont 0,1 Md€ AF), tel que cité dans le rapport Sénat n° 131 (question de la rapporteure de la branche vieillesse à la Cnaf, 22/10/2025) ; l'étude d'impact elle-même n'a pas été ouverte. Recoupement : 24,5 Md€ x 0,9 % = 0,22 Md€ (périmètre sans PAJE). Les chiffres plus élevés de la presse (3,6 Md€ pour l'ensemble des prestations et pensions) ne sont pas utilisés."
+      },
+      {
+        "niveau": 2,
+        "mesure": "Cran 1 + baisse de 20 % des seuils de passage aux 2e et 3e tranches (demi-taux et quart-taux) des allocations familiales",
+        "gain_mds": 0.8,
+        "faisabilite": 1,
+        "arguments": [
+          "IGF-IGAS (août 2026), mesure prioritaire n° 2 : baisse de 20 % des plafonds de ressources de la dégressivité des AF = 530 M€ d'économies, 591 000 ménages concernés, perte moyenne d'environ 75 € par mois, mesure par décret simple",
+          "La perte n'intervient qu'à partir de 5 886 € nets mensuels pour une famille de 2 enfants et ne dépasse jamais 1,3 % du revenu (2 enfants) ; l'effet est concentré sur les déciles supérieurs (IGF-IGAS, annexe IV)",
+          "Précédent : modulation introduite par l'art. 85 LFSS 2015 et validée par le Conseil constitutionnel (2014-706 DC, cons. 33-36) ; 760 M€ économisés en 2016 (Sénat)"
+        ],
+        "obstacles": [
+          "Juridique : validé sous réserve que le barème réglementaire ne remette pas en cause les exigences des 10e et 11e alinéas du Préambule de 1946 compte tenu des autres aides aux familles (2014-706 DC, cons. 35-36)",
+          "Politique : nouvelle atteinte à l'universalité des AF, effet de seuil sur les familles nombreuses (perte maximale de 172 € par mois pour 3 enfants et 269 € pour 4 enfants selon l'IGF-IGAS)"
+        ],
+        "sources": [
+          {
+            "titre": "IGF-IGAS — Revue de dépenses relative à l'efficacité des politiques familiales (publiée le 14/08/2026), rapport complet : mesure prioritaire n° 2 (530 M€) et mesure additionnelle n° 1 (220 / 370 M€), annexes IV et VI",
+            "url": "https://igas.gouv.fr/sites/igas/files/2026-08/Revue%20de%20d%C3%A9penses_politiques%20familiales%20%282026%29.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "IGAS — Page de la Revue de dépenses relative à l'efficacité des politiques familiales (14/08/2026)",
+            "url": "https://igas.gouv.fr/revue-de-depenses-relative-lefficacite-des-politiques-familiales",
+            "ouverte": true
+          },
+          {
+            "titre": "Conseil constitutionnel — Décision n° 2014-706 DC du 18 décembre 2014",
+            "url": "https://www.conseil-constitutionnel.fr/decision/2014/2014706DC.htm",
+            "ouverte": true
+          },
+          {
+            "titre": "Sénat — Compte rendu du 2 février 2022 (proposition de loi pour redonner un caractère universel aux allocations familiales) : 760 M€ économisés par la modulation en 2016, 830 M€ de coût de sa suppression",
+            "url": "https://www.senat.fr/cra/s20220202/s20220202_5.html",
+            "ouverte": true
+          },
+          {
+            "titre": "Cnaf — Analyses statistiques n° 7 (2026) : prestations d'entretien de l'enfant 2024 = 24,5 Md€ dont allocations familiales 13,4 Md€",
+            "url": "https://caf.fr/sites/default/files/medias/cnaf/Nous_connaitre/Recherche_et_statistiques/Analyses_statistiques/CNAF_n%C2%B07_Analyses_statistiques.pdf",
+            "ouverte": true
+          }
+        ],
+        "non_verifie": false,
+        "notes": "Calcul : 0,3 Md€ (gel Bmaf, cran 1, étude d'impact PLFSS 2026) + 0,53 Md€ (IGF-IGAS, baisse de 20 % des seuils, mesure prioritaire n° 2) = 0,83 ≈ 0,8 Md€. Les deux chiffrages officiels sont additionnés ; l'interaction (le gel réduit très légèrement l'assiette de la dégressivité) est négligeable. Remplace l'ancienne extrapolation proportionnelle (1,8 Md€ pour 25 % des foyers) qui n'était pas officielle."
+      },
+      {
+        "niveau": 3,
+        "mesure": "Cran 2 + suppression de la 3e tranche des allocations familiales (quart-taux) pour les familles les plus aisées",
+        "gain_mds": 1.2,
+        "faisabilite": 2,
+        "arguments": [
+          "IGF-IGAS (août 2026), mesure additionnelle n° 1 : supprimer la 3e tranche des AF génère 220 M€ avec le seuil actuel et 370 M€ après une baisse de 20 % du seuil (soit 371 000 ménages, perte moyenne 50 € par mois au seuil actuel)",
+          "Les économies portent quasi exclusivement sur les 10 % de ménages au niveau de vie le plus élevé (déciles 9 et 10, qui ne perçoivent déjà que 184 € et 95 € d'AF en moyenne par an, IGF-IGAS annexe IV)",
+          "Le Conseil constitutionnel admet que le bénéfice des AF varie selon les ressources (2014-706 DC, cons. 35)"
+        ],
+        "obstacles": [
+          "Juridique : même réserve qu'en 2014, le barème ne devant pas remettre en cause les exigences des 10e et 11e alinéas du Préambule de 1946 compte tenu des autres aides aux familles (2014-706 DC, cons. 35-36) ; la suppression totale d'une tranche n'a pas été examinée par le Conseil",
+          "Politique : rupture avec l'universalité des AF pour les foyers aisés ; gain budgétaire modeste au regard du symbole"
+        ],
+        "sources": [
+          {
+            "titre": "IGF-IGAS — Revue de dépenses relative à l'efficacité des politiques familiales (publiée le 14/08/2026), rapport complet : mesure prioritaire n° 2 (530 M€) et mesure additionnelle n° 1 (220 / 370 M€), annexes IV et VI",
+            "url": "https://igas.gouv.fr/sites/igas/files/2026-08/Revue%20de%20d%C3%A9penses_politiques%20familiales%20%282026%29.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "IGAS — Page de la Revue de dépenses relative à l'efficacité des politiques familiales (14/08/2026)",
+            "url": "https://igas.gouv.fr/revue-de-depenses-relative-lefficacite-des-politiques-familiales",
+            "ouverte": true
+          },
+          {
+            "titre": "Conseil constitutionnel — Décision n° 2014-706 DC du 18 décembre 2014",
+            "url": "https://www.conseil-constitutionnel.fr/decision/2014/2014706DC.htm",
+            "ouverte": true
+          },
+          {
+            "titre": "Sénat — Compte rendu du 2 février 2022 (proposition de loi pour redonner un caractère universel aux allocations familiales) : 760 M€ économisés par la modulation en 2016, 830 M€ de coût de sa suppression",
+            "url": "https://www.senat.fr/cra/s20220202/s20220202_5.html",
+            "ouverte": true
+          },
+          {
+            "titre": "Cnaf — Analyses statistiques n° 7 (2026) : prestations d'entretien de l'enfant 2024 = 24,5 Md€ dont allocations familiales 13,4 Md€",
+            "url": "https://caf.fr/sites/default/files/medias/cnaf/Nous_connaitre/Recherche_et_statistiques/Analyses_statistiques/CNAF_n%C2%B07_Analyses_statistiques.pdf",
+            "ouverte": true
+          }
+        ],
+        "non_verifie": false,
+        "notes": "Calcul : 0,3 Md€ (cran 1) + 0,53 Md€ (baisse de 20 % des seuils, cran 2) + 0,37 Md€ (suppression de la 3e tranche, IGF-IGAS : 370 M€ « dans le cas d'une baisse de 20 % du seuil », lu comme gain supplémentaire par rapport à l'état du cran 2 où les seuils sont déjà abaissés) = 1,20 Md€. Avec le seuil actuel le gain isolé serait de 0,22 Md€. Interprétation du chiffre de 370 M€ à confirmer auprès des auteurs ; hypothèse prudente : gain additionnel et non pas cumulé en double. Remplace l'ancien calcul uniforme (13,4 Md€ x 20 % = 2,7 Md€) invalidé par la répartition des AF par décile (IGF-IGAS, annexe IV, tableau 13)."
+      }
+    ],
+    "sources": [
+      {
+        "titre": "Cnaf — Analyses statistiques n° 7 (2026) : prestations d'entretien de l'enfant 2024 = 24,5 Md€ dont allocations familiales 13,4 Md€",
+        "url": "https://caf.fr/sites/default/files/medias/cnaf/Nous_connaitre/Recherche_et_statistiques/Analyses_statistiques/CNAF_n%C2%B07_Analyses_statistiques.pdf",
+        "ouverte": true
+      },
+      {
+        "titre": "Cour des comptes — La sécurité sociale 2026 (RALFSS, 27 mai 2026), rapport complet",
+        "url": "https://www.ccomptes.fr/sites/default/files/2026-05/20260527-RALFSS-2026_0.pdf",
+        "ouverte": true
+      },
+      {
+        "titre": "Weka — Le gouvernement opte pour la modulation des allocations familiales (20/10/2014 : 800 M€ attendus)",
+        "url": "https://www.weka.fr/actualite/enfance-et-famille/article/le-gouvernement-opte-pour-la-modulation-des-allocations-familiales-7610/",
+        "ouverte": true
+      },
+      {
+        "titre": "Conseil constitutionnel — Décision n° 2014-706 DC du 18 décembre 2014",
+        "url": "https://www.conseil-constitutionnel.fr/decision/2014/2014706DC.htm",
+        "ouverte": true
+      },
+      {
+        "titre": "IGF-IGAS — Revue de dépenses relative à l'efficacité des politiques familiales (publiée le 14/08/2026), rapport complet : mesure prioritaire n° 2 (530 M€) et mesure additionnelle n° 1 (220 / 370 M€), annexes IV et VI",
+        "url": "https://igas.gouv.fr/sites/igas/files/2026-08/Revue%20de%20d%C3%A9penses_politiques%20familiales%20%282026%29.pdf",
+        "ouverte": true
+      },
+      {
+        "titre": "Sénat — Rapport n° 131 (2025-2026) sur le PLFSS 2026, tome I : évaluation préalable de l'article 44 (gel et sous-indexation), audition de la Cnav et de la Cnaf (22/10/2025)",
+        "url": "https://www.senat.fr/rap/l25-131-1/l25-131-1_mono.html",
+        "ouverte": true
+      }
+    ]
+  },
+  {
+    "id": "chomage",
+    "nom": "Assurance chômage",
+    "bloc": "Sécurité sociale",
+    "montant_mds": 45.2,
+    "annee_montant": 2025,
+    "source_montant": {
+      "titre": "Unédic — Prévisions financières octobre 2025 (45,2 Md€ de dépenses 2025 : valeur de la 1re passe, non retrouvée sur la page ouverte ; recalcul PLFSS 2026 annexe 8 ≈ 45,5 Md€)",
+      "url": "https://www.unedic.org/publications/previsions-financieres-de-l-unedic-octobre-2025",
+      "ouverte": true
+    },
+    "verification": "Montant 45,2 Md€ conservé, non confirmé sur la page Unédic (qui donne solde -0,1 Md€ en 2025 et dette 59,5 Md€) ; l'annexe 8 du PLFSS 2026 donne +2,8 Md€ (+6,5 %) de dépenses en 2024 puis -0,4 Md€ en 2025, soit ≈ 45,5 Md€ par recalcul. Ancien cran 1 (contracyclicité) retiré : mesure déjà en vigueur depuis le 1er février 2023 (décret n° 2023-33), effet 3,8 Md€ en 2026 (PLFSS) / 4,5 Md€/an ex ante (Unédic), donc déjà intégrée dans la base. Crans remplacés par des mesures supplémentaires chiffrées. Ancien cran 2 (3,6 Md€, projet 2024 non abouti) supprimé : non isolable. Passe 4 : le chiffre de 45,3 Md€ de dépenses 2025 est confirmé par l'Unédic (juin 2026), écart de 0,1 Md€ avec le montant retenu non corrigé. Les crans 2 et 3, appuyés jusque-là sur une note interne de l'Unédic lue via la presse, sont remplacés par des mesures proches chiffrées par le CAE (note n° 90, avril 2026, organisme rattaché au Premier ministre). Les ruptures conventionnelles (avenant du 25/02/2026, loi du 2 juin 2026, 0,6-0,8 Md€ en régime de croisière selon l'étude d'impact) sont déjà adoptées et ne sont pas comptées dans les crans 2 et 3 ; elles recoupent probablement le chiffre de 0,6 Md€ du cran 1.",
+    "crans": [
+      {
+        "niveau": 1,
+        "mesure": "Nouvelles évolutions des règles d'indemnisation négociées (ex. affiliation portée de 6 à 7 mois sur 24)",
+        "gain_mds": 0.6,
+        "faisabilite": 1,
+        "arguments": [
+          "PLFSS 2026 (annexe 8) : économies de 0,6 Md€ en 2026 attendues d'évolutions des règles du régime, 'selon l'aboutissement de futures négociations'",
+          "Ordre de grandeur cohérent : affiliation à 7 mois = ~0,4 Md€/an (scénario Unédic, mai 2024)"
+        ],
+        "obstacles": [
+          "Gouvernance paritaire : le décret ne peut se substituer aux partenaires sociaux qu'en cas d'échec de la négociation (art. L. 5422-20 du code du travail, Conseil d'État, n° 434920 du 25/11/2020)",
+          "Les mesures par décret doivent rester compatibles avec le document de cadrage (même décision)"
+        ],
+        "sources": [
+          {
+            "titre": "PLFSS 2026 — Annexe 8 (assurance chômage) : contracyclicité 3,8 Md€ en 2026 ; évolutions des règles 0,6 Md€",
+            "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1089899/file/PLFSS2026-Annexe8-20251011-230957-13-4.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "Public Sénat (21/05/2024) — scénarios Unédic : affiliation 7 mois 0,4 Md€/an ; 12 mois 2,3 Md€ ; durée 12 mois ~6 Md€",
+            "url": "https://www.publicsenat.fr/actualites/emploi/assurance-chomage-la-reforme-pourrait-affecter-jusqua-un-tiers-des-allocataires-selon-lunedic",
+            "ouverte": true
+          },
+          {
+            "titre": "Conseil d'État — Décision n° 434920 du 25 novembre 2020 (analyse)",
+            "url": "https://www.conseil-etat.fr/fr/arianeweb/CE/analyse/2020-11-25/434920",
+            "ouverte": true
+          }
+        ],
+        "non_verifie": false,
+        "notes": "Montant officiel mais mesure précise non spécifiée dans l'annexe 8 ; la mesure 'affiliation à 7 mois' est un exemple, l'estimation Unédic de 0,4 Md€/an (relayée par la presse) étant inférieure."
+      },
+      {
+        "niveau": 2,
+        "mesure": "Affiliation portée de 6 à 8 mois travaillés sur 24 + plafonnement de l'allocation mensuelle à 2 500 € (au lieu de 8 826 €)",
+        "gain_mds": 1.6,
+        "faisabilite": 2,
+        "arguments": [
+          "CAE (avril 2026), tableau 1 : passage de 6 à 8 mois d'affiliation = 446 M€ d'économies par an (modèle comptable ; 511 M€ en modèle simulé), sans effet comportemental",
+          "CAE (avril 2026), tableau 1 : plafonnement de l'allocation à 2 500 € par mois = 1 144 M€ par an en modèle comptable (944 M€ mécaniques + 201 M€ comportementaux ; 1 495 M€ en modèle simulé)",
+          "Comparaison européenne citée par le CAE : plafond mensuel de 2 339 € en Suède et 2 231 € en Belgique, contre 8 826 € en France"
+        ],
+        "obstacles": [
+          "Le CAE juge le durcissement des conditions d'éligibilité peu indiqué : pas d'effet emploi à en attendre et publics modestes ou précaires pénalisés ; le plafonnement touche en revanche des allocataires à haut salaire de référence",
+          "Gouvernance paritaire : le décret ne peut se substituer aux partenaires sociaux qu'en cas d'échec de la négociation (art. L. 5422-20 du code du travail, Conseil d'État, n° 434920 du 25/11/2020)",
+          "Égalité : le Conseil d'État a annulé en 2020 des règles de calcul jugées manifestement disproportionnées entre profils de contrats (n° 434920) ; report possible vers RSA/ASS"
+        ],
+        "sources": [
+          {
+            "titre": "Conseil d'analyse économique — Note n° 90 « Mesurer l'efficacité de l'assurance chômage » (14/04/2026), tableau 1 « Chiffrages budgétaires » p. 11",
+            "url": "https://cae-eco.fr/static/pdf/CAE090_Assurance-chomage_260414.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "Conseil d'État — Décision n° 434920 du 25 novembre 2020 (analyse)",
+            "url": "https://www.conseil-etat.fr/fr/arianeweb/CE/analyse/2020-11-25/434920",
+            "ouverte": true
+          },
+          {
+            "titre": "Unédic — Situation financière de l'assurance chômage à horizon 2028 (juin 2026) : dépenses totales 2025 = 45,3 Md€",
+            "url": "https://s3.eusc-de-east-1.amazonaws.eu/unedic-eks-prod-cms/2026/06/17/situation-financiere-assurance-chomage-a-horizon-2028-juin-2026_uid_6a32884bd3186.pdf",
+            "ouverte": true
+          }
+        ],
+        "non_verifie": false,
+        "notes": "Mesure proche substituée à l'affiliation à 12 mois (2,3 Md€ issus d'une note interne de l'Unédic lue via la presse, non retrouvée). Calcul : 0,446 (affiliation 8 mois) + 1,144 (plafond 2 500 €) = 1,59 ≈ 1,6 Md€, modèle « comptable » du CAE (le moins élevé ; le modèle simulé donne 0,511 + 1,495 = 2,0 Md€). Chiffrages du CAE établis réforme par réforme : l'interaction entre les deux leviers n'est pas modélisée mais reste faible (publics distincts : précaires pour l'affiliation, hauts salaires pour le plafond). L'affiliation à 8 mois englobe l'exemple du cran 1 (7 mois, 0,4 Md€) ; les 0,6 Md€ du cran 1 ne sont pas ajoutés. Dépenses d'allocations de 37 Md€ en 2025 selon le CAE (Unédic)."
+      },
+      {
+        "niveau": 3,
+        "mesure": "Cran 2 + coefficient de conversion de la durée d'indemnisation ramené de 0,75 à 0,6 (durée maximale en temps normal ≈ 14,4 mois au lieu de 18)",
+        "gain_mds": 4.8,
+        "faisabilite": 2,
+        "arguments": [
+          "CAE (avril 2026), tableau 1 : baisse du coefficient de conversion de 0,75 à 0,6 = 3 186 M€ par an en modèle comptable (2 137 M€ mécaniques + 1 049 M€ comportementaux ; 5 775 M€ en modèle simulé)",
+          "Les économies comportementales (retour à l'emploi plus rapide) représentent un tiers du gain (rendement unitaire de 1,49 € par euro mécanique selon le CAE)",
+          "La contracyclicité a déjà réduit la durée potentielle moyenne de 20 à 16 mois (Unédic, déc. 2025) : le CAE chiffre la réforme à partir des règles actuelles (coefficient 0,75)"
+        ],
+        "obstacles": [
+          "Politique : report vers l'ASS et le RSA (part des sortants en fin de droits recevant l'ASS passée de 13 % à 20 %, Unédic) ; forte opposition syndicale ; le complément de fin de droits ne joue qu'en cas de dégradation de la conjoncture",
+          "Gouvernance paritaire et compatibilité avec le cadrage financier (L. 5422-20 CT, Conseil d'État n° 434920)",
+          "Aucun obstacle constitutionnel ou européen identifié : risque juridique et politique fort, d'où une faisabilité de 2 et non de 3"
+        ],
+        "sources": [
+          {
+            "titre": "Conseil d'analyse économique — Note n° 90 « Mesurer l'efficacité de l'assurance chômage » (14/04/2026), tableau 1 « Chiffrages budgétaires » p. 11",
+            "url": "https://cae-eco.fr/static/pdf/CAE090_Assurance-chomage_260414.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "Unédic — Réforme 2023 : premiers effets de la contracyclicité (18/12/2025)",
+            "url": "https://www.unedic.org/publications/reforme-2023-premiers-effets-de-la-reforme-de-contracyclicite",
+            "ouverte": true
+          },
+          {
+            "titre": "Conseil d'État — Décision n° 434920 du 25 novembre 2020 (analyse)",
+            "url": "https://www.conseil-etat.fr/fr/arianeweb/CE/analyse/2020-11-25/434920",
+            "ouverte": true
+          }
+        ],
+        "non_verifie": false,
+        "notes": "Mesure proche substituée à la durée maximale de 12 mois (« près de 6 Md€ » issus d'une note interne de l'Unédic lue via la presse, non retrouvée ; un coefficient de 0,6 donne 730 x 0,6 = 438 jours soit 14,4 mois). Calcul : 1,59 (cran 2) + 3,186 (coefficient 0,6, modèle comptable du CAE) = 4,78 ≈ 4,8 Md€. Le modèle simulé du CAE donnerait 2,0 + 5,8 = 7,8 Md€ : ordre de grandeur plus haut non retenu. L'addition des chiffrages réforme par réforme du CAE surestime légèrement (certains allocataires exclus par le cran 2 ne sont plus concernés par la réduction de durée) ; effet non quantifié. Impact RSA/ASS non déduit."
+      }
+    ],
+    "sources": [
+      {
+        "titre": "Unédic — Prévisions financières octobre 2025",
+        "url": "https://www.unedic.org/publications/previsions-financieres-de-l-unedic-octobre-2025",
+        "ouverte": true
+      },
+      {
+        "titre": "Unédic — Réforme 2023 : premiers effets de la contracyclicité (18/12/2025)",
+        "url": "https://www.unedic.org/publications/reforme-2023-premiers-effets-de-la-reforme-de-contracyclicite",
+        "ouverte": true
+      },
+      {
+        "titre": "PLFSS 2026 — Annexe 8 (assurance chômage) : contracyclicité 3,8 Md€ en 2026 ; évolutions des règles 0,6 Md€",
+        "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1089899/file/PLFSS2026-Annexe8-20251011-230957-13-4.pdf",
+        "ouverte": true
+      },
+      {
+        "titre": "Public Sénat (21/05/2024) — scénarios Unédic : affiliation 7 mois 0,4 Md€/an ; 12 mois 2,3 Md€ ; durée 12 mois ~6 Md€",
+        "url": "https://www.publicsenat.fr/actualites/emploi/assurance-chomage-la-reforme-pourrait-affecter-jusqua-un-tiers-des-allocataires-selon-lunedic",
+        "ouverte": true
+      },
+      {
+        "titre": "Conseil d'État — Décision n° 434920 du 25 novembre 2020 (analyse)",
+        "url": "https://www.conseil-etat.fr/fr/arianeweb/CE/analyse/2020-11-25/434920",
+        "ouverte": true
+      },
+      {
+        "titre": "Conseil d'analyse économique — Note n° 90 « Mesurer l'efficacité de l'assurance chômage » (14/04/2026), tableau 1 « Chiffrages budgétaires » p. 11",
+        "url": "https://cae-eco.fr/static/pdf/CAE090_Assurance-chomage_260414.pdf",
+        "ouverte": true
+      },
+      {
+        "titre": "Unédic — Situation financière de l'assurance chômage à horizon 2028 (juin 2026) : dépenses totales 2025 = 45,3 Md€",
+        "url": "https://s3.eusc-de-east-1.amazonaws.eu/unedic-eks-prod-cms/2026/06/17/situation-financiere-assurance-chomage-a-horizon-2028-juin-2026_uid_6a32884bd3186.pdf",
+        "ouverte": true
+      }
+    ]
+  }
+]
