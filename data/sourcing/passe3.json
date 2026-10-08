@@ -1,0 +1,476 @@
+[
+  {
+    "id": "aides_entreprises",
+    "nom": "Aides aux entreprises (subventions, niches, allègements)",
+    "bloc": "État / Sécu",
+    "montant_mds": 211,
+    "annee_montant": 2023,
+    "montant_verifie": true,
+    "source_montant": {
+      "titre": "Sénat — commission d'enquête aides publiques aux grandes entreprises, « L'essentiel » (rapport n° 808, 2024-2025)",
+      "url": "https://www.senat.fr/rap/r24-808-1/r24-808-1-syn.pdf",
+      "ouverte": true
+    },
+    "note_correction": "211 Md€ (2023) = estimation « au sens large » de la commission d'enquête du Sénat (subventions État, Bpifrance, dépenses fiscales dont « déclassées », allègements de cotisations). Hors Bpifrance, dépenses fiscales déclassées et TVA : 108 Md€. Le ministre de l'Économie a donné 150 Md€ (40 fiscal, 30 budgétaire, 80 allègements) ; l'IGF 2024 retient 88 Md€ (2022) hors allègements généraux. Les crans sont désormais fondés sur la revue de dépenses IGF (mars 2024), qui exclut les allègements généraux de cotisations (soutien général à l'économie, par analogie avec l'art. 107 TFUE). Crans 2 et 3 de la passe précédente (hausses de TVA, recettes) supprimés (le site ne traite que des baisses de dépenses) et remplacés par des réductions d'allègements généraux de cotisations chiffrées par la Cour des comptes (RALFSS 2025, ch. III). Les gains des crans sont cumulatifs.",
+    "crans": [
+      {
+        "niveau": 1,
+        "mesure": "Suppression des aides et niches identifiées par l'IGF (hors TVA) : accompagnement CCI/CMA/Bpifrance, tarifs réduits d'accises, réforme du CIR (jeunes docteurs, périmètre Frascati, forfait 43→40 %), patent box 10→15 %, jeux vidéo, OGA, FCPI/FIP, Dutreil recentré",
+        "gain_mds": 2.8,
+        "faisabilite": 1,
+        "arguments": [
+          "IGF : pistes d'économies de 935 M€ en dépenses budgétaires et 1 880 M€ en dépenses fiscales (hors TVA), soit ~3 Md€ d'ici 2027",
+          "Dont 450 M€ sur le CIR (suppression du dispositif jeunes docteurs, activités éligibles limitées au manuel de Frascati OCDE, forfait de fonctionnement 43 % → 40 %), 800 M€ sur l'accompagnement des entreprises (CCI/CMA 700 M€, Bpifrance ~130 M€), 200 M€ patent box",
+          "Cour des comptes : le CIR est devenu la dépense fiscale la plus coûteuse (~7 Md€) ; les évaluations concluent à une efficacité limitée, avec des effets positifs concentrés sur les PME ; elle recommande de supprimer les dépenses fiscales jugées inefficientes",
+          "Sénat (recommandation n° 12) : diviser par trois le nombre de dépenses fiscales et subventions aux entreprises d'ici 2030 ; recommandation n° 16 : réduire le plafond de sous-traitance et le taux du CIR"
+        ],
+        "obstacles": [
+          "Juridique : modifier un avantage conditionné à un engagement du contribuable (ex. pacte Dutreil) expose à la protection des situations légalement acquises — Conseil constitutionnel, décision n° 2013-682 DC du 19 décembre 2013, cons. 14 (https://www.conseil-constitutionnel.fr/decision/2013/2013682DC.htm)",
+          "Politique : l'IGF précise que ses pistes sont une base à approfondir (temps limité, sensibilité politique) ; lobbying sectoriel (chambres consulaires, buralistes, jeux vidéo, capital-investissement)",
+          "UE : l'art. 107 TFUE encadre l'octroi des aides, pas leur suppression ; il n'est donc pas un obstacle à ce cran (EUR-Lex inaccessible lors de la vérification, non cité)"
+        ],
+        "sources": [
+          {
+            "titre": "IGF — Revue de dépenses : les aides aux entreprises (n° 2023-M-105-03, mars/avril 2024), copie vie-publique.fr",
+            "url": "https://www.vie-publique.fr/files/rapport/pdf/295437.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "Cour des comptes — Piloter et évaluer les dépenses fiscales (note thématique, juillet 2023)",
+            "url": "https://www.ccomptes.fr/system/files/2023-07/20230707-note-thematique-Depenses-fiscales.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "Sénat — commission d'enquête aides publiques aux grandes entreprises, « L'essentiel » (rapport n° 808, 2024-2025)",
+            "url": "https://www.senat.fr/rap/r24-808-1/r24-808-1-syn.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "Conseil constitutionnel — décision n° 2013-682 DC du 19 décembre 2013, cons. 14",
+            "url": "https://www.conseil-constitutionnel.fr/decision/2013/2013682DC.htm",
+            "ouverte": true
+          }
+        ],
+        "non_verifie": false,
+        "notes": "Gain = 935 + 1 880 = 2 815 M€ (IGF, tableau 2 de la note de synthèse, horizon 2027). Estimation IGF de premier niveau, à approfondir avant mise en oeuvre selon la mission elle-même."
+      },
+      {
+        "niveau": 2,
+        "mesure": "Cran 1 + reprofilage du barème de la réduction générale dégressive (~0,3 point du taux d'exonération) + plafond d'éligibilité de la baisse de cotisations familiales ramené de 3 à 2,5 Smic",
+        "gain_mds": 5.8,
+        "faisabilite": 2,
+        "arguments": [
+          "Cour des comptes (RALFSS 2025, ch. III) : le reprofilage par décret de la future réduction générale dégressive unique pourrait dégager « de l'ordre de 2 Md€ » supplémentaires, soit environ 0,3 point du taux d'exonération (estimation obtenue du Gouvernement)",
+          "Cour : le coût de la baisse de cotisations familiales pour les rémunérations de 2,5 à 3 Smic est « de l'ordre de 1 Md€ en 2023 » ; les évaluations (CAE 2019, Assemblée 2023, Bozio-Wasmer 2024) concluent à une efficacité limitée et à des effets marginaux sur l'emploi à ces niveaux",
+          "Les allègements généraux ont presque quadruplé entre 2014 et 2024 (20,9 → 77,3 Md€) ; ils sont sous-compensés par l'État (5,5 Md€ de perte pour la Sécurité sociale en 2024, selon la Cour)",
+          "Précédent : la LFSS 2025 a déjà limité les allègements pour 2 Md€ (1,6 Md€ Sécu + 0,4 Md€ État), contre 5,1 Md€ visés initialement dans le PLFSS"
+        ],
+        "obstacles": [
+          "Économique : la Cour souligne que toute limitation peut se traduire par des destructions d'emplois et donc par des pertes de recettes, effet non intégré dans le chiffrage de 2 Md€",
+          "Politique : forte opposition du patronat (coût du travail, industrie exportatrice) ; la LFSS 2025 avait été adoptée à 2 Md€ au lieu de 5,1 Md€",
+          "Chevauchement possible avec la réforme déjà engagée par la LFSS 2026 (fusion en 2026, baisse de ~2 points des taux) : le chiffrage de la Cour date de mai 2025 et n'a pas été actualisé ; les deux sous-mesures ne sont pas forcément strictement additives",
+          "Aucune décision du Conseil constitutionnel pertinente identifiée dans les documents ouverts : le barème est fixé par loi et décret, sans droit acquis"
+        ],
+        "sources": [
+          {
+            "titre": "Cour des comptes — RALFSS 2025, chapitre III : Maîtriser la dynamique des allègements généraux de cotisations sociales (mai 2025), §B pistes d'économie",
+            "url": "https://www.ccomptes.fr/sites/default/files/2025-05/20250526-RALFSS-2025-Maitriser-dynamique-allegements-generaux-de-cotisations-sociales.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "IGF — Revue de dépenses : les aides aux entreprises (n° 2023-M-105-03, mars/avril 2024), copie vie-publique.fr",
+            "url": "https://www.vie-publique.fr/files/rapport/pdf/295437.pdf",
+            "ouverte": true
+          }
+        ],
+        "non_verifie": false,
+        "notes": "Gain = 2,815 (cran 1, IGF) + 2,0 (reprofilage, Cour) + 1,0 (plafond 2,5 Smic, Cour, estimation 2023) = 5,8 Md€. Les deux chiffres Cour sont des ordres de grandeur « de l'ordre de » ; effets sur l'emploi non inclus. Périmètre : allègements de cotisations (dépense au sens du site), pas de hausse de taux de TVA."
+      },
+      {
+        "niveau": 3,
+        "mesure": "Cran 2 + intégration de l'intéressement et de la participation dans l'assiette de calcul de la réduction générale dégressive",
+        "gain_mds": 8.8,
+        "faisabilite": 2,
+        "arguments": [
+          "Cour des comptes (RALFSS 2025, ch. III) : l'élargissement de l'assiette aux versements de participation et d'intéressement permettrait « près de 3 Md€ » d'économie en 2025, à comportements inchangés",
+          "Le coût des allègements lié aux exemptions d'assiette de l'ensemble des compléments de salaire a atteint 4,7 Md€ en 2023 (Cour)",
+          "Précédent : la LFSS 2025 a déjà intégré la prime de partage de la valeur dans l'assiette (recette attendue 0,4 Md€ Sécu + 0,1 Unédic + 0,1 Agirc-Arrco)",
+          "Réduit l'incitation à substituer des compléments exonérés au salaire de base"
+        ],
+        "obstacles": [
+          "Politique : mesure touchant l'épargne salariale (partenaires sociaux, employeurs, syndicats attachés à l'intéressement) ; risque de baisse de la distribution d'intéressement",
+          "Économique : chiffrage « à comportements inchangés » ; la Cour rappelle le risque d'effets sur l'emploi des limitations d'allègements",
+          "Mesure de recettes sociales (suppression d'une exonération de cotisations dans l'assiette de l'allègement) : classée ici comme réduction d'allègement de cotisations, à arbitrer par le lecteur",
+          "Aucune décision du Conseil constitutionnel pertinente identifiée dans les documents ouverts"
+        ],
+        "sources": [
+          {
+            "titre": "Cour des comptes — RALFSS 2025, chapitre III : Maîtriser la dynamique des allègements généraux de cotisations sociales (mai 2025), §B pistes d'économie",
+            "url": "https://www.ccomptes.fr/sites/default/files/2025-05/20250526-RALFSS-2025-Maitriser-dynamique-allegements-generaux-de-cotisations-sociales.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "Sénat — commission d'enquête aides publiques aux grandes entreprises, « L'essentiel » (rapport n° 808, 2024-2025)",
+            "url": "https://www.senat.fr/rap/r24-808-1/r24-808-1-syn.pdf",
+            "ouverte": true
+          }
+        ],
+        "non_verifie": false,
+        "notes": "Gain = 5,8 (cran 2) + 3,0 (Cour, « près de 3 Md€ en 2025 ») = 8,8 Md€. Chiffre Cour 2025, non actualisé ; le Sénat (reco n° 17) ne demande qu'une réflexion sectorielle sur les allègements, il ne chiffre pas de réduction."
+      }
+    ],
+    "sources": [
+      {
+        "titre": "Sénat — commission d'enquête aides publiques aux grandes entreprises, « L'essentiel » (rapport n° 808, 2024-2025)",
+        "url": "https://www.senat.fr/rap/r24-808-1/r24-808-1-syn.pdf",
+        "ouverte": true
+      },
+      {
+        "titre": "Sénat — page de la commission d'enquête (2 200 dispositifs, 26 recommandations)",
+        "url": "https://www.senat.fr/travaux-parlementaires/structures-temporaires/commissions-denquete/commission-denquete-sur-lutilisation-des-aides-publiques-aux-grandes-entreprises-et-a-leurs-sous-traitants.html",
+        "ouverte": true
+      },
+      {
+        "titre": "IGF — Revue de dépenses : les aides aux entreprises (n° 2023-M-105-03, mars/avril 2024), copie vie-publique.fr",
+        "url": "https://www.vie-publique.fr/files/rapport/pdf/295437.pdf",
+        "ouverte": true
+      },
+      {
+        "titre": "Cour des comptes — Piloter et évaluer les dépenses fiscales (note thématique, juillet 2023)",
+        "url": "https://www.ccomptes.fr/system/files/2023-07/20230707-note-thematique-Depenses-fiscales.pdf",
+        "ouverte": true
+      },
+      {
+        "titre": "Cour des comptes (plateforme évaluations) — « Renforcer l'impact du CIR » (synthèse de l'évaluation CAE, 2022)",
+        "url": "https://www.ccomptes.fr/fr/plateformes-citoyennes/plateforme-evaluations-politique-publique/explorer-evaluations/renforcer",
+        "ouverte": true
+      },
+      {
+        "titre": "Conseil constitutionnel — décision n° 2013-682 DC du 19 décembre 2013, cons. 14",
+        "url": "https://www.conseil-constitutionnel.fr/decision/2013/2013682DC.htm",
+        "ouverte": true
+      },
+      {
+        "titre": "Cour des comptes — RALFSS 2025, chapitre III : Maîtriser la dynamique des allègements généraux de cotisations sociales (mai 2025), §B pistes d'économie",
+        "url": "https://www.ccomptes.fr/sites/default/files/2025-05/20250526-RALFSS-2025-Maitriser-dynamique-allegements-generaux-de-cotisations-sociales.pdf",
+        "ouverte": true
+      }
+    ]
+  },
+  {
+    "id": "collectivites_investissement",
+    "nom": "Collectivités — investissement",
+    "bloc": "Collectivités",
+    "montant_mds": 78.7,
+    "annee_montant": 2025,
+    "source_montant": {
+      "titre": "OFGL — Pré-rapport 2026 sur les finances locales (juin 2026), annexe 2A, tableau A8 : dépenses d'investissement hors remboursements de dette, ensemble des collectivités y compris syndicats, budgets principaux = 78,71 Md€ en 2025 (valeurs provisoires)",
+      "url": "https://www.collectivites-locales.gouv.fr/files/files/Etudes-et-statistiques/OFGL/rapport%202026/Pr%C3%A9-Rapport%20OFGL%202026.pdf",
+      "ouverte": true
+    },
+    "crans": [
+      {
+        "niveau": 1,
+        "mesure": "−10 % des dotations d'investissement de l'État (DETR, DSIL, DSID, DPV, FNADT ≈ 2 Md€ en 2026)",
+        "gain_mds": 0.2,
+        "faisabilite": 1,
+        "arguments": [
+          "Circulaire 2026 : dotations d'investissement ≈ 2 Md€ au total, Fonds vert ≈ 837 M€",
+          "Fusion DETR/DSIL/DPV dans le FIT abandonnée ; la baisse de 200 M€ qui accompagnait le FIT n'a pas été reprise dans la LFI 2026 (à corriger par rapport à la version précédente)",
+          "Aide aux maires bâtisseurs (100 M€) déjà supprimée en 2026"
+        ],
+        "obstacles": [
+          "Nombre de projets soutenus en baisse : plus de 23 300 en 2024 contre plus de 30 000 en 2023",
+          "Cible de transition écologique de 35 % (DSIL), 25 % (DETR) : arbitrages locaux déjà contraints"
+        ],
+        "sources": [
+          {
+            "titre": "Maire-info — Dotations de soutien : fin de l'aide aux maires bâtisseurs (circulaire 2026 : dotations d'investissement ~2 Md€, Fonds vert ~837 M€)",
+            "url": "https://www.maire-info.com/dotations-etat/dotations-soutien-gouvernement-acte-la-fin-aide-aux-maires-batisseurs-article-30666",
+            "ouverte": true
+          },
+          {
+            "titre": "Banque des Territoires / Localtis — Investissement local, le mandat devrait s'achever sur un bilan mitigé (OFGL, oct. 2024 : ~61 Md€ en 2023)",
+            "url": "https://www.banquedesterritoires.fr/investissement-local-le-mandat-devrait-sachever-sur-un-bilan-mitige",
+            "ouverte": true
+          }
+        ],
+        "non_verifie": false,
+        "notes": "Gain = 10 % × 2 Md€ (base officielle circulaire 2026 relayée par Maire-info). Correction : la baisse de 200 M€ de la DSIL en LFI 2026 n'est pas confirmée ; elle découlait du FIT, rejeté."
+      },
+      {
+        "niveau": 2,
+        "mesure": "−20 % des dotations d'investissement et du Fonds vert (≈ 2,84 Md€)",
+        "gain_mds": 0.57,
+        "faisabilite": 2,
+        "arguments": [
+          "Fonds vert : 2,5 Md€ en 2024, 1,15 Md€ en 2025, ~837 M€ en 2026 (Maire-info) : déjà en forte baisse",
+          "Investissement des collectivités attendu en recul de 3,1 % en 2026 (Cour des comptes, juill. 2026)"
+        ],
+        "obstacles": [
+          "Transition écologique : le Fonds vert est déjà divisé par trois depuis 2024",
+          "Autonomie financière des collectivités (art. 72-2) : les dotations d'investissement ne sont pas des ressources propres, pas d'obstacle constitutionnel direct identifié dans les sources ouvertes"
+        ],
+        "sources": [
+          {
+            "titre": "Maire-info — Dotations de soutien : fin de l'aide aux maires bâtisseurs (circulaire 2026 : dotations d'investissement ~2 Md€, Fonds vert ~837 M€)",
+            "url": "https://www.maire-info.com/dotations-etat/dotations-soutien-gouvernement-acte-la-fin-aide-aux-maires-batisseurs-article-30666",
+            "ouverte": true
+          },
+          {
+            "titre": "iFRAP — Cour des comptes, Les finances publiques locales : résultats 2025 et perspectives 2026 (juillet 2026)",
+            "url": "https://www.ifrap.org/etat-et-collectivites/finances-locales-de-meilleurs-resultats-2025-un-redressement-2026-confirmer",
+            "ouverte": true
+          },
+          {
+            "titre": "Conseil constitutionnel — Constitution du 4 octobre 1958 en vigueur (art. 72 et 72-2)",
+            "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+            "ouverte": true
+          }
+        ],
+        "non_verifie": false,
+        "notes": "Gain = 20 % × (2,0 + 0,837) Md€ ≈ 0,57 Md€, calcul sur base officielle."
+      },
+      {
+        "niveau": 3,
+        "mesure": "Moratoire d'un an sur les projets d'investissement non engagés (hypothèse : ~7 % de l'investissement local)",
+        "gain_mds": 5.5,
+        "faisabilite": 3,
+        "arguments": [
+          "Investissement local 2025 : 78,7 Md€ hors remboursements de dette, syndicats inclus (OFGL, pré-rapport 2026, provisoire) ; +1,7 % à +2,2 % selon périmètre, après +6,8 % en 2024 (Cour des comptes, juillet 2026)",
+          "Le bloc communal porte la hausse 2025 (communes +6,6 %, groupements +8,6 % selon l'OFGL), à la veille des municipales ; départements -8,0 % et régions -7,1 %",
+          "Investissement prévu en recul de 2,5 à 3,1 % en 2026 (LFI 2026 / PSMT avril 2026), effet du cycle électoral municipal"
+        ],
+        "obstacles": [
+          "Les départements et régions ont déjà réduit leur investissement en 2025 ; le bloc communal porte l'essentiel",
+          "Emploi local et BTP (pas de chiffrage officiel)",
+          "Libre administration (art. 72) : l'État ne peut pas imposer directement un moratoire sur les budgets locaux sans loi ; non analysé par une décision citée"
+        ],
+        "sources": [
+          {
+            "titre": "OFGL — Pré-rapport 2026 sur les finances locales (juin 2026), annexe 2A, tableau A8 : dépenses d'investissement hors remboursements de dette, ensemble des collectivités y compris syndicats, budgets principaux = 78,71 Md€ en 2025 (valeurs provisoires)",
+            "url": "https://www.collectivites-locales.gouv.fr/files/files/Etudes-et-statistiques/OFGL/rapport%202026/Pr%C3%A9-Rapport%20OFGL%202026.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "Cour des comptes — Les finances publiques locales : résultats 2025 et perspectives 2026 (juillet 2026), copie vie-publique.fr : dépenses réelles d'investissement 79,1 Md€ hors syndicats en 2025",
+            "url": "https://www.vie-publique.fr/files/rapport/pdf/304033.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "Conseil constitutionnel — Constitution du 4 octobre 1958 en vigueur (art. 72 et 72-2)",
+            "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+            "ouverte": true
+          }
+        ],
+        "non_verifie": true,
+        "notes": "Aucun chiffrage officiel du moratoire. Gain = 7 % × 78,7 Md€ ≈ 5,5 Md€ (part de projets non engagés = hypothèse de l'auteur, inchangée par rapport à la version précédente à 7 % de 70,8 Md€ ≈ 5 Md€). Cran cumulatif : recouvrement partiel avec les crans 1-2 (les dotations d'investissement financent une partie des projets), le gain de 5,5 est un total, non additionné à 0,57."
+      }
+    ],
+    "sources": [
+      {
+        "titre": "OFGL — Pré-rapport 2026 sur les finances locales (juin 2026), annexe 2A, tableau A8 : dépenses d'investissement hors remboursements de dette, ensemble des collectivités y compris syndicats, budgets principaux = 78,71 Md€ en 2025 (valeurs provisoires)",
+        "url": "https://www.collectivites-locales.gouv.fr/files/files/Etudes-et-statistiques/OFGL/rapport%202026/Pr%C3%A9-Rapport%20OFGL%202026.pdf",
+        "ouverte": true
+      },
+      {
+        "titre": "Cour des comptes — Les finances publiques locales : résultats 2025 et perspectives 2026 (juillet 2026), copie vie-publique.fr : dépenses réelles d'investissement 79,1 Md€ hors syndicats en 2025",
+        "url": "https://www.vie-publique.fr/files/rapport/pdf/304033.pdf",
+        "ouverte": true
+      },
+      {
+        "titre": "iFRAP — Cour des comptes, Les finances publiques locales : résultats 2025 et perspectives 2026 (juillet 2026)",
+        "url": "https://www.ifrap.org/etat-et-collectivites/finances-locales-de-meilleurs-resultats-2025-un-redressement-2026-confirmer",
+        "ouverte": true
+      },
+      {
+        "titre": "Maire-info — Dotations de soutien : fin de l'aide aux maires bâtisseurs (circulaire 2026 : dotations d'investissement ~2 Md€, Fonds vert ~837 M€)",
+        "url": "https://www.maire-info.com/dotations-etat/dotations-soutien-gouvernement-acte-la-fin-aide-aux-maires-batisseurs-article-30666",
+        "ouverte": true
+      },
+      {
+        "titre": "Banque des Territoires / Localtis — Investissement local, le mandat devrait s'achever sur un bilan mitigé (OFGL, oct. 2024 : ~61 Md€ en 2023)",
+        "url": "https://www.banquedesterritoires.fr/investissement-local-le-mandat-devrait-sachever-sur-un-bilan-mitige",
+        "ouverte": true
+      },
+      {
+        "titre": "Banque des Territoires — Comptes publics 2025 : hausse contenue des dépenses des collectivités",
+        "url": "https://www.banquedesterritoires.fr/comptes-publics-2025-hausse-contenue-des-depenses-des-collectivites",
+        "ouverte": true
+      },
+      {
+        "titre": "Conseil constitutionnel — Constitution du 4 octobre 1958 en vigueur (art. 72 et 72-2)",
+        "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+        "ouverte": true
+      }
+    ],
+    "verification": "Montant fixé à 78,7 Md€ (2025, valeurs provisoires) : OFGL, pré-rapport 2026, tableau A8 (dépenses d'investissement hors remboursements de dette, budgets principaux de l'ensemble des collectivités locales y compris syndicats : communes, groupements à fiscalité propre, départements, régions/CTU, syndicats). Autres périmètres de la même source : 71,63 Md€ hors syndicats (A6) ; 78,71 + 11,10 = 89,8 Md€ si on ajoute les budgets annexes (B8). Corroboration : Cour des comptes (juillet 2026) 79,1 Md€ de dépenses réelles d'investissement « hors syndicats » (périmètre comptable légèrement différent). L'ancien 70,8 Md€ (iFRAP, relayant une version antérieure de la Cour) et le 61 Md€ (OFGL 2023, ancien périmètre) sont écartés."
+  },
+  {
+    "id": "ondam_ville",
+    "nom": "Assurance maladie — soins de ville",
+    "bloc": "Sécurité sociale",
+    "montant_mds": 113.6,
+    "annee_montant": 2025,
+    "source_montant": {
+      "titre": "Cour des comptes — RALFSS 2026, tableau n° 19 : ONDAM 2025, constat provisoire, soins de ville = 113,6 Md€ (Sénat, rapport a25-747 : 113,7 Md€)",
+      "url": "https://www.ccomptes.fr/sites/default/files/2026-05/20260527-RALFSS-2026_0.pdf",
+      "ouverte": true
+    },
+    "verification": "Plafonds 2026 tranchés : le décret n° 2026-858 du 11 septembre 2026 (JO du 12/09/2026, en vigueur le 1er octobre 2026) porte le plafond annuel des franchises de 50 à 70 € ET celui des participations forfaitaires de 50 à 70 €, soit 140 € cumulés (contre 100 € avant). Les « 100 € » de Vidal (23/07/2026) sont l'annonce initiale de la ministre (puis un projet à 200 € cumulés abandonné) ; ce 100 € correspondait aussi à l'ancien cumul. Le texte de Légifrance n'a pu être ouvert (blocage anti-robot) : confirmation par Service-Public.fr (DILA), Vidal (JO) et Legisocial. Aucun rendement officiel publié pour le décret à 140 €.",
+    "crans": [
+      {
+        "niveau": 1,
+        "mesure": "Régulation des prix des produits de santé (baisses de tarifs CEPS, biosimilaires, dispositifs médicaux)",
+        "gain_mds": 1.3,
+        "faisabilite": 1,
+        "arguments": [
+          "Cnam, Charges et produits 2027 : régulation des produits de santé de l'ordre de 1,3 Md€ en 2027",
+          "Cour des comptes : poursuivre la baisse des prix des produits de santé = 5,3 Md€ (proposition n° 5, avril 2025)",
+          "Levier pur prix, sans transfert de reste à charge aux patients"
+        ],
+        "obstacles": [
+          "Politique : négociation avec l'industrie pharmaceutique (CEPS) et risque de pénuries/relocalisations",
+          "La régulation repose de plus en plus sur des remises et la clause de sauvegarde (10,7 Md€ en 2024), contestées en contentieux (Cour des comptes)"
+        ],
+        "sources": [
+          {
+            "titre": "Cnam — Charges et produits pour 2027 (rapport complet, copie hébergée sur onsil.fr ; page ameli.fr non ouverte), §5.1 : 3,9 Md€ d'économies 2027",
+            "url": "https://onsil.fr/wp-content/uploads/2026/07/1783175664493.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "Vidal — PLFSS 2027 : la Cnam propose 3,9 Md€ d'économies (2 juillet 2026)",
+            "url": "https://www.vidal.fr/actualites/38039-plfss-2027-la-cnam-propose-3-9-milliards-d-euros-d-economies.html",
+            "ouverte": true
+          },
+          {
+            "titre": "Cour des comptes — ONDAM, contribution à la revue des dépenses publiques, note de synthèse avril 2025 (15 propositions chiffrées)",
+            "url": "https://www.ccomptes.fr/sites/default/files/2025-04/20250414-Lobjectif-national-de-depenses-dassurance-maladie-Ondam.pdf",
+            "ouverte": true
+          }
+        ],
+        "non_verifie": false,
+        "notes": "Chiffre repris tel quel du rapport Cnam Charges et produits 2027, §5.1 (document lu via une copie hébergée sur onsil.fr, la page ameli.fr n'ayant pas été ouverte)."
+      },
+      {
+        "niveau": 2,
+        "mesure": "Paquet d'économies Cnam 2027 (produits de santé, régulation sectorielle, parcours ville-hôpital, arrêts de travail, fraude/pertinence, articulation AMO-AMC)",
+        "gain_mds": 3.9,
+        "faisabilite": 2,
+        "arguments": [
+          "Cnam : 3,9 Md€ d'économies proposées pour 2027, dont 1,3 produits de santé, 0,3 régulation sectorielle, 0,2 parcours, 0,6 AMO/AMC, ~1,3 fraude et pertinence (dont 0,45 fraude)",
+          "Trajectoire Cnam : 22,5 Md€ d'économies à l'horizon 2030 pour stabiliser l'ONDAM dans le PIB",
+          "Déficit de la branche maladie : 13,8 Md€ attendus en 2026"
+        ],
+        "obstacles": [
+          "Négociations conventionnelles avec les professionnels de santé (baisses de tarifs imposées à défaut d'accord)",
+          "600 M€ transférés aux complémentaires : transfert de charge, pas économie nette pour les ménages (hausse des cotisations)",
+          "Aucun obstacle juridique identifié dans les documents ouverts"
+        ],
+        "sources": [
+          {
+            "titre": "Cnam — Charges et produits pour 2027 (rapport complet, copie hébergée sur onsil.fr ; page ameli.fr non ouverte), §5.1 : 3,9 Md€ d'économies 2027",
+            "url": "https://onsil.fr/wp-content/uploads/2026/07/1783175664493.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "Vidal — PLFSS 2027 : la Cnam propose 3,9 Md€ d'économies (2 juillet 2026)",
+            "url": "https://www.vidal.fr/actualites/38039-plfss-2027-la-cnam-propose-3-9-milliards-d-euros-d-economies.html",
+            "ouverte": true
+          }
+        ],
+        "non_verifie": false,
+        "notes": "Total Cnam 3,9 Md€ (§5.1 et tableau 49). Les composantes ci-dessus sont celles citées dans le texte du rapport ; leur somme (3,7) n'atteint pas exactement 3,9 faute de montant publié pour les arrêts de travail."
+      },
+      {
+        "niveau": 3,
+        "mesure": "Paquet Cnam 2027 + doublement des montants unitaires des franchises et participations (le relèvement des plafonds à 70 € + 70 € est déjà acté par le décret n° 2026-858)",
+        "gain_mds": 6.2,
+        "faisabilite": 3,
+        "arguments": [
+          "Cour des comptes (RALFSS 2026, ch. V) : les projets de décrets de l'été 2025 (doublement des montants unitaires et des plafonds journaliers et annuels) étaient estimés à 2,3 Md€ en année pleine (1,1 franchises + 1,2 participations)",
+          "Rendement actuel des franchises et participations : 2,5 Md€ en 2025 ; optimisation du recouvrement, du périmètre et des exemptions : > 1 Md€ supplémentaire (Cour)",
+          "Franchises françaises inférieures à celles d'autres pays européens (Cour)",
+          "Décret n° 2026-858 : plafonds portés à 70 € (franchises) + 70 € (participations) au 1er octobre 2026, soit 140 € ; revalorisation annuelle selon l'inflation à partir de 2028 ; montants unitaires inchangés (1 € la boîte, 2 € la consultation, 4 € le transport)"
+        ],
+        "obstacles": [
+          "Juridique : le Conseil constitutionnel impose que le montant des franchises et le niveau des plafonds ne remettent pas en cause le onzième alinéa du Préambule de 1946 (2007-558 DC, cons. 7) ; la Cour relève un risque de renoncement aux soins des assurés modestes",
+          "Politique : doublement des montants abandonné par le gouvernement le 5 décembre 2025 et supprimé par le Parlement ; le décret de septembre 2026 s'est limité à 140 € de plafond cumulé (après avoir envisagé 200 €)",
+          "Chevauchement : le rendement du décret à 140 € n'est pas publié (le chiffre de ~750 M€ de presse concerne le projet à 200 €) ; le gain de 2,3 Md€ du doublement complet inclut une part de plafonds désormais en partie actée, d'où un possible double compte avec la référence 2026"
+        ],
+        "sources": [
+          {
+            "titre": "Cour des comptes — La sécurité sociale 2026 (RALFSS, 27 mai 2026), rapport complet",
+            "url": "https://www.ccomptes.fr/sites/default/files/2026-05/20260527-RALFSS-2026_0.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "Conseil constitutionnel — Décision n° 2007-558 DC du 13 décembre 2007",
+            "url": "https://www.conseil-constitutionnel.fr/decision/2007/2007558DC.htm",
+            "ouverte": true
+          },
+          {
+            "titre": "Cnam — Charges et produits pour 2027 (rapport complet, copie hébergée sur onsil.fr ; page ameli.fr non ouverte), §5.1 : 3,9 Md€ d'économies 2027",
+            "url": "https://onsil.fr/wp-content/uploads/2026/07/1783175664493.pdf",
+            "ouverte": true
+          },
+          {
+            "titre": "Caducée — PLFSS 2026 : le gouvernement renonce au doublement des franchises (5/12/2025, 2,3 Md€)",
+            "url": "https://www.caducee.net/actualite-medicale/16714/plfss-2026-le-gouvernement-renonce-au-doublement-des-franchises-medicales.html",
+            "ouverte": true
+          },
+          {
+            "titre": "Legisocial — Décret n° 2026-858 du 11 septembre 2026 : plafonds franchises et participations 50 → 70 € chacun (JORF 12/09/2026, JORFTEXT000054833929)",
+            "url": "https://www.legisocial.fr/actualites-sociales/8139-franchises-medicales-participations-forfaitaires-plafonds-passent-70.html",
+            "ouverte": true
+          },
+          {
+            "titre": "Service-Public.fr (DILA) — Les plafonds annuels des franchises médicales et participations forfaitaires augmentent dès le 1er octobre 2026 (16/09/2026) : décret n° 2026-858 du 11 septembre 2026, JO du 12 septembre 2026",
+            "url": "https://www.service-public.gouv.fr/particuliers/actualites/A17166?lang=fr",
+            "ouverte": true
+          },
+          {
+            "titre": "Vidal — Franchises médicales : le plafond annuel passe à 140 euros le 1er octobre (décret publié au JO du 12/09/2026)",
+            "url": "https://www.vidal.fr/actualites/38296-franchises-medicales-le-plafond-annuel-passe-a-140-euros-le-1er-octobre.html",
+            "ouverte": true
+          }
+        ],
+        "non_verifie": true,
+        "notes": "Calcul : 3,9 Md€ (Cnam 2027) + 2,3 Md€ (Cour des comptes, doublement des montants unitaires et des plafonds, estimation 2025 pour le projet abandonné) = 6,2 Md€. Le rendement officiel du seul relèvement des plafonds à 70 + 70 € (décret 2026-858) n'est pas publié : question écrite du 8 sept. 2026 en attente ; le cabinet de la ministre n'a donné qu'un impact ménage (< 1 €/mois en moyenne, ~2 €/mois en ALD). Seul chiffre de presse : ~750 M€ (Les Echos, 23/07/2026) pour le scénario à 100 € / 200 € cumulés, pas pour le décret final. Gain conservé à 6,2 car il correspond au doublement complet des montants unitaires, mesure non adoptée."
+      }
+    ],
+    "sources": [
+      {
+        "titre": "Cour des comptes — La sécurité sociale 2026 (RALFSS, 27 mai 2026), rapport complet",
+        "url": "https://www.ccomptes.fr/sites/default/files/2026-05/20260527-RALFSS-2026_0.pdf",
+        "ouverte": true
+      },
+      {
+        "titre": "Cour des comptes — RALFSS 2026, chapitre III : l'ONDAM, outil de régulation",
+        "url": "https://www.ccomptes.fr/sites/default/files/2026-05/20260527-RALFSS-2026-3-Ondam-outil-regulation-des-depenses-de-sante-necessaire-et-a-renforcer.pdf",
+        "ouverte": true
+      },
+      {
+        "titre": "Sénat — Rapport LFSS 2026 (ONDAM 2025 : soins de ville 113,7 Md€, établissements 109,4 Md€)",
+        "url": "https://www.senat.fr/rap/a25-747/a25-7476.html",
+        "ouverte": true
+      },
+      {
+        "titre": "Cnam — Charges et produits pour 2027 (rapport complet, copie hébergée sur onsil.fr ; page ameli.fr non ouverte), §5.1 : 3,9 Md€ d'économies 2027",
+        "url": "https://onsil.fr/wp-content/uploads/2026/07/1783175664493.pdf",
+        "ouverte": true
+      },
+      {
+        "titre": "Cour des comptes — ONDAM, contribution à la revue des dépenses publiques, note de synthèse avril 2025 (15 propositions chiffrées)",
+        "url": "https://www.ccomptes.fr/sites/default/files/2025-04/20250414-Lobjectif-national-de-depenses-dassurance-maladie-Ondam.pdf",
+        "ouverte": true
+      },
+      {
+        "titre": "Service-Public.fr (DILA) — Les plafonds annuels des franchises médicales et participations forfaitaires augmentent dès le 1er octobre 2026 (16/09/2026) : décret n° 2026-858 du 11 septembre 2026, JO du 12 septembre 2026",
+        "url": "https://www.service-public.gouv.fr/particuliers/actualites/A17166?lang=fr",
+        "ouverte": true
+      }
+    ]
+  }
+]

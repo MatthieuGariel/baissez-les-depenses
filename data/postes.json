@@ -176,7 +176,7 @@
         "url": "https://www.ccomptes.fr/sites/default/files/2026-05/20260527-RALFSS-2026_0.pdf",
         "ouverte": true
       },
-      "verification": "Montant d'origine 110 remplacé par 113,6 Md€ (ONDAM 2025 soins de ville, constat provisoire Cour des comptes ; 117,5 Md€ votés pour 2026). Cran 1 (doublement des franchises, abandonné) remplacé par la régulation des produits de santé chiffrée par la Cnam pour 2027. Contradiction non résolue entre sources sur le relèvement des plafonds de franchises de juillet-septembre 2026 (100 € annoncé vs 70 € par décret n° 2026-858) : mesure laissée hors des gains chiffrés.",
+      "verification": "Plafonds 2026 tranchés : le décret n° 2026-858 du 11 septembre 2026 (JO du 12/09/2026, en vigueur le 1er octobre 2026) porte le plafond annuel des franchises de 50 à 70 € ET celui des participations forfaitaires de 50 à 70 €, soit 140 € cumulés (contre 100 € avant). Les « 100 € » de Vidal (23/07/2026) sont l'annonce initiale de la ministre (puis un projet à 200 € cumulés abandonné) ; ce 100 € correspondait aussi à l'ancien cumul. Le texte de Légifrance n'a pu être ouvert (blocage anti-robot) : confirmation par Service-Public.fr (DILA), Vidal (JO) et Legisocial. Aucun rendement officiel publié pour le décret à 140 €.",
       "crans": [
         {
           "niveau": 1,
@@ -244,18 +244,19 @@
         },
         {
           "niveau": 3,
-          "mesure": "Paquet Cnam 2027 + doublement des montants unitaires et des plafonds des franchises et participations forfaitaires",
+          "mesure": "Paquet Cnam 2027 + doublement des montants unitaires des franchises et participations (le relèvement des plafonds à 70 € + 70 € est déjà acté par le décret n° 2026-858)",
           "gain_mds": 6.2,
           "faisabilite": 3,
           "arguments": [
-            "Cour des comptes (RALFSS 2026, ch. V) : les projets de décrets de l'été 2025 (doublement des montants et des plafonds) étaient estimés à 2,3 Md€ en année pleine (1,1 franchises + 1,2 participations)",
+            "Cour des comptes (RALFSS 2026, ch. V) : les projets de décrets de l'été 2025 (doublement des montants unitaires et des plafonds journaliers et annuels) étaient estimés à 2,3 Md€ en année pleine (1,1 franchises + 1,2 participations)",
             "Rendement actuel des franchises et participations : 2,5 Md€ en 2025 ; optimisation du recouvrement, du périmètre et des exemptions : > 1 Md€ supplémentaire (Cour)",
-            "Franchises françaises inférieures à celles d'autres pays européens (Cour)"
+            "Franchises françaises inférieures à celles d'autres pays européens (Cour)",
+            "Décret n° 2026-858 : plafonds portés à 70 € (franchises) + 70 € (participations) au 1er octobre 2026, soit 140 € ; revalorisation annuelle selon l'inflation à partir de 2028 ; montants unitaires inchangés (1 € la boîte, 2 € la consultation, 4 € le transport)"
           ],
           "obstacles": [
             "Juridique : le Conseil constitutionnel impose que le montant des franchises et le niveau des plafonds ne remettent pas en cause le onzième alinéa du Préambule de 1946 (2007-558 DC, cons. 7) ; la Cour relève un risque de renoncement aux soins des assurés modestes",
-            "Politique : doublement abandonné par le gouvernement le 5 décembre 2025 et supprimé par le Parlement",
-            "Presse divergente sur la suite : annonce du 23/07/2026 d'un plafond à 100 € (rendement ~750 M€ selon Les Echos) vs décret n° 2026-858 portant le plafond à 70 € (source secondaire non recoupée sur Légifrance)"
+            "Politique : doublement des montants abandonné par le gouvernement le 5 décembre 2025 et supprimé par le Parlement ; le décret de septembre 2026 s'est limité à 140 € de plafond cumulé (après avoir envisagé 200 €)",
+            "Chevauchement : le rendement du décret à 140 € n'est pas publié (le chiffre de ~750 M€ de presse concerne le projet à 200 €) ; le gain de 2,3 Md€ du doublement complet inclut une part de plafonds désormais en partie actée, d'où un possible double compte avec la référence 2026"
           ],
           "sources": [
             {
@@ -279,18 +280,23 @@
               "ouverte": true
             },
             {
-              "titre": "Vidal — Franchises médicales : le gouvernement annonce le doublement des plafonds (23/07/2026)",
-              "url": "https://www.vidal.fr/actualites/38136-franchises-medicales-le-gouvernement-annonce-le-doublement-des-plafonds.html",
+              "titre": "Legisocial — Décret n° 2026-858 du 11 septembre 2026 : plafonds franchises et participations 50 → 70 € chacun (JORF 12/09/2026, JORFTEXT000054833929)",
+              "url": "https://www.legisocial.fr/actualites-sociales/8139-franchises-medicales-participations-forfaitaires-plafonds-passent-70.html",
               "ouverte": true
             },
             {
-              "titre": "Legisocial — Décret n° 2026-858 du 11 septembre 2026 : plafonds franchises/participations 50 → 70 € (contredit l'annonce Vidal du 23/07/2026 : 100 €)",
-              "url": "https://www.legisocial.fr/actualites-sociales/8139-franchises-medicales-participations-forfaitaires-plafonds-passent-70.html",
+              "titre": "Service-Public.fr (DILA) — Les plafonds annuels des franchises médicales et participations forfaitaires augmentent dès le 1er octobre 2026 (16/09/2026) : décret n° 2026-858 du 11 septembre 2026, JO du 12 septembre 2026",
+              "url": "https://www.service-public.gouv.fr/particuliers/actualites/A17166?lang=fr",
+              "ouverte": true
+            },
+            {
+              "titre": "Vidal — Franchises médicales : le plafond annuel passe à 140 euros le 1er octobre (décret publié au JO du 12/09/2026)",
+              "url": "https://www.vidal.fr/actualites/38296-franchises-medicales-le-plafond-annuel-passe-a-140-euros-le-1er-octobre.html",
               "ouverte": true
             }
           ],
-          "non_verifie": false,
-          "notes": "Calcul : 3,9 Md€ (Cnam 2027) + 2,3 Md€ (doublement montants et plafonds, Cour des comptes RALFSS 2026 ch. V) = 6,2 Md€. Les deux chiffres sont officiels, la somme est calculée ; pas de double compte identifié (le paquet Cnam ne contient pas de mesure de franchise). Si le doublement n'est pas retenu, remplacer par les 0,75 Md€ (relèvement du plafond, chiffre de presse non officiel)."
+          "non_verifie": true,
+          "notes": "Calcul : 3,9 Md€ (Cnam 2027) + 2,3 Md€ (Cour des comptes, doublement des montants unitaires et des plafonds, estimation 2025 pour le projet abandonné) = 6,2 Md€. Le rendement officiel du seul relèvement des plafonds à 70 + 70 € (décret 2026-858) n'est pas publié : question écrite du 8 sept. 2026 en attente ; le cabinet de la ministre n'a donné qu'un impact ménage (< 1 €/mois en moyenne, ~2 €/mois en ALD). Seul chiffre de presse : ~750 M€ (Les Echos, 23/07/2026) pour le scénario à 100 € / 200 € cumulés, pas pour le décret final. Gain conservé à 6,2 car il correspond au doublement complet des montants unitaires, mesure non adoptée."
         }
       ],
       "sources": [
@@ -317,6 +323,11 @@
         {
           "titre": "Cour des comptes — ONDAM, contribution à la revue des dépenses publiques, note de synthèse avril 2025 (15 propositions chiffrées)",
           "url": "https://www.ccomptes.fr/sites/default/files/2025-04/20250414-Lobjectif-national-de-depenses-dassurance-maladie-Ondam.pdf",
+          "ouverte": true
+        },
+        {
+          "titre": "Service-Public.fr (DILA) — Les plafonds annuels des franchises médicales et participations forfaitaires augmentent dès le 1er octobre 2026 (16/09/2026) : décret n° 2026-858 du 11 septembre 2026, JO du 12 septembre 2026",
+          "url": "https://www.service-public.gouv.fr/particuliers/actualites/A17166?lang=fr",
           "ouverte": true
         }
       ]
@@ -731,7 +742,7 @@
         "url": "https://www.senat.fr/rap/r24-808-1/r24-808-1-syn.pdf",
         "ouverte": true
       },
-      "note_correction": "211 Md€ (2023) = estimation « au sens large » de la commission d'enquête du Sénat (subventions État, Bpifrance, dépenses fiscales dont « déclassées », allègements de cotisations). Hors Bpifrance, dépenses fiscales déclassées et TVA : 108 Md€. Le ministre de l'Économie a donné 150 Md€ (40 fiscal, 30 budgétaire, 80 allègements) ; l'IGF 2024 retient 88 Md€ (2022) hors allègements généraux. Les crans sont désormais fondés sur la revue de dépenses IGF (mars 2024), qui exclut les allègements généraux de cotisations (soutien général à l'économie, par analogie avec l'art. 107 TFUE). Ancien cran 2 (CIR + allègements > 2,5 SMIC) et ancien cran 3 (-25 % de l'enveloppe) supprimés : aucun chiffrage officiel ; argument Bozio-Wasmer retiré (coût nul). Les gains des crans sont cumulatifs.",
+      "note_correction": "211 Md€ (2023) = estimation « au sens large » de la commission d'enquête du Sénat (subventions État, Bpifrance, dépenses fiscales dont « déclassées », allègements de cotisations). Hors Bpifrance, dépenses fiscales déclassées et TVA : 108 Md€. Le ministre de l'Économie a donné 150 Md€ (40 fiscal, 30 budgétaire, 80 allègements) ; l'IGF 2024 retient 88 Md€ (2022) hors allègements généraux. Les crans sont désormais fondés sur la revue de dépenses IGF (mars 2024), qui exclut les allègements généraux de cotisations (soutien général à l'économie, par analogie avec l'art. 107 TFUE). Crans 2 et 3 de la passe précédente (hausses de TVA, recettes) supprimés (le site ne traite que des baisses de dépenses) et remplacés par des réductions d'allègements généraux de cotisations chiffrées par la Cour des comptes (RALFSS 2025, ch. III). Les gains des crans sont cumulatifs.",
       "crans": [
         {
           "niveau": 1,
@@ -776,57 +787,67 @@
         },
         {
           "niveau": 2,
-          "mesure": "Cran 1 + suppression des taux réduits de TVA ciblés (restauration, hôtellerie, TV payante, enceintes sportives, eau en bouteille)",
-          "gain_mds": 5.1,
+          "mesure": "Cran 1 + reprofilage du barème de la réduction générale dégressive (~0,3 point du taux d'exonération) + plafond d'éligibilité de la baisse de cotisations familiales ramené de 3 à 2,5 Smic",
+          "gain_mds": 5.8,
           "faisabilite": 2,
           "arguments": [
-            "IGF, annexe III : restauration 1 536 M€, hôtels 440 M€, abonnements TV 175 M€, eau en bouteille ~100 M€, enceintes sportives 60 M€ (total ~2,3 Md€, soit « un peu plus de 2 Md€ » selon l'annexe)",
-            "L'IGF juge ces taux inefficaces ou inefficients et sans effet sur la compétitivité internationale",
-            "Cour des comptes : les évaluations suggèrent une efficacité limitée des taux réduits de TVA récents sans ciblage suffisant (restauration, travaux)"
+            "Cour des comptes (RALFSS 2025, ch. III) : le reprofilage par décret de la future réduction générale dégressive unique pourrait dégager « de l'ordre de 2 Md€ » supplémentaires, soit environ 0,3 point du taux d'exonération (estimation obtenue du Gouvernement)",
+            "Cour : le coût de la baisse de cotisations familiales pour les rémunérations de 2,5 à 3 Smic est « de l'ordre de 1 Md€ en 2023 » ; les évaluations (CAE 2019, Assemblée 2023, Bozio-Wasmer 2024) concluent à une efficacité limitée et à des effets marginaux sur l'emploi à ces niveaux",
+            "Les allègements généraux ont presque quadruplé entre 2014 et 2024 (20,9 → 77,3 Md€) ; ils sont sous-compensés par l'État (5,5 Md€ de perte pour la Sécurité sociale en 2024, selon la Cour)",
+            "Précédent : la LFSS 2025 a déjà limité les allègements pour 2 Md€ (1,6 Md€ Sécu + 0,4 Md€ État), contre 5,1 Md€ visés initialement dans le PLFSS"
           ],
           "obstacles": [
-            "Attention : hausse de TVA = hausse d'impôt pour les consommateurs, pas une baisse de dépense. À remplacer par une suppression d'aide chiffrée.",
-            "Politique : hausse de prix pour les consommateurs et secteurs touchés (restauration, hôtellerie) ; mesure fiscale sur la consommation, pas seulement sur des aides ciblées",
-            "Incohérence interne IGF : la note de synthèse annonce 4 Md€ pour ce bloc, l'annexe III détaille ~2,3 Md€ (4,5 Md€ avec les travaux à 10 %) ; la valeur basse est retenue"
+            "Économique : la Cour souligne que toute limitation peut se traduire par des destructions d'emplois et donc par des pertes de recettes, effet non intégré dans le chiffrage de 2 Md€",
+            "Politique : forte opposition du patronat (coût du travail, industrie exportatrice) ; la LFSS 2025 avait été adoptée à 2 Md€ au lieu de 5,1 Md€",
+            "Chevauchement possible avec la réforme déjà engagée par la LFSS 2026 (fusion en 2026, baisse de ~2 points des taux) : le chiffrage de la Cour date de mai 2025 et n'a pas été actualisé ; les deux sous-mesures ne sont pas forcément strictement additives",
+            "Aucune décision du Conseil constitutionnel pertinente identifiée dans les documents ouverts : le barème est fixé par loi et décret, sans droit acquis"
           ],
           "sources": [
             {
-              "titre": "IGF — Revue de dépenses : les aides aux entreprises (n° 2023-M-105-03, mars/avril 2024), copie vie-publique.fr",
-              "url": "https://www.vie-publique.fr/files/rapport/pdf/295437.pdf",
+              "titre": "Cour des comptes — RALFSS 2025, chapitre III : Maîtriser la dynamique des allègements généraux de cotisations sociales (mai 2025), §B pistes d'économie",
+              "url": "https://www.ccomptes.fr/sites/default/files/2025-05/20250526-RALFSS-2025-Maitriser-dynamique-allegements-generaux-de-cotisations-sociales.pdf",
               "ouverte": true
             },
             {
-              "titre": "Cour des comptes — Piloter et évaluer les dépenses fiscales (note thématique, juillet 2023)",
-              "url": "https://www.ccomptes.fr/system/files/2023-07/20230707-note-thematique-Depenses-fiscales.pdf",
-              "ouverte": true
-            }
-          ],
-          "non_verifie": true,
-          "notes": "Gain = 2,815 + 2,311 (1 536 + 440 + 175 + 100 + 60) = 5,13 Md€. La TVA relève du périmètre « aides » de l'IGF mais est exclue du périmètre de 108 Md€ du Sénat."
-        },
-        {
-          "niveau": 3,
-          "mesure": "Cran 2 + relèvement du taux intermédiaire de TVA de 10 % à 12,5 %",
-          "gain_mds": 8.1,
-          "faisabilite": 2,
-          "arguments": [
-            "IGF : le passage de 10 % à 12,5 % rapporterait entre 2,8 et 3,7 Md€ (estimation reprise du Conseil des prélèvements obligatoires, février 2023), « environ 3 Md€ »",
-            "L'IGF estime qu'il ne pèse sur aucun secteur exposé à la concurrence internationale"
-          ],
-          "obstacles": [
-            "Attention : hausse de TVA = hausse d'impôt pour les consommateurs, pas une baisse de dépense. À remplacer par une suppression d'aide chiffrée.",
-            "Politique : hausse de TVA touchant tous les consommateurs ; mesure de recettes plus qu'un retrait d'aide",
-            "Chevauchement partiel possible avec le cran 2 (même taux de 10 %) : le chiffrage IGF suppose les deux mesures additionnables"
-          ],
-          "sources": [
-            {
               "titre": "IGF — Revue de dépenses : les aides aux entreprises (n° 2023-M-105-03, mars/avril 2024), copie vie-publique.fr",
               "url": "https://www.vie-publique.fr/files/rapport/pdf/295437.pdf",
               "ouverte": true
             }
           ],
           "non_verifie": true,
-          "notes": "Gain = 5,13 + 3,0 = 8,1 Md€. Borne IGF : 2,8 à 3,7 Md€. Allègements de cotisations (~80 Md€) volontairement non touchés : aucun chiffrage officiel de réduction ; le Sénat (reco n° 17) ne demande qu'une réflexion sectorielle."
+          "notes": "Gain = 2,815 (cran 1, IGF) + 2,0 (reprofilage, Cour) + 1,0 (plafond 2,5 Smic, Cour, estimation 2023) = 5,8 Md€. Les deux chiffres Cour sont des ordres de grandeur « de l'ordre de » ; effets sur l'emploi non inclus. Périmètre : allègements de cotisations (dépense au sens du site), pas de hausse de taux de TVA. | Chiffrage Cour des comptes antérieur à la réforme des allègements LFSS 2026 : additivité non garantie."
+        },
+        {
+          "niveau": 3,
+          "mesure": "Cran 2 + intégration de l'intéressement et de la participation dans l'assiette de calcul de la réduction générale dégressive",
+          "gain_mds": 8.8,
+          "faisabilite": 2,
+          "arguments": [
+            "Cour des comptes (RALFSS 2025, ch. III) : l'élargissement de l'assiette aux versements de participation et d'intéressement permettrait « près de 3 Md€ » d'économie en 2025, à comportements inchangés",
+            "Le coût des allègements lié aux exemptions d'assiette de l'ensemble des compléments de salaire a atteint 4,7 Md€ en 2023 (Cour)",
+            "Précédent : la LFSS 2025 a déjà intégré la prime de partage de la valeur dans l'assiette (recette attendue 0,4 Md€ Sécu + 0,1 Unédic + 0,1 Agirc-Arrco)",
+            "Réduit l'incitation à substituer des compléments exonérés au salaire de base"
+          ],
+          "obstacles": [
+            "Politique : mesure touchant l'épargne salariale (partenaires sociaux, employeurs, syndicats attachés à l'intéressement) ; risque de baisse de la distribution d'intéressement",
+            "Économique : chiffrage « à comportements inchangés » ; la Cour rappelle le risque d'effets sur l'emploi des limitations d'allègements",
+            "Mesure de recettes sociales (suppression d'une exonération de cotisations dans l'assiette de l'allègement) : classée ici comme réduction d'allègement de cotisations, à arbitrer par le lecteur",
+            "Aucune décision du Conseil constitutionnel pertinente identifiée dans les documents ouverts"
+          ],
+          "sources": [
+            {
+              "titre": "Cour des comptes — RALFSS 2025, chapitre III : Maîtriser la dynamique des allègements généraux de cotisations sociales (mai 2025), §B pistes d'économie",
+              "url": "https://www.ccomptes.fr/sites/default/files/2025-05/20250526-RALFSS-2025-Maitriser-dynamique-allegements-generaux-de-cotisations-sociales.pdf",
+              "ouverte": true
+            },
+            {
+              "titre": "Sénat — commission d'enquête aides publiques aux grandes entreprises, « L'essentiel » (rapport n° 808, 2024-2025)",
+              "url": "https://www.senat.fr/rap/r24-808-1/r24-808-1-syn.pdf",
+              "ouverte": true
+            }
+          ],
+          "non_verifie": true,
+          "notes": "Gain = 5,8 (cran 2) + 3,0 (Cour, « près de 3 Md€ en 2025 ») = 8,8 Md€. Chiffre Cour 2025, non actualisé ; le Sénat (reco n° 17) ne demande qu'une réflexion sectorielle sur les allègements, il ne chiffre pas de réduction. | Chiffrage Cour des comptes antérieur à la réforme des allègements LFSS 2026 : additivité non garantie."
         }
       ],
       "sources": [
@@ -858,6 +879,11 @@
         {
           "titre": "Conseil constitutionnel — décision n° 2013-682 DC du 19 décembre 2013, cons. 14",
           "url": "https://www.conseil-constitutionnel.fr/decision/2013/2013682DC.htm",
+          "ouverte": true
+        },
+        {
+          "titre": "Cour des comptes — RALFSS 2025, chapitre III : Maîtriser la dynamique des allègements généraux de cotisations sociales (mai 2025), §B pistes d'économie",
+          "url": "https://www.ccomptes.fr/sites/default/files/2025-05/20250526-RALFSS-2025-Maitriser-dynamique-allegements-generaux-de-cotisations-sociales.pdf",
           "ouverte": true
         }
       ]
@@ -1757,11 +1783,11 @@
       "id": "collectivites_investissement",
       "nom": "Collectivités — investissement",
       "bloc": "Collectivités",
-      "montant_mds": 70.8,
-      "annee_montant": "2025 (dépenses d'investissement des collectivités, Cour des comptes via iFRAP mars 2026 ; 69,5 Md€ en 2024). Ancienne valeur : ~61 Md€ en 2023 (OFGL, périmètre investissement public avec syndicats).",
+      "montant_mds": 78.7,
+      "annee_montant": 2025,
       "source_montant": {
-        "titre": "iFRAP — tableau Cour des comptes : fonctionnement 230 → 235,3 Md€, investissement 69,5 → 70,8 Md€ (2024 → 2025), mars 2026",
-        "url": "https://www.ifrap.org/etat-et-collectivites/collectivites-locales-depuis-2019-les-recettes-ont-augmente-plus-que-linflation",
+        "titre": "OFGL — Pré-rapport 2026 sur les finances locales (juin 2026), annexe 2A, tableau A8 : dépenses d'investissement hors remboursements de dette, ensemble des collectivités y compris syndicats, budgets principaux = 78,71 Md€ en 2025 (valeurs provisoires)",
+        "url": "https://www.collectivites-locales.gouv.fr/files/files/Etudes-et-statistiques/OFGL/rapport%202026/Pr%C3%A9-Rapport%20OFGL%202026.pdf",
         "ouverte": true
       },
       "crans": [
@@ -1829,12 +1855,13 @@
         },
         {
           "niveau": 3,
-          "mesure": "Moratoire d'un an sur les projets d'investissement non engagés",
-          "gain_mds": 5,
+          "mesure": "Moratoire d'un an sur les projets d'investissement non engagés (hypothèse : ~7 % de l'investissement local)",
+          "gain_mds": 5.5,
           "faisabilite": 3,
           "arguments": [
-            "Investissement local : +2,2 % en 2025 après +6,8 % en 2024 ; prévu en recul de 3,1 % en 2026 (Cour des comptes, juill. 2026)",
-            "Investissement 2025 : 70,8 Md€ (Cour des comptes via iFRAP)"
+            "Investissement local 2025 : 78,7 Md€ hors remboursements de dette, syndicats inclus (OFGL, pré-rapport 2026, provisoire) ; +1,7 % à +2,2 % selon périmètre, après +6,8 % en 2024 (Cour des comptes, juillet 2026)",
+            "Le bloc communal porte la hausse 2025 (communes +6,6 %, groupements +8,6 % selon l'OFGL), à la veille des municipales ; départements -8,0 % et régions -7,1 %",
+            "Investissement prévu en recul de 2,5 à 3,1 % en 2026 (LFI 2026 / PSMT avril 2026), effet du cycle électoral municipal"
           ],
           "obstacles": [
             "Les départements et régions ont déjà réduit leur investissement en 2025 ; le bloc communal porte l'essentiel",
@@ -1843,18 +1870,13 @@
           ],
           "sources": [
             {
-              "titre": "iFRAP — tableau Cour des comptes : fonctionnement 230 → 235,3 Md€, investissement 69,5 → 70,8 Md€ (2024 → 2025), mars 2026",
-              "url": "https://www.ifrap.org/etat-et-collectivites/collectivites-locales-depuis-2019-les-recettes-ont-augmente-plus-que-linflation",
+              "titre": "OFGL — Pré-rapport 2026 sur les finances locales (juin 2026), annexe 2A, tableau A8 : dépenses d'investissement hors remboursements de dette, ensemble des collectivités y compris syndicats, budgets principaux = 78,71 Md€ en 2025 (valeurs provisoires)",
+              "url": "https://www.collectivites-locales.gouv.fr/files/files/Etudes-et-statistiques/OFGL/rapport%202026/Pr%C3%A9-Rapport%20OFGL%202026.pdf",
               "ouverte": true
             },
             {
-              "titre": "iFRAP — Cour des comptes, Les finances publiques locales : résultats 2025 et perspectives 2026 (juillet 2026)",
-              "url": "https://www.ifrap.org/etat-et-collectivites/finances-locales-de-meilleurs-resultats-2025-un-redressement-2026-confirmer",
-              "ouverte": true
-            },
-            {
-              "titre": "Banque des Territoires — Comptes publics 2025 : hausse contenue des dépenses des collectivités",
-              "url": "https://www.banquedesterritoires.fr/comptes-publics-2025-hausse-contenue-des-depenses-des-collectivites",
+              "titre": "Cour des comptes — Les finances publiques locales : résultats 2025 et perspectives 2026 (juillet 2026), copie vie-publique.fr : dépenses réelles d'investissement 79,1 Md€ hors syndicats en 2025",
+              "url": "https://www.vie-publique.fr/files/rapport/pdf/304033.pdf",
               "ouverte": true
             },
             {
@@ -1864,13 +1886,18 @@
             }
           ],
           "non_verifie": true,
-          "notes": "Aucun chiffrage officiel. Ordre de grandeur : ~7 % de 70,8 Md€ ≈ 5 Md€ (projets non engagés, hypothèse de l'auteur)."
+          "notes": "Aucun chiffrage officiel du moratoire. Gain = 7 % × 78,7 Md€ ≈ 5,5 Md€ (part de projets non engagés = hypothèse de l'auteur, inchangée par rapport à la version précédente à 7 % de 70,8 Md€ ≈ 5 Md€). Cran cumulatif : recouvrement partiel avec les crans 1-2 (les dotations d'investissement financent une partie des projets), le gain de 5,5 est un total, non additionné à 0,57."
         }
       ],
       "sources": [
         {
-          "titre": "iFRAP — tableau Cour des comptes : fonctionnement 230 → 235,3 Md€, investissement 69,5 → 70,8 Md€ (2024 → 2025), mars 2026",
-          "url": "https://www.ifrap.org/etat-et-collectivites/collectivites-locales-depuis-2019-les-recettes-ont-augmente-plus-que-linflation",
+          "titre": "OFGL — Pré-rapport 2026 sur les finances locales (juin 2026), annexe 2A, tableau A8 : dépenses d'investissement hors remboursements de dette, ensemble des collectivités y compris syndicats, budgets principaux = 78,71 Md€ en 2025 (valeurs provisoires)",
+          "url": "https://www.collectivites-locales.gouv.fr/files/files/Etudes-et-statistiques/OFGL/rapport%202026/Pr%C3%A9-Rapport%20OFGL%202026.pdf",
+          "ouverte": true
+        },
+        {
+          "titre": "Cour des comptes — Les finances publiques locales : résultats 2025 et perspectives 2026 (juillet 2026), copie vie-publique.fr : dépenses réelles d'investissement 79,1 Md€ hors syndicats en 2025",
+          "url": "https://www.vie-publique.fr/files/rapport/pdf/304033.pdf",
           "ouverte": true
         },
         {
@@ -1898,7 +1925,8 @@
           "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
           "ouverte": true
         }
-      ]
+      ],
+      "verification": "Montant fixé à 78,7 Md€ (2025, valeurs provisoires) : OFGL, pré-rapport 2026, tableau A8 (dépenses d'investissement hors remboursements de dette, budgets principaux de l'ensemble des collectivités locales y compris syndicats : communes, groupements à fiscalité propre, départements, régions/CTU, syndicats). Autres périmètres de la même source : 71,63 Md€ hors syndicats (A6) ; 78,71 + 11,10 = 89,8 Md€ si on ajoute les budgets annexes (B8). Corroboration : Cour des comptes (juillet 2026) 79,1 Md€ de dépenses réelles d'investissement « hors syndicats » (périmètre comptable légèrement différent). L'ancien 70,8 Md€ (iFRAP, relayant une version antérieure de la Cour) et le 61 Md€ (OFGL 2023, ancien périmètre) sont écartés."
     },
     {
       "id": "defense",
