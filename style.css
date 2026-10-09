@@ -214,3 +214,5 @@ dialog h2{margin:0 0 10px;font-size:1.1rem}
 .btn.armed{background:var(--f3)!important;color:#fff!important;border-color:transparent!important}
 .toast.act{pointer-events:auto}
 .toast button{margin-left:10px;background:none;border:1px solid currentColor;color:inherit;border-radius:6px;padding:2px 10px;font:inherit;font-weight:700;cursor:pointer}
+#bar.surplus .g-track{background:color-mix(in srgb,var(--f1) 35%,transparent)}
+#bar.surplus #bar-l2{color:var(--f1);font-weight:700}

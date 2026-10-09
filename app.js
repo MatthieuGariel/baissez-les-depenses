@@ -6,6 +6,9 @@ const RLAB = ['Baisse forte', 'Baisse moyenne', 'Baisse légère', 'Aucun change
 const CATS = ['Social', 'État', 'Collectivités', 'International', 'Impôts'];
 const fmt = n => n.toLocaleString('fr-FR', { maximumFractionDigits: Math.abs(n) < 1 ? 2 : 1 });
 const fmtPct = n => fmt(Math.abs(n) < 0.05 ? 0 : Math.round(n * 10) / 10);
+/* Solde public lisible : « déficit 5,4 % », « équilibre », « excédent 0,2 % » (jamais de déficit négatif). */
+const soldeTxt = pct => Math.abs(pct) < 0.05 ? 'équilibre' : pct > 0 ? `déficit ${fmtPct(pct)} %` : `excédent ${fmtPct(-pct)} %`;
+const trajTxt = (pct0, pct) => `Déficit ${fmt(pct0)} % → ${soldeTxt(pct)} du PIB`;
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const $ = id => document.getElementById(id);
 const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -122,7 +125,7 @@ function buildPresets() {
 }
 const presetsHTML = () => presets.map((p, i) =>
   `<button type="button" class="preset" data-preset="${i}" style="--c:${p.c}"><b>${esc(p.nom)}</b><span>${esc(p.desc)}</span>` +
-  `<span><span class="n">−${fmt(p.sc.net)} Md€</span> · ${fmt(meta.deficit_pct_pib || meta.deficit_mds / meta.pib_mds * 100)} % → ${fmtPct(p.sc.pct)} % du PIB${p.sc.blocked.length ? ` · ${p.sc.blocked.length} bloquée${p.sc.blocked.length > 1 ? 's' : ''}` : ''}</span></button>`).join('');
+  `<span><span class="n">−${fmt(p.sc.net)} Md€</span> · ${trajTxt(meta.deficit_pct_pib || meta.deficit_mds / meta.pib_mds * 100, p.sc.pct)}${p.sc.blocked.length ? ` · ${p.sc.blocked.length} bloquée${p.sc.blocked.length > 1 ? 's' : ''}` : ''}</span></button>`).join('');
 function applyPreset(i) {
   st = { ...presets[i].S };
   openKey = null; renderPanel(); update();
@@ -323,7 +326,9 @@ function update(initial) {
   const pct0 = meta.deficit_pct_pib || def / meta.pib_mds * 100;
   setBig(sc.net, initial);
   $('bar-l1').textContent = sc.net > 0.05 ? 'de déficit en moins' : sc.net < -0.05 ? 'de déficit en plus' : 'Aucune mesure choisie';
-  $('bar-l2').textContent = `${fmt(pct0)} % → ${fmtPct(sc.pct)} % du PIB`;
+  $('bar-l2').textContent = Math.abs(sc.pct) < 0.05 ? `${fmt(pct0)} % → équilibre` : sc.pct < 0 ? `→ excédent ${fmtPct(-sc.pct)} % du PIB` : `${fmt(pct0)} % → ${fmtPct(sc.pct)} % du PIB`;
+  $('bar-l2').title = trajTxt(pct0, sc.pct) + (sc.resid < -0.05 ? ` (+${fmt(-sc.resid)} Md€)` : '');
+  $('bar').classList.toggle('surplus', sc.resid < -0.05);
   const f = $('g-fill');
   f.style.width = Math.max(0, Math.min(100, sc.resid / def * 100)) + '%';
   f.className = 'g-fill' + (sc.pct <= seuil ? ' ok' : sc.pct <= seuil + 1 ? ' mid' : '');
@@ -411,9 +416,9 @@ function scenarioImage() {
   const bw = g.measureText(big).width;
   g.fillStyle = mu; g.font = `600 30px ${sans}`;
   g.fillText(sc.net >= 0 ? 'de déficit' : 'de déficit en plus', 70 + bw, 175);
-  g.fillText(`Déficit ${fmt(meta.deficit_pct_pib || def / meta.pib_mds * 100)} % → ${fmtPct(sc.pct)} % du PIB`, 60, 218);
+  g.fillText(trajTxt(meta.deficit_pct_pib || def / meta.pib_mds * 100, sc.pct), 60, 218);
   if (sc.pct <= seuil) { // pastille « sous 3 % »
-    const t = sc.pct <= 0 ? 'Déficit comblé' : `Sous ${seuil} % du PIB`;
+    const t = sc.pct < -0.05 ? 'Excédent' : sc.pct <= 0.05 ? 'Équilibre' : `Sous ${seuil} % du PIB`;
     g.font = `800 28px ${sans}`; const tw = g.measureText(t).width + 40;
     g.fillStyle = F[1]; rr(g, W - 60 - tw, 110, tw, 52, 26); g.fill();
     g.fillStyle = dark ? '#0b0d12' : '#fff'; g.fillText(t, W - 40 - tw, 146);
