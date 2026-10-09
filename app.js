@@ -6,6 +6,9 @@ const RLAB = ['Baisse forte', 'Baisse moyenne', 'Baisse légère', 'Aucun change
 const CATS = ['Social', 'État', 'Collectivités', 'International', 'Impôts'];
 const fmt = n => n.toLocaleString('fr-FR', { maximumFractionDigits: Math.abs(n) < 1 ? 2 : 1 });
 const fmtPct = n => fmt(Math.abs(n) < 0.05 ? 0 : Math.round(n * 10) / 10);
+/* Solde public lisible : « déficit 5,4 % », « équilibre », « excédent 0,2 % » (jamais de déficit négatif). */
+const soldeTxt = pct => Math.abs(pct) < 0.05 ? 'équilibre' : pct > 0 ? `déficit ${fmtPct(pct)} %` : `excédent ${fmtPct(-pct)} %`;
+const trajTxt = (pct0, pct) => `Déficit ${fmt(pct0)} % → ${soldeTxt(pct)} du PIB`;
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const $ = id => document.getElementById(id);
 const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -122,7 +125,7 @@ function buildPresets() {
 }
 const presetsHTML = () => presets.map((p, i) =>
   `<button type="button" class="preset" data-preset="${i}" style="--c:${p.c}"><b>${esc(p.nom)}</b><span>${esc(p.desc)}</span>` +
-  `<span><span class="n">−${fmt(p.sc.net)} Md€</span> · ${fmt(meta.deficit_pct_pib || meta.deficit_mds / meta.pib_mds * 100)} % → ${fmtPct(p.sc.pct)} % du PIB${p.sc.blocked.length ? ` · ${p.sc.blocked.length} bloquée${p.sc.blocked.length > 1 ? 's' : ''}` : ''}</span></button>`).join('');
+  `<span><span class="n">−${fmt(p.sc.net)} Md€</span> · ${trajTxt(meta.deficit_pct_pib || meta.deficit_mds / meta.pib_mds * 100, p.sc.pct)}${p.sc.blocked.length ? ` · ${p.sc.blocked.length} bloquée${p.sc.blocked.length > 1 ? 's' : ''}` : ''}</span></button>`).join('');
 function applyPreset(i) {
   st = { ...presets[i].S };
   openKey = null; renderPanel(); update();
@@ -279,7 +282,7 @@ $('tabs').addEventListener('keydown', e => {
 let shown = 0, raf = 0, prevPct = null, toastT = 0;
 function setBig(target, instant) {
   cancelAnimationFrame(raf);
-  const from = shown, t0 = performance.now(), dur = (reduced || instant) ? 0 : 500, sign = target > 0.05 ? '−' : target < -0.05 ? '+' : '';
+  const from = shown, t0 = performance.now(), dur = (reduced || instant) ? 0 : 500, sign = '';
   const step = now => {
     const k = dur ? Math.min(1, (now - t0) / dur) : 1;
     shown = from + (target - from) * (1 - Math.pow(1 - k, 3));
@@ -321,12 +324,15 @@ function update(initial) {
   const rt = $('reset-top'); if (rt) rt.disabled = !Object.values(st).some(Boolean);
   const sc = scenario(), seuil = meta.regle_impots.seuil_pct, def = meta.deficit_mds;
   const pct0 = meta.deficit_pct_pib || def / meta.pib_mds * 100;
-  setBig(sc.net, initial);
-  $('bar-l1').textContent = sc.net > 0.05 ? 'de déficit en moins' : sc.net < -0.05 ? 'de déficit en plus' : 'Aucune mesure choisie';
-  $('bar-l2').textContent = `${fmt(pct0)} % → ${fmtPct(sc.pct)} % du PIB`;
-  const f = $('g-fill');
-  f.style.width = Math.max(0, Math.min(100, sc.resid / def * 100)) + '%';
-  f.className = 'g-fill' + (sc.pct <= seuil ? ' ok' : sc.pct <= seuil + 1 ? ' mid' : '');
+  // Solde final : « 92,4 Md€ de déficit » / « 6,2 Md€ d'excédent », effort en 2e ligne.
+  const surplus = sc.resid < -0.05, eq = Math.abs(sc.resid) <= 0.05;
+  setBig(Math.abs(sc.resid), initial);
+  $('bar-l1').textContent = eq ? 'à l’équilibre' : surplus ? 'd’excédent' : 'de déficit';
+  $('bar-l2').textContent = (eq ? 'solde 0 %' : `${fmtPct(Math.abs(sc.pct))} % du PIB`) +
+    (sc.net > 0.05 ? ` · −${fmt(sc.net)} Md€` : sc.net < -0.05 ? ` · +${fmt(-sc.net)} Md€` : '');
+  $('bar-l2').title = trajTxt(pct0, sc.pct) + ` (au départ : ${fmt(def)} Md€ de déficit)`;
+  $('bar').classList.toggle('surplus', surplus);
+  placeGauge(sc.pct, pct0, seuil);
   $('gauge').setAttribute('aria-label', `Déficit à ${fmtPct(sc.pct)} % du PIB. Paliers : ${seuil} % et 0 %.`);
   const cb = $('chip-block'); cb.hidden = !sc.blocked.length;
   cb.textContent = `${sc.blocked.length} bloquée${sc.blocked.length > 1 ? 's' : ''}`;
@@ -406,28 +412,31 @@ function scenarioImage() {
   g.textBaseline = 'alphabetic';
   g.fillStyle = acc; g.font = `700 24px ${sans}`; g.fillText('MINISTRE DU BUDGET · MON SCÉNARIO', 60, 62);
   g.fillStyle = fg; g.font = `800 112px ${sans}`;
-  const big = (sc.net > 0.05 ? '−' : sc.net < -0.05 ? '+' : '') + fmt(Math.abs(sc.net)) + ' Md€';
+  const big = fmt(Math.abs(sc.resid)) + ' Md€';
   g.fillText(big, 56, 175);
   const bw = g.measureText(big).width;
   g.fillStyle = mu; g.font = `600 30px ${sans}`;
-  g.fillText(sc.net >= 0 ? 'de déficit' : 'de déficit en plus', 70 + bw, 175);
-  g.fillText(`Déficit ${fmt(meta.deficit_pct_pib || def / meta.pib_mds * 100)} % → ${fmtPct(sc.pct)} % du PIB`, 60, 218);
+  g.fillText(Math.abs(sc.resid) <= 0.05 ? 'à l’équilibre' : sc.resid < 0 ? 'd’excédent' : 'de déficit', 70 + bw, 175);
+  g.fillText(trajTxt(meta.deficit_pct_pib || def / meta.pib_mds * 100, sc.pct) + (sc.net > 0.05 ? ` · effort ${fmt(sc.net)} Md€` : ''), 60, 218);
   if (sc.pct <= seuil) { // pastille « sous 3 % »
-    const t = sc.pct <= 0 ? 'Déficit comblé' : `Sous ${seuil} % du PIB`;
+    const t = sc.pct < -0.05 ? 'Excédent' : sc.pct <= 0.05 ? 'Équilibre' : `Sous ${seuil} % du PIB`;
     g.font = `800 28px ${sans}`; const tw = g.measureText(t).width + 40;
     g.fillStyle = F[1]; rr(g, W - 60 - tw, 110, tw, 52, 26); g.fill();
     g.fillStyle = dark ? '#0b0d12' : '#fff'; g.fillText(t, W - 40 - tw, 146);
   }
-  // jauge
-  const gx = 60, gw = 1080, gy = 252, gh = 30, fill = Math.max(0, Math.min(1, sc.resid / def));
+  // jauge à deux côtés, même axe que la barre du site (gPos) : déficit à gauche, 0, excédent à droite
+  const gx = 60, gw = 1080, gy = 252, gh = 30, pct0 = meta.deficit_pct_pib || def / meta.pib_mds * 100;
+  const X = p => gx + gw * gPos(p, pct0) / 100, z = X(0), x = X(sc.pct), mx = X(seuil);
   g.fillStyle = line; rr(g, gx, gy, gw, gh, 15); g.fill();
-  if (fill > 0) { g.fillStyle = sc.pct <= seuil ? F[1] : sc.pct <= seuil + 1 ? F[2] : F[3]; rr(g, gx, gy, Math.max(30, gw * fill), gh, 15); g.fill(); }
-  const mx = gx + gw * (meta.pib_mds * seuil / 100) / def;
-  g.fillStyle = fg; g.fillRect(mx - 2, gy - 8, 4, gh + 16);
-  g.fillRect(gx - 1, gy - 8, 4, gh + 16);
-  g.font = `600 20px ${sans}`; g.fillStyle = mu; g.textAlign = 'left'; g.fillText('0 %', gx, gy + gh + 28);
-  g.fillStyle = fg; g.textAlign = 'center'; g.fillText(`${seuil} %`, mx, gy + gh + 28);
-  g.fillStyle = mu; g.textAlign = 'right'; g.fillText(`${fmt(meta.deficit_pct_pib || def / meta.pib_mds * 100)} %`, gx + gw, gy + gh + 28); g.textAlign = 'left';
+  g.fillStyle = F[1] + '38'; rr(g, z, gy, gx + gw - z, gh, 15); g.fill(); // zone excédent
+  if (Math.abs(x - z) > 1) { g.fillStyle = sc.pct <= seuil ? F[1] : sc.pct <= seuil + 1 ? F[2] : F[3]; rr(g, Math.min(x, z), gy, Math.max(30, Math.abs(z - x)), gh, 15); g.fill(); }
+  g.fillStyle = fg; g.globalAlpha = .5; g.fillRect(mx - 2, gy - 6, 4, gh + 12); g.globalAlpha = 1;
+  g.fillRect(z - 2, gy - 10, 4, gh + 20);
+  g.beginPath(); g.arc(x, gy + gh / 2, 16, 0, 7); g.fillStyle = dark ? '#10131a' : '#fbfaf6'; g.fill(); g.lineWidth = 6; g.strokeStyle = fg; g.stroke();
+  g.font = `600 20px ${sans}`; g.fillStyle = mu; g.textAlign = 'left'; g.fillText(`déficit ${fmt(pct0)} %`, gx, gy + gh + 30);
+  g.fillStyle = fg; g.textAlign = 'center'; g.fillText(`${seuil} %`, mx, gy + gh + 30);
+  g.font = `800 20px ${sans}`; g.fillText('0', z, gy + gh + 30);
+  g.font = `600 20px ${sans}`; g.fillStyle = F[1]; g.textAlign = 'right'; g.fillText('excédent', gx + gw, gy + gh + 30); g.textAlign = 'left';
   // mesures principales
   const all = [...sc.rows.map(x => ({ nom: x.it.nom, v: x.v, f: x.c.faisabilite, k: 'd' })),
     ...sc.hausses.map(x => ({ nom: x.it.nom + ' (recette)', v: x.v, f: x.c.faisabilite, k: 'r' })),
@@ -469,7 +478,7 @@ $('share').onclick = async () => {
 };
 $('close').onclick = () => dlg.close ? dlg.close() : dlg.removeAttribute('open');
 $('doshare').onclick = async () => {
-  const sc = scenario(), txt = `Ministre du Budget : mon scénario réduit le déficit de ${fmt(Math.abs(sc.net))} Md€ (${fmtPct(sc.pct)} % du PIB)${sc.net < 0 ? ' en fait il l’alourdit' : ''}. Et vous ?`;
+  const sc = scenario(), txt = `Ministre du Budget : ${sc.net >= 0 ? `${fmt(sc.net)} Md€ d’effort` : `${fmt(-sc.net)} Md€ de dérapage`}, ${soldeTxt(sc.pct)} du PIB à l’arrivée. Et vous ?`;
   if (navigator.canShare && navigator.canShare({ files: [shareFile] }))
     return navigator.share({ text: `${txt} ${location.href}`, files: [shareFile] }).catch(() => {});
   const a = Object.assign(document.createElement('a'), { href: shareUrl, download: shareFile.name });
@@ -484,12 +493,17 @@ function startApp() {
 }
 function setupIntro() {
   const pct0 = meta.deficit_pct_pib || meta.deficit_mds / meta.pib_mds * 100, seuil = meta.regle_impots.seuil_pct;
-  const mpos = (meta.pib_mds * seuil / 100) / meta.deficit_mds * 100;
   $('i-year').textContent = String(meta.annee_reference).replace(/\s*révisé/, '');
   $('i-def').textContent = fmt(meta.deficit_mds) + ' Md€';
   $('i-pct').textContent = `(${fmt(pct0)} % du PIB)`;
   $('i-need').textContent = fmt(Math.round(meta.deficit_mds - meta.pib_mds * seuil / 100)) + ' Md€';
-  $('i-mark').style.left = mpos + '%'; $('i-mlab').style.left = mpos + '%'; $('i-mlab').textContent = seuil + ' %'; $('i-top').textContent = fmt(pct0) + ' %';
+  // même axe que la barre du bas : déficit de départ à gauche, 0, excédent à droite
+  const im = gPos(seuil, pct0), iz = gPos(0, pct0);
+  $('i-mark').style.left = im + '%'; $('i-mlab').style.left = im + '%'; $('i-mlab').textContent = seuil + ' %';
+  $('i-zero').style.left = iz + '%'; $('i-0lab').style.left = iz + '%';
+  $('i-surplus').style.left = iz + '%'; $('i-surplus').style.width = (100 - iz) + '%';
+  $('i-fill').style.left = '0%'; $('i-fill').style.width = iz + '%'; $('i-pin').style.left = '0%';
+  $('i-top').textContent = 'déficit ' + fmt(pct0) + ' %';
   if (meta.derive_2027) $('i-derive').innerHTML = esc(meta.derive_2027.texte) + ` <a href="${esc(meta.derive_2027.source.url)}" target="_blank" rel="noopener">source</a>`;
   $('i-presets').innerHTML = presetsHTML();
   $('i-presets').addEventListener('click', e => { const p = e.target.closest('[data-preset]'); if (p) applyPreset(+p.dataset.preset); });
@@ -500,10 +514,23 @@ function setupIntro() {
   };
 }
 // g-mark de la barre
+/* Jauge à deux côtés, en % du PIB : déficit de départ à gauche, 0 au milieu-droit, excédent à droite. */
+const G_SURPLUS = 1.5; // % du PIB affiché côté excédent (au-delà, la pastille reste en butée)
+const gPos = (p, pct0) => (pct0 - Math.max(-G_SURPLUS, Math.min(pct0, p))) / (pct0 + G_SURPLUS) * 100;
 function setupBar() {
-  const seuil = meta.regle_impots.seuil_pct, mpos = (meta.pib_mds * seuil / 100) / meta.deficit_mds * 100;
-  $('g-mark').style.left = mpos + '%'; $('g-mlab').style.left = mpos + '%'; $('g-mlab').textContent = seuil + ' %';
-  $('g-top').textContent = fmt(meta.deficit_pct_pib || meta.deficit_mds / meta.pib_mds * 100) + ' %';
+  const seuil = meta.regle_impots.seuil_pct, pct0 = meta.deficit_pct_pib || meta.deficit_mds / meta.pib_mds * 100;
+  const m = gPos(seuil, pct0), z = gPos(0, pct0);
+  $('g-mark').style.left = m + '%'; $('g-mlab').style.left = m + '%'; $('g-mlab').textContent = seuil + ' %';
+  $('g-zero').style.left = z + '%'; $('g-0lab').style.left = z + '%';
+  $('g-surplus').style.left = z + '%'; $('g-surplus').style.width = (100 - z) + '%';
+  $('g-top').textContent = 'déficit ' + fmt(pct0) + ' %';
+}
+function placeGauge(pct, pct0, seuil) {
+  const z = gPos(0, pct0), x = gPos(pct, pct0), f = $('g-fill');
+  // la barre part de 0 : vers la gauche tant qu'il reste un déficit, vers la droite en excédent
+  f.style.left = Math.min(x, z) + '%'; f.style.width = Math.abs(z - x) + '%';
+  f.className = 'g-fill' + (pct < 0 ? ' ok sur' : pct <= seuil ? ' ok' : pct <= seuil + 1 ? ' mid' : '');
+  $('g-pin').style.left = x + '%';
 }
 
 const getJSON = u => fetch(u).then(r => { if (!r.ok) throw new Error(u + ' ' + r.status); return r.json(); });
