@@ -207,9 +207,8 @@ function scenarioImage() {
   const dark = matchMedia('(prefers-color-scheme: dark)').matches;
   const fg = dark ? '#eee' : '#1a1a1a', mu = dark ? '#aaa' : '#666';
   g.fillStyle = dark ? '#141414' : '#fafaf7'; g.fillRect(0, 0, W, H);
-  const dsg = sc.net > 0 ? '−' : sc.net < 0 ? '+' : '';
   g.fillStyle = fg; g.font = 'bold 48px system-ui,sans-serif';
-  g.fillText(`Mon budget : déficit ${dsg}${fmt(Math.abs(sc.net))} Md€`, 60, 80);
+  g.fillText(sc.net >= 0 ? `Mon budget : déficit réduit de ${fmt(sc.net)} Md€` : `Mon budget : déficit alourdi de ${fmt(-sc.net)} Md€`, 60, 80);
   g.font = '24px system-ui,sans-serif'; g.fillStyle = mu;
   const parts = [`Dépenses −${fmt(sc.eco)}`];
   if (sc.plus) parts.push(`Recettes +${fmt(sc.plus)}`);
@@ -257,7 +256,7 @@ document.getElementById('share').onclick = async () => {
 };
 document.getElementById('close').onclick = () => dlg.close ? dlg.close() : dlg.removeAttribute('open');
 document.getElementById('doshare').onclick = async () => {
-  const sc = scenario(), txt = `Mon budget : ${sc.net > 0 ? '−' : sc.net < 0 ? '+' : ''}${fmt(Math.abs(sc.net))} Md€ de déficit (−${fmt(sc.eco)} dépenses${sc.plus ? `, +${fmt(sc.plus)} recettes` : ''}${sc.moins ? `, −${fmt(sc.moins)} d'impôts` : ''}), mesures sourcées`;
+  const sc = scenario(), txt = `Mon budget : déficit ${sc.net >= 0 ? 'réduit' : 'alourdi'} de ${fmt(Math.abs(sc.net))} Md€ (−${fmt(sc.eco)} dépenses${sc.plus ? `, +${fmt(sc.plus)} recettes` : ''}${sc.moins ? `, −${fmt(sc.moins)} d'impôts` : ''}), mesures sourcées`;
   if (navigator.canShare && navigator.canShare({ files: [shareFile] }))
     return navigator.share({ text: `${txt} ${location.href}`, files: [shareFile] }).catch(() => {});
   const a = Object.assign(document.createElement('a'), { href: shareUrl, download: shareFile.name });
