@@ -3,9 +3,9 @@
     "titre": "Simulateur de baisse des dépenses publiques",
     "perimetre": "Administrations publiques (APU) : État, Sécurité sociale, collectivités, opérateurs",
     "depenses_totales_mds": 1714.1,
-    "deficit_mds": 152.5,
-    "annee_reference": 2025,
-    "statut": "v0.4 — 4 passes de vérification. Gains cumulatifs (chaque cran inclut les précédents). Badge « non vérifié » = ordre de grandeur calculé à partir de chiffres officiels, formule dans le JSON.",
+    "deficit_mds": 164.6,
+    "annee_reference": "2026 révisé",
+    "statut": "v0.5 — base : déficit 2026 révisé (5,4 % du PIB). Gains cumulatifs. Badge « non vérifié » = ordre de grandeur calculé, formule dans le JSON.",
     "faisabilite": {
       "1": "Faisable par loi ordinaire / LFI-LFSS, précédents existants",
       "2": "Faisable mais risque juridique ou politique fort (Conseil constitutionnel, partenaires sociaux, collectivités)",
@@ -20,7 +20,7 @@
     ],
     "taux_marginal_dette": 0.039,
     "taux_marginal_dette_provisoire": true,
-    "pib_mds": 2991.1,
+    "pib_mds": 3049,
     "regle_impots": {
       "seuil_pct": 3,
       "parts": [
@@ -33,10 +33,25 @@
     "licence": "CC BY 4.0",
     "sources_meta": [],
     "pib_source": {
-      "titre": "Insee Première n° 2105 — comptes nationaux 2025",
-      "annee": 2025
+      "titre": "Rapport d'avancement annuel 2026, PIB nominal 2026",
+      "url": "https://www.tresor.economie.gouv.fr/Articles/b16f3103-ed47-4c37-9362-11ff01e12ae5/files/1d29351b-0187-4837-a3cd-e4ea7b0e4ce1",
+      "annee": 2026
     },
-    "taux_marginal_note": "Hypothèse : taux 10 ans fin 2026 du RAA 2026 (3,9 %). Effet à 1 an d'une économie pérenne ; s'accumule ensuite."
+    "taux_marginal_note": "Hypothèse : taux 10 ans fin 2026 du RAA 2026 (3,9 %). Effet à 1 an d'une économie pérenne ; s'accumule ensuite.",
+    "deficit_pct_pib": 5.4,
+    "deficit_source": {
+      "titre": "PLF 2027 n° 3210, article liminaire : déficit 2026 révisé à 5,4 % du PIB",
+      "url": "https://www.assemblee-nationale.fr/dyn/docs/PRJLANR5L17B3210.raw",
+      "notes": "Montant en Md€ calculé : 5,4 % × PIB 2026 (3 049 Md€, RAA 2026)."
+    },
+    "derive_2027": {
+      "deficit_pct_pib": 6.4,
+      "texte": "Sans aucune mesure, le déficit 2027 monterait à environ 6,4 % du PIB (PLF 2027).",
+      "source": {
+        "titre": "PLF 2027 n° 3210, exposé des motifs",
+        "url": "https://www.assemblee-nationale.fr/dyn/docs/PRJLANR5L17B3210.raw"
+      }
+    }
   },
   "postes": [
     {

@@ -275,7 +275,8 @@ Promise.all([
 ]).then(([d, r]) => {
   data = d; rec = r;
   document.getElementById('total').textContent = fmt(d.meta.depenses_totales_mds) + ' Md€';
-  document.getElementById('deficit').textContent = fmt(d.meta.deficit_mds) + ' Md€ (' + d.meta.annee_reference + ')';
+  document.getElementById('deficit').textContent = fmt(d.meta.deficit_mds) + ' Md€' + (d.meta.deficit_pct_pib ? ', ' + fmt(d.meta.deficit_pct_pib) + ' % du PIB' : '') + ' (' + d.meta.annee_reference + ')';
+  if (d.meta.derive_2027) document.getElementById('derive').innerHTML = '↗ ' + esc(d.meta.derive_2027.texte) + ` <a href="${esc(d.meta.derive_2027.source.url)}" target="_blank" rel="noopener">source</a>`;
   document.getElementById('statut').textContent = document.getElementById('statut2').textContent = '⚠ ' + d.meta.statut;
   if (!rec.length) document.getElementById('recettes-titre').parentNode.querySelectorAll('#recettes-titre,.sectsub,.jump').forEach(e => e.hidden = true);
   readHash(); render(); update();
