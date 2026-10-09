@@ -493,12 +493,17 @@ function startApp() {
 }
 function setupIntro() {
   const pct0 = meta.deficit_pct_pib || meta.deficit_mds / meta.pib_mds * 100, seuil = meta.regle_impots.seuil_pct;
-  const mpos = (meta.pib_mds * seuil / 100) / meta.deficit_mds * 100;
   $('i-year').textContent = String(meta.annee_reference).replace(/\s*révisé/, '');
   $('i-def').textContent = fmt(meta.deficit_mds) + ' Md€';
   $('i-pct').textContent = `(${fmt(pct0)} % du PIB)`;
   $('i-need').textContent = fmt(Math.round(meta.deficit_mds - meta.pib_mds * seuil / 100)) + ' Md€';
-  $('i-mark').style.left = mpos + '%'; $('i-mlab').style.left = mpos + '%'; $('i-mlab').textContent = seuil + ' %'; $('i-top').textContent = fmt(pct0) + ' %';
+  // même axe que la barre du bas : déficit de départ à gauche, 0, excédent à droite
+  const im = gPos(seuil, pct0), iz = gPos(0, pct0);
+  $('i-mark').style.left = im + '%'; $('i-mlab').style.left = im + '%'; $('i-mlab').textContent = seuil + ' %';
+  $('i-zero').style.left = iz + '%'; $('i-0lab').style.left = iz + '%';
+  $('i-surplus').style.left = iz + '%'; $('i-surplus').style.width = (100 - iz) + '%';
+  $('i-fill').style.left = '0%'; $('i-fill').style.width = iz + '%'; $('i-pin').style.left = '0%';
+  $('i-top').textContent = 'déficit ' + fmt(pct0) + ' %';
   if (meta.derive_2027) $('i-derive').innerHTML = esc(meta.derive_2027.texte) + ` <a href="${esc(meta.derive_2027.source.url)}" target="_blank" rel="noopener">source</a>`;
   $('i-presets').innerHTML = presetsHTML();
   $('i-presets').addEventListener('click', e => { const p = e.target.closest('[data-preset]'); if (p) applyPreset(+p.dataset.preset); });
