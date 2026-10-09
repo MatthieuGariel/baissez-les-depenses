@@ -1,0 +1,2469 @@
+{
+ "meta": {
+  "titre": "Recettes APU — hausse/baisse des prélèvements (passe 2)",
+  "perimetre": "Prélèvements obligatoires des administrations publiques (État, Sécurité sociale, collectivités)",
+  "po_total": {
+   "insee_pct_pib": 42.8,
+   "eurostat_pct_pib": 45.3,
+   "montant_mds": 1250.8,
+   "note": "Prélèvements obligatoires 2024 : 1 250,8 Md€, soit 42,8 % du PIB (Insee, tableau 3.217). Eurostat (cotisations imputées incluses, 51,2 Md€) : 45,3 %.",
+   "source": {
+    "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+    "url": "https://www.insee.fr/fr/statistiques/8574705",
+    "ouverte": true
+   }
+  },
+  "comparaison_ue": {
+   "france_2024_pct_pib": 45.3,
+   "ue27_2024_pct_pib": 40.4,
+   "france_2023_pct_pib": 45.6,
+   "ue27_2023_pct_pib": 39.9,
+   "rang": "2e de l'UE derrière le Danemark (FIPECO)",
+   "ecart_cle": "Écart vs UE de 2,1 pts de PIB pour le travail et 1,8 pt pour le capital ; prélèvements sur la consommation légèrement plus élevés en France mais sous la moyenne en part du total (FIPECO)",
+   "sources": [
+    {
+     "titre": "Insee/Eurostat — Taux de prélèvements obligatoires dans l'UE, 2010-2024",
+     "url": "https://www.insee.fr/fr/statistiques/2381410",
+     "ouverte": true
+    },
+    {
+     "titre": "FIPECO (F. Ecalle, 16/04/2026) — Prélèvements sur le travail, le capital et la consommation 2016-2024",
+     "url": "https://www.fipeco.fr/pdf/AssiettePr%C3%A9l%C3%A8vements2024.pdf",
+     "ouverte": true
+    }
+   ]
+  },
+  "avertissements": [
+   "Bases : toutes APU (État + Sécurité sociale + collectivités), Insee comptes des APU 2024, tableau 3.217. Ce ne sont pas les parts nettes de l'État.",
+   "Règle non_verifie : false quand le chiffrage vient d'une sensibilité ou d'une évaluation officielle/académique ouverte (FIPECO d'après DG Trésor et CCSS, Insee, Sénat, Bercy relayé) appliquée telle quelle. true quand le chiffre exige une hypothèse supplémentaire (assiette estimée, taux effectif, volume) : la formule est alors dans notes.",
+   "Les crans sont chiffrés isolément à comportements constants ; les effets comportementaux (élasticités, exil fiscal, optimisation) sont documentés dans obstacles. La CDHR illustre l'écart possible : ~2 Md€ attendus, 0,4 Md€ d'acompte observé en 2025 (IPP).",
+   "Périmètre : taxe foncière (42,9 Md€) traitée dans son poste ; le poste impôts de production est recentré hors foncier (16,8 Md€) pour éviter le double compte. L'IR (Insee) inclut le PRCM (3,9 Md€), repris aussi dans la base « capital » : ne pas additionner les deux sans retrancher.",
+   "Les montants cot_emp (293 Md€) et cot_sal (138 Md€) sont une ventilation estimée (68/32, FIPECO 2025) du total Insee 431,1 Md€.",
+   "Faisabilité 3 réservée aux obstacles constitutionnels ou UE établis : un seul cran (IFI hausse 3, impôt plancher). Les baisses de TVA sur l'alimentaire sont possibles en droit UE depuis la directive 2022/542 (faisabilité 2).",
+   "Taux marginal cumulé et exil fiscal : CC 2012-662 DC et 2013-685 DC (ouvertes) ; avis du Conseil d'État du 21/03/2013 (deux tiers) rapporté par le rapport Sénat n° 689."
+  ],
+  "faisabilite": {
+   "1": "loi ordinaire/décret",
+   "2": "risque juridique ou politique fort",
+   "3": "obstacle constitutionnel ou UE probable"
+  },
+  "licence": "CC BY 4.0",
+  "annee_reference": 2024,
+  "sources_generales": [
+   {
+    "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+    "url": "https://www.insee.fr/fr/statistiques/8574705",
+    "ouverte": true
+   },
+   {
+    "titre": "Insee/Eurostat — Taux de prélèvements obligatoires dans l'UE, 2010-2024",
+    "url": "https://www.insee.fr/fr/statistiques/2381410",
+    "ouverte": true
+   },
+   {
+    "titre": "FIPECO (F. Ecalle, 16/04/2026) — Prélèvements sur le travail, le capital et la consommation 2016-2024",
+    "url": "https://www.fipeco.fr/pdf/AssiettePr%C3%A9l%C3%A8vements2024.pdf",
+    "ouverte": true
+   }
+  ]
+ },
+ "recettes": [
+  {
+   "id": "ir",
+   "nom": "Impôt sur le revenu",
+   "montant_mds": 87.3,
+   "annee_montant": 2024,
+   "source_montant": {
+    "titre": "Insee, tableau 3.217 (2024, toutes APU) : IRPP 96,2 Md€ avant crédits d'impôt, -6,7 utilisés en déduction, -2,2 payés au-delà de l'impôt dû = 87,3 net",
+    "url": "https://www.insee.fr/fr/statistiques/8574705",
+    "ouverte": true
+   },
+   "montant_verifie": true,
+   "crans_hausse": [
+    {
+     "niveau": 1,
+     "mesure": "Gel du barème 1 an (non-indexation sur l'inflation)",
+     "gain_mds": 1.9,
+     "faisabilite": 1,
+     "arguments": [
+      "Rendement immédiat sans changement de taux, précédent : gel de fait 2011-2012",
+      "Neutre pour les taux affichés"
+     ],
+     "obstacles": [
+      "Fait entrer des foyers dans l'impôt et augmente la progressivité effective sur les classes moyennes (« impôt caché »)",
+      "Effet pouvoir d'achat négatif documenté lors du gel 2011-2012"
+     ],
+     "sources": [
+      {
+       "titre": "Public Sénat — Gel du barème de l'IR en 2026 : 1,9 Md€ selon Bercy, 200 000 nouveaux foyers imposables",
+       "url": "https://www.publicsenat.fr/actualites/economie/budget-2026-avec-le-gel-du-bareme-de-limpot-sur-le-revenu-200-000-nouveaux-foyers-pourraient-devenir-imposables",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": false,
+     "notes": "Chiffrage Bercy (1,9 Md€ en 2026, ~1,8 % de l'IR) relayé par Public Sénat ; 200 000 nouveaux foyers imposables. D'autres estimations : 2,2 Md€ avec gel du barème de la CSG (Legifiscal), 2,5 Md€ (CGT)."
+    },
+    {
+     "niveau": 2,
+     "mesure": "+1 pt sur les tranches à 30 % et 41 % (31 % / 42 %)",
+     "gain_mds": 5.5,
+     "faisabilite": 1,
+     "arguments": [
+      "Touche les revenus médians-supérieurs, assiette large",
+      "Barème progressif déjà proche des moyennes UE sur le travail"
+     ],
+     "obstacles": [
+      "Prélèvements sur le travail en France 5e rang UE (FIPECO)",
+      "Cumul avec CSG : taux marginal global déjà élevé ; 75 % de l'IR payé par le dernier décile (FIPECO 2025)"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — L'impôt sur le revenu et la CSG (fiche, 01/06/2026 ; 1 pt de CSG = 18 Md€ en 2025, source CCSS)",
+       "url": "https://www.fipeco.fr/pdf/IR-CSG.pdf",
+       "ouverte": true
+      },
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Formule : cran 1 + ~3,6 Md€ (1 pt sur les tranches à 30 % et 41 % ≈ 1/30 puis 1/41 du produit de ces tranches, ~60 % de l'IR de 87 Md€ : ordre de grandeur, pas de chiffrage officiel retrouvé)."
+    },
+    {
+     "niveau": 3,
+     "mesure": "+2 pts sur la tranche à 41 % et 4 pts sur la tranche à 45 % (43 % / 49 %)",
+     "gain_mds": 8.5,
+     "faisabilite": 2,
+     "arguments": [
+      "Concentre l'effort sur les 5-10 % de foyers les plus aisés (la tranche à 45 % > 180 294 €/part)",
+      "Revient sur une partie des baisses de taux de la période 2016-2024"
+     ],
+     "obstacles": [
+      "Taux marginal supérieur déjà 51,5 % hors CEHR (FIPECO, 2023, 4e de l'UE) ; +4 pts sur la tranche à 45 % reste sous le seuil de deux tiers évoqué par le Conseil d'État (21/03/2013, rapporté par le Sénat) et loin de 75 % (CC 2012-662 DC) : risque politique, pas constitutionnel direct",
+      "Réponse comportementale documentée : la CDHR (taux minimal 20 %) devait rapporter ~2 Md€ en 2025 mais l'acompte de décembre 2025 n'a atteint que 0,4 Md€ (IPP) : report, substitution de revenus, anticipation",
+      "Les 10 % de foyers les plus aisés paient 75 % de l'IR (FIPECO 2025) : assiette très concentrée, sensible à la mobilité internationale des hauts salaires"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — L'impôt sur le revenu et la CSG (fiche, 01/06/2026 ; 1 pt de CSG = 18 Md€ en 2025, source CCSS)",
+       "url": "https://www.fipeco.fr/pdf/IR-CSG.pdf",
+       "ouverte": true
+      },
+      {
+       "titre": "IPP, Perspectives budgétaires juin 2026, chap. 2 — CDHR (1,8 Md€ mécanique, 0,7 prévu, 0,4 d'acompte 2025) et CSG capital +1,4 pt ≈ 1 Md€",
+       "url": "https://www.ipp.eu/wp-content/uploads/2026/06/chapitre_fiscalite_2026-2.pdf",
+       "ouverte": true
+      },
+      {
+       "titre": "Conseil constitutionnel, décision n° 2012-662 DC du 29 décembre 2012 (cons. 87-93 : plafonnement ISF, facultés contributives, égalité devant les charges publiques ; cons. 15 et 19 : taux marginal 75,04 % censuré)",
+       "url": "https://www.conseil-constitutionnel.fr/decision/2012/2012662DC.htm",
+       "ouverte": true
+      },
+      {
+       "titre": "Conseil constitutionnel, décision n° 2013-685 DC du 29 décembre 2013 (cons. 16 et 21-24 : contribution de 50 % sur hautes rémunérations jugée non confiscatoire)",
+       "url": "https://www.conseil-constitutionnel.fr/decision/2013/2013685DC.htm",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Formule : cran 2 + ~3,0 Md€ (tranches supérieures ≈ 25-30 % de l'IR). Ordre de grandeur, rendement net probablement inférieur (cf. CDHR : 0,4 réalisé vs 2 attendu)."
+    }
+   ],
+   "crans_baisse": [
+    {
+     "niveau": 1,
+     "mesure": "-1 pt sur la tranche à 11 % (10 %)",
+     "cout_mds": 2.3,
+     "faisabilite": 1,
+     "arguments": [
+      "Soulage les ménages modestes et le bas des classes moyennes",
+      "Renforce l'incitation au travail au bas du barème"
+     ],
+     "obstacles": [
+      "Perte de recette sans contrepartie de dépense (déficit 5,4 % du PIB 2025)",
+      "Ciblage faible : bénéficie aussi aux foyers plus aisés (tranche partagée)"
+     ],
+     "sources": [
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Formule : ~1 pt sur la tranche à 11 % (IR concerné ≈ 21 Md€ x 1/11). Pas de chiffrage officiel retrouvé."
+    },
+    {
+     "niveau": 2,
+     "mesure": "Indexation du barème de 2 pts au-dessus de l'inflation + -1 pt tranche 30 %",
+     "cout_mds": 5.5,
+     "faisabilite": 1,
+     "arguments": [
+      "Rend du pouvoir d'achat aux foyers imposés",
+      "Corrige le « fiscal drag » pendant les années de gel"
+     ],
+     "obstacles": [
+      "Coût budgétaire croissant dans le temps (effet de base)",
+      "Distribution inégale : les foyers non imposables ne gagnent rien"
+     ],
+     "sources": [
+      {
+       "titre": "Public Sénat — Gel du barème de l'IR en 2026 : 1,9 Md€ selon Bercy, 200 000 nouveaux foyers imposables",
+       "url": "https://www.publicsenat.fr/actualites/economie/budget-2026-avec-le-gel-du-bareme-de-limpot-sur-le-revenu-200-000-nouveaux-foyers-pourraient-devenir-imposables",
+       "ouverte": true
+      },
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Formule : cran 1 + 2 pts x ~1,6 Md€/pt d'indexation (le gel de 1 an ≈ 1,9 Md€ pour ~1,8 % d'inflation selon Bercy, soit ~1,05 Md€ par point d'indexation : le cran 2 pourrait être surévalué)."
+    },
+    {
+     "niveau": 3,
+     "mesure": "Baisse de 2 pts des taux 11 % et 30 % et relèvement de l'abattement de 10 %",
+     "cout_mds": 12.0,
+     "faisabilite": 2,
+     "arguments": [
+      "Allègement net des classes moyennes (prélèvements sur le travail France > UE de 2,1 pts de PIB selon FIPECO)",
+      "Compétitivité du travail qualifié"
+     ],
+     "obstacles": [
+      "Coût élevé (≈ 13 % du produit de l'IR) sans financement",
+      "Risque de dégradation du solde au-delà des règles du pacte de stabilité"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — L'impôt sur le revenu et la CSG (fiche, 01/06/2026 ; 1 pt de CSG = 18 Md€ en 2025, source CCSS)",
+       "url": "https://www.fipeco.fr/pdf/IR-CSG.pdf",
+       "ouverte": true
+      },
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Formule : cran 2 + ~6,5 Md€ (abattement 10 % : ~4 ; taux : ~2,5). Ordre de grandeur."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+     "url": "https://www.insee.fr/fr/statistiques/8574705",
+     "ouverte": true
+    },
+    {
+     "titre": "FIPECO — L'impôt sur le revenu et la CSG (fiche, 01/06/2026 ; 1 pt de CSG = 18 Md€ en 2025, source CCSS)",
+     "url": "https://www.fipeco.fr/pdf/IR-CSG.pdf",
+     "ouverte": true
+    },
+    {
+     "titre": "Public Sénat — Gel du barème de l'IR en 2026 : 1,9 Md€ selon Bercy, 200 000 nouveaux foyers imposables",
+     "url": "https://www.publicsenat.fr/actualites/economie/budget-2026-avec-le-gel-du-bareme-de-limpot-sur-le-revenu-200-000-nouveaux-foyers-pourraient-devenir-imposables",
+     "ouverte": true
+    },
+    {
+     "titre": "IPP, Perspectives budgétaires juin 2026, chap. 2 — CDHR (1,8 Md€ mécanique, 0,7 prévu, 0,4 d'acompte 2025) et CSG capital +1,4 pt ≈ 1 Md€",
+     "url": "https://www.ipp.eu/wp-content/uploads/2026/06/chapitre_fiscalite_2026-2.pdf",
+     "ouverte": true
+    },
+    {
+     "titre": "Conseil constitutionnel, décision n° 2012-662 DC du 29 décembre 2012 (cons. 87-93 : plafonnement ISF, facultés contributives, égalité devant les charges publiques ; cons. 15 et 19 : taux marginal 75,04 % censuré)",
+     "url": "https://www.conseil-constitutionnel.fr/decision/2012/2012662DC.htm",
+     "ouverte": true
+    },
+    {
+     "titre": "Conseil constitutionnel, décision n° 2013-685 DC du 29 décembre 2013 (cons. 16 et 21-24 : contribution de 50 % sur hautes rémunérations jugée non confiscatoire)",
+     "url": "https://www.conseil-constitutionnel.fr/decision/2013/2013685DC.htm",
+     "ouverte": true
+    },
+    {
+     "titre": "Sénat n° 689 : avis du Conseil d'État du 21/03/2013 (taux marginal > deux tiers = risque de censure)",
+     "url": "https://www.senat.fr/rap/l24-689/l24-6891.pdf",
+     "ouverte": true
+    }
+   ],
+   "note_base": "IR net de crédits d'impôt, périmètre Insee comptabilité nationale (inclut PRCM, 3,9 Md€ comptés par ailleurs dans « capital » : à retrancher pour éviter tout double compte si on additionne). FIPECO : 100 Md€ en 2025 avant crédits (109 avec PRCM)."
+  },
+  {
+   "id": "csg",
+   "nom": "CSG (contribution sociale généralisée)",
+   "montant_mds": 153.1,
+   "annee_montant": 2024,
+   "source_montant": {
+    "titre": "Insee, tableau 3.217 (2024) : CSG 153,1 Md€ hors CSG sur jeux ; FIPECO/CCSS : 157 Md€ en 2025",
+    "url": "https://www.insee.fr/fr/statistiques/8574705",
+    "ouverte": true
+   },
+   "montant_verifie": true,
+   "crans_hausse": [
+    {
+     "niveau": 1,
+     "mesure": "+0,5 pt de CSG sur tous les revenus d'activité, de remplacement et du capital",
+     "gain_mds": 9.0,
+     "faisabilite": 1,
+     "arguments": [
+      "Assiette très large (salaires, retraites, capital), rendement stable",
+      "Finance la protection sociale sans peser sur le coût du travail employeur"
+     ],
+     "obstacles": [
+      "Frappe les retraités et les salariés dont le revenu net baisse (compensation partielle par la CSG déductible sur 6,8 pts)",
+      "Hausse de CSG 2018 (+1,7 pt) politiquement coûteuse"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — L'impôt sur le revenu et la CSG (fiche, 01/06/2026 ; 1 pt de CSG = 18 Md€ en 2025, source CCSS)",
+       "url": "https://www.fipeco.fr/pdf/IR-CSG.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": false,
+     "notes": "1 pt de CSG sur l'ensemble des taux = 18 Md€ en 2025 (FIPECO d'après la CCSS) ; application linéaire. 0,5 pt = 9,0."
+    },
+    {
+     "niveau": 2,
+     "mesure": "+1 pt de CSG sur tous les revenus",
+     "gain_mds": 18.0,
+     "faisabilite": 1,
+     "arguments": [
+      "Rendement massif (≈ 0,5 pt de PIB)",
+      "Contribution des retraités aisés au financement des dépenses de santé"
+     ],
+     "obstacles": [
+      "Effet direct sur le revenu disponible de 100 % des ménages (111 Md€ de CSG sur revenus d'activité, 28 sur remplacement, 18 sur capital)",
+      "Rendement net légèrement inférieur : la CSG déductible (6,8 pts) réduit l'IR"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — L'impôt sur le revenu et la CSG (fiche, 01/06/2026 ; 1 pt de CSG = 18 Md€ en 2025, source CCSS)",
+       "url": "https://www.fipeco.fr/pdf/IR-CSG.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": false,
+     "notes": "1 pt de CSG sur l'ensemble des taux = 18 Md€ en 2025 (FIPECO d'après la CCSS) ; application linéaire."
+    },
+    {
+     "niveau": 3,
+     "mesure": "+2 pts de CSG sur tous les revenus",
+     "gain_mds": 36.0,
+     "faisabilite": 2,
+     "arguments": [
+      "Rendement de l'ordre de la moitié du déficit",
+      "Alternative à la hausse des cotisations employeurs (neutre sur le coût du travail)"
+     ],
+     "obstacles": [
+      "Prélèvements obligatoires France 45,3 % du PIB (Eurostat) vs UE 40,4 %",
+      "Effet récessif documenté d'une hausse des prélèvements sur les ménages (FIPECO : coût économique de tout prélèvement)"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — L'impôt sur le revenu et la CSG (fiche, 01/06/2026 ; 1 pt de CSG = 18 Md€ en 2025, source CCSS)",
+       "url": "https://www.fipeco.fr/pdf/IR-CSG.pdf",
+       "ouverte": true
+      },
+      {
+       "titre": "FIPECO (F. Ecalle, 16/04/2026) — Prélèvements sur le travail, le capital et la consommation 2016-2024",
+       "url": "https://www.fipeco.fr/pdf/AssiettePr%C3%A9l%C3%A8vements2024.pdf",
+       "ouverte": true
+      },
+      {
+       "titre": "Insee/Eurostat — Taux de prélèvements obligatoires dans l'UE, 2010-2024",
+       "url": "https://www.insee.fr/fr/statistiques/2381410",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": false,
+     "notes": "1 pt de CSG sur l'ensemble des taux = 18 Md€ en 2025 (FIPECO d'après la CCSS) ; application linéaire. 2 pts = 36 Md€ (hors effets macro)."
+    }
+   ],
+   "crans_baisse": [
+    {
+     "niveau": 1,
+     "mesure": "-0,5 pt de CSG sur tous les revenus",
+     "cout_mds": 9.0,
+     "faisabilite": 1,
+     "arguments": [
+      "Gain de pouvoir d'achat immédiat",
+      "Allège le taux de prélèvement sur le travail"
+     ],
+     "obstacles": [
+      "Réduit les ressources de la Sécu (maladie, autonomie) : compensation nécessaire",
+      "Aggrave le déficit des APU"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — L'impôt sur le revenu et la CSG (fiche, 01/06/2026 ; 1 pt de CSG = 18 Md€ en 2025, source CCSS)",
+       "url": "https://www.fipeco.fr/pdf/IR-CSG.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": false,
+     "notes": "1 pt de CSG sur l'ensemble des taux = 18 Md€ en 2025 (FIPECO d'après la CCSS) ; application linéaire."
+    },
+    {
+     "niveau": 2,
+     "mesure": "-1 pt de CSG",
+     "cout_mds": 18.0,
+     "faisabilite": 1,
+     "arguments": [
+      "Allègement équivalent à ~1 % du revenu net",
+      "Soutien à la consommation"
+     ],
+     "obstacles": [
+      "Coût ≈ 0,5 pt de PIB, financement par dépenses ou autres impôts",
+      "Baisse des recettes de la Sécu non compensable sans dépenses"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — L'impôt sur le revenu et la CSG (fiche, 01/06/2026 ; 1 pt de CSG = 18 Md€ en 2025, source CCSS)",
+       "url": "https://www.fipeco.fr/pdf/IR-CSG.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": false,
+     "notes": "1 pt de CSG sur l'ensemble des taux = 18 Md€ en 2025 (FIPECO d'après la CCSS) ; application linéaire."
+    },
+    {
+     "niveau": 3,
+     "mesure": "-2 pts de CSG",
+     "cout_mds": 36.0,
+     "faisabilite": 2,
+     "arguments": [
+      "Réduit un prélèvement pesant fortement sur le travail",
+      "Rapproche les prélèvements sur le travail de la moyenne UE (+2,1 pts de PIB d'écart selon FIPECO)"
+     ],
+     "obstacles": [
+      "Ampleur budgétaire incompatible avec la trajectoire de déficit sans réforme massive des dépenses",
+      "Rupture de financement des branches maladie et autonomie"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — L'impôt sur le revenu et la CSG (fiche, 01/06/2026 ; 1 pt de CSG = 18 Md€ en 2025, source CCSS)",
+       "url": "https://www.fipeco.fr/pdf/IR-CSG.pdf",
+       "ouverte": true
+      },
+      {
+       "titre": "FIPECO (F. Ecalle, 16/04/2026) — Prélèvements sur le travail, le capital et la consommation 2016-2024",
+       "url": "https://www.fipeco.fr/pdf/AssiettePr%C3%A9l%C3%A8vements2024.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": false,
+     "notes": "1 pt de CSG sur l'ensemble des taux = 18 Md€ en 2025 (FIPECO d'après la CCSS) ; application linéaire. 2 pts = 36 Md€."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+     "url": "https://www.insee.fr/fr/statistiques/8574705",
+     "ouverte": true
+    },
+    {
+     "titre": "FIPECO — L'impôt sur le revenu et la CSG (fiche, 01/06/2026 ; 1 pt de CSG = 18 Md€ en 2025, source CCSS)",
+     "url": "https://www.fipeco.fr/pdf/IR-CSG.pdf",
+     "ouverte": true
+    },
+    {
+     "titre": "Insee/Eurostat — Taux de prélèvements obligatoires dans l'UE, 2010-2024",
+     "url": "https://www.insee.fr/fr/statistiques/2381410",
+     "ouverte": true
+    }
+   ],
+   "note_base": "Rendement toutes APU (essentiellement ASSO + CADES/maladie). Hors CRDS (9,1 Md€) et prélèvement de solidarité (14,6 Md€)."
+  },
+  {
+   "id": "tva",
+   "nom": "TVA (taxe sur la valeur ajoutée)",
+   "montant_mds": 206.3,
+   "annee_montant": 2024,
+   "source_montant": {
+    "titre": "Insee, tableau 3.217 (2024, toutes APU) : TVA 206,3 Md€ ; FIPECO : 208-209 Md€ nets (2024-2025), dont 99 État, 57 Sécurité sociale, 53 collectivités en 2025",
+    "url": "https://www.insee.fr/fr/statistiques/8574705",
+    "ouverte": true
+   },
+   "montant_verifie": true,
+   "crans_hausse": [
+    {
+     "niveau": 1,
+     "mesure": "+1 pt du taux normal (21 %)",
+     "gain_mds": 8.9,
+     "faisabilite": 1,
+     "arguments": [
+      "Impôt le moins défavorable à l'emploi et à la compétitivité (exportations exonérées)",
+      "Prélèvements sur la consommation en France plus bas que la moyenne UE (rang 19e en 2024, FIPECO)"
+     ],
+     "obstacles": [
+      "Régressivité : pèse davantage sur les ménages modestes",
+      "Macro (Insee/DG Trésor via FIPECO) : +30 Md€ de TVA (1 pt de PIB) = -0,7 % de PIB et ~-150 000 emplois salariés après 3 ans ; la moitié de l'effet initial est compensée par l'indexation des revenus"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — La taxe sur la valeur ajoutée (fiche ; sensibilités DG Trésor 2025 : 1 pt = 8,9 / 1,9 / 2,4 / 0,4 Md€)",
+       "url": "https://www.fipeco.fr/fiche/La-taxe-sur-la-valeur-ajout%C3%A9e",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": false,
+     "notes": "Sensibilités DG Trésor 2025 (via FIPECO) : 1 pt du taux normal = 8,9 Md€ ; taux 10 % = 1,9 ; taux 5,5 % = 2,4 ; taux 2,1 % = 0,4 ; tous taux = ~14 Md€ (11,5 net de la TVA payée par les APU)."
+    },
+    {
+     "niveau": 2,
+     "mesure": "+2 pts du taux normal (22 %)",
+     "gain_mds": 17.8,
+     "faisabilite": 1,
+     "arguments": [
+      "Gain important sans toucher aux niches ni à l'IR",
+      "Aucun plafond UE sur le taux normal ; plancher à 15 % (FIPECO, directive 2006/112/CE)"
+     ],
+     "obstacles": [
+      "Même régressivité, accentuée",
+      "Risque de fraude et de report dans les zones frontalières"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — La taxe sur la valeur ajoutée (fiche ; sensibilités DG Trésor 2025 : 1 pt = 8,9 / 1,9 / 2,4 / 0,4 Md€)",
+       "url": "https://www.fipeco.fr/fiche/La-taxe-sur-la-valeur-ajout%C3%A9e",
+       "ouverte": true
+      },
+      {
+       "titre": "Directive (UE) 2022/542 du Conseil du 5 avril 2022 (considérants 5 et 6 : taux réduit < 5 % autorisé pour max. 7 points de l'annexe III, dont denrées alimentaires)",
+       "url": "https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:32022L0542",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": false,
+     "notes": "Sensibilités DG Trésor 2025 (via FIPECO) : 1 pt du taux normal = 8,9 Md€ ; taux 10 % = 1,9 ; taux 5,5 % = 2,4 ; taux 2,1 % = 0,4 ; tous taux = ~14 Md€ (11,5 net de la TVA payée par les APU). 2 x 8,9 = 17,8."
+    },
+    {
+     "niveau": 3,
+     "mesure": "Taux normal 22 % et taux intermédiaire 10 % -> 12 %",
+     "gain_mds": 21.6,
+     "faisabilite": 2,
+     "arguments": [
+      "Étend l'assiette aux taux intermédiaires (restauration, transports, rénovation)",
+      "Le coût des taux réduits est évalué à ~50 Md€ par la Cour des comptes (relayé par Europe 1, non ouvert)"
+     ],
+     "obstacles": [
+      "Impact sur secteurs fragiles (restauration, bâtiment) et sur la rénovation énergétique",
+      "Politique : hausse perçue comme une « taxe sur la consommation »"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — La taxe sur la valeur ajoutée (fiche ; sensibilités DG Trésor 2025 : 1 pt = 8,9 / 1,9 / 2,4 / 0,4 Md€)",
+       "url": "https://www.fipeco.fr/fiche/La-taxe-sur-la-valeur-ajout%C3%A9e",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": false,
+     "notes": "Sensibilités DG Trésor 2025 (via FIPECO) : 1 pt du taux normal = 8,9 Md€ ; taux 10 % = 1,9 ; taux 5,5 % = 2,4 ; taux 2,1 % = 0,4 ; tous taux = ~14 Md€ (11,5 net de la TVA payée par les APU). Cran 2 + 2 pts x 1,9 Md€ (taux 10 %) = 21,6."
+    }
+   ],
+   "crans_baisse": [
+    {
+     "niveau": 1,
+     "mesure": "-1 pt du taux normal (19 %)",
+     "cout_mds": 8.9,
+     "faisabilite": 1,
+     "arguments": [
+      "Baisse des prix à la consommation, soutien aux ménages",
+      "Allège la charge sur les produits de première nécessité mal ciblés par les taux réduits"
+     ],
+     "obstacles": [
+      "Coût budgétaire élevé, baisse faiblement répercutée sur les prix (restauration 2009 : peu de répercussion)",
+      "Non ciblé : profite aussi aux hauts revenus"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — La taxe sur la valeur ajoutée (fiche ; sensibilités DG Trésor 2025 : 1 pt = 8,9 / 1,9 / 2,4 / 0,4 Md€)",
+       "url": "https://www.fipeco.fr/fiche/La-taxe-sur-la-valeur-ajout%C3%A9e",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": false,
+     "notes": "Sensibilités DG Trésor 2025 (via FIPECO) : 1 pt du taux normal = 8,9 Md€ ; taux 10 % = 1,9 ; taux 5,5 % = 2,4 ; taux 2,1 % = 0,4 ; tous taux = ~14 Md€ (11,5 net de la TVA payée par les APU). Symétrique du cran hausse 1 (hors effet d'induction sur la demande)."
+    },
+    {
+     "niveau": 2,
+     "mesure": "-1 pt du taux normal et taux 5,5 % ramené à 2,1 % sur l'alimentaire",
+     "cout_mds": 17.1,
+     "faisabilite": 2,
+     "arguments": [
+      "Cible les dépenses de première nécessité (alimentaire)",
+      "Le taux 2,1 % existe déjà pour médicaments remboursables et presse"
+     ],
+     "obstacles": [
+      "Droit UE : la directive 2022/542 (cons. 5-6) autorise un taux réduit inférieur à 5 % pour au plus sept points de l'annexe III, dont les denrées alimentaires : possible mais il faut rester dans le plafond de sept points (France applique déjà 2,1 % à d'autres biens) ; obstacle budgétaire et politique plutôt que juridique",
+      "Répercussion partielle sur les prix : 30 à 45 % seulement pour la baisse de TVA restauration de 2009 (IPP, via FIPECO) ; effet redistributif très limité des taux réduits (CPO 2023, via FIPECO)"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — La taxe sur la valeur ajoutée (fiche ; sensibilités DG Trésor 2025 : 1 pt = 8,9 / 1,9 / 2,4 / 0,4 Md€)",
+       "url": "https://www.fipeco.fr/fiche/La-taxe-sur-la-valeur-ajout%C3%A9e",
+       "ouverte": true
+      },
+      {
+       "titre": "Directive (UE) 2022/542 du Conseil du 5 avril 2022 (considérants 5 et 6 : taux réduit < 5 % autorisé pour max. 7 points de l'annexe III, dont denrées alimentaires)",
+       "url": "https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:32022L0542",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Sensibilités DG Trésor 2025 (via FIPECO) : 1 pt du taux normal = 8,9 Md€ ; taux 10 % = 1,9 ; taux 5,5 % = 2,4 ; taux 2,1 % = 0,4 ; tous taux = ~14 Md€ (11,5 net de la TVA payée par les APU). Cran 1 + 3,4 pts x 2,4 Md€ (1 pt du taux 5,5 % sur toute sa base) = borne haute 17,1 : l'alimentaire n'est qu'une partie de la base à 5,5 %."
+    },
+    {
+     "niveau": 3,
+     "mesure": "-2 pts du taux normal (18 %) et alimentaire 5,5 % -> 2,1 %",
+     "cout_mds": 26.0,
+     "faisabilite": 2,
+     "arguments": [
+      "Choc de pouvoir d'achat maximal parmi les mesures TVA",
+      "Peut soutenir la consommation en haut de cycle"
+     ],
+     "obstacles": [
+      "Droit UE : la directive 2022/542 (cons. 5-6) autorise un taux réduit inférieur à 5 % pour au plus sept points de l'annexe III, dont les denrées alimentaires : possible mais il faut rester dans le plafond de sept points (France applique déjà 2,1 % à d'autres biens) ; obstacle budgétaire et politique plutôt que juridique",
+      "Répercussion partielle sur les prix : 30 à 45 % seulement pour la baisse de TVA restauration de 2009 (IPP, via FIPECO) ; effet redistributif très limité des taux réduits (CPO 2023, via FIPECO)",
+      "Coût ≈ 0,9 pt de PIB, financement à trouver"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — La taxe sur la valeur ajoutée (fiche ; sensibilités DG Trésor 2025 : 1 pt = 8,9 / 1,9 / 2,4 / 0,4 Md€)",
+       "url": "https://www.fipeco.fr/fiche/La-taxe-sur-la-valeur-ajout%C3%A9e",
+       "ouverte": true
+      },
+      {
+       "titre": "Directive (UE) 2022/542 du Conseil du 5 avril 2022 (considérants 5 et 6 : taux réduit < 5 % autorisé pour max. 7 points de l'annexe III, dont denrées alimentaires)",
+       "url": "https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:32022L0542",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Sensibilités DG Trésor 2025 (via FIPECO) : 1 pt du taux normal = 8,9 Md€ ; taux 10 % = 1,9 ; taux 5,5 % = 2,4 ; taux 2,1 % = 0,4 ; tous taux = ~14 Md€ (11,5 net de la TVA payée par les APU). Cran 2 + 8,9 = 26,0 (borne haute)."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+     "url": "https://www.insee.fr/fr/statistiques/8574705",
+     "ouverte": true
+    },
+    {
+     "titre": "FIPECO — La taxe sur la valeur ajoutée (fiche ; sensibilités DG Trésor 2025 : 1 pt = 8,9 / 1,9 / 2,4 / 0,4 Md€)",
+     "url": "https://www.fipeco.fr/fiche/La-taxe-sur-la-valeur-ajout%C3%A9e",
+     "ouverte": true
+    },
+    {
+     "titre": "Directive (UE) 2022/542 du Conseil du 5 avril 2022 (considérants 5 et 6 : taux réduit < 5 % autorisé pour max. 7 points de l'annexe III, dont denrées alimentaires)",
+     "url": "https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:32022L0542",
+     "ouverte": true
+    },
+    {
+     "titre": "FIPECO (F. Ecalle, 16/04/2026) — Prélèvements sur le travail, le capital et la consommation 2016-2024",
+     "url": "https://www.fipeco.fr/pdf/AssiettePr%C3%A9l%C3%A8vements2024.pdf",
+     "ouverte": true
+    }
+   ],
+   "note_base": "Rendement toutes APU (et non la seule part nette de l'État : 96,8 Md€ en 2024)."
+  },
+  {
+   "id": "is",
+   "nom": "Impôt sur les sociétés",
+   "montant_mds": 57.3,
+   "annee_montant": 2024,
+   "source_montant": {
+    "titre": "Insee, tableau 3.217 (2024) : IS 68,0 Md€ avant crédits d'impôt, -4,0 utilisés, -6,6 payés = 57,4 net ; FIPECO 57,3 Md€ (comptabilité nationale), 66,9 Md€ en 2025",
+    "url": "https://www.insee.fr/fr/statistiques/8574705",
+    "ouverte": true
+   },
+   "montant_verifie": true,
+   "crans_hausse": [
+    {
+     "niveau": 1,
+     "mesure": "+1 pt de taux (26 %)",
+     "gain_mds": 2.3,
+     "faisabilite": 1,
+     "arguments": [
+      "Rendement direct, instrument simple",
+      "Taux 25 % inférieur au taux d'avant 2022 (33,3 %)"
+     ],
+     "obstacles": [
+      "Base mobile : taux nominal maximal 36,1 % en 2026 avec surtaxe, le plus élevé de l'UE et de l'OCDE (FIPECO) ; Pilier 2 fixe un plancher de 15 % pour les grands groupes",
+      "Élasticité de l'investissement au coût du capital de -0,4 à long terme (Insee, modèle Mésange, via FIPECO)"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — L'impôt sur les sociétés (fiche ; IS 66,9 Md€ en 2025, élasticité de l'investissement au coût du capital -0,4)",
+       "url": "https://www.fipeco.fr/fiche/Limp%C3%B4t-sur-les-soci%C3%A9t%C3%A9s",
+       "ouverte": true
+      },
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Pas de chiffrage officiel ouvert du rendement d'un point de taux. Ordre de grandeur : IS net 57,3 Md€ / 25 % = 2,3 Md€ par point, sans élasticité ni effet de base."
+    },
+    {
+     "niveau": 2,
+     "mesure": "+3 pts de taux (28 %)",
+     "gain_mds": 6.9,
+     "faisabilite": 1,
+     "arguments": [
+      "Aligne la France sur le taux moyen UE-OCDE avancé",
+      "Compense une partie des baisses de taux 2018-2022"
+     ],
+     "obstacles": [
+      "Base mobile : taux nominal maximal 36,1 % en 2026 avec surtaxe, le plus élevé de l'UE et de l'OCDE (FIPECO) ; Pilier 2 fixe un plancher de 15 % pour les grands groupes",
+      "Élasticité de l'investissement au coût du capital de -0,4 à long terme (Insee, modèle Mésange, via FIPECO)"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — L'impôt sur les sociétés (fiche ; IS 66,9 Md€ en 2025, élasticité de l'investissement au coût du capital -0,4)",
+       "url": "https://www.fipeco.fr/fiche/Limp%C3%B4t-sur-les-soci%C3%A9t%C3%A9s",
+       "ouverte": true
+      },
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Pas de chiffrage officiel ouvert du rendement d'un point de taux. Ordre de grandeur : IS net 57,3 Md€ / 25 % = 2,3 Md€ par point, sans élasticité ni effet de base. 3 x 2,3."
+    },
+    {
+     "niveau": 3,
+     "mesure": "+5 pts de taux (30 %)",
+     "gain_mds": 11.5,
+     "faisabilite": 2,
+     "arguments": [
+      "Rendement notable pour un impôt déjà « normalisé »",
+      "Remet la fiscalité des PME dans le droit commun"
+     ],
+     "obstacles": [
+      "Base mobile : taux nominal maximal 36,1 % en 2026 avec surtaxe, le plus élevé de l'UE et de l'OCDE (FIPECO) ; Pilier 2 fixe un plancher de 15 % pour les grands groupes",
+      "Élasticité de l'investissement au coût du capital de -0,4 à long terme (Insee, modèle Mésange, via FIPECO)"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — L'impôt sur les sociétés (fiche ; IS 66,9 Md€ en 2025, élasticité de l'investissement au coût du capital -0,4)",
+       "url": "https://www.fipeco.fr/fiche/Limp%C3%B4t-sur-les-soci%C3%A9t%C3%A9s",
+       "ouverte": true
+      },
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Pas de chiffrage officiel ouvert du rendement d'un point de taux. Ordre de grandeur : IS net 57,3 Md€ / 25 % = 2,3 Md€ par point, sans élasticité ni effet de base. 5 x 2,3 = 11,5 ; la suppression du taux réduit PME (15 %), non chiffrée, est retirée du cran."
+    }
+   ],
+   "crans_baisse": [
+    {
+     "niveau": 1,
+     "mesure": "-1 pt de taux (24 %)",
+     "cout_mds": 2.3,
+     "faisabilite": 1,
+     "arguments": [
+      "Soutient l'investissement et la compétitivité",
+      "Gain d'attractivité"
+     ],
+     "obstacles": [
+      "Perte de recette immédiate sans effet démontré sur la croissance",
+      "Peu de gain si l'assiette bascule vers l'étranger"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — L'impôt sur les sociétés (fiche ; IS 66,9 Md€ en 2025, élasticité de l'investissement au coût du capital -0,4)",
+       "url": "https://www.fipeco.fr/fiche/Limp%C3%B4t-sur-les-soci%C3%A9t%C3%A9s",
+       "ouverte": true
+      },
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Pas de chiffrage officiel ouvert du rendement d'un point de taux. Ordre de grandeur : IS net 57,3 Md€ / 25 % = 2,3 Md€ par point, sans élasticité ni effet de base."
+    },
+    {
+     "niveau": 2,
+     "mesure": "-3 pts (22 %)",
+     "cout_mds": 6.9,
+     "faisabilite": 1,
+     "arguments": [
+      "Rapproche du taux moyen européen",
+      "Favorise l'investissement productif"
+     ],
+     "obstacles": [
+      "Coût budgétaire important pour effet incertain sur l'investissement (littérature mitigée)",
+      "Pilier 2 (15 %) n'impose pas de baisse ni de hausse"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — L'impôt sur les sociétés (fiche ; IS 66,9 Md€ en 2025, élasticité de l'investissement au coût du capital -0,4)",
+       "url": "https://www.fipeco.fr/fiche/Limp%C3%B4t-sur-les-soci%C3%A9t%C3%A9s",
+       "ouverte": true
+      },
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Pas de chiffrage officiel ouvert du rendement d'un point de taux. Ordre de grandeur : IS net 57,3 Md€ / 25 % = 2,3 Md€ par point, sans élasticité ni effet de base. 3 x 2,3."
+    },
+    {
+     "niveau": 3,
+     "mesure": "-5 pts (20 %)",
+     "cout_mds": 11.5,
+     "faisabilite": 2,
+     "arguments": [
+      "Compétitivité fiscale maximale",
+      "Rapproche des pays à IS bas (Irlande 12,5 %, Pays-Bas)"
+     ],
+     "obstacles": [
+      "Coût ≈ 20 % du produit de l'IS, difficile à financer",
+      "Course au moins-disant fiscal européen"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — L'impôt sur les sociétés (fiche ; IS 66,9 Md€ en 2025, élasticité de l'investissement au coût du capital -0,4)",
+       "url": "https://www.fipeco.fr/fiche/Limp%C3%B4t-sur-les-soci%C3%A9t%C3%A9s",
+       "ouverte": true
+      },
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Pas de chiffrage officiel ouvert du rendement d'un point de taux. Ordre de grandeur : IS net 57,3 Md€ / 25 % = 2,3 Md€ par point, sans élasticité ni effet de base. 5 x 2,3 = 11,5 (≈ 20 % du produit)."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+     "url": "https://www.insee.fr/fr/statistiques/8574705",
+     "ouverte": true
+    },
+    {
+     "titre": "FIPECO — L'impôt sur les sociétés (fiche ; IS 66,9 Md€ en 2025, élasticité de l'investissement au coût du capital -0,4)",
+     "url": "https://www.fipeco.fr/fiche/Limp%C3%B4t-sur-les-soci%C3%A9t%C3%A9s",
+     "ouverte": true
+    }
+   ],
+   "note_base": "IS net de crédits d'impôt, hors contribution sociale (1,2 Md€). La contribution exceptionnelle sur les grandes entreprises (prévue ~8 Md€ en 2025 puis ~4-6 Md€ en 2026) vient en sus."
+  },
+  {
+   "id": "cot_emp",
+   "nom": "Cotisations sociales employeurs",
+   "montant_mds": 293.0,
+   "annee_montant": 2024,
+   "source_montant": {
+    "titre": "Insee, tableau 3.217 (2024) : cotisations sociales effectives 431,1 Md€ ; ventilation employeurs 68 % (FIPECO, 2025, après allègements) = 293 Md€",
+    "url": "https://www.insee.fr/fr/statistiques/8574705",
+    "ouverte": true
+   },
+   "montant_verifie": false,
+   "crans_hausse": [
+    {
+     "niveau": 1,
+     "mesure": "+0,5 pt de cotisations patronales",
+     "gain_mds": 3.7,
+     "faisabilite": 1,
+     "arguments": [
+      "Finance la protection sociale en s'appuyant sur l'assiette salaires",
+      "Mesure simple et rapide"
+     ],
+     "obstacles": [
+      "Hausse du coût du travail, la France est déjà en tête de l'UE pour les prélèvements à la charge des employeurs (FIPECO)",
+      "Effet négatif sur l'emploi peu qualifié"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — Les cotisations sociales (fiche ; 443 Md€ en 2025, 68 % employeurs / 32 % ménages, 1 pt = 10,8 Md€, assiette 1 078 Md€)",
+       "url": "https://www.fipeco.fr/fiche/Les-cotisations-sociales",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Assiette 2025 (FIPECO) : 738 Md€ de rémunérations brutes du privé non agricole, 171 de traitements publics, 105 de revenus d'indépendants (total 1 078) ; 1 pt appliqué à toute l'assiette = 10,8 Md€. Pour les seuls employeurs du privé : 738 x 1 % = 7,4 Md€. 0,5 pt = 3,7."
+    },
+    {
+     "niveau": 2,
+     "mesure": "+1 pt de cotisations patronales",
+     "gain_mds": 7.4,
+     "faisabilite": 1,
+     "arguments": [
+      "Prélèvement dont le coût est partiellement supporté par les salaires à terme",
+      "Ressources dédiées à la Sécurité sociale"
+     ],
+     "obstacles": [
+      "Hausse du coût du travail : la France est au 1er rang de l'UE pour les prélèvements à la charge des employeurs (FIPECO)",
+      "Macro (Insee/DG Trésor via Copeps) : +1 pt de PIB de cotisations patronales = -1 % de PIB et ~-320 000 emplois à 5 ans"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — Les cotisations sociales (fiche ; 443 Md€ en 2025, 68 % employeurs / 32 % ménages, 1 pt = 10,8 Md€, assiette 1 078 Md€)",
+       "url": "https://www.fipeco.fr/fiche/Les-cotisations-sociales",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Assiette 2025 (FIPECO) : 738 Md€ de rémunérations brutes du privé non agricole, 171 de traitements publics, 105 de revenus d'indépendants (total 1 078) ; 1 pt appliqué à toute l'assiette = 10,8 Md€. Pour les seuls employeurs du privé : 738 x 1 % = 7,4 Md€. Borne haute 10,8 Md€ si tous employeurs et indépendants sont inclus."
+    },
+    {
+     "niveau": 3,
+     "mesure": "+1 pt et réduction de 15 % des allègements généraux",
+     "gain_mds": 13.3,
+     "faisabilite": 2,
+     "arguments": [
+      "Les allègements généraux (39,1 Md€ en 2025 jusqu'à 1,6 Smic) sont critiqués pour les trappes à bas salaires (Bozio-Wasmer 2024, via FIPECO)",
+      "Rééquilibre le financement vers les entreprises"
+     ],
+     "obstacles": [
+      "Risque pour l'emploi au voisinage du Smic : 40 000 à 70 000 emplois par Md€ d'allègement ex ante (FIPECO)",
+      "Taux employeur ~7 % au Smic, ~40 % à 1,6 Smic, 47 % au-delà de 3,5 Smic (FIPECO 2025)"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — Les cotisations sociales (fiche ; 443 Md€ en 2025, 68 % employeurs / 32 % ménages, 1 pt = 10,8 Md€, assiette 1 078 Md€)",
+       "url": "https://www.fipeco.fr/fiche/Les-cotisations-sociales",
+       "ouverte": true
+      },
+      {
+       "titre": "FIPECO — Les allègements de cotisations patronales sur les bas salaires (39,1 Md€ en 2025)",
+       "url": "https://www.fipeco.fr/fiche/Les-all%C3%A8gements-de-cotisations-sociales-patronales-sur-les-bas-salaires",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Assiette 2025 (FIPECO) : 738 Md€ de rémunérations brutes du privé non agricole, 171 de traitements publics, 105 de revenus d'indépendants (total 1 078) ; 1 pt appliqué à toute l'assiette = 10,8 Md€. Pour les seuls employeurs du privé : 738 x 1 % = 7,4 Md€. Cran 2 + 15 % x 39,1 Md€ (allègements jusqu'à 1,6 Smic en 2025, FIPECO) = +5,9 -> 13,3."
+    }
+   ],
+   "crans_baisse": [
+    {
+     "niveau": 1,
+     "mesure": "-0,5 pt de cotisations patronales",
+     "cout_mds": 3.7,
+     "faisabilite": 1,
+     "arguments": [
+      "Réduit le coût du travail",
+      "Soutient l'emploi"
+     ],
+     "obstacles": [
+      "Perte de recettes de la Sécu",
+      "Peu d'effet à partir d'un certain niveau (trappes à bas salaires)"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — Les cotisations sociales (fiche ; 443 Md€ en 2025, 68 % employeurs / 32 % ménages, 1 pt = 10,8 Md€, assiette 1 078 Md€)",
+       "url": "https://www.fipeco.fr/fiche/Les-cotisations-sociales",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Assiette 2025 (FIPECO) : 738 Md€ de rémunérations brutes du privé non agricole, 171 de traitements publics, 105 de revenus d'indépendants (total 1 078) ; 1 pt appliqué à toute l'assiette = 10,8 Md€. Pour les seuls employeurs du privé : 738 x 1 % = 7,4 Md€."
+    },
+    {
+     "niveau": 2,
+     "mesure": "-1 pt de cotisations patronales",
+     "cout_mds": 7.4,
+     "faisabilite": 1,
+     "arguments": [
+      "Gain de compétitivité-coût",
+      "Redonne des marges de négociation salariale"
+     ],
+     "obstacles": [
+      "Coût de 8 Md€ sans compensation",
+      "Effet sur l'emploi plus faible qu'en bas de l'échelle"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — Les cotisations sociales (fiche ; 443 Md€ en 2025, 68 % employeurs / 32 % ménages, 1 pt = 10,8 Md€, assiette 1 078 Md€)",
+       "url": "https://www.fipeco.fr/fiche/Les-cotisations-sociales",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Assiette 2025 (FIPECO) : 738 Md€ de rémunérations brutes du privé non agricole, 171 de traitements publics, 105 de revenus d'indépendants (total 1 078) ; 1 pt appliqué à toute l'assiette = 10,8 Md€. Pour les seuls employeurs du privé : 738 x 1 % = 7,4 Md€."
+    },
+    {
+     "niveau": 3,
+     "mesure": "-1 pt et extension des allègements généraux jusqu'à 3,5 Smic",
+     "cout_mds": 17.4,
+     "faisabilite": 1,
+     "arguments": [
+      "Réduit la « trappe à bas salaires »",
+      "Aligne la France sur la moyenne UE : écart de 2,1 pts de PIB sur le travail"
+     ],
+     "obstacles": [
+      "Coût élevé, effet sur l'emploi qualifié incertain",
+      "Ciblage d'allègements déjà jugés peu efficients"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — Les cotisations sociales (fiche ; 443 Md€ en 2025, 68 % employeurs / 32 % ménages, 1 pt = 10,8 Md€, assiette 1 078 Md€)",
+       "url": "https://www.fipeco.fr/fiche/Les-cotisations-sociales",
+       "ouverte": true
+      },
+      {
+       "titre": "FIPECO — Les allègements de cotisations patronales sur les bas salaires (39,1 Md€ en 2025)",
+       "url": "https://www.fipeco.fr/fiche/Les-all%C3%A8gements-de-cotisations-sociales-patronales-sur-les-bas-salaires",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Assiette 2025 (FIPECO) : 738 Md€ de rémunérations brutes du privé non agricole, 171 de traitements publics, 105 de revenus d'indépendants (total 1 078) ; 1 pt appliqué à toute l'assiette = 10,8 Md€. Pour les seuls employeurs du privé : 738 x 1 % = 7,4 Md€. Cran 2 + ~10 Md€ pour l'extension 2,5 -> 3,5 Smic (non chiffré en source ouverte, ordre de grandeur)."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+     "url": "https://www.insee.fr/fr/statistiques/8574705",
+     "ouverte": true
+    },
+    {
+     "titre": "FIPECO — Les cotisations sociales (fiche ; 443 Md€ en 2025, 68 % employeurs / 32 % ménages, 1 pt = 10,8 Md€, assiette 1 078 Md€)",
+     "url": "https://www.fipeco.fr/fiche/Les-cotisations-sociales",
+     "ouverte": true
+    },
+    {
+     "titre": "FIPECO — Les allègements de cotisations patronales sur les bas salaires (39,1 Md€ en 2025)",
+     "url": "https://www.fipeco.fr/fiche/Les-all%C3%A8gements-de-cotisations-sociales-patronales-sur-les-bas-salaires",
+     "ouverte": true
+    }
+   ],
+   "note_base": "Ventilation estimée (68/32 de FIPECO 2025 appliquée au total Insee 2024) : le montant employeurs n'est pas publié isolément en source ouverte retrouvée. Hors cotisations imputées (51,2 Md€)."
+  },
+  {
+   "id": "cot_sal",
+   "nom": "Cotisations sociales salariés (et assurés non salariés)",
+   "montant_mds": 138.0,
+   "annee_montant": 2024,
+   "source_montant": {
+    "titre": "Insee, tableau 3.217 (2024) : cotisations sociales effectives 431,1 Md€ ; part ménages 32 % (FIPECO, 2025) = 138 Md€ (salariés + indépendants + inactifs)",
+    "url": "https://www.insee.fr/fr/statistiques/8574705",
+    "ouverte": true
+   },
+   "montant_verifie": false,
+   "crans_hausse": [
+    {
+     "niveau": 1,
+     "mesure": "+0,5 pt de cotisations salariales",
+     "gain_mds": 4.5,
+     "faisabilite": 1,
+     "arguments": [
+      "Prélèvement sur les revenus du travail contributif (retraite, chômage)",
+      "Souplesse de pilotage"
+     ],
+     "obstacles": [
+      "Réduit le salaire net, risque sur le pouvoir d'achat",
+      "Hausse partiellement compensée par la déductibilité"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — Les cotisations sociales (fiche ; 443 Md€ en 2025, 68 % employeurs / 32 % ménages, 1 pt = 10,8 Md€, assiette 1 078 Md€)",
+       "url": "https://www.fipeco.fr/fiche/Les-cotisations-sociales",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Assiette salariés 2025 (FIPECO) : 738 Md€ (privé) + 171 Md€ (public) = 909 Md€ ; 1 pt = ~9,1 Md€ (surestimation : plafonds de cotisation sur certaines branches). 0,5 pt = 4,5."
+    },
+    {
+     "niveau": 2,
+     "mesure": "+1 pt de cotisations salariales",
+     "gain_mds": 9.1,
+     "faisabilite": 1,
+     "arguments": [
+      "Rendement sans toucher aux entreprises",
+      "Maintient le coût du travail employeur"
+     ],
+     "obstacles": [
+      "Impact direct sur le salaire net (0,8 % du net)",
+      "Réduit l'incitation au travail"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — Les cotisations sociales (fiche ; 443 Md€ en 2025, 68 % employeurs / 32 % ménages, 1 pt = 10,8 Md€, assiette 1 078 Md€)",
+       "url": "https://www.fipeco.fr/fiche/Les-cotisations-sociales",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Assiette salariés 2025 (FIPECO) : 738 Md€ (privé) + 171 Md€ (public) = 909 Md€ ; 1 pt = ~9,1 Md€ (surestimation : plafonds de cotisation sur certaines branches)."
+    },
+    {
+     "niveau": 3,
+     "mesure": "+2 pts de cotisations salariales",
+     "gain_mds": 18.2,
+     "faisabilite": 2,
+     "arguments": [
+      "Rendement important",
+      "Peut financer un rééquilibrage du coût du travail"
+     ],
+     "obstacles": [
+      "Chute du revenu net, France 5e rang UE pour les prélèvements sur le travail",
+      "Risque de contestation sociale"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — Les cotisations sociales (fiche ; 443 Md€ en 2025, 68 % employeurs / 32 % ménages, 1 pt = 10,8 Md€, assiette 1 078 Md€)",
+       "url": "https://www.fipeco.fr/fiche/Les-cotisations-sociales",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Assiette salariés 2025 (FIPECO) : 738 Md€ (privé) + 171 Md€ (public) = 909 Md€ ; 1 pt = ~9,1 Md€ (surestimation : plafonds de cotisation sur certaines branches). 2 pts = 18,2."
+    }
+   ],
+   "crans_baisse": [
+    {
+     "niveau": 1,
+     "mesure": "-0,5 pt de cotisations salariales",
+     "cout_mds": 4.5,
+     "faisabilite": 1,
+     "arguments": [
+      "Hausse du salaire net",
+      "Soutient la consommation"
+     ],
+     "obstacles": [
+      "Perte de ressources Sécu",
+      "Faible lisibilité"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — Les cotisations sociales (fiche ; 443 Md€ en 2025, 68 % employeurs / 32 % ménages, 1 pt = 10,8 Md€, assiette 1 078 Md€)",
+       "url": "https://www.fipeco.fr/fiche/Les-cotisations-sociales",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Assiette salariés 2025 (FIPECO) : 738 Md€ (privé) + 171 Md€ (public) = 909 Md€ ; 1 pt = ~9,1 Md€ (surestimation : plafonds de cotisation sur certaines branches)."
+    },
+    {
+     "niveau": 2,
+     "mesure": "-1 pt",
+     "cout_mds": 9.1,
+     "faisabilite": 1,
+     "arguments": [
+      "Plus de salaire net sans coût pour l'employeur",
+      "Précédent : suppression des cotisations salariales maladie et chômage 2018"
+     ],
+     "obstacles": [
+      "Coût de 7 Md€",
+      "Dépendance de la protection sociale à la CSG"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — Les cotisations sociales (fiche ; 443 Md€ en 2025, 68 % employeurs / 32 % ménages, 1 pt = 10,8 Md€, assiette 1 078 Md€)",
+       "url": "https://www.fipeco.fr/fiche/Les-cotisations-sociales",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Assiette salariés 2025 (FIPECO) : 738 Md€ (privé) + 171 Md€ (public) = 909 Md€ ; 1 pt = ~9,1 Md€ (surestimation : plafonds de cotisation sur certaines branches)."
+    },
+    {
+     "niveau": 3,
+     "mesure": "-2 pts",
+     "cout_mds": 18.2,
+     "faisabilite": 1,
+     "arguments": [
+      "Gain de pouvoir d'achat",
+      "Réduit le coin fiscal sur le travail"
+     ],
+     "obstacles": [
+      "Coût de 14 Md€ non financé",
+      "Fragilise le financement contributif"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — Les cotisations sociales (fiche ; 443 Md€ en 2025, 68 % employeurs / 32 % ménages, 1 pt = 10,8 Md€, assiette 1 078 Md€)",
+       "url": "https://www.fipeco.fr/fiche/Les-cotisations-sociales",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Assiette salariés 2025 (FIPECO) : 738 Md€ (privé) + 171 Md€ (public) = 909 Md€ ; 1 pt = ~9,1 Md€ (surestimation : plafonds de cotisation sur certaines branches)."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+     "url": "https://www.insee.fr/fr/statistiques/8574705",
+     "ouverte": true
+    },
+    {
+     "titre": "FIPECO — Les cotisations sociales (fiche ; 443 Md€ en 2025, 68 % employeurs / 32 % ménages, 1 pt = 10,8 Md€, assiette 1 078 Md€)",
+     "url": "https://www.fipeco.fr/fiche/Les-cotisations-sociales",
+     "ouverte": true
+    }
+   ],
+   "note_base": "Ventilation estimée (32 % de FIPECO 2025 appliqués au total Insee 2024) : inclut les indépendants et les cotisations volontaires, pas seulement les salariés."
+  },
+  {
+   "id": "tf",
+   "nom": "Taxe foncière (bâti et non bâti)",
+   "montant_mds": 42.9,
+   "annee_montant": 2024,
+   "source_montant": {
+    "titre": "Insee, tableau 3.217 (2024) : taxe foncière 42,9 Md€ (ménages 26,1 ; hors ménages 16,8) ; FIPECO : TFB 43,1 Md€ en 2025",
+    "url": "https://www.insee.fr/fr/statistiques/8574705",
+    "ouverte": true
+   },
+   "montant_verifie": true,
+   "crans_hausse": [
+    {
+     "niveau": 1,
+     "mesure": "Revalorisation forfaitaire des valeurs locatives +2 pts au-dessus de la loi",
+     "gain_mds": 0.9,
+     "faisabilite": 1,
+     "arguments": [
+      "Les bases sont obsolètes (valeurs de 1970) selon la Cour des comptes",
+      "Impôt peu mobile, assiette immobilière"
+     ],
+     "obstacles": [
+      "Libre administration des collectivités : les taux sont fixés localement, un relèvement national passe par les valeurs locatives",
+      "Revalorisation forfaitaire déjà égale à l'inflation depuis 2018 (FIPECO) ; taux moyen de la TFB 39,8 % en 2025"
+     ],
+     "sources": [
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      },
+      {
+       "titre": "FIPECO — Les impôts locaux (TFB 43,1 Md€ en 2025, taux moyen 39,8 %)",
+       "url": "https://www.fipeco.fr/fiche/Les-imp%C3%B4ts-locaux",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Application proportionnelle à 42,9 Md€ ; pas de chiffrage officiel ouvert (1 % de taux ≈ 0,43 Md€). Les taux sont votés localement : le levier national est la valeur locative. 2 % x 42,9 = 0,86."
+    },
+    {
+     "niveau": 2,
+     "mesure": "Relèvement de 10 % des taux/valeurs locatives (une fois)",
+     "gain_mds": 4.3,
+     "faisabilite": 1,
+     "arguments": [
+      "Impôt peu élastique et peu délocalisable",
+      "Finance les collectivités"
+     ],
+     "obstacles": [
+      "Libre administration des collectivités : les taux sont fixés localement, un relèvement national passe par les valeurs locatives",
+      "Revalorisation forfaitaire déjà égale à l'inflation depuis 2018 (FIPECO) ; taux moyen de la TFB 39,8 % en 2025"
+     ],
+     "sources": [
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      },
+      {
+       "titre": "FIPECO — Les impôts locaux (TFB 43,1 Md€ en 2025, taux moyen 39,8 %)",
+       "url": "https://www.fipeco.fr/fiche/Les-imp%C3%B4ts-locaux",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Application proportionnelle à 42,9 Md€ ; pas de chiffrage officiel ouvert (1 % de taux ≈ 0,43 Md€). Les taux sont votés localement : le levier national est la valeur locative. 10 % x 42,9."
+    },
+    {
+     "niveau": 3,
+     "mesure": "Relèvement de 20 % des taux/valeurs locatives",
+     "gain_mds": 8.6,
+     "faisabilite": 2,
+     "arguments": [
+      "Rendement notable sur un impôt jugé sous-dimensionné",
+      "Réforme de l'assiette (révision des valeurs locatives des habitations prévue en 2028) prépare la hausse"
+     ],
+     "obstacles": [
+      "Libre administration des collectivités : les taux sont fixés localement, un relèvement national passe par les valeurs locatives",
+      "Revalorisation forfaitaire déjà égale à l'inflation depuis 2018 (FIPECO) ; taux moyen de la TFB 39,8 % en 2025"
+     ],
+     "sources": [
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      },
+      {
+       "titre": "FIPECO — Les impôts locaux (TFB 43,1 Md€ en 2025, taux moyen 39,8 %)",
+       "url": "https://www.fipeco.fr/fiche/Les-imp%C3%B4ts-locaux",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Application proportionnelle à 42,9 Md€ ; pas de chiffrage officiel ouvert (1 % de taux ≈ 0,43 Md€). Les taux sont votés localement : le levier national est la valeur locative. 20 % x 42,9 ; la suppression de l'abattement de plafonnement, non chiffrée, est retirée."
+    }
+   ],
+   "crans_baisse": [
+    {
+     "niveau": 1,
+     "mesure": "Baisse de 5 % de la taxe foncière",
+     "cout_mds": 2.1,
+     "faisabilite": 1,
+     "arguments": [
+      "Allège le coût de la propriété",
+      "Peu de distorsion"
+     ],
+     "obstacles": [
+      "Perte de ressources pour les collectivités locales sans compensation",
+      "Bénéficie surtout aux propriétaires patrimoniaux"
+     ],
+     "sources": [
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      },
+      {
+       "titre": "FIPECO — Les impôts locaux (TFB 43,1 Md€ en 2025, taux moyen 39,8 %)",
+       "url": "https://www.fipeco.fr/fiche/Les-imp%C3%B4ts-locaux",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Application proportionnelle à 42,9 Md€ ; pas de chiffrage officiel ouvert (1 % de taux ≈ 0,43 Md€). Les taux sont votés localement : le levier national est la valeur locative. 5 % x 42,9."
+    },
+    {
+     "niveau": 2,
+     "mesure": "Baisse de 10 %",
+     "cout_mds": 4.3,
+     "faisabilite": 1,
+     "arguments": [
+      "Réduit la pression sur les propriétaires",
+      "Peut stimuler l'investissement immobilier"
+     ],
+     "obstacles": [
+      "Autonomie financière des collectivités locales",
+      "Coût compensé par l'État"
+     ],
+     "sources": [
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      },
+      {
+       "titre": "FIPECO — Les impôts locaux (TFB 43,1 Md€ en 2025, taux moyen 39,8 %)",
+       "url": "https://www.fipeco.fr/fiche/Les-imp%C3%B4ts-locaux",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Application proportionnelle à 42,9 Md€ ; pas de chiffrage officiel ouvert (1 % de taux ≈ 0,43 Md€). Les taux sont votés localement : le levier national est la valeur locative. 10 % x 42,9."
+    },
+    {
+     "niveau": 3,
+     "mesure": "Baisse de 25 % de la taxe foncière",
+     "cout_mds": 10.7,
+     "faisabilite": 2,
+     "arguments": [
+      "Protège les retraités propriétaires",
+      "Allège une charge locale jugée lourde"
+     ],
+     "obstacles": [
+      "Coût, ciblage médiocre et perte de recettes locales",
+      "Inégalités entre territoires"
+     ],
+     "sources": [
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      },
+      {
+       "titre": "FIPECO — Les impôts locaux (TFB 43,1 Md€ en 2025, taux moyen 39,8 %)",
+       "url": "https://www.fipeco.fr/fiche/Les-imp%C3%B4ts-locaux",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Application proportionnelle à 42,9 Md€ ; pas de chiffrage officiel ouvert (1 % de taux ≈ 0,43 Md€). Les taux sont votés localement : le levier national est la valeur locative. 25 % x 42,9 = 10,7 ; le ciblage « résidence principale des plus de 75 ans » est retiré faute de chiffrage."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+     "url": "https://www.insee.fr/fr/statistiques/8574705",
+     "ouverte": true
+    },
+    {
+     "titre": "FIPECO — Les impôts locaux (TFB 43,1 Md€ en 2025, taux moyen 39,8 %)",
+     "url": "https://www.fipeco.fr/fiche/Les-imp%C3%B4ts-locaux",
+     "ouverte": true
+    },
+    {
+     "titre": "FIPECO — Les impôts sur la production (129,0 Md€ en 2024 ; CVAE 3,9, CFE 7,7, C3S 5,2)",
+     "url": "https://www.fipeco.fr/fiche/Les-imp%C3%B4ts-sur-la-production",
+     "ouverte": true
+    }
+   ],
+   "note_base": "Tous payeurs, toutes APU (collectivités). Le poste « impôts de production » est recentré hors taxe foncière pour éviter tout double compte (la taxe foncière hors ménages, 16,8 Md€, est ici)."
+  },
+  {
+   "id": "succession",
+   "nom": "Droits de succession et donations",
+   "montant_mds": 20.8,
+   "annee_montant": 2024,
+   "source_montant": {
+    "titre": "Insee, tableau 3.217 (2024) : droits de mutation à titre gratuit 20,8 Md€ (successions 15,9 + donations 4,9) ; FIPECO : 21,1 Md€ en 2025",
+    "url": "https://www.insee.fr/fr/statistiques/8574705",
+    "ouverte": true
+   },
+   "montant_verifie": true,
+   "crans_hausse": [
+    {
+     "niveau": 1,
+     "mesure": "Abattement en ligne directe abaissé de 100 000 € à 50 000 €",
+     "gain_mds": 3.0,
+     "faisabilite": 1,
+     "arguments": [
+      "Taxe sur des transferts non gagnés",
+      "Précédent : abattement abaissé de 159 325 à 100 000 € en 2012 (LFR 2011)"
+     ],
+     "obstacles": [
+      "Optimisation : d'après le CAE (note n° 69, 2021), ~40 % du patrimoine transmis échappe aux flux taxés et plus de 85 % des successions en ligne directe ne sont pas imposées (LégiFiscal)"
+     ],
+     "sources": [
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      },
+      {
+       "titre": "FIPECO — Les impôts sur le patrimoine des ménages (IFI 2,7 Md€ en 2025, ISF 5,1 Md€ en 2017, DMTG 21,1 Md€ en 2025)",
+       "url": "https://www.fipeco.fr/fiche/Les-imp%C3%B4ts-sur-le-patrimoine-des-m%C3%A9nages",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Ordre de grandeur calculé ; pas de chiffrage officiel ouvert de cette mesure précise. Plafond de référence : le CAE chiffre sa réforme d'ensemble à 12-19 Md€ selon les niches supprimées. ~250 000 successions taxables x 50 000 € x ~20 % de taux effectif."
+    },
+    {
+     "niveau": 2,
+     "mesure": "Abattement assurance-vie ramené de 152 500 € à 100 000 € et rappel fiscal étendu",
+     "gain_mds": 4.5,
+     "faisabilite": 1,
+     "arguments": [
+      "Réduit des niches (assurance-vie) peu ciblées sur le patrimoine",
+      "Équité entre modes de transmission"
+     ],
+     "obstacles": [
+      "Optimisation : d'après le CAE (note n° 69, 2021), ~40 % du patrimoine transmis échappe aux flux taxés et plus de 85 % des successions en ligne directe ne sont pas imposées (LégiFiscal)"
+     ],
+     "sources": [
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      },
+      {
+       "titre": "FIPECO — Les impôts sur le patrimoine des ménages (IFI 2,7 Md€ en 2025, ISF 5,1 Md€ en 2017, DMTG 21,1 Md€ en 2025)",
+       "url": "https://www.fipeco.fr/fiche/Les-imp%C3%B4ts-sur-le-patrimoine-des-m%C3%A9nages",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Ordre de grandeur calculé ; pas de chiffrage officiel ouvert de cette mesure précise. Plafond de référence : le CAE chiffre sa réforme d'ensemble à 12-19 Md€ selon les niches supprimées. Cran 1 + ~1,5 Md€ (flux d'assurance-vie transmis ~30 Md€/an x 5 %)."
+    },
+    {
+     "niveau": 3,
+     "mesure": "Barème plus progressif (tranche 60 % au-delà de 1,8 M€)",
+     "gain_mds": 7.0,
+     "faisabilite": 2,
+     "arguments": [
+      "Cible les patrimoines les plus élevés",
+      "Faible nombre de contribuables concernés (~1 %)"
+     ],
+     "obstacles": [
+      "Optimisation : d'après le CAE (note n° 69, 2021), ~40 % du patrimoine transmis échappe aux flux taxés et plus de 85 % des successions en ligne directe ne sont pas imposées (LégiFiscal)",
+      "Mobilité du patrimoine et exil fiscal des héritiers : pas de chiffre robuste"
+     ],
+     "sources": [
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      },
+      {
+       "titre": "FIPECO — Les impôts sur le patrimoine des ménages (IFI 2,7 Md€ en 2025, ISF 5,1 Md€ en 2017, DMTG 21,1 Md€ en 2025)",
+       "url": "https://www.fipeco.fr/fiche/Les-imp%C3%B4ts-sur-le-patrimoine-des-m%C3%A9nages",
+       "ouverte": true
+      },
+      {
+       "titre": "LégiFiscal — Note CAE n° 69 « Repenser l'héritage » (déc. 2021) : 12 à 19 Md€ selon les niches supprimées",
+       "url": "https://www.legifiscal.fr/actualites-fiscales/3019-cae-conseil-analyse-economique-heritage-nouvelle-proposition.html",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Ordre de grandeur calculé ; pas de chiffrage officiel ouvert de cette mesure précise. Plafond de référence : le CAE chiffre sa réforme d'ensemble à 12-19 Md€ selon les niches supprimées. Cran 2 + ~2,5 Md€, très inférieur au plafond CAE de 12-19 Md€."
+    }
+   ],
+   "crans_baisse": [
+    {
+     "niveau": 1,
+     "mesure": "Abattement en ligne directe relevé à 150 000 €",
+     "cout_mds": 2.0,
+     "faisabilite": 1,
+     "arguments": [
+      "Allège la transmission familiale",
+      "Neutralise l'érosion de l'abattement"
+     ],
+     "obstacles": [
+      "Coût pour les finances publiques",
+      "Profite aux familles ayant déjà du patrimoine"
+     ],
+     "sources": [
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      },
+      {
+       "titre": "FIPECO — Les impôts sur le patrimoine des ménages (IFI 2,7 Md€ en 2025, ISF 5,1 Md€ en 2017, DMTG 21,1 Md€ en 2025)",
+       "url": "https://www.fipeco.fr/fiche/Les-imp%C3%B4ts-sur-le-patrimoine-des-m%C3%A9nages",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Ordre de grandeur calculé ; pas de chiffrage officiel ouvert de cette mesure précise. Plafond de référence : le CAE chiffre sa réforme d'ensemble à 12-19 Md€ selon les niches supprimées."
+    },
+    {
+     "niveau": 2,
+     "mesure": "Abattement relevé à 300 000 € et exonération des donations aux petits-enfants",
+     "cout_mds": 5.0,
+     "faisabilite": 1,
+     "arguments": [
+      "Réduit le poids des droits sur les classes moyennes",
+      "Accroît la circulation du patrimoine"
+     ],
+     "obstacles": [
+      "Coût de ~25 % de la recette actuelle",
+      "Critique de l'héritage non gagné"
+     ],
+     "sources": [
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      },
+      {
+       "titre": "FIPECO — Les impôts sur le patrimoine des ménages (IFI 2,7 Md€ en 2025, ISF 5,1 Md€ en 2017, DMTG 21,1 Md€ en 2025)",
+       "url": "https://www.fipeco.fr/fiche/Les-imp%C3%B4ts-sur-le-patrimoine-des-m%C3%A9nages",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Ordre de grandeur calculé ; pas de chiffrage officiel ouvert de cette mesure précise. Plafond de référence : le CAE chiffre sa réforme d'ensemble à 12-19 Md€ selon les niches supprimées."
+    },
+    {
+     "niveau": 3,
+     "mesure": "Exonération en ligne directe jusqu'à 500 000 € (suppression pratique)",
+     "cout_mds": 10.0,
+     "faisabilite": 2,
+     "arguments": [
+      "Rapproche de pays sans droits de succession en ligne directe (Suède, Autriche)",
+      "Simplification"
+     ],
+     "obstacles": [
+      "Coût ≈ 50 % de la recette de la taxe",
+      "Inégalités de patrimoine, pression sur la politique d'égalité des chances"
+     ],
+     "sources": [
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      },
+      {
+       "titre": "FIPECO — Les impôts sur le patrimoine des ménages (IFI 2,7 Md€ en 2025, ISF 5,1 Md€ en 2017, DMTG 21,1 Md€ en 2025)",
+       "url": "https://www.fipeco.fr/fiche/Les-imp%C3%B4ts-sur-le-patrimoine-des-m%C3%A9nages",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Ordre de grandeur calculé ; pas de chiffrage officiel ouvert de cette mesure précise. Plafond de référence : le CAE chiffre sa réforme d'ensemble à 12-19 Md€ selon les niches supprimées. Plafond : la moitié du produit."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+     "url": "https://www.insee.fr/fr/statistiques/8574705",
+     "ouverte": true
+    },
+    {
+     "titre": "FIPECO — Les impôts sur le patrimoine des ménages (IFI 2,7 Md€ en 2025, ISF 5,1 Md€ en 2017, DMTG 21,1 Md€ en 2025)",
+     "url": "https://www.fipeco.fr/fiche/Les-imp%C3%B4ts-sur-le-patrimoine-des-m%C3%A9nages",
+     "ouverte": true
+    },
+    {
+     "titre": "LégiFiscal — Note CAE n° 69 « Repenser l'héritage » (déc. 2021) : 12 à 19 Md€ selon les niches supprimées",
+     "url": "https://www.legifiscal.fr/actualites-fiscales/3019-cae-conseil-analyse-economique-heritage-nouvelle-proposition.html",
+     "ouverte": true
+    }
+   ],
+   "note_base": "Rendement toutes APU (État + part départements)."
+  },
+  {
+   "id": "accises",
+   "nom": "Accises sur les produits énergétiques (TICPE)",
+   "montant_mds": 30.2,
+   "annee_montant": 2024,
+   "source_montant": {
+    "titre": "Insee, tableau 3.217 (2024) : accises sur les produits énergétiques (TICPE) 30,2 Md€ toutes APU ; FIPECO : 30,5 Md€ en 2025 (État 16,3 net, collectivités 12,1, AFITF 1,2)",
+    "url": "https://www.insee.fr/fr/statistiques/8574705",
+    "ouverte": true
+   },
+   "montant_verifie": true,
+   "crans_hausse": [
+    {
+     "niveau": 1,
+     "mesure": "+5 c€/L sur carburants fossiles",
+     "gain_mds": 2.3,
+     "faisabilite": 1,
+     "arguments": [
+      "Signal-prix carbone, usage moindre de carburants",
+      "Cohérent avec la transition énergétique"
+     ],
+     "obstacles": [
+      "Élasticité-prix de la demande de carburant 0,25-0,35 à court terme, 0,6-0,7 à long terme (FIPECO) : le rendement réel est inférieur au rendement brut",
+      "Le gazole a progressé de +34 % et l'essence reculé de -51 % de 1998 à 2014 (FIPECO) : l'alignement fiscal déplace la demande"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — Les taxes sur les carburants (TICPE 30,2 Md€ en 2024 ; élasticités-prix 0,25-0,35 CT, 0,6-0,7 LT)",
+       "url": "https://www.fipeco.fr/fiche/Les-taxes-sur-les-carburants",
+       "ouverte": true
+      },
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Formule : volume de carburants routiers ~45 Md L/an (hypothèse, non sourcée) x variation de taxe, hors élasticité-prix (0,25-0,35 à court terme, 0,6-0,7 à long terme selon FIPECO, qui réduisent le rendement)."
+    },
+    {
+     "niveau": 2,
+     "mesure": "+10 c€/L",
+     "gain_mds": 4.5,
+     "faisabilite": 1,
+     "arguments": [
+      "Rendement significatif",
+      "Prix du carbone encore faible par rapport au coût social"
+     ],
+     "obstacles": [
+      "Élasticité-prix de la demande de carburant 0,25-0,35 à court terme, 0,6-0,7 à long terme (FIPECO) : le rendement réel est inférieur au rendement brut",
+      "Le gazole a progressé de +34 % et l'essence reculé de -51 % de 1998 à 2014 (FIPECO) : l'alignement fiscal déplace la demande"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — Les taxes sur les carburants (TICPE 30,2 Md€ en 2024 ; élasticités-prix 0,25-0,35 CT, 0,6-0,7 LT)",
+       "url": "https://www.fipeco.fr/fiche/Les-taxes-sur-les-carburants",
+       "ouverte": true
+      },
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Formule : volume de carburants routiers ~45 Md L/an (hypothèse, non sourcée) x variation de taxe, hors élasticité-prix (0,25-0,35 à court terme, 0,6-0,7 à long terme selon FIPECO, qui réduisent le rendement)."
+    },
+    {
+     "niveau": 3,
+     "mesure": "+20 c€/L et alignement gazole/essence",
+     "gain_mds": 9.0,
+     "faisabilite": 2,
+     "arguments": [
+      "Alignement gazole/essence (+39 % de TICPE sur le gazole de 2013 à 2018, FIPECO)",
+      "Rendement stable"
+     ],
+     "obstacles": [
+      "Élasticité-prix de la demande de carburant 0,25-0,35 à court terme, 0,6-0,7 à long terme (FIPECO) : le rendement réel est inférieur au rendement brut",
+      "Le gazole a progressé de +34 % et l'essence reculé de -51 % de 1998 à 2014 (FIPECO) : l'alignement fiscal déplace la demande",
+      "Mouvement des Gilets jaunes en 2018 consécutif à la hausse de la fiscalité carbone (contexte politique)"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — Les taxes sur les carburants (TICPE 30,2 Md€ en 2024 ; élasticités-prix 0,25-0,35 CT, 0,6-0,7 LT)",
+       "url": "https://www.fipeco.fr/fiche/Les-taxes-sur-les-carburants",
+       "ouverte": true
+      },
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Formule : volume de carburants routiers ~45 Md L/an (hypothèse, non sourcée) x variation de taxe, hors élasticité-prix (0,25-0,35 à court terme, 0,6-0,7 à long terme selon FIPECO, qui réduisent le rendement)."
+    }
+   ],
+   "crans_baisse": [
+    {
+     "niveau": 1,
+     "mesure": "-5 c€/L (ristourne)",
+     "cout_mds": 2.3,
+     "faisabilite": 1,
+     "arguments": [
+      "Allège le budget des ménages dépendants de la voiture",
+      "Précédent : remise à la pompe 2022"
+     ],
+     "obstacles": [
+      "Contradiction avec la trajectoire climat",
+      "Perte de recettes à effet limité sur la consommation"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — Les taxes sur les carburants (TICPE 30,2 Md€ en 2024 ; élasticités-prix 0,25-0,35 CT, 0,6-0,7 LT)",
+       "url": "https://www.fipeco.fr/fiche/Les-taxes-sur-les-carburants",
+       "ouverte": true
+      },
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Formule : volume de carburants routiers ~45 Md L/an (hypothèse, non sourcée) x variation de taxe, hors élasticité-prix (0,25-0,35 à court terme, 0,6-0,7 à long terme selon FIPECO, qui réduisent le rendement)."
+    },
+    {
+     "niveau": 2,
+     "mesure": "-10 c€/L",
+     "cout_mds": 4.5,
+     "faisabilite": 1,
+     "arguments": [
+      "Réduit l'inflation et le coût de transport",
+      "Soutient les ménages ruraux"
+     ],
+     "obstacles": [
+      "Contradiction avec les engagements climat de la France",
+      "Subvention aux énergies fossiles"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — Les taxes sur les carburants (TICPE 30,2 Md€ en 2024 ; élasticités-prix 0,25-0,35 CT, 0,6-0,7 LT)",
+       "url": "https://www.fipeco.fr/fiche/Les-taxes-sur-les-carburants",
+       "ouverte": true
+      },
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Formule : volume de carburants routiers ~45 Md L/an (hypothèse, non sourcée) x variation de taxe, hors élasticité-prix (0,25-0,35 à court terme, 0,6-0,7 à long terme selon FIPECO, qui réduisent le rendement)."
+    },
+    {
+     "niveau": 3,
+     "mesure": "-20 c€/L (retour à la TIPP des années 2000) ",
+     "cout_mds": 9.0,
+     "faisabilite": 2,
+     "arguments": [
+      "Retour à des niveaux de taxation plus faibles",
+      "Compétitivité transport"
+     ],
+     "obstacles": [
+      "Perte de ~40 % des recettes d'ex-TICPE, contraire à l'objectif de neutralité carbone",
+      "Droit UE : minima communs de la directive 2003/96/CE (les taux français sont très supérieurs)"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO — Les taxes sur les carburants (TICPE 30,2 Md€ en 2024 ; élasticités-prix 0,25-0,35 CT, 0,6-0,7 LT)",
+       "url": "https://www.fipeco.fr/fiche/Les-taxes-sur-les-carburants",
+       "ouverte": true
+      },
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Formule : volume de carburants routiers ~45 Md L/an (hypothèse, non sourcée) x variation de taxe, hors élasticité-prix (0,25-0,35 à court terme, 0,6-0,7 à long terme selon FIPECO, qui réduisent le rendement). La remise de 2022 a coûté ~8 Md€ sur l'année (ordre de grandeur presse)."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+     "url": "https://www.insee.fr/fr/statistiques/8574705",
+     "ouverte": true
+    },
+    {
+     "titre": "FIPECO — Les taxes sur les carburants (TICPE 30,2 Md€ en 2024 ; élasticités-prix 0,25-0,35 CT, 0,6-0,7 LT)",
+     "url": "https://www.fipeco.fr/fiche/Les-taxes-sur-les-carburants",
+     "ouverte": true
+    }
+   ],
+   "note_base": "Toutes APU, hors accises électricité (4,8) et gaz (3,2). La base précédente (20,2 Md€) était la seule part nette de l'État."
+  },
+  {
+   "id": "capital",
+   "nom": "Prélèvements sur les revenus du capital mobilier (PRCM, prélèvement de solidarité, CSG sur le capital)",
+   "montant_mds": 36.5,
+   "annee_montant": 2024,
+   "source_montant": {
+    "titre": "Insee, tableau 3.217 (2024) : PRCM 3,9 + prélèvement de solidarité et autres contributions sociales 14,6 ; FIPECO/CCSS : CSG sur revenus du capital 18 Md€ (2025)",
+    "url": "https://www.insee.fr/fr/statistiques/8574705",
+    "ouverte": true
+   },
+   "montant_verifie": false,
+   "crans_hausse": [
+    {
+     "niveau": 1,
+     "mesure": "Suppression du PFU : retour au barème de l'IR avec abattement de 40 %",
+     "gain_mds": 1.5,
+     "faisabilite": 2,
+     "arguments": [
+      "Aligne l'imposition du capital sur le travail",
+      "Rendement modeste, facile à mettre en œuvre"
+     ],
+     "obstacles": [
+      "Réponse comportementale documentée : les dividendes versés par les ménages sont passés de 28,9 Md€ (2017) à 37,1 Md€ (2018) après le PFU (Sénat, 2019) ; la forte baisse de 2013 puis la forte hausse de 2018 ont réduit l'effet budgétaire estimé (FIPECO)",
+      "Effet sur l'épargne agrégée peu significatif hors exil fiscal (FIPECO) ; taux effectif sur les dividendes déjà 41 % à 1x le salaire moyen et 51 % à 20x (OCDE 2021, via FIPECO)"
+     ],
+     "sources": [
+      {
+       "titre": "Sénat, commission des finances (9/10/2019) — Évaluation ISF→IFI et PFU (coût IFI 2,9-3,45 Md€ ; PFU 1,4-1,7 Md€ pérenne selon France Stratégie ; dividendes 28,9→37,1 Md€)",
+       "url": "https://www.senat.fr/fileadmin/Fichiers/Images/commission/finances/Controle/PPT_ISF_IFI_PFU.pdf",
+       "ouverte": true
+      },
+      {
+       "titre": "FIPECO — Les prélèvements sur le capital (fiche ; évaluation France Stratégie, taxation des dividendes OCDE)",
+       "url": "https://www.fipeco.fr/fiche/Les-pr%C3%A9l%C3%A8vements-sur-le-capital",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": false,
+     "notes": "Coût pérenne du PFU évalué à 1,4-1,7 Md€ par France Stratégie (1,3 Md€ en 2018 et 1,9 Md€ en 2019 selon le Gouvernement), à comportements constants (volet IR seul). Source Sénat 2019."
+    },
+    {
+     "niveau": 2,
+     "mesure": "Suppression du PFU et +1 pt de CSG sur tous les revenus du capital (y compris ceux exclus en 2026)",
+     "gain_mds": 3.5,
+     "faisabilite": 2,
+     "arguments": [
+      "Fin d'un régime dérogatoire pour les revenus du capital",
+      "Le coût du PFU était évalué à 1,4-1,7 Md€ par le CEFC (France Stratégie)"
+     ],
+     "obstacles": [
+      "Réponse comportementale documentée : les dividendes versés par les ménages sont passés de 28,9 Md€ (2017) à 37,1 Md€ (2018) après le PFU (Sénat, 2019) ; la forte baisse de 2013 puis la forte hausse de 2018 ont réduit l'effet budgétaire estimé (FIPECO)",
+      "Effet sur l'épargne agrégée peu significatif hors exil fiscal (FIPECO) ; taux effectif sur les dividendes déjà 41 % à 1x le salaire moyen et 51 % à 20x (OCDE 2021, via FIPECO)"
+     ],
+     "sources": [
+      {
+       "titre": "Sénat, commission des finances (9/10/2019) — Évaluation ISF→IFI et PFU (coût IFI 2,9-3,45 Md€ ; PFU 1,4-1,7 Md€ pérenne selon France Stratégie ; dividendes 28,9→37,1 Md€)",
+       "url": "https://www.senat.fr/fileadmin/Fichiers/Images/commission/finances/Controle/PPT_ISF_IFI_PFU.pdf",
+       "ouverte": true
+      },
+      {
+       "titre": "IPP, Perspectives budgétaires juin 2026, chap. 2 — CDHR (1,8 Md€ mécanique, 0,7 prévu, 0,4 d'acompte 2025) et CSG capital +1,4 pt ≈ 1 Md€",
+       "url": "https://www.ipp.eu/wp-content/uploads/2026/06/chapitre_fiscalite_2026-2.pdf",
+       "ouverte": true
+      },
+      {
+       "titre": "FIPECO — L'impôt sur le revenu et la CSG (fiche, 01/06/2026 ; 1 pt de CSG = 18 Md€ en 2025, source CCSS)",
+       "url": "https://www.fipeco.fr/pdf/IR-CSG.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Cran 1 + 1 pt x ~2,0 Md€ (CSG sur le capital 18 Md€ / 9,2 pts ≈ 1,96). L'IPP chiffre +1,4 pt sur les seuls revenus du capital mobilier à ~1 Md€ (1,5 Md€ selon l'amendement gouvernemental)."
+    },
+    {
+     "niveau": 3,
+     "mesure": "Suppression du PFU et +3 pts de CSG sur tous les revenus du capital",
+     "gain_mds": 7.4,
+     "faisabilite": 2,
+     "arguments": [
+      "Taxation du capital au niveau du travail",
+      "Contribue au financement de la Sécu"
+     ],
+     "obstacles": [
+      "Réponse comportementale documentée : les dividendes versés par les ménages sont passés de 28,9 Md€ (2017) à 37,1 Md€ (2018) après le PFU (Sénat, 2019) ; la forte baisse de 2013 puis la forte hausse de 2018 ont réduit l'effet budgétaire estimé (FIPECO)",
+      "Effet sur l'épargne agrégée peu significatif hors exil fiscal (FIPECO) ; taux effectif sur les dividendes déjà 41 % à 1x le salaire moyen et 51 % à 20x (OCDE 2021, via FIPECO)",
+      "Cumul avec le barème (49 % hors CSG pour les plus hauts revenus) et la CEHR : rester sous le seuil de deux tiers du Conseil d'État (CC 2012-662 DC)"
+     ],
+     "sources": [
+      {
+       "titre": "Sénat, commission des finances (9/10/2019) — Évaluation ISF→IFI et PFU (coût IFI 2,9-3,45 Md€ ; PFU 1,4-1,7 Md€ pérenne selon France Stratégie ; dividendes 28,9→37,1 Md€)",
+       "url": "https://www.senat.fr/fileadmin/Fichiers/Images/commission/finances/Controle/PPT_ISF_IFI_PFU.pdf",
+       "ouverte": true
+      },
+      {
+       "titre": "IPP, Perspectives budgétaires juin 2026, chap. 2 — CDHR (1,8 Md€ mécanique, 0,7 prévu, 0,4 d'acompte 2025) et CSG capital +1,4 pt ≈ 1 Md€",
+       "url": "https://www.ipp.eu/wp-content/uploads/2026/06/chapitre_fiscalite_2026-2.pdf",
+       "ouverte": true
+      },
+      {
+       "titre": "FIPECO — L'impôt sur le revenu et la CSG (fiche, 01/06/2026 ; 1 pt de CSG = 18 Md€ en 2025, source CCSS)",
+       "url": "https://www.fipeco.fr/pdf/IR-CSG.pdf",
+       "ouverte": true
+      },
+      {
+       "titre": "Conseil constitutionnel, décision n° 2012-662 DC du 29 décembre 2012 (cons. 87-93 : plafonnement ISF, facultés contributives, égalité devant les charges publiques ; cons. 15 et 19 : taux marginal 75,04 % censuré)",
+       "url": "https://www.conseil-constitutionnel.fr/decision/2012/2012662DC.htm",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Cran 1 + 3 x 1,96 = 7,4 (borne haute, sans effet comportemental)."
+    }
+   ],
+   "crans_baisse": [
+    {
+     "niveau": 1,
+     "mesure": "PFU ramené de 30 % à 25 % (IR 8 %)",
+     "cout_mds": 1.5,
+     "faisabilite": 2,
+     "arguments": [
+      "Favorise l'investissement et l'épargne productive",
+      "Compétitivité du capital"
+     ],
+     "obstacles": [
+      "Perte de recette contre un effet incitatif incertain",
+      "Moins d'équité avec le travail"
+     ],
+     "sources": [
+      {
+       "titre": "Sénat, commission des finances (9/10/2019) — Évaluation ISF→IFI et PFU (coût IFI 2,9-3,45 Md€ ; PFU 1,4-1,7 Md€ pérenne selon France Stratégie ; dividendes 28,9→37,1 Md€)",
+       "url": "https://www.senat.fr/fileadmin/Fichiers/Images/commission/finances/Controle/PPT_ISF_IFI_PFU.pdf",
+       "ouverte": true
+      },
+      {
+       "titre": "FIPECO — Les prélèvements sur le capital (fiche ; évaluation France Stratégie, taxation des dividendes OCDE)",
+       "url": "https://www.fipeco.fr/fiche/Les-pr%C3%A9l%C3%A8vements-sur-le-capital",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Formule : 4,8 pts x ~30 Md€ de dividendes/plus-values (dividendes ménages 37,1 Md€ en 2018, Sénat). Ordre de grandeur."
+    },
+    {
+     "niveau": 2,
+     "mesure": "PFU ramené à 20 % tout compris",
+     "cout_mds": 4.0,
+     "faisabilite": 2,
+     "arguments": [
+      "Simplification et alignement sur les voisins européens",
+      "Pro-investissement"
+     ],
+     "obstacles": [
+      "Coût 3x supérieur au coût historique du PFU (1,4-1,7 Md€)",
+      "Dégradation du financement de la Sécu"
+     ],
+     "sources": [
+      {
+       "titre": "Sénat, commission des finances (9/10/2019) — Évaluation ISF→IFI et PFU (coût IFI 2,9-3,45 Md€ ; PFU 1,4-1,7 Md€ pérenne selon France Stratégie ; dividendes 28,9→37,1 Md€)",
+       "url": "https://www.senat.fr/fileadmin/Fichiers/Images/commission/finances/Controle/PPT_ISF_IFI_PFU.pdf",
+       "ouverte": true
+      },
+      {
+       "titre": "FIPECO — Les prélèvements sur le capital (fiche ; évaluation France Stratégie, taxation des dividendes OCDE)",
+       "url": "https://www.fipeco.fr/fiche/Les-pr%C3%A9l%C3%A8vements-sur-le-capital",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Cran 1 + ~2,5 Md€. Ordre de grandeur."
+    },
+    {
+     "niveau": 3,
+     "mesure": "Exonération des dividendes et plus-values mobilières au-delà de 2 ans de détention",
+     "cout_mds": 8.0,
+     "faisabilite": 2,
+     "arguments": [
+      "Encourage la détention longue et l'investissement",
+      "Rapproche des régimes de pays à fiscalité réduite"
+     ],
+     "obstacles": [
+      "Coût élevé, effets de repartition des revenus du travail vers le capital",
+      "Contrainte d'égalité devant les charges publiques (2012-662 DC cons. 15)"
+     ],
+     "sources": [
+      {
+       "titre": "Sénat, commission des finances (9/10/2019) — Évaluation ISF→IFI et PFU (coût IFI 2,9-3,45 Md€ ; PFU 1,4-1,7 Md€ pérenne selon France Stratégie ; dividendes 28,9→37,1 Md€)",
+       "url": "https://www.senat.fr/fileadmin/Fichiers/Images/commission/finances/Controle/PPT_ISF_IFI_PFU.pdf",
+       "ouverte": true
+      },
+      {
+       "titre": "FIPECO — Les prélèvements sur le capital (fiche ; évaluation France Stratégie, taxation des dividendes OCDE)",
+       "url": "https://www.fipeco.fr/fiche/Les-pr%C3%A9l%C3%A8vements-sur-le-capital",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Cran 2 + ~4 Md€. Ordre de grandeur, non chiffré par source ouverte."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+     "url": "https://www.insee.fr/fr/statistiques/8574705",
+     "ouverte": true
+    },
+    {
+     "titre": "FIPECO — L'impôt sur le revenu et la CSG (fiche, 01/06/2026 ; 1 pt de CSG = 18 Md€ en 2025, source CCSS)",
+     "url": "https://www.fipeco.fr/pdf/IR-CSG.pdf",
+     "ouverte": true
+    },
+    {
+     "titre": "FIPECO — Les prélèvements sur le capital (fiche ; évaluation France Stratégie, taxation des dividendes OCDE)",
+     "url": "https://www.fipeco.fr/fiche/Les-pr%C3%A9l%C3%A8vements-sur-le-capital",
+     "ouverte": true
+    },
+    {
+     "titre": "Sénat, commission des finances (9/10/2019) — Évaluation ISF→IFI et PFU (coût IFI 2,9-3,45 Md€ ; PFU 1,4-1,7 Md€ pérenne selon France Stratégie ; dividendes 28,9→37,1 Md€)",
+     "url": "https://www.senat.fr/fileadmin/Fichiers/Images/commission/finances/Controle/PPT_ISF_IFI_PFU.pdf",
+     "ouverte": true
+    }
+   ],
+   "note_base": "Base recomposée : 3,9 + 14,6 + 18 = 36,5 Md€ (mélange 2024/2025). L'IR payé par le PFU de 12,8 % n'est pas isolé dans les comptes nationaux ; cette base n'est donc pas le rendement total du PFU (30 % -> 31,4 % sur une partie des revenus depuis 2026)."
+  },
+  {
+   "id": "production",
+   "nom": "Impôts de production hors foncier (CVAE, CFE, C3S)",
+   "montant_mds": 16.8,
+   "annee_montant": 2024,
+   "source_montant": {
+    "titre": "Insee, tableau 3.217 (2024) : CVAE 3,9 + CFE 7,7 + C3S 5,2 = 16,8 Md€ ; FIPECO : impôts sur la production 129,0 Md€ au total dont 86,8 payés par les entreprises",
+    "url": "https://www.insee.fr/fr/statistiques/8574705",
+    "ouverte": true
+   },
+   "montant_verifie": true,
+   "crans_hausse": [
+    {
+     "niveau": 1,
+     "mesure": "Hausse de 25 % de la CVAE",
+     "gain_mds": 1.0,
+     "faisabilite": 1,
+     "arguments": [
+      "Arrête une baisse d'impôt de production dont l'impact sur l'investissement est contesté",
+      "Rendement immédiat"
+     ],
+     "obstacles": [
+      "IPP (oct. 2025, via FIPECO) : la réforme 2021-2022 des impôts de production n'a pas d'effet significatif mesuré sur la performance des entreprises, sans que cela prouve l'absence d'effet",
+      "Les impôts de production majorent les coûts de production et les prix (FIPECO) ; la CVAE est l'un des moins distorsifs"
+     ],
+     "sources": [
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      },
+      {
+       "titre": "FIPECO — Les impôts sur la production (129,0 Md€ en 2024 ; CVAE 3,9, CFE 7,7, C3S 5,2)",
+       "url": "https://www.fipeco.fr/fiche/Les-imp%C3%B4ts-sur-la-production",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "3,9 Md€ (Insee 2024) x 25 % = 1,0. Pas de chiffrage officiel retrouvé."
+    },
+    {
+     "niveau": 2,
+     "mesure": "Rétablissement de la CVAE à son niveau de 2022",
+     "gain_mds": 5.1,
+     "faisabilite": 1,
+     "arguments": [
+      "Hausse limitée sur un impôt déjà en voie d'extinction",
+      "Fiscalité locale : financement des collectivités"
+     ],
+     "obstacles": [
+      "IPP (oct. 2025, via FIPECO) : la réforme 2021-2022 des impôts de production n'a pas d'effet significatif mesuré sur la performance des entreprises, sans que cela prouve l'absence d'effet",
+      "Les impôts de production majorent les coûts de production et les prix (FIPECO) ; la CVAE est l'un des moins distorsifs"
+     ],
+     "sources": [
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      },
+      {
+       "titre": "FIPECO — Les impôts sur la production (129,0 Md€ en 2024 ; CVAE 3,9, CFE 7,7, C3S 5,2)",
+       "url": "https://www.fipeco.fr/fiche/Les-imp%C3%B4ts-sur-la-production",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": false,
+     "notes": "Insee : CVAE 9,0 Md€ en 2022 contre 3,9 Md€ en 2024 = +5,1 (différence de deux chiffres publiés ; la moitié a été supprimée en 2023)."
+    },
+    {
+     "niveau": 3,
+     "mesure": "CVAE rétablie et relèvement de 50 % du taux de la C3S",
+     "gain_mds": 7.7,
+     "faisabilite": 2,
+     "arguments": [
+      "Élargit le rendement des impôts de production",
+      "La C3S est payée par les plus grandes entreprises"
+     ],
+     "obstacles": [
+      "IPP (oct. 2025, via FIPECO) : la réforme 2021-2022 des impôts de production n'a pas d'effet significatif mesuré sur la performance des entreprises, sans que cela prouve l'absence d'effet",
+      "Les impôts de production majorent les coûts de production et les prix (FIPECO) ; la CVAE est l'un des moins distorsifs"
+     ],
+     "sources": [
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      },
+      {
+       "titre": "FIPECO — Les impôts sur la production (129,0 Md€ en 2024 ; CVAE 3,9, CFE 7,7, C3S 5,2)",
+       "url": "https://www.fipeco.fr/fiche/Les-imp%C3%B4ts-sur-la-production",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Cran 2 + 50 % x 5,2 Md€ (C3S 2024, Insee) = 7,7."
+    }
+   ],
+   "crans_baisse": [
+    {
+     "niveau": 1,
+     "mesure": "Achèvement de la suppression de la CVAE",
+     "cout_mds": 3.9,
+     "faisabilite": 1,
+     "arguments": [
+      "Réduit un impôt de production jugé distordant",
+      "Soutien à l'industrie"
+     ],
+     "obstacles": [
+      "Perte de recettes pour l'État et surtout les collectivités",
+      "Coût de l'État compensé par TVA"
+     ],
+     "sources": [
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      },
+      {
+       "titre": "FIPECO — Les impôts sur la production (129,0 Md€ en 2024 ; CVAE 3,9, CFE 7,7, C3S 5,2)",
+       "url": "https://www.fipeco.fr/fiche/Les-imp%C3%B4ts-sur-la-production",
+       "ouverte": true
+      },
+      {
+       "titre": "Public Sénat — Budget 2026 : le Sénat vote l'accélération de la suppression de la CVAE (coût 1 Md€ en 2026, 3 Md€ en 2028)",
+       "url": "https://www.publicsenat.fr/actualites/politique/budget-2026-le-senat-vote-lacceleration-de-la-suppression-de-la-cvae",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": false,
+     "notes": "CVAE restante 3,9 Md€ toutes APU (Insee 2024). Le Sénat a chiffré l'accélération de la suppression à 1 Md€ en 2026 et 3 Md€ en 2028 (Public Sénat)."
+    },
+    {
+     "niveau": 2,
+     "mesure": "Suppression de la CVAE et de la C3S",
+     "cout_mds": 9.1,
+     "faisabilite": 1,
+     "arguments": [
+      "Suppression d'un impôt de production non neutre",
+      "Soutien à l'industrie et au commerce"
+     ],
+     "obstacles": [
+      "Perte de ~4,5 Md€ pour la Sécu (affectée)",
+      "Fait supporter à d'autres impôts"
+     ],
+     "sources": [
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      },
+      {
+       "titre": "FIPECO — Les impôts sur la production (129,0 Md€ en 2024 ; CVAE 3,9, CFE 7,7, C3S 5,2)",
+       "url": "https://www.fipeco.fr/fiche/Les-imp%C3%B4ts-sur-la-production",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": false,
+     "notes": "3,9 + 5,2 = 9,1 (Insee 2024)."
+    },
+    {
+     "niveau": 3,
+     "mesure": "Suppression de la CVAE et de la C3S, et division par deux de la CFE",
+     "cout_mds": 13.0,
+     "faisabilite": 2,
+     "arguments": [
+      "Réduit les impôts de production assis sur le foncier (France plus élevée que l'UE)",
+      "Soutien aux petites entreprises"
+     ],
+     "obstacles": [
+      "Perte importante pour les collectivités locales",
+      "Assise liée à l'autonomie financière"
+     ],
+     "sources": [
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      },
+      {
+       "titre": "FIPECO — Les impôts sur la production (129,0 Md€ en 2024 ; CVAE 3,9, CFE 7,7, C3S 5,2)",
+       "url": "https://www.fipeco.fr/fiche/Les-imp%C3%B4ts-sur-la-production",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": false,
+     "notes": "9,1 + 50 % x 7,7 = 13,0 (Insee 2024)."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+     "url": "https://www.insee.fr/fr/statistiques/8574705",
+     "ouverte": true
+    },
+    {
+     "titre": "FIPECO — Les impôts sur la production (129,0 Md€ en 2024 ; CVAE 3,9, CFE 7,7, C3S 5,2)",
+     "url": "https://www.fipeco.fr/fiche/Les-imp%C3%B4ts-sur-la-production",
+     "ouverte": true
+    },
+    {
+     "titre": "Public Sénat — Budget 2026 : le Sénat vote l'accélération de la suppression de la CVAE (coût 1 Md€ en 2026, 3 Md€ en 2028)",
+     "url": "https://www.publicsenat.fr/actualites/politique/budget-2026-le-senat-vote-lacceleration-de-la-suppression-de-la-cvae",
+     "ouverte": true
+    }
+   ],
+   "note_base": "Poste recentré hors taxe foncière (42,9 Md€ traitée à part, poste « tf ») et hors impôts sur les salaires (58,0 Md€) pour éviter tout double compte."
+  },
+  {
+   "id": "ifi",
+   "nom": "IFI / impôts sur le patrimoine",
+   "montant_mds": 2.7,
+   "annee_montant": 2024,
+   "source_montant": {
+    "titre": "Insee, tableau 3.217 (2024) : IFI 2,7 Md€ ; FIPECO : 2,7 Md€ en 2025, 194 000 impositions ; ISF 5,1 Md€ en 2017 (358 000 foyers)",
+    "url": "https://www.insee.fr/fr/statistiques/8574705",
+    "ouverte": true
+   },
+   "montant_verifie": true,
+   "crans_hausse": [
+    {
+     "niveau": 1,
+     "mesure": "Barème de l'IFI +20 %",
+     "gain_mds": 0.5,
+     "faisabilite": 1,
+     "arguments": [
+      "Taxe sur le patrimoine immobilier >1,3 M€, assiette ciblée",
+      "Simple"
+     ],
+     "obstacles": [
+      "Patrimoine immobilier : risque de baisse des valeurs",
+      "Mobilité des contribuables"
+     ],
+     "sources": [
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      },
+      {
+       "titre": "FIPECO — Les impôts sur le patrimoine des ménages (IFI 2,7 Md€ en 2025, ISF 5,1 Md€ en 2017, DMTG 21,1 Md€ en 2025)",
+       "url": "https://www.fipeco.fr/fiche/Les-imp%C3%B4ts-sur-le-patrimoine-des-m%C3%A9nages",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "20 % x 2,7 = 0,55 -> 0,5, sans effet de comportement (départs : 633 redevables de l'ISF partis en 2017, Sénat)."
+    },
+    {
+     "niveau": 2,
+     "mesure": "Rétablissement de l'ISF (actifs financiers inclus)",
+     "gain_mds": 3.2,
+     "faisabilite": 2,
+     "arguments": [
+      "Retour à une assiette large dont le coût de suppression fut évalué à 3,1 Md€ (CEFC)",
+      "Équité entre patrimoine mobilier et immobilier"
+     ],
+     "obstacles": [
+      "Effet sur l'investissement : peu d'effets mesurables de la suppression de l'ISF sur l'investissement des plus fortunés (France Stratégie, relayé par la presse)",
+      "Exil fiscal des redevables ISF : 633 départs en 2017 contre 525 retours (Sénat 2019) ; l'IFI a freiné les départs"
+     ],
+     "sources": [
+      {
+       "titre": "Sénat, commission des finances (9/10/2019) — Évaluation ISF→IFI et PFU (coût IFI 2,9-3,45 Md€ ; PFU 1,4-1,7 Md€ pérenne selon France Stratégie ; dividendes 28,9→37,1 Md€)",
+       "url": "https://www.senat.fr/fileadmin/Fichiers/Images/commission/finances/Controle/PPT_ISF_IFI_PFU.pdf",
+       "ouverte": true
+      },
+      {
+       "titre": "FIPECO — Les impôts sur le patrimoine des ménages (IFI 2,7 Md€ en 2025, ISF 5,1 Md€ en 2017, DMTG 21,1 Md€ en 2025)",
+       "url": "https://www.fipeco.fr/fiche/Les-imp%C3%B4ts-sur-le-patrimoine-des-m%C3%A9nages",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": false,
+     "notes": "Coût de la réforme ISF→IFI : 3,1-3,45 Md€ (simulations Insee/France Stratégie) ; 2,9 Md€ en exécution 2018 (Sénat 2019). ISF 2017 : 5,1 Md€ contre IFI 2,7. Gain relatif à l'IFI actuel, non additif au cran 1."
+    },
+    {
+     "niveau": 3,
+     "mesure": "Impôt plancher de 2 % sur les patrimoines > 100 M€",
+     "gain_mds": 15.0,
+     "faisabilite": 3,
+     "arguments": [
+      "Cible l'écart d'imposition des très hauts patrimoines",
+      "Estimations publiées de 15-25 Md€ (non vérifiées ici)"
+     ],
+     "obstacles": [
+      "Droit constitutionnel : le Conseil constitutionnel valide l'ISF au motif qu'il prend en compte les facultés contributives (2012-662 DC, cons. 90-91) mais censure l'imputation de biens sans lien avec ces facultés (cons. 95-96) ; un plancher incluant les biens professionnels expose à une rupture d'égalité devant les charges publiques (cons. 93) et à la barrière du taux confiscatoire (avis du Conseil d'État du 21/03/2013, rapporté par le Sénat)",
+      "Exil fiscal : l'impôt plancher viserait ~1 800 foyers très concentrés ; si les trois premiers contribuables partaient, le rendement baisserait de moitié, soit ~10 Md€ (Sénat 2025)",
+      "Fourchette très large : 15-25 Md€ (Zucman, 20 ±5 Md€) contre 2-3 Md€ si l'IS acquitté est déduit (Levy, cité par le Sénat) ; le texte (PPL) a été rejeté par le Sénat en 2025"
+     ],
+     "sources": [
+      {
+       "titre": "Sénat, rapport n° 689 (2024-2025) sur la PPL instaurant un impôt plancher sur le patrimoine (rendement 15-25 Md€ selon Zucman ; 2-3 Md€ selon Levy en tenant compte de l'IS ; avis du Conseil d'État du 21/03/2013)",
+       "url": "https://www.senat.fr/rap/l24-689/l24-6891.pdf",
+       "ouverte": true
+      },
+      {
+       "titre": "Conseil constitutionnel, décision n° 2012-662 DC du 29 décembre 2012 (cons. 87-93 : plafonnement ISF, facultés contributives, égalité devant les charges publiques ; cons. 15 et 19 : taux marginal 75,04 % censuré)",
+       "url": "https://www.conseil-constitutionnel.fr/decision/2012/2012662DC.htm",
+       "ouverte": true
+      },
+      {
+       "titre": "Sénat, commission des finances (9/10/2019) — Évaluation ISF→IFI et PFU (coût IFI 2,9-3,45 Md€ ; PFU 1,4-1,7 Md€ pérenne selon France Stratégie ; dividendes 28,9→37,1 Md€)",
+       "url": "https://www.senat.fr/fileadmin/Fichiers/Images/commission/finances/Controle/PPT_ISF_IFI_PFU.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Valeur retenue = borne basse de la fourchette 15-25 Md€ reprise par le Sénat (Zucman : 20 Md€ ±5) ; contredite par l'estimation de 2-3 Md€ nets d'IS. Cran non indépendant du cran 2 : l'impôt plancher se substitue/s'ajoute selon le texte."
+    }
+   ],
+   "crans_baisse": [
+    {
+     "niveau": 1,
+     "mesure": "Relèvement du seuil de l'IFI de 1,3 M€ à 2,5 M€",
+     "cout_mds": 1.4,
+     "faisabilite": 1,
+     "arguments": [
+      "Allège le patrimoine des classes moyennes",
+      "Simplifie"
+     ],
+     "obstacles": [
+      "Perte de recettes",
+      "Réduction de la progressivité"
+     ],
+     "sources": [
+      {
+       "titre": "Sénat, commission des finances (9/10/2019) — Évaluation ISF→IFI et PFU (coût IFI 2,9-3,45 Md€ ; PFU 1,4-1,7 Md€ pérenne selon France Stratégie ; dividendes 28,9→37,1 Md€)",
+       "url": "https://www.senat.fr/fileadmin/Fichiers/Images/commission/finances/Controle/PPT_ISF_IFI_PFU.pdf",
+       "ouverte": true
+      },
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Tranche 1,3-2,57 M€ ≈ 55 % de l'IFI 2018 (94 642 foyers x 7 174 € = 0,68 Md€ sur 1,25 Md€, Sénat 2019) x 2,7 Md€ = 1,5 -> 1,4 (arrondi prudent)."
+    },
+    {
+     "niveau": 2,
+     "mesure": "Seuil relevé à 2,5 M€ et exonération de la résidence principale",
+     "cout_mds": 2.2,
+     "faisabilite": 1,
+     "arguments": [
+      "Allège la résidence principale",
+      "Réduit les effets de bord sur les ménages de propriétaires"
+     ],
+     "obstacles": [
+      "Ouvre une niche large pour les patrimoines",
+      "Perte d'assiette"
+     ],
+     "sources": [
+      {
+       "titre": "Sénat, commission des finances (9/10/2019) — Évaluation ISF→IFI et PFU (coût IFI 2,9-3,45 Md€ ; PFU 1,4-1,7 Md€ pérenne selon France Stratégie ; dividendes 28,9→37,1 Md€)",
+       "url": "https://www.senat.fr/fileadmin/Fichiers/Images/commission/finances/Controle/PPT_ISF_IFI_PFU.pdf",
+       "ouverte": true
+      },
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Cran 1 + ~0,8 Md€ (abattement de 30 % porté à 100 %). Ordre de grandeur, non chiffré par source ouverte."
+    },
+    {
+     "niveau": 3,
+     "mesure": "Suppression de l'IFI",
+     "cout_mds": 2.7,
+     "faisabilite": 1,
+     "arguments": [
+      "Simplification, attractivité",
+      "Alignement sur la majorité des pays de l'OCDE"
+     ],
+     "obstacles": [
+      "Perte de 2,7 Md€ de recettes de l'IFI, impôt vertical",
+      "Critique d'équité"
+     ],
+     "sources": [
+      {
+       "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+       "url": "https://www.insee.fr/fr/statistiques/8574705",
+       "ouverte": true
+      },
+      {
+       "titre": "FIPECO — Les impôts sur le patrimoine des ménages (IFI 2,7 Md€ en 2025, ISF 5,1 Md€ en 2017, DMTG 21,1 Md€ en 2025)",
+       "url": "https://www.fipeco.fr/fiche/Les-imp%C3%B4ts-sur-le-patrimoine-des-m%C3%A9nages",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": false,
+     "notes": "Recette IFI 2024 = 2,7 Md€ (Insee)."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Insee — Dépenses et recettes des APU en 2024, tableau 3.217 « Principaux impôts par catégorie » (fichier t_3217.xlsx de la page)",
+     "url": "https://www.insee.fr/fr/statistiques/8574705",
+     "ouverte": true
+    },
+    {
+     "titre": "FIPECO — Les impôts sur le patrimoine des ménages (IFI 2,7 Md€ en 2025, ISF 5,1 Md€ en 2017, DMTG 21,1 Md€ en 2025)",
+     "url": "https://www.fipeco.fr/fiche/Les-imp%C3%B4ts-sur-le-patrimoine-des-m%C3%A9nages",
+     "ouverte": true
+    },
+    {
+     "titre": "Sénat, commission des finances (9/10/2019) — Évaluation ISF→IFI et PFU (coût IFI 2,9-3,45 Md€ ; PFU 1,4-1,7 Md€ pérenne selon France Stratégie ; dividendes 28,9→37,1 Md€)",
+     "url": "https://www.senat.fr/fileadmin/Fichiers/Images/commission/finances/Controle/PPT_ISF_IFI_PFU.pdf",
+     "ouverte": true
+    },
+    {
+     "titre": "Sénat, rapport n° 689 (2024-2025) sur la PPL instaurant un impôt plancher sur le patrimoine (rendement 15-25 Md€ selon Zucman ; 2-3 Md€ selon Levy en tenant compte de l'IS ; avis du Conseil d'État du 21/03/2013)",
+     "url": "https://www.senat.fr/rap/l24-689/l24-6891.pdf",
+     "ouverte": true
+    }
+   ],
+   "note_base": "Rendement toutes APU (État)."
+  }
+ ]
+}
