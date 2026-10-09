@@ -53,11 +53,11 @@ button{font:inherit;color:inherit;cursor:pointer}
 
 /* jauge (accueil et barre) */
 .g-track{position:relative;display:block;height:14px;border-radius:7px;background:var(--line);overflow:visible}
-.g-fill{position:absolute;left:0;top:0;bottom:0;border-radius:7px;background:var(--f3);transition:width .5s cubic-bezier(.2,.8,.2,1),background-color .3s;width:100%}
+.g-fill{position:absolute;left:0;top:0;bottom:0;border-radius:7px;background:var(--f3);transition:left .5s cubic-bezier(.2,.8,.2,1),width .5s cubic-bezier(.2,.8,.2,1),background-color .3s;width:100%}
 .g-fill.mid{background:var(--f2)}.g-fill.ok{background:var(--f1)}
 .g-mark{position:absolute;top:-4px;bottom:-4px;width:3px;margin-left:-1.5px;background:var(--fg);border-radius:2px}
 .g-labels{position:relative;display:flex;justify-content:space-between;font-size:.72rem;color:var(--muted);margin-top:5px;font-variant-numeric:tabular-nums}
-.g-labels span:nth-child(2){position:absolute;transform:translateX(-50%);color:var(--fg);font-weight:700}
+.g-labels .gl-m{position:absolute;transform:translateX(-50%);color:var(--fg);font-weight:700}.g-labels .gl-0{font-weight:800}.g-labels .gl-r{margin-left:auto;color:var(--f1)}
 .intro-gauge{margin:6px 0 4px}
 
 /* en-tête fin + onglets */
@@ -214,5 +214,8 @@ dialog h2{margin:0 0 10px;font-size:1.1rem}
 .btn.armed{background:var(--f3)!important;color:#fff!important;border-color:transparent!important}
 .toast.act{pointer-events:auto}
 .toast button{margin-left:10px;background:none;border:1px solid currentColor;color:inherit;border-radius:6px;padding:2px 10px;font:inherit;font-weight:700;cursor:pointer}
-#bar.surplus .g-track{background:color-mix(in srgb,var(--f1) 35%,transparent)}
 #bar.surplus #bar-l2{color:var(--f1);font-weight:700}
+.g-surplus{position:absolute;top:0;bottom:0;border-radius:0 7px 7px 0;background:color-mix(in srgb,var(--f1) 22%,transparent)}
+.g-zero{position:absolute;top:-6px;bottom:-6px;width:2px;margin-left:-1px;background:var(--fg);opacity:.8}
+.g-pin{position:absolute;top:50%;width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:50%;background:var(--card);border:3px solid var(--fg);transition:left .5s cubic-bezier(.2,.8,.2,1);box-sizing:border-box}
+.g-mark{opacity:.5}

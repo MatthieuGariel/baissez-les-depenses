@@ -282,7 +282,7 @@ $('tabs').addEventListener('keydown', e => {
 let shown = 0, raf = 0, prevPct = null, toastT = 0;
 function setBig(target, instant) {
   cancelAnimationFrame(raf);
-  const from = shown, t0 = performance.now(), dur = (reduced || instant) ? 0 : 500, sign = target > 0.05 ? '−' : target < -0.05 ? '+' : '';
+  const from = shown, t0 = performance.now(), dur = (reduced || instant) ? 0 : 500, sign = '';
   const step = now => {
     const k = dur ? Math.min(1, (now - t0) / dur) : 1;
     shown = from + (target - from) * (1 - Math.pow(1 - k, 3));
@@ -324,14 +324,15 @@ function update(initial) {
   const rt = $('reset-top'); if (rt) rt.disabled = !Object.values(st).some(Boolean);
   const sc = scenario(), seuil = meta.regle_impots.seuil_pct, def = meta.deficit_mds;
   const pct0 = meta.deficit_pct_pib || def / meta.pib_mds * 100;
-  setBig(sc.net, initial);
-  $('bar-l1').textContent = sc.net > 0.05 ? 'de déficit en moins' : sc.net < -0.05 ? 'de déficit en plus' : 'Aucune mesure choisie';
-  $('bar-l2').textContent = Math.abs(sc.pct) < 0.05 ? `${fmt(pct0)} % → équilibre` : sc.pct < 0 ? `→ excédent ${fmtPct(-sc.pct)} % du PIB` : `${fmt(pct0)} % → ${fmtPct(sc.pct)} % du PIB`;
-  $('bar-l2').title = trajTxt(pct0, sc.pct) + (sc.resid < -0.05 ? ` (+${fmt(-sc.resid)} Md€)` : '');
-  $('bar').classList.toggle('surplus', sc.resid < -0.05);
-  const f = $('g-fill');
-  f.style.width = Math.max(0, Math.min(100, sc.resid / def * 100)) + '%';
-  f.className = 'g-fill' + (sc.pct <= seuil ? ' ok' : sc.pct <= seuil + 1 ? ' mid' : '');
+  // Solde final : « 92,4 Md€ de déficit » / « 6,2 Md€ d'excédent », effort en 2e ligne.
+  const surplus = sc.resid < -0.05, eq = Math.abs(sc.resid) <= 0.05;
+  setBig(Math.abs(sc.resid), initial);
+  $('bar-l1').textContent = eq ? 'à l’équilibre' : surplus ? 'd’excédent' : 'de déficit';
+  $('bar-l2').textContent = (eq ? 'solde 0 %' : `${fmtPct(Math.abs(sc.pct))} % du PIB`) +
+    (sc.net > 0.05 ? ` · −${fmt(sc.net)} Md€` : sc.net < -0.05 ? ` · +${fmt(-sc.net)} Md€` : '');
+  $('bar-l2').title = trajTxt(pct0, sc.pct) + ` (au départ : ${fmt(def)} Md€ de déficit)`;
+  $('bar').classList.toggle('surplus', surplus);
+  placeGauge(sc.pct, pct0, seuil);
   $('gauge').setAttribute('aria-label', `Déficit à ${fmtPct(sc.pct)} % du PIB. Paliers : ${seuil} % et 0 %.`);
   const cb = $('chip-block'); cb.hidden = !sc.blocked.length;
   cb.textContent = `${sc.blocked.length} bloquée${sc.blocked.length > 1 ? 's' : ''}`;
@@ -411,12 +412,12 @@ function scenarioImage() {
   g.textBaseline = 'alphabetic';
   g.fillStyle = acc; g.font = `700 24px ${sans}`; g.fillText('MINISTRE DU BUDGET · MON SCÉNARIO', 60, 62);
   g.fillStyle = fg; g.font = `800 112px ${sans}`;
-  const big = (sc.net > 0.05 ? '−' : sc.net < -0.05 ? '+' : '') + fmt(Math.abs(sc.net)) + ' Md€';
+  const big = fmt(Math.abs(sc.resid)) + ' Md€';
   g.fillText(big, 56, 175);
   const bw = g.measureText(big).width;
   g.fillStyle = mu; g.font = `600 30px ${sans}`;
-  g.fillText(sc.net >= 0 ? 'de déficit' : 'de déficit en plus', 70 + bw, 175);
-  g.fillText(trajTxt(meta.deficit_pct_pib || def / meta.pib_mds * 100, sc.pct), 60, 218);
+  g.fillText(Math.abs(sc.resid) <= 0.05 ? 'à l’équilibre' : sc.resid < 0 ? 'd’excédent' : 'de déficit', 70 + bw, 175);
+  g.fillText(trajTxt(meta.deficit_pct_pib || def / meta.pib_mds * 100, sc.pct) + (sc.net > 0.05 ? ` · effort ${fmt(sc.net)} Md€` : ''), 60, 218);
   if (sc.pct <= seuil) { // pastille « sous 3 % »
     const t = sc.pct < -0.05 ? 'Excédent' : sc.pct <= 0.05 ? 'Équilibre' : `Sous ${seuil} % du PIB`;
     g.font = `800 28px ${sans}`; const tw = g.measureText(t).width + 40;
@@ -474,7 +475,7 @@ $('share').onclick = async () => {
 };
 $('close').onclick = () => dlg.close ? dlg.close() : dlg.removeAttribute('open');
 $('doshare').onclick = async () => {
-  const sc = scenario(), txt = `Ministre du Budget : mon scénario réduit le déficit de ${fmt(Math.abs(sc.net))} Md€ (${fmtPct(sc.pct)} % du PIB)${sc.net < 0 ? ' en fait il l’alourdit' : ''}. Et vous ?`;
+  const sc = scenario(), txt = `Ministre du Budget : ${sc.net >= 0 ? `${fmt(sc.net)} Md€ d’effort` : `${fmt(-sc.net)} Md€ de dérapage`}, ${soldeTxt(sc.pct)} du PIB à l’arrivée. Et vous ?`;
   if (navigator.canShare && navigator.canShare({ files: [shareFile] }))
     return navigator.share({ text: `${txt} ${location.href}`, files: [shareFile] }).catch(() => {});
   const a = Object.assign(document.createElement('a'), { href: shareUrl, download: shareFile.name });
@@ -505,10 +506,23 @@ function setupIntro() {
   };
 }
 // g-mark de la barre
+/* Jauge à deux côtés, en % du PIB : déficit de départ à gauche, 0 au milieu-droit, excédent à droite. */
+const G_SURPLUS = 1.5; // % du PIB affiché côté excédent (au-delà, la pastille reste en butée)
+const gPos = (p, pct0) => (pct0 - Math.max(-G_SURPLUS, Math.min(pct0, p))) / (pct0 + G_SURPLUS) * 100;
 function setupBar() {
-  const seuil = meta.regle_impots.seuil_pct, mpos = (meta.pib_mds * seuil / 100) / meta.deficit_mds * 100;
-  $('g-mark').style.left = mpos + '%'; $('g-mlab').style.left = mpos + '%'; $('g-mlab').textContent = seuil + ' %';
-  $('g-top').textContent = fmt(meta.deficit_pct_pib || meta.deficit_mds / meta.pib_mds * 100) + ' %';
+  const seuil = meta.regle_impots.seuil_pct, pct0 = meta.deficit_pct_pib || meta.deficit_mds / meta.pib_mds * 100;
+  const m = gPos(seuil, pct0), z = gPos(0, pct0);
+  $('g-mark').style.left = m + '%'; $('g-mlab').style.left = m + '%'; $('g-mlab').textContent = seuil + ' %';
+  $('g-zero').style.left = z + '%'; $('g-0lab').style.left = z + '%';
+  $('g-surplus').style.left = z + '%'; $('g-surplus').style.width = (100 - z) + '%';
+  $('g-top').textContent = 'déficit ' + fmt(pct0) + ' %';
+}
+function placeGauge(pct, pct0, seuil) {
+  const z = gPos(0, pct0), x = gPos(pct, pct0), f = $('g-fill');
+  // la barre part de 0 : vers la gauche tant qu'il reste un déficit, vers la droite en excédent
+  f.style.left = Math.min(x, z) + '%'; f.style.width = Math.abs(z - x) + '%';
+  f.className = 'g-fill' + (pct < 0 ? ' ok sur' : pct <= seuil ? ' ok' : pct <= seuil + 1 ? ' mid' : '');
+  $('g-pin').style.left = x + '%';
 }
 
 const getJSON = u => fetch(u).then(r => { if (!r.ok) throw new Error(u + ' ' + r.status); return r.json(); });
