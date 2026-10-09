@@ -19,17 +19,27 @@
   <p class="sub">Dépenses publiques (APU) : <strong id="total"></strong> · Déficit : <strong id="deficit"></strong></p>
   <div class="score">
     <div><span id="eco">0</span> Md€ économisés</div>
-    <div class="bar"><div id="fill"></div></div>
     <div id="pct" class="muted"></div>
     <div id="risk" class="muted"></div>
     <button id="share">Partager mon budget</button>
   </div>
+  <div class="stack" id="stack" role="img" aria-label="Contribution de chaque poste au déficit comblé"></div>
+  <p class="muted stackinfo" id="stackinfo" aria-live="polite"></p>
+  <p class="muted" id="interets"></p>
+  <div class="tax"><span id="taxline"></span><div class="bar"><div id="taxfill"></div></div></div>
+  <p class="muted" id="taxtxt"></p>
   <p class="warn" id="statut"></p>
 </header>
 <main id="postes"></main>
 <footer>
   Données ouvertes : <a href="data/postes.json">postes.json</a> · <a href="llms.txt">llms.txt</a> · <a href="https://github.com/MatthieuGariel/baissez-les-depenses/issues/new" target="_blank" rel="noopener">Signaler une erreur</a> · Licence CC BY 4.0
+<p class="warn" id="statut2"></p>
 </footer>
+<dialog id="preview">
+  <h2>Aperçu de mon budget</h2>
+  <img id="previewimg" alt="Image de mon scénario de budget">
+  <div class="actions"><button id="doshare">Partager / Télécharger</button><button id="close" class="sec">Fermer</button></div>
+</dialog>
 <script src="app.js"></script>
 </body>
 </html>

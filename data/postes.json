@@ -11,7 +11,13 @@
       "2": "Faisable mais risque juridique ou politique fort (Conseil constitutionnel, partenaires sociaux, collectivités)",
       "3": "Très contestable : obstacle constitutionnel, droit UE ou engagement international probable"
     },
-    "licence": "CC BY 4.0",
+    "crans_labels": ["Aucune", "Légère", "Moyenne", "Forte", "Rupture"],
+  "taux_marginal_dette": 0.032,
+  "taux_marginal_dette_provisoire": true,
+  "pib_mds": 2900,
+  "pib_mds_provisoire": true,
+  "regle_impots": {"seuil_pct": 3, "parts": [0, 0.6, 1.0], "provisoire": true},
+  "licence": "CC BY 4.0",
     "sources_meta": []
   },
   "postes": [
