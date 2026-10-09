@@ -2,55 +2,92 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Baissez les dépenses — simulateur sourcé</title>
-<meta name="description" content="Choisissez quelles dépenses publiques baisser. Chaque mesure est chiffrée, sourcée, avec ses obstacles juridiques et européens.">
-<meta property="og:title" content="Baissez les dépenses — simulateur sourcé">
-<meta property="og:description" content="Faites votre budget. Chaque curseur affiche sources, arguments et obstacles juridiques.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Baissez les dépenses — vous êtes ministre du Budget</title>
+<meta name="description" content="Vous êtes ministre du Budget : ramenez le déficit sous 3 % du PIB. Chaque mesure est chiffrée, sourcée, avec ses obstacles juridiques et européens.">
+<meta property="og:title" content="Vous êtes ministre du Budget. Sauriez-vous passer sous 3 % ?">
+<meta property="og:description" content="Déficit 2026 : 164,6 Md€. Choisissez vos mesures : chacune est chiffrée, sourcée, notée en faisabilité.">
 <meta property="og:image" content="https://matthieugariel.github.io/baissez-les-depenses/og.png">
 <meta property="og:url" content="https://matthieugariel.github.io/baissez-les-depenses/">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f6f5f1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)">
 <link rel="alternate" type="application/json" href="data/postes.json">
 <link rel="alternate" type="application/json" href="data/recettes.json">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<header>
-  <h1>Baissez les dépenses</h1>
-  <p class="sub">Dépenses publiques (APU) : <strong id="total"></strong> · Déficit : <strong id="deficit"></strong></p>
-  <p class="sub derive" id="derive"></p>
-  <div class="score">
-    <details id="bilan">
-      <summary><span id="sumline">Effet net : 0 Md€</span></summary>
-      <ul class="bilan" id="bilanlist"></ul>
-      <p class="muted" id="pct"></p>
-      <p class="muted" id="risk"></p>
-      <p class="muted" id="interets"></p>
-      <div class="tax"><span id="taxline"></span><div class="bar"><div id="taxfill"></div></div></div>
-      <p class="muted" id="taxtxt"></p>
-      <p class="warn" id="statut"></p>
-    </details>
-    <button id="share">Partager mon budget</button>
+<body class="boot">
+
+<section id="intro" class="intro" aria-labelledby="intro-h" hidden>
+  <div class="intro-in">
+    <p class="eyebrow">Simulateur budgétaire sourcé</p>
+    <h1 id="intro-h">Vous êtes <span>ministre du Budget.</span></h1>
+    <p class="intro-def">Déficit <span id="i-year">2026</span> : <strong id="i-def">164,6 Md€</strong> <span class="muted" id="i-pct"></span></p>
+    <div class="intro-gauge" aria-hidden="true">
+      <div class="g-track"><div class="g-fill" id="i-fill"></div><i class="g-mark" id="i-mark"></i></div>
+      <div class="g-labels"><span>0 %</span><span id="i-mlab">3 %</span><span id="i-top">5,4 %</span></div>
+    </div>
+    <p class="intro-goal">Objectif : passer <strong>sous 3 % du PIB</strong>, soit <strong id="i-need">73 Md€</strong> à trouver.</p>
+    <p class="muted intro-note" id="i-derive"></p>
+    <div class="intro-actions">
+      <button class="btn big" id="start" type="button">Commencer</button>
+      <button class="btn sec big" id="show-presets" type="button" aria-expanded="false" aria-controls="i-presets">Voir des scénarios tout faits</button>
+    </div>
+    <div id="i-presets" class="presets" hidden></div>
+    <p class="muted intro-foot">Chaque mesure : chiffrée, sourcée, notée en faisabilité (loi ordinaire, risque, blocage constitutionnel ou européen). Aucun avis politique.</p>
   </div>
-  <p class="warn taxwarn" id="taxwarn" role="alert"></p>
-  <div class="stack" id="stack" role="img" aria-label="Contribution de chaque mesure au déficit comblé"></div>
-  <p class="muted stackinfo" id="stackinfo" aria-live="polite"></p>
-</header>
-<nav class="jump"><button class="sec" data-go="postes">Dépenses</button><button class="sec" data-go="recettes-titre">Recettes (impôts)</button></nav>
-<h2 class="sect">Dépenses</h2>
-<main id="postes"></main>
-<h2 class="sect" id="recettes-titre">Recettes : impôts et cotisations</h2>
-<p class="muted sectsub">Curseur de −3 (baisse forte) à +3 (hausse forte), 0 = aucun changement.</p>
-<main id="recettes-liste"></main>
-<footer>
-  Données ouvertes : <a href="data/postes.json">postes.json</a> · <a href="data/recettes.json">recettes.json</a> · <a href="llms.txt">llms.txt</a> · <a href="https://github.com/MatthieuGariel/baissez-les-depenses/issues/new" target="_blank" rel="noopener">Signaler une erreur</a> · Licence CC BY 4.0
-<p class="warn" id="statut2"></p>
-</footer>
+</section>
+
+<div id="app" hidden>
+  <header class="top">
+    <div class="top-row">
+      <h1 class="brand">Baissez les dépenses</h1>
+      <button class="btn ghost sm" id="open-presets" type="button">Scénarios</button>
+    </div>
+    <p class="tagline" id="tagline"></p>
+  </header>
+  <nav class="tabs" id="tabs" role="tablist" aria-label="Catégories de mesures"></nav>
+  <main id="panel" role="tabpanel" tabindex="-1"></main>
+  <footer class="foot">
+    <p>Données ouvertes : <a href="data/postes.json">postes.json</a> · <a href="data/recettes.json">recettes.json</a> · <a href="llms.txt">llms.txt</a> · <a href="https://github.com/MatthieuGariel/baissez-les-depenses/issues/new" target="_blank" rel="noopener">Signaler une erreur</a> · Licence CC BY 4.0</p>
+    <p class="warn" id="statut"></p>
+  </footer>
+</div>
+
+<div id="bar" class="bar" hidden>
+  <button id="barmain" class="barmain" type="button" aria-haspopup="dialog" aria-controls="sheet">
+    <span class="bar-row">
+      <span class="bignum"><b id="bignum">0</b><small id="bigunit">Md€</small></span>
+      <span class="bar-txt">
+        <span id="bar-l1">Déficit réduit</span>
+        <span id="bar-l2" class="muted"></span>
+      </span>
+      <span class="chev" aria-hidden="true">▴</span>
+    </span>
+    <span class="gauge" id="gauge" role="img">
+      <span class="g-track"><span class="g-fill" id="g-fill"></span><i class="g-mark" id="g-mark"></i></span>
+      <span class="g-labels"><span>0 %</span><span id="g-mlab">3 %</span><span id="g-top"></span></span>
+    </span>
+    <span class="bar-foot"><span class="chip ko" id="chip-block" hidden></span><span class="bar-warn" id="bar-warn" hidden></span></span>
+  </button>
+  <button id="share" class="btn share" type="button">Partager</button>
+</div>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<dialog id="sheet" aria-labelledby="sheet-h">
+  <div class="sheet-head"><h2 id="sheet-h">Mon bilan</h2><button class="btn ghost sm" id="sheet-close" type="button" aria-label="Fermer le bilan">Fermer</button></div>
+  <div id="sheet-body"></div>
+</dialog>
+
 <dialog id="preview">
   <h2>Aperçu de mon budget</h2>
   <img id="previewimg" alt="Image de mon scénario de budget">
-  <div class="actions"><button id="doshare">Partager / Télécharger</button><button id="close" class="sec">Fermer</button></div>
+  <div class="actions"><button class="btn" id="doshare" type="button">Partager / Télécharger</button><button id="close" class="btn sec" type="button">Fermer</button></div>
 </dialog>
+
+<noscript><p style="padding:16px">Ce simulateur nécessite JavaScript. Les données sont consultables dans <a href="data/postes.json">postes.json</a>.</p></noscript>
 <script src="app.js"></script>
 </body>
 </html>
