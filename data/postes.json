@@ -3,16 +3,55 @@
     "titre": "Simulateur de baisse des dépenses publiques",
     "perimetre": "Administrations publiques (APU) : État, Sécurité sociale, collectivités, opérateurs",
     "depenses_totales_mds": 1714.1,
-    "deficit_mds": 152.5,
-    "annee_reference": 2025,
-    "statut": "v0.4 — 4 passes de vérification. Gains cumulatifs (chaque cran inclut les précédents). Badge « non vérifié » = ordre de grandeur calculé à partir de chiffres officiels, formule dans le JSON.",
+    "deficit_mds": 164.6,
+    "annee_reference": "2026 révisé",
+    "statut": "v0.5 — base : déficit 2026 révisé (5,4 % du PIB). Gains cumulatifs. Badge « non vérifié » = ordre de grandeur calculé, formule dans le JSON.",
     "faisabilite": {
       "1": "Faisable par loi ordinaire / LFI-LFSS, précédents existants",
       "2": "Faisable mais risque juridique ou politique fort (Conseil constitutionnel, partenaires sociaux, collectivités)",
       "3": "Très contestable : obstacle constitutionnel, droit UE ou engagement international probable"
     },
+    "crans_labels": [
+      "Aucune",
+      "Légère",
+      "Moyenne",
+      "Forte",
+      "Rupture"
+    ],
+    "taux_marginal_dette": 0.039,
+    "taux_marginal_dette_provisoire": true,
+    "pib_mds": 3049,
+    "regle_impots": {
+      "seuil_pct": 3,
+      "parts": [
+        0,
+        0.6,
+        1.0
+      ],
+      "provisoire": true
+    },
     "licence": "CC BY 4.0",
-    "sources_meta": []
+    "sources_meta": [],
+    "pib_source": {
+      "titre": "Rapport d'avancement annuel 2026, PIB nominal 2026",
+      "url": "https://www.tresor.economie.gouv.fr/Articles/b16f3103-ed47-4c37-9362-11ff01e12ae5/files/1d29351b-0187-4837-a3cd-e4ea7b0e4ce1",
+      "annee": 2026
+    },
+    "taux_marginal_note": "Hypothèse : taux 10 ans fin 2026 du RAA 2026 (3,9 %). Effet à 1 an d'une économie pérenne ; s'accumule ensuite.",
+    "deficit_pct_pib": 5.4,
+    "deficit_source": {
+      "titre": "PLF 2027 n° 3210, article liminaire : déficit 2026 révisé à 5,4 % du PIB",
+      "url": "https://www.assemblee-nationale.fr/dyn/docs/PRJLANR5L17B3210.raw",
+      "notes": "Montant en Md€ calculé : 5,4 % × PIB 2026 (3 049 Md€, RAA 2026)."
+    },
+    "derive_2027": {
+      "deficit_pct_pib": 6.4,
+      "texte": "Sans aucune mesure, le déficit 2027 monterait à environ 6,4 % du PIB (PLF 2027).",
+      "source": {
+        "titre": "PLF 2027 n° 3210, exposé des motifs",
+        "url": "https://www.assemblee-nationale.fr/dyn/docs/PRJLANR5L17B3210.raw"
+      }
+    }
   },
   "postes": [
     {
@@ -156,7 +195,63 @@
             }
           ],
           "non_verifie": true,
-          "notes": "Calcul : 2,6 Md€ (gel 2026, Cnav, voir cran 2) + 8,4 Md€ (+1 an d'âge d'ouverture des droits, amélioration du solde du système de retraites en 2035, Cour des comptes févr. 2025) = 11,0 Md€. Les deux chiffres sont officiels mais d'horizons différents (2026 et 2035) et le solde du système de retraites inclut des cotisations supplémentaires : l'addition est faite ici, non publiée telle quelle, et les effets ne sont pas strictement cumulables (le gel réduit un peu l'assiette). Les 17,7 Md€ de la Cour incluent 9,3 Md€ de recettes hors retraites : non retenus. Aucun chiffrage officiel publié pour la mesure combinée."
+          "notes": "Calcul : 2,6 Md€ (gel 2026, Cnav, voir cran 2) + 8,4 Md€ (+1 an d'âge d'ouverture des droits, amélioration du solde du système de retraites en 2035, Cour des comptes févr. 2025) = 11,0 Md€. Les deux chiffres sont officiels mais d'horizons différents (2026 et 2035) et le solde du système de retraites inclut des cotisations supplémentaires : l'addition est faite ici, non publiée telle quelle, et les effets ne sont pas strictement cumulables (le gel réduit un peu l'assiette). Les 17,7 Md€ de la Cour incluent 9,3 Md€ de recettes hors retraites : non retenus. Aucun chiffrage officiel publié pour la mesure combinée.",
+          "horizon": {
+            "annee": 2035,
+            "estime": false,
+            "justif": "Gain chiffré par la Cour des comptes sur le solde du système en 2035 pour +1 an d'âge légal."
+          }
+        },
+        {
+          "niveau": 4,
+          "mesure": "Cran 3 + relèvement progressif de l'âge légal à 67 ans (génération 1971 et suivantes, +1 trimestre par génération) + règle d'équilibre automatique de type suédois (indexation des pensions et coefficient de conversion ajustés au solde du COR)",
+          "gain_mds": 27.8,
+          "faisabilite": 2,
+          "arguments": [
+            "Calcul d'après la Cour des comptes (2025) : +1 an d'âge d'ouverture des droits = +8,4 Md€ sur le solde du système en 2035 (effet stable en 2045) ; 3 ans de plus qu'à 64 ans = 25,2 Md€, auxquels s'ajoutent les 2,6 Md€ du gel d'un an (Cnav) = 27,8 Md€ (additivité supposée)",
+            "Précédent suédois : réforme de 1998 à comptes notionnels, complétée en 2001 par un mécanisme d'équilibre automatique ; la Commission européenne (Economic Brief n° 48, 2019) juge le système financièrement soutenable et politiquement stable, mais alerte sur l'adéquation des pensions, le coût du vieillissement étant porté par les retraités",
+            "Le Conseil constitutionnel a déjà validé deux relèvements successifs : 62 ans (2010-617 DC, cons. 8-9) et 64 ans (2023-849 DC, cons. 90-94), au motif de l'équilibre financier du régime par répartition et de l'allongement de l'espérance de vie"
+          ],
+          "obstacles": [
+            "Juridique : aucune décision ne tranche un âge de 67 ans. Le Conseil contrôle que le législateur ne prive pas de garanties légales l'exigence du 11e alinéa du Préambule de 1946 (2023-849 DC, cons. 91 et 93) et il a relevé le maintien des départs anticipés (carrières longues, invalidité) : leur suppression ou leur resserrement ferait basculer le risque de censure",
+            "Politique : la réforme de 2023 a provoqué des mobilisations massives ; 67 ans exclurait de fait une partie des ouvriers aux espérances de vie plus faibles (inégalité face à la retraite)",
+            "Économique et social : effets de report vers le chômage, l'invalidité et le minimum vieillesse (ASPA) ; un stabilisateur automatique à la suédoise baisse mécaniquement le niveau des pensions (adéquation, selon la Commission européenne)",
+            "Le gain atteint son plein effet après 2035 ; les premières années rapportent beaucoup moins (montée en charge par génération)"
+          ],
+          "sources": [
+            {
+              "titre": "Cour des comptes — Situation financière et perspectives du système de retraites, février 2025 (copie vie-publique.fr)",
+              "url": "https://www.vie-publique.fr/files/rapport/pdf/297428.pdf",
+              "ouverte": true
+            },
+            {
+              "titre": "Conseil constitutionnel — Décision n° 2023-849 DC du 14 avril 2023",
+              "url": "https://www.conseil-constitutionnel.fr/decision/2023/2023849DC.htm",
+              "ouverte": true
+            },
+            {
+              "titre": "Conseil constitutionnel — Décision n° 2010-617 DC du 9 novembre 2010",
+              "url": "https://www.conseil-constitutionnel.fr/decision/2010/2010617DC.htm",
+              "ouverte": true
+            },
+            {
+              "titre": "Commission européenne (DG ECFIN) — Economic Brief n° 48 (juillet 2019) : Pension reform in Sweden, sustainability and adequacy (notice et résumé)",
+              "url": "https://econpapers.repec.org/paper/eufecobri/048.htm",
+              "ouverte": true
+            },
+            {
+              "titre": "Sénat — Rapport n° 131 (2025-2026) sur le PLFSS 2026, tome I : évaluation préalable de l'article 44 (gel et sous-indexation)",
+              "url": "https://www.senat.fr/rap/l25-131-1/l25-131-1_mono.html",
+              "ouverte": true
+            }
+          ],
+          "non_verifie": true,
+          "notes": "Calcul : 2,6 Md€ (gel d'un an des pensions de base, Cnav, Sénat n° 131) + 3 x 8,4 Md€ (3 ans de relèvement par rapport à 64 ans, solde du système en 2035, Cour des comptes févr. 2025) = 27,8 Md€. Hypothèse linéaire (chaque année supplémentaire rapporte autant que la première), non publiée par la Cour : en réalité l'effet par année diminue (carrières longues, reports vers invalidité et chômage) ; fourchette plausible 20-28 Md€. Horizon : année pleine vers 2038-2040 (génération 1971 atteignant 67 ans) ; effet 2030 nettement inférieur. Le stabilisateur automatique n'est pas chiffré séparément (gain non ajouté). Aucun double compte : mesures limitées au poste retraites ; les reports vers chômage/ASPA ne sont pas déduits.",
+          "horizon": {
+            "annee": 2040,
+            "estime": false,
+            "justif": "Année pleine vers 2038-2040 (génération 1971 atteignant 67 ans) ; effet 2030 nettement inférieur."
+          }
         }
       ],
       "sources": [
@@ -319,6 +414,47 @@
           ],
           "non_verifie": true,
           "notes": "Gain = 3,9 Md€ (Cnam, Charges et produits 2027, §5.1 ; le paquet ne comprend pas de mesure sur les franchises) + 2,3 Md€ (Cour des comptes, RALFSS 2026, ch. V : doublement des montants unitaires et des plafonds journaliers et annuels, 1,1 Md€ franchises + 1,2 Md€ participations, année pleine) = 6,2 Md€. Les deux chiffres sont officiels. Réserve : le décret n° 2026-858 a déjà porté les plafonds annuels de 100 à 140 € cumulés (rendement non publié) ; une part des 2,3 Md€ est donc en partie acquise, d'où un possible double compte avec la référence 2026."
+        },
+        {
+          "niveau": 4,
+          "mesure": "Cran 3 + franchise annuelle obligatoire de 400 € par assuré adulte, à la charge exclusive du patient (interdiction de la prise en charge par les contrats complémentaires responsables), avec exemptions CSS, ALD, maternité et moins de 18 ans — modèle néerlandais du eigen risico",
+          "gain_mds": 10.9,
+          "faisabilite": 3,
+          "arguments": [
+            "Précédent néerlandais : franchise annuelle obligatoire (eigen risico) de 385 € pour les adultes, stable depuis 2016 (220 € en 2012, 350 € puis 385 €) ; son abolition était chiffrée à 3,7 Md€ de dépenses supplémentaires (~275 € de prime par personne) pour les Pays-Bas",
+            "Mise à l'échelle française : un tel dispositif rapporterait environ 15 Md€ bruts à population équivalente, ramenés à ~7 Md€ après exemptions (hypothèse), contre un rendement actuel des franchises et participations de 2,5 Md€ (Cour des comptes, RALFSS 2026)",
+            "La Cour des comptes relève déjà que les franchises françaises sont inférieures à celles d'autres pays européens"
+          ],
+          "obstacles": [
+            "Juridique : le Conseil constitutionnel exige que franchises et plafonds ne remettent pas en cause le 11e alinéa du Préambule de 1946 (2007-558 DC, cons. 7) ; une franchise de 400 € non plafonnée par revenu est exposée à la censure pour atteinte à la protection de la santé",
+            "Contournement : plus de 95 % des Français ont une complémentaire ; sans interdire la prise en charge de la franchise par les contrats responsables, le gain est transféré aux mutuelles puis aux cotisations des assurés (hausse de primes, effet nul pour les finances publiques)",
+            "Social : la Cour des comptes signale un risque de renoncement aux soins des assurés modestes ; renoncement qui reporte ensuite les dépenses vers l'hôpital (ONDAM hôpital)",
+            "Chevauchement avec le décret n° 2026-858 (plafonds à 140 €) et avec les 2,3 Md€ du cran 3 : déduit dans le calcul"
+          ],
+          "sources": [
+            {
+              "titre": "Cour des comptes — La sécurité sociale 2026 (RALFSS, 27 mai 2026), rapport complet",
+              "url": "https://www.ccomptes.fr/sites/default/files/2026-05/20260527-RALFSS-2026_0.pdf",
+              "ouverte": true
+            },
+            {
+              "titre": "Conseil constitutionnel — Décision n° 2007-558 DC du 13 décembre 2007",
+              "url": "https://www.conseil-constitutionnel.fr/decision/2007/2007558DC.htm",
+              "ouverte": true
+            },
+            {
+              "titre": "Radar (AVROTROS) — Eigen risico stijgt volgend jaar niet (2016) : 385 € ; abolition estimée à 3,7 Md€",
+              "url": "https://radar.avrotros.nl/artikel/eigen-risico-stijgt-volgend-jaar-niet-19517",
+              "ouverte": true
+            },
+            {
+              "titre": "Cour des comptes — ONDAM, contribution à la revue des dépenses publiques, note de synthèse avril 2025 (15 propositions chiffrées)",
+              "url": "https://www.ccomptes.fr/sites/default/files/2025-04/20250414-Lobjectif-national-de-depenses-dassurance-maladie-Ondam.pdf",
+              "ouverte": true
+            }
+          ],
+          "non_verifie": true,
+          "notes": "Calcul : 6,2 Md€ (cran 3) + 4,7 Md€ = 10,9 Md€. Les 4,7 Md€ viennent de : abolition du eigen risico = 3,7 Md€ pour les Pays-Bas (Radar 2016) soit ~0,22 Md€ par million d'habitants (population néerlandaise ~17 M, hypothèse non sourcée dans la page) x 68 M d'habitants France = ~15 Md€ ; x 0,45 (exemptions CSS/ALD/maternité/enfants et franchise de 400 € contre 385 €, hypothèse) = ~6,9 Md€ ; moins 2,3 Md€ du doublement du cran 3, pour éviter le double compte = 4,6-4,7 Md€. Aucun chiffrage officiel français de la mesure : ordre de grandeur. Année pleine dès la première année si les complémentaires ne peuvent la rembourser ; effet d'élasticité (moindre consommation) non compté. Le gain nécessite une loi de financement de la sécurité sociale."
         }
       ],
       "sources": [
@@ -417,7 +553,12 @@
             }
           ],
           "non_verifie": false,
-          "notes": "Calcul : 0,6 (cran 1) + 0,8 (virage ambulatoire) + 1,3 (hospitalisations inadéquates, 4 ans) = 2,7 Md€. Chiffres de la Cour, somme calculée ; recouvrement partiel possible entre ambulatoire et inadéquates, non quantifié par la Cour."
+          "notes": "Calcul : 0,6 (cran 1) + 0,8 (virage ambulatoire) + 1,3 (hospitalisations inadéquates, 4 ans) = 2,7 Md€. Chiffres de la Cour, somme calculée ; recouvrement partiel possible entre ambulatoire et inadéquates, non quantifié par la Cour.",
+          "horizon": {
+            "annee": 2030,
+            "estime": false,
+            "justif": "Hospitalisations inadéquates chiffrées sur 4 ans par la Cour ; virage ambulatoire progressif."
+          }
         },
         {
           "niveau": 3,
@@ -445,7 +586,58 @@
             }
           ],
           "non_verifie": false,
-          "notes": "Calcul : 2,7 + 1,0 (milieu de la fourchette 0,8-1,2 de la proposition n° 10 de la Cour) = 3,7 Md€ ; fourchette 3,5-3,9. Proposition n° 9 (qualité des soins, 0,5-1 Md€) non ajoutée."
+          "notes": "Calcul : 2,7 + 1,0 (milieu de la fourchette 0,8-1,2 de la proposition n° 10 de la Cour) = 3,7 Md€ ; fourchette 3,5-3,9. Proposition n° 9 (qualité des soins, 0,5-1 Md€) non ajoutée.",
+          "horizon": {
+            "annee": 2030,
+            "estime": true,
+            "justif": "Restructuration de services sous seuils d'activité : mesure progressive, sans année précise ; estimé ~4 ans comme le cran 2."
+          }
+        },
+        {
+          "niveau": 4,
+          "mesure": "Cran 3 + gel nominal du sous-objectif hospitalier de l'ONDAM pendant 3 ans (« revue de programme » à la canadienne : chaque établissement doit réaliser un plan d'économies, fermetures de sites et regroupements imposés)",
+          "gain_mds": 12.0,
+          "faisabilite": 2,
+          "arguments": [
+            "Précédent canadien : la Revue des programmes de 1995 visait −9,8 G$ de dépenses ministérielles (≈ −19 %) entre 1994-95 et 1997-98, soit 51,8 → 42 G$ ; le déficit 1996-97 a été ramené à 19 G$, soit 5,3 G$ sous la cible initiale de 24,3 G$ (Finance Canada, 1997)",
+            "Le résultat réel a été moins ambitieux que la cible : 45 G$ attendus au lieu de 42 G$, l'écart venant de nouvelles dépenses et de réajustements (Finance Canada, 1997)",
+            "Cran de départ : la Cour des comptes (avril 2025) chiffre déjà 0,6 + 2,1 + 1,0 Md€ d'économies hospitalières (achats, virage ambulatoire, restructurations)"
+          ],
+          "obstacles": [
+            "Juridique : l'ONDAM est voté en LFSS, donc pas d'obstacle de procédure ; le 11e alinéa du Préambule de 1946 (protection de la santé) fonde un contrôle de proportionnalité (2007-558 DC, cons. 7) : un gel qui fermerait des urgences ou des maternités exposerait à la censure ou aux recours",
+            "Économique et social : l'ONDAM hospitalier croît tendanciellement de 3 à 4 % par an (vieillissement, besoin de 45 000 lits d'ici 2040 selon la Cour des comptes) ; un gel nominal impose un recul réel de ~3 %/an du volume de soins, avec risque de report vers le privé et les urgences",
+            "Politique : opposition massive des élus locaux et des soignants ; coûts de transition (indemnités, reclassement) non inclus",
+            "Canada 1995 : les coupes ont été en partie obtenues en réduisant les transferts aux provinces, donc en reportant la charge sur les collectivités (même risque ici sur les départements et les complémentaires)"
+          ],
+          "sources": [
+            {
+              "titre": "Finance Canada — Communiqué 97-022 (mars 1997) : Revue des programmes, baisse de 9,8 G$ des dépenses ministérielles 1994-95 à 1997-98 (archive)",
+              "url": "https://bac-lac.wayback.archive-it.org/web/20061129181442/http://www.fin.gc.ca/news97/97-022e.html",
+              "ouverte": true
+            },
+            {
+              "titre": "Cour des comptes — ONDAM, contribution à la revue des dépenses publiques, note de synthèse avril 2025 (15 propositions chiffrées)",
+              "url": "https://www.ccomptes.fr/sites/default/files/2025-04/20250414-Lobjectif-national-de-depenses-dassurance-maladie-Ondam.pdf",
+              "ouverte": true
+            },
+            {
+              "titre": "Cour des comptes — La sécurité sociale 2026 (RALFSS, 27 mai 2026), rapport complet",
+              "url": "https://www.ccomptes.fr/sites/default/files/2026-05/20260527-RALFSS-2026_0.pdf",
+              "ouverte": true
+            },
+            {
+              "titre": "Conseil constitutionnel — Décision n° 2007-558 DC du 13 décembre 2007",
+              "url": "https://www.conseil-constitutionnel.fr/decision/2007/2007558DC.htm",
+              "ouverte": true
+            }
+          ],
+          "non_verifie": true,
+          "notes": "Calcul : sous-objectif hospitalier 2025 = 109,1 Md€. Hypothèse de croissance tendancielle 3,5 %/an (fourchette 3-4 %, non sourcée). Écart cumulé après 3 ans de gel nominal = 109,1 x (1,035^3 − 1) = 109,1 x 0,1087 = 11,9 ≈ 12,0 Md€ en année 3 (et non 3 x). Le gain remplace le cran 3 (3,7 Md€, englobé : mêmes leviers) au lieu de s'y ajouter, pour éviter tout double compte. Montée en charge : ~3,8 Md€ la 1re année, ~7,7 la 2e, 12,0 la 3e. Hors masse salariale hospitalière si elle était comptée sur un autre poste (aucun autre poste n'inclut l'ONDAM hospitalier). Chiffre non officiel.",
+          "horizon": {
+            "annee": 2029,
+            "estime": false,
+            "justif": "Gel nominal sur 3 ans : ~3,8 Md€ an 1, ~7,7 an 2, 12,0 an 3."
+          }
         }
       ],
       "sources": [
@@ -610,6 +802,52 @@
           ],
           "non_verifie": false,
           "notes": "Calcul : 0,3 Md€ (cran 1) + 0,53 Md€ (baisse de 20 % des seuils, cran 2) + 0,37 Md€ (suppression de la 3e tranche, IGF-IGAS : 370 M€ « dans le cas d'une baisse de 20 % du seuil », lu comme gain supplémentaire par rapport à l'état du cran 2 où les seuils sont déjà abaissés) = 1,20 Md€. Avec le seuil actuel le gain isolé serait de 0,22 Md€. Interprétation du chiffre de 370 M€ à confirmer auprès des auteurs ; hypothèse prudente : gain additionnel et non pas cumulé en double. Remplace l'ancien calcul uniforme (13,4 Md€ x 20 % = 2,7 Md€) invalidé par la répartition des AF par décile (IGF-IGAS, annexe IV, tableau 13)."
+        },
+        {
+          "niveau": 4,
+          "mesure": "Gel 1 an de la Bmaf + transformation des allocations familiales en allocation sous conditions de ressources, réservée aux ménages sous le niveau de vie médian (déciles 1 à 5), suppression pour les déciles 6 à 10",
+          "gain_mds": 4.3,
+          "faisabilite": 2,
+          "arguments": [
+            "Les AF coûtent 13,4 Md€ (2024, Cnaf) ; la revue IGF-IGAS (août 2026) montre qu'elles sont déjà concentrées : les déciles 9 et 10 ne perçoivent en moyenne que 184 € et 95 € par an, soit un gain limité au sommet de l'échelle et un effet plus fort en visant le milieu de distribution",
+            "Précédent national : la modulation des AF de 2015 (seuils de revenus) a économisé 760 M€ en 2016 (Sénat, 2022) ; elle a été validée par le Conseil constitutionnel (2014-706 DC, cons. 35-36)",
+            "Précédent britannique : la limite de deux enfants (2017) prive 453 600 ménages et plus de 1,6 million d'enfants d'une partie des prestations, et a été abrogée en avril 2026 après la hausse mesurée de la pauvreté infantile (IFS : environ 630 000 enfants de moins en pauvreté absolue sur le long terme) (Full Fact)"
+          ],
+          "obstacles": [
+            "Juridique : le Conseil constitutionnel admet la modulation selon les ressources à condition de ne pas méconnaître les 10e et 11e alinéas du Préambule de 1946 compte tenu des autres aides (2014-706 DC, cons. 35-36) ; la suppression complète pour 5 déciles n'a jamais été examinée et pose un risque réel de censure",
+            "Politique : rupture avec l'universalité des AF, historiquement défendue ; démographie : 645 000 naissances en 2025 (−2,1 %) selon le rapport Sénat n° 131 cité dans le poste",
+            "Social : la perte (moyenne de plusieurs centaines d'euros par an) touche les classes moyennes ; les études britanniques montrent un effet sur la pauvreté infantile",
+            "Un transfert de la charge vers les collectivités (crèches, ASE) est possible"
+          ],
+          "sources": [
+            {
+              "titre": "IGF-IGAS — Revue de dépenses relative à l'efficacité des politiques familiales (14/08/2026), annexe IV",
+              "url": "https://igas.gouv.fr/sites/igas/files/2026-08/Revue%20de%20d%C3%A9penses_politiques%20familiales%20%282026%29.pdf",
+              "ouverte": true
+            },
+            {
+              "titre": "Cnaf — Analyses statistiques n° 7 (2026) : allocations familiales 13,4 Md€ en 2024",
+              "url": "https://caf.fr/sites/default/files/medias/cnaf/Nous_connaitre/Recherche_et_statistiques/Analyses_statistiques/CNAF_n%C2%B07_Analyses_statistiques.pdf",
+              "ouverte": true
+            },
+            {
+              "titre": "Conseil constitutionnel — Décision n° 2014-706 DC du 18 décembre 2014",
+              "url": "https://www.conseil-constitutionnel.fr/decision/2014/2014706DC.htm",
+              "ouverte": true
+            },
+            {
+              "titre": "Sénat — Compte rendu du 2 février 2022 : 760 M€ économisés par la modulation des AF en 2016",
+              "url": "https://www.senat.fr/cra/s20220202/s20220202_5.html",
+              "ouverte": true
+            },
+            {
+              "titre": "Full Fact — Child poverty and the two-child benefit limit: explained",
+              "url": "https://fullfact.org/politics/two-child-benefit-cap-explainer/",
+              "ouverte": true
+            }
+          ],
+          "non_verifie": true,
+          "notes": "Calcul : 0,3 Md€ (gel 1 an, étude d'impact PLFSS 2026) + économie sur les déciles 6-10. AF totales 13,4 Md€ (Cnaf n° 7) ; hypothèse ~30 M de ménages, soit ~3 M par décile (non sourcée) ; moyenne ~447 €/ménage/an ; déciles 9 et 10 = 184 € et 95 € (IGF-IGAS annexe IV) soit 0,55 + 0,29 = 0,84 Md€ ; déciles 6, 7, 8 estimés à ~80 % de la moyenne (~360 €) = 3 x 3 M x 360 € = 3,2 Md€ (hypothèse, répartition par décile non retrouvée dans le document). Total déciles 6-10 ≈ 4,0 Md€ ; + 0,3 = 4,3 Md€. Remplace le cran 3 (1,2 Md€), qu'il englobe (même levier, plus large), sans addition. Horizon : année pleine dès la 1re année ; gain net minoré par le coût de gestion de la conditionnalité. Les AF de rang 1 enfant n'existent pas : l'estimation est incertaine de ±1 Md€."
         }
       ],
       "sources": [
@@ -755,7 +993,57 @@
             }
           ],
           "non_verifie": false,
-          "notes": "Mesure proche substituée à la durée maximale de 12 mois (« près de 6 Md€ » issus d'une note interne de l'Unédic lue via la presse, non retrouvée ; un coefficient de 0,6 donne 730 x 0,6 = 438 jours soit 14,4 mois). Calcul : 1,59 (cran 2) + 3,186 (coefficient 0,6, modèle comptable du CAE) = 4,78 ≈ 4,8 Md€. Le modèle simulé du CAE donnerait 2,0 + 5,8 = 7,8 Md€ : ordre de grandeur plus haut non retenu. L'addition des chiffrages réforme par réforme du CAE surestime légèrement (certains allocataires exclus par le cran 2 ne sont plus concernés par la réduction de durée) ; effet non quantifié. Impact RSA/ASS non déduit."
+          "notes": "Mesure proche substituée à la durée maximale de 12 mois (« près de 6 Md€ » issus d'une note interne de l'Unédic lue via la presse, non retrouvée ; un coefficient de 0,6 donne 730 x 0,6 = 438 jours soit 14,4 mois). Calcul : 1,59 (cran 2) + 3,186 (coefficient 0,6, modèle comptable du CAE) = 4,78 ≈ 4,8 Md€. Le modèle simulé du CAE donnerait 2,0 + 5,8 = 7,8 Md€ : ordre de grandeur plus haut non retenu. L'addition des chiffrages réforme par réforme du CAE surestime légèrement (certains allocataires exclus par le cran 2 ne sont plus concernés par la réduction de durée) ; effet non quantifié. Impact RSA/ASS non déduit.",
+          "horizon": {
+            "annee": 2029,
+            "estime": true,
+            "justif": "Réduction de durée d'indemnisation : effet sur le stock d'allocataires, année pleine après 18-24 mois (cf. cran 4)."
+          }
+        },
+        {
+          "niveau": 4,
+          "mesure": "Cran 3 remplacé par : cran 2 + coefficient de conversion de la durée d'indemnisation ramené de 0,75 à 0,5 (durée maximale en temps normal de 12 mois au lieu de 18, sur le modèle de l'Allemagne)",
+          "gain_mds": 6.9,
+          "faisabilite": 2,
+          "arguments": [
+            "CAE (avril 2026) : coefficient 0,6 = 3,186 Md€ par an (modèle comptable) ; en prolongeant à 0,5, la durée maximale tombe à 730 x 0,5 = 365 jours, soit 12 mois",
+            "Précédent allemand : l'ALG I est versée 6 mois pour 12 mois cotisés et 12 mois au maximum pour 24 mois cotisés ; des durées prolongées n'existent qu'à partir de 50 ans (15 mois pour 30 mois cotisés), 55 ans (18 mois) et 58 ans (24 mois)",
+            "Le CAE chiffre déjà un plafond d'allocation de 2 500 € (1,144 Md€) en référence aux plafonds suédois (2 339 €) et belges (2 231 €)"
+          ],
+          "obstacles": [
+            "Juridique : décret ou accord paritaire : le gouvernement ne peut se substituer aux partenaires sociaux qu'en cas d'échec de la négociation (art. L. 5422-20 CT, Conseil d'État n° 434920) ; ni constitutionnel ni européen identifié, mais risque de contentieux sur la proportionnalité",
+            "Économique et social : report vers l'ASS et le RSA (la part des sortants en fin de droits recevant l'ASS est passée de 13 % à 20 %, Unédic) ; les économies de l'Unédic se transforment en dépenses de l'État et des départements, donc le gain consolidé APU est inférieur",
+            "Politique : forte opposition syndicale ; la contracyclicité a déjà réduit la durée potentielle moyenne de 20 à 16 mois (Unédic)"
+          ],
+          "sources": [
+            {
+              "titre": "Conseil d'analyse économique — Note n° 90 « Mesurer l'efficacité de l'assurance chômage » (14/04/2026), tableau 1 p. 11",
+              "url": "https://cae-eco.fr/static/pdf/CAE090_Assurance-chomage_260414.pdf",
+              "ouverte": true
+            },
+            {
+              "titre": "Conseil d'État — Décision n° 434920 du 25 novembre 2020 (analyse)",
+              "url": "https://www.conseil-etat.fr/fr/arianeweb/CE/analyse/2020-11-25/434920",
+              "ouverte": true
+            },
+            {
+              "titre": "Unédic — Réforme 2023 : premiers effets de la contracyclicité (18/12/2025)",
+              "url": "https://www.unedic.org/publications/reforme-2023-premiers-effets-de-la-reforme-de-contracyclicite",
+              "ouverte": true
+            },
+            {
+              "titre": "Lohnsteuer-kompakt — Durée du Arbeitslosengeld I (ALG I) en Allemagne selon mois cotisés et âge",
+              "url": "https://www.lohnsteuer-kompakt.de/en/fag/0/677/how_long_is_the_unemployment_benefit_paid",
+              "ouverte": true
+            }
+          ],
+          "non_verifie": true,
+          "notes": "Calcul : 1,59 Md€ (cran 2, CAE modèle comptable) + 3,186 x (0,75−0,5)/(0,75−0,6) = 3,186 x 0,25/0,15 = 5,31 Md€ (extrapolation linéaire du chiffrage CAE, non publiée) = 6,9 Md€. Le chiffrage est probablement sur-estimé (les effets décroissent avec l'ampleur) et ne déduit pas le report vers ASS/RSA : en consolidé APU, le gain net pourrait être de moitié. Remplace le cran 3 (4,8 Md€) qu'il englobe. Horizon : année pleine après 18-24 mois (stock d'allocataires). Pas de double compte avec le poste RSA/ASS : report non déduit mais signalé.",
+          "horizon": {
+            "annee": 2029,
+            "estime": false,
+            "justif": "Année pleine après 18-24 mois (stock d'allocataires)."
+          }
         }
       ],
       "sources": [
@@ -914,6 +1202,52 @@
           ],
           "non_verifie": true,
           "notes": "Gain = 5,8 (cran 2) + 3,0 (Cour des comptes, RALFSS 2025, ch. III : élargissement de l'assiette de la réduction générale dégressive à la participation et à l'intéressement, « près de 3 Md€ en 2025 » à comportements inchangés) = 8,8 Md€. Chiffre relu dans le PDF de la Cour ouvert en passe 4. Réserves : chiffre 2025 non actualisé ; antérieur à la réforme LFSS 2026, additivité non garantie ; le Sénat (reco n° 17) ne chiffre pas de réduction."
+        },
+        {
+          "niveau": 4,
+          "mesure": "Cran 3 + « Program Review » des aides aux entreprises : baisse d'un tiers de l'enveloppe des subventions budgétaires aux entreprises (30 Md€ selon le ministre), par suppression de dispositifs entiers plutôt que rabot, sur 3 ans",
+          "gain_mds": 16.8,
+          "faisabilite": 2,
+          "arguments": [
+            "Précédent Canada 1995-96 : la Program Review a réduit les budgets ministériels de 5 à 65 % et le pays a dégagé un premier excédent en 28 ans dès 1997-98 (IRPP)",
+            "Précédent Royaume-Uni 2010 : budgets ministériels hors santé et aide internationale -19 % en moyenne sur quatre ans (HM Treasury)",
+            "Le Sénat relève que l'État ne sait pas chiffrer précisément ses aides (2 200 dispositifs), ce qui rend l'évaluation dispositif par dispositif préalable à toute suppression",
+            "Les subventions budgétaires (30 Md€) sont le seul pan que l'État peut couper sans toucher à la fiscalité ni au coût du travail"
+          ],
+          "obstacles": [
+            "Juridique : droit de l'UE sur les aides d'État sans objet pour des suppressions, mais la PAC (9-10 Md€ en gestion indirecte, hors périmètre) et les cofinancements européens sont intangibles ; sécurité juridique : CC 2013-682 DC cons. 14 impose un motif d'intérêt général suffisant pour remettre en cause des aides légalement acquises (contrats pluriannuels, crédits d'impôt en cours)",
+            "Économique : risque de recul de l'investissement et de l'emploi dans les filières aidées (industrie, agriculture, énergie), délocalisations ; le Sénat rappelle que les aides sont à mettre en regard de prélèvements obligatoires élevés sur les entreprises",
+            "Politique : opposition des fédérations professionnelles et des régions co-financeuses ; l'ampleur du Canada (5 à 65 % selon les ministères) suppose une volonté politique de plusieurs années"
+          ],
+          "sources": [
+            {
+              "titre": "Sénat — commission d'enquête aides publiques aux grandes entreprises, « L'essentiel » (rapport n° 808, 2024-2025) : estimation du ministre 150 Md€ dont 30 Md€ de dépenses budgétaires, 40 Md€ de dépenses fiscales, 80 Md€ d'allègements",
+              "url": "https://www.senat.fr/rap/r24-808-1/r24-808-1-syn.pdf",
+              "ouverte": true
+            },
+            {
+              "titre": "IRPP, Options politiques — Why Trudeau needs to embrace expenditure reviews (2016) : Program Review 1995-96, budgets ministériels réduits de 5 à 65 %, effectif de la fonction publique centrale -20 %, premier excédent en 28 ans en 1997-98",
+              "url": "https://policyoptions.irpp.org/2016/07/why-trudeau-needs-to-embrace-expenditure-reviews/",
+              "ouverte": true
+            },
+            {
+              "titre": "HM Treasury — Spending Review 2010 (Cm 7942), résumé : budgets ministériels hors santé et aide internationale réduits de 19 % en moyenne sur quatre ans",
+              "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/203827/Spending_review_2010_executive_summary.pdf",
+              "ouverte": true
+            },
+            {
+              "titre": "Conseil constitutionnel — décision n° 2013-682 DC du 19 décembre 2013, cons. 14 (le législateur ne peut, sans motif d'intérêt général suffisant, porter atteinte aux situations légalement acquises ni aux effets qui peuvent légitimement être attendus de telles situations)",
+              "url": "https://www.conseil-constitutionnel.fr/decision/2013/2013682DC.htm",
+              "ouverte": true
+            }
+          ],
+          "non_verifie": true,
+          "notes": "Formule : 30 Md€ (dépenses budgétaires, estimation du ministre devant la commission d'enquête du Sénat) × 1/3 = 10,0 Md€ en année pleine après montée en charge sur 3 ans ; moins ~1,0 Md€ de recouvrement avec les mesures budgétaires déjà comptées au cran 1 (IGF : accompagnement CCI/CMA/Bpifrance), soit 9,0 Md€, ramené à 8,0 Md€ par prudence (part agricole cofinancée exclue) ; gain = 8,8 (cran 3) + 8,0 = 16,8 Md€. Aucun chiffrage officiel de ce scénario ; ordre de grandeur de l'auteur. Le chiffre de 30 Md€ est une estimation ministérielle non détaillée. Horizon : année pleine à 3 ans ; année 1 environ un tiers. Le Canada n'a pas coupé un tiers des subventions aux entreprises selon une source ouverte : seule la fourchette ministérielle 5-65 % est vérifiée.",
+          "horizon": {
+            "annee": 2029,
+            "estime": false,
+            "justif": "Program Review : année pleine à 3 ans, année 1 environ un tiers."
+          }
         }
       ],
       "sources": [
@@ -1089,7 +1423,57 @@
             }
           ],
           "non_verifie": true,
-          "notes": "Formule : cohorte annuelle = 0,75 Md€ (Cour 2015) × 50,24/109,47 = 0,344 Md€ ; 3 cohortes cumulées = 1,03 Md€ ; + 0,112 (carence, IGF-IGAS) = 1,14 Md€. Ancien chiffre de 2,2 Md€ abandonné (23 000 ETP × 30 000 € non justifié). Hypothèses : proportionnalité à la masse salariale, chiffre Cour 2015 non actualisé, économies brutes (rétrocession catégorielle non déduite)."
+          "notes": "Formule : cohorte annuelle = 0,75 Md€ (Cour 2015) × 50,24/109,47 = 0,344 Md€ ; 3 cohortes cumulées = 1,03 Md€ ; + 0,112 (carence, IGF-IGAS) = 1,14 Md€. Ancien chiffre de 2,2 Md€ abandonné (23 000 ETP × 30 000 € non justifié). Hypothèses : proportionnalité à la masse salariale, chiffre Cour 2015 non actualisé, économies brutes (rétrocession catégorielle non déduite).",
+          "horizon": {
+            "annee": 2029,
+            "estime": false,
+            "justif": "Cran 2 maintenu trois ans : effet cumulé de 3 cohortes non remplacées."
+          }
+        },
+        {
+          "niveau": 4,
+          "mesure": "Remplace le cran 3 : réduction de 10 % des effectifs de la fonction publique d'État (hors Enseignement scolaire) en 3 ans, par non-remplacement renforcé, plan de départs volontaires et recours accru aux contractuels, sur le modèle du Program Review canadien (-20 % de la fonction publique centrale), + 3 jours de carence",
+          "gain_mds": 5.1,
+          "faisabilite": 2,
+          "arguments": [
+            "Canada 1995-98 : effectif de la fonction publique centrale réduit de 20 % dans le cadre de la Program Review ; premier excédent budgétaire en 28 ans en 1997-98 (IRPP)",
+            "Royaume-Uni 2010 : budgets ministériels hors santé et aide internationale -19 % en moyenne sur quatre ans, dont l'essentiel en dépenses de fonctionnement et de personnel (HM Treasury)",
+            "Le CC (2019-790 DC) a validé l'extension du recrutement contractuel et jugé qu'aucune règle constitutionnelle n'impose que les fonctions régaliennes soient exercées par des fonctionnaires, ce qui élargit la marge pour substituer des contractuels"
+          ],
+          "obstacles": [
+            "Juridique : les fonctionnaires titulaires ne sont pas licenciables pour suppression de poste ; la réduction passe par des départs naturels (retraites), volontaires ou des mobilités ; le statut relève de l'art. 34 de la Constitution et des lois de 1983-1986 (CC 2019-790 DC cons. 20-21) ; indemnités de départ volontaire à financer",
+            "Économique et social : risque de dégradation des services régaliens (police, justice, fiscalité), report de charge sur collectivités et usagers, coûts de reclassement et d'indemnités qui réduisent le gain net la première année",
+            "Politique : grèves de la fonction publique ; le Canada a conduit la réforme dans un contexte de quasi-crise de la dette (déficit élevé), ce que la France n'a pas"
+          ],
+          "sources": [
+            {
+              "titre": "IRPP, Options politiques — Why Trudeau needs to embrace expenditure reviews (2016) : Program Review 1995-96, budgets ministériels réduits de 5 à 65 %, effectif de la fonction publique centrale -20 %, premier excédent en 28 ans en 1997-98",
+              "url": "https://policyoptions.irpp.org/2016/07/why-trudeau-needs-to-embrace-expenditure-reviews/",
+              "ouverte": true
+            },
+            {
+              "titre": "HM Treasury — Spending Review 2010 (Cm 7942), résumé : budgets ministériels hors santé et aide internationale réduits de 19 % en moyenne sur quatre ans",
+              "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/203827/Spending_review_2010_executive_summary.pdf",
+              "ouverte": true
+            },
+            {
+              "titre": "Conseil constitutionnel — décision n° 2019-790 DC du 1er août 2019 (loi de transformation de la fonction publique) : recours élargi aux contractuels validé, art. 34 de la Constitution, pas d'obligation que les fonctions régaliennes soient exercées par des fonctionnaires (cons. 36)",
+              "url": "https://www.conseil-constitutionnel.fr/decision/2019/2019790DC.htm",
+              "ouverte": true
+            },
+            {
+              "titre": "Sénat — rapport spécial PLF 2026, programme 148 Fonction publique (« L'essentiel »)",
+              "url": "https://www.senat.fr/rap/a25-145-5/a25-145-5-syn.pdf",
+              "ouverte": true
+            }
+          ],
+          "non_verifie": true,
+          "notes": "Formule : 10 % × 50,24 Md€ (masse salariale du poste, hors CAS Pensions et Enseignement scolaire) = 5,02 Md€ en année pleine à l'issue des 3 ans, à structure de rémunération inchangée ; + 0,112 Md€ (3 jours de carence, cran 1) = 5,13, arrondi à 5,1. Remplace le cran 3 (1,14 Md€) car les cohortes non remplacées en sont un sous-ensemble : pas de cumul. Hypothèses : hors CAS Pensions (cotisations employeur comprises dans la masse salariale ici ; économie sur pensions non comptée) ; économie brute, sans coûts d'indemnité de départ volontaire ni rétrocessions catégorielles. Montée en charge : environ un tiers par an ; année 1 ≈ 1,7 Md€.",
+          "horizon": {
+            "annee": 2029,
+            "estime": false,
+            "justif": "Réduction de 10 % des effectifs en 3 ans ; environ un tiers par an."
+          }
         }
       ],
       "sources": [
@@ -1199,7 +1583,47 @@
             }
           ],
           "non_verifie": true,
-          "notes": "Aucun chiffrage officiel du scénario complet. Formule : -667 305 élèves / 11,73 M d'élèves = -5,69 % ; × 839 679 ETPT d'enseignants (Sénat) = 47 800 ETP ; moins 4 018 ETP déjà prévus au PLF 2026 = 43 800 ETP ; × 37 500 €/ETP (75 M€ pour 2 000 ETP, Sénat) = 1,64 Md€ (inclut les 4 000 postes du cran 1) ; + 0,48 (Pacte, PLF 2026) + 0,04 (opérateurs) = 2,16 Md€. Hypothèses : proportionnalité enseignants/élèves (le Sénat retient un ratio un peu plus élevé), personnels non enseignants exclus, effet en année pleine après étalement jusqu'en 2029. Ancien chiffre de 3,9 Md€ (coût moyen par élève tous personnels) abandonné."
+          "notes": "Aucun chiffrage officiel du scénario complet. Formule : -667 305 élèves / 11,73 M d'élèves = -5,69 % ; × 839 679 ETPT d'enseignants (Sénat) = 47 800 ETP ; moins 4 018 ETP déjà prévus au PLF 2026 = 43 800 ETP ; × 37 500 €/ETP (75 M€ pour 2 000 ETP, Sénat) = 1,64 Md€ (inclut les 4 000 postes du cran 1) ; + 0,48 (Pacte, PLF 2026) + 0,04 (opérateurs) = 2,16 Md€. Hypothèses : proportionnalité enseignants/élèves (le Sénat retient un ratio un peu plus élevé), personnels non enseignants exclus, effet en année pleine après étalement jusqu'en 2029. Ancien chiffre de 3,9 Md€ (coût moyen par élève tous personnels) abandonné.",
+          "horizon": {
+            "annee": 2029,
+            "estime": false,
+            "justif": "Effet en année pleine après étalement jusqu'en 2029 (baisse démographique)."
+          }
+        },
+        {
+          "niveau": 4,
+          "mesure": "Cran 3 + alignement du temps de service de tous les enseignants du second degré sur 20 heures hebdomadaires (aujourd'hui 18 h pour les certifiés, 15 h pour les agrégés), par modification des décrets statutaires de 1950",
+          "gain_mds": 3.82,
+          "faisabilite": 2,
+          "arguments": [
+            "Évaluation iFRAP (2011, reprise en 2013) : 20 heures de cours hebdomadaires pour tous les professeurs de collège et lycée équivalent à environ 47 000 postes de professeurs",
+            "Le Sénat chiffre à 75 M€ le coût moyen de 2 000 enseignants en année pleine, soit 37 500 € par ETP, ce qui permet de monétiser les postes libérés",
+            "Mesure d'organisation du travail plutôt que de suppression de service : les élèves gardent le même nombre d'heures de cours devant un moins grand nombre de professeurs"
+          ],
+          "obstacles": [
+            "Juridique : obligations de service fixées par décrets de 1950, modifiables par décret sans loi ; pas d'obstacle constitutionnel identifié (aucune décision du Conseil constitutionnel ouverte sur le temps de service des enseignants) ; risque contentieux au Conseil d'État sur l'égalité entre corps",
+            "Économique : l'évaluation iFRAP est ancienne, repose sur la suppression de postes et non sur des départs volontaires ; les enseignants en poste devraient être rémunérés en heures supplémentaires pendant la transition (iFRAP), ce qui retarde le gain",
+            "Social : forte hostilité syndicale, dégradation possible de l'attractivité du métier alors que les recrutements sont déjà difficiles ; recoupement partiel avec le cran 3 (ajustement démographique) corrigé dans le chiffrage"
+          ],
+          "sources": [
+            {
+              "titre": "iFRAP — Professeurs des collèges et lycées : 2 heures de plus pour tous (5 déc. 2013) : 20 h hebdomadaires pour tous = 47 000 postes (évaluation iFRAP 2011)",
+              "url": "https://www.ifrap.org/education-et-culture/professeurs-des-colleges-et-lycees-2-heures-de-plus-pour-tous",
+              "ouverte": true
+            },
+            {
+              "titre": "Sénat — rapport général PLF 2026, Enseignement scolaire",
+              "url": "https://www.senat.fr/rap/l25-139-313/l25-139-313_mono.html",
+              "ouverte": true
+            }
+          ],
+          "non_verifie": true,
+          "notes": "Formule : 47 000 postes (iFRAP) × (1 - 5,69 %) pour tenir compte de la baisse démographique déjà prise en compte au cran 3 = 44 300 ETP ; × 37 500 €/ETP (Sénat) = 1,66 Md€ ; gain = 2,16 (cran 3) + 1,66 = 3,82 Md€. Hypothèses : iFRAP 2011 non actualisé, périmètre collèges et lycées uniquement ; y compris agrégés à 20 h. Économie en année pleine après plusieurs années d'extinction par non-remplacement (pas de licenciement) ; année 1 très inférieure. Aucun précédent étranger chiffré n'a pu être ouvert : seul l'argument interne (iFRAP) est sourcé.",
+          "horizon": {
+            "annee": 2032,
+            "estime": true,
+            "justif": "Extinction par non-remplacement sur plusieurs années, sans année précise ; estimé ~5 ans."
+          }
         }
       ],
       "sources": [
@@ -1298,6 +1722,46 @@
           ],
           "non_verifie": true,
           "notes": "Aucun chiffrage officiel trouvé d'une baisse des charges d'intervention (la commission d'enquête du Sénat n'en propose pas ; l'annonce de 2 à 3 Md€ de la ministre n'est pas justifiée). Formule : 10 % × (4,6 AFITF + 3,8 Anah + 2,0 France Travail = 10,4 Md€, Sénat rapport n° 807) = 1,04 Md€ ; + 2,2 Md€ (cran 2) = 3,2 Md€. France compétences et agences de l'eau (financées par cotisations/redevances) exclues. Hypothèse : financements issus du budget de l'État ; pas de chevauchement avec le poste chomage (Unédic) ni logement."
+        },
+        {
+          "niveau": 4,
+          "mesure": "Cran 3 + montée à -20 % des charges de personnel et de fonctionnement des opérateurs (suppression ou fusion d'agences en bloc, internalisation dans les ministères), sur le modèle de la Program Review canadienne",
+          "gain_mds": 6.5,
+          "faisabilite": 2,
+          "arguments": [
+            "Canada 1995-96 : budgets ministériels réduits de 5 à 65 %, effectifs de la fonction publique centrale -20 %, excédent budgétaire dès 1997-98 (IRPP)",
+            "Royaume-Uni 2010 : -19 % en moyenne sur quatre ans pour les budgets ministériels hors santé et aide internationale (HM Treasury)",
+            "Le Sénat chiffre à 2,2 Md€ une baisse de 8 % du personnel et du fonctionnement des opérateurs ; la proportionnalité donne 5,5 Md€ pour -20 %"
+          ],
+          "obstacles": [
+            "Juridique : les établissements créés par la loi ne peuvent être supprimés que par la loi ; les autorités constitutionnelles et certains organes (CNIL, Défenseur des droits) ne peuvent être abolis par simple réorganisation ; contrats et engagements des structures fusionnées à reprendre",
+            "Économique : le Sénat observe que les fusions 2015-2019 n'ont réduit les emplois que de 0,8 % : les gains par fusion seule sont faibles, une baisse de 20 % suppose de renoncer à des missions ; périmètre incluant universités et organismes de recherche (opérateurs) à arbitrer",
+            "Social et politique : 401 000 emplois sous plafond, report de charges possible sur les collectivités"
+          ],
+          "sources": [
+            {
+              "titre": "Sénat — commission d'enquête sur les agences, « L'essentiel » (rapport n° 807, juillet 2025) : -8 % de personnel+fonctionnement = 2,2 Md€ ; fusions 2015-2019 : emplois -0,8 % seulement",
+              "url": "https://www.senat.fr/rap/r24-807-1/r24-807-1-syn.pdf",
+              "ouverte": true
+            },
+            {
+              "titre": "IRPP, Options politiques — Why Trudeau needs to embrace expenditure reviews (2016) : Program Review 1995-96, budgets ministériels réduits de 5 à 65 %, effectif de la fonction publique centrale -20 %, premier excédent en 28 ans en 1997-98",
+              "url": "https://policyoptions.irpp.org/2016/07/why-trudeau-needs-to-embrace-expenditure-reviews/",
+              "ouverte": true
+            },
+            {
+              "titre": "HM Treasury — Spending Review 2010 (Cm 7942), résumé : budgets ministériels hors santé et aide internationale réduits de 19 % en moyenne sur quatre ans",
+              "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/203827/Spending_review_2010_executive_summary.pdf",
+              "ouverte": true
+            }
+          ],
+          "non_verifie": true,
+          "notes": "Formule : 2,2 Md€ / 8 % × 20 % = 5,5 Md€ (extrapolation linéaire du chiffrage Sénat) ; + 1,04 Md€ (10 % des charges d'intervention AFITF 4,6 + Anah 3,8 + France Travail 2,0 = 10,4 Md€, cran 3) = 6,54 Md€ ≈ 6,5 Md€. Hypothèses : la linéarité n'est pas validée par le Sénat (réduire au-delà de 8 % exige de supprimer des missions) ; hors France compétences et agences de l'eau (cotisations/redevances affectées). Horizon : année pleine après 3 ans. Pas de chevauchement avec les postes chomage et logement (Anah traitée au cran 3 uniquement).",
+          "horizon": {
+            "annee": 2029,
+            "estime": false,
+            "justif": "Année pleine après 3 ans (-20 % des charges, Program Review)."
+          }
         }
       ],
       "sources": [
@@ -1400,6 +1864,46 @@
           ],
           "non_verifie": false,
           "notes": "Gain = 1,021 + 0,400 + 0,314 + 0,335 (borne basse) = 2,07 Md€ ; avec la borne haute de la TVA : 2,39 Md€."
+        },
+        {
+          "niveau": 4,
+          "mesure": "Cran 3 + baisse de 10 % du barème de l'ensemble des APL (5,7 millions de bénéficiaires), avec dégressivité renforcée au-delà du plafond de loyer",
+          "gain_mds": 3.67,
+          "faisabilite": 2,
+          "arguments": [
+            "Les APL représentent 16,1 Md€ (programme 109, PLF 2026) pour 5,7 millions de bénéficiaires : une baisse uniforme de 10 % est le levier d'économie le plus large du poste (Sénat)",
+            "Précédent français récent : le PLF 2026 a gelé le barème et recentré les APL des étudiants extra-européens (Sénat), preuve que le Parlement accepte de toucher à l'APL",
+            "Précédent Royaume-Uni 2010 : réforme du Housing Benefit (âge du tarif chambre partagée porté de 25 à 35 ans) chiffrée à 215-225 M£ par an et plafonnement des prestations totales des ménages (HM Treasury)"
+          ],
+          "obstacles": [
+            "Juridique : CC 2013-682 DC cons. 14 impose un motif d'intérêt général suffisant pour toucher à des droits acquis ; pas de décision constitutionnelle ouverte garantissant le niveau de l'APL ; l'alinéa 10 du Préambule de 1946 (conditions nécessaires au développement de la famille) pourrait être invoqué",
+            "Économique et social : IGF-IGEDD et Sénat soulignent le risque d'impayés, de hausse de la pauvreté des ménages modestes et de report de charges vers les départements et les CCAS",
+            "Politique : première aide touchant les 5,7 millions de ménages les plus modestes, impact concentré sur les bas revenus, incompatible avec les engagements de pouvoir d'achat"
+          ],
+          "sources": [
+            {
+              "titre": "Sénat — avis PLF 2026, mission Cohésion des territoires, crédits Logement : programme 109 (APL) 16,1 Md€, 5,7 millions de bénéficiaires",
+              "url": "https://www.senat.fr/rap/a25-140-6/a25-140-6-syn.pdf",
+              "ouverte": true
+            },
+            {
+              "titre": "IGF-IGEDD — Revue des dépenses publiques en faveur du logement social (nov. 2025, n° 016298-01)",
+              "url": "https://igedd.documentation.developpement-durable.gouv.fr/documents/Affaires-0014341/016298-01_rapport_publi%C3%A9.pdf",
+              "ouverte": true
+            },
+            {
+              "titre": "HM Treasury — Spending Review 2010 (Cm 7942), résumé : budgets ministériels hors santé et aide internationale réduits de 19 % en moyenne sur quatre ans",
+              "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/203827/Spending_review_2010_executive_summary.pdf",
+              "ouverte": true
+            },
+            {
+              "titre": "Conseil constitutionnel — décision n° 2013-682 DC du 19 décembre 2013, cons. 14 (le législateur ne peut, sans motif d'intérêt général suffisant, porter atteinte aux situations légalement acquises ni aux effets qui peuvent légitimement être attendus de telles situations)",
+              "url": "https://www.conseil-constitutionnel.fr/decision/2013/2013682DC.htm",
+              "ouverte": true
+            }
+          ],
+          "non_verifie": true,
+          "notes": "Formule : 10 % × 16,1 Md€ (programme 109, Sénat PLF 2026) = 1,61 Md€ ; gain = 2,07 (cran 3) + 1,61 = 3,68, arrondi à 3,67 Md€ en retirant ~0,01 de recoupement avec le gel de barème du cran 1. Les APL étudiantes du cran 2 (9e-10e déciles) sont marginales, recouvrement négligé. Aucun chiffrage officiel du scénario ; la dégressivité renforcée n'est pas chiffrée (gain supplémentaire possible). Horizon : année pleine dès l'année 2 si barème modifié par décret ; effet immédiat en loi de finances."
         }
       ],
       "sources": [
@@ -1530,6 +2034,47 @@
           ],
           "non_verifie": false,
           "notes": "Calcul direct sur la base officielle 3,67 Md€. Ancien cran à −50 % (1,84 Md€) supprimé : aucun chiffrage ni soutien documentaire. Recul APD en % RNB (0,42 % en 2025, OCDE) non repris : page OCDE non ouvrable (403)."
+        },
+        {
+          "niveau": 4,
+          "mesure": "Cran 3 + alignement sur le modèle britannique 2027 : suppression de l'essentiel de l'aide bilatérale (dons-projets et assistance technique), maintien des seules contributions multilatérales obligatoires, soit −60 % des crédits de paiement de la mission APD",
+          "gain_mds": 2.2,
+          "faisabilite": 2,
+          "arguments": [
+            "Précédent britannique : le Royaume-Uni passe de 0,5 % à 0,3 % du RNB en 2027 (−40 % du ratio, environ −4,5 Md£ par rapport à 2024), avec une aide bilatérale ramenée à environ 2 Md£ en 2027, soit −57 % par rapport aux 4,7 Md£ de 2023 (CGD).",
+            "Le Royaume-Uni avait déjà suspendu en 2021 sa cible légale de 0,7 % par un vote du Parlement : une cible indicative sans plancher contraignant peut être écartée par la loi (CGD).",
+            "En France la cible de 0,7 % est un objectif « s'efforcera » (loi n° 2021-1031) et non un plancher, la rupture n'exige donc pas de réviser un engagement contraignant (Banque des Territoires)."
+          ],
+          "obstacles": [
+            "Juridique : aucun plancher légal chiffré ; loi de finances ordinaire suffisante, mais la loi n° 2021-1031 de programmation devrait être modifiée ou ignorée.",
+            "Les contributions multilatérales (programme 110, engagements pluriannuels, restes à payer élevés) sont peu compressibles à court terme (Sénat) : l'essentiel de l'effort doit porter sur le bilatéral, ce qui impose de fermer des programmes et d'arrêter des projets en cours.",
+            "Économique et social : perte d'influence et de relais (Afrique, francophonie), risque de report de charges vers l'accueil de migrants et la sécurité ; le Royaume-Uni compte lui-même des dépenses d'asile imputées sur l'APD (CGD).",
+            "Politique : cumul avec les baisses 2024-2026 déjà de −35 % en CP à périmètre constant (Sénat)."
+          ],
+          "sources": [
+            {
+              "titre": "CGD — Breaking down Prime Minister Starmer's aid cut (APD britannique de 0,5 % à 0,3 % du RNB en 2027)",
+              "url": "https://www.cgdev.org/blog/breaking-down-prime-minister-starmers-aid-cut",
+              "ouverte": true
+            },
+            {
+              "titre": "Sénat, commission des finances — L'essentiel sur le PLF 2026, mission Aide publique au développement",
+              "url": "https://www.senat.fr/rap/l25-139-34/l25-139-34-syn.pdf",
+              "ouverte": true
+            },
+            {
+              "titre": "Banque des Territoires — La loi de programmation développement solidaire enfin publiée",
+              "url": "https://www.banquedesterritoires.fr/la-loi-de-programmation-developpement-solidaire-enfin-publiee",
+              "ouverte": true
+            }
+          ],
+          "non_verifie": true,
+          "notes": "Gain = 60 % × 3,67 Md€ (CP PLF 2026) = 2,2 Md€ (hypothèse de l'auteur : −60 % ≈ ampleur de la baisse britannique de l'aide bilatérale, −57 %). Aucun chiffrage officiel de ce taux pour la France. Remplace le cran 3 (−30 %, 1,1 Md€), gain supérieur. Année pleine à partir de la 2e année (les engagements pluriannuels en cours s'éteignent sur 2 à 3 ans). Pas de double compte : contributions UE au FED comptées hors mission.",
+          "horizon": {
+            "annee": 2028,
+            "estime": false,
+            "justif": "Année pleine à partir de la 2e année (engagements pluriannuels s'éteignant)."
+          }
         }
       ],
       "sources": [
@@ -1663,6 +2208,52 @@
           ],
           "non_verifie": true,
           "notes": "Passe 4 : aucun chiffrage officiel de la suppression. Ordre de grandeur : 0,8 Md€ ≈ 60 % de la dépense brute 2025 (1,314 Md€) après report estimé vers l'hôpital et les urgences (hypothèse de l'auteur, report non chiffré officiellement). Repère officiel : structure de la dépense AME 2024 = hôpital 60,8 %, soins de ville 26,5 %, produits de santé 12,7 % (DSS via Sénat). Borne haute brute : 1,314 Md€."
+        },
+        {
+          "niveau": 4,
+          "mesure": "Cran 3 + modèle allemand de l'Asylbewerberleistungsgesetz : suppression de l'AME de droit commun et limitation du dispositif de soins urgents aux urgences vitales et maladies à risque collectif, avec facturation aux pays d'origine ou aux personnes",
+          "gain_mds": 1.0,
+          "faisabilite": 3,
+          "arguments": [
+            "Précédent allemand : le § 4 de l'Asylbewerberleistungsgesetz limite les soins des étrangers concernés au traitement des maladies aiguës et des états douloureux, ce qui exclut une couverture de droit commun (texte de loi).",
+            "Le panier restreint est déjà admis comme voie de réforme par le rapporteur spécial du Sénat (modèle allemand).",
+            "Le cran porte la suppression de l'AME de droit commun (cran 3, 0,8 Md€) à environ 76 % de la dépense brute de 1,314 Md€ en y ajoutant le resserrement des soins urgents."
+          ],
+          "obstacles": [
+            "Constitutionnel : alinéa 11 du Préambule de 1946 (protection de la santé). La décision n° 2003-488 DC valide les restrictions d'accès à l'AME parce que les soins urgents restent assurés ; un dispositif réduit aux seules urgences vitales est plus exposé à la censure.",
+            "La décision n° 93-325 DC exige que les restrictions de séjour ne privent pas d'effet les principes du Préambule de 1946 et prévoit des exceptions pour garantir l'effectivité de la protection.",
+            "Sanitaire et économique : report vers les urgences hospitalières, soins tardifs plus coûteux, risque épidémiologique (maladies infectieuses), non chiffré officiellement.",
+            "Éthique et social : opposition des soignants et de l'Ordre ; hôpitaux publics qui supportent la dette de soins non remboursés."
+          ],
+          "sources": [
+            {
+              "titre": "Gesetze-im-Internet — Asylbewerberleistungsgesetz, § 4 (soins limités aux maladies aiguës et à la douleur)",
+              "url": "https://www.gesetze-im-internet.de/asylblg/__4.html",
+              "ouverte": true
+            },
+            {
+              "titre": "Sénat, commission des finances — avis PLF 2026, mission Santé (AME)",
+              "url": "https://www.senat.fr/fileadmin/cru-1762483659/Commissions/Finances/2025-2026/PLF_2026/NP/Sante_PLF_2026_NP.pdf",
+              "ouverte": true
+            },
+            {
+              "titre": "Conseil constitutionnel — décision n° 2003-488 DC du 29 décembre 2003",
+              "url": "https://www.conseil-constitutionnel.fr/decision/2003/2003488DC.htm",
+              "ouverte": true
+            },
+            {
+              "titre": "Conseil constitutionnel — décision n° 93-325 DC du 13 août 1993 (maîtrise de l'immigration)",
+              "url": "https://www.conseil-constitutionnel.fr/decision/1993/93325DC.htm",
+              "ouverte": true
+            }
+          ],
+          "non_verifie": true,
+          "notes": "Gain = 76 % × 1,314 Md€ (dépense AME de droit commun 2025) ≈ 1,0 Md€ net du report supposé vers l'hôpital (hypothèse de l'auteur, 24 % de la dépense brute reportée sur les urgences). Aucun chiffrage officiel. Montée en charge sur 1 à 2 ans. Remplace le cran 3 (0,8 Md€), gain supérieur. Plafond naturel faible : la dépense totale est de 1,3 Md€, donc la marge de rupture est limitée.",
+          "horizon": {
+            "annee": 2028,
+            "estime": false,
+            "justif": "Montée en charge sur 1 à 2 ans."
+          }
         }
       ],
       "sources": [
@@ -1828,7 +2419,68 @@
             }
           ],
           "non_verifie": true,
-          "notes": "Passe 4 : le chiffre de 10 Md€ (annonce politique de 2015) est abandonné faute de chiffrage officiel. Nouvelle formule : gain cran 2 (2,4 Md€) + 5 % × charges réelles de fonctionnement des départements 2025 (67,0 Md€, Cour des comptes juill. 2026) = 2,4 + 3,35 ≈ 5,7 Md€. Le taux de 5 % d'économies de structure est une hypothèse de l'auteur, volontairement prudente au regard de la Cour des comptes (2019) selon laquelle la fusion des régions n'a pas produit d'économies de gestion visibles. Recouvrement éventuel avec le plafond du cran 2 non déduit : borne haute."
+          "notes": "Passe 4 : le chiffre de 10 Md€ (annonce politique de 2015) est abandonné faute de chiffrage officiel. Nouvelle formule : gain cran 2 (2,4 Md€) + 5 % × charges réelles de fonctionnement des départements 2025 (67,0 Md€, Cour des comptes juill. 2026) = 2,4 + 3,35 ≈ 5,7 Md€. Le taux de 5 % d'économies de structure est une hypothèse de l'auteur, volontairement prudente au regard de la Cour des comptes (2019) selon laquelle la fusion des régions n'a pas produit d'économies de gestion visibles. Recouvrement éventuel avec le plafond du cran 2 non déduit : borne haute.",
+          "horizon": {
+            "annee": 2030,
+            "estime": true,
+            "justif": "Suppression d'un échelon et mutualisation : progressif, sans année précise ; estimé ~4 ans."
+          }
+        },
+        {
+          "niveau": 4,
+          "mesure": "Cran 3 + nouveau « plan de redressement » des finances locales sur le modèle 2014-2017 : baisse de 20 % de la DGF (27,4 Md€) étalée sur trois ans, sans restitution",
+          "gain_mds": 11.2,
+          "faisabilite": 3,
+          "arguments": [
+            "Précédent français 2014-2017 : la DGF a baissé de 11 Md€ sur 2015-2017 (3,67 Md€ dès 2015), après 1,5 Md€ en 2014 ; la Cour des comptes chiffre la baisse de la dotation forfaitaire à 11,2 Md€ entre 2013 et 2017.",
+            "Effet constaté : l'investissement local a reculé de 9,2 % en 2014, et la Cour jugeait peu crédible un redressement à court terme (Maire-info) : le coût de la méthode est d'abord supporté par l'investissement, d'où l'intérêt de la coupler avec un échelon supprimé.",
+            "La Cour des comptes elle-même propose aujourd'hui de baisser la DGF forfaitaire des communes (Banque des Territoires)."
+          ],
+          "obstacles": [
+            "Constitutionnel : art. 72 (libre administration) et 72-2 (ressources propres en part déterminante) ; la décision n° 2026-901 DC retient un plafond de 2 % des recettes de fonctionnement pour les prélèvements de type DILICO ; une baisse de 20 % de la DGF sans lien avec les recettes réelles est exposée au grief d'entrave à la libre administration.",
+            "Les contrats de Cahors ont été validés par la décision n° 2017-760 DC sous conditions (modulation, procédure contradictoire, plafond de 2 %) : une coupe uniforme n'a pas cette garantie.",
+            "Politique : les baisses de DGF 2014-2017 ont laissé de « mauvais souvenirs » chez les élus (Banque des Territoires) et sont à l'origine du recul de l'investissement.",
+            "Report de charges vers les ménages : hausse de la fiscalité locale ou baisse des services, effet contraire à l'objectif d'économie net sur les APU."
+          ],
+          "sources": [
+            {
+              "titre": "Sénat — séance du 24 novembre 2014 : DGF en baisse de 11 Md€ sur 2015-2017 (3,67 Md€ dès 2015)",
+              "url": "https://www.senat.fr/seances/s201411/s20141124/s20141124009.html",
+              "ouverte": true
+            },
+            {
+              "titre": "Maire-info — La Cour des comptes s'inquiète du recul de l'investissement public local (−9,2 % en 2014)",
+              "url": "https://www.maire-info.com/la-cour-des-comptes-s%27inquiete-%C3%A0-son-tour-du-recul%0D%0Ade-l%27investissement-public-local-article2-18848",
+              "ouverte": true
+            },
+            {
+              "titre": "Banque des Territoires — Ponctions sur les budgets locaux : bilan et préconisations de la Cour des comptes",
+              "url": "https://www.banquedesterritoires.fr/ponctions-sur-les-budgets-locaux-le-bilan-et-les-preconisations-de-la-cour-des-comptes",
+              "ouverte": true
+            },
+            {
+              "titre": "Conseil constitutionnel — décision n° 2026-901 DC du 19 février 2026",
+              "url": "https://www.conseil-constitutionnel.fr/decision/2026/2026901DC.htm",
+              "ouverte": true
+            },
+            {
+              "titre": "Conseil constitutionnel — décision n° 2017-760 DC du 18 janvier 2018",
+              "url": "https://www.conseil-constitutionnel.fr/decision/2018/2017760DC.htm",
+              "ouverte": true
+            },
+            {
+              "titre": "Conseil constitutionnel — Constitution du 4 octobre 1958 en vigueur (art. 72 et 72-2)",
+              "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+              "ouverte": true
+            }
+          ],
+          "non_verifie": true,
+          "notes": "Gain = cran 3 (5,7 Md€) + 20 % × 27,4 Md€ (DGF 2026, art. 129 LFI 2026) = 5,7 + 5,5 = 11,2 Md€. Hypothèses de l'auteur : la baisse de DGF se traduit à 100 % en baisse de dépenses (en 2014-2017 une partie a été compensée par la fiscalité et l'emprunt) et le recouvrement avec les 3,35 Md€ d'économies des départements du cran 3 est négligé. Année pleine à la 3e année (rythme 2015-2017). Aucun chiffrage officiel de ce taux. Remplace le cran 3 (5,7 Md€).",
+          "horizon": {
+            "annee": 2029,
+            "estime": false,
+            "justif": "Baisse de DGF étalée sur trois ans ; année pleine à la 3e année."
+          }
         }
       ],
       "sources": [
@@ -1987,6 +2639,51 @@
           ],
           "non_verifie": true,
           "notes": "Aucun chiffrage officiel du moratoire. Gain = 7 % × 78,7 Md€ ≈ 5,5 Md€ (part de projets non engagés = hypothèse de l'auteur, inchangée par rapport à la version précédente à 7 % de 70,8 Md€ ≈ 5 Md€). Cran cumulatif : recouvrement partiel avec les crans 1-2 (les dotations d'investissement financent une partie des projets), le gain de 5,5 est un total, non additionné à 0,57. Passe 4 : toujours aucun chiffrage officiel de moratoire. Attention : le gouvernement prévoit déjà un recul de l'investissement local de 2,5 à 3,1 % en 2026 (≈ 2,0 à 2,4 Md€ sur 78,7 Md€, cycle municipal), part déjà intégrée à la trajectoire : le gain additionnel réel est donc plus faible que 5,5 Md€."
+        },
+        {
+          "niveau": 4,
+          "mesure": "Cran 3 + suppression totale des dotations d'investissement de l'État (DETR, DSIL, DSID, DPV, FNADT) et du Fonds vert (≈ 2,84 Md€), avec encadrement de l'investissement local par un plafond d'autofinancement",
+          "gain_mds": 7.5,
+          "faisabilite": 2,
+          "arguments": [
+            "Précédent français : lors de la baisse de la DGF 2014-2017, l'investissement local a reculé de 9,2 % en 2014 (Cour des comptes, via Maire-info) ; l'ajustement porte spontanément sur l'investissement plutôt que sur le fonctionnement.",
+            "L'investissement local atteint 78,7 Md€ en 2025 (OFGL) : une baisse de 10 % correspond à un ordre de grandeur de 7,9 Md€."
+          ],
+          "obstacles": [
+            "Juridique : les dotations d'investissement ne sont pas des ressources propres au sens de l'art. 72-2 ; une suppression est possible par la loi. Le moratoire du cran 3 touche en revanche la libre administration (art. 72).",
+            "Économique : effet récessif sur le BTP et l'emploi local ; un investissement local déprimé alimente un déficit d'équipement (écoles, eau, transition) reporté sur les générations suivantes.",
+            "Contradiction avec la transition écologique (Fonds vert, cible de 35 % de projets en DSIL) et avec la rénovation du bâti existant.",
+            "Chevauchement avec le moratoire du cran 3 : la suppression des subventions réduit déjà des projets que le moratoire visait."
+          ],
+          "sources": [
+            {
+              "titre": "OFGL — Pré-rapport 2026 sur les finances locales (investissement 78,71 Md€ en 2025)",
+              "url": "https://www.collectivites-locales.gouv.fr/files/files/Etudes-et-statistiques/OFGL/rapport%202026/Pr%C3%A9-Rapport%20OFGL%202026.pdf",
+              "ouverte": true
+            },
+            {
+              "titre": "Maire-info — Dotations de soutien : fin de l'aide aux maires bâtisseurs (circulaire 2026)",
+              "url": "https://www.maire-info.com/dotations-etat/dotations-soutien-gouvernement-acte-la-fin-aide-aux-maires-batisseurs-article-30666",
+              "ouverte": true
+            },
+            {
+              "titre": "Maire-info — La Cour des comptes s'inquiète du recul de l'investissement public local (−9,2 % en 2014)",
+              "url": "https://www.maire-info.com/la-cour-des-comptes-s%27inquiete-%C3%A0-son-tour-du-recul%0D%0Ade-l%27investissement-public-local-article2-18848",
+              "ouverte": true
+            },
+            {
+              "titre": "Conseil constitutionnel — Constitution du 4 octobre 1958 en vigueur (art. 72 et 72-2)",
+              "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+              "ouverte": true
+            }
+          ],
+          "non_verifie": true,
+          "notes": "Gain = cran 3 (5,5 Md€) + (2,84 − 0,57) Md€ de dotations supprimées en plus du cran 2 = 5,5 + 2,27 = 7,8 Md€ ; ramené à 7,5 Md€ en déduisant ~0,3 Md€ de recouvrement avec le moratoire (hypothèse de l'auteur). Aucun chiffrage officiel. Année pleine dès la 2e année. Remplace le cran 3 (5,5 Md€). Précédent de rupture faible dans ce poste : les sources ouvertes ne documentent que l'effet 2014 de la baisse de DGF.",
+          "horizon": {
+            "annee": 2028,
+            "estime": false,
+            "justif": "Année pleine dès la 2e année."
+          }
         }
       ],
       "sources": [
@@ -2108,6 +2805,46 @@
           ],
           "non_verifie": false,
           "notes": "Gain 2026 = 57,1 − 50,5. Ancien cran « retour au niveau 2023 = 6 Md€ » remplacé : niveau 2023 non retrouvé dans les sources ouvertes."
+        },
+        {
+          "niveau": 4,
+          "mesure": "Remplace le cran 3 : « SDSR à la française », revue stratégique avec baisse de 10 % des crédits de la mission Défense sous leur niveau de 2025 (50,5 → 45,5 Md€), réduction de format (effectifs, programmes d'armement étalés ou annulés) et abandon de la surmarche de la loi n° 2026-791",
+          "gain_mds": 11.7,
+          "faisabilite": 3,
+          "arguments": [
+            "Précédent britannique 2010 : la SDSR réduit le budget du ministère de la Défense de 7,7 % sur quatre ans (le Trésor avait demandé des options de −10 à −20 %), avec −17 000 militaires, l'arrêt du Nimrod MRA4, le retrait anticipé du Harrier et de l'Ark Royal et −40 % de chars Challenger 2.",
+            "Précédent canadien 1995 : la revue des programmes réduit les budgets ministériels de 5 à 65 %, la fonction publique centrale de 20 %, et mène à un excédent budgétaire en 1997-98, le premier en 28 ans, suivi de dix années d'excédent.",
+            "Coût stratégique documenté du précédent britannique : plus aucun avion ne peut décoller des porte-avions britanniques jusqu'en 2019."
+          ],
+          "obstacles": [
+            "Juridique : la loi n° 2026-791 fixe 2,5 % du PIB en 2030 et 3,5 % en 2035 ; une nouvelle loi de programmation est indispensable.",
+            "Politique et stratégique : contexte de guerre en Europe, engagements d'alliance de l'OTAN sur le niveau de l'effort de défense (non sourcés ici), perte de crédibilité de la dissuasion et de l'industrie de défense.",
+            "Économique : filière industrielle d'armement (emploi, exportations), pénalités de rupture de contrats, coûts de restructuration à court terme qui rognent le gain des deux premières années."
+          ],
+          "sources": [
+            {
+              "titre": "Légifrance — Loi n° 2026-791 du 16 août 2026 actualisant la programmation militaire 2024-2030",
+              "url": "https://www.legifrance.gouv.fr/jorf/id/JORFSCTA000054694833",
+              "ouverte": true
+            },
+            {
+              "titre": "Wikipedia — Strategic Defence and Security Review 2010 (budget MoD −7,7 % sur 4 ans, −17 000 militaires, Ark Royal, Harrier, Nimrod)",
+              "url": "https://en.wikipedia.org/wiki/Strategic_Defence_and_Security_Review_2010",
+              "ouverte": true
+            },
+            {
+              "titre": "Policy Options (IRPP) — Canada, la revue des programmes de 1995 (budgets ministériels −5 à −65 %, fonction publique −20 %, excédent en 1997-98)",
+              "url": "https://policyoptions.irpp.org/?p=264222",
+              "ouverte": true
+            }
+          ],
+          "non_verifie": true,
+          "notes": "Gain 2026 = 57,1 − 45,5 = 11,6, arrondi 11,7 Md€ (45,45 = 50,5 × 0,9). Taux −10 % : hypothèse de l'auteur, intermédiaire entre le Royaume-Uni 2010 (−7,7 %) et l'ordre des options demandées par le Trésor (−10 à −20 %). Aucun chiffrage officiel. Année pleine à la 3e ou 4e année : le Royaume-Uni a étalé la baisse sur quatre ans ; la première année donnerait moins de 4 Md€. Remplace le cran 3 (gel à 50,5 Md€, 6,6 Md€).",
+          "horizon": {
+            "annee": 2030,
+            "estime": false,
+            "justif": "Année pleine à la 3e ou 4e année (UK étalé sur 4 ans) ; 1re année < 4 Md€."
+          }
         }
       ],
       "sources": [
@@ -2206,7 +2943,12 @@
             }
           ],
           "non_verifie": true,
-          "notes": "Aucun chiffrage officiel d'un rabais français. Ordre de grandeur 2 Md€ = rabais néerlandais (1 921 M€, prix 2020), non cumulable avec le cran 1. Gain net réel plus faible (la France finance ~sa part des rabais). Passe 4 : aucun chiffrage officiel d'un rabais français. Le Sénat (juin 2026) estime la contribution annuelle moyenne de la France à 36 Md€ (42 si les nouvelles ressources propres échouent) contre 26 Md€ aujourd'hui, mais ne chiffre pas de rabais ; l'ordre de grandeur reste le rabais néerlandais de la décision 2020/2053."
+          "notes": "Aucun chiffrage officiel d'un rabais français. Ordre de grandeur 2 Md€ = rabais néerlandais (1 921 M€, prix 2020), non cumulable avec le cran 1. Gain net réel plus faible (la France finance ~sa part des rabais). Passe 4 : aucun chiffrage officiel d'un rabais français. Le Sénat (juin 2026) estime la contribution annuelle moyenne de la France à 36 Md€ (42 si les nouvelles ressources propres échouent) contre 26 Md€ aujourd'hui, mais ne chiffre pas de rabais ; l'ordre de grandeur reste le rabais néerlandais de la décision 2020/2053.",
+          "horizon": {
+            "annee": 2028,
+            "estime": false,
+            "justif": "Rabais négocié dans le CFP 2028-2034 : effet à partir de 2028."
+          }
         },
         {
           "niveau": 3,
@@ -2245,6 +2987,57 @@
           ],
           "non_verifie": true,
           "notes": "Gain net = PSR 2026 (28,44) - retours 2024 (16,456) = 11,98 ≈ 12,0 Md€ (années différentes ; hors ressources propres traditionnelles/droits de douane reversés à l'UE). Référence : solde net comptable 2024 = -7,9 Md€ (Sénat). Si la PAC (9,6 Md€) est compensée nationalement, gain ≈ 2,4 Md€. Les mentions 'recours en manquement CJUE' et 'art. 88-1 Constitution' de la version précédente sont retirées faute de texte ouvert. Passe 4 : aucun chiffrage officiel d'un refus de paiement ; calcul à partir de chiffres officiels du Sénat et de la décision 2020/2053, inchangé."
+        },
+        {
+          "niveau": 4,
+          "mesure": "Sortie de l'Union européenne (article 50 TUE) avec accord commercial type Royaume-Uni/UE : arrêt du prélèvement sur recettes et conservation des droits de douane, sans compensation nationale des retours européens (remplace le cran 3)",
+          "gain_mds": 14.0,
+          "faisabilite": 3,
+          "arguments": [
+            "Précédent du Brexit : le Royaume-Uni versait une contribution nette de 9,7 Md£ prévue en 2016/17, 8,4 Md£ en 2017/18 et 9,3 Md£ en 2018/19 selon les prévisions citées par Full Fact, soit un ordre de grandeur comparable au solde net français de 7,9 Md€ (2024, méthode comptable, Sénat) ; il a pu sortir par la procédure de l'article 50 sans veto d'un État membre.",
+            "La France est le 2e contributeur net de l'Union (solde comptable 2024 de -7,9 Md€ selon le Sénat) et le PSR 2026 (28,44 Md€) excède de près de 12 Md€ les dépenses européennes réalisées en France en 2024 (16,456 Md€, dont 9,6 Md€ de PAC).",
+            "Le Brexit montre aussi le coût de la rupture : Full Fact rapporte que l'UE a évoqué une facture de sortie pouvant atteindre 40 Md€ pour le Royaume-Uni (FT) ; l'effet économique de long terme (OBR : productivité environ -4 %) n'a pas pu être rouvert dans cette passe et n'est pas utilisé dans le chiffrage."
+          ],
+          "obstacles": [
+            "Constitution art. 88-1 : « La République participe à l'Union européenne » ; le Conseil constitutionnel en fait la base d'un ordre juridique intégré (décision n° 2004-505 DC du 19 novembre 2004, cons. 5 et 11). Un retrait suppose une révision constitutionnelle (art. 89), à la majorité des 3/5 du Congrès après vote conforme des deux assemblées ou référendum.",
+            "Traité sur l'Union européenne art. 50 : retrait possible mais négocié (délai de deux ans, prorogeable), avec règlement des engagements budgétaires restants (règlement de comptes du CFP en cours, 2021-2027) : la facture de sortie annulerait le gain les premières années.",
+            "Économique : sortie du marché unique et de l'union douanière, perte des retours (PAC 9,6 Md€ ; total 16,456 Md€ en 2024) sans compensation : choc de revenu pour l'agriculture et risque récessif ; le gain de 14 Md€ est un solde budgétaire brut avant tout effet macroéconomique.",
+            "Politique : l'appartenance à l'euro et à Schengen est liée ; aucun précédent de sortie d'un État de la zone euro."
+          ],
+          "sources": [
+            {
+              "titre": "Conseil constitutionnel - Décision n° 2004-505 DC du 19 novembre 2004, Traité établissant une Constitution pour l'Europe (art. 88-1)",
+              "url": "https://www.conseil-constitutionnel.fr/decision/2004/2004505DC.htm",
+              "ouverte": true
+            },
+            {
+              "titre": "Full Fact - Article 50 and EU budget payments (contribution nette du Royaume-Uni, facture de sortie)",
+              "url": "https://fullfact.org/europe/article-50-and-eu-budget-payments/",
+              "ouverte": true
+            },
+            {
+              "titre": "Sénat - Rapport général PLF 2026, Participation de la France au budget de l'Union européenne (retours 16,456 Md€, PAC 9,6 Md€, solde net -7,9 Md€, RPT hors PSR)",
+              "url": "https://www.senat.fr/rap/l25-139-22/l25-139-221.pdf",
+              "ouverte": true
+            },
+            {
+              "titre": "Assemblée nationale - amendement n°18 (loi spéciale, 23 déc. 2025) : PSR-UE 2026 de 28,44 Md€",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2269/AN/18.pdf",
+              "ouverte": true
+            },
+            {
+              "titre": "TFUE art. 311 (JOUE C 202 du 7.6.2016) - ressources propres",
+              "url": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:12016E311",
+              "ouverte": true
+            }
+          ],
+          "non_verifie": true,
+          "notes": "Gain = PSR 2026 (28,44) - retours 2024 (16,456) = 11,98 (identique au cran 3) + droits de douane (ressources propres traditionnelles) que la France cesserait de reverser : le Sénat précise qu'ils sont hors PSR et que 25 % restent déjà acquis en frais de perception ; ordre de grandeur retenu ~2 Md€ (75 % des droits perçus), non chiffré dans le document ouvert, donc hypothèse. Total ~14,0 Md€. Années différentes (PSR 2026, retours 2024). Horizon : année pleine seulement après la sortie effective (au moins 2 ans de négociation art. 50, plus la facture de sortie des engagements du CFP 2021-2027) ; aucun gain avant 2029-2030. Gain brut budgétaire, sans effet macroéconomique ni compensation de la PAC (nationalisation de la PAC : gain ramené à environ 4-5 Md€). Le cran 3 (refus unilatéral) est remplacé, non cumulé : le refus de payer sans sortie est contraire à TFUE art. 311, la sortie suit la voie légale de l'art. 50. Jugement éditorial : faisabilité 3, révision constitutionnelle et risque économique majeur.",
+          "horizon": {
+            "annee": 2031,
+            "estime": true,
+            "justif": "Aucun gain avant 2029-2030 ; année pleine après sortie effective (>= 2 ans de négociation art. 50)."
+          }
         }
       ],
       "sources": [
@@ -2399,6 +3192,52 @@
           ],
           "non_verifie": true,
           "notes": "Gain = 12 % x 36,2 = 4,34 Md€ (arithmétique). Passe 4 : aucun chiffrage officiel. Très au-delà de l'effort constaté (-0,36 % en 2025 à périmètre constant selon la Cour) : ordre de grandeur indicatif."
+        },
+        {
+          "niveau": 4,
+          "mesure": "Revue de programmes à la canadienne : -30 % du fonctionnement courant de l'État en 4 ans (immobilier, achats, informatique, déplacements, communication), avec cessions immobilières systématiques (remplace le cran 3 à -12 %)",
+          "gain_mds": 10.9,
+          "faisabilite": 2,
+          "arguments": [
+            "Canada, Program Review 1995 : revue de l'ensemble des programmes (environ 52 Md$ de dépenses) ; les dépenses concernées baissent de presque 19 % entre 1994-95 et 1997-98, avec 3,9 Md$ d'économies en 1995-96, 5,9 en 1996-97 et 7,2 en 1997-98 ; la fonction publique fédérale recule d'environ 45 000 postes (14 %), certains ministères voyant leur budget divisé par deux.",
+            "Royaume-Uni, Spending Review 2010 : baisse de 34 % des budgets d'administration de Whitehall et des organismes rattachés, soit 5,9 Md£ par an en 2014-15, dans un plan où les budgets ministériels baissent en moyenne de 19 % en 4 ans.",
+            "Le -30 % proposé se situe entre les deux précédents (-19 % de programmes au Canada, -34 % d'administration au Royaume-Uni) mais s'applique ici à un poste de frais de gestion déjà hors masse salariale : l'effort demandé est celui du précédent britannique sur l'administration."
+          ],
+          "obstacles": [
+            "Juridique : principe de continuité du service public, de valeur constitutionnelle (décision n° 79-105 DC du 25 juillet 1979, cons. 1) : un rabot qui empêcherait des services essentiels de fonctionner exposerait la loi de finances à un recours ; sincérité budgétaire (LOLF) si les crédits sont sous-dotés par rapport aux besoins de loyers et de contrats en cours.",
+            "Contractuel : loyers, baux, marchés pluriannuels et partenariats public-privé sont des engagements fermes à court terme ; les gains ne sont atteignables qu'en année 3-4 et au prix de cessions immobilières et de renégociations.",
+            "Économique : -10,9 Md€ de commande publique et de loyers pèse sur les entreprises prestataires (BTP, informatique, services) et sur l'activité locale ; risque de report de charges vers des dépenses de maintenance différées, plus coûteuses ensuite.",
+            "Gain non vérifié : aucun chiffrage officiel d'un -30 % de ce poste ; la Cour des comptes constate un effort de seulement -0,36 % en 2025 à périmètre constant."
+          ],
+          "sources": [
+            {
+              "titre": "Gouvernement du Canada - Budget 1995, document de synthèse (Program Review : -19 % des dépenses concernées en 1997-98, 45 000 emplois)",
+              "url": "https://budget.canada.ca/archives/budget95/binb/brief.pdf",
+              "ouverte": true
+            },
+            {
+              "titre": "HM Treasury - Spending Review 2010, executive summary (-34 % budgets d'administration, 5,9 Md£ par an en 2014-15 ; -19 % budgets ministériels)",
+              "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/203827/Spending_review_2010_executive_summary.pdf",
+              "ouverte": true
+            },
+            {
+              "titre": "Conseil constitutionnel - Décision n° 79-105 DC du 25 juillet 1979 (continuité du service public, valeur constitutionnelle)",
+              "url": "https://www.conseil-constitutionnel.fr/decision/1979/79105DC.htm",
+              "ouverte": true
+            },
+            {
+              "titre": "Cour des comptes - Le budget de l'État en 2025, résultats et gestion (fonctionnement courant 36,2 Md€)",
+              "url": "https://www.vie-publique.fr/files/rapport/pdf/302978.pdf",
+              "ouverte": true
+            }
+          ],
+          "non_verifie": true,
+          "notes": "Gain = 30 % x 36,2 Md€ (Cour des comptes, titre 3 hors subventions aux opérateurs, 2025) = 10,86 ≈ 10,9 Md€. Formule arithmétique ; aucun chiffrage officiel. Horizon : année pleine en année 4 (montée en charge linéaire, environ 2,7 Md€ par an à partir de l'an 1, comme le Canada 1995-98 et le Royaume-Uni 2010-15). Remplace le cran 3 (-12 % = 4,3 Md€) : cumulé, le gain dépasse le cran 3 de 6,6 Md€. Pas de double compte : la masse salariale est hors poste (règle du projet), donc le Canada (45 000 postes) n'est utilisé que comme précédent de méthode, pas de montant ; les suppressions de postes éventuelles relèvent d'un autre poste. Les produits de cessions immobilières ne sont pas comptés comme gain.",
+          "horizon": {
+            "annee": 2030,
+            "estime": false,
+            "justif": "-30 % en 4 ans, année pleine en année 4, ~2,7 Md€ par an."
+          }
         }
       ],
       "sources": [
@@ -2495,7 +3334,12 @@
             }
           ],
           "non_verifie": false,
-          "notes": "Gain cumulé = cran 1 (0,194) + fusion France 2/France 5 (~0,20, rapport AN n° 2698, reco. 46) + mutualisation support (~0,01, IGF) = 0,40 Md€. Passe 4 : issue (b), la mesure holding seule (0,01 Md€) est remplacée par une mesure proche, chiffrée dans un document parlementaire ouvert et appuyée sur des coûts bruts de la Cour des comptes. Réserve : économie nette à régime de croisière (3 ans), chevauchement possible avec le -5 % du cran 1."
+          "notes": "Gain cumulé = cran 1 (0,194) + fusion France 2/France 5 (~0,20, rapport AN n° 2698, reco. 46) + mutualisation support (~0,01, IGF) = 0,40 Md€. Passe 4 : issue (b), la mesure holding seule (0,01 Md€) est remplacée par une mesure proche, chiffrée dans un document parlementaire ouvert et appuyée sur des coûts bruts de la Cour des comptes. Réserve : économie nette à régime de croisière (3 ans), chevauchement possible avec le -5 % du cran 1.",
+          "horizon": {
+            "annee": 2029,
+            "estime": false,
+            "justif": "Fusion France 2/5 : économie nette à régime de croisière après transition de 3 ans."
+          }
         },
         {
           "niveau": 3,
@@ -2530,6 +3374,62 @@
           ],
           "non_verifie": true,
           "notes": "3,2 Md€ = chiffrage d'un amendement (groupe RN), non officiel ni vérifié par l'administration ; ordre de grandeur cohérent avec les dotations de France Télévisions et Radio France. Gain brut, sans coût de transition, perte de recettes publicitaires ni contrepartie de service public. Passe 4 : aucun chiffrage officiel de la privatisation trouvé ; le rapport AN n° 2698 ne la propose pas (plan alternatif d'environ 1 Md€ de baisse à 5-10 ans). Issue (c)."
+        },
+        {
+          "niveau": 4,
+          "mesure": "Cran 3 + extinction totale du financement public de l'audiovisuel : cession ou fermeture de France Médias Monde, TV5 Monde, INA et Arte France (dénonciation ou renégociation du traité de 1990 pour Arte) ; plus aucune dotation de l'État",
+          "gain_mds": 3.88,
+          "faisabilite": 3,
+          "arguments": [
+            "Argentine 2024 : le gouvernement a suspendu puis fermé l'agence publique Télam (environ 700 salariés) en mars 2024, avançant des pertes estimées à 20 milliards de pesos pour l'année ; les autres médias publics (RTA, Contenidos Públicos) ont été placés sous intervention pour un an (décrets 111/2024 et 117/2024). Le précédent est réel mais ses économies n'ont pas été chiffrées de façon indépendante et la légalité de la fermeture est contestée.",
+            "Suisse, 4 mars 2018 : l'initiative « No Billag », qui visait à supprimer la redevance et donc à fermer la SSR (75 % de son financement), a été rejetée par 71,6 % des votants et par tous les cantons : précédent d'échec par référendum, qui illustre le coût politique d'une suppression totale.",
+            "Les dotations visées sont documentées : l'audiovisuel extérieur reçoit 387 M€ en 2026 (France Médias Monde 303,8 M€ et TV5 Monde 84,2 M€), l'INA environ 103 M€ en 2026 (rapport AN n° 2698)."
+          ],
+          "obstacles": [
+            "Arte est régie par le traité interétatique du 2 octobre 1990 conclu entre la France et les Länder allemands, qui lui donne la responsabilité exclusive de sa programmation ; sa dénonciation ou sa renégociation relève d'un accord avec l'Allemagne (rapport AN n° 2698).",
+            "Conseil constitutionnel : décision n° 86-217 DC du 18 septembre 1986, la liberté de communication (art. 11 DDHC) impose pluralisme et garanties : une privatisation sans régulation, et surtout une disparition de tout service public, expose la loi à censure ; le service public audiovisuel n'a pas de garantie constitutionnelle expresse, d'où le classement 3 pour risque politique et diplomatique (Allemagne) plutôt que pour un blocage certain.",
+            "Perte de l'audiovisuel extérieur (France Médias Monde, TV5 Monde) : outil d'influence internationale, concurrencé par des médias d'États étrangers ; coûts de transition, plans sociaux et fin de l'INA (archives, dépôt légal) non chiffrés.",
+            "Le cran 3 (3,2 Md€) est lui-même un chiffrage d'amendement non officiel ; la rupture ajoute les 0,68 Md€ résiduels."
+          ],
+          "sources": [
+            {
+              "titre": "Assemblée nationale - Rapport n° 2698 de la commission d'enquête sur l'audiovisuel public (traité Arte de 1990, dotations FMM, TV5, INA)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/rapports/ceaudio/l17b2698-t1_rapport-enquete.pdf",
+              "ouverte": true
+            },
+            {
+              "titre": "Conseil constitutionnel - Décision n° 86-217 DC du 18 septembre 1986",
+              "url": "https://www.conseil-constitutionnel.fr/decision/1986/86217DC.htm",
+              "ouverte": true
+            },
+            {
+              "titre": "swissinfo - Vote du 4 mars 2018 : No Billag rejeté à 71,6 %",
+              "url": "https://www.swissinfo.ch/eng/vote-march-4--2018_attack-on-public-broadcast-licence-fee-set-to-fail/43935166",
+              "ouverte": true
+            },
+            {
+              "titre": "EBU - Swiss vote in favour of Public Service Media",
+              "url": "https://www.ebu.ch/news/2018/03/swiss-vote-in-favour-of-public-service-media",
+              "ouverte": true
+            },
+            {
+              "titre": "Buenos Aires Herald - Government shuts Télam websites and sends workers on leave",
+              "url": "https://buenosairesherald.com/society/government-shuts-telam-websites-and-sends-workers-on-leave",
+              "ouverte": true
+            },
+            {
+              "titre": "Assemblée nationale - amendement II-CF714 (RN) : privatisation de France Télévisions et Radio France (3,2 Md€)",
+              "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1906C/CION_FIN/CF714.pdf",
+              "ouverte": true
+            }
+          ],
+          "non_verifie": true,
+          "notes": "Gain = ensemble du poste (3,878 Md€ de dotations 2026) = extinction complète ; différence avec le cran 3 : 3,878 - 3,2 = 0,68 Md€ (FMM 0,304 + TV5 0,084 + INA 0,103 + Arte France et autres solde). Le montant de 3,2 du cran 3 étant celui d'un amendement, le solde est indicatif. Gain brut en année pleine, sans coût de transition ni indemnités de licenciement, hors perte éventuelle de recettes publicitaires ; montée en charge sur 2-3 ans (dénonciation du traité Arte, cessions). Les dotations extérieures (387 M€) relevant parfois de l'action extérieure, risque de double compte à vérifier, mais le poste audiovisuel les inclut dans son montant de 3,878 Md€.",
+          "horizon": {
+            "annee": 2029,
+            "estime": false,
+            "justif": "Montée en charge sur 2-3 ans (dénonciation du traité Arte, cessions)."
+          }
         }
       ],
       "sources": [
@@ -2675,6 +3575,52 @@
           ],
           "non_verifie": true,
           "notes": "Ordre de grandeur 3 Md€ ≈ 9 % de 33,3 Md€ : hypothèse du simulateur. Passe 4 : aucun chiffrage officiel d'une allocation unique plafonnée (Cour des comptes, IGAS/IGF, DREES, HCFiPS, rapport AN n° 2994) ; le périmètre d'une allocation unique recouvre aussi la prime d'activité et le logement (hors périmètre ici, risque de double compte avec 'logement'). Valeur à considérer comme indicative. Issue (c)."
+        },
+        {
+          "niveau": 4,
+          "mesure": "Cran 3 + limitation dans le temps du RSA et de l'ASS pour les allocataires aptes au travail : 24 mois cumulés sur 5 ans, avec exemptions (handicap, âge, parents d'enfants en bas âge), sur le modèle du TANF américain de 1996",
+          "gain_mds": 4.6,
+          "faisabilite": 3,
+          "arguments": [
+            "États-Unis, réforme de 1996 (TANF) : limite fédérale de 60 mois cumulés pour l'aide de base, exemptions possibles jusqu'à 20 % des dossiers ; le nombre de bénéficiaires a plongé de plus de 50 % depuis août 1996 (CRS), de 4,5 millions de familles en 1996 à 2,1 millions en 2002. L'effet propre de la limite est discuté : la hausse de l'emploi et la baisse des entrées y contribuent.",
+            "Les 26 % de bénéficiaires du RSA de 35 à 64 ans fin 2023 qui ont perçu un minimum social chaque année depuis 2013 (DREES) forment la population dont la prestation est de fait illimitée ; 41 % font des allers-retours.",
+            "Le TANF a laissé beaucoup d'États maintenir des aides sur fonds propres au-delà de la limite (GAO : 11 % des adultes exclus de la limite fédérale à l'automne 2001) : le gain est donc plus faible que l'économie théorique."
+          ],
+          "obstacles": [
+            "Alinéa 11 du Préambule de 1946 (« moyens convenables d'existence ») : le Conseil constitutionnel décrit le RMI comme une allocation répondant à une exigence de solidarité nationale et relève que la suspension n'est possible que dans des cas fixés par la loi (décision n° 2003-487 DC du 18 décembre 2003, cons. 7 à 9) ; une suppression automatique après 24 mois, sans minimum de substitution, est exposée à censure.",
+            "Report de charges : les personnes exclues se reportent sur les départements (aide sociale, hébergement), les CCAS et les associations, et sur le minimum vieillesse ou l'AAH par requalification ; l'économie nette pour les APU est inférieure au gain brut.",
+            "Social : risque de hausse de la pauvreté des enfants (le RSA concerne beaucoup de familles) ; le chiffrage ne retient qu'une économie nette de 50 % après exemptions et retours à l'emploi.",
+            "Risque de double compte avec 'logement' (APL des personnes exclues), non chiffré ici."
+          ],
+          "sources": [
+            {
+              "titre": "DREES - Le nombre d'allocataires de minima sociaux augmente en 2024 (RSA 1,84 M, ASS 265 000, dépenses 33,3 Md€, 26 % de bénéficiaires du RSA sans interruption sur 10 ans)",
+              "url": "https://drees.solidarites-sante.gouv.fr/communique-de-presse/communique-de-presse/251204-nombre-allocataires-minima-sociaux",
+              "ouverte": true
+            },
+            {
+              "titre": "CRS - Welfare reform (TANF, limite de 5 ans, baisse de plus de 50 % des bénéficiaires, 11 % d'exclusions de la limite selon le GAO)",
+              "url": "https://www.everycrsreport.com/files/20021108_98-369_2913acec676c615e142169e2220ea566fb638939.html",
+              "ouverte": true
+            },
+            {
+              "titre": "Conseil constitutionnel - Décision n° 2003-487 DC du 18 décembre 2003 (RMI, alinéa 11 du Préambule de 1946)",
+              "url": "https://www.conseil-constitutionnel.fr/decision/2003/2003487DC.htm",
+              "ouverte": true
+            },
+            {
+              "titre": "IFRAP (think tank, non officiel) - Plafonnement d'une allocation sociale unique : scénarios",
+              "url": "https://www.ifrap.org/emploi-et-politiques-sociales/12-34-milliards-deuros-deconomies-les-differents-scenarios-dun-plafonnement-dune-allocation-sociale-unique-par-rapport",
+              "ouverte": true
+            }
+          ],
+          "non_verifie": true,
+          "notes": "Calcul : base RSA + ASS ≈ 40 % des 33,3 Md€ de dépenses 2024 (hypothèse : le RSA pesait 44 % des minima en 2022 selon la presse relayant la DREES, non ouvert) = 13,3 Md€ ; part concernée par la limite = 26 % (persistance DREES) ; économie nette après exemptions et sorties = 50 % (hypothèse, TANF) : 13,3 x 0,26 x 0,50 = 1,73 Md€ ; moins le recoupement avec l'allocation unique du cran 3 (9 %) = 1,57 ≈ 1,6 ; total cumulé 3,0 + 1,6 = 4,6 Md€. Aucun chiffrage officiel. Horizon : l'effet de la limite n'apparaît qu'après 24 mois : année pleine en année 3 ; les 26 % persistants sont une borne basse de la population concernée pour les 35-64 ans (jeunes et plus de 64 ans non mesurés). AAH et ASPA exclues du champ (hors apte au travail).",
+          "horizon": {
+            "annee": 2029,
+            "estime": false,
+            "justif": "Limite de 24 mois : effet visible après 24 mois, année pleine en année 3."
+          }
         }
       ],
       "sources": [

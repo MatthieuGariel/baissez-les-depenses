@@ -1,0 +1,92 @@
+[
+ {"id":"ue","cran":{
+  "niveau":4,
+  "mesure":"Sortie de l'Union européenne (article 50 TUE) avec accord commercial type Royaume-Uni/UE : arrêt du prélèvement sur recettes et conservation des droits de douane, sans compensation nationale des retours européens (remplace le cran 3)",
+  "gain_mds":14.0,
+  "faisabilite":3,
+  "arguments":[
+   "Précédent du Brexit : le Royaume-Uni versait une contribution nette de 9,7 Md£ prévue en 2016/17, 8,4 Md£ en 2017/18 et 9,3 Md£ en 2018/19 selon les prévisions citées par Full Fact, soit un ordre de grandeur comparable au solde net français de 7,9 Md€ (2024, méthode comptable, Sénat) ; il a pu sortir par la procédure de l'article 50 sans veto d'un État membre.",
+   "La France est le 2e contributeur net de l'Union (solde comptable 2024 de -7,9 Md€ selon le Sénat) et le PSR 2026 (28,44 Md€) excède de près de 12 Md€ les dépenses européennes réalisées en France en 2024 (16,456 Md€, dont 9,6 Md€ de PAC).",
+   "Le Brexit montre aussi le coût de la rupture : Full Fact rapporte que l'UE a évoqué une facture de sortie pouvant atteindre 40 Md€ pour le Royaume-Uni (FT) ; l'effet économique de long terme (OBR : productivité environ -4 %) n'a pas pu être rouvert dans cette passe et n'est pas utilisé dans le chiffrage."],
+  "obstacles":[
+   "Constitution art. 88-1 : « La République participe à l'Union européenne » ; le Conseil constitutionnel en fait la base d'un ordre juridique intégré (décision n° 2004-505 DC du 19 novembre 2004, cons. 5 et 11). Un retrait suppose une révision constitutionnelle (art. 89), à la majorité des 3/5 du Congrès après vote conforme des deux assemblées ou référendum.",
+   "Traité sur l'Union européenne art. 50 : retrait possible mais négocié (délai de deux ans, prorogeable), avec règlement des engagements budgétaires restants (règlement de comptes du CFP en cours, 2021-2027) : la facture de sortie annulerait le gain les premières années.",
+   "Économique : sortie du marché unique et de l'union douanière, perte des retours (PAC 9,6 Md€ ; total 16,456 Md€ en 2024) sans compensation : choc de revenu pour l'agriculture et risque récessif ; le gain de 14 Md€ est un solde budgétaire brut avant tout effet macroéconomique.",
+   "Politique : l'appartenance à l'euro et à Schengen est liée ; aucun précédent de sortie d'un État de la zone euro."],
+  "sources":[
+   {"titre":"Conseil constitutionnel - Décision n° 2004-505 DC du 19 novembre 2004, Traité établissant une Constitution pour l'Europe (art. 88-1)","url":"https://www.conseil-constitutionnel.fr/decision/2004/2004505DC.htm","ouverte":true},
+   {"titre":"Full Fact - Article 50 and EU budget payments (contribution nette du Royaume-Uni, facture de sortie)","url":"https://fullfact.org/europe/article-50-and-eu-budget-payments/","ouverte":true},
+   {"titre":"Sénat - Rapport général PLF 2026, Participation de la France au budget de l'Union européenne (retours 16,456 Md€, PAC 9,6 Md€, solde net -7,9 Md€, RPT hors PSR)","url":"https://www.senat.fr/rap/l25-139-22/l25-139-221.pdf","ouverte":true},
+   {"titre":"Assemblée nationale - amendement n°18 (loi spéciale, 23 déc. 2025) : PSR-UE 2026 de 28,44 Md€","url":"https://www.assemblee-nationale.fr/dyn/17/amendements/2269/AN/18.pdf","ouverte":true},
+   {"titre":"TFUE art. 311 (JOUE C 202 du 7.6.2016) - ressources propres","url":"https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:12016E311","ouverte":true}],
+  "non_verifie":true,
+  "notes":"Gain = PSR 2026 (28,44) - retours 2024 (16,456) = 11,98 (identique au cran 3) + droits de douane (ressources propres traditionnelles) que la France cesserait de reverser : le Sénat précise qu'ils sont hors PSR et que 25 % restent déjà acquis en frais de perception ; ordre de grandeur retenu ~2 Md€ (75 % des droits perçus), non chiffré dans le document ouvert, donc hypothèse. Total ~14,0 Md€. Années différentes (PSR 2026, retours 2024). Horizon : année pleine seulement après la sortie effective (au moins 2 ans de négociation art. 50, plus la facture de sortie des engagements du CFP 2021-2027) ; aucun gain avant 2029-2030. Gain brut budgétaire, sans effet macroéconomique ni compensation de la PAC (nationalisation de la PAC : gain ramené à environ 4-5 Md€). Le cran 3 (refus unilatéral) est remplacé, non cumulé : le refus de payer sans sortie est contraire à TFUE art. 311, la sortie suit la voie légale de l'art. 50. Jugement éditorial : faisabilité 3, révision constitutionnelle et risque économique majeur."}},
+
+ {"id":"fonctionnement_etat","cran":{
+  "niveau":4,
+  "mesure":"Revue de programmes à la canadienne : -30 % du fonctionnement courant de l'État en 4 ans (immobilier, achats, informatique, déplacements, communication), avec cessions immobilières systématiques (remplace le cran 3 à -12 %)",
+  "gain_mds":10.9,
+  "faisabilite":2,
+  "arguments":[
+   "Canada, Program Review 1995 : revue de l'ensemble des programmes (environ 52 Md$ de dépenses) ; les dépenses concernées baissent de presque 19 % entre 1994-95 et 1997-98, avec 3,9 Md$ d'économies en 1995-96, 5,9 en 1996-97 et 7,2 en 1997-98 ; la fonction publique fédérale recule d'environ 45 000 postes (14 %), certains ministères voyant leur budget divisé par deux.",
+   "Royaume-Uni, Spending Review 2010 : baisse de 34 % des budgets d'administration de Whitehall et des organismes rattachés, soit 5,9 Md£ par an en 2014-15, dans un plan où les budgets ministériels baissent en moyenne de 19 % en 4 ans.",
+   "Le -30 % proposé se situe entre les deux précédents (-19 % de programmes au Canada, -34 % d'administration au Royaume-Uni) mais s'applique ici à un poste de frais de gestion déjà hors masse salariale : l'effort demandé est celui du précédent britannique sur l'administration."],
+  "obstacles":[
+   "Juridique : principe de continuité du service public, de valeur constitutionnelle (décision n° 79-105 DC du 25 juillet 1979, cons. 1) : un rabot qui empêcherait des services essentiels de fonctionner exposerait la loi de finances à un recours ; sincérité budgétaire (LOLF) si les crédits sont sous-dotés par rapport aux besoins de loyers et de contrats en cours.",
+   "Contractuel : loyers, baux, marchés pluriannuels et partenariats public-privé sont des engagements fermes à court terme ; les gains ne sont atteignables qu'en année 3-4 et au prix de cessions immobilières et de renégociations.",
+   "Économique : -10,9 Md€ de commande publique et de loyers pèse sur les entreprises prestataires (BTP, informatique, services) et sur l'activité locale ; risque de report de charges vers des dépenses de maintenance différées, plus coûteuses ensuite.",
+   "Gain non vérifié : aucun chiffrage officiel d'un -30 % de ce poste ; la Cour des comptes constate un effort de seulement -0,36 % en 2025 à périmètre constant."],
+  "sources":[
+   {"titre":"Gouvernement du Canada - Budget 1995, document de synthèse (Program Review : -19 % des dépenses concernées en 1997-98, 45 000 emplois)","url":"https://budget.canada.ca/archives/budget95/binb/brief.pdf","ouverte":true},
+   {"titre":"HM Treasury - Spending Review 2010, executive summary (-34 % budgets d'administration, 5,9 Md£ par an en 2014-15 ; -19 % budgets ministériels)","url":"https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/203827/Spending_review_2010_executive_summary.pdf","ouverte":true},
+   {"titre":"Conseil constitutionnel - Décision n° 79-105 DC du 25 juillet 1979 (continuité du service public, valeur constitutionnelle)","url":"https://www.conseil-constitutionnel.fr/decision/1979/79105DC.htm","ouverte":true},
+   {"titre":"Cour des comptes - Le budget de l'État en 2025, résultats et gestion (fonctionnement courant 36,2 Md€)","url":"https://www.vie-publique.fr/files/rapport/pdf/302978.pdf","ouverte":true}],
+  "non_verifie":true,
+  "notes":"Gain = 30 % x 36,2 Md€ (Cour des comptes, titre 3 hors subventions aux opérateurs, 2025) = 10,86 ≈ 10,9 Md€. Formule arithmétique ; aucun chiffrage officiel. Horizon : année pleine en année 4 (montée en charge linéaire, environ 2,7 Md€ par an à partir de l'an 1, comme le Canada 1995-98 et le Royaume-Uni 2010-15). Remplace le cran 3 (-12 % = 4,3 Md€) : cumulé, le gain dépasse le cran 3 de 6,6 Md€. Pas de double compte : la masse salariale est hors poste (règle du projet), donc le Canada (45 000 postes) n'est utilisé que comme précédent de méthode, pas de montant ; les suppressions de postes éventuelles relèvent d'un autre poste. Les produits de cessions immobilières ne sont pas comptés comme gain."}},
+
+ {"id":"audiovisuel","cran":{
+  "niveau":4,
+  "mesure":"Cran 3 + extinction totale du financement public de l'audiovisuel : cession ou fermeture de France Médias Monde, TV5 Monde, INA et Arte France (dénonciation ou renégociation du traité de 1990 pour Arte) ; plus aucune dotation de l'État",
+  "gain_mds":3.88,
+  "faisabilite":3,
+  "arguments":[
+   "Argentine 2024 : le gouvernement a suspendu puis fermé l'agence publique Télam (environ 700 salariés) en mars 2024, avançant des pertes estimées à 20 milliards de pesos pour l'année ; les autres médias publics (RTA, Contenidos Públicos) ont été placés sous intervention pour un an (décrets 111/2024 et 117/2024). Le précédent est réel mais ses économies n'ont pas été chiffrées de façon indépendante et la légalité de la fermeture est contestée.",
+   "Suisse, 4 mars 2018 : l'initiative « No Billag », qui visait à supprimer la redevance et donc à fermer la SSR (75 % de son financement), a été rejetée par 71,6 % des votants et par tous les cantons : précédent d'échec par référendum, qui illustre le coût politique d'une suppression totale.",
+   "Les dotations visées sont documentées : l'audiovisuel extérieur reçoit 387 M€ en 2026 (France Médias Monde 303,8 M€ et TV5 Monde 84,2 M€), l'INA environ 103 M€ en 2026 (rapport AN n° 2698)."],
+  "obstacles":[
+   "Arte est régie par le traité interétatique du 2 octobre 1990 conclu entre la France et les Länder allemands, qui lui donne la responsabilité exclusive de sa programmation ; sa dénonciation ou sa renégociation relève d'un accord avec l'Allemagne (rapport AN n° 2698).",
+   "Conseil constitutionnel : décision n° 86-217 DC du 18 septembre 1986, la liberté de communication (art. 11 DDHC) impose pluralisme et garanties : une privatisation sans régulation, et surtout une disparition de tout service public, expose la loi à censure ; le service public audiovisuel n'a pas de garantie constitutionnelle expresse, d'où le classement 3 pour risque politique et diplomatique (Allemagne) plutôt que pour un blocage certain.",
+   "Perte de l'audiovisuel extérieur (France Médias Monde, TV5 Monde) : outil d'influence internationale, concurrencé par des médias d'États étrangers ; coûts de transition, plans sociaux et fin de l'INA (archives, dépôt légal) non chiffrés.",
+   "Le cran 3 (3,2 Md€) est lui-même un chiffrage d'amendement non officiel ; la rupture ajoute les 0,68 Md€ résiduels."],
+  "sources":[
+   {"titre":"Assemblée nationale - Rapport n° 2698 de la commission d'enquête sur l'audiovisuel public (traité Arte de 1990, dotations FMM, TV5, INA)","url":"https://www.assemblee-nationale.fr/dyn/17/rapports/ceaudio/l17b2698-t1_rapport-enquete.pdf","ouverte":true},
+   {"titre":"Conseil constitutionnel - Décision n° 86-217 DC du 18 septembre 1986","url":"https://www.conseil-constitutionnel.fr/decision/1986/86217DC.htm","ouverte":true},
+   {"titre":"swissinfo - Vote du 4 mars 2018 : No Billag rejeté à 71,6 %","url":"https://www.swissinfo.ch/eng/vote-march-4--2018_attack-on-public-broadcast-licence-fee-set-to-fail/43935166","ouverte":true},
+   {"titre":"EBU - Swiss vote in favour of Public Service Media","url":"https://www.ebu.ch/news/2018/03/swiss-vote-in-favour-of-public-service-media","ouverte":true},
+   {"titre":"Buenos Aires Herald - Government shuts Télam websites and sends workers on leave","url":"https://buenosairesherald.com/society/government-shuts-telam-websites-and-sends-workers-on-leave","ouverte":true},
+   {"titre":"Assemblée nationale - amendement II-CF714 (RN) : privatisation de France Télévisions et Radio France (3,2 Md€)","url":"https://www.assemblee-nationale.fr/dyn/17/amendements/1906C/CION_FIN/CF714.pdf","ouverte":true}],
+  "non_verifie":true,
+  "notes":"Gain = ensemble du poste (3,878 Md€ de dotations 2026) = extinction complète ; différence avec le cran 3 : 3,878 - 3,2 = 0,68 Md€ (FMM 0,304 + TV5 0,084 + INA 0,103 + Arte France et autres solde). Le montant de 3,2 du cran 3 étant celui d'un amendement, le solde est indicatif. Gain brut en année pleine, sans coût de transition ni indemnités de licenciement, hors perte éventuelle de recettes publicitaires ; montée en charge sur 2-3 ans (dénonciation du traité Arte, cessions). Les dotations extérieures (387 M€) relevant parfois de l'action extérieure, risque de double compte à vérifier, mais le poste audiovisuel les inclut dans son montant de 3,878 Md€."}},
+
+ {"id":"minima_sociaux","cran":{
+  "niveau":4,
+  "mesure":"Cran 3 + limitation dans le temps du RSA et de l'ASS pour les allocataires aptes au travail : 24 mois cumulés sur 5 ans, avec exemptions (handicap, âge, parents d'enfants en bas âge), sur le modèle du TANF américain de 1996",
+  "gain_mds":4.6,
+  "faisabilite":3,
+  "arguments":[
+   "États-Unis, réforme de 1996 (TANF) : limite fédérale de 60 mois cumulés pour l'aide de base, exemptions possibles jusqu'à 20 % des dossiers ; le nombre de bénéficiaires a plongé de plus de 50 % depuis août 1996 (CRS), de 4,5 millions de familles en 1996 à 2,1 millions en 2002. L'effet propre de la limite est discuté : la hausse de l'emploi et la baisse des entrées y contribuent.",
+   "Les 26 % de bénéficiaires du RSA de 35 à 64 ans fin 2023 qui ont perçu un minimum social chaque année depuis 2013 (DREES) forment la population dont la prestation est de fait illimitée ; 41 % font des allers-retours.",
+   "Le TANF a laissé beaucoup d'États maintenir des aides sur fonds propres au-delà de la limite (GAO : 11 % des adultes exclus de la limite fédérale à l'automne 2001) : le gain est donc plus faible que l'économie théorique."],
+  "obstacles":[
+   "Alinéa 11 du Préambule de 1946 (« moyens convenables d'existence ») : le Conseil constitutionnel décrit le RMI comme une allocation répondant à une exigence de solidarité nationale et relève que la suspension n'est possible que dans des cas fixés par la loi (décision n° 2003-487 DC du 18 décembre 2003, cons. 7 à 9) ; une suppression automatique après 24 mois, sans minimum de substitution, est exposée à censure.",
+   "Report de charges : les personnes exclues se reportent sur les départements (aide sociale, hébergement), les CCAS et les associations, et sur le minimum vieillesse ou l'AAH par requalification ; l'économie nette pour les APU est inférieure au gain brut.",
+   "Social : risque de hausse de la pauvreté des enfants (le RSA concerne beaucoup de familles) ; le chiffrage ne retient qu'une économie nette de 50 % après exemptions et retours à l'emploi.",
+   "Risque de double compte avec 'logement' (APL des personnes exclues), non chiffré ici."],
+  "sources":[
+   {"titre":"DREES - Le nombre d'allocataires de minima sociaux augmente en 2024 (RSA 1,84 M, ASS 265 000, dépenses 33,3 Md€, 26 % de bénéficiaires du RSA sans interruption sur 10 ans)","url":"https://drees.solidarites-sante.gouv.fr/communique-de-presse/communique-de-presse/251204-nombre-allocataires-minima-sociaux","ouverte":true},
+   {"titre":"CRS - Welfare reform (TANF, limite de 5 ans, baisse de plus de 50 % des bénéficiaires, 11 % d'exclusions de la limite selon le GAO)","url":"https://www.everycrsreport.com/files/20021108_98-369_2913acec676c615e142169e2220ea566fb638939.html","ouverte":true},
+   {"titre":"Conseil constitutionnel - Décision n° 2003-487 DC du 18 décembre 2003 (RMI, alinéa 11 du Préambule de 1946)","url":"https://www.conseil-constitutionnel.fr/decision/2003/2003487DC.htm","ouverte":true},
+   {"titre":"IFRAP (think tank, non officiel) - Plafonnement d'une allocation sociale unique : scénarios","url":"https://www.ifrap.org/emploi-et-politiques-sociales/12-34-milliards-deuros-deconomies-les-differents-scenarios-dun-plafonnement-dune-allocation-sociale-unique-par-rapport","ouverte":true}],
+  "non_verifie":true,
+  "notes":"Calcul : base RSA + ASS ≈ 40 % des 33,3 Md€ de dépenses 2024 (hypothèse : le RSA pesait 44 % des minima en 2022 selon la presse relayant la DREES, non ouvert) = 13,3 Md€ ; part concernée par la limite = 26 % (persistance DREES) ; économie nette après exemptions et sorties = 50 % (hypothèse, TANF) : 13,3 x 0,26 x 0,50 = 1,73 Md€ ; moins le recoupement avec l'allocation unique du cran 3 (9 %) = 1,57 ≈ 1,6 ; total cumulé 3,0 + 1,6 = 4,6 Md€. Aucun chiffrage officiel. Horizon : l'effet de la limite n'apparaît qu'après 24 mois : année pleine en année 3 ; les 26 % persistants sont une borne basse de la population concernée pour les 35-64 ans (jeunes et plus de 64 ans non mesurés). AAH et ASPA exclues du champ (hors apte au travail)."}}
+]

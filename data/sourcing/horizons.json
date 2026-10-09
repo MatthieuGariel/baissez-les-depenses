@@ -1,0 +1,162 @@
+{
+ "depenses": {
+  "retraites": {
+   "3": {
+    "annee": 2035,
+    "estime": false,
+    "justif": "Gain chiffré par la Cour des comptes sur le solde du système en 2035 pour +1 an d'âge légal."
+   },
+   "4": {
+    "annee": 2040,
+    "estime": false,
+    "justif": "Année pleine vers 2038-2040 (génération 1971 atteignant 67 ans) ; effet 2030 nettement inférieur."
+   }
+  },
+  "ondam_hopital": {
+   "2": {
+    "annee": 2030,
+    "estime": false,
+    "justif": "Hospitalisations inadéquates chiffrées sur 4 ans par la Cour ; virage ambulatoire progressif."
+   },
+   "3": {
+    "annee": 2030,
+    "estime": true,
+    "justif": "Restructuration de services sous seuils d'activité : mesure progressive, sans année précise ; estimé ~4 ans comme le cran 2."
+   },
+   "4": {
+    "annee": 2029,
+    "estime": false,
+    "justif": "Gel nominal sur 3 ans : ~3,8 Md€ an 1, ~7,7 an 2, 12,0 an 3."
+   }
+  },
+  "chomage": {
+   "3": {
+    "annee": 2029,
+    "estime": true,
+    "justif": "Réduction de durée d'indemnisation : effet sur le stock d'allocataires, année pleine après 18-24 mois (cf. cran 4)."
+   },
+   "4": {
+    "annee": 2029,
+    "estime": false,
+    "justif": "Année pleine après 18-24 mois (stock d'allocataires)."
+   }
+  },
+  "aides_entreprises": {
+   "4": {
+    "annee": 2029,
+    "estime": false,
+    "justif": "Program Review : année pleine à 3 ans, année 1 environ un tiers."
+   }
+  },
+  "masse_salariale_etat": {
+   "3": {
+    "annee": 2029,
+    "estime": false,
+    "justif": "Cran 2 maintenu trois ans : effet cumulé de 3 cohortes non remplacées."
+   },
+   "4": {
+    "annee": 2029,
+    "estime": false,
+    "justif": "Réduction de 10 % des effectifs en 3 ans ; environ un tiers par an."
+   }
+  },
+  "education": {
+   "3": {
+    "annee": 2029,
+    "estime": false,
+    "justif": "Effet en année pleine après étalement jusqu'en 2029 (baisse démographique)."
+   },
+   "4": {
+    "annee": 2032,
+    "estime": true,
+    "justif": "Extinction par non-remplacement sur plusieurs années, sans année précise ; estimé ~5 ans."
+   }
+  },
+  "operateurs": {
+   "4": {
+    "annee": 2029,
+    "estime": false,
+    "justif": "Année pleine après 3 ans (-20 % des charges, Program Review)."
+   }
+  },
+  "aide_developpement": {
+   "4": {
+    "annee": 2028,
+    "estime": false,
+    "justif": "Année pleine à partir de la 2e année (engagements pluriannuels s'éteignant)."
+   }
+  },
+  "ame": {
+   "4": {
+    "annee": 2028,
+    "estime": false,
+    "justif": "Montée en charge sur 1 à 2 ans."
+   }
+  },
+  "collectivites_fonctionnement": {
+   "3": {
+    "annee": 2030,
+    "estime": true,
+    "justif": "Suppression d'un échelon et mutualisation : progressif, sans année précise ; estimé ~4 ans."
+   },
+   "4": {
+    "annee": 2029,
+    "estime": false,
+    "justif": "Baisse de DGF étalée sur trois ans ; année pleine à la 3e année."
+   }
+  },
+  "collectivites_investissement": {
+   "4": {
+    "annee": 2028,
+    "estime": false,
+    "justif": "Année pleine dès la 2e année."
+   }
+  },
+  "defense": {
+   "4": {
+    "annee": 2030,
+    "estime": false,
+    "justif": "Année pleine à la 3e ou 4e année (UK étalé sur 4 ans) ; 1re année < 4 Md€."
+   }
+  },
+  "ue": {
+   "2": {
+    "annee": 2028,
+    "estime": false,
+    "justif": "Rabais négocié dans le CFP 2028-2034 : effet à partir de 2028."
+   },
+   "4": {
+    "annee": 2031,
+    "estime": true,
+    "justif": "Aucun gain avant 2029-2030 ; année pleine après sortie effective (>= 2 ans de négociation art. 50)."
+   }
+  },
+  "fonctionnement_etat": {
+   "4": {
+    "annee": 2030,
+    "estime": false,
+    "justif": "-30 % en 4 ans, année pleine en année 4, ~2,7 Md€ par an."
+   }
+  },
+  "audiovisuel": {
+   "2": {
+    "annee": 2029,
+    "estime": false,
+    "justif": "Fusion France 2/5 : économie nette à régime de croisière après transition de 3 ans."
+   },
+   "4": {
+    "annee": 2029,
+    "estime": false,
+    "justif": "Montée en charge sur 2-3 ans (dénonciation du traité Arte, cessions)."
+   }
+  },
+  "minima_sociaux": {
+   "4": {
+    "annee": 2029,
+    "estime": false,
+    "justif": "Limite de 24 mois : effet visible après 24 mois, année pleine en année 3."
+   }
+  }
+ },
+ "recettes": {}
+}

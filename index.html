@@ -11,25 +11,46 @@
 <meta property="og:url" content="https://matthieugariel.github.io/baissez-les-depenses/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="alternate" type="application/json" href="data/postes.json">
+<link rel="alternate" type="application/json" href="data/recettes.json">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
   <h1>Baissez les dépenses</h1>
   <p class="sub">Dépenses publiques (APU) : <strong id="total"></strong> · Déficit : <strong id="deficit"></strong></p>
+  <p class="sub derive" id="derive"></p>
   <div class="score">
-    <div><span id="eco">0</span> Md€ économisés</div>
-    <div class="bar"><div id="fill"></div></div>
-    <div id="pct" class="muted"></div>
-    <div id="risk" class="muted"></div>
+    <details id="bilan">
+      <summary><span id="sumline">Effet net : 0 Md€</span></summary>
+      <ul class="bilan" id="bilanlist"></ul>
+      <p class="muted" id="pct"></p>
+      <p class="muted" id="risk"></p>
+      <p class="muted" id="interets"></p>
+      <div class="tax"><span id="taxline"></span><div class="bar"><div id="taxfill"></div></div></div>
+      <p class="muted" id="taxtxt"></p>
+      <p class="warn" id="statut"></p>
+    </details>
     <button id="share">Partager mon budget</button>
   </div>
-  <p class="warn" id="statut"></p>
+  <p class="warn taxwarn" id="taxwarn" role="alert"></p>
+  <div class="stack" id="stack" role="img" aria-label="Contribution de chaque mesure au déficit comblé"></div>
+  <p class="muted stackinfo" id="stackinfo" aria-live="polite"></p>
 </header>
+<nav class="jump"><button class="sec" data-go="postes">Dépenses</button><button class="sec" data-go="recettes-titre">Recettes (impôts)</button></nav>
+<h2 class="sect">Dépenses</h2>
 <main id="postes"></main>
+<h2 class="sect" id="recettes-titre">Recettes : impôts et cotisations</h2>
+<p class="muted sectsub">Curseur de −3 (baisse forte) à +3 (hausse forte), 0 = aucun changement.</p>
+<main id="recettes-liste"></main>
 <footer>
-  Données ouvertes : <a href="data/postes.json">postes.json</a> · <a href="llms.txt">llms.txt</a> · <a href="https://github.com/MatthieuGariel/baissez-les-depenses/issues/new" target="_blank" rel="noopener">Signaler une erreur</a> · Licence CC BY 4.0
+  Données ouvertes : <a href="data/postes.json">postes.json</a> · <a href="data/recettes.json">recettes.json</a> · <a href="llms.txt">llms.txt</a> · <a href="https://github.com/MatthieuGariel/baissez-les-depenses/issues/new" target="_blank" rel="noopener">Signaler une erreur</a> · Licence CC BY 4.0
+<p class="warn" id="statut2"></p>
 </footer>
+<dialog id="preview">
+  <h2>Aperçu de mon budget</h2>
+  <img id="previewimg" alt="Image de mon scénario de budget">
+  <div class="actions"><button id="doshare">Partager / Télécharger</button><button id="close" class="sec">Fermer</button></div>
+</dialog>
 <script src="app.js"></script>
 </body>
 </html>

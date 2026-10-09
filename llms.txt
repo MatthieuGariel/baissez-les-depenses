@@ -1,10 +1,13 @@
 # Baissez les dépenses
 
-> Simulateur citoyen de baisse des dépenses publiques françaises (APU). ~20 postes, 3 niveaux de baisse chacun, chaque niveau = mesure concrète chiffrée, avec arguments, obstacles juridiques/UE et sources.
+> Simulateur citoyen de baisse des dépenses publiques françaises (APU). ~20 postes, jusqu'à 4 niveaux de baisse chacun (dont « Rupture »), chaque niveau = mesure concrète chiffrée, avec arguments, obstacles juridiques/UE et sources.
 
 ## Données
-- [postes.json](data/postes.json): jeu de données complet (montants Md€, mesures, gain, faisabilité 1-3, sources)
+- [postes.json](data/postes.json): dépenses, jeu de données complet (montants Md€, mesures, gain, faisabilité 1-3, sources)
+- [recettes.json](data/recettes.json): recettes (impôts et cotisations), `recettes[]` avec `crans_hausse[]` (gain_mds) et `crans_baisse[]` (cout_mds), 3 crans de chaque côté
 
 ## Usage
-- Scénario encodé dans l'URL : `#<id_poste>=<niveau 0-3>&...` (ex. `#retraites=2&ue=1`)
+- Scénario encodé dans l'URL : `#<id_poste>=<niveau 0-4>&...` (ex. `#retraites=2&ue=1`)
+- Recettes : `r_<id_impot>=<-3..3>` (négatif = baisse d'impôt, positif = hausse), ex. `#retraites=2&r_tva=-1&r_csg=2`. Valeurs clampées à [-3,3]
+- Règle : les baisses d'impôts sont plafonnées par les économies de dépenses (+ intérêts évités) via `meta.regle_impots` ; un avertissement s'affiche au-delà
 - Faisabilité : 1 = faisable par loi ordinaire, 2 = risque juridique/politique fort, 3 = obstacle constitutionnel/UE probable

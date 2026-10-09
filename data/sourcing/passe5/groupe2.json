@@ -1,0 +1,203 @@
+[
+ {
+  "id": "aides_entreprises",
+  "cran": {
+   "niveau": 4,
+   "mesure": "Cran 3 + « Program Review » des aides aux entreprises : baisse d'un tiers de l'enveloppe des subventions budgétaires aux entreprises (30 Md€ selon le ministre), par suppression de dispositifs entiers plutôt que rabot, sur 3 ans",
+   "gain_mds": 16.8,
+   "faisabilite": 2,
+   "arguments": [
+    "Précédent Canada 1995-96 : la Program Review a réduit les budgets ministériels de 5 à 65 % et le pays a dégagé un premier excédent en 28 ans dès 1997-98 (IRPP)",
+    "Précédent Royaume-Uni 2010 : budgets ministériels hors santé et aide internationale -19 % en moyenne sur quatre ans (HM Treasury)",
+    "Le Sénat relève que l'État ne sait pas chiffrer précisément ses aides (2 200 dispositifs), ce qui rend l'évaluation dispositif par dispositif préalable à toute suppression",
+    "Les subventions budgétaires (30 Md€) sont le seul pan que l'État peut couper sans toucher à la fiscalité ni au coût du travail"
+   ],
+   "obstacles": [
+    "Juridique : droit de l'UE sur les aides d'État sans objet pour des suppressions, mais la PAC (9-10 Md€ en gestion indirecte, hors périmètre) et les cofinancements européens sont intangibles ; sécurité juridique : CC 2013-682 DC cons. 14 impose un motif d'intérêt général suffisant pour remettre en cause des aides légalement acquises (contrats pluriannuels, crédits d'impôt en cours)",
+    "Économique : risque de recul de l'investissement et de l'emploi dans les filières aidées (industrie, agriculture, énergie), délocalisations ; le Sénat rappelle que les aides sont à mettre en regard de prélèvements obligatoires élevés sur les entreprises",
+    "Politique : opposition des fédérations professionnelles et des régions co-financeuses ; l'ampleur du Canada (5 à 65 % selon les ministères) suppose une volonté politique de plusieurs années"
+   ],
+   "sources": [
+    {
+     "titre": "Sénat — commission d'enquête aides publiques aux grandes entreprises, « L'essentiel » (rapport n° 808, 2024-2025) : estimation du ministre 150 Md€ dont 30 Md€ de dépenses budgétaires, 40 Md€ de dépenses fiscales, 80 Md€ d'allègements",
+     "url": "https://www.senat.fr/rap/r24-808-1/r24-808-1-syn.pdf",
+     "ouverte": true
+    },
+    {
+     "titre": "IRPP, Options politiques — Why Trudeau needs to embrace expenditure reviews (2016) : Program Review 1995-96, budgets ministériels réduits de 5 à 65 %, effectif de la fonction publique centrale -20 %, premier excédent en 28 ans en 1997-98",
+     "url": "https://policyoptions.irpp.org/2016/07/why-trudeau-needs-to-embrace-expenditure-reviews/",
+     "ouverte": true
+    },
+    {
+     "titre": "HM Treasury — Spending Review 2010 (Cm 7942), résumé : budgets ministériels hors santé et aide internationale réduits de 19 % en moyenne sur quatre ans",
+     "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/203827/Spending_review_2010_executive_summary.pdf",
+     "ouverte": true
+    },
+    {
+     "titre": "Conseil constitutionnel — décision n° 2013-682 DC du 19 décembre 2013, cons. 14 (le législateur ne peut, sans motif d'intérêt général suffisant, porter atteinte aux situations légalement acquises ni aux effets qui peuvent légitimement être attendus de telles situations)",
+     "url": "https://www.conseil-constitutionnel.fr/decision/2013/2013682DC.htm",
+     "ouverte": true
+    }
+   ],
+   "non_verifie": true,
+   "notes": "Formule : 30 Md€ (dépenses budgétaires, estimation du ministre devant la commission d'enquête du Sénat) × 1/3 = 10,0 Md€ en année pleine après montée en charge sur 3 ans ; moins ~1,0 Md€ de recouvrement avec les mesures budgétaires déjà comptées au cran 1 (IGF : accompagnement CCI/CMA/Bpifrance), soit 9,0 Md€, ramené à 8,0 Md€ par prudence (part agricole cofinancée exclue) ; gain = 8,8 (cran 3) + 8,0 = 16,8 Md€. Aucun chiffrage officiel de ce scénario ; ordre de grandeur de l'auteur. Le chiffre de 30 Md€ est une estimation ministérielle non détaillée. Horizon : année pleine à 3 ans ; année 1 environ un tiers. Le Canada n'a pas coupé un tiers des subventions aux entreprises selon une source ouverte : seule la fourchette ministérielle 5-65 % est vérifiée."
+  }
+ },
+ {
+  "id": "masse_salariale_etat",
+  "cran": {
+   "niveau": 4,
+   "mesure": "Remplace le cran 3 : réduction de 10 % des effectifs de la fonction publique d'État (hors Enseignement scolaire) en 3 ans, par non-remplacement renforcé, plan de départs volontaires et recours accru aux contractuels, sur le modèle du Program Review canadien (-20 % de la fonction publique centrale), + 3 jours de carence",
+   "gain_mds": 5.1,
+   "faisabilite": 2,
+   "arguments": [
+    "Canada 1995-98 : effectif de la fonction publique centrale réduit de 20 % dans le cadre de la Program Review ; premier excédent budgétaire en 28 ans en 1997-98 (IRPP)",
+    "Royaume-Uni 2010 : budgets ministériels hors santé et aide internationale -19 % en moyenne sur quatre ans, dont l'essentiel en dépenses de fonctionnement et de personnel (HM Treasury)",
+    "Le CC (2019-790 DC) a validé l'extension du recrutement contractuel et jugé qu'aucune règle constitutionnelle n'impose que les fonctions régaliennes soient exercées par des fonctionnaires, ce qui élargit la marge pour substituer des contractuels"
+   ],
+   "obstacles": [
+    "Juridique : les fonctionnaires titulaires ne sont pas licenciables pour suppression de poste ; la réduction passe par des départs naturels (retraites), volontaires ou des mobilités ; le statut relève de l'art. 34 de la Constitution et des lois de 1983-1986 (CC 2019-790 DC cons. 20-21) ; indemnités de départ volontaire à financer",
+    "Économique et social : risque de dégradation des services régaliens (police, justice, fiscalité), report de charge sur collectivités et usagers, coûts de reclassement et d'indemnités qui réduisent le gain net la première année",
+    "Politique : grèves de la fonction publique ; le Canada a conduit la réforme dans un contexte de quasi-crise de la dette (déficit élevé), ce que la France n'a pas"
+   ],
+   "sources": [
+    {
+     "titre": "IRPP, Options politiques — Why Trudeau needs to embrace expenditure reviews (2016) : Program Review 1995-96, budgets ministériels réduits de 5 à 65 %, effectif de la fonction publique centrale -20 %, premier excédent en 28 ans en 1997-98",
+     "url": "https://policyoptions.irpp.org/2016/07/why-trudeau-needs-to-embrace-expenditure-reviews/",
+     "ouverte": true
+    },
+    {
+     "titre": "HM Treasury — Spending Review 2010 (Cm 7942), résumé : budgets ministériels hors santé et aide internationale réduits de 19 % en moyenne sur quatre ans",
+     "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/203827/Spending_review_2010_executive_summary.pdf",
+     "ouverte": true
+    },
+    {
+     "titre": "Conseil constitutionnel — décision n° 2019-790 DC du 1er août 2019 (loi de transformation de la fonction publique) : recours élargi aux contractuels validé, art. 34 de la Constitution, pas d'obligation que les fonctions régaliennes soient exercées par des fonctionnaires (cons. 36)",
+     "url": "https://www.conseil-constitutionnel.fr/decision/2019/2019790DC.htm",
+     "ouverte": true
+    },
+    {
+     "titre": "Sénat — rapport spécial PLF 2026, programme 148 Fonction publique (« L'essentiel »)",
+     "url": "https://www.senat.fr/rap/a25-145-5/a25-145-5-syn.pdf",
+     "ouverte": true
+    }
+   ],
+   "non_verifie": true,
+   "notes": "Formule : 10 % × 50,24 Md€ (masse salariale du poste, hors CAS Pensions et Enseignement scolaire) = 5,02 Md€ en année pleine à l'issue des 3 ans, à structure de rémunération inchangée ; + 0,112 Md€ (3 jours de carence, cran 1) = 5,13, arrondi à 5,1. Remplace le cran 3 (1,14 Md€) car les cohortes non remplacées en sont un sous-ensemble : pas de cumul. Hypothèses : hors CAS Pensions (cotisations employeur comprises dans la masse salariale ici ; économie sur pensions non comptée) ; économie brute, sans coûts d'indemnité de départ volontaire ni rétrocessions catégorielles. Montée en charge : environ un tiers par an ; année 1 ≈ 1,7 Md€."
+  }
+ },
+ {
+  "id": "education",
+  "cran": {
+   "niveau": 4,
+   "mesure": "Cran 3 + alignement du temps de service de tous les enseignants du second degré sur 20 heures hebdomadaires (aujourd'hui 18 h pour les certifiés, 15 h pour les agrégés), par modification des décrets statutaires de 1950",
+   "gain_mds": 3.82,
+   "faisabilite": 2,
+   "arguments": [
+    "Évaluation iFRAP (2011, reprise en 2013) : 20 heures de cours hebdomadaires pour tous les professeurs de collège et lycée équivalent à environ 47 000 postes de professeurs",
+    "Le Sénat chiffre à 75 M€ le coût moyen de 2 000 enseignants en année pleine, soit 37 500 € par ETP, ce qui permet de monétiser les postes libérés",
+    "Mesure d'organisation du travail plutôt que de suppression de service : les élèves gardent le même nombre d'heures de cours devant un moins grand nombre de professeurs"
+   ],
+   "obstacles": [
+    "Juridique : obligations de service fixées par décrets de 1950, modifiables par décret sans loi ; pas d'obstacle constitutionnel identifié (aucune décision du Conseil constitutionnel ouverte sur le temps de service des enseignants) ; risque contentieux au Conseil d'État sur l'égalité entre corps",
+    "Économique : l'évaluation iFRAP est ancienne, repose sur la suppression de postes et non sur des départs volontaires ; les enseignants en poste devraient être rémunérés en heures supplémentaires pendant la transition (iFRAP), ce qui retarde le gain",
+    "Social : forte hostilité syndicale, dégradation possible de l'attractivité du métier alors que les recrutements sont déjà difficiles ; recoupement partiel avec le cran 3 (ajustement démographique) corrigé dans le chiffrage"
+   ],
+   "sources": [
+    {
+     "titre": "iFRAP — Professeurs des collèges et lycées : 2 heures de plus pour tous (5 déc. 2013) : 20 h hebdomadaires pour tous = 47 000 postes (évaluation iFRAP 2011)",
+     "url": "https://www.ifrap.org/education-et-culture/professeurs-des-colleges-et-lycees-2-heures-de-plus-pour-tous",
+     "ouverte": true
+    },
+    {
+     "titre": "Sénat — rapport général PLF 2026, Enseignement scolaire",
+     "url": "https://www.senat.fr/rap/l25-139-313/l25-139-313_mono.html",
+     "ouverte": true
+    }
+   ],
+   "non_verifie": true,
+   "notes": "Formule : 47 000 postes (iFRAP) × (1 - 5,69 %) pour tenir compte de la baisse démographique déjà prise en compte au cran 3 = 44 300 ETP ; × 37 500 €/ETP (Sénat) = 1,66 Md€ ; gain = 2,16 (cran 3) + 1,66 = 3,82 Md€. Hypothèses : iFRAP 2011 non actualisé, périmètre collèges et lycées uniquement ; y compris agrégés à 20 h. Économie en année pleine après plusieurs années d'extinction par non-remplacement (pas de licenciement) ; année 1 très inférieure. Aucun précédent étranger chiffré n'a pu être ouvert : seul l'argument interne (iFRAP) est sourcé."
+  }
+ },
+ {
+  "id": "operateurs",
+  "cran": {
+   "niveau": 4,
+   "mesure": "Cran 3 + montée à -20 % des charges de personnel et de fonctionnement des opérateurs (suppression ou fusion d'agences en bloc, internalisation dans les ministères), sur le modèle de la Program Review canadienne",
+   "gain_mds": 6.5,
+   "faisabilite": 2,
+   "arguments": [
+    "Canada 1995-96 : budgets ministériels réduits de 5 à 65 %, effectifs de la fonction publique centrale -20 %, excédent budgétaire dès 1997-98 (IRPP)",
+    "Royaume-Uni 2010 : -19 % en moyenne sur quatre ans pour les budgets ministériels hors santé et aide internationale (HM Treasury)",
+    "Le Sénat chiffre à 2,2 Md€ une baisse de 8 % du personnel et du fonctionnement des opérateurs ; la proportionnalité donne 5,5 Md€ pour -20 %"
+   ],
+   "obstacles": [
+    "Juridique : les établissements créés par la loi ne peuvent être supprimés que par la loi ; les autorités constitutionnelles et certains organes (CNIL, Défenseur des droits) ne peuvent être abolis par simple réorganisation ; contrats et engagements des structures fusionnées à reprendre",
+    "Économique : le Sénat observe que les fusions 2015-2019 n'ont réduit les emplois que de 0,8 % : les gains par fusion seule sont faibles, une baisse de 20 % suppose de renoncer à des missions ; périmètre incluant universités et organismes de recherche (opérateurs) à arbitrer",
+    "Social et politique : 401 000 emplois sous plafond, report de charges possible sur les collectivités"
+   ],
+   "sources": [
+    {
+     "titre": "Sénat — commission d'enquête sur les agences, « L'essentiel » (rapport n° 807, juillet 2025) : -8 % de personnel+fonctionnement = 2,2 Md€ ; fusions 2015-2019 : emplois -0,8 % seulement",
+     "url": "https://www.senat.fr/rap/r24-807-1/r24-807-1-syn.pdf",
+     "ouverte": true
+    },
+    {
+     "titre": "IRPP, Options politiques — Why Trudeau needs to embrace expenditure reviews (2016) : Program Review 1995-96, budgets ministériels réduits de 5 à 65 %, effectif de la fonction publique centrale -20 %, premier excédent en 28 ans en 1997-98",
+     "url": "https://policyoptions.irpp.org/2016/07/why-trudeau-needs-to-embrace-expenditure-reviews/",
+     "ouverte": true
+    },
+    {
+     "titre": "HM Treasury — Spending Review 2010 (Cm 7942), résumé : budgets ministériels hors santé et aide internationale réduits de 19 % en moyenne sur quatre ans",
+     "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/203827/Spending_review_2010_executive_summary.pdf",
+     "ouverte": true
+    }
+   ],
+   "non_verifie": true,
+   "notes": "Formule : 2,2 Md€ / 8 % × 20 % = 5,5 Md€ (extrapolation linéaire du chiffrage Sénat) ; + 1,04 Md€ (10 % des charges d'intervention AFITF 4,6 + Anah 3,8 + France Travail 2,0 = 10,4 Md€, cran 3) = 6,54 Md€ ≈ 6,5 Md€. Hypothèses : la linéarité n'est pas validée par le Sénat (réduire au-delà de 8 % exige de supprimer des missions) ; hors France compétences et agences de l'eau (cotisations/redevances affectées). Horizon : année pleine après 3 ans. Pas de chevauchement avec les postes chomage et logement (Anah traitée au cran 3 uniquement)."
+  }
+ },
+ {
+  "id": "logement",
+  "cran": {
+   "niveau": 4,
+   "mesure": "Cran 3 + baisse de 10 % du barème de l'ensemble des APL (5,7 millions de bénéficiaires), avec dégressivité renforcée au-delà du plafond de loyer",
+   "gain_mds": 3.67,
+   "faisabilite": 2,
+   "arguments": [
+    "Les APL représentent 16,1 Md€ (programme 109, PLF 2026) pour 5,7 millions de bénéficiaires : une baisse uniforme de 10 % est le levier d'économie le plus large du poste (Sénat)",
+    "Précédent français récent : le PLF 2026 a gelé le barème et recentré les APL des étudiants extra-européens (Sénat), preuve que le Parlement accepte de toucher à l'APL",
+    "Précédent Royaume-Uni 2010 : réforme du Housing Benefit (âge du tarif chambre partagée porté de 25 à 35 ans) chiffrée à 215-225 M£ par an et plafonnement des prestations totales des ménages (HM Treasury)"
+   ],
+   "obstacles": [
+    "Juridique : CC 2013-682 DC cons. 14 impose un motif d'intérêt général suffisant pour toucher à des droits acquis ; pas de décision constitutionnelle ouverte garantissant le niveau de l'APL ; l'alinéa 10 du Préambule de 1946 (conditions nécessaires au développement de la famille) pourrait être invoqué",
+    "Économique et social : IGF-IGEDD et Sénat soulignent le risque d'impayés, de hausse de la pauvreté des ménages modestes et de report de charges vers les départements et les CCAS",
+    "Politique : première aide touchant les 5,7 millions de ménages les plus modestes, impact concentré sur les bas revenus, incompatible avec les engagements de pouvoir d'achat"
+   ],
+   "sources": [
+    {
+     "titre": "Sénat — avis PLF 2026, mission Cohésion des territoires, crédits Logement : programme 109 (APL) 16,1 Md€, 5,7 millions de bénéficiaires",
+     "url": "https://www.senat.fr/rap/a25-140-6/a25-140-6-syn.pdf",
+     "ouverte": true
+    },
+    {
+     "titre": "IGF-IGEDD — Revue des dépenses publiques en faveur du logement social (nov. 2025, n° 016298-01)",
+     "url": "https://igedd.documentation.developpement-durable.gouv.fr/documents/Affaires-0014341/016298-01_rapport_publi%C3%A9.pdf",
+     "ouverte": true
+    },
+    {
+     "titre": "HM Treasury — Spending Review 2010 (Cm 7942), résumé : budgets ministériels hors santé et aide internationale réduits de 19 % en moyenne sur quatre ans",
+     "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/203827/Spending_review_2010_executive_summary.pdf",
+     "ouverte": true
+    },
+    {
+     "titre": "Conseil constitutionnel — décision n° 2013-682 DC du 19 décembre 2013, cons. 14 (le législateur ne peut, sans motif d'intérêt général suffisant, porter atteinte aux situations légalement acquises ni aux effets qui peuvent légitimement être attendus de telles situations)",
+     "url": "https://www.conseil-constitutionnel.fr/decision/2013/2013682DC.htm",
+     "ouverte": true
+    }
+   ],
+   "non_verifie": true,
+   "notes": "Formule : 10 % × 16,1 Md€ (programme 109, Sénat PLF 2026) = 1,61 Md€ ; gain = 2,07 (cran 3) + 1,61 = 3,68, arrondi à 3,67 Md€ en retirant ~0,01 de recoupement avec le gel de barème du cran 1. Les APL étudiantes du cran 2 (9e-10e déciles) sont marginales, recouvrement négligé. Aucun chiffrage officiel du scénario ; la dégressivité renforcée n'est pas chiffrée (gain supplémentaire possible). Horizon : année pleine dès l'année 2 si barème modifié par décret ; effet immédiat en loi de finances."
+  }
+ }
+]
