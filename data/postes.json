@@ -195,7 +195,12 @@
             }
           ],
           "non_verifie": true,
-          "notes": "Calcul : 2,6 Md€ (gel 2026, Cnav, voir cran 2) + 8,4 Md€ (+1 an d'âge d'ouverture des droits, amélioration du solde du système de retraites en 2035, Cour des comptes févr. 2025) = 11,0 Md€. Les deux chiffres sont officiels mais d'horizons différents (2026 et 2035) et le solde du système de retraites inclut des cotisations supplémentaires : l'addition est faite ici, non publiée telle quelle, et les effets ne sont pas strictement cumulables (le gel réduit un peu l'assiette). Les 17,7 Md€ de la Cour incluent 9,3 Md€ de recettes hors retraites : non retenus. Aucun chiffrage officiel publié pour la mesure combinée."
+          "notes": "Calcul : 2,6 Md€ (gel 2026, Cnav, voir cran 2) + 8,4 Md€ (+1 an d'âge d'ouverture des droits, amélioration du solde du système de retraites en 2035, Cour des comptes févr. 2025) = 11,0 Md€. Les deux chiffres sont officiels mais d'horizons différents (2026 et 2035) et le solde du système de retraites inclut des cotisations supplémentaires : l'addition est faite ici, non publiée telle quelle, et les effets ne sont pas strictement cumulables (le gel réduit un peu l'assiette). Les 17,7 Md€ de la Cour incluent 9,3 Md€ de recettes hors retraites : non retenus. Aucun chiffrage officiel publié pour la mesure combinée.",
+          "horizon": {
+            "annee": 2035,
+            "estime": false,
+            "justif": "Gain chiffré par la Cour des comptes sur le solde du système en 2035 pour +1 an d'âge légal."
+          }
         },
         {
           "niveau": 4,
@@ -241,7 +246,12 @@
             }
           ],
           "non_verifie": true,
-          "notes": "Calcul : 2,6 Md€ (gel d'un an des pensions de base, Cnav, Sénat n° 131) + 3 x 8,4 Md€ (3 ans de relèvement par rapport à 64 ans, solde du système en 2035, Cour des comptes févr. 2025) = 27,8 Md€. Hypothèse linéaire (chaque année supplémentaire rapporte autant que la première), non publiée par la Cour : en réalité l'effet par année diminue (carrières longues, reports vers invalidité et chômage) ; fourchette plausible 20-28 Md€. Horizon : année pleine vers 2038-2040 (génération 1971 atteignant 67 ans) ; effet 2030 nettement inférieur. Le stabilisateur automatique n'est pas chiffré séparément (gain non ajouté). Aucun double compte : mesures limitées au poste retraites ; les reports vers chômage/ASPA ne sont pas déduits."
+          "notes": "Calcul : 2,6 Md€ (gel d'un an des pensions de base, Cnav, Sénat n° 131) + 3 x 8,4 Md€ (3 ans de relèvement par rapport à 64 ans, solde du système en 2035, Cour des comptes févr. 2025) = 27,8 Md€. Hypothèse linéaire (chaque année supplémentaire rapporte autant que la première), non publiée par la Cour : en réalité l'effet par année diminue (carrières longues, reports vers invalidité et chômage) ; fourchette plausible 20-28 Md€. Horizon : année pleine vers 2038-2040 (génération 1971 atteignant 67 ans) ; effet 2030 nettement inférieur. Le stabilisateur automatique n'est pas chiffré séparément (gain non ajouté). Aucun double compte : mesures limitées au poste retraites ; les reports vers chômage/ASPA ne sont pas déduits.",
+          "horizon": {
+            "annee": 2040,
+            "estime": false,
+            "justif": "Année pleine vers 2038-2040 (génération 1971 atteignant 67 ans) ; effet 2030 nettement inférieur."
+          }
         }
       ],
       "sources": [
@@ -543,7 +553,12 @@
             }
           ],
           "non_verifie": false,
-          "notes": "Calcul : 0,6 (cran 1) + 0,8 (virage ambulatoire) + 1,3 (hospitalisations inadéquates, 4 ans) = 2,7 Md€. Chiffres de la Cour, somme calculée ; recouvrement partiel possible entre ambulatoire et inadéquates, non quantifié par la Cour."
+          "notes": "Calcul : 0,6 (cran 1) + 0,8 (virage ambulatoire) + 1,3 (hospitalisations inadéquates, 4 ans) = 2,7 Md€. Chiffres de la Cour, somme calculée ; recouvrement partiel possible entre ambulatoire et inadéquates, non quantifié par la Cour.",
+          "horizon": {
+            "annee": 2030,
+            "estime": false,
+            "justif": "Hospitalisations inadéquates chiffrées sur 4 ans par la Cour ; virage ambulatoire progressif."
+          }
         },
         {
           "niveau": 3,
@@ -571,7 +586,12 @@
             }
           ],
           "non_verifie": false,
-          "notes": "Calcul : 2,7 + 1,0 (milieu de la fourchette 0,8-1,2 de la proposition n° 10 de la Cour) = 3,7 Md€ ; fourchette 3,5-3,9. Proposition n° 9 (qualité des soins, 0,5-1 Md€) non ajoutée."
+          "notes": "Calcul : 2,7 + 1,0 (milieu de la fourchette 0,8-1,2 de la proposition n° 10 de la Cour) = 3,7 Md€ ; fourchette 3,5-3,9. Proposition n° 9 (qualité des soins, 0,5-1 Md€) non ajoutée.",
+          "horizon": {
+            "annee": 2030,
+            "estime": true,
+            "justif": "Restructuration de services sous seuils d'activité : mesure progressive, sans année précise ; estimé ~4 ans comme le cran 2."
+          }
         },
         {
           "niveau": 4,
@@ -612,7 +632,12 @@
             }
           ],
           "non_verifie": true,
-          "notes": "Calcul : sous-objectif hospitalier 2025 = 109,1 Md€. Hypothèse de croissance tendancielle 3,5 %/an (fourchette 3-4 %, non sourcée). Écart cumulé après 3 ans de gel nominal = 109,1 x (1,035^3 − 1) = 109,1 x 0,1087 = 11,9 ≈ 12,0 Md€ en année 3 (et non 3 x). Le gain remplace le cran 3 (3,7 Md€, englobé : mêmes leviers) au lieu de s'y ajouter, pour éviter tout double compte. Montée en charge : ~3,8 Md€ la 1re année, ~7,7 la 2e, 12,0 la 3e. Hors masse salariale hospitalière si elle était comptée sur un autre poste (aucun autre poste n'inclut l'ONDAM hospitalier). Chiffre non officiel."
+          "notes": "Calcul : sous-objectif hospitalier 2025 = 109,1 Md€. Hypothèse de croissance tendancielle 3,5 %/an (fourchette 3-4 %, non sourcée). Écart cumulé après 3 ans de gel nominal = 109,1 x (1,035^3 − 1) = 109,1 x 0,1087 = 11,9 ≈ 12,0 Md€ en année 3 (et non 3 x). Le gain remplace le cran 3 (3,7 Md€, englobé : mêmes leviers) au lieu de s'y ajouter, pour éviter tout double compte. Montée en charge : ~3,8 Md€ la 1re année, ~7,7 la 2e, 12,0 la 3e. Hors masse salariale hospitalière si elle était comptée sur un autre poste (aucun autre poste n'inclut l'ONDAM hospitalier). Chiffre non officiel.",
+          "horizon": {
+            "annee": 2029,
+            "estime": false,
+            "justif": "Gel nominal sur 3 ans : ~3,8 Md€ an 1, ~7,7 an 2, 12,0 an 3."
+          }
         }
       ],
       "sources": [
@@ -968,7 +993,12 @@
             }
           ],
           "non_verifie": false,
-          "notes": "Mesure proche substituée à la durée maximale de 12 mois (« près de 6 Md€ » issus d'une note interne de l'Unédic lue via la presse, non retrouvée ; un coefficient de 0,6 donne 730 x 0,6 = 438 jours soit 14,4 mois). Calcul : 1,59 (cran 2) + 3,186 (coefficient 0,6, modèle comptable du CAE) = 4,78 ≈ 4,8 Md€. Le modèle simulé du CAE donnerait 2,0 + 5,8 = 7,8 Md€ : ordre de grandeur plus haut non retenu. L'addition des chiffrages réforme par réforme du CAE surestime légèrement (certains allocataires exclus par le cran 2 ne sont plus concernés par la réduction de durée) ; effet non quantifié. Impact RSA/ASS non déduit."
+          "notes": "Mesure proche substituée à la durée maximale de 12 mois (« près de 6 Md€ » issus d'une note interne de l'Unédic lue via la presse, non retrouvée ; un coefficient de 0,6 donne 730 x 0,6 = 438 jours soit 14,4 mois). Calcul : 1,59 (cran 2) + 3,186 (coefficient 0,6, modèle comptable du CAE) = 4,78 ≈ 4,8 Md€. Le modèle simulé du CAE donnerait 2,0 + 5,8 = 7,8 Md€ : ordre de grandeur plus haut non retenu. L'addition des chiffrages réforme par réforme du CAE surestime légèrement (certains allocataires exclus par le cran 2 ne sont plus concernés par la réduction de durée) ; effet non quantifié. Impact RSA/ASS non déduit.",
+          "horizon": {
+            "annee": 2029,
+            "estime": true,
+            "justif": "Réduction de durée d'indemnisation : effet sur le stock d'allocataires, année pleine après 18-24 mois (cf. cran 4)."
+          }
         },
         {
           "niveau": 4,
@@ -1008,7 +1038,12 @@
             }
           ],
           "non_verifie": true,
-          "notes": "Calcul : 1,59 Md€ (cran 2, CAE modèle comptable) + 3,186 x (0,75−0,5)/(0,75−0,6) = 3,186 x 0,25/0,15 = 5,31 Md€ (extrapolation linéaire du chiffrage CAE, non publiée) = 6,9 Md€. Le chiffrage est probablement sur-estimé (les effets décroissent avec l'ampleur) et ne déduit pas le report vers ASS/RSA : en consolidé APU, le gain net pourrait être de moitié. Remplace le cran 3 (4,8 Md€) qu'il englobe. Horizon : année pleine après 18-24 mois (stock d'allocataires). Pas de double compte avec le poste RSA/ASS : report non déduit mais signalé."
+          "notes": "Calcul : 1,59 Md€ (cran 2, CAE modèle comptable) + 3,186 x (0,75−0,5)/(0,75−0,6) = 3,186 x 0,25/0,15 = 5,31 Md€ (extrapolation linéaire du chiffrage CAE, non publiée) = 6,9 Md€. Le chiffrage est probablement sur-estimé (les effets décroissent avec l'ampleur) et ne déduit pas le report vers ASS/RSA : en consolidé APU, le gain net pourrait être de moitié. Remplace le cran 3 (4,8 Md€) qu'il englobe. Horizon : année pleine après 18-24 mois (stock d'allocataires). Pas de double compte avec le poste RSA/ASS : report non déduit mais signalé.",
+          "horizon": {
+            "annee": 2029,
+            "estime": false,
+            "justif": "Année pleine après 18-24 mois (stock d'allocataires)."
+          }
         }
       ],
       "sources": [
@@ -1207,7 +1242,12 @@
             }
           ],
           "non_verifie": true,
-          "notes": "Formule : 30 Md€ (dépenses budgétaires, estimation du ministre devant la commission d'enquête du Sénat) × 1/3 = 10,0 Md€ en année pleine après montée en charge sur 3 ans ; moins ~1,0 Md€ de recouvrement avec les mesures budgétaires déjà comptées au cran 1 (IGF : accompagnement CCI/CMA/Bpifrance), soit 9,0 Md€, ramené à 8,0 Md€ par prudence (part agricole cofinancée exclue) ; gain = 8,8 (cran 3) + 8,0 = 16,8 Md€. Aucun chiffrage officiel de ce scénario ; ordre de grandeur de l'auteur. Le chiffre de 30 Md€ est une estimation ministérielle non détaillée. Horizon : année pleine à 3 ans ; année 1 environ un tiers. Le Canada n'a pas coupé un tiers des subventions aux entreprises selon une source ouverte : seule la fourchette ministérielle 5-65 % est vérifiée."
+          "notes": "Formule : 30 Md€ (dépenses budgétaires, estimation du ministre devant la commission d'enquête du Sénat) × 1/3 = 10,0 Md€ en année pleine après montée en charge sur 3 ans ; moins ~1,0 Md€ de recouvrement avec les mesures budgétaires déjà comptées au cran 1 (IGF : accompagnement CCI/CMA/Bpifrance), soit 9,0 Md€, ramené à 8,0 Md€ par prudence (part agricole cofinancée exclue) ; gain = 8,8 (cran 3) + 8,0 = 16,8 Md€. Aucun chiffrage officiel de ce scénario ; ordre de grandeur de l'auteur. Le chiffre de 30 Md€ est une estimation ministérielle non détaillée. Horizon : année pleine à 3 ans ; année 1 environ un tiers. Le Canada n'a pas coupé un tiers des subventions aux entreprises selon une source ouverte : seule la fourchette ministérielle 5-65 % est vérifiée.",
+          "horizon": {
+            "annee": 2029,
+            "estime": false,
+            "justif": "Program Review : année pleine à 3 ans, année 1 environ un tiers."
+          }
         }
       ],
       "sources": [
@@ -1383,7 +1423,12 @@
             }
           ],
           "non_verifie": true,
-          "notes": "Formule : cohorte annuelle = 0,75 Md€ (Cour 2015) × 50,24/109,47 = 0,344 Md€ ; 3 cohortes cumulées = 1,03 Md€ ; + 0,112 (carence, IGF-IGAS) = 1,14 Md€. Ancien chiffre de 2,2 Md€ abandonné (23 000 ETP × 30 000 € non justifié). Hypothèses : proportionnalité à la masse salariale, chiffre Cour 2015 non actualisé, économies brutes (rétrocession catégorielle non déduite)."
+          "notes": "Formule : cohorte annuelle = 0,75 Md€ (Cour 2015) × 50,24/109,47 = 0,344 Md€ ; 3 cohortes cumulées = 1,03 Md€ ; + 0,112 (carence, IGF-IGAS) = 1,14 Md€. Ancien chiffre de 2,2 Md€ abandonné (23 000 ETP × 30 000 € non justifié). Hypothèses : proportionnalité à la masse salariale, chiffre Cour 2015 non actualisé, économies brutes (rétrocession catégorielle non déduite).",
+          "horizon": {
+            "annee": 2029,
+            "estime": false,
+            "justif": "Cran 2 maintenu trois ans : effet cumulé de 3 cohortes non remplacées."
+          }
         },
         {
           "niveau": 4,
@@ -1423,7 +1468,12 @@
             }
           ],
           "non_verifie": true,
-          "notes": "Formule : 10 % × 50,24 Md€ (masse salariale du poste, hors CAS Pensions et Enseignement scolaire) = 5,02 Md€ en année pleine à l'issue des 3 ans, à structure de rémunération inchangée ; + 0,112 Md€ (3 jours de carence, cran 1) = 5,13, arrondi à 5,1. Remplace le cran 3 (1,14 Md€) car les cohortes non remplacées en sont un sous-ensemble : pas de cumul. Hypothèses : hors CAS Pensions (cotisations employeur comprises dans la masse salariale ici ; économie sur pensions non comptée) ; économie brute, sans coûts d'indemnité de départ volontaire ni rétrocessions catégorielles. Montée en charge : environ un tiers par an ; année 1 ≈ 1,7 Md€."
+          "notes": "Formule : 10 % × 50,24 Md€ (masse salariale du poste, hors CAS Pensions et Enseignement scolaire) = 5,02 Md€ en année pleine à l'issue des 3 ans, à structure de rémunération inchangée ; + 0,112 Md€ (3 jours de carence, cran 1) = 5,13, arrondi à 5,1. Remplace le cran 3 (1,14 Md€) car les cohortes non remplacées en sont un sous-ensemble : pas de cumul. Hypothèses : hors CAS Pensions (cotisations employeur comprises dans la masse salariale ici ; économie sur pensions non comptée) ; économie brute, sans coûts d'indemnité de départ volontaire ni rétrocessions catégorielles. Montée en charge : environ un tiers par an ; année 1 ≈ 1,7 Md€.",
+          "horizon": {
+            "annee": 2029,
+            "estime": false,
+            "justif": "Réduction de 10 % des effectifs en 3 ans ; environ un tiers par an."
+          }
         }
       ],
       "sources": [
@@ -1533,7 +1583,12 @@
             }
           ],
           "non_verifie": true,
-          "notes": "Aucun chiffrage officiel du scénario complet. Formule : -667 305 élèves / 11,73 M d'élèves = -5,69 % ; × 839 679 ETPT d'enseignants (Sénat) = 47 800 ETP ; moins 4 018 ETP déjà prévus au PLF 2026 = 43 800 ETP ; × 37 500 €/ETP (75 M€ pour 2 000 ETP, Sénat) = 1,64 Md€ (inclut les 4 000 postes du cran 1) ; + 0,48 (Pacte, PLF 2026) + 0,04 (opérateurs) = 2,16 Md€. Hypothèses : proportionnalité enseignants/élèves (le Sénat retient un ratio un peu plus élevé), personnels non enseignants exclus, effet en année pleine après étalement jusqu'en 2029. Ancien chiffre de 3,9 Md€ (coût moyen par élève tous personnels) abandonné."
+          "notes": "Aucun chiffrage officiel du scénario complet. Formule : -667 305 élèves / 11,73 M d'élèves = -5,69 % ; × 839 679 ETPT d'enseignants (Sénat) = 47 800 ETP ; moins 4 018 ETP déjà prévus au PLF 2026 = 43 800 ETP ; × 37 500 €/ETP (75 M€ pour 2 000 ETP, Sénat) = 1,64 Md€ (inclut les 4 000 postes du cran 1) ; + 0,48 (Pacte, PLF 2026) + 0,04 (opérateurs) = 2,16 Md€. Hypothèses : proportionnalité enseignants/élèves (le Sénat retient un ratio un peu plus élevé), personnels non enseignants exclus, effet en année pleine après étalement jusqu'en 2029. Ancien chiffre de 3,9 Md€ (coût moyen par élève tous personnels) abandonné.",
+          "horizon": {
+            "annee": 2029,
+            "estime": false,
+            "justif": "Effet en année pleine après étalement jusqu'en 2029 (baisse démographique)."
+          }
         },
         {
           "niveau": 4,
@@ -1563,7 +1618,12 @@
             }
           ],
           "non_verifie": true,
-          "notes": "Formule : 47 000 postes (iFRAP) × (1 - 5,69 %) pour tenir compte de la baisse démographique déjà prise en compte au cran 3 = 44 300 ETP ; × 37 500 €/ETP (Sénat) = 1,66 Md€ ; gain = 2,16 (cran 3) + 1,66 = 3,82 Md€. Hypothèses : iFRAP 2011 non actualisé, périmètre collèges et lycées uniquement ; y compris agrégés à 20 h. Économie en année pleine après plusieurs années d'extinction par non-remplacement (pas de licenciement) ; année 1 très inférieure. Aucun précédent étranger chiffré n'a pu être ouvert : seul l'argument interne (iFRAP) est sourcé."
+          "notes": "Formule : 47 000 postes (iFRAP) × (1 - 5,69 %) pour tenir compte de la baisse démographique déjà prise en compte au cran 3 = 44 300 ETP ; × 37 500 €/ETP (Sénat) = 1,66 Md€ ; gain = 2,16 (cran 3) + 1,66 = 3,82 Md€. Hypothèses : iFRAP 2011 non actualisé, périmètre collèges et lycées uniquement ; y compris agrégés à 20 h. Économie en année pleine après plusieurs années d'extinction par non-remplacement (pas de licenciement) ; année 1 très inférieure. Aucun précédent étranger chiffré n'a pu être ouvert : seul l'argument interne (iFRAP) est sourcé.",
+          "horizon": {
+            "annee": 2032,
+            "estime": true,
+            "justif": "Extinction par non-remplacement sur plusieurs années, sans année précise ; estimé ~5 ans."
+          }
         }
       ],
       "sources": [
@@ -1696,7 +1756,12 @@
             }
           ],
           "non_verifie": true,
-          "notes": "Formule : 2,2 Md€ / 8 % × 20 % = 5,5 Md€ (extrapolation linéaire du chiffrage Sénat) ; + 1,04 Md€ (10 % des charges d'intervention AFITF 4,6 + Anah 3,8 + France Travail 2,0 = 10,4 Md€, cran 3) = 6,54 Md€ ≈ 6,5 Md€. Hypothèses : la linéarité n'est pas validée par le Sénat (réduire au-delà de 8 % exige de supprimer des missions) ; hors France compétences et agences de l'eau (cotisations/redevances affectées). Horizon : année pleine après 3 ans. Pas de chevauchement avec les postes chomage et logement (Anah traitée au cran 3 uniquement)."
+          "notes": "Formule : 2,2 Md€ / 8 % × 20 % = 5,5 Md€ (extrapolation linéaire du chiffrage Sénat) ; + 1,04 Md€ (10 % des charges d'intervention AFITF 4,6 + Anah 3,8 + France Travail 2,0 = 10,4 Md€, cran 3) = 6,54 Md€ ≈ 6,5 Md€. Hypothèses : la linéarité n'est pas validée par le Sénat (réduire au-delà de 8 % exige de supprimer des missions) ; hors France compétences et agences de l'eau (cotisations/redevances affectées). Horizon : année pleine après 3 ans. Pas de chevauchement avec les postes chomage et logement (Anah traitée au cran 3 uniquement).",
+          "horizon": {
+            "annee": 2029,
+            "estime": false,
+            "justif": "Année pleine après 3 ans (-20 % des charges, Program Review)."
+          }
         }
       ],
       "sources": [
@@ -2004,7 +2069,12 @@
             }
           ],
           "non_verifie": true,
-          "notes": "Gain = 60 % × 3,67 Md€ (CP PLF 2026) = 2,2 Md€ (hypothèse de l'auteur : −60 % ≈ ampleur de la baisse britannique de l'aide bilatérale, −57 %). Aucun chiffrage officiel de ce taux pour la France. Remplace le cran 3 (−30 %, 1,1 Md€), gain supérieur. Année pleine à partir de la 2e année (les engagements pluriannuels en cours s'éteignent sur 2 à 3 ans). Pas de double compte : contributions UE au FED comptées hors mission."
+          "notes": "Gain = 60 % × 3,67 Md€ (CP PLF 2026) = 2,2 Md€ (hypothèse de l'auteur : −60 % ≈ ampleur de la baisse britannique de l'aide bilatérale, −57 %). Aucun chiffrage officiel de ce taux pour la France. Remplace le cran 3 (−30 %, 1,1 Md€), gain supérieur. Année pleine à partir de la 2e année (les engagements pluriannuels en cours s'éteignent sur 2 à 3 ans). Pas de double compte : contributions UE au FED comptées hors mission.",
+          "horizon": {
+            "annee": 2028,
+            "estime": false,
+            "justif": "Année pleine à partir de la 2e année (engagements pluriannuels s'éteignant)."
+          }
         }
       ],
       "sources": [
@@ -2178,7 +2248,12 @@
             }
           ],
           "non_verifie": true,
-          "notes": "Gain = 76 % × 1,314 Md€ (dépense AME de droit commun 2025) ≈ 1,0 Md€ net du report supposé vers l'hôpital (hypothèse de l'auteur, 24 % de la dépense brute reportée sur les urgences). Aucun chiffrage officiel. Montée en charge sur 1 à 2 ans. Remplace le cran 3 (0,8 Md€), gain supérieur. Plafond naturel faible : la dépense totale est de 1,3 Md€, donc la marge de rupture est limitée."
+          "notes": "Gain = 76 % × 1,314 Md€ (dépense AME de droit commun 2025) ≈ 1,0 Md€ net du report supposé vers l'hôpital (hypothèse de l'auteur, 24 % de la dépense brute reportée sur les urgences). Aucun chiffrage officiel. Montée en charge sur 1 à 2 ans. Remplace le cran 3 (0,8 Md€), gain supérieur. Plafond naturel faible : la dépense totale est de 1,3 Md€, donc la marge de rupture est limitée.",
+          "horizon": {
+            "annee": 2028,
+            "estime": false,
+            "justif": "Montée en charge sur 1 à 2 ans."
+          }
         }
       ],
       "sources": [
@@ -2344,7 +2419,12 @@
             }
           ],
           "non_verifie": true,
-          "notes": "Passe 4 : le chiffre de 10 Md€ (annonce politique de 2015) est abandonné faute de chiffrage officiel. Nouvelle formule : gain cran 2 (2,4 Md€) + 5 % × charges réelles de fonctionnement des départements 2025 (67,0 Md€, Cour des comptes juill. 2026) = 2,4 + 3,35 ≈ 5,7 Md€. Le taux de 5 % d'économies de structure est une hypothèse de l'auteur, volontairement prudente au regard de la Cour des comptes (2019) selon laquelle la fusion des régions n'a pas produit d'économies de gestion visibles. Recouvrement éventuel avec le plafond du cran 2 non déduit : borne haute."
+          "notes": "Passe 4 : le chiffre de 10 Md€ (annonce politique de 2015) est abandonné faute de chiffrage officiel. Nouvelle formule : gain cran 2 (2,4 Md€) + 5 % × charges réelles de fonctionnement des départements 2025 (67,0 Md€, Cour des comptes juill. 2026) = 2,4 + 3,35 ≈ 5,7 Md€. Le taux de 5 % d'économies de structure est une hypothèse de l'auteur, volontairement prudente au regard de la Cour des comptes (2019) selon laquelle la fusion des régions n'a pas produit d'économies de gestion visibles. Recouvrement éventuel avec le plafond du cran 2 non déduit : borne haute.",
+          "horizon": {
+            "annee": 2030,
+            "estime": true,
+            "justif": "Suppression d'un échelon et mutualisation : progressif, sans année précise ; estimé ~4 ans."
+          }
         },
         {
           "niveau": 4,
@@ -2395,7 +2475,12 @@
             }
           ],
           "non_verifie": true,
-          "notes": "Gain = cran 3 (5,7 Md€) + 20 % × 27,4 Md€ (DGF 2026, art. 129 LFI 2026) = 5,7 + 5,5 = 11,2 Md€. Hypothèses de l'auteur : la baisse de DGF se traduit à 100 % en baisse de dépenses (en 2014-2017 une partie a été compensée par la fiscalité et l'emprunt) et le recouvrement avec les 3,35 Md€ d'économies des départements du cran 3 est négligé. Année pleine à la 3e année (rythme 2015-2017). Aucun chiffrage officiel de ce taux. Remplace le cran 3 (5,7 Md€)."
+          "notes": "Gain = cran 3 (5,7 Md€) + 20 % × 27,4 Md€ (DGF 2026, art. 129 LFI 2026) = 5,7 + 5,5 = 11,2 Md€. Hypothèses de l'auteur : la baisse de DGF se traduit à 100 % en baisse de dépenses (en 2014-2017 une partie a été compensée par la fiscalité et l'emprunt) et le recouvrement avec les 3,35 Md€ d'économies des départements du cran 3 est négligé. Année pleine à la 3e année (rythme 2015-2017). Aucun chiffrage officiel de ce taux. Remplace le cran 3 (5,7 Md€).",
+          "horizon": {
+            "annee": 2029,
+            "estime": false,
+            "justif": "Baisse de DGF étalée sur trois ans ; année pleine à la 3e année."
+          }
         }
       ],
       "sources": [
@@ -2593,7 +2678,12 @@
             }
           ],
           "non_verifie": true,
-          "notes": "Gain = cran 3 (5,5 Md€) + (2,84 − 0,57) Md€ de dotations supprimées en plus du cran 2 = 5,5 + 2,27 = 7,8 Md€ ; ramené à 7,5 Md€ en déduisant ~0,3 Md€ de recouvrement avec le moratoire (hypothèse de l'auteur). Aucun chiffrage officiel. Année pleine dès la 2e année. Remplace le cran 3 (5,5 Md€). Précédent de rupture faible dans ce poste : les sources ouvertes ne documentent que l'effet 2014 de la baisse de DGF."
+          "notes": "Gain = cran 3 (5,5 Md€) + (2,84 − 0,57) Md€ de dotations supprimées en plus du cran 2 = 5,5 + 2,27 = 7,8 Md€ ; ramené à 7,5 Md€ en déduisant ~0,3 Md€ de recouvrement avec le moratoire (hypothèse de l'auteur). Aucun chiffrage officiel. Année pleine dès la 2e année. Remplace le cran 3 (5,5 Md€). Précédent de rupture faible dans ce poste : les sources ouvertes ne documentent que l'effet 2014 de la baisse de DGF.",
+          "horizon": {
+            "annee": 2028,
+            "estime": false,
+            "justif": "Année pleine dès la 2e année."
+          }
         }
       ],
       "sources": [
@@ -2749,7 +2839,12 @@
             }
           ],
           "non_verifie": true,
-          "notes": "Gain 2026 = 57,1 − 45,5 = 11,6, arrondi 11,7 Md€ (45,45 = 50,5 × 0,9). Taux −10 % : hypothèse de l'auteur, intermédiaire entre le Royaume-Uni 2010 (−7,7 %) et l'ordre des options demandées par le Trésor (−10 à −20 %). Aucun chiffrage officiel. Année pleine à la 3e ou 4e année : le Royaume-Uni a étalé la baisse sur quatre ans ; la première année donnerait moins de 4 Md€. Remplace le cran 3 (gel à 50,5 Md€, 6,6 Md€)."
+          "notes": "Gain 2026 = 57,1 − 45,5 = 11,6, arrondi 11,7 Md€ (45,45 = 50,5 × 0,9). Taux −10 % : hypothèse de l'auteur, intermédiaire entre le Royaume-Uni 2010 (−7,7 %) et l'ordre des options demandées par le Trésor (−10 à −20 %). Aucun chiffrage officiel. Année pleine à la 3e ou 4e année : le Royaume-Uni a étalé la baisse sur quatre ans ; la première année donnerait moins de 4 Md€. Remplace le cran 3 (gel à 50,5 Md€, 6,6 Md€).",
+          "horizon": {
+            "annee": 2030,
+            "estime": false,
+            "justif": "Année pleine à la 3e ou 4e année (UK étalé sur 4 ans) ; 1re année < 4 Md€."
+          }
         }
       ],
       "sources": [
@@ -2848,7 +2943,12 @@
             }
           ],
           "non_verifie": true,
-          "notes": "Aucun chiffrage officiel d'un rabais français. Ordre de grandeur 2 Md€ = rabais néerlandais (1 921 M€, prix 2020), non cumulable avec le cran 1. Gain net réel plus faible (la France finance ~sa part des rabais). Passe 4 : aucun chiffrage officiel d'un rabais français. Le Sénat (juin 2026) estime la contribution annuelle moyenne de la France à 36 Md€ (42 si les nouvelles ressources propres échouent) contre 26 Md€ aujourd'hui, mais ne chiffre pas de rabais ; l'ordre de grandeur reste le rabais néerlandais de la décision 2020/2053."
+          "notes": "Aucun chiffrage officiel d'un rabais français. Ordre de grandeur 2 Md€ = rabais néerlandais (1 921 M€, prix 2020), non cumulable avec le cran 1. Gain net réel plus faible (la France finance ~sa part des rabais). Passe 4 : aucun chiffrage officiel d'un rabais français. Le Sénat (juin 2026) estime la contribution annuelle moyenne de la France à 36 Md€ (42 si les nouvelles ressources propres échouent) contre 26 Md€ aujourd'hui, mais ne chiffre pas de rabais ; l'ordre de grandeur reste le rabais néerlandais de la décision 2020/2053.",
+          "horizon": {
+            "annee": 2028,
+            "estime": false,
+            "justif": "Rabais négocié dans le CFP 2028-2034 : effet à partir de 2028."
+          }
         },
         {
           "niveau": 3,
@@ -2932,7 +3032,12 @@
             }
           ],
           "non_verifie": true,
-          "notes": "Gain = PSR 2026 (28,44) - retours 2024 (16,456) = 11,98 (identique au cran 3) + droits de douane (ressources propres traditionnelles) que la France cesserait de reverser : le Sénat précise qu'ils sont hors PSR et que 25 % restent déjà acquis en frais de perception ; ordre de grandeur retenu ~2 Md€ (75 % des droits perçus), non chiffré dans le document ouvert, donc hypothèse. Total ~14,0 Md€. Années différentes (PSR 2026, retours 2024). Horizon : année pleine seulement après la sortie effective (au moins 2 ans de négociation art. 50, plus la facture de sortie des engagements du CFP 2021-2027) ; aucun gain avant 2029-2030. Gain brut budgétaire, sans effet macroéconomique ni compensation de la PAC (nationalisation de la PAC : gain ramené à environ 4-5 Md€). Le cran 3 (refus unilatéral) est remplacé, non cumulé : le refus de payer sans sortie est contraire à TFUE art. 311, la sortie suit la voie légale de l'art. 50. Jugement éditorial : faisabilité 3, révision constitutionnelle et risque économique majeur."
+          "notes": "Gain = PSR 2026 (28,44) - retours 2024 (16,456) = 11,98 (identique au cran 3) + droits de douane (ressources propres traditionnelles) que la France cesserait de reverser : le Sénat précise qu'ils sont hors PSR et que 25 % restent déjà acquis en frais de perception ; ordre de grandeur retenu ~2 Md€ (75 % des droits perçus), non chiffré dans le document ouvert, donc hypothèse. Total ~14,0 Md€. Années différentes (PSR 2026, retours 2024). Horizon : année pleine seulement après la sortie effective (au moins 2 ans de négociation art. 50, plus la facture de sortie des engagements du CFP 2021-2027) ; aucun gain avant 2029-2030. Gain brut budgétaire, sans effet macroéconomique ni compensation de la PAC (nationalisation de la PAC : gain ramené à environ 4-5 Md€). Le cran 3 (refus unilatéral) est remplacé, non cumulé : le refus de payer sans sortie est contraire à TFUE art. 311, la sortie suit la voie légale de l'art. 50. Jugement éditorial : faisabilité 3, révision constitutionnelle et risque économique majeur.",
+          "horizon": {
+            "annee": 2031,
+            "estime": true,
+            "justif": "Aucun gain avant 2029-2030 ; année pleine après sortie effective (>= 2 ans de négociation art. 50)."
+          }
         }
       ],
       "sources": [
@@ -3127,7 +3232,12 @@
             }
           ],
           "non_verifie": true,
-          "notes": "Gain = 30 % x 36,2 Md€ (Cour des comptes, titre 3 hors subventions aux opérateurs, 2025) = 10,86 ≈ 10,9 Md€. Formule arithmétique ; aucun chiffrage officiel. Horizon : année pleine en année 4 (montée en charge linéaire, environ 2,7 Md€ par an à partir de l'an 1, comme le Canada 1995-98 et le Royaume-Uni 2010-15). Remplace le cran 3 (-12 % = 4,3 Md€) : cumulé, le gain dépasse le cran 3 de 6,6 Md€. Pas de double compte : la masse salariale est hors poste (règle du projet), donc le Canada (45 000 postes) n'est utilisé que comme précédent de méthode, pas de montant ; les suppressions de postes éventuelles relèvent d'un autre poste. Les produits de cessions immobilières ne sont pas comptés comme gain."
+          "notes": "Gain = 30 % x 36,2 Md€ (Cour des comptes, titre 3 hors subventions aux opérateurs, 2025) = 10,86 ≈ 10,9 Md€. Formule arithmétique ; aucun chiffrage officiel. Horizon : année pleine en année 4 (montée en charge linéaire, environ 2,7 Md€ par an à partir de l'an 1, comme le Canada 1995-98 et le Royaume-Uni 2010-15). Remplace le cran 3 (-12 % = 4,3 Md€) : cumulé, le gain dépasse le cran 3 de 6,6 Md€. Pas de double compte : la masse salariale est hors poste (règle du projet), donc le Canada (45 000 postes) n'est utilisé que comme précédent de méthode, pas de montant ; les suppressions de postes éventuelles relèvent d'un autre poste. Les produits de cessions immobilières ne sont pas comptés comme gain.",
+          "horizon": {
+            "annee": 2030,
+            "estime": false,
+            "justif": "-30 % en 4 ans, année pleine en année 4, ~2,7 Md€ par an."
+          }
         }
       ],
       "sources": [
@@ -3224,7 +3334,12 @@
             }
           ],
           "non_verifie": false,
-          "notes": "Gain cumulé = cran 1 (0,194) + fusion France 2/France 5 (~0,20, rapport AN n° 2698, reco. 46) + mutualisation support (~0,01, IGF) = 0,40 Md€. Passe 4 : issue (b), la mesure holding seule (0,01 Md€) est remplacée par une mesure proche, chiffrée dans un document parlementaire ouvert et appuyée sur des coûts bruts de la Cour des comptes. Réserve : économie nette à régime de croisière (3 ans), chevauchement possible avec le -5 % du cran 1."
+          "notes": "Gain cumulé = cran 1 (0,194) + fusion France 2/France 5 (~0,20, rapport AN n° 2698, reco. 46) + mutualisation support (~0,01, IGF) = 0,40 Md€. Passe 4 : issue (b), la mesure holding seule (0,01 Md€) est remplacée par une mesure proche, chiffrée dans un document parlementaire ouvert et appuyée sur des coûts bruts de la Cour des comptes. Réserve : économie nette à régime de croisière (3 ans), chevauchement possible avec le -5 % du cran 1.",
+          "horizon": {
+            "annee": 2029,
+            "estime": false,
+            "justif": "Fusion France 2/5 : économie nette à régime de croisière après transition de 3 ans."
+          }
         },
         {
           "niveau": 3,
@@ -3309,7 +3424,12 @@
             }
           ],
           "non_verifie": true,
-          "notes": "Gain = ensemble du poste (3,878 Md€ de dotations 2026) = extinction complète ; différence avec le cran 3 : 3,878 - 3,2 = 0,68 Md€ (FMM 0,304 + TV5 0,084 + INA 0,103 + Arte France et autres solde). Le montant de 3,2 du cran 3 étant celui d'un amendement, le solde est indicatif. Gain brut en année pleine, sans coût de transition ni indemnités de licenciement, hors perte éventuelle de recettes publicitaires ; montée en charge sur 2-3 ans (dénonciation du traité Arte, cessions). Les dotations extérieures (387 M€) relevant parfois de l'action extérieure, risque de double compte à vérifier, mais le poste audiovisuel les inclut dans son montant de 3,878 Md€."
+          "notes": "Gain = ensemble du poste (3,878 Md€ de dotations 2026) = extinction complète ; différence avec le cran 3 : 3,878 - 3,2 = 0,68 Md€ (FMM 0,304 + TV5 0,084 + INA 0,103 + Arte France et autres solde). Le montant de 3,2 du cran 3 étant celui d'un amendement, le solde est indicatif. Gain brut en année pleine, sans coût de transition ni indemnités de licenciement, hors perte éventuelle de recettes publicitaires ; montée en charge sur 2-3 ans (dénonciation du traité Arte, cessions). Les dotations extérieures (387 M€) relevant parfois de l'action extérieure, risque de double compte à vérifier, mais le poste audiovisuel les inclut dans son montant de 3,878 Md€.",
+          "horizon": {
+            "annee": 2029,
+            "estime": false,
+            "justif": "Montée en charge sur 2-3 ans (dénonciation du traité Arte, cessions)."
+          }
         }
       ],
       "sources": [
@@ -3495,7 +3615,12 @@
             }
           ],
           "non_verifie": true,
-          "notes": "Calcul : base RSA + ASS ≈ 40 % des 33,3 Md€ de dépenses 2024 (hypothèse : le RSA pesait 44 % des minima en 2022 selon la presse relayant la DREES, non ouvert) = 13,3 Md€ ; part concernée par la limite = 26 % (persistance DREES) ; économie nette après exemptions et sorties = 50 % (hypothèse, TANF) : 13,3 x 0,26 x 0,50 = 1,73 Md€ ; moins le recoupement avec l'allocation unique du cran 3 (9 %) = 1,57 ≈ 1,6 ; total cumulé 3,0 + 1,6 = 4,6 Md€. Aucun chiffrage officiel. Horizon : l'effet de la limite n'apparaît qu'après 24 mois : année pleine en année 3 ; les 26 % persistants sont une borne basse de la population concernée pour les 35-64 ans (jeunes et plus de 64 ans non mesurés). AAH et ASPA exclues du champ (hors apte au travail)."
+          "notes": "Calcul : base RSA + ASS ≈ 40 % des 33,3 Md€ de dépenses 2024 (hypothèse : le RSA pesait 44 % des minima en 2022 selon la presse relayant la DREES, non ouvert) = 13,3 Md€ ; part concernée par la limite = 26 % (persistance DREES) ; économie nette après exemptions et sorties = 50 % (hypothèse, TANF) : 13,3 x 0,26 x 0,50 = 1,73 Md€ ; moins le recoupement avec l'allocation unique du cran 3 (9 %) = 1,57 ≈ 1,6 ; total cumulé 3,0 + 1,6 = 4,6 Md€. Aucun chiffrage officiel. Horizon : l'effet de la limite n'apparaît qu'après 24 mois : année pleine en année 3 ; les 26 % persistants sont une borne basse de la population concernée pour les 35-64 ans (jeunes et plus de 64 ans non mesurés). AAH et ASPA exclues du champ (hors apte au travail).",
+          "horizon": {
+            "annee": 2029,
+            "estime": false,
+            "justif": "Limite de 24 mois : effet visible après 24 mois, année pleine en année 3."
+          }
         }
       ],
       "sources": [

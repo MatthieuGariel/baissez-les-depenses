@@ -45,7 +45,8 @@ function detail(poste, n) {
   return `<p><strong>${esc(c.mesure)}</strong><br>
     <span class="gain">−${fmt(c.gain_mds)} Md€</span>
     <span class="badge f${c.faisabilite}">${FAISA[c.faisabilite]}</span>
-    ${c.non_verifie ? '<span class="badge nv">Chiffrage non vérifié</span>' : ''}</p>
+    ${c.non_verifie ? '<span class="badge nv">Chiffrage non vérifié</span>' : ''}
+    ${c.horizon ? `<span class="badge hz" title="${esc(c.horizon.justif || '')}">Gain plein en ${c.horizon.annee}${c.horizon.estime ? ' (estimé)' : ''}</span>` : ''}</p>
     ${list('Arguments', c.arguments)}
     ${list('Obstacles juridiques / UE / politiques', c.obstacles)}
     <strong>Sources</strong><ul>${src}</ul>`;
@@ -61,7 +62,8 @@ function detailR(r, n) {
   return `<p><strong>${rLabel(n)} : ${esc(c.mesure)}</strong><br>
     <span class="gain">${n < 0 ? `−${fmt(v)} Md€ de recettes (coût)` : `+${fmt(v)} Md€ de recettes (gain)`}</span>
     <span class="badge f${c.faisabilite}">${FAISA[c.faisabilite]}</span>
-    ${c.non_verifie ? '<span class="badge nv">Chiffrage non vérifié</span>' : ''}</p>
+    ${c.non_verifie ? '<span class="badge nv">Chiffrage non vérifié</span>' : ''}
+    ${c.horizon ? `<span class="badge hz" title="${esc(c.horizon.justif || '')}">Gain plein en ${c.horizon.annee}${c.horizon.estime ? ' (estimé)' : ''}</span>` : ''}</p>
     ${list('Arguments', c.arguments || [])}
     ${list('Obstacles juridiques / UE / politiques', c.obstacles || [])}
     ${c.notes ? `<p class="muted">${esc(c.notes)}</p>` : ''}

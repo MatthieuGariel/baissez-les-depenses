@@ -63,3 +63,4 @@ html,body{overflow-x:hidden}
 .score{align-items:flex-start}
 .score details[open]{max-height:38vh;overflow-y:auto}
 .sub.derive{display:block;color:var(--mid);font-size:.8rem}
+.hz{background:var(--acc)}
