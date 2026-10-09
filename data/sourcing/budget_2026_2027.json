@@ -1,0 +1,817 @@
+{
+ "_meta": {
+  "date_recherche": "2026-10-09",
+  "avertissement": "Chiffres 2027 = projet du Gouvernement, pas encore voté (examen AN à partir du 13/10/2026). Valeurs 'calculé' = dérivées par l'agent, formule en notes. Sources avec ouverte=false = vues uniquement dans des résultats de recherche, NON ouvertes : à confirmer avant publication.",
+  "reference_recommandee_simulateur": "Base déficit voté 2026 = 5,0 % PIB (LFI) mais révisé à 5,4 % par le Gouvernement/HCFP (oct. 2026) ; cible PLF 2027 = 5,0 % PIB."
+ },
+ "lfi_2026": {
+  "loi": {
+   "valeur": "Loi n° 2026-103 du 19 février 2026 de finances pour 2026",
+   "unite": "texte",
+   "annee": 2026,
+   "source": {
+    "titre": "Légifrance - Loi n° 2026-103 du 19 février 2026 de finances pour 2026 (JORF du 20/02/2026)",
+    "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053508155",
+    "ouverte": true
+   },
+   "notes": "Promulguée le 19/02/2026, publiée au JORF le 20/02/2026 (JORF n° 43). Adoptée via art. 49.3 (responsabilité engagée en janvier 2026), adoption définitive AN le 2 février 2026 (source secondaire). Loi spéciale promulguée le 26/12/2025 dans l'intervalle (Cour des comptes). Décision CC du 19/02/2026 censurant quelques cavaliers (source secondaire non ouverte)."
+  },
+  "deficit_public_pct_pib": {
+   "valeur": 5.0,
+   "unite": "% PIB",
+   "annee": 2026,
+   "source": {
+    "titre": "Cour des comptes, La situation des finances publiques début 2026 (synthèse, 19 fév. 2026)",
+    "url": "https://www.ccomptes.fr/sites/default/files/2026-02/20260219-synthese-situation-des-finances-publiques-debut-2026_0.pdf",
+    "ouverte": true
+   },
+   "notes": "Cible LFI 2026 relevée de 4,7 (PLF initial) à 5,0 après le vote de la LFSS (+0,3 pt). Confirmée par le RAA 2026 (avril). Révisée à 5,4 % dans le PLF 2027 (oct. 2026)."
+  },
+  "deficit_public_md": {
+   "valeur": 152,
+   "unite": "Md€",
+   "annee": 2026,
+   "source": {
+    "titre": "Rapport d'avancement annuel 2026 (Trésor, annexe 3.1), avril 2026",
+    "url": "https://www.tresor.economie.gouv.fr/Articles/b16f3103-ed47-4c37-9362-11ff01e12ae5/files/1d29351b-0187-4837-a3cd-e4ea7b0e4ce1",
+    "ouverte": true
+   },
+   "notes": "CALCULÉ : 5,0 % x PIB nominal 2026 de 3 049 Md€ (RAA, tableau macro 1) = ~152 Md€. Pas de montant en Md€ trouvé explicitement dans la LFI. Avec la révision à 5,4 % : ~165 Md€ (calculé)."
+  },
+  "deficit_public_2025_realise": {
+   "valeur": 5.1,
+   "unite": "% PIB",
+   "annee": 2025,
+   "source": {
+    "titre": "Rapport d'avancement annuel 2026 (Trésor, annexe 3.1), avril 2026",
+    "url": "https://www.tresor.economie.gouv.fr/Articles/b16f3103-ed47-4c37-9362-11ff01e12ae5/files/1d29351b-0187-4837-a3cd-e4ea7b0e4ce1",
+    "ouverte": true
+   },
+   "notes": "Réalisé INSEE 27/03/2026 : -5,1 % du PIB (5,8 % en 2024). Dette 115,6 % (RAA). ~152 Md€ = 5,1 % x 2 983 Md€ (calculé)."
+  },
+  "solde_etat_budgetaire_md": {
+   "valeur": -134.6,
+   "unite": "Md€",
+   "annee": 2026,
+   "source": {
+    "titre": "Projet de loi de finances pour 2027, n° 3210 (texte déposé, exposé des motifs, article d'équilibre)",
+    "url": "https://www.assemblee-nationale.fr/dyn/docs/PRJLANR5L17B3210.raw",
+    "ouverte": true
+   },
+   "notes": "DÉRIVÉ du PLF 2027 : le solde budgétaire 2026 révisé est -137,2 Md€, 'se dégradant de -2,6 Md€ par rapport à la LFI' => LFI = -134,6 Md€. Non lu directement dans la LFI."
+  },
+  "depenses_publiques_totales": {
+   "valeur": 57.3,
+   "unite": "% PIB",
+   "annee": 2026,
+   "source": {
+    "titre": "Rapport d'avancement annuel 2026 (Trésor, annexe 3.1), avril 2026",
+    "url": "https://www.tresor.economie.gouv.fr/Articles/b16f3103-ed47-4c37-9362-11ff01e12ae5/files/1d29351b-0187-4837-a3cd-e4ea7b0e4ce1",
+    "ouverte": true
+   },
+   "notes": "RAA 2026 : dépenses totales APU 57,3 % du PIB (1 714,1 Md€ en 2025 = 57,2 %). Hors crédits d'impôt : 56,7 % en 2026. Le PLF 2027 donne 57,1 % / 1 742 Md€ (hors CI) pour 2026 révisé."
+  },
+  "pib_nominal_md": {
+   "valeur": 3049,
+   "unite": "Md€",
+   "annee": 2026,
+   "source": {
+    "titre": "Rapport d'avancement annuel 2026 (Trésor, annexe 3.1), avril 2026",
+    "url": "https://www.tresor.economie.gouv.fr/Articles/b16f3103-ed47-4c37-9362-11ff01e12ae5/files/1d29351b-0187-4837-a3cd-e4ea7b0e4ce1",
+    "ouverte": true
+   },
+   "notes": "RAA 2026 tableau 1 : PIB nominal 2 983 Md€ (2025), 3 049 Md€ (2026) ; croissance nominale 2026 +2,2 %. La LFI initiale avait une croissance de 1,0 % (HCFP) ; PIB LFI non lu."
+  },
+  "economies_votees_effort": {
+   "valeur": 23,
+   "unite": "Md€",
+   "annee": 2026,
+   "source": {
+    "titre": "Cour des comptes, La situation des finances publiques début 2026 (synthèse, 19 fév. 2026)",
+    "url": "https://www.ccomptes.fr/sites/default/files/2026-02/20260219-synthese-situation-des-finances-publiques-debut-2026_0.pdf",
+    "ouverte": true
+   },
+   "notes": "Cour des comptes : effort de 0,4 pt de PIB réparti ~12 Md€ de hausses d'impôts + ~11 Md€ d'économies en dépenses (vs tendanciel), soit ~23 Md€. Les '43,8 Md€' (annonce juillet 2025) et '~44 Md€' du PLF initial ne sont PAS l'effort voté (source secondaire efforts.fr). Effort structurel RAA : 0,5-0,8 pt PIB selon définition."
+  },
+  "charge_dette": {
+   "valeur": "~74",
+   "unite": "Md€",
+   "annee": 2026,
+   "source": {
+    "titre": "Cour des comptes, La situation des finances publiques début 2026 (synthèse, 19 fév. 2026)",
+    "url": "https://www.ccomptes.fr/sites/default/files/2026-02/20260219-synthese-situation-des-finances-publiques-debut-2026_0.pdf",
+    "ouverte": true
+   },
+   "notes": "Charge d'intérêts APU en hausse de 9 Md€ à près de 74 Md€ (Cour des comptes). Dette fin 2026 : 118,6 % (CdC, LFI) -> 119,3 % révisé (PLF 2027)."
+  },
+  "lfr_gel_annulation": {
+   "lfr_2026": {
+    "valeur": "Aucune LFR 2026 trouvée à la date du 09/10/2026",
+    "unite": "texte",
+    "annee": 2026,
+    "source": {
+     "titre": "Projet de loi de finances pour 2027, n° 3210 (texte déposé, exposé des motifs, article d'équilibre)",
+     "url": "https://www.assemblee-nationale.fr/dyn/docs/PRJLANR5L17B3210.raw",
+     "ouverte": true
+    },
+    "notes": "Le PLF 2027 (exposé des motifs) décrit seulement des mesures de régulation et décrets, pas de LFR."
+   },
+   "mesures": [
+    {
+     "valeur": "Comités d'alerte 21/04/2026 (6 Md€ de mesures de précaution) et 07/07/2026 ; plafonds de dépense ministériels intégrant 1,9 Md€ d'économies",
+     "unite": "texte",
+     "annee": 2026,
+     "source": {
+      "titre": "Projet de loi de finances pour 2027, n° 3210 (texte déposé, exposé des motifs, article d'équilibre)",
+      "url": "https://www.assemblee-nationale.fr/dyn/docs/PRJLANR5L17B3210.raw",
+      "ouverte": true
+     },
+     "notes": "Choc énergétique/guerre en Iran estimé ~6 Md€ sur le déficit 2026 (RAA)."
+    },
+    {
+     "valeur": "Décret d'annulation du 10/09/2026 (n° 2026-857) : 0,5 Md€ AE et CP + surgel 0,4 Md€ AE / 0,8 Md€ CP",
+     "unite": "texte",
+     "annee": 2026,
+     "source": {
+      "titre": "Projet de loi de finances pour 2027, n° 3210 (texte déposé, exposé des motifs, article d'équilibre)",
+      "url": "https://www.assemblee-nationale.fr/dyn/docs/PRJLANR5L17B3210.raw",
+      "ouverte": true
+     },
+     "notes": "Confirmé dans l'exposé des motifs du PLF 2027. N° de décret vu seulement dans résultats de recherche Légifrance (non ouvert)."
+    },
+    {
+     "valeur": "Décrets du 11/06/2026 n° 2026-489 (avance) et n° 2026-490 (annulation ~0,46-0,49 Md€ CP)",
+     "unite": "texte",
+     "annee": 2026,
+     "source": {
+      "titre": "Légifrance - Décret n° 2026-490 du 11 juin 2026 portant annulation de crédits",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054238633",
+      "ouverte": false
+     },
+     "notes": "URL vue en résultat de recherche, NON ouverte."
+    },
+    {
+     "valeur": "Gel de 3,2 Md€ + annulation 847 M€ annoncés ~28/05/2026 (presse)",
+     "unite": "texte",
+     "annee": 2026,
+     "source": {
+      "titre": "Echos Plus, 29/05/2026",
+      "url": "https://echosplus.com/2026/05/29/budget-de-letat-bercy-gele-32-milliards-deuros-de-credits-pour-absorber-le-cout-de-la-guerre-au-moyen-orient/",
+      "ouverte": false
+     },
+     "notes": "Non ouvert ; à vérifier."
+    },
+    {
+     "valeur": "Gel des allègements généraux de cotisations (juin 2026), hausse plafond franchises médicales",
+     "unite": "texte",
+     "annee": 2026,
+     "source": {
+      "titre": "Projet de loi de finances pour 2027, n° 3210 (texte déposé, exposé des motifs, article d'équilibre)",
+      "url": "https://www.assemblee-nationale.fr/dyn/docs/PRJLANR5L17B3210.raw",
+      "ouverte": true
+     },
+     "notes": "Mesures sociales de freinage (~9 Md€ 'mesures de freinage' selon Banque des Territoires)."
+    }
+   ]
+  }
+ },
+ "lfss_2026": {
+  "loi": {
+   "valeur": "Loi n° 2025-1403 du 30 décembre 2025 de financement de la sécurité sociale pour 2026",
+   "unite": "texte",
+   "annee": 2025,
+   "source": {
+    "titre": "Éditions Tissot - LFSS 2026 publiée",
+    "url": "https://www.editions-tissot.fr/actualite/droit-du-travail/financement-de-la-securite-sociale-2026-le-projet-de-loi-est-definitivement-adopte",
+    "ouverte": false
+   },
+   "notes": "NUMÉRO ET DATE NON VÉRIFIÉS sur Légifrance (non ouvert) : n° 2025-1403 issu d'une recherche ; adoption définitive 16/12/2025 ; CC (décision 2025-899 DC) 30/12/2025 censure partielle ; JO 31/12/2025. Cour des comptes confirme : LFSS adoptée en décembre 2025, suspension réforme retraites 2023."
+  },
+  "effet_deficit": {
+   "valeur": 0.3,
+   "unite": "pt PIB",
+   "annee": 2026,
+   "source": {
+    "titre": "Cour des comptes, La situation des finances publiques début 2026 (synthèse, 19 fév. 2026)",
+    "url": "https://www.ccomptes.fr/sites/default/files/2026-02/20260219-synthese-situation-des-finances-publiques-debut-2026_0.pdf",
+    "ouverte": true
+   },
+   "notes": "Cour des comptes : la LFSS votée relève le déficit public 2026 de 0,3 pt (revient sur doublement franchises = 2,3 Md€ et gel prestations = 2,7 Md€ ; surcroît de dépense 6,8 Md€ vs projet). Pas d'économies structurelles."
+  },
+  "ondam": {
+   "valeur": 3.0,
+   "unite": "%",
+   "annee": 2026,
+   "source": {
+    "titre": "Banque des Territoires / presse (Ondam 2026 +3 %)",
+    "url": "https://www.banquedesterritoires.fr/lassemblee-adopte-de-justesse-le-plfss",
+    "ouverte": false
+   },
+   "notes": "Non ouvert ; Ondam 2026 à +3 % via amendement gouvernemental (résultat de recherche)."
+  },
+  "solde_secu": {
+   "valeur": 21.8,
+   "unite": "Md€ de déficit",
+   "annee": 2026,
+   "source": {
+    "titre": "Communiqué du Gouvernement du 1er oct. 2026 - Projet de budget pour 2027 (solidarites.gouv.fr)",
+    "url": "https://solidarites.gouv.fr/budget-relatif-au-projet-de-loi-de-finances-pour-2027",
+    "ouverte": true
+   },
+   "notes": "Déficit régimes obligatoires de base 2026 révisé à -21,8 Md€ (communiqué oct. 2026). Prévision LFSS initiale non lue (~-19,4 Md€ selon presse, non ouvert)."
+  }
+ },
+ "plf_2027": {
+  "depot": {
+   "valeur": "Projet de loi de finances pour 2027, n° 3210, déposé à l'Assemblée nationale le jeudi 1er octobre 2026 (Conseil des ministres le même jour)",
+   "unite": "texte",
+   "annee": 2026,
+   "source": {
+    "titre": "Assemblée nationale - dossier législatif PLF 2027",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/plf_2027",
+    "ouverte": true
+   },
+   "notes": "Renvoyé à la commission des finances. Séance publique à partir du 13/10/2026 (dossier AN). Vote solennel prévu 17/11 ou 27/11 selon sources (non confirmé)."
+  },
+  "deficit_public_pct_pib": {
+   "valeur": 5.0,
+   "unite": "% PIB",
+   "annee": 2027,
+   "source": {
+    "titre": "Projet de loi de finances pour 2027, n° 3210 (texte déposé, exposé des motifs, article d'équilibre)",
+    "url": "https://www.assemblee-nationale.fr/dyn/docs/PRJLANR5L17B3210.raw",
+    "ouverte": true
+   },
+   "notes": "Article liminaire : solde effectif -5,0 % (2025 : -5,1 ; 2026 : -5,4). Solde structurel -4,6 % du PIB potentiel."
+  },
+  "deficit_public_md": {
+   "valeur": 157,
+   "unite": "Md€",
+   "annee": 2027,
+   "source": {
+    "titre": "Projet de loi de finances pour 2027, n° 3210 (texte déposé, exposé des motifs, article d'équilibre)",
+    "url": "https://www.assemblee-nationale.fr/dyn/docs/PRJLANR5L17B3210.raw",
+    "ouverte": true
+   },
+   "notes": "CALCULÉ : 5,0 % x PIB nominal 2027 ~3 132 Md€ (dépense publique hors CI 1 782 Md€ / 56,9 %) = ~157 Md€. 2026 révisé : 5,4 % x ~3 051 = ~165 Md€. Montant non publié explicitement dans les sources lues."
+  },
+  "solde_etat_budgetaire_md": {
+   "valeur": -156.4,
+   "unite": "Md€",
+   "annee": 2027,
+   "source": {
+    "titre": "Projet de loi de finances pour 2027, n° 3210 (texte déposé, exposé des motifs, article d'équilibre)",
+    "url": "https://www.assemblee-nationale.fr/dyn/docs/PRJLANR5L17B3210.raw",
+    "ouverte": true
+   },
+   "notes": "Article d'équilibre : -156,4 Md€ (dégradation de -19,2 Md€ vs 2026 révisé -137,2). Cause : charge de la dette +9,6 Md€, crédits ministériels +8,0 Md€ (défense), PSR-UE +2,8 Md€. Charge de la dette 72,9 Md€ (presse). Besoin de financement 339,7 Md€."
+  },
+  "hypotheses": {
+   "croissance_2026": {
+    "valeur": 0.5,
+    "unite": "%",
+    "annee": 2026,
+    "source": {
+     "titre": "HCFP, Avis n° 2026-5 relatif aux PLF et PLFSS 2027 (1er oct. 2026)",
+     "url": "https://www.hcfp.fr/liste-avis/avis-ndeg2026-5-lois-de-finances-2027",
+     "ouverte": true
+    },
+    "notes": "LFI : 1,0 % ; RAA avril : 0,9 %."
+   },
+   "croissance_2027": {
+    "valeur": 1.0,
+    "unite": "%",
+    "annee": 2027,
+    "source": {
+     "titre": "Projet de loi de finances pour 2027, n° 3210 (texte déposé, exposé des motifs, article d'équilibre)",
+     "url": "https://www.assemblee-nationale.fr/dyn/docs/PRJLANR5L17B3210.raw",
+     "ouverte": true
+    },
+    "notes": "HCFP : optimiste, les autres prévisionnistes sont 0,1 à 0,3 pt plus bas."
+   },
+   "inflation_2027": {
+    "valeur": 1.8,
+    "unite": "%",
+    "annee": 2027,
+    "source": {
+     "titre": "Projet de loi de finances pour 2027, n° 3210 (texte déposé, exposé des motifs, article d'équilibre)",
+     "url": "https://www.assemblee-nationale.fr/dyn/docs/PRJLANR5L17B3210.raw",
+     "ouverte": true
+    },
+    "notes": "Moyenne annuelle (IPC)."
+   },
+   "croissance_pib_nominal_2027": {
+    "valeur": 2.7,
+    "unite": "%",
+    "annee": 2027,
+    "source": {
+     "titre": "HCFP, Avis n° 2026-5 relatif aux PLF et PLFSS 2027 (1er oct. 2026)",
+     "url": "https://www.hcfp.fr/liste-avis/avis-ndeg2026-5-lois-de-finances-2027",
+     "ouverte": true
+    },
+    "notes": "HCFP. PIB nominal 2027 en Md€ non trouvé : ~3 132 Md€ calculé (cf. deficit_public_md)."
+   },
+   "dette_pct_pib": {
+    "valeur": 121.7,
+    "unite": "% PIB",
+    "annee": 2027,
+    "source": {
+     "titre": "Projet de loi de finances pour 2027, n° 3210 (texte déposé, exposé des motifs, article d'équilibre)",
+     "url": "https://www.assemblee-nationale.fr/dyn/docs/PRJLANR5L17B3210.raw",
+     "ouverte": true
+    },
+    "notes": "Dette Maastricht ; 119,3 % en 2026, 115,7 % en 2025. ~3 814 Md€ (Public Sénat)."
+   },
+   "depense_publique": {
+    "valeur": 56.9,
+    "unite": "% PIB",
+    "annee": 2027,
+    "source": {
+     "titre": "Projet de loi de finances pour 2027, n° 3210 (texte déposé, exposé des motifs, article d'équilibre)",
+     "url": "https://www.assemblee-nationale.fr/dyn/docs/PRJLANR5L17B3210.raw",
+     "ouverte": true
+    },
+    "notes": "1 782 Md€ hors CI (57,1 % / 1 742 Md€ en 2026). Taux de PO 44,2 %. HCFP : dépense +2,3 % (+41 Md€), dépense primaire nette +0,7 %."
+   }
+  },
+  "economies_total": {
+   "valeur": 54,
+   "unite": "Md€",
+   "annee": 2027,
+   "source": {
+    "titre": "Projet de loi de finances pour 2027, n° 3210 (texte déposé, exposé des motifs, article d'équilibre)",
+    "url": "https://www.assemblee-nationale.fr/dyn/docs/PRJLANR5L17B3210.raw",
+    "ouverte": true
+   },
+   "notes": "Chiffre global du Gouvernement : 43 Md€ de mesures dans PLF+PLFSS 2027 + ~11 Md€ de montée en charge de mesures 2026/antérieures. Banque des Territoires (18/09) parlait de 45 + 9 : ancien découpage. HCFP : effort structurel 0,9 pt PIB (~28 Md€ : 17 recettes + 11 dépenses), effort en dépense primaire 23 Md€. Ces chiffres ne sont pas comparables entre eux."
+  },
+  "mesures_nouvelles": {
+   "valeur": 43,
+   "unite": "Md€",
+   "annee": 2027,
+   "source": {
+    "titre": "Projet de loi de finances pour 2027, n° 3210 (texte déposé, exposé des motifs, article d'équilibre)",
+    "url": "https://www.assemblee-nationale.fr/dyn/docs/PRJLANR5L17B3210.raw",
+    "ouverte": true
+   },
+   "notes": "Dont ~25 Md€ dépenses et ~18 Md€ recettes (Public Sénat via France Budget ; HCFP 25/18)."
+  },
+  "repartition_economies": {
+   "etat": {
+    "valeur": 9,
+    "unite": "Md€",
+    "annee": 2027,
+    "source": {
+     "titre": "Public Sénat - Budget 2027, mesures d'économies (1er oct. 2026)",
+     "url": "https://www.publicsenat.fr/actualites/economie/impots-retraites-mesures-deconomies-le-gouvernement-leve-le-voile-sur-le-budget-2027-qui-prevoit-un-effort-de-43-milliards-deuros",
+     "ouverte": true
+    },
+    "notes": "Crédits des ministères gelés en valeur hors défense (+6,4 Md€) et PSR ; périmètre dépenses de l'État 511 Md€ (503 en 2026)."
+   },
+   "securite_sociale": {
+    "valeur": 12,
+    "unite": "Md€",
+    "annee": 2027,
+    "source": {
+     "titre": "Public Sénat - Budget 2027, mesures d'économies (1er oct. 2026)",
+     "url": "https://www.publicsenat.fr/actualites/economie/impots-retraites-mesures-deconomies-le-gouvernement-leve-le-voile-sur-le-budget-2027-qui-prevoit-un-effort-de-43-milliards-deuros",
+     "ouverte": true
+    },
+    "notes": "Dépense sociale ramenée de >3 % à ~2 % ; Ondam +2,0 %."
+   },
+   "collectivites": {
+    "valeur": 5.5,
+    "unite": "Md€",
+    "annee": 2027,
+    "source": {
+     "titre": "Public Sénat - Budget 2027, mesures d'économies (1er oct. 2026)",
+     "url": "https://www.publicsenat.fr/actualites/economie/impots-retraites-mesures-deconomies-le-gouvernement-leve-le-voile-sur-le-budget-2027-qui-prevoit-un-effort-de-43-milliards-deuros",
+     "ouverte": true
+    },
+    "notes": "Dépenses de fonctionnement au rythme de l'inflation (+1,8 %). Autre source : baisse de 2 Md€ de la contribution de l'État. Total 9+12+5,5 = 26,5 Md€ ; le reste (~16,5 Md€) vient des recettes."
+   }
+  },
+  "mesures_economies_chiffrees": [
+   {
+    "valeur": 5.5,
+    "unite": "Md€",
+    "annee": 2027,
+    "source": {
+     "titre": "Public Sénat - Budget 2027, mesures d'économies (1er oct. 2026)",
+     "url": "https://www.publicsenat.fr/actualites/economie/impots-retraites-mesures-deconomies-le-gouvernement-leve-le-voile-sur-le-budget-2027-qui-prevoit-un-effort-de-43-milliards-deuros",
+     "ouverte": true
+    },
+    "notes": "Retraites : indexation intégrale <1 260 €/mois, partielle 1 260-2 000 €, gel au-delà ; dont 4,1 Md€ du gel au-delà de 1 260 €. Presse parle de '<6 Md€'."
+   },
+   {
+    "valeur": 2.0,
+    "unite": "Md€",
+    "annee": 2027,
+    "source": {
+     "titre": "Public Sénat - Budget 2027, mesures d'économies (1er oct. 2026)",
+     "url": "https://www.publicsenat.fr/actualites/economie/impots-retraites-mesures-deconomies-le-gouvernement-leve-le-voile-sur-le-budget-2027-qui-prevoit-un-effort-de-43-milliards-deuros",
+     "ouverte": true
+    },
+    "notes": "Arrêts maladie (dont 1 Md€ à négocier avec les partenaires sociaux)."
+   },
+   {
+    "valeur": 3.0,
+    "unite": "Md€",
+    "annee": 2027,
+    "source": {
+     "titre": "Public Sénat - Budget 2027, mesures d'économies (1er oct. 2026)",
+     "url": "https://www.publicsenat.fr/actualites/economie/impots-retraites-mesures-deconomies-le-gouvernement-leve-le-voile-sur-le-budget-2027-qui-prevoit-un-effort-de-43-milliards-deuros",
+     "ouverte": true
+    },
+    "notes": "Médicaments / baisses de prix produits de santé ; +1,6 Md€ de transfert vers les complémentaires (cf. Public Sénat)."
+   },
+   {
+    "valeur": 2.0,
+    "unite": "Md€",
+    "annee": 2027,
+    "source": {
+     "titre": "Euronews - Budget 2027, 54 Md€ d'effort (1er oct. 2026)",
+     "url": "https://fr.euronews.com/2026/10/01/budget-2027-le-gouvernement-propose-un-effort-de-54-milliards-deuros-pour-ramener-le-defic",
+     "ouverte": true
+    },
+    "notes": "Gel du point d'indice de la fonction publique (~2 Md€ selon presse, Banque des Territoires)."
+   },
+   {
+    "valeur": 2.5,
+    "unite": "Md€",
+    "annee": 2027,
+    "source": {
+     "titre": "Banque des Territoires - Budget 2027, effort de 54 Md€ (18 sept. 2026)",
+     "url": "https://www.banquedesterritoires.fr/budget-2027-le-gouvernement-prevoit-un-effort-inedit-de-54-milliards-deuros",
+     "ouverte": true
+    },
+    "notes": "Ministère du Travail -2,5 Md€ (non vérifié dans le texte PLF)."
+   },
+   {
+    "valeur": 0.5,
+    "unite": "Md€",
+    "annee": 2027,
+    "source": {
+     "titre": "Banque des Territoires / presse",
+     "url": "https://www.banquedesterritoires.fr/budget-2027-le-gouvernement-prevoit-un-effort-inedit-de-54-milliards-deuros",
+     "ouverte": true
+    },
+    "notes": "Gel des allocations familiales (~0,5 Md€, source secondaire non ouverte sur ce point) ; allocation de rentrée scolaire -0,6 Md€ (idem)."
+   },
+   {
+    "valeur": 1076,
+    "unite": "postes",
+    "annee": "2027",
+    "source": {
+     "titre": "France Budget (agrégateur)",
+     "url": "https://francebudget.fr/budget-2027",
+     "ouverte": true
+    },
+    "notes": "Suppression nette de 1 076 postes État+opérateurs ; pas de revalorisation APL ni prestations familiales."
+   },
+   {
+    "valeur": 3.8,
+    "unite": "Md€",
+    "annee": 2027,
+    "source": {
+     "titre": "Public Sénat - Budget 2027, mesures d'économies (1er oct. 2026)",
+     "url": "https://www.publicsenat.fr/actualites/economie/impots-retraites-mesures-deconomies-le-gouvernement-leve-le-voile-sur-le-budget-2027-qui-prevoit-un-effort-de-43-milliards-deuros",
+     "ouverte": true
+    },
+    "notes": "Allègements généraux de cotisations patronales : gel prolongé et assiette élargie."
+   }
+  ],
+  "mesures_recettes_chiffrees": [
+   {
+    "valeur": 5.0,
+    "unite": "Md€",
+    "annee": 2027,
+    "source": {
+     "titre": "Public Sénat - Budget 2027, mesures d'économies (1er oct. 2026)",
+     "url": "https://www.publicsenat.fr/actualites/economie/impots-retraites-mesures-deconomies-le-gouvernement-leve-le-voile-sur-le-budget-2027-qui-prevoit-un-effort-de-43-milliards-deuros",
+     "ouverte": true
+    },
+    "notes": "Surtaxe d'IS grands groupes reconduite, allégée de 30 % (rendement ~5 Md€)."
+   },
+   {
+    "valeur": 1.4,
+    "unite": "Md€",
+    "annee": 2027,
+    "source": {
+     "titre": "Public Sénat - Budget 2027, mesures d'économies (1er oct. 2026)",
+     "url": "https://www.publicsenat.fr/actualites/economie/impots-retraites-mesures-deconomies-le-gouvernement-leve-le-voile-sur-le-budget-2027-qui-prevoit-un-effort-de-43-milliards-deuros",
+     "ouverte": true
+    },
+    "notes": "Taxe sur sociétés d'autoroutes et aéroports (vs 0,6 Md€ avant)."
+   },
+   {
+    "valeur": 0.2,
+    "unite": "Md€",
+    "annee": 2027,
+    "source": {
+     "titre": "Public Sénat - Budget 2027, mesures d'économies (1er oct. 2026)",
+     "url": "https://www.publicsenat.fr/actualites/economie/impots-retraites-mesures-deconomies-le-gouvernement-leve-le-voile-sur-le-budget-2027-qui-prevoit-un-effort-de-43-milliards-deuros",
+     "ouverte": true
+    },
+    "notes": "Taxe sur assurances auto (~200 M€)."
+   },
+   {
+    "valeur": 1.4,
+    "unite": "Md€",
+    "annee": 2027,
+    "source": {
+     "titre": "Euronews - Budget 2027, 54 Md€ d'effort (1er oct. 2026)",
+     "url": "https://fr.euronews.com/2026/10/01/budget-2027-le-gouvernement-propose-un-effort-de-54-milliards-deuros-pour-ramener-le-defic",
+     "ouverte": true
+    },
+    "notes": "Avoirs en déshérence ; antifraude 1 Md€ ; contribution différentielle hauts revenus 0,6 Md€ (presse, non recoupé dans le PLF)."
+   },
+   {
+    "valeur": "abattement 10 % retraités : plafond 4 439 € -> 3 000 €",
+    "unite": "texte",
+    "annee": 2027,
+    "source": {
+     "titre": "France Budget - PLF 2027 (agrégateur, secondaire)",
+     "url": "https://francebudget.fr/budget-2027",
+     "ouverte": true
+    },
+    "notes": "Montant non isolé ; compris dans les ~5,5 Md€ de contribution des retraités selon Euronews. Pas de hausse générale de l'IR (barème indexé +2,1 %)."
+   },
+   {
+    "valeur": "TVA 10 % -> 20 % sur TV payante par abonnement",
+    "unite": "texte",
+    "annee": 2027,
+    "source": {
+     "titre": "Toute l'Europe - Budget 2027, ce qu'il faut retenir",
+     "url": "https://www.touteleurope.eu/economie-et-social/budget-2027-ce-qu-il-faut-retenir-des-mesures-annoncees-par-le-gouvernement-lecornu/",
+     "ouverte": true
+    },
+    "notes": "Non chiffré par le Gouvernement (Canal+ estime ~200 M€)."
+   }
+  ],
+  "tendanciel": {
+   "gouvernement": {
+    "valeur": 6.4,
+    "unite": "% PIB (déficit sans mesures)",
+    "annee": 2027,
+    "source": {
+     "titre": "Projet de loi de finances pour 2027, n° 3210 (texte déposé, exposé des motifs, article d'équilibre)",
+     "url": "https://www.assemblee-nationale.fr/dyn/docs/PRJLANR5L17B3210.raw",
+     "ouverte": true
+    },
+    "notes": "PLF : à politique inchangée le déficit se dégraderait d'~1 pt de PIB en 2027 (donc ~6,4 % sur base 5,4 % ; calculé). Presse/HCFP : 'avoisinant 6,5 %'. La mission des économistes (citée par le PLF) donnait 5,9 % à politique inchangée sur base 2026 = 5,0 %."
+   },
+   "france_budget": {
+    "valeur": 5.3,
+    "unite": "% PIB",
+    "annee": 2027,
+    "source": {
+     "titre": "France Budget - PLF 2027 (agrégateur, secondaire)",
+     "url": "https://francebudget.fr/budget-2027",
+     "ouverte": true
+    },
+    "notes": "Simulation tierce 'sans mesures nouvelles' ; hypothèses différentes, non comparable."
+   },
+   "depenses_spontanees": {
+    "valeur": "charge de la dette +10 Md€ ; dépenses sociales +22 Md€ sans mesures ; Ondam >3 % avant mesures (environ +19 Md€ -> +13 Md€ avec)",
+    "unite": "texte",
+    "annee": 2027,
+    "source": {
+     "titre": "Euronews - Budget 2027, 54 Md€ d'effort (1er oct. 2026)",
+     "url": "https://fr.euronews.com/2026/10/01/budget-2027-le-gouvernement-propose-un-effort-de-54-milliards-deuros-pour-ramener-le-defic",
+     "ouverte": true
+    },
+    "notes": "Euronews : +10 Md€ intérêts, +22 Md€ dépenses sociales (sources presse). Ordres de grandeur, pas un chiffrage officiel de dépense totale tendancielle."
+   }
+  },
+  "note_etat_budget_non_trouve": "PIB nominal 2027 en Md€ et déficit public 2027 en Md€ ne sont pas publiés explicitement dans les extraits lus ; voir champs calculés. Rapport économique, social et financier (RESF) 2027 sur budget.gouv.fr non ouvert."
+ },
+ "plfss_2027": {
+  "depot": {
+   "valeur": "PLFSS 2027 présenté en Conseil des ministres le 1er octobre 2026 avec le PLF",
+   "unite": "texte",
+   "annee": 2026,
+   "source": {
+    "titre": "Compte rendu du Conseil des ministres du 01/10/2026 (info.gouv.fr)",
+    "url": "https://www.info.gouv.fr/conseil-des-ministres/compte-rendu-du-conseil-des-ministres-du-01-10-2026",
+    "ouverte": false
+   },
+   "notes": "Page vue en résultat de recherche seulement. Numéro de texte AN et date exacte de dépôt non trouvés (page AN du PLFSS non ouverte)."
+  },
+  "deficit_secu_2026": {
+   "valeur": 21.8,
+   "unite": "Md€",
+   "annee": 2026,
+   "source": {
+    "titre": "Communiqué du Gouvernement du 1er oct. 2026 - Projet de budget pour 2027 (solidarites.gouv.fr)",
+    "url": "https://solidarites.gouv.fr/budget-relatif-au-projet-de-loi-de-finances-pour-2027",
+    "ouverte": true
+   },
+   "notes": "Régimes obligatoires de base, révisé."
+  },
+  "deficit_secu_2027": {
+   "valeur": 12.7,
+   "unite": "Md€",
+   "annee": 2027,
+   "source": {
+    "titre": "Communiqué du Gouvernement du 1er oct. 2026 - Projet de budget pour 2027 (solidarites.gouv.fr)",
+    "url": "https://solidarites.gouv.fr/budget-relatif-au-projet-de-loi-de-finances-pour-2027",
+    "ouverte": true
+   },
+   "notes": "Amélioration de 9,1 Md€ (le communiqué cite 9,9 Md€ vs prévision). Mesures 'très majoritairement sur les dépenses'. Banque des Territoires : déficit APU sociales >=23,2 Md€ en 2026, -1/3 en 2027."
+  },
+  "ondam_2027": {
+   "valeur": 2.0,
+   "unite": "%",
+   "annee": 2027,
+   "source": {
+    "titre": "Projet de loi de finances pour 2027, n° 3210 (texte déposé, exposé des motifs, article d'équilibre)",
+    "url": "https://www.assemblee-nationale.fr/dyn/docs/PRJLANR5L17B3210.raw",
+    "ouverte": true
+   },
+   "notes": "Contre ~3 % en 2025-2026 ; hausse des dépenses de santé limitée à 6 Md€ au lieu de 10 Md€ (Public Sénat)."
+  }
+ },
+ "hcfp_2027": {
+  "avis": {
+   "valeur": "Avis n° 2026-5 du HCFP, 1er octobre 2026 (saisine reçue le 18/09/2026)",
+   "unite": "texte",
+   "annee": 2026,
+   "source": {
+    "titre": "HCFP, Avis n° 2026-5 relatif aux PLF et PLFSS 2027 (1er oct. 2026)",
+    "url": "https://www.hcfp.fr/liste-avis/avis-ndeg2026-5-lois-de-finances-2027",
+    "ouverte": true
+   },
+   "notes": "Sur PLF et PLFSS 2027."
+  },
+  "appreciation_croissance": {
+   "valeur": "2026 (0,5 %) plausible ; 2027 (1,0 %) optimiste, risques à la baisse majoritaires",
+   "unite": "texte",
+   "annee": 2027,
+   "source": {
+    "titre": "HCFP, Avis n° 2026-5 relatif aux PLF et PLFSS 2027 (1er oct. 2026)",
+    "url": "https://www.hcfp.fr/liste-avis/avis-ndeg2026-5-lois-de-finances-2027",
+    "ouverte": true
+   },
+   "notes": "Autres prévisionnistes 0,1-0,3 pt plus bas (Banque de France 0,9 %, OFCE 0,7 % selon Euronews)."
+  },
+  "deficit_2026": {
+   "valeur": 5.4,
+   "unite": "% PIB",
+   "annee": 2026,
+   "source": {
+    "titre": "HCFP, Avis n° 2026-5 relatif aux PLF et PLFSS 2027 (1er oct. 2026)",
+    "url": "https://www.hcfp.fr/liste-avis/avis-ndeg2026-5-lois-de-finances-2027",
+    "ouverte": true
+   },
+   "notes": "Jugé plausible, aléas importants (vs 5,0 % LFI)."
+  },
+  "deficit_2027": {
+   "valeur": 5.0,
+   "unite": "% PIB",
+   "annee": 2027,
+   "source": {
+    "titre": "HCFP, Avis n° 2026-5 relatif aux PLF et PLFSS 2027 (1er oct. 2026)",
+    "url": "https://www.hcfp.fr/liste-avis/avis-ndeg2026-5-lois-de-finances-2027",
+    "ouverte": true
+   },
+   "notes": "Cible jugée un minimum ; quasi entièrement structurel ; proche du niveau 2025."
+  },
+  "effort_structurel": {
+   "valeur": 0.9,
+   "unite": "pt PIB (~28 Md€)",
+   "annee": 2027,
+   "source": {
+    "titre": "HCFP, Avis n° 2026-5 relatif aux PLF et PLFSS 2027 (1er oct. 2026)",
+    "url": "https://www.hcfp.fr/liste-avis/avis-ndeg2026-5-lois-de-finances-2027",
+    "ouverte": true
+   },
+   "notes": "17 Md€ recettes + 11 Md€ dépenses, méthode HCFP. Effort en dépense primaire 23 Md€. Chiffrage des mesures de recettes non évaluable finement."
+  },
+  "depense_et_po": {
+   "valeur": "PO +3,6 % (+48 Md€) dont mesures nouvelles nettes +17 Md€ ; dépense +2,3 % (+41 Md€) ; intérêts +12 Md€, retraites +9, défense +6,5, santé +5,5",
+   "unite": "texte",
+   "annee": 2027,
+   "source": {
+    "titre": "HCFP, Avis n° 2026-5 relatif aux PLF et PLFSS 2027 (1er oct. 2026)",
+    "url": "https://www.hcfp.fr/liste-avis/avis-ndeg2026-5-lois-de-finances-2027",
+    "ouverte": true
+   },
+   "notes": "Dépense primaire nette +0,7 % (plafond recommandé 1,2 %). Le HCFP juge la trajectoire de dépense réalisable si toutes les mesures sont adoptées."
+  },
+  "2029": {
+   "valeur": "Retour sous 3 % en 2029 jugé 'très peu vraisemblable' (≈ -1 pt/an en 2028-2029 requis)",
+   "unite": "texte",
+   "annee": 2029,
+   "source": {
+    "titre": "HCFP, Avis n° 2026-5 relatif aux PLF et PLFSS 2027 (1er oct. 2026)",
+    "url": "https://www.hcfp.fr/liste-avis/avis-ndeg2026-5-lois-de-finances-2027",
+    "ouverte": true
+   },
+   "notes": "Dette ~122 % en 2027, effet boule de neige (taux > croissance)."
+  }
+ },
+ "trajectoire": [
+  {
+   "annee": 2024,
+   "deficit_pct_pib": 5.8,
+   "dette_pct_pib": 112.6,
+   "source": {
+    "titre": "Rapport d'avancement annuel 2026 (Trésor, annexe 3.1), avril 2026",
+    "url": "https://www.tresor.economie.gouv.fr/Articles/b16f3103-ed47-4c37-9362-11ff01e12ae5/files/1d29351b-0187-4837-a3cd-e4ea7b0e4ce1",
+    "ouverte": true
+   },
+   "notes": "Réalisé (RAA)."
+  },
+  {
+   "annee": 2025,
+   "deficit_pct_pib": 5.1,
+   "dette_pct_pib": 115.6,
+   "source": {
+    "titre": "Rapport d'avancement annuel 2026 (Trésor, annexe 3.1), avril 2026",
+    "url": "https://www.tresor.economie.gouv.fr/Articles/b16f3103-ed47-4c37-9362-11ff01e12ae5/files/1d29351b-0187-4837-a3cd-e4ea7b0e4ce1",
+    "ouverte": true
+   },
+   "notes": "Réalisé INSEE (RAA). PLF 2027 donne dette 115,7 %."
+  },
+  {
+   "annee": 2026,
+   "deficit_pct_pib": 5.4,
+   "dette_pct_pib": 119.3,
+   "source": {
+    "titre": "Projet de loi de finances pour 2027, n° 3210 (texte déposé, exposé des motifs, article d'équilibre)",
+    "url": "https://www.assemblee-nationale.fr/dyn/docs/PRJLANR5L17B3210.raw",
+    "ouverte": true
+   },
+   "notes": "Révisé PLF 2027 / HCFP. LFI et RAA avril 2026 : 5,0 % et dette 118,4 % (RAA)."
+  },
+  {
+   "annee": 2027,
+   "deficit_pct_pib": 5.0,
+   "dette_pct_pib": 121.7,
+   "source": {
+    "titre": "Projet de loi de finances pour 2027, n° 3210 (texte déposé, exposé des motifs, article d'équilibre)",
+    "url": "https://www.assemblee-nationale.fr/dyn/docs/PRJLANR5L17B3210.raw",
+    "ouverte": true
+   },
+   "notes": "Cible PLF 2027 (non voté)."
+  },
+  {
+   "annee": 2028,
+   "deficit_pct_pib": null,
+   "dette_pct_pib": null,
+   "source": {
+    "titre": "HCFP, Avis n° 2026-5 relatif aux PLF et PLFSS 2027 (1er oct. 2026)",
+    "url": "https://www.hcfp.fr/liste-avis/avis-ndeg2026-5-lois-de-finances-2027",
+    "ouverte": true
+   },
+   "notes": "Pas de trajectoire officielle publiée par année : le RAA 2026 se limite à 2026 (HCFP-2026-3) ; HCFP 2026-5 : -1 pt/an requis pour 2028-2029."
+  },
+  {
+   "annee": 2029,
+   "deficit_pct_pib": "<3.0 (objectif)",
+   "dette_pct_pib": null,
+   "source": {
+    "titre": "Rapport d'avancement annuel 2026 (Trésor, annexe 3.1), avril 2026",
+    "url": "https://www.tresor.economie.gouv.fr/Articles/b16f3103-ed47-4c37-9362-11ff01e12ae5/files/1d29351b-0187-4837-a3cd-e4ea7b0e4ce1",
+    "ouverte": true
+   },
+   "notes": "Objectif PSMT 2025-2029 / recommandation du Conseil UE (PDE ouverte 26/07/2024). Jugé très peu vraisemblable par le HCFP."
+  },
+  {
+   "annee": "2025-2029 PSMT initial (oct. 2024)",
+   "deficit_pct_pib": {
+    "2026": 4.6,
+    "2027": 4.1,
+    "2028": 3.4,
+    "2029": 2.8
+   },
+   "dette_pct_pib": null,
+   "source": {
+    "titre": "Trésor - Publication du PSMT 2025-2029",
+    "url": "https://www.tresor.economie.gouv.fr/Articles/2024/10/23/publication-du-plan-budgetaire-et-structurel-a-moyen-terme-psmt-pour-2025-2029",
+    "ouverte": false
+   },
+   "notes": "Trajectoire initiale, DÉPASSÉE (source secondaire via note AN dans résultat de recherche ; URL Trésor non ouverte). Dette 2029 non trouvée."
+  },
+  {
+   "annee": "horizon 2030 tendanciel (France Budget, simulation tierce sans mesures)",
+   "deficit_pct_pib": 6.2,
+   "dette_pct_pib": 128.6,
+   "source": {
+    "titre": "France Budget - PLF 2027 (agrégateur, secondaire)",
+    "url": "https://francebudget.fr/budget-2027",
+    "ouverte": true
+   },
+   "notes": "Déficit 2030 6,2 %, dette 2030 128,6 % ; non officiel."
+  }
+ ],
+ "incertitudes": [
+  "Nombre de 'économies' : 54 Md€ (total) vs 43 Md€ (mesures PLF/PLFSS) vs 28 Md€ (effort structurel HCFP) vs 23 Md€ (dépense primaire HCFP).",
+  "Déficit 2026 : LFI 5,0 % vs révisé 5,4 % (oct. 2026).",
+  "PIB nominal et déficit en Md€ 2026-2027 calculés, non lus.",
+  "Numéro de la LFSS 2026 et date non confirmés sur Légifrance.",
+  "Trajectoire officielle par année 2028-2032 inexistante dans le RAA 2026 ; pas de nouveau PSMT.",
+  "PLF 2027 pas encore voté ; calendrier de vote variable ; risque de loi spéciale (élection présidentielle 2027)."
+ ]
+}

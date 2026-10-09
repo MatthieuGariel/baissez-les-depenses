@@ -1,0 +1,2189 @@
+{
+ "meta": {
+  "titre": "Recettes APU — hausse/baisse des prélèvements",
+  "perimetre": "Prélèvements obligatoires des administrations publiques (État, Sécurité sociale, collectivités)",
+  "annee_reference": 2024,
+  "po_total": {
+   "insee_pct_pib": 42.8,
+   "eurostat_pct_pib": 45.3,
+   "montant_mds_approx": 1250,
+   "note": "42,8 % du PIB 2024 (Insee, définition nationale) ; montant en Md€ estimé à partir d'un PIB ≈ 2 920 Md€ (non vérifié). Eurostat (cotisations imputées incluses) : 45,3 % ≈ 1 320 Md€.",
+   "source": {
+    "titre": "Insee/Eurostat — Taux de prélèvements obligatoires dans l'UE, 2010-2024",
+    "url": "https://www.insee.fr/fr/statistiques/2381410",
+    "ouverte": true
+   }
+  },
+  "comparaison_ue": {
+   "france_2024_pct_pib": 45.3,
+   "ue27_2024_pct_pib": 40.4,
+   "france_2023_pct_pib": 45.6,
+   "ue27_2023_pct_pib": 39.9,
+   "rang": "2e de l'UE derrière le Danemark (FIPECO)",
+   "ecart_cle": "Écart vs UE de 2,1 pts de PIB pour le travail et 1,8 pt pour le capital ; prélèvements sur la consommation légèrement plus élevés en France mais sous la moyenne en part du total (FIPECO)",
+   "sources": [
+    {
+     "titre": "Insee/Eurostat — Taux de prélèvements obligatoires dans l'UE, 2010-2024",
+     "url": "https://www.insee.fr/fr/statistiques/2381410",
+     "ouverte": true
+    },
+    {
+     "titre": "FIPECO (F. Ecalle, 16/04/2026) — Prélèvements sur le travail, le capital et la consommation 2016-2024",
+     "url": "https://www.fipeco.fr/pdf/AssiettePr%C3%A9l%C3%A8vements2024.pdf",
+     "ouverte": true
+    }
+   ]
+  },
+  "avertissements": [
+   "Crans de hausse/baisse largement non vérifiés (ordre de grandeur calculé, formule dans notes) : V&M ne donne pas de sensibilités détaillées.",
+   "Sources marquées ouverte:false = trouvées par moteur de recherche mais non ouvertes/lues : à vérifier avant usage.",
+   "Les montants cot_emp, cot_sal, capital, tf sont des estimations (montant_verifie:false).",
+   "Taux marginal cumulé et exil fiscal : se référer à CC 2012-662 DC et 2013-685 DC (ouvertes)."
+  ],
+  "faisabilite": {
+   "1": "loi ordinaire/décret",
+   "2": "risque juridique ou politique fort",
+   "3": "obstacle constitutionnel ou UE probable"
+  },
+  "licence": "CC BY 4.0"
+ },
+ "recettes": [
+  {
+   "id": "ir",
+   "nom": "Impôt sur le revenu",
+   "montant_mds": 88.0,
+   "annee_montant": 2024,
+   "source_montant": {
+    "titre": "V&M PLF 2026 t.I : IR net 88,0 Md€ (exéc. 2024), 94,9 révisé 2025, 104,0 prévu 2026 ; barème 0/11/30/41/45 %",
+    "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+    "ouverte": true
+   },
+   "montant_verifie": false,
+   "crans_hausse": [
+    {
+     "niveau": 1,
+     "mesure": "Gel du barème 1 an (non-indexation sur l'inflation)",
+     "gain_mds": 1.6,
+     "faisabilite": 1,
+     "arguments": [
+      "Rendement immédiat sans changement de taux, précédent : gel de fait 2011-2012",
+      "Neutre pour les taux affichés"
+     ],
+     "obstacles": [
+      "Fait entrer des foyers dans l'impôt et augmente la progressivité effective sur les classes moyennes (« impôt caché »)",
+      "Effet pouvoir d'achat négatif documenté lors du gel 2011-2012"
+     ],
+     "sources": [
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Ordre de grandeur : IR 94,9 Md€ (2025) x ~1,7 % d'inflation x élasticité ~1 = ~1,6. Non chiffré dans V&M."
+    },
+    {
+     "niveau": 2,
+     "mesure": "+1 pt sur les tranches à 30 % et 41 % (31 % / 42 %)",
+     "gain_mds": 5.5,
+     "faisabilite": 1,
+     "arguments": [
+      "Touche les revenus médians-supérieurs, assiette large",
+      "Barème progressif déjà proche des moyennes UE sur le travail"
+     ],
+     "obstacles": [
+      "Prélèvements sur le travail en France déjà au 5e rang UE (FIPECO) : risque sur l'offre de travail qualifié",
+      "Cumul avec CSG : taux marginal global déjà élevé"
+     ],
+     "sources": [
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      },
+      {
+       "titre": "FIPECO (F. Ecalle, 16/04/2026) — Prélèvements sur le travail, le capital et la consommation 2016-2024",
+       "url": "https://www.fipeco.fr/pdf/AssiettePr%C3%A9l%C3%A8vements2024.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Formule : cran 1 + ~3,9 Md€ (1 pt ≈ 1/30 puis 1/41 du produit des tranches 30 % et 41 %, soit ~60 % de l'IR). Calcul d'ordre de grandeur, non officiel."
+    },
+    {
+     "niveau": 3,
+     "mesure": "+2 pts sur la tranche à 41 % et 4 pts sur la tranche à 45 % (43 % / 49 %)",
+     "gain_mds": 8.5,
+     "faisabilite": 2,
+     "arguments": [
+      "Concentre l'effort sur les 5-10 % de foyers les plus aisés (la tranche à 45 % > 180 294 €/part)",
+      "Revient sur une partie des baisses de taux de la période 2016-2024"
+     ],
+     "obstacles": [
+      "Taux marginal cumulé (IR + CSG + contributions) proche des seuils censurés : 2012-662 DC cons. 15 et 19 (75,04 % = charge excessive) ; 2013-685 DC cons. 21-24 admet ~75 % pour une taxe exceptionnelle",
+      "Mobilité des hauts revenus et exil fiscal, effet plafonné par le plafond de 2/3 évoqué par le Conseil d'État 2013 selon commentaire non ouvert"
+     ],
+     "sources": [
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      },
+      {
+       "titre": "Conseil constitutionnel, décision n° 2012-662 DC du 29 décembre 2012 (cons. 15 : imposition confiscatoire / charge excessive ; cons. 19 : taux marginal 75,04 % censuré ; cons. 74 : art. 12 censuré)",
+       "url": "https://www.conseil-constitutionnel.fr/decision/2012/2012662DC.htm",
+       "ouverte": true
+      },
+      {
+       "titre": "Conseil constitutionnel, décision n° 2013-685 DC du 29 décembre 2013 (cons. 16 et 21-24 : contribution de 50 % sur hautes rémunérations jugée non confiscatoire, art. 15 conforme)",
+       "url": "https://www.conseil-constitutionnel.fr/decision/2013/2013685DC.htm",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Formule : cran 2 + ~3,0 Md€ (tranches supérieures ≈ 25-30 % de l'IR avec forte concentration). Ordre de grandeur."
+    }
+   ],
+   "crans_baisse": [
+    {
+     "niveau": 1,
+     "mesure": "-1 pt sur la tranche à 11 % (10 %)",
+     "cout_mds": 2.3,
+     "faisabilite": 1,
+     "arguments": [
+      "Soulage les ménages modestes et le bas des classes moyennes",
+      "Renforce l'incitation au travail au bas du barème"
+     ],
+     "obstacles": [
+      "Perte de recette sans contrepartie de dépense (déficit 5,4 % du PIB 2025)",
+      "Ciblage faible : bénéficie aussi aux foyers plus aisés (tranche partagée)"
+     ],
+     "sources": [
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Formule : base de la tranche 11 % (~ 21 Md€ d'IR total concerné x 1/11) ≈ 2,3. Non chiffré dans V&M."
+    },
+    {
+     "niveau": 2,
+     "mesure": "Indexation du barème de 2 pts au-dessus de l'inflation + -1 pt tranche 30 %",
+     "cout_mds": 5.5,
+     "faisabilite": 1,
+     "arguments": [
+      "Rend du pouvoir d'achat aux foyers imposés",
+      "Corrige le « fiscal drag » pendant les années de gel"
+     ],
+     "obstacles": [
+      "Coût budgétaire croissant dans le temps (effet de base)",
+      "Distribution inégale : les foyers non imposables ne gagnent rien"
+     ],
+     "sources": [
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Formule : cran 1 + 2 pts x ~1,6 Md€/pt d'indexation ≈ 3,2. Ordre de grandeur."
+    },
+    {
+     "niveau": 3,
+     "mesure": "Baisse de 2 pts des taux 11 % et 30 % et relèvement de l'abattement de 10 %",
+     "cout_mds": 12.0,
+     "faisabilite": 2,
+     "arguments": [
+      "Allègement net des classes moyennes (prélèvements sur le travail France > UE de 2,1 pts de PIB selon FIPECO)",
+      "Compétitivité du travail qualifié"
+     ],
+     "obstacles": [
+      "Coût élevé (≈ 13 % du produit de l'IR) sans financement",
+      "Risque de dégradation du solde au-delà des règles du pacte de stabilité"
+     ],
+     "sources": [
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      },
+      {
+       "titre": "FIPECO (F. Ecalle, 16/04/2026) — Prélèvements sur le travail, le capital et la consommation 2016-2024",
+       "url": "https://www.fipeco.fr/pdf/AssiettePr%C3%A9l%C3%A8vements2024.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Formule : cran 2 + ~6,5 Md€ (abattement 10 % : ~4 ; taux : ~2,5). Ordre de grandeur."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+     "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+     "ouverte": true
+    },
+    {
+     "titre": "FIPECO (F. Ecalle, 16/04/2026) — Prélèvements sur le travail, le capital et la consommation 2016-2024",
+     "url": "https://www.fipeco.fr/pdf/AssiettePr%C3%A9l%C3%A8vements2024.pdf",
+     "ouverte": true
+    },
+    {
+     "titre": "Conseil constitutionnel, décision n° 2012-662 DC du 29 décembre 2012 (cons. 15 : imposition confiscatoire / charge excessive ; cons. 19 : taux marginal 75,04 % censuré ; cons. 74 : art. 12 censuré)",
+     "url": "https://www.conseil-constitutionnel.fr/decision/2012/2012662DC.htm",
+     "ouverte": true
+    },
+    {
+     "titre": "Conseil constitutionnel, décision n° 2013-685 DC du 29 décembre 2013 (cons. 16 et 21-24 : contribution de 50 % sur hautes rémunérations jugée non confiscatoire, art. 15 conforme)",
+     "url": "https://www.conseil-constitutionnel.fr/decision/2013/2013685DC.htm",
+     "ouverte": true
+    }
+   ]
+  },
+  {
+   "id": "csg",
+   "nom": "CSG (contribution sociale généralisée)",
+   "montant_mds": 153.8,
+   "annee_montant": 2024,
+   "source_montant": {
+    "titre": "CCSS : CSG 153,8 Md€ en 2024 (relais moneyvox) ; source officielle CCSS non ouverte",
+    "url": "https://www.moneyvox.fr/impot/actualites/105355/3-questions-pour-comprendre-la-csg-qui-rapporte-chaque-annee-plus-que-impot-sur-le-revenu",
+    "ouverte": false
+   },
+   "montant_verifie": false,
+   "crans_hausse": [
+    {
+     "niveau": 1,
+     "mesure": "+0,5 pt de CSG sur tous les revenus d'activité, de remplacement et du capital",
+     "gain_mds": 8.0,
+     "faisabilite": 1,
+     "arguments": [
+      "Assiette très large (salaires, retraites, capital), rendement stable",
+      "Finance la protection sociale sans peser sur le coût du travail employeur"
+     ],
+     "obstacles": [
+      "Frappe les retraités et les salariés dont le revenu net baisse (compensation partielle par la CSG déductible sur 6,8 pts)",
+      "Hausse de CSG 2018 (+1,7 pt) politiquement coûteuse"
+     ],
+     "sources": [
+      {
+       "titre": "CCSS / relais presse : CSG 153,8 Md€ en 2024 (rapport CCSS non ouvert ; relais moneyvox.fr)",
+       "url": "https://www.moneyvox.fr/impot/actualites/105355/3-questions-pour-comprendre-la-csg-qui-rapporte-chaque-annee-plus-que-impot-sur-le-revenu",
+       "ouverte": false
+      }
+     ],
+     "non_verifie": true,
+     "notes": "1 pt de CSG ≈ 16 Md€ : 153,8 Md€ / taux moyen pondéré ≈ 9,6 (9,2 salaires, 8,3 pensions, 9,2 capital). Calcul, non officiel. 0,5 pt = 8."
+    },
+    {
+     "niveau": 2,
+     "mesure": "+1 pt de CSG sur tous les revenus",
+     "gain_mds": 16.0,
+     "faisabilite": 1,
+     "arguments": [
+      "Rendement massif (≈ 0,5 pt de PIB)",
+      "Contribution des retraités aisés au financement des dépenses de santé"
+     ],
+     "obstacles": [
+      "Effet direct sur le revenu disponible de 100 % des ménages",
+      "Risque de déduction fiscale partielle : gain net légèrement inférieur"
+     ],
+     "sources": [
+      {
+       "titre": "CCSS / relais presse : CSG 153,8 Md€ en 2024 (rapport CCSS non ouvert ; relais moneyvox.fr)",
+       "url": "https://www.moneyvox.fr/impot/actualites/105355/3-questions-pour-comprendre-la-csg-qui-rapporte-chaque-annee-plus-que-impot-sur-le-revenu",
+       "ouverte": false
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Formule : 1 pt x 16 Md€/pt. Non officiel."
+    },
+    {
+     "niveau": 3,
+     "mesure": "+2 pts de CSG sur tous les revenus",
+     "gain_mds": 32.0,
+     "faisabilite": 2,
+     "arguments": [
+      "Rendement de l'ordre de la moitié du déficit",
+      "Alternative à la hausse des cotisations employeurs (neutre sur le coût du travail)"
+     ],
+     "obstacles": [
+      "Prélèvements obligatoires France à 45,3 % du PIB (Eurostat) vs UE 40,4 % : marge fiscale limitée",
+      "Effet récessif documenté d'une hausse des prélèvements sur les ménages"
+     ],
+     "sources": [
+      {
+       "titre": "CCSS / relais presse : CSG 153,8 Md€ en 2024 (rapport CCSS non ouvert ; relais moneyvox.fr)",
+       "url": "https://www.moneyvox.fr/impot/actualites/105355/3-questions-pour-comprendre-la-csg-qui-rapporte-chaque-annee-plus-que-impot-sur-le-revenu",
+       "ouverte": false
+      },
+      {
+       "titre": "Insee/Eurostat — Taux de prélèvements obligatoires dans l'UE, 2010-2024",
+       "url": "https://www.insee.fr/fr/statistiques/2381410",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Formule : 2 x 16 Md€. Non officiel."
+    }
+   ],
+   "crans_baisse": [
+    {
+     "niveau": 1,
+     "mesure": "-0,5 pt de CSG (sur salaires et revenus de remplacement)",
+     "cout_mds": 8.0,
+     "faisabilite": 1,
+     "arguments": [
+      "Gain de pouvoir d'achat immédiat",
+      "Allège le taux de prélèvement sur le travail"
+     ],
+     "obstacles": [
+      "Réduit les ressources de la Sécu (maladie, autonomie) : compensation nécessaire",
+      "Aggrave le déficit des APU"
+     ],
+     "sources": [
+      {
+       "titre": "CCSS / relais presse : CSG 153,8 Md€ en 2024 (rapport CCSS non ouvert ; relais moneyvox.fr)",
+       "url": "https://www.moneyvox.fr/impot/actualites/105355/3-questions-pour-comprendre-la-csg-qui-rapporte-chaque-annee-plus-que-impot-sur-le-revenu",
+       "ouverte": false
+      }
+     ],
+     "non_verifie": true,
+     "notes": "0,5 pt x 16 Md€/pt. Non officiel."
+    },
+    {
+     "niveau": 2,
+     "mesure": "-1 pt de CSG",
+     "cout_mds": 16.0,
+     "faisabilite": 1,
+     "arguments": [
+      "Allègement équivalent à ~1 % du revenu net",
+      "Soutien à la consommation"
+     ],
+     "obstacles": [
+      "Coût ≈ 0,5 pt de PIB, financement par dépenses ou autres impôts",
+      "Baisse des recettes de la Sécu non compensable sans dépenses"
+     ],
+     "sources": [
+      {
+       "titre": "CCSS / relais presse : CSG 153,8 Md€ en 2024 (rapport CCSS non ouvert ; relais moneyvox.fr)",
+       "url": "https://www.moneyvox.fr/impot/actualites/105355/3-questions-pour-comprendre-la-csg-qui-rapporte-chaque-annee-plus-que-impot-sur-le-revenu",
+       "ouverte": false
+      }
+     ],
+     "non_verifie": true,
+     "notes": "1 pt x 16 Md€/pt."
+    },
+    {
+     "niveau": 3,
+     "mesure": "-2 pts de CSG",
+     "cout_mds": 32.0,
+     "faisabilite": 2,
+     "arguments": [
+      "Réduit un prélèvement pesant fortement sur le travail",
+      "Rapproche les prélèvements sur le travail de la moyenne UE (+2,1 pts de PIB d'écart selon FIPECO)"
+     ],
+     "obstacles": [
+      "Ampleur budgétaire incompatible avec la trajectoire de déficit sans réforme massive des dépenses",
+      "Rupture de financement des branches maladie et autonomie"
+     ],
+     "sources": [
+      {
+       "titre": "CCSS / relais presse : CSG 153,8 Md€ en 2024 (rapport CCSS non ouvert ; relais moneyvox.fr)",
+       "url": "https://www.moneyvox.fr/impot/actualites/105355/3-questions-pour-comprendre-la-csg-qui-rapporte-chaque-annee-plus-que-impot-sur-le-revenu",
+       "ouverte": false
+      },
+      {
+       "titre": "FIPECO (F. Ecalle, 16/04/2026) — Prélèvements sur le travail, le capital et la consommation 2016-2024",
+       "url": "https://www.fipeco.fr/pdf/AssiettePr%C3%A9l%C3%A8vements2024.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "2 x 16 Md€."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "CCSS / relais presse : CSG 153,8 Md€ en 2024 (rapport CCSS non ouvert ; relais moneyvox.fr)",
+     "url": "https://www.moneyvox.fr/impot/actualites/105355/3-questions-pour-comprendre-la-csg-qui-rapporte-chaque-annee-plus-que-impot-sur-le-revenu",
+     "ouverte": false
+    },
+    {
+     "titre": "FIPECO (F. Ecalle, 16/04/2026) — Prélèvements sur le travail, le capital et la consommation 2016-2024",
+     "url": "https://www.fipeco.fr/pdf/AssiettePr%C3%A9l%C3%A8vements2024.pdf",
+     "ouverte": true
+    },
+    {
+     "titre": "Insee/Eurostat — Taux de prélèvements obligatoires dans l'UE, 2010-2024",
+     "url": "https://www.insee.fr/fr/statistiques/2381410",
+     "ouverte": true
+    }
+   ]
+  },
+  {
+   "id": "tva",
+   "nom": "TVA (taxe sur la valeur ajoutée)",
+   "montant_mds": 96.8,
+   "annee_montant": 2024,
+   "source_montant": {
+    "titre": "V&M PLF 2026 t.I : TVA nette budgétaire de l'État 96,8 Md€ (2024), hors fractions affectées à la Sécu et aux collectivités ; total toutes APU nettement plus élevé (~180-210 Md€ selon les sources, non vérifié)",
+    "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+    "ouverte": true
+   },
+   "montant_verifie": false,
+   "crans_hausse": [
+    {
+     "niveau": 1,
+     "mesure": "+1 pt du taux normal (21 %)",
+     "gain_mds": 8.5,
+     "faisabilite": 1,
+     "arguments": [
+      "Impôt le moins défavorable à l'emploi et à la compétitivité (exportations exonérées)",
+      "Prélèvements sur la consommation en France plus bas que la moyenne UE (rang 19e en 2024, FIPECO)"
+     ],
+     "obstacles": [
+      "Régressivité : pèse davantage sur les ménages modestes (taux d'effort plus élevé)",
+      "Inflation +0,5 pt estimée et effet récessif, répercussion incomplète"
+     ],
+     "sources": [
+      {
+       "titre": "Copeps — Combien rapporte un point de TVA (estimation F. Ecalle : 8-9 Md€ le point de taux normal ; 5,5 % : 2,6 Md€)",
+       "url": "https://copeps.fr/actualites/combien-rapporte-un-point-de-tva/",
+       "ouverte": true
+      },
+      {
+       "titre": "FIPECO (F. Ecalle, 16/04/2026) — Prélèvements sur le travail, le capital et la consommation 2016-2024",
+       "url": "https://www.fipeco.fr/pdf/AssiettePr%C3%A9l%C3%A8vements2024.pdf",
+       "ouverte": true
+      },
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Estimation F. Ecalle (Copeps, prudente) : 8-9 Md€ le point de taux normal ; milieu = 8,5."
+    },
+    {
+     "niveau": 2,
+     "mesure": "+2 pts du taux normal (22 %)",
+     "gain_mds": 17.0,
+     "faisabilite": 1,
+     "arguments": [
+      "Gain important sans toucher aux niches ni à l'IR",
+      "Aucun plafond UE sur le taux normal (seulement un plancher de 15 %, directive 2006/112/CE art. 97)"
+     ],
+     "obstacles": [
+      "Même régressivité, accentuée",
+      "Risque de fraude et de report vers le marché frontalier (zones frontalières)"
+     ],
+     "sources": [
+      {
+       "titre": "Copeps — Combien rapporte un point de TVA (estimation F. Ecalle : 8-9 Md€ le point de taux normal ; 5,5 % : 2,6 Md€)",
+       "url": "https://copeps.fr/actualites/combien-rapporte-un-point-de-tva/",
+       "ouverte": true
+      },
+      {
+       "titre": "Directive 2006/112/CE (TVA) : taux normal ≥ 15 % (art. 97), taux réduits ≥ 5 % (art. 99) — texte non récupéré lors de la recherche",
+       "url": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32006L0112",
+       "ouverte": false
+      }
+     ],
+     "non_verifie": true,
+     "notes": "2 x 8,5. Estimation Ecalle."
+    },
+    {
+     "niveau": 3,
+     "mesure": "Taux normal 22 % et taux intermédiaire 10 % -> 12 %",
+     "gain_mds": 20.4,
+     "faisabilite": 2,
+     "arguments": [
+      "Étend l'assiette aux taux intermédiaires (restauration, transports, rénovation)",
+      "Le coût des taux réduits est évalué à ~50 Md€ par la Cour des comptes (relayé par Europe 1, non ouvert)"
+     ],
+     "obstacles": [
+      "Impact sur secteurs fragiles (restauration, bâtiment) et sur la rénovation énergétique",
+      "Politique : hausse perçue comme une « taxe sur la consommation »"
+     ],
+     "sources": [
+      {
+       "titre": "Copeps — Combien rapporte un point de TVA (estimation F. Ecalle : 8-9 Md€ le point de taux normal ; 5,5 % : 2,6 Md€)",
+       "url": "https://copeps.fr/actualites/combien-rapporte-un-point-de-tva/",
+       "ouverte": true
+      },
+      {
+       "titre": "Directive 2006/112/CE (TVA) : taux normal ≥ 15 % (art. 97), taux réduits ≥ 5 % (art. 99) — texte non récupéré lors de la recherche",
+       "url": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32006L0112",
+       "ouverte": false
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Cran 2 + 2 pts x ~1,7 Md€/pt (taux 10 % déduit de l'écart : tous taux 12-13 Md€ vs normal 8-9, 5,5 % : 2,6) = +3,4. Ordre de grandeur."
+    }
+   ],
+   "crans_baisse": [
+    {
+     "niveau": 1,
+     "mesure": "-1 pt du taux normal (19 %)",
+     "cout_mds": 8.5,
+     "faisabilite": 1,
+     "arguments": [
+      "Baisse des prix à la consommation, soutien aux ménages",
+      "Allège la charge sur les produits de première nécessité mal ciblés par les taux réduits"
+     ],
+     "obstacles": [
+      "Coût budgétaire élevé, baisse faiblement répercutée sur les prix (restauration 2009 : peu de répercussion)",
+      "Non ciblé : profite aussi aux hauts revenus"
+     ],
+     "sources": [
+      {
+       "titre": "Copeps — Combien rapporte un point de TVA (estimation F. Ecalle : 8-9 Md€ le point de taux normal ; 5,5 % : 2,6 Md€)",
+       "url": "https://copeps.fr/actualites/combien-rapporte-un-point-de-tva/",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Symétrique du cran hausse 1 : 8,5 Md€."
+    },
+    {
+     "niveau": 2,
+     "mesure": "Taux 5,5 % ramené à 2,1 % sur l'alimentaire (en plus de -1 pt du taux normal)",
+     "cout_mds": 17.3,
+     "faisabilite": 3,
+     "arguments": [
+      "Cible les dépenses de première nécessité (alimentaire)",
+      "Le taux 2,1 % existe déjà pour médicaments remboursables et presse"
+     ],
+     "obstacles": [
+      "Droit UE : taux réduit minimal 5 % (directive 2006/112/CE art. 99), dérogation historique française limitée au 2,1 % existant : extension à l'alimentaire probablement contraire",
+      "Perte de recette importante pour gain de prix incertain"
+     ],
+     "sources": [
+      {
+       "titre": "Copeps — Combien rapporte un point de TVA (estimation F. Ecalle : 8-9 Md€ le point de taux normal ; 5,5 % : 2,6 Md€)",
+       "url": "https://copeps.fr/actualites/combien-rapporte-un-point-de-tva/",
+       "ouverte": true
+      },
+      {
+       "titre": "Directive 2006/112/CE (TVA) : taux normal ≥ 15 % (art. 97), taux réduits ≥ 5 % (art. 99) — texte non récupéré lors de la recherche",
+       "url": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32006L0112",
+       "ouverte": false
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Cran 1 + 3,4 pts x 2,6 Md€/pt (5,5 %, Copeps) = 8,8 -> 17,3. Faisabilité 3 = droit UE."
+    },
+    {
+     "niveau": 3,
+     "mesure": "-2 pts du taux normal (18 %) et alimentaire 5,5 -> 2,1 % (ex. fonctionnement ci-dessus)",
+     "cout_mds": 25.8,
+     "faisabilite": 3,
+     "arguments": [
+      "Choc de pouvoir d'achat maximal parmi les mesures TVA",
+      "Peut soutenir la consommation en haut de cycle"
+     ],
+     "obstacles": [
+      "Cumule contraintes UE et coût budgétaire (≈ 1 pt de PIB)",
+      "Aggrave le déficit sans effet structurel"
+     ],
+     "sources": [
+      {
+       "titre": "Copeps — Combien rapporte un point de TVA (estimation F. Ecalle : 8-9 Md€ le point de taux normal ; 5,5 % : 2,6 Md€)",
+       "url": "https://copeps.fr/actualites/combien-rapporte-un-point-de-tva/",
+       "ouverte": true
+      },
+      {
+       "titre": "Directive 2006/112/CE (TVA) : taux normal ≥ 15 % (art. 97), taux réduits ≥ 5 % (art. 99) — texte non récupéré lors de la recherche",
+       "url": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32006L0112",
+       "ouverte": false
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Cran 2 + 1 pt x 8,5 = 25,8."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Copeps — Combien rapporte un point de TVA (estimation F. Ecalle : 8-9 Md€ le point de taux normal ; 5,5 % : 2,6 Md€)",
+     "url": "https://copeps.fr/actualites/combien-rapporte-un-point-de-tva/",
+     "ouverte": true
+    },
+    {
+     "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+     "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+     "ouverte": true
+    },
+    {
+     "titre": "Directive 2006/112/CE (TVA) : taux normal ≥ 15 % (art. 97), taux réduits ≥ 5 % (art. 99) — texte non récupéré lors de la recherche",
+     "url": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32006L0112",
+     "ouverte": false
+    },
+    {
+     "titre": "FIPECO (F. Ecalle, 16/04/2026) — Prélèvements sur le travail, le capital et la consommation 2016-2024",
+     "url": "https://www.fipeco.fr/pdf/AssiettePr%C3%A9l%C3%A8vements2024.pdf",
+     "ouverte": true
+    }
+   ]
+  },
+  {
+   "id": "is",
+   "nom": "Impôt sur les sociétés",
+   "montant_mds": 57.4,
+   "annee_montant": 2024,
+   "source_montant": {
+    "titre": "V&M PLF 2026 t.I : IS net 57,4 Md€ (2024), 58,2 révisé 2025, 59,0 prévu 2026 ; taux normal 25 %, 15 % PME",
+    "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+    "ouverte": true
+   },
+   "montant_verifie": false,
+   "crans_hausse": [
+    {
+     "niveau": 1,
+     "mesure": "+1 pt de taux (26 %)",
+     "gain_mds": 2.4,
+     "faisabilite": 1,
+     "arguments": [
+      "Rendement direct, instrument simple",
+      "Taux 25 % inférieur au taux d'avant 2022 (33,3 %)"
+     ],
+     "obstacles": [
+      "Compétitivité : base mobile, délocalisation des profits dans un contexte d'impôt minimum mondial (Pilier 2)",
+      "Incidence partielle sur salaires et consommateurs"
+     ],
+     "sources": [
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Formule : 59,0 / 25 ≈ 2,4 Md€/pt (hypothèse de base inchangée, sans élasticité)."
+    },
+    {
+     "niveau": 2,
+     "mesure": "+3 pts de taux (28 %)",
+     "gain_mds": 7.2,
+     "faisabilite": 1,
+     "arguments": [
+      "Aligne la France sur le taux moyen UE-OCDE avancé",
+      "Compense une partie des baisses de taux 2018-2022"
+     ],
+     "obstacles": [
+      "Réduit l'investissement et l'attractivité (rapport Cour des comptes sur les aides aux entreprises non ouvert)",
+      "Élasticité du produit à la hausse du taux < 1 (base mobile)"
+     ],
+     "sources": [
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Formule : 3 x 2,4. Hors effet de base."
+    },
+    {
+     "niveau": 3,
+     "mesure": "+5 pts de taux (30 %) et suppression du taux réduit PME 15 %",
+     "gain_mds": 12.0,
+     "faisabilite": 2,
+     "arguments": [
+      "Rendement notable pour un impôt déjà « normalisé »",
+      "Remet la fiscalité des PME dans le droit commun"
+     ],
+     "obstacles": [
+      "Pénalise les PME, fort effet sur l'investissement",
+      "Concurrence fiscale européenne et risque de perte d'attractivité"
+     ],
+     "sources": [
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "5 x 2,4 = 12,0. Effet comportemental non modélisé."
+    }
+   ],
+   "crans_baisse": [
+    {
+     "niveau": 1,
+     "mesure": "-1 pt de taux (24 %)",
+     "cout_mds": 2.4,
+     "faisabilite": 1,
+     "arguments": [
+      "Soutient l'investissement et la compétitivité",
+      "Gain d'attractivité"
+     ],
+     "obstacles": [
+      "Perte de recette immédiate sans effet démontré sur la croissance",
+      "Peu de gain si l'assiette bascule vers l'étranger"
+     ],
+     "sources": [
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "2,4 Md€/pt."
+    },
+    {
+     "niveau": 2,
+     "mesure": "-3 pts (22 %)",
+     "cout_mds": 7.2,
+     "faisabilite": 1,
+     "arguments": [
+      "Rapproche du taux moyen européen",
+      "Favorise l'investissement productif"
+     ],
+     "obstacles": [
+      "Coût budgétaire important pour effet incertain sur l'investissement (littérature mitigée)",
+      "Pilier 2 (15 %) n'impose pas de baisse ni de hausse"
+     ],
+     "sources": [
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "3 x 2,4."
+    },
+    {
+     "niveau": 3,
+     "mesure": "-5 pts (20 %)",
+     "cout_mds": 12.0,
+     "faisabilite": 2,
+     "arguments": [
+      "Compétitivité fiscale maximale",
+      "Rapproche des pays à IS bas (Irlande 12,5 %, Pays-Bas)"
+     ],
+     "obstacles": [
+      "Coût ≈ 20 % du produit de l'IS, difficile à financer",
+      "Course au moins-disant fiscal européen"
+     ],
+     "sources": [
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "5 x 2,4."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+     "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+     "ouverte": true
+    }
+   ]
+  },
+  {
+   "id": "cot_emp",
+   "nom": "Cotisations sociales employeurs",
+   "montant_mds": 265.0,
+   "annee_montant": 2024,
+   "source_montant": {
+    "titre": "Estimation : cotisations sociales effectives 431,1 Md€ en 2024 (Insee), part employeurs ≈ 62 % ; ventilation non vérifiée",
+    "url": "https://www.insee.fr/fr/statistiques/8574693",
+    "ouverte": true
+   },
+   "montant_verifie": false,
+   "crans_hausse": [
+    {
+     "niveau": 1,
+     "mesure": "+0,5 pt de cotisations patronales",
+     "gain_mds": 4.0,
+     "faisabilite": 1,
+     "arguments": [
+      "Finance la protection sociale en s'appuyant sur l'assiette salaires",
+      "Mesure simple et rapide"
+     ],
+     "obstacles": [
+      "Hausse du coût du travail, la France est déjà en tête de l'UE pour les prélèvements à la charge des employeurs (FIPECO)",
+      "Effet négatif sur l'emploi peu qualifié"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO (F. Ecalle, 16/04/2026) — Prélèvements sur le travail, le capital et la consommation 2016-2024",
+       "url": "https://www.fipeco.fr/pdf/AssiettePr%C3%A9l%C3%A8vements2024.pdf",
+       "ouverte": true
+      },
+      {
+       "titre": "Insee — Administrations publiques en 2024 (comptes nationaux ; tableau 7.301, cotisations sociales effectives 431,1 Md€ d'après l'extrait de recherche)",
+       "url": "https://www.insee.fr/fr/statistiques/8574693",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Formule : masse salariale brute ≈ 800 Md€ (hors fonction publique) x 0,5 % = 4 Md€. Non officiel."
+    },
+    {
+     "niveau": 2,
+     "mesure": "+1 pt de cotisations patronales",
+     "gain_mds": 8.0,
+     "faisabilite": 1,
+     "arguments": [
+      "Prélèvement dont le coût est partiellement supporté par les salaires à terme",
+      "Ressources dédiées à la Sécurité sociale"
+     ],
+     "obstacles": [
+      "Effets sur l'emploi (élasticité emploi-coût du travail en bas de l'échelle)",
+      "Compétitivité-coût dégradée face aux partenaires"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO (F. Ecalle, 16/04/2026) — Prélèvements sur le travail, le capital et la consommation 2016-2024",
+       "url": "https://www.fipeco.fr/pdf/AssiettePr%C3%A9l%C3%A8vements2024.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "1 % x 800 Md€."
+    },
+    {
+     "niveau": 3,
+     "mesure": "+1 pt et réduction de 15 % des allègements généraux",
+     "gain_mds": 20.0,
+     "faisabilite": 2,
+     "arguments": [
+      "Les allègements généraux (~80 Md€, ordre de grandeur Cour des comptes non ouvert) sont critiqués pour les trappes à bas salaires",
+      "Rééquilibre le financement vers les entreprises"
+     ],
+     "obstacles": [
+      "Risque pour l'emploi au voisinage du Smic",
+      "Hausse du coût du travail peu qualifié (France 1ère de l'UE sur charges employeurs)"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO (F. Ecalle, 16/04/2026) — Prélèvements sur le travail, le capital et la consommation 2016-2024",
+       "url": "https://www.fipeco.fr/pdf/AssiettePr%C3%A9l%C3%A8vements2024.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Cran 2 + 15 % x ~80 Md€ = +12 Md€ -> 20. Non vérifié."
+    }
+   ],
+   "crans_baisse": [
+    {
+     "niveau": 1,
+     "mesure": "-0,5 pt de cotisations patronales",
+     "cout_mds": 4.0,
+     "faisabilite": 1,
+     "arguments": [
+      "Réduit le coût du travail",
+      "Soutient l'emploi"
+     ],
+     "obstacles": [
+      "Perte de recettes de la Sécu",
+      "Peu d'effet à partir d'un certain niveau (trappes à bas salaires)"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO (F. Ecalle, 16/04/2026) — Prélèvements sur le travail, le capital et la consommation 2016-2024",
+       "url": "https://www.fipeco.fr/pdf/AssiettePr%C3%A9l%C3%A8vements2024.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "0,5 % x 800 Md€."
+    },
+    {
+     "niveau": 2,
+     "mesure": "-1 pt de cotisations patronales",
+     "cout_mds": 8.0,
+     "faisabilite": 1,
+     "arguments": [
+      "Gain de compétitivité-coût",
+      "Redonne des marges de négociation salariale"
+     ],
+     "obstacles": [
+      "Coût de 8 Md€ sans compensation",
+      "Effet sur l'emploi plus faible qu'en bas de l'échelle"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO (F. Ecalle, 16/04/2026) — Prélèvements sur le travail, le capital et la consommation 2016-2024",
+       "url": "https://www.fipeco.fr/pdf/AssiettePr%C3%A9l%C3%A8vements2024.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "1 % x 800."
+    },
+    {
+     "niveau": 3,
+     "mesure": "-1 pt et extension des allègements généraux jusqu'à 3,5 Smic",
+     "cout_mds": 18.0,
+     "faisabilite": 1,
+     "arguments": [
+      "Réduit la « trappe à bas salaires »",
+      "Aligne la France sur la moyenne UE : écart de 2,1 pts de PIB sur le travail"
+     ],
+     "obstacles": [
+      "Coût élevé, effet sur l'emploi qualifié incertain",
+      "Ciblage d'allègements déjà jugés peu efficients"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO (F. Ecalle, 16/04/2026) — Prélèvements sur le travail, le capital et la consommation 2016-2024",
+       "url": "https://www.fipeco.fr/pdf/AssiettePr%C3%A9l%C3%A8vements2024.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Cran 2 + ~10 Md€ (extension 2,5->3,5 Smic). Ordre de grandeur."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "FIPECO (F. Ecalle, 16/04/2026) — Prélèvements sur le travail, le capital et la consommation 2016-2024",
+     "url": "https://www.fipeco.fr/pdf/AssiettePr%C3%A9l%C3%A8vements2024.pdf",
+     "ouverte": true
+    },
+    {
+     "titre": "Insee — Administrations publiques en 2024 (comptes nationaux ; tableau 7.301, cotisations sociales effectives 431,1 Md€ d'après l'extrait de recherche)",
+     "url": "https://www.insee.fr/fr/statistiques/8574693",
+     "ouverte": true
+    }
+   ]
+  },
+  {
+   "id": "cot_sal",
+   "nom": "Cotisations sociales salariés",
+   "montant_mds": 95.0,
+   "annee_montant": 2024,
+   "source_montant": {
+    "titre": "Estimation : cotisations sociales effectives 431,1 Md€ (Insee 2024), part salariés ≈ 22 % ; ventilation non vérifiée",
+    "url": "https://www.insee.fr/fr/statistiques/8574693",
+    "ouverte": true
+   },
+   "montant_verifie": false,
+   "crans_hausse": [
+    {
+     "niveau": 1,
+     "mesure": "+0,5 pt de cotisations salariales",
+     "gain_mds": 3.5,
+     "faisabilite": 1,
+     "arguments": [
+      "Prélèvement sur les revenus du travail contributif (retraite, chômage)",
+      "Souplesse de pilotage"
+     ],
+     "obstacles": [
+      "Réduit le salaire net, risque sur le pouvoir d'achat",
+      "Hausse partiellement compensée par la déductibilité"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO (F. Ecalle, 16/04/2026) — Prélèvements sur le travail, le capital et la consommation 2016-2024",
+       "url": "https://www.fipeco.fr/pdf/AssiettePr%C3%A9l%C3%A8vements2024.pdf",
+       "ouverte": true
+      },
+      {
+       "titre": "Insee — Administrations publiques en 2024 (comptes nationaux ; tableau 7.301, cotisations sociales effectives 431,1 Md€ d'après l'extrait de recherche)",
+       "url": "https://www.insee.fr/fr/statistiques/8574693",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Formule : assiette salariés ≈ 700 Md€ x 0,5 %."
+    },
+    {
+     "niveau": 2,
+     "mesure": "+1 pt de cotisations salariales",
+     "gain_mds": 7.0,
+     "faisabilite": 1,
+     "arguments": [
+      "Rendement sans toucher aux entreprises",
+      "Maintient le coût du travail employeur"
+     ],
+     "obstacles": [
+      "Impact direct sur le salaire net (0,8 % du net)",
+      "Réduit l'incitation au travail"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO (F. Ecalle, 16/04/2026) — Prélèvements sur le travail, le capital et la consommation 2016-2024",
+       "url": "https://www.fipeco.fr/pdf/AssiettePr%C3%A9l%C3%A8vements2024.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "1 % x 700 Md€."
+    },
+    {
+     "niveau": 3,
+     "mesure": "+2 pts de cotisations salariales",
+     "gain_mds": 14.0,
+     "faisabilite": 2,
+     "arguments": [
+      "Rendement important",
+      "Peut financer un rééquilibrage du coût du travail"
+     ],
+     "obstacles": [
+      "Chute du revenu net, France 5e rang UE pour les prélèvements sur le travail",
+      "Risque de contestation sociale"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO (F. Ecalle, 16/04/2026) — Prélèvements sur le travail, le capital et la consommation 2016-2024",
+       "url": "https://www.fipeco.fr/pdf/AssiettePr%C3%A9l%C3%A8vements2024.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "2 % x 700 Md€."
+    }
+   ],
+   "crans_baisse": [
+    {
+     "niveau": 1,
+     "mesure": "-0,5 pt de cotisations salariales",
+     "cout_mds": 3.5,
+     "faisabilite": 1,
+     "arguments": [
+      "Hausse du salaire net",
+      "Soutient la consommation"
+     ],
+     "obstacles": [
+      "Perte de ressources Sécu",
+      "Faible lisibilité"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO (F. Ecalle, 16/04/2026) — Prélèvements sur le travail, le capital et la consommation 2016-2024",
+       "url": "https://www.fipeco.fr/pdf/AssiettePr%C3%A9l%C3%A8vements2024.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "0,5 % x 700."
+    },
+    {
+     "niveau": 2,
+     "mesure": "-1 pt",
+     "cout_mds": 7.0,
+     "faisabilite": 1,
+     "arguments": [
+      "Plus de salaire net sans coût pour l'employeur",
+      "Précédent : suppression des cotisations salariales maladie et chômage 2018"
+     ],
+     "obstacles": [
+      "Coût de 7 Md€",
+      "Dépendance de la protection sociale à la CSG"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO (F. Ecalle, 16/04/2026) — Prélèvements sur le travail, le capital et la consommation 2016-2024",
+       "url": "https://www.fipeco.fr/pdf/AssiettePr%C3%A9l%C3%A8vements2024.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "1 % x 700."
+    },
+    {
+     "niveau": 3,
+     "mesure": "-2 pts",
+     "cout_mds": 14.0,
+     "faisabilite": 1,
+     "arguments": [
+      "Gain de pouvoir d'achat",
+      "Réduit le coin fiscal sur le travail"
+     ],
+     "obstacles": [
+      "Coût de 14 Md€ non financé",
+      "Fragilise le financement contributif"
+     ],
+     "sources": [
+      {
+       "titre": "FIPECO (F. Ecalle, 16/04/2026) — Prélèvements sur le travail, le capital et la consommation 2016-2024",
+       "url": "https://www.fipeco.fr/pdf/AssiettePr%C3%A9l%C3%A8vements2024.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "2 % x 700."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "FIPECO (F. Ecalle, 16/04/2026) — Prélèvements sur le travail, le capital et la consommation 2016-2024",
+     "url": "https://www.fipeco.fr/pdf/AssiettePr%C3%A9l%C3%A8vements2024.pdf",
+     "ouverte": true
+    },
+    {
+     "titre": "Insee — Administrations publiques en 2024 (comptes nationaux ; tableau 7.301, cotisations sociales effectives 431,1 Md€ d'après l'extrait de recherche)",
+     "url": "https://www.insee.fr/fr/statistiques/8574693",
+     "ouverte": true
+    }
+   ]
+  },
+  {
+   "id": "tf",
+   "nom": "Taxe foncière (bâti et non bâti)",
+   "montant_mds": 35.3,
+   "annee_montant": 2021,
+   "source_montant": {
+    "titre": "Cour des comptes (févr. 2023) : 35,3 Md€ de taxes foncières en 2021 (relais, rapport non ouvert) ; hors montants plus récents",
+    "url": "https://blog.landot-avocats.net/2023/03/06/la-cour-des-comptes-juge-les-taxes-foncieres-dynamiques-mais-lourdes-a-gerer/",
+    "ouverte": false
+   },
+   "montant_verifie": false,
+   "crans_hausse": [
+    {
+     "niveau": 1,
+     "mesure": "Revalorisation forfaitaire des valeurs locatives +2 pts au-dessus de la loi",
+     "gain_mds": 0.7,
+     "faisabilite": 1,
+     "arguments": [
+      "Les bases sont obsolètes (valeurs de 1970) selon la Cour des comptes",
+      "Impôt peu mobile, assiette immobilière"
+     ],
+     "obstacles": [
+      "Taux fixés par les collectivités : la hausse de base s'impose à elles et aux ménages",
+      "Pression sur les propriétaires déjà en hausse en 2023-2025"
+     ],
+     "sources": [
+      {
+       "titre": "Cour des comptes — rapport sur les taxes foncières (févr. 2023) : 35,3 Md€ en 2021 (relayé par blog.landot-avocats.net, page du rapport non ouverte)",
+       "url": "https://blog.landot-avocats.net/2023/03/06/la-cour-des-comptes-juge-les-taxes-foncieres-dynamiques-mais-lourdes-a-gerer/",
+       "ouverte": false
+      }
+     ],
+     "non_verifie": true,
+     "notes": "1 pt de base = 0,35 Md€ (35,3 x 1 %). 2 pts = 0,7."
+    },
+    {
+     "niveau": 2,
+     "mesure": "Relèvement de 10 % des taux/valeurs locatives (une fois)",
+     "gain_mds": 3.5,
+     "faisabilite": 1,
+     "arguments": [
+      "Impôt peu élastique et peu délocalisable",
+      "Finance les collectivités"
+     ],
+     "obstacles": [
+      "Hausse concentrée sur les propriétaires, dont retraités peu liquides",
+      "Lien avec la fiscalité locale pour les collectivités (autonomie financière art. 72-2 Const.)"
+     ],
+     "sources": [
+      {
+       "titre": "Cour des comptes — rapport sur les taxes foncières (févr. 2023) : 35,3 Md€ en 2021 (relayé par blog.landot-avocats.net, page du rapport non ouverte)",
+       "url": "https://blog.landot-avocats.net/2023/03/06/la-cour-des-comptes-juge-les-taxes-foncieres-dynamiques-mais-lourdes-a-gerer/",
+       "ouverte": false
+      }
+     ],
+     "non_verifie": true,
+     "notes": "10 % x 35,3."
+    },
+    {
+     "niveau": 3,
+     "mesure": "Relèvement de 20 % + suppression de l'abattement de plafonnement",
+     "gain_mds": 7.1,
+     "faisabilite": 2,
+     "arguments": [
+      "Rendement notable sur un impôt jugé sous-dimensionné",
+      "Réforme de l'assiette (révision des valeurs locatives des habitations prévue en 2028) prépare la hausse"
+     ],
+     "obstacles": [
+      "Plafonnement lié à la résidence principale, protection d'accès au logement",
+      "Contestation fiscale locale (révolte contre les foncières 2023)"
+     ],
+     "sources": [
+      {
+       "titre": "Cour des comptes — rapport sur les taxes foncières (févr. 2023) : 35,3 Md€ en 2021 (relayé par blog.landot-avocats.net, page du rapport non ouverte)",
+       "url": "https://blog.landot-avocats.net/2023/03/06/la-cour-des-comptes-juge-les-taxes-foncieres-dynamiques-mais-lourdes-a-gerer/",
+       "ouverte": false
+      }
+     ],
+     "non_verifie": true,
+     "notes": "20 % x 35,3."
+    }
+   ],
+   "crans_baisse": [
+    {
+     "niveau": 1,
+     "mesure": "Baisse de 5 % de la taxe foncière",
+     "cout_mds": 1.8,
+     "faisabilite": 1,
+     "arguments": [
+      "Allège le coût de la propriété",
+      "Peu de distorsion"
+     ],
+     "obstacles": [
+      "Perte de ressources pour les collectivités locales sans compensation",
+      "Bénéficie surtout aux propriétaires patrimoniaux"
+     ],
+     "sources": [
+      {
+       "titre": "Cour des comptes — rapport sur les taxes foncières (févr. 2023) : 35,3 Md€ en 2021 (relayé par blog.landot-avocats.net, page du rapport non ouverte)",
+       "url": "https://blog.landot-avocats.net/2023/03/06/la-cour-des-comptes-juge-les-taxes-foncieres-dynamiques-mais-lourdes-a-gerer/",
+       "ouverte": false
+      }
+     ],
+     "non_verifie": true,
+     "notes": "5 % x 35,3."
+    },
+    {
+     "niveau": 2,
+     "mesure": "Baisse de 10 %",
+     "cout_mds": 3.5,
+     "faisabilite": 1,
+     "arguments": [
+      "Réduit la pression sur les propriétaires",
+      "Peut stimuler l'investissement immobilier"
+     ],
+     "obstacles": [
+      "Autonomie financière des collectivités locales",
+      "Coût compensé par l'État"
+     ],
+     "sources": [
+      {
+       "titre": "Cour des comptes — rapport sur les taxes foncières (févr. 2023) : 35,3 Md€ en 2021 (relayé par blog.landot-avocats.net, page du rapport non ouverte)",
+       "url": "https://blog.landot-avocats.net/2023/03/06/la-cour-des-comptes-juge-les-taxes-foncieres-dynamiques-mais-lourdes-a-gerer/",
+       "ouverte": false
+      }
+     ],
+     "non_verifie": true,
+     "notes": "10 % x 35,3."
+    },
+    {
+     "niveau": 3,
+     "mesure": "Exonération de la résidence principale pour les plus de 75 ans et baisse de 25 %",
+     "cout_mds": 8.8,
+     "faisabilite": 2,
+     "arguments": [
+      "Protège les retraités propriétaires",
+      "Allège une charge locale jugée lourde"
+     ],
+     "obstacles": [
+      "Coût, ciblage médiocre et perte de recettes locales",
+      "Inégalités entre territoires"
+     ],
+     "sources": [
+      {
+       "titre": "Cour des comptes — rapport sur les taxes foncières (févr. 2023) : 35,3 Md€ en 2021 (relayé par blog.landot-avocats.net, page du rapport non ouverte)",
+       "url": "https://blog.landot-avocats.net/2023/03/06/la-cour-des-comptes-juge-les-taxes-foncieres-dynamiques-mais-lourdes-a-gerer/",
+       "ouverte": false
+      }
+     ],
+     "non_verifie": true,
+     "notes": "25 % x 35,3."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Cour des comptes — rapport sur les taxes foncières (févr. 2023) : 35,3 Md€ en 2021 (relayé par blog.landot-avocats.net, page du rapport non ouverte)",
+     "url": "https://blog.landot-avocats.net/2023/03/06/la-cour-des-comptes-juge-les-taxes-foncieres-dynamiques-mais-lourdes-a-gerer/",
+     "ouverte": false
+    }
+   ]
+  },
+  {
+   "id": "succession",
+   "nom": "Droits de succession et donations",
+   "montant_mds": 20.9,
+   "annee_montant": 2024,
+   "source_montant": {
+    "titre": "V&M PLF 2026 t.I : mutations à titre gratuit 20,9 Md€ en 2024 (successions 16,0 + donations 4,9) ; 20,8 Md€ prévu 2025",
+    "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+    "ouverte": true
+   },
+   "montant_verifie": false,
+   "crans_hausse": [
+    {
+     "niveau": 1,
+     "mesure": "Abattement en ligne directe abaissé de 100 000 € à 50 000 €",
+     "gain_mds": 3.0,
+     "faisabilite": 1,
+     "arguments": [
+      "Taxe sur des transferts non gagnés",
+      "Précédent : abattement abaissé de 159 325 à 100 000 € en 2012 (LFR 2011)"
+     ],
+     "obstacles": [
+      "Impopulaire, touche les classes moyennes patrimoniales",
+      "Effet sur la stratégie de donation anticipée"
+     ],
+     "sources": [
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Formule : ~ 250 000 successions taxables x 50 000 € x ~20 % de taux effectif = ~2,5-3. Non officiel."
+    },
+    {
+     "niveau": 2,
+     "mesure": "Abattement assurance-vie ramené de 152 500 € à 100 000 € et rappel fiscal étendu",
+     "gain_mds": 4.5,
+     "faisabilite": 1,
+     "arguments": [
+      "Réduit des niches (assurance-vie) peu ciblées sur le patrimoine",
+      "Équité entre modes de transmission"
+     ],
+     "obstacles": [
+      "Contrats d'assurance-vie, outil d'épargne long, effet sur le financement de l'économie",
+      "Plus de complexité"
+     ],
+     "sources": [
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Cran 1 + ~1,5 Md€ (flux d'AV transmis estimé à 30 Md€/an x 5 % de taux effectif). Non officiel."
+    },
+    {
+     "niveau": 3,
+     "mesure": "Barème plus progressif (tranche 60 % au-delà de 1,8 M€)",
+     "gain_mds": 7.0,
+     "faisabilite": 2,
+     "arguments": [
+      "Cible les patrimoines les plus élevés",
+      "Faible nombre de contribuables concernés (~1 %)"
+     ],
+     "obstacles": [
+      "Risque d'imposition confiscatoire (2012-662 DC cons. 15)",
+      "Exil patrimonial et optimisation (pacte Dutreil)"
+     ],
+     "sources": [
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      },
+      {
+       "titre": "Conseil constitutionnel, décision n° 2012-662 DC du 29 décembre 2012 (cons. 15 : imposition confiscatoire / charge excessive ; cons. 19 : taux marginal 75,04 % censuré ; cons. 74 : art. 12 censuré)",
+       "url": "https://www.conseil-constitutionnel.fr/decision/2012/2012662DC.htm",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Cran 2 + ~2,5 Md€ (flux de successions > 1,8 M€ : ~20 % de la base). Non officiel."
+    }
+   ],
+   "crans_baisse": [
+    {
+     "niveau": 1,
+     "mesure": "Abattement en ligne directe relevé à 150 000 €",
+     "cout_mds": 2.0,
+     "faisabilite": 1,
+     "arguments": [
+      "Allège la transmission familiale",
+      "Neutralise l'érosion de l'abattement"
+     ],
+     "obstacles": [
+      "Coût pour les finances publiques",
+      "Profite aux familles ayant déjà du patrimoine"
+     ],
+     "sources": [
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Formule : 50 000 € x ~250 000 successions x ~15 %."
+    },
+    {
+     "niveau": 2,
+     "mesure": "Abattement relevé à 300 000 € et exonération des donations aux petits-enfants",
+     "cout_mds": 5.0,
+     "faisabilite": 1,
+     "arguments": [
+      "Réduit le poids des droits sur les classes moyennes",
+      "Accroît la circulation du patrimoine"
+     ],
+     "obstacles": [
+      "Coût de ~25 % de la recette actuelle",
+      "Critique de l'héritage non gagné"
+     ],
+     "sources": [
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Cran 1 + ~3 Md€. Non officiel."
+    },
+    {
+     "niveau": 3,
+     "mesure": "Exonération en ligne directe jusqu'à 500 000 € (suppression pratique)",
+     "cout_mds": 10.0,
+     "faisabilite": 2,
+     "arguments": [
+      "Rapproche de pays sans droits de succession en ligne directe (Suède, Autriche)",
+      "Simplification"
+     ],
+     "obstacles": [
+      "Coût ≈ 50 % de la recette de la taxe",
+      "Inégalités de patrimoine, pression sur la politique d'égalité des chances"
+     ],
+     "sources": [
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Cran 2 + ~5 Md€ (relèvement 300->500 k€). Non officiel."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+     "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+     "ouverte": true
+    },
+    {
+     "titre": "Conseil constitutionnel, décision n° 2012-662 DC du 29 décembre 2012 (cons. 15 : imposition confiscatoire / charge excessive ; cons. 19 : taux marginal 75,04 % censuré ; cons. 74 : art. 12 censuré)",
+     "url": "https://www.conseil-constitutionnel.fr/decision/2012/2012662DC.htm",
+     "ouverte": true
+    }
+   ]
+  },
+  {
+   "id": "accises",
+   "nom": "Accises sur l'énergie (ex-TICPE)",
+   "montant_mds": 20.2,
+   "annee_montant": 2024,
+   "source_montant": {
+    "titre": "V&M PLF 2026 t.I : accises sur les énergies nettes 20,2 Md€ (2024), 25,6 révisé 2025, 22,9 prévu 2026 ; ex-TICPE nette 16,0 Md€ (2024)",
+    "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+    "ouverte": true
+   },
+   "montant_verifie": false,
+   "crans_hausse": [
+    {
+     "niveau": 1,
+     "mesure": "+5 c€/L sur carburants fossiles",
+     "gain_mds": 2.3,
+     "faisabilite": 1,
+     "arguments": [
+      "Signal-prix carbone, usage moindre de carburants",
+      "Cohérent avec la transition énergétique"
+     ],
+     "obstacles": [
+      "Gilets jaunes 2018 : rejet social de la hausse des carburants",
+      "Régressif pour les zones rurales dépendantes de la voiture"
+     ],
+     "sources": [
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Formule : ~45 Md L/an de carburants routiers x 0,05 €. Non officiel ; V&M ne donne pas de sensibilité."
+    },
+    {
+     "niveau": 2,
+     "mesure": "+10 c€/L",
+     "gain_mds": 4.5,
+     "faisabilite": 1,
+     "arguments": [
+      "Rendement significatif",
+      "Prix du carbone encore faible par rapport au coût social"
+     ],
+     "obstacles": [
+      "Comportement : baisse tendancielle des consommations (V&M)",
+      "Compétitivité des transporteurs routiers"
+     ],
+     "sources": [
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "10 c x 45 Md L."
+    },
+    {
+     "niveau": 3,
+     "mesure": "+20 c€/L et alignement gazole/essence",
+     "gain_mds": 9.0,
+     "faisabilite": 2,
+     "arguments": [
+      "Rendement notable et cohérent avec la fin des exonérations dérogatoires",
+      "Aligne la fiscalité des carburants (directive 2003/96/CE fixe seulement des minima)"
+     ],
+     "obstacles": [
+      "Précédent des Gilets jaunes, risque social",
+      "Frontières : tourisme à la pompe et effets sur les prix"
+     ],
+     "sources": [
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      },
+      {
+       "titre": "Directive 2003/96/CE (taxation des produits énergétiques et de l'électricité) — minima communs — texte non récupéré lors de la recherche",
+       "url": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32003L0096",
+       "ouverte": false
+      }
+     ],
+     "non_verifie": true,
+     "notes": "20 c x 45 Md L, hors élasticité-prix (-0,2 à -0,3)."
+    }
+   ],
+   "crans_baisse": [
+    {
+     "niveau": 1,
+     "mesure": "-5 c€/L (ristourne)",
+     "cout_mds": 2.3,
+     "faisabilite": 1,
+     "arguments": [
+      "Allège le budget des ménages dépendants de la voiture",
+      "Précédent : remise à la pompe 2022"
+     ],
+     "obstacles": [
+      "Contradiction avec la trajectoire climat",
+      "Perte de recettes à effet limité sur la consommation"
+     ],
+     "sources": [
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "5 c x 45 Md L."
+    },
+    {
+     "niveau": 2,
+     "mesure": "-10 c€/L",
+     "cout_mds": 4.5,
+     "faisabilite": 1,
+     "arguments": [
+      "Réduit l'inflation et le coût de transport",
+      "Soutient les ménages ruraux"
+     ],
+     "obstacles": [
+      "Contradiction avec les engagements climat de la France",
+      "Subvention aux énergies fossiles"
+     ],
+     "sources": [
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "10 c x 45."
+    },
+    {
+     "niveau": 3,
+     "mesure": "-20 c€/L (retour à la TIPP des années 2000) ",
+     "cout_mds": 9.0,
+     "faisabilite": 2,
+     "arguments": [
+      "Retour à des niveaux de taxation plus faibles",
+      "Compétitivité transport"
+     ],
+     "obstacles": [
+      "Perte de ~40 % des recettes d'ex-TICPE, contraire à l'objectif de neutralité carbone",
+      "Droit UE : minima communs de la directive 2003/96/CE (les taux français sont très supérieurs)"
+     ],
+     "sources": [
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      },
+      {
+       "titre": "Directive 2003/96/CE (taxation des produits énergétiques et de l'électricité) — minima communs — texte non récupéré lors de la recherche",
+       "url": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32003L0096",
+       "ouverte": false
+      }
+     ],
+     "non_verifie": true,
+     "notes": "20 c x 45."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+     "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+     "ouverte": true
+    },
+    {
+     "titre": "Directive 2003/96/CE (taxation des produits énergétiques et de l'électricité) — minima communs — texte non récupéré lors de la recherche",
+     "url": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32003L0096",
+     "ouverte": false
+    }
+   ]
+  },
+  {
+   "id": "capital",
+   "nom": "Prélèvements sur le capital (PFU / flat tax)",
+   "montant_mds": 20.0,
+   "annee_montant": 2024,
+   "source_montant": {
+    "titre": "Estimation : PFU 12,8 % IR + prélèvements sociaux 17,2 % sur revenus mobiliers ; V&M tome I donne le mécanisme mais pas de total vérifié ici",
+    "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+    "ouverte": true
+   },
+   "montant_verifie": false,
+   "crans_hausse": [
+    {
+     "niveau": 1,
+     "mesure": "PFU relevé de 12,8 % à 15 % (IR) ",
+     "gain_mds": 1.2,
+     "faisabilite": 1,
+     "arguments": [
+      "Aligne l'imposition du capital sur le travail",
+      "Rendement modeste, facile à mettre en œuvre"
+     ],
+     "obstacles": [
+      "Mobilité du capital et arbitrages d'actifs",
+      "L'effet incitatif sur l'investissement est documenté (rapports CEFC)"
+     ],
+     "sources": [
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      },
+      {
+       "titre": "France Stratégie — Comité d'évaluation des réformes de la fiscalité du capital (2e rapport) — coût PFU 1,4-1,7 Md€, IFI 3,1 Md€ cités (page non ouverte, chiffres via moteur de recherche)",
+       "url": "https://www.strategie.gouv.fr/en/publications/comite-devaluation-reformes-de-fiscalite-capital-deuxieme-rapport",
+       "ouverte": false
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Formule : 2,2 pts x ~55 Md€ de base (dividendes, intérêts, plus-values) = 1,2. Base estimée, non officielle."
+    },
+    {
+     "niveau": 2,
+     "mesure": "Suppression du PFU : barème progressif obligatoire",
+     "gain_mds": 2.8,
+     "faisabilite": 2,
+     "arguments": [
+      "Fin d'un régime dérogatoire pour les revenus du capital",
+      "Le coût du PFU était évalué à 1,4-1,7 Md€ par le CEFC (France Stratégie)"
+     ],
+     "obstacles": [
+      "Fuite des dividendes vers les holdings, réduction des distributions",
+      "Précédent 2013-2017 de barème : retour du PFU en 2018 pour attractivité"
+     ],
+     "sources": [
+      {
+       "titre": "France Stratégie — Comité d'évaluation des réformes de la fiscalité du capital (2e rapport) — coût PFU 1,4-1,7 Md€, IFI 3,1 Md€ cités (page non ouverte, chiffres via moteur de recherche)",
+       "url": "https://www.strategie.gouv.fr/en/publications/comite-devaluation-reformes-de-fiscalite-capital-deuxieme-rapport",
+       "ouverte": false
+      },
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Cran 1 + 1,6 Md€ (coût évalué du PFU, CEFC) -> 2,8. Chiffre CEFC non ouvert."
+    },
+    {
+     "niveau": 3,
+     "mesure": "+2 pts de prélèvements sociaux sur le capital (19,2 %)",
+     "gain_mds": 5.0,
+     "faisabilite": 2,
+     "arguments": [
+      "Taxation du capital au niveau du travail",
+      "Contribue au financement de la Sécu"
+     ],
+     "obstacles": [
+      "Taux global proche de 50 % sur certains revenus : limite 2012-662 DC cons. 15",
+      "Fuite des capitaux vers d'autres pays UE"
+     ],
+     "sources": [
+      {
+       "titre": "France Stratégie — Comité d'évaluation des réformes de la fiscalité du capital (2e rapport) — coût PFU 1,4-1,7 Md€, IFI 3,1 Md€ cités (page non ouverte, chiffres via moteur de recherche)",
+       "url": "https://www.strategie.gouv.fr/en/publications/comite-devaluation-reformes-de-fiscalite-capital-deuxieme-rapport",
+       "ouverte": false
+      },
+      {
+       "titre": "Conseil constitutionnel, décision n° 2012-662 DC du 29 décembre 2012 (cons. 15 : imposition confiscatoire / charge excessive ; cons. 19 : taux marginal 75,04 % censuré ; cons. 74 : art. 12 censuré)",
+       "url": "https://www.conseil-constitutionnel.fr/decision/2012/2012662DC.htm",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Cran 2 + 2 pts x ~1,1 Md€/pt (assiette ~110 Md€) = +2,2. Non officiel."
+    }
+   ],
+   "crans_baisse": [
+    {
+     "niveau": 1,
+     "mesure": "PFU ramené de 30 % à 25 % (IR 8 %)",
+     "cout_mds": 1.5,
+     "faisabilite": 1,
+     "arguments": [
+      "Favorise l'investissement et l'épargne productive",
+      "Compétitivité du capital"
+     ],
+     "obstacles": [
+      "Perte de recette contre un effet incitatif incertain",
+      "Moins d'équité avec le travail"
+     ],
+     "sources": [
+      {
+       "titre": "France Stratégie — Comité d'évaluation des réformes de la fiscalité du capital (2e rapport) — coût PFU 1,4-1,7 Md€, IFI 3,1 Md€ cités (page non ouverte, chiffres via moteur de recherche)",
+       "url": "https://www.strategie.gouv.fr/en/publications/comite-devaluation-reformes-de-fiscalite-capital-deuxieme-rapport",
+       "ouverte": false
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Formule : 4,8 pts x ~30 Md€ de dividendes/PV = 1,5. Non officiel."
+    },
+    {
+     "niveau": 2,
+     "mesure": "PFU ramené à 20 % tout compris",
+     "cout_mds": 4.0,
+     "faisabilite": 2,
+     "arguments": [
+      "Simplification et alignement sur les voisins européens",
+      "Pro-investissement"
+     ],
+     "obstacles": [
+      "Coût 3x supérieur au coût historique du PFU (1,4-1,7 Md€)",
+      "Dégradation du financement de la Sécu"
+     ],
+     "sources": [
+      {
+       "titre": "France Stratégie — Comité d'évaluation des réformes de la fiscalité du capital (2e rapport) — coût PFU 1,4-1,7 Md€, IFI 3,1 Md€ cités (page non ouverte, chiffres via moteur de recherche)",
+       "url": "https://www.strategie.gouv.fr/en/publications/comite-devaluation-reformes-de-fiscalite-capital-deuxieme-rapport",
+       "ouverte": false
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Cran 1 + ~2,5 Md€. Non officiel."
+    },
+    {
+     "niveau": 3,
+     "mesure": "Exonération des dividendes et plus-values mobilières au-delà de 2 ans de détention",
+     "cout_mds": 8.0,
+     "faisabilite": 2,
+     "arguments": [
+      "Encourage la détention longue et l'investissement",
+      "Rapproche des régimes de pays à fiscalité réduite"
+     ],
+     "obstacles": [
+      "Coût élevé, effets de repartition des revenus du travail vers le capital",
+      "Contrainte d'égalité devant les charges publiques (2012-662 DC cons. 15)"
+     ],
+     "sources": [
+      {
+       "titre": "France Stratégie — Comité d'évaluation des réformes de la fiscalité du capital (2e rapport) — coût PFU 1,4-1,7 Md€, IFI 3,1 Md€ cités (page non ouverte, chiffres via moteur de recherche)",
+       "url": "https://www.strategie.gouv.fr/en/publications/comite-devaluation-reformes-de-fiscalite-capital-deuxieme-rapport",
+       "ouverte": false
+      },
+      {
+       "titre": "Conseil constitutionnel, décision n° 2012-662 DC du 29 décembre 2012 (cons. 15 : imposition confiscatoire / charge excessive ; cons. 19 : taux marginal 75,04 % censuré ; cons. 74 : art. 12 censuré)",
+       "url": "https://www.conseil-constitutionnel.fr/decision/2012/2012662DC.htm",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Cran 2 + ~4 Md€. Non officiel."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+     "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+     "ouverte": true
+    },
+    {
+     "titre": "France Stratégie — Comité d'évaluation des réformes de la fiscalité du capital (2e rapport) — coût PFU 1,4-1,7 Md€, IFI 3,1 Md€ cités (page non ouverte, chiffres via moteur de recherche)",
+     "url": "https://www.strategie.gouv.fr/en/publications/comite-devaluation-reformes-de-fiscalite-capital-deuxieme-rapport",
+     "ouverte": false
+    },
+    {
+     "titre": "Conseil constitutionnel, décision n° 2012-662 DC du 29 décembre 2012 (cons. 15 : imposition confiscatoire / charge excessive ; cons. 19 : taux marginal 75,04 % censuré ; cons. 74 : art. 12 censuré)",
+     "url": "https://www.conseil-constitutionnel.fr/decision/2012/2012662DC.htm",
+     "ouverte": true
+    },
+    {
+     "titre": "FIPECO (F. Ecalle, 16/04/2026) — Prélèvements sur le travail, le capital et la consommation 2016-2024",
+     "url": "https://www.fipeco.fr/pdf/AssiettePr%C3%A9l%C3%A8vements2024.pdf",
+     "ouverte": true
+    }
+   ]
+  },
+  {
+   "id": "production",
+   "nom": "Impôts de production (CVAE, C3S)",
+   "montant_mds": 4.3,
+   "annee_montant": 2024,
+   "source_montant": {
+    "titre": "V&M PLF 2026 t.I : CVAE État 4 265 M€ en 2024, 4 069 M€ en 2025 (suppression progressive) ; poste restreint à la CVAE (C3S non vérifiée ici)",
+    "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+    "ouverte": true
+   },
+   "montant_verifie": false,
+   "crans_hausse": [
+    {
+     "niveau": 1,
+     "mesure": "Gel de la suppression progressive de la CVAE",
+     "gain_mds": 1.0,
+     "faisabilite": 1,
+     "arguments": [
+      "Arrête une baisse d'impôt de production dont l'impact sur l'investissement est contesté",
+      "Rendement immédiat"
+     ],
+     "obstacles": [
+      "Rompt une promesse faite aux entreprises",
+      "Impôt de production : détériore la compétitivité (France, impôts de production élevés)"
+     ],
+     "sources": [
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Estimation : ~1 Md€ de recette récupérée par année de gel (4,0-4,3 Md€ x ~25 %). Non officiel."
+    },
+    {
+     "niveau": 2,
+     "mesure": "Rétablissement de la CVAE à son niveau 2022",
+     "gain_mds": 4.2,
+     "faisabilite": 1,
+     "arguments": [
+      "Hausse limitée sur un impôt déjà en voie d'extinction",
+      "Fiscalité locale : financement des collectivités"
+     ],
+     "obstacles": [
+      "Effet sur l'industrie : impôts de production à ~3 % du PIB",
+      "Contradiction avec la politique de compétitivité 2021-2026"
+     ],
+     "sources": [
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "V&M : CVAE État 4,27 Md€ en 2024, rétablissement 100 % ≈ 4,2. Hors part des collectivités."
+    },
+    {
+     "niveau": 3,
+     "mesure": "CVAE rétablie et relèvement de 50 % du taux de la C3S",
+     "gain_mds": 6.5,
+     "faisabilite": 2,
+     "arguments": [
+      "Élargit le rendement des impôts de production",
+      "La C3S est payée par les plus grandes entreprises"
+     ],
+     "obstacles": [
+      "Impôts de production : handicap de compétitivité pour les industriels",
+      "Effets de cascade sur les prix"
+     ],
+     "sources": [
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Cran 2 + ~2,3 Md€ (C3S ≈ 4,5 Md€ x 50 %). C3S non vérifiée."
+    }
+   ],
+   "crans_baisse": [
+    {
+     "niveau": 1,
+     "mesure": "Achèvement de la suppression de la CVAE",
+     "cout_mds": 4.3,
+     "faisabilite": 1,
+     "arguments": [
+      "Réduit un impôt de production jugé distordant",
+      "Soutien à l'industrie"
+     ],
+     "obstacles": [
+      "Perte de recettes pour l'État et surtout les collectivités",
+      "Coût de l'État compensé par TVA"
+     ],
+     "sources": [
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Montant V&M : CVAE État 4 265 M€ (2024). Non vérifié au niveau toutes APU."
+    },
+    {
+     "niveau": 2,
+     "mesure": "Suppression de la C3S",
+     "cout_mds": 8.8,
+     "faisabilite": 1,
+     "arguments": [
+      "Suppression d'un impôt de production non neutre",
+      "Soutien à l'industrie et au commerce"
+     ],
+     "obstacles": [
+      "Perte de ~4,5 Md€ pour la Sécu (affectée)",
+      "Fait supporter à d'autres impôts"
+     ],
+     "sources": [
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Cran 1 + C3S ≈ 4,5. Non vérifié."
+    },
+    {
+     "niveau": 3,
+     "mesure": "Division par deux de la CFE",
+     "cout_mds": 12.8,
+     "faisabilite": 2,
+     "arguments": [
+      "Réduit les impôts de production assis sur le foncier (France plus élevée que l'UE)",
+      "Soutien aux petites entreprises"
+     ],
+     "obstacles": [
+      "Perte importante pour les collectivités locales",
+      "Assise liée à l'autonomie financière"
+     ],
+     "sources": [
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Cran 2 + 50 % x ~8 Md€ (CFE). Non vérifié."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+     "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+     "ouverte": true
+    },
+    {
+     "titre": "FIPECO (F. Ecalle, 16/04/2026) — Prélèvements sur le travail, le capital et la consommation 2016-2024",
+     "url": "https://www.fipeco.fr/pdf/AssiettePr%C3%A9l%C3%A8vements2024.pdf",
+     "ouverte": true
+    }
+   ]
+  },
+  {
+   "id": "ifi",
+   "nom": "IFI / impôts sur le patrimoine",
+   "montant_mds": 2.739,
+   "annee_montant": 2024,
+   "source_montant": {
+    "titre": "V&M PLF 2026 t.I : IFI 2 739 M€ en 2024, 2 965 prévu 2025, 3 095 prévu 2026",
+    "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+    "ouverte": true
+   },
+   "montant_verifie": false,
+   "crans_hausse": [
+    {
+     "niveau": 1,
+     "mesure": "Barème +20 % (taux relevé)",
+     "gain_mds": 0.6,
+     "faisabilite": 1,
+     "arguments": [
+      "Taxe sur le patrimoine immobilier >1,3 M€, assiette ciblée",
+      "Simple"
+     ],
+     "obstacles": [
+      "Patrimoine immobilier : risque de baisse des valeurs",
+      "Mobilité des contribuables"
+     ],
+     "sources": [
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "20 % x 2,739 = 0,55."
+    },
+    {
+     "niveau": 2,
+     "mesure": "Rétablissement de l'ISF (actifs financiers inclus)",
+     "gain_mds": 3.7,
+     "faisabilite": 2,
+     "arguments": [
+      "Retour à une assiette large dont le coût de suppression fut évalué à 3,1 Md€ (CEFC)",
+      "Équité entre patrimoine mobilier et immobilier"
+     ],
+     "obstacles": [
+      "Exil fiscal : l'ISF a été associé à des départs (rapport IPP sur l'ISF, non ouvert)",
+      "Pas d'ISF dans la plupart des pays de l'OCDE"
+     ],
+     "sources": [
+      {
+       "titre": "France Stratégie — Comité d'évaluation des réformes de la fiscalité du capital (2e rapport) — coût PFU 1,4-1,7 Md€, IFI 3,1 Md€ cités (page non ouverte, chiffres via moteur de recherche)",
+       "url": "https://www.strategie.gouv.fr/en/publications/comite-devaluation-reformes-de-fiscalite-capital-deuxieme-rapport",
+       "ouverte": false
+      },
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Cran 1 + 3,1 Md€ (CEFC). Chiffre non ouvert."
+    },
+    {
+     "niveau": 3,
+     "mesure": "Impôt plancher de 2 % sur les patrimoines > 100 M€",
+     "gain_mds": 13.0,
+     "faisabilite": 3,
+     "arguments": [
+      "Cible l'écart d'imposition des très hauts patrimoines",
+      "Estimations publiées de 15-25 Md€ (non vérifiées ici)"
+     ],
+     "obstacles": [
+      "Obstacle probable : caractère confiscatoire (2012-662 DC cons. 15) et égalité devant les charges publiques",
+      "Exil fiscal, évaluation difficile des actifs, contestation des estimations de rendement"
+     ],
+     "sources": [
+      {
+       "titre": "Conseil constitutionnel, décision n° 2012-662 DC du 29 décembre 2012 (cons. 15 : imposition confiscatoire / charge excessive ; cons. 19 : taux marginal 75,04 % censuré ; cons. 74 : art. 12 censuré)",
+       "url": "https://www.conseil-constitutionnel.fr/decision/2012/2012662DC.htm",
+       "ouverte": true
+      },
+      {
+       "titre": "France Stratégie — Comité d'évaluation des réformes de la fiscalité du capital (2e rapport) — coût PFU 1,4-1,7 Md€, IFI 3,1 Md€ cités (page non ouverte, chiffres via moteur de recherche)",
+       "url": "https://www.strategie.gouv.fr/en/publications/comite-devaluation-reformes-de-fiscalite-capital-deuxieme-rapport",
+       "ouverte": false
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Fourchette large ; valeur retenue 13 Md€ = cran 2 + ~9 Md€ (estimation basse). Non vérifié."
+    }
+   ],
+   "crans_baisse": [
+    {
+     "niveau": 1,
+     "mesure": "Relèvement du seuil de 1,3 M€ à 2,5 M€",
+     "cout_mds": 0.5,
+     "faisabilite": 1,
+     "arguments": [
+      "Allège le patrimoine des classes moyennes",
+      "Simplifie"
+     ],
+     "obstacles": [
+      "Perte de recettes",
+      "Réduction de la progressivité"
+     ],
+     "sources": [
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Ordre de grandeur : ~20 % de la recette."
+    },
+    {
+     "niveau": 2,
+     "mesure": "Exonération de la résidence principale (abattement de 30 % -> 100 %)",
+     "cout_mds": 1.5,
+     "faisabilite": 1,
+     "arguments": [
+      "Allège la résidence principale",
+      "Réduit les effets de bord sur les ménages de propriétaires"
+     ],
+     "obstacles": [
+      "Ouvre une niche large pour les patrimoines",
+      "Perte d'assiette"
+     ],
+     "sources": [
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": true,
+     "notes": "Cran 1 + ~1,0. Non vérifié."
+    },
+    {
+     "niveau": 3,
+     "mesure": "Suppression de l'IFI",
+     "cout_mds": 2.7,
+     "faisabilite": 1,
+     "arguments": [
+      "Simplification, attractivité",
+      "Alignement sur la majorité des pays de l'OCDE"
+     ],
+     "obstacles": [
+      "Perte de 2,7 Md€ de recettes de l'IFI, impôt vertical",
+      "Critique d'équité"
+     ],
+     "sources": [
+      {
+       "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+       "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+       "ouverte": true
+      }
+     ],
+     "non_verifie": false,
+     "notes": "Recette IFI 2024 = 2,739 Md€ (V&M)."
+    }
+   ],
+   "sources": [
+    {
+     "titre": "Évaluation des voies et moyens, tome I, annexe au PLF 2026 (recettes, exécution 2024)",
+     "url": "https://www.assemblee-nationale.fr/dyn/contenu/visualisation/1087930/file/PLF%202026%20-%20V%26M%20TI%20-%20Evaluations%20des%20recettes.pdf",
+     "ouverte": true
+    },
+    {
+     "titre": "France Stratégie — Comité d'évaluation des réformes de la fiscalité du capital (2e rapport) — coût PFU 1,4-1,7 Md€, IFI 3,1 Md€ cités (page non ouverte, chiffres via moteur de recherche)",
+     "url": "https://www.strategie.gouv.fr/en/publications/comite-devaluation-reformes-de-fiscalite-capital-deuxieme-rapport",
+     "ouverte": false
+    },
+    {
+     "titre": "Conseil constitutionnel, décision n° 2012-662 DC du 29 décembre 2012 (cons. 15 : imposition confiscatoire / charge excessive ; cons. 19 : taux marginal 75,04 % censuré ; cons. 74 : art. 12 censuré)",
+     "url": "https://www.conseil-constitutionnel.fr/decision/2012/2012662DC.htm",
+     "ouverte": true
+    }
+   ]
+  }
+ ]
+}

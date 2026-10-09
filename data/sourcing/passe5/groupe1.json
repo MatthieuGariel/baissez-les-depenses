@@ -1,0 +1,231 @@
+[
+ {
+  "id": "retraites",
+  "cran": {
+   "niveau": 4,
+   "mesure": "Cran 3 + relèvement progressif de l'âge légal à 67 ans (génération 1971 et suivantes, +1 trimestre par génération) + règle d'équilibre automatique de type suédois (indexation des pensions et coefficient de conversion ajustés au solde du COR)",
+   "gain_mds": 27.8,
+   "faisabilite": 2,
+   "arguments": [
+    "Calcul d'après la Cour des comptes (2025) : +1 an d'âge d'ouverture des droits = +8,4 Md€ sur le solde du système en 2035 (effet stable en 2045) ; 3 ans de plus qu'à 64 ans = 25,2 Md€, auxquels s'ajoutent les 2,6 Md€ du gel d'un an (Cnav) = 27,8 Md€ (additivité supposée)",
+    "Précédent suédois : réforme de 1998 à comptes notionnels, complétée en 2001 par un mécanisme d'équilibre automatique ; la Commission européenne (Economic Brief n° 48, 2019) juge le système financièrement soutenable et politiquement stable, mais alerte sur l'adéquation des pensions, le coût du vieillissement étant porté par les retraités",
+    "Le Conseil constitutionnel a déjà validé deux relèvements successifs : 62 ans (2010-617 DC, cons. 8-9) et 64 ans (2023-849 DC, cons. 90-94), au motif de l'équilibre financier du régime par répartition et de l'allongement de l'espérance de vie"
+   ],
+   "obstacles": [
+    "Juridique : aucune décision ne tranche un âge de 67 ans. Le Conseil contrôle que le législateur ne prive pas de garanties légales l'exigence du 11e alinéa du Préambule de 1946 (2023-849 DC, cons. 91 et 93) et il a relevé le maintien des départs anticipés (carrières longues, invalidité) : leur suppression ou leur resserrement ferait basculer le risque de censure",
+    "Politique : la réforme de 2023 a provoqué des mobilisations massives ; 67 ans exclurait de fait une partie des ouvriers aux espérances de vie plus faibles (inégalité face à la retraite)",
+    "Économique et social : effets de report vers le chômage, l'invalidité et le minimum vieillesse (ASPA) ; un stabilisateur automatique à la suédoise baisse mécaniquement le niveau des pensions (adéquation, selon la Commission européenne)",
+    "Le gain atteint son plein effet après 2035 ; les premières années rapportent beaucoup moins (montée en charge par génération)"
+   ],
+   "sources": [
+    {
+     "titre": "Cour des comptes — Situation financière et perspectives du système de retraites, février 2025 (copie vie-publique.fr)",
+     "url": "https://www.vie-publique.fr/files/rapport/pdf/297428.pdf",
+     "ouverte": true
+    },
+    {
+     "titre": "Conseil constitutionnel — Décision n° 2023-849 DC du 14 avril 2023",
+     "url": "https://www.conseil-constitutionnel.fr/decision/2023/2023849DC.htm",
+     "ouverte": true
+    },
+    {
+     "titre": "Conseil constitutionnel — Décision n° 2010-617 DC du 9 novembre 2010",
+     "url": "https://www.conseil-constitutionnel.fr/decision/2010/2010617DC.htm",
+     "ouverte": true
+    },
+    {
+     "titre": "Commission européenne (DG ECFIN) — Economic Brief n° 48 (juillet 2019) : Pension reform in Sweden, sustainability and adequacy (notice et résumé)",
+     "url": "https://econpapers.repec.org/paper/eufecobri/048.htm",
+     "ouverte": true
+    },
+    {
+     "titre": "Sénat — Rapport n° 131 (2025-2026) sur le PLFSS 2026, tome I : évaluation préalable de l'article 44 (gel et sous-indexation)",
+     "url": "https://www.senat.fr/rap/l25-131-1/l25-131-1_mono.html",
+     "ouverte": true
+    }
+   ],
+   "non_verifie": true,
+   "notes": "Calcul : 2,6 Md€ (gel d'un an des pensions de base, Cnav, Sénat n° 131) + 3 x 8,4 Md€ (3 ans de relèvement par rapport à 64 ans, solde du système en 2035, Cour des comptes févr. 2025) = 27,8 Md€. Hypothèse linéaire (chaque année supplémentaire rapporte autant que la première), non publiée par la Cour : en réalité l'effet par année diminue (carrières longues, reports vers invalidité et chômage) ; fourchette plausible 20-28 Md€. Horizon : année pleine vers 2038-2040 (génération 1971 atteignant 67 ans) ; effet 2030 nettement inférieur. Le stabilisateur automatique n'est pas chiffré séparément (gain non ajouté). Aucun double compte : mesures limitées au poste retraites ; les reports vers chômage/ASPA ne sont pas déduits."
+  }
+ },
+ {
+  "id": "ondam_ville",
+  "cran": {
+   "niveau": 4,
+   "mesure": "Cran 3 + franchise annuelle obligatoire de 400 € par assuré adulte, à la charge exclusive du patient (interdiction de la prise en charge par les contrats complémentaires responsables), avec exemptions CSS, ALD, maternité et moins de 18 ans — modèle néerlandais du eigen risico",
+   "gain_mds": 10.9,
+   "faisabilite": 3,
+   "arguments": [
+    "Précédent néerlandais : franchise annuelle obligatoire (eigen risico) de 385 € pour les adultes, stable depuis 2016 (220 € en 2012, 350 € puis 385 €) ; son abolition était chiffrée à 3,7 Md€ de dépenses supplémentaires (~275 € de prime par personne) pour les Pays-Bas",
+    "Mise à l'échelle française : un tel dispositif rapporterait environ 15 Md€ bruts à population équivalente, ramenés à ~7 Md€ après exemptions (hypothèse), contre un rendement actuel des franchises et participations de 2,5 Md€ (Cour des comptes, RALFSS 2026)",
+    "La Cour des comptes relève déjà que les franchises françaises sont inférieures à celles d'autres pays européens"
+   ],
+   "obstacles": [
+    "Juridique : le Conseil constitutionnel exige que franchises et plafonds ne remettent pas en cause le 11e alinéa du Préambule de 1946 (2007-558 DC, cons. 7) ; une franchise de 400 € non plafonnée par revenu est exposée à la censure pour atteinte à la protection de la santé",
+    "Contournement : plus de 95 % des Français ont une complémentaire ; sans interdire la prise en charge de la franchise par les contrats responsables, le gain est transféré aux mutuelles puis aux cotisations des assurés (hausse de primes, effet nul pour les finances publiques)",
+    "Social : la Cour des comptes signale un risque de renoncement aux soins des assurés modestes ; renoncement qui reporte ensuite les dépenses vers l'hôpital (ONDAM hôpital)",
+    "Chevauchement avec le décret n° 2026-858 (plafonds à 140 €) et avec les 2,3 Md€ du cran 3 : déduit dans le calcul"
+   ],
+   "sources": [
+    {
+     "titre": "Cour des comptes — La sécurité sociale 2026 (RALFSS, 27 mai 2026), rapport complet",
+     "url": "https://www.ccomptes.fr/sites/default/files/2026-05/20260527-RALFSS-2026_0.pdf",
+     "ouverte": true
+    },
+    {
+     "titre": "Conseil constitutionnel — Décision n° 2007-558 DC du 13 décembre 2007",
+     "url": "https://www.conseil-constitutionnel.fr/decision/2007/2007558DC.htm",
+     "ouverte": true
+    },
+    {
+     "titre": "Radar (AVROTROS) — Eigen risico stijgt volgend jaar niet (2016) : 385 € ; abolition estimée à 3,7 Md€",
+     "url": "https://radar.avrotros.nl/artikel/eigen-risico-stijgt-volgend-jaar-niet-19517",
+     "ouverte": true
+    },
+    {
+     "titre": "Cour des comptes — ONDAM, contribution à la revue des dépenses publiques, note de synthèse avril 2025 (15 propositions chiffrées)",
+     "url": "https://www.ccomptes.fr/sites/default/files/2025-04/20250414-Lobjectif-national-de-depenses-dassurance-maladie-Ondam.pdf",
+     "ouverte": true
+    }
+   ],
+   "non_verifie": true,
+   "notes": "Calcul : 6,2 Md€ (cran 3) + 4,7 Md€ = 10,9 Md€. Les 4,7 Md€ viennent de : abolition du eigen risico = 3,7 Md€ pour les Pays-Bas (Radar 2016) soit ~0,22 Md€ par million d'habitants (population néerlandaise ~17 M, hypothèse non sourcée dans la page) x 68 M d'habitants France = ~15 Md€ ; x 0,45 (exemptions CSS/ALD/maternité/enfants et franchise de 400 € contre 385 €, hypothèse) = ~6,9 Md€ ; moins 2,3 Md€ du doublement du cran 3, pour éviter le double compte = 4,6-4,7 Md€. Aucun chiffrage officiel français de la mesure : ordre de grandeur. Année pleine dès la première année si les complémentaires ne peuvent la rembourser ; effet d'élasticité (moindre consommation) non compté. Le gain nécessite une loi de financement de la sécurité sociale."
+  }
+ },
+ {
+  "id": "ondam_hopital",
+  "cran": {
+   "niveau": 4,
+   "mesure": "Cran 3 + gel nominal du sous-objectif hospitalier de l'ONDAM pendant 3 ans (« revue de programme » à la canadienne : chaque établissement doit réaliser un plan d'économies, fermetures de sites et regroupements imposés)",
+   "gain_mds": 12.0,
+   "faisabilite": 2,
+   "arguments": [
+    "Précédent canadien : la Revue des programmes de 1995 visait −9,8 G$ de dépenses ministérielles (≈ −19 %) entre 1994-95 et 1997-98, soit 51,8 → 42 G$ ; le déficit 1996-97 a été ramené à 19 G$, soit 5,3 G$ sous la cible initiale de 24,3 G$ (Finance Canada, 1997)",
+    "Le résultat réel a été moins ambitieux que la cible : 45 G$ attendus au lieu de 42 G$, l'écart venant de nouvelles dépenses et de réajustements (Finance Canada, 1997)",
+    "Cran de départ : la Cour des comptes (avril 2025) chiffre déjà 0,6 + 2,1 + 1,0 Md€ d'économies hospitalières (achats, virage ambulatoire, restructurations)"
+   ],
+   "obstacles": [
+    "Juridique : l'ONDAM est voté en LFSS, donc pas d'obstacle de procédure ; le 11e alinéa du Préambule de 1946 (protection de la santé) fonde un contrôle de proportionnalité (2007-558 DC, cons. 7) : un gel qui fermerait des urgences ou des maternités exposerait à la censure ou aux recours",
+    "Économique et social : l'ONDAM hospitalier croît tendanciellement de 3 à 4 % par an (vieillissement, besoin de 45 000 lits d'ici 2040 selon la Cour des comptes) ; un gel nominal impose un recul réel de ~3 %/an du volume de soins, avec risque de report vers le privé et les urgences",
+    "Politique : opposition massive des élus locaux et des soignants ; coûts de transition (indemnités, reclassement) non inclus",
+    "Canada 1995 : les coupes ont été en partie obtenues en réduisant les transferts aux provinces, donc en reportant la charge sur les collectivités (même risque ici sur les départements et les complémentaires)"
+   ],
+   "sources": [
+    {
+     "titre": "Finance Canada — Communiqué 97-022 (mars 1997) : Revue des programmes, baisse de 9,8 G$ des dépenses ministérielles 1994-95 à 1997-98 (archive)",
+     "url": "https://bac-lac.wayback.archive-it.org/web/20061129181442/http://www.fin.gc.ca/news97/97-022e.html",
+     "ouverte": true
+    },
+    {
+     "titre": "Cour des comptes — ONDAM, contribution à la revue des dépenses publiques, note de synthèse avril 2025 (15 propositions chiffrées)",
+     "url": "https://www.ccomptes.fr/sites/default/files/2025-04/20250414-Lobjectif-national-de-depenses-dassurance-maladie-Ondam.pdf",
+     "ouverte": true
+    },
+    {
+     "titre": "Cour des comptes — La sécurité sociale 2026 (RALFSS, 27 mai 2026), rapport complet",
+     "url": "https://www.ccomptes.fr/sites/default/files/2026-05/20260527-RALFSS-2026_0.pdf",
+     "ouverte": true
+    },
+    {
+     "titre": "Conseil constitutionnel — Décision n° 2007-558 DC du 13 décembre 2007",
+     "url": "https://www.conseil-constitutionnel.fr/decision/2007/2007558DC.htm",
+     "ouverte": true
+    }
+   ],
+   "non_verifie": true,
+   "notes": "Calcul : sous-objectif hospitalier 2025 = 109,1 Md€. Hypothèse de croissance tendancielle 3,5 %/an (fourchette 3-4 %, non sourcée). Écart cumulé après 3 ans de gel nominal = 109,1 x (1,035^3 − 1) = 109,1 x 0,1087 = 11,9 ≈ 12,0 Md€ en année 3 (et non 3 x). Le gain remplace le cran 3 (3,7 Md€, englobé : mêmes leviers) au lieu de s'y ajouter, pour éviter tout double compte. Montée en charge : ~3,8 Md€ la 1re année, ~7,7 la 2e, 12,0 la 3e. Hors masse salariale hospitalière si elle était comptée sur un autre poste (aucun autre poste n'inclut l'ONDAM hospitalier). Chiffre non officiel."
+  }
+ },
+ {
+  "id": "famille",
+  "cran": {
+   "niveau": 4,
+   "mesure": "Gel 1 an de la Bmaf + transformation des allocations familiales en allocation sous conditions de ressources, réservée aux ménages sous le niveau de vie médian (déciles 1 à 5), suppression pour les déciles 6 à 10",
+   "gain_mds": 4.3,
+   "faisabilite": 2,
+   "arguments": [
+    "Les AF coûtent 13,4 Md€ (2024, Cnaf) ; la revue IGF-IGAS (août 2026) montre qu'elles sont déjà concentrées : les déciles 9 et 10 ne perçoivent en moyenne que 184 € et 95 € par an, soit un gain limité au sommet de l'échelle et un effet plus fort en visant le milieu de distribution",
+    "Précédent national : la modulation des AF de 2015 (seuils de revenus) a économisé 760 M€ en 2016 (Sénat, 2022) ; elle a été validée par le Conseil constitutionnel (2014-706 DC, cons. 35-36)",
+    "Précédent britannique : la limite de deux enfants (2017) prive 453 600 ménages et plus de 1,6 million d'enfants d'une partie des prestations, et a été abrogée en avril 2026 après la hausse mesurée de la pauvreté infantile (IFS : environ 630 000 enfants de moins en pauvreté absolue sur le long terme) (Full Fact)"
+   ],
+   "obstacles": [
+    "Juridique : le Conseil constitutionnel admet la modulation selon les ressources à condition de ne pas méconnaître les 10e et 11e alinéas du Préambule de 1946 compte tenu des autres aides (2014-706 DC, cons. 35-36) ; la suppression complète pour 5 déciles n'a jamais été examinée et pose un risque réel de censure",
+    "Politique : rupture avec l'universalité des AF, historiquement défendue ; démographie : 645 000 naissances en 2025 (−2,1 %) selon le rapport Sénat n° 131 cité dans le poste",
+    "Social : la perte (moyenne de plusieurs centaines d'euros par an) touche les classes moyennes ; les études britanniques montrent un effet sur la pauvreté infantile",
+    "Un transfert de la charge vers les collectivités (crèches, ASE) est possible"
+   ],
+   "sources": [
+    {
+     "titre": "IGF-IGAS — Revue de dépenses relative à l'efficacité des politiques familiales (14/08/2026), annexe IV",
+     "url": "https://igas.gouv.fr/sites/igas/files/2026-08/Revue%20de%20d%C3%A9penses_politiques%20familiales%20%282026%29.pdf",
+     "ouverte": true
+    },
+    {
+     "titre": "Cnaf — Analyses statistiques n° 7 (2026) : allocations familiales 13,4 Md€ en 2024",
+     "url": "https://caf.fr/sites/default/files/medias/cnaf/Nous_connaitre/Recherche_et_statistiques/Analyses_statistiques/CNAF_n%C2%B07_Analyses_statistiques.pdf",
+     "ouverte": true
+    },
+    {
+     "titre": "Conseil constitutionnel — Décision n° 2014-706 DC du 18 décembre 2014",
+     "url": "https://www.conseil-constitutionnel.fr/decision/2014/2014706DC.htm",
+     "ouverte": true
+    },
+    {
+     "titre": "Sénat — Compte rendu du 2 février 2022 : 760 M€ économisés par la modulation des AF en 2016",
+     "url": "https://www.senat.fr/cra/s20220202/s20220202_5.html",
+     "ouverte": true
+    },
+    {
+     "titre": "Full Fact — Child poverty and the two-child benefit limit: explained",
+     "url": "https://fullfact.org/politics/two-child-benefit-cap-explainer/",
+     "ouverte": true
+    }
+   ],
+   "non_verifie": true,
+   "notes": "Calcul : 0,3 Md€ (gel 1 an, étude d'impact PLFSS 2026) + économie sur les déciles 6-10. AF totales 13,4 Md€ (Cnaf n° 7) ; hypothèse ~30 M de ménages, soit ~3 M par décile (non sourcée) ; moyenne ~447 €/ménage/an ; déciles 9 et 10 = 184 € et 95 € (IGF-IGAS annexe IV) soit 0,55 + 0,29 = 0,84 Md€ ; déciles 6, 7, 8 estimés à ~80 % de la moyenne (~360 €) = 3 x 3 M x 360 € = 3,2 Md€ (hypothèse, répartition par décile non retrouvée dans le document). Total déciles 6-10 ≈ 4,0 Md€ ; + 0,3 = 4,3 Md€. Remplace le cran 3 (1,2 Md€), qu'il englobe (même levier, plus large), sans addition. Horizon : année pleine dès la 1re année ; gain net minoré par le coût de gestion de la conditionnalité. Les AF de rang 1 enfant n'existent pas : l'estimation est incertaine de ±1 Md€."
+  }
+ },
+ {
+  "id": "chomage",
+  "cran": {
+   "niveau": 4,
+   "mesure": "Cran 3 remplacé par : cran 2 + coefficient de conversion de la durée d'indemnisation ramené de 0,75 à 0,5 (durée maximale en temps normal de 12 mois au lieu de 18, sur le modèle de l'Allemagne)",
+   "gain_mds": 6.9,
+   "faisabilite": 2,
+   "arguments": [
+    "CAE (avril 2026) : coefficient 0,6 = 3,186 Md€ par an (modèle comptable) ; en prolongeant à 0,5, la durée maximale tombe à 730 x 0,5 = 365 jours, soit 12 mois",
+    "Précédent allemand : l'ALG I est versée 6 mois pour 12 mois cotisés et 12 mois au maximum pour 24 mois cotisés ; des durées prolongées n'existent qu'à partir de 50 ans (15 mois pour 30 mois cotisés), 55 ans (18 mois) et 58 ans (24 mois)",
+    "Le CAE chiffre déjà un plafond d'allocation de 2 500 € (1,144 Md€) en référence aux plafonds suédois (2 339 €) et belges (2 231 €)"
+   ],
+   "obstacles": [
+    "Juridique : décret ou accord paritaire : le gouvernement ne peut se substituer aux partenaires sociaux qu'en cas d'échec de la négociation (art. L. 5422-20 CT, Conseil d'État n° 434920) ; ni constitutionnel ni européen identifié, mais risque de contentieux sur la proportionnalité",
+    "Économique et social : report vers l'ASS et le RSA (la part des sortants en fin de droits recevant l'ASS est passée de 13 % à 20 %, Unédic) ; les économies de l'Unédic se transforment en dépenses de l'État et des départements, donc le gain consolidé APU est inférieur",
+    "Politique : forte opposition syndicale ; la contracyclicité a déjà réduit la durée potentielle moyenne de 20 à 16 mois (Unédic)"
+   ],
+   "sources": [
+    {
+     "titre": "Conseil d'analyse économique — Note n° 90 « Mesurer l'efficacité de l'assurance chômage » (14/04/2026), tableau 1 p. 11",
+     "url": "https://cae-eco.fr/static/pdf/CAE090_Assurance-chomage_260414.pdf",
+     "ouverte": true
+    },
+    {
+     "titre": "Conseil d'État — Décision n° 434920 du 25 novembre 2020 (analyse)",
+     "url": "https://www.conseil-etat.fr/fr/arianeweb/CE/analyse/2020-11-25/434920",
+     "ouverte": true
+    },
+    {
+     "titre": "Unédic — Réforme 2023 : premiers effets de la contracyclicité (18/12/2025)",
+     "url": "https://www.unedic.org/publications/reforme-2023-premiers-effets-de-la-reforme-de-contracyclicite",
+     "ouverte": true
+    },
+    {
+     "titre": "Lohnsteuer-kompakt — Durée du Arbeitslosengeld I (ALG I) en Allemagne selon mois cotisés et âge",
+     "url": "https://www.lohnsteuer-kompakt.de/en/fag/0/677/how_long_is_the_unemployment_benefit_paid",
+     "ouverte": true
+    }
+   ],
+   "non_verifie": true,
+   "notes": "Calcul : 1,59 Md€ (cran 2, CAE modèle comptable) + 3,186 x (0,75−0,5)/(0,75−0,6) = 3,186 x 0,25/0,15 = 5,31 Md€ (extrapolation linéaire du chiffrage CAE, non publiée) = 6,9 Md€. Le chiffrage est probablement sur-estimé (les effets décroissent avec l'ampleur) et ne déduit pas le report vers ASS/RSA : en consolidé APU, le gain net pourrait être de moitié. Remplace le cran 3 (4,8 Md€) qu'il englobe. Horizon : année pleine après 18-24 mois (stock d'allocataires). Pas de double compte avec le poste RSA/ASS : report non déduit mais signalé."
+  }
+ }
+]
