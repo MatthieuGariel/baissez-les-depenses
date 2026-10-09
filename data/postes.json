@@ -597,7 +597,7 @@
           "niveau": 4,
           "mesure": "Cran 3 + gel nominal du sous-objectif hospitalier de l'ONDAM pendant 3 ans (« revue de programme » à la canadienne : chaque établissement doit réaliser un plan d'économies, fermetures de sites et regroupements imposés)",
           "gain_mds": 12.0,
-          "faisabilite": 2,
+          "faisabilite": 3,
           "arguments": [
             "Précédent canadien : la Revue des programmes de 1995 visait −9,8 G$ de dépenses ministérielles (≈ −19 %) entre 1994-95 et 1997-98, soit 51,8 → 42 G$ ; le déficit 1996-97 a été ramené à 19 G$, soit 5,3 G$ sous la cible initiale de 24,3 G$ (Finance Canada, 1997)",
             "Le résultat réel a été moins ambitieux que la cible : 45 G$ attendus au lieu de 42 G$, l'écart venant de nouvelles dépenses et de réajustements (Finance Canada, 1997)",
@@ -632,7 +632,7 @@
             }
           ],
           "non_verifie": true,
-          "notes": "Calcul : sous-objectif hospitalier 2025 = 109,1 Md€. Hypothèse de croissance tendancielle 3,5 %/an (fourchette 3-4 %, non sourcée). Écart cumulé après 3 ans de gel nominal = 109,1 x (1,035^3 − 1) = 109,1 x 0,1087 = 11,9 ≈ 12,0 Md€ en année 3 (et non 3 x). Le gain remplace le cran 3 (3,7 Md€, englobé : mêmes leviers) au lieu de s'y ajouter, pour éviter tout double compte. Montée en charge : ~3,8 Md€ la 1re année, ~7,7 la 2e, 12,0 la 3e. Hors masse salariale hospitalière si elle était comptée sur un autre poste (aucun autre poste n'inclut l'ONDAM hospitalier). Chiffre non officiel.",
+          "notes": "Calcul : sous-objectif hospitalier 2025 = 109,1 Md€. Hypothèse de croissance tendancielle 3,5 %/an (fourchette 3-4 %, non sourcée). Écart cumulé après 3 ans de gel nominal = 109,1 x (1,035^3 − 1) = 109,1 x 0,1087 = 11,9 ≈ 12,0 Md€ en année 3 (et non 3 x). Le gain remplace le cran 3 (3,7 Md€, englobé : mêmes leviers) au lieu de s'y ajouter, pour éviter tout double compte. Montée en charge : ~3,8 Md€ la 1re année, ~7,7 la 2e, 12,0 la 3e. Hors masse salariale hospitalière si elle était comptée sur un autre poste (aucun autre poste n'inclut l'ONDAM hospitalier). Chiffre non officiel. | Faisabilité relevée à 3 : le cran inclut le cran précédent.",
           "horizon": {
             "annee": 2029,
             "estime": false,
@@ -2039,7 +2039,7 @@
           "niveau": 4,
           "mesure": "Cran 3 + alignement sur le modèle britannique 2027 : suppression de l'essentiel de l'aide bilatérale (dons-projets et assistance technique), maintien des seules contributions multilatérales obligatoires, soit −60 % des crédits de paiement de la mission APD",
           "gain_mds": 2.2,
-          "faisabilite": 2,
+          "faisabilite": 3,
           "arguments": [
             "Précédent britannique : le Royaume-Uni passe de 0,5 % à 0,3 % du RNB en 2027 (−40 % du ratio, environ −4,5 Md£ par rapport à 2024), avec une aide bilatérale ramenée à environ 2 Md£ en 2027, soit −57 % par rapport aux 4,7 Md£ de 2023 (CGD).",
             "Le Royaume-Uni avait déjà suspendu en 2021 sa cible légale de 0,7 % par un vote du Parlement : une cible indicative sans plancher contraignant peut être écartée par la loi (CGD).",
@@ -2069,7 +2069,7 @@
             }
           ],
           "non_verifie": true,
-          "notes": "Gain = 60 % × 3,67 Md€ (CP PLF 2026) = 2,2 Md€ (hypothèse de l'auteur : −60 % ≈ ampleur de la baisse britannique de l'aide bilatérale, −57 %). Aucun chiffrage officiel de ce taux pour la France. Remplace le cran 3 (−30 %, 1,1 Md€), gain supérieur. Année pleine à partir de la 2e année (les engagements pluriannuels en cours s'éteignent sur 2 à 3 ans). Pas de double compte : contributions UE au FED comptées hors mission.",
+          "notes": "Gain = 60 % × 3,67 Md€ (CP PLF 2026) = 2,2 Md€ (hypothèse de l'auteur : −60 % ≈ ampleur de la baisse britannique de l'aide bilatérale, −57 %). Aucun chiffrage officiel de ce taux pour la France. Remplace le cran 3 (−30 %, 1,1 Md€), gain supérieur. Année pleine à partir de la 2e année (les engagements pluriannuels en cours s'éteignent sur 2 à 3 ans). Pas de double compte : contributions UE au FED comptées hors mission. | Faisabilité relevée à 3 : le cran inclut le cran précédent.",
           "horizon": {
             "annee": 2028,
             "estime": false,
@@ -2644,7 +2644,7 @@
           "niveau": 4,
           "mesure": "Cran 3 + suppression totale des dotations d'investissement de l'État (DETR, DSIL, DSID, DPV, FNADT) et du Fonds vert (≈ 2,84 Md€), avec encadrement de l'investissement local par un plafond d'autofinancement",
           "gain_mds": 7.5,
-          "faisabilite": 2,
+          "faisabilite": 3,
           "arguments": [
             "Précédent français : lors de la baisse de la DGF 2014-2017, l'investissement local a reculé de 9,2 % en 2014 (Cour des comptes, via Maire-info) ; l'ajustement porte spontanément sur l'investissement plutôt que sur le fonctionnement.",
             "L'investissement local atteint 78,7 Md€ en 2025 (OFGL) : une baisse de 10 % correspond à un ordre de grandeur de 7,9 Md€."
@@ -2678,7 +2678,7 @@
             }
           ],
           "non_verifie": true,
-          "notes": "Gain = cran 3 (5,5 Md€) + (2,84 − 0,57) Md€ de dotations supprimées en plus du cran 2 = 5,5 + 2,27 = 7,8 Md€ ; ramené à 7,5 Md€ en déduisant ~0,3 Md€ de recouvrement avec le moratoire (hypothèse de l'auteur). Aucun chiffrage officiel. Année pleine dès la 2e année. Remplace le cran 3 (5,5 Md€). Précédent de rupture faible dans ce poste : les sources ouvertes ne documentent que l'effet 2014 de la baisse de DGF.",
+          "notes": "Gain = cran 3 (5,5 Md€) + (2,84 − 0,57) Md€ de dotations supprimées en plus du cran 2 = 5,5 + 2,27 = 7,8 Md€ ; ramené à 7,5 Md€ en déduisant ~0,3 Md€ de recouvrement avec le moratoire (hypothèse de l'auteur). Aucun chiffrage officiel. Année pleine dès la 2e année. Remplace le cran 3 (5,5 Md€). Précédent de rupture faible dans ce poste : les sources ouvertes ne documentent que l'effet 2014 de la baisse de DGF. | Faisabilité relevée à 3 : le cran inclut le cran précédent.",
           "horizon": {
             "annee": 2028,
             "estime": false,

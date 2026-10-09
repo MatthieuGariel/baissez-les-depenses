@@ -28,7 +28,7 @@ const nCap = a => Math.min(3, (a || []).length);
 function leafR(r, lev, parent) {
   const src = lev || r;
   return { key: 'r_' + (lev ? parent.id + '.' + lev.id : r.id), k: 'r', nom: src.nom || r.nom, ref: src, parent: lev ? parent : null,
-    montant: src.montant_mds != null ? src.montant_mds : (parent || r).montant_mds, annee: src.annee_montant || (parent || r).annee_montant,
+    montant: src.montant_mds ?? src.rendement_mds ?? src.cout_niche_mds ?? (parent || r).montant_mds, type: src.type, desc: src.description, annee: src.annee_montant || (parent || r).annee_montant,
     hausse: src.crans_hausse || [], baisse: src.crans_baisse || [], nH: nCap(src.crans_hausse), nB: nCap(src.crans_baisse) };
 }
 function buildItems() {
@@ -179,10 +179,13 @@ const legendHTML = k => `<div class="legend">${k === 'd' ? '' : '<span><i style=
 
 function leafBlock(it, withHead) {
   const v = st[it.key] || 0;
-  return `<div class="lev" data-leaf="${esc(it.key)}">${withHead ? `<div class="lev-h"><b>${esc(it.nom)}</b><span class="muted">${fmt(it.montant)} Md€</span></div>` : ''}${segHTML(it)}<div class="detail">${detailHTML(it, v)}</div></div>`;
+  return `<div class="lev" data-leaf="${esc(it.key)}">${withHead ? `<div class="lev-h"><b>${esc(it.nom)}</b><span class="muted">${it.type === 'mesure' ? 'réforme' : (it.type === 'niche' ? 'niche · ' : '') + fmt(it.montant) + ' Md€'}</span></div>${it.desc ? `<p class="lev-d muted">${esc(it.desc)}</p>` : ''}` : ''}${segHTML(it)}<div class="detail">${detailHTML(it, v)}</div></div>`;
 }
 function bodyHTML(card) {
-  return card.k === 'g' ? legendHTML('r') + card.leaves.map(l => leafBlock(l, true)).join('') : leafBlock(card, false) + legendHTML(card.k);
+  if (card.k !== 'g') return leafBlock(card, false) + legendHTML(card.k);
+  const nonAdd = card.leaves.some(l => l.type === 'mesure');
+  return legendHTML('r') + (nonAdd ? '<p class="note">Certains leviers de cet impôt se recoupent (barème, tranches, contributions) : leurs effets s’additionnent ici en première approximation.</p>' : '')
+    + card.leaves.map(l => leafBlock(l, true)).join('');
 }
 
 /* ---------- Rendu : cartes repliées ---------- */

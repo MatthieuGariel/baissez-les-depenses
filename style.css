@@ -207,3 +207,5 @@ dialog h2{margin:0 0 10px;font-size:1.1rem}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
 }
+.note{font-size:.82rem;color:var(--muted);border-left:3px solid var(--line);padding-left:8px;margin:8px 0}
+.lev-d{font-size:.8rem;margin:2px 0 6px}
