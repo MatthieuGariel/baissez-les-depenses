@@ -424,16 +424,19 @@ function scenarioImage() {
     g.fillStyle = F[1]; rr(g, W - 60 - tw, 110, tw, 52, 26); g.fill();
     g.fillStyle = dark ? '#0b0d12' : '#fff'; g.fillText(t, W - 40 - tw, 146);
   }
-  // jauge
-  const gx = 60, gw = 1080, gy = 252, gh = 30, fill = Math.max(0, Math.min(1, sc.resid / def));
+  // jauge à deux côtés, même axe que la barre du site (gPos) : déficit à gauche, 0, excédent à droite
+  const gx = 60, gw = 1080, gy = 252, gh = 30, pct0 = meta.deficit_pct_pib || def / meta.pib_mds * 100;
+  const X = p => gx + gw * gPos(p, pct0) / 100, z = X(0), x = X(sc.pct), mx = X(seuil);
   g.fillStyle = line; rr(g, gx, gy, gw, gh, 15); g.fill();
-  if (fill > 0) { g.fillStyle = sc.pct <= seuil ? F[1] : sc.pct <= seuil + 1 ? F[2] : F[3]; rr(g, gx, gy, Math.max(30, gw * fill), gh, 15); g.fill(); }
-  const mx = gx + gw * (meta.pib_mds * seuil / 100) / def;
-  g.fillStyle = fg; g.fillRect(mx - 2, gy - 8, 4, gh + 16);
-  g.fillRect(gx - 1, gy - 8, 4, gh + 16);
-  g.font = `600 20px ${sans}`; g.fillStyle = mu; g.textAlign = 'left'; g.fillText('0 %', gx, gy + gh + 28);
-  g.fillStyle = fg; g.textAlign = 'center'; g.fillText(`${seuil} %`, mx, gy + gh + 28);
-  g.fillStyle = mu; g.textAlign = 'right'; g.fillText(`${fmt(meta.deficit_pct_pib || def / meta.pib_mds * 100)} %`, gx + gw, gy + gh + 28); g.textAlign = 'left';
+  g.fillStyle = F[1] + '38'; rr(g, z, gy, gx + gw - z, gh, 15); g.fill(); // zone excédent
+  if (Math.abs(x - z) > 1) { g.fillStyle = sc.pct <= seuil ? F[1] : sc.pct <= seuil + 1 ? F[2] : F[3]; rr(g, Math.min(x, z), gy, Math.max(30, Math.abs(z - x)), gh, 15); g.fill(); }
+  g.fillStyle = fg; g.globalAlpha = .5; g.fillRect(mx - 2, gy - 6, 4, gh + 12); g.globalAlpha = 1;
+  g.fillRect(z - 2, gy - 10, 4, gh + 20);
+  g.beginPath(); g.arc(x, gy + gh / 2, 16, 0, 7); g.fillStyle = dark ? '#10131a' : '#fbfaf6'; g.fill(); g.lineWidth = 6; g.strokeStyle = fg; g.stroke();
+  g.font = `600 20px ${sans}`; g.fillStyle = mu; g.textAlign = 'left'; g.fillText(`déficit ${fmt(pct0)} %`, gx, gy + gh + 30);
+  g.fillStyle = fg; g.textAlign = 'center'; g.fillText(`${seuil} %`, mx, gy + gh + 30);
+  g.font = `800 20px ${sans}`; g.fillText('0', z, gy + gh + 30);
+  g.font = `600 20px ${sans}`; g.fillStyle = F[1]; g.textAlign = 'right'; g.fillText('excédent', gx + gw, gy + gh + 30); g.textAlign = 'left';
   // mesures principales
   const all = [...sc.rows.map(x => ({ nom: x.it.nom, v: x.v, f: x.c.faisabilite, k: 'd' })),
     ...sc.hausses.map(x => ({ nom: x.it.nom + ' (recette)', v: x.v, f: x.c.faisabilite, k: 'r' })),
