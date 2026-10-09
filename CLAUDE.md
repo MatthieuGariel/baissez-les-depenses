@@ -15,7 +15,7 @@ Cran : `{niveau, mesure, gain_mds (nombre, Md€), faisabilite (1|2|3), argument
 
 ## Règles éditoriales (non négociables)
 - **Aucune URL inventée.** Seulement des documents réellement ouverts ; chaque source porte `"ouverte": true`.
-- Crans **cumulatifs** (cran n inclut cran n-1) et gains **croissants**.
+- Crans **cumulatifs** (cran n inclut cran n-1), gains **croissants** et faisabilité **jamais meilleure** que celle du cran précédent.
 - Le nombre de crans par poste n'est pas figé à 3 : le code doit lire `crans.length`.
 - Postes de dépense : uniquement des **baisses de dépenses** (pas de hausse d'impôt/TVA déguisée).
 - Pas de double compte entre postes (ex. masse salariale = hors Enseignement scolaire).
@@ -24,7 +24,7 @@ Cran : `{niveau, mesure, gain_mds (nombre, Md€), faisabilite (1|2|3), argument
 - Pas de chiffrage officiel → ordre de grandeur calculé, formule dans `notes`, `non_verifie: true`.
 
 ## Pipeline de données (ordre de rejeu)
-`merge_sourcing.py` → `fixes_passe2.py` → `merge_passe3.py` → `merge_passe4.py` → `fixes_passe4.py`
+`merge_sourcing.py` → `fixes_passe2.py` → `merge_passe3.py` → `merge_passe4.py` → `fixes_passe4.py` → `meta_macro.py` → `merge_passe5.py` → `meta_2026.py` → `merge_horizons.py` → `fix_faisabilite_monotone.py`
 Toute nouvelle correction = nouveau script dans `tools/`, jamais d'édition manuelle muette de `postes.json`.
 
 ## Environnement
