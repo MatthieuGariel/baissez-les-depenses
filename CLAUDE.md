@@ -24,7 +24,7 @@ Cran : `{niveau, mesure, gain_mds (nombre, Md€), faisabilite (1|2|3), argument
 - Pas de chiffrage officiel → ordre de grandeur calculé, formule dans `notes`, `non_verifie: true`.
 
 ## Pipeline de données (ordre de rejeu)
-`merge_sourcing.py` → `fixes_passe2.py` → `merge_passe3.py` → `merge_passe4.py` → `fixes_passe4.py` → `meta_macro.py` → `merge_passe5.py` → `meta_2026.py` → `merge_horizons.py` → `fix_faisabilite_monotone.py`
+`merge_sourcing.py` → `fixes_passe2.py` → `merge_passe3.py` → `merge_passe4.py` → `fixes_passe4.py` → `meta_macro.py` → `merge_passe5.py` → `meta_2026.py` → `merge_horizons.py` → `fix_faisabilite_monotone.py` → `meta_statut.py`
 Toute nouvelle correction = nouveau script dans `tools/`, jamais d'édition manuelle muette de `postes.json`.
 
 ## Environnement

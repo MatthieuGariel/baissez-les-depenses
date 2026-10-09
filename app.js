@@ -288,15 +288,37 @@ function setBig(target, instant) {
   };
   step(t0);
 }
-function toast(msg) {
-  const t = $('toast'); t.textContent = msg; t.classList.add('show');
-  clearTimeout(toastT); toastT = setTimeout(() => t.classList.remove('show'), 2300);
+function toast(msg, action) {
+  const t = $('toast'); t.textContent = msg; t.classList.toggle('act', !!action);
+  if (action) { const b = document.createElement('button'); b.type = 'button'; b.textContent = action.label; b.onclick = () => { t.classList.remove('show'); action.run(); }; t.append(' ', b); }
+  t.classList.add('show');
+  clearTimeout(toastT); toastT = setTimeout(() => t.classList.remove('show'), action ? 6000 : 2300);
 }
+/* Remise à zéro en deux temps : 1er clic arme (4 s), 2e clic confirme ; « Annuler » restaure. */
+let resetArmed = null;
+function askReset(btn) {
+  if (!Object.values(st).some(Boolean)) return;
+  if (resetArmed !== btn) {
+    disarmReset(); resetArmed = btn; btn.dataset.label = btn.textContent;
+    btn.textContent = 'Confirmer ?'; btn.setAttribute('aria-label', 'Confirmer la remise à zéro'); btn.classList.add('armed');
+    btn._t = setTimeout(disarmReset, 4000); return;
+  }
+  disarmReset();
+  const prev = { ...st };
+  st = {}; openKey = null; renderPanel(); update();
+  toast('Budget remis à zéro.', { label: 'Annuler', run: () => { st = prev; renderPanel(); update(); toast('Scénario restauré'); } });
+}
+function disarmReset() {
+  if (!resetArmed) return;
+  clearTimeout(resetArmed._t); resetArmed.textContent = resetArmed.dataset.label; resetArmed.removeAttribute('aria-label'); resetArmed.classList.remove('armed'); resetArmed = null;
+}
+$('reset-top').onclick = e => askReset(e.currentTarget);
 function celebrate(msg) {
   toast(msg);
   const b = $('bar'); b.classList.remove('pulse'); void b.offsetWidth; b.classList.add('pulse');
 }
 function update(initial) {
+  const rt = $('reset-top'); if (rt) rt.disabled = !Object.values(st).some(Boolean);
   const sc = scenario(), seuil = meta.regle_impots.seuil_pct, def = meta.deficit_mds;
   const pct0 = meta.deficit_pct_pib || def / meta.pib_mds * 100;
   setBig(sc.net, initial);
@@ -357,7 +379,7 @@ function renderSheet() {
 }
 $('sheet-body').addEventListener('click', e => {
   const p = e.target.closest('[data-preset]'); if (p) return applyPreset(+p.dataset.preset);
-  if (e.target.closest('#reset')) { st = {}; openKey = null; renderPanel(); update(); return; }
+  const rb = e.target.closest('#reset'); if (rb) return askReset(rb);
   const i = e.target.dataset && e.target.dataset.info; if (i) $('stackinfo').textContent = i;
 });
 $('sheet-body').addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === ' ') && e.target.dataset.info) { e.preventDefault(); e.target.click(); } });

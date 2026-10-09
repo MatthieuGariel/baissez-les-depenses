@@ -5,7 +5,7 @@
     "depenses_totales_mds": 1714.1,
     "deficit_mds": 164.6,
     "annee_reference": "2026 révisé",
-    "statut": "v0.5 — base : déficit 2026 révisé (5,4 % du PIB). Gains cumulatifs. Badge « non vérifié » = ordre de grandeur calculé, formule dans le JSON.",
+    "statut": "v0.6 — base : déficit 2026 révisé (5,4 % du PIB). Gains cumulatifs. Badge « non vérifié » = ordre de grandeur calculé, formule dans le JSON.",
     "faisabilite": {
       "1": "Faisable par loi ordinaire / LFI-LFSS, précédents existants",
       "2": "Faisable mais risque juridique ou politique fort (Conseil constitutionnel, partenaires sociaux, collectivités)",

@@ -14,7 +14,7 @@
 <meta name="theme-color" content="#f6f5f1" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)">
 <link rel="alternate" type="application/json" href="data/postes.json">
-<link rel="alternate" type="application/json" href="data/recettes.json">
+<link rel="alternate" type="application/json" href="data/recettes_leviers.json">
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="boot">
@@ -43,14 +43,14 @@
   <header class="top">
     <div class="top-row">
       <h1 class="brand">Baissez les dépenses</h1>
-      <button class="btn ghost sm" id="open-presets" type="button">Scénarios</button>
+      <button class="btn ghost sm reset-btn" id="reset-top" type="button" disabled>Réinitialiser</button><button class="btn ghost sm" id="open-presets" type="button">Scénarios</button>
     </div>
     <p class="tagline" id="tagline"></p>
   </header>
   <nav class="tabs" id="tabs" role="tablist" aria-label="Catégories de mesures"></nav>
   <main id="panel" role="tabpanel" tabindex="-1"></main>
   <footer class="foot">
-    <p>Données ouvertes : <a href="data/postes.json">postes.json</a> · <a href="data/recettes.json">recettes.json</a> · <a href="llms.txt">llms.txt</a> · <a href="https://github.com/MatthieuGariel/baissez-les-depenses/issues/new" target="_blank" rel="noopener">Signaler une erreur</a> · Licence CC BY 4.0</p>
+    <p>Données ouvertes : <a href="data/postes.json">postes.json</a> · <a href="data/recettes_leviers.json">recettes_leviers.json</a> · <a href="llms.txt">llms.txt</a> · <a href="https://github.com/MatthieuGariel/baissez-les-depenses/issues/new" target="_blank" rel="noopener">Signaler une erreur</a> · Licence CC BY 4.0</p>
     <p class="warn" id="statut"></p>
   </footer>
 </div>
