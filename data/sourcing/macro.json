@@ -1,0 +1,139 @@
+{
+  "_meta": {
+    "date_collecte": "2026-10-09",
+    "avertissement": "Toutes les URLs ont ete ouvertes pendant la collecte (curl+pdftotext ou WebFetch). Les valeurs marquees 'derive' sont calculees par nous, pas publiees. Le PLF 2027 (depose le 1er octobre 2026) a revise le deficit 2026 de 5,0 a 5,4 % du PIB : les trajectoires PSMT/RAA anterieures sont depassees.",
+    "source_non_ouverte_a_ne_pas_citer": "AFT bulletin mensuel aout 2026 (403 sur curl et WebFetch) : taux moyen des emissions OAT 2026 et taux apparent AFT NON verifies."
+  },
+  "pib": {
+    "pib_2025": {
+      "valeur": 2991.1, "unite": "Md EUR courants", "annee": 2025,
+      "source": {"titre": "Insee Premiere n 2105 - Les comptes de la Nation en 2025 (mai 2026)", "url": "https://www.insee.fr/fr/statistiques/fichier/version-html/8996855/IP2105.pdf", "ouverte": true},
+      "notes": "Lecture du document : 'Le PIB augmente de 0,8 % en 2025 en volume et atteint 2 991,1 milliards d'euros'. Valeur +1,9 % (deflateur +1,1 %). Coherent avec 152,5 / 5,1 % = 2 990."
+    },
+    "pib_2026": {
+      "valeur": 3051, "unite": "Md EUR courants", "annee": 2026, "derive": true,
+      "source": {"titre": "PLF 2027 (projet de loi n 3210), art. d'equilibre : depense publique hors CI 1 742 Md EUR = 57,1 % du PIB en 2026", "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi.pdf", "ouverte": true},
+      "notes": "DERIVE : 1742 / 0,571. Verification de la methode sur 2025 : 1694 / 0,566 = 2 993 vs 2 991,1 publie. Le PLF 2027 ne donne pas le PIB en Md EUR dans le texte lu. Croissance reelle 2026 = +0,5 %."
+    },
+    "pib_2027": {
+      "valeur": 3132, "unite": "Md EUR courants", "annee": 2027, "derive": true,
+      "source": {"titre": "PLF 2027 (projet de loi n 3210) : depense publique hors CI 1 782 Md EUR = 56,9 % du PIB en 2027", "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi.pdf", "ouverte": true},
+      "notes": "DERIVE : 1782 / 0,569. Croissance reelle 2027 = +1,0 % (jugee optimiste par le HCFP selon la presse)."
+    },
+    "croissance_nominale_2026_2030": {
+      "valeur": {"2026": 2.2, "2027": 2.7, "2028": 2.8, "2029": 2.6, "2030": 2.6}, "unite": "% par an (PIB en valeur)", "annee": "2026-2030",
+      "source": {"titre": "Mission Jaravel-Ragot-Tavernier-Valla, Situation tendancielle des finances publiques a horizon 2030 (juillet 2026), tableau 6", "url": "https://www.igf.gouv.fr/files/igf/files/contributed/Rapports%20de%20mission/2026/Transparence-finances-publiques.pdf", "ouverte": true},
+      "notes": "Base sur les hypotheses du RAA (avril 2026), AVANT la revision 2026 a +0,5 % reel. Appliquees a 3 051 Md EUR en 2026 : 2027 ~3 133, 2028 ~3 221, 2029 ~3 305, 2030 ~3 391 (ordre de grandeur DERIVE ; recoupe 6,8 Md EUR = 0,2 pt de PIB en 2030 selon le COR soit ~3 400). Seuil 3 % du PIB 2025 = ~89,7 Md EUR (la Cour donne 89,6)."
+    }
+  },
+  "deficit": {
+    "deficit_2025": {
+      "valeur": 152.5, "unite": "Md EUR", "annee": 2025, "pct_pib": 5.1,
+      "source": {"titre": "Insee, Informations Rapides n 78 (27 mars 2026) - comptes des APU, premiers resultats 2025", "url": "https://www.insee.fr/fr/statistiques/fichier/version-html/8956575/IR78-APU-ann%C3%A9e2025.pdf", "ouverte": true},
+      "notes": "5,1 % apres 5,8 % (2024), 5,4 % (2023). Depenses 57,2 % du PIB (+2,5 % en valeur), recettes 52,1 %. Dette 115,6 % (115,7 % apres revision mai). Chiffre confirme, non conteste."
+    },
+    "deficit_2026_prevision": {
+      "valeur": 5.4, "unite": "% du PIB", "annee": 2026,
+      "source": {"titre": "PLF 2027 (projet de loi n 3210), exposé des motifs et tableau de l'article d'equilibre", "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi.pdf", "ouverte": true},
+      "notes": "Revise de 5,0 % (LFI 2026) a 5,4 % : -0,3 pt macro (croissance 1,0 -> 0,5 %) et -0,1 pt charge de la dette. Soit ~165 Md EUR sur PIB derive 3 051 (derive)."
+    },
+    "deficit_2027_cible": {
+      "valeur": 5.0, "unite": "% du PIB", "annee": 2027,
+      "source": {"titre": "PLF 2027 (projet de loi n 3210)", "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi.pdf", "ouverte": true},
+      "notes": "43 Md EUR de mesures de redressement (54 avec montee en charge). A politique inchangee : ~ -1 pt de PIB de degradation en 2027 (PLF) ; 5,9 % selon la mission des economistes (qui partait de 5,0 % en 2026). Dette 121,7 %."
+    },
+    "question_d_trajectoire_2032": {
+      "valeur": "Pas de trajectoire officielle de deficit jusqu'en 2032. Le seul chiffrage 2032 est celui de la mission d'economistes : effort de 126 Md EUR (euros 2030) d'ici 2032 pour stabiliser la dette (100 Md EUR hors derive tendancielle).",
+      "unite": "texte", "annee": 2032,
+      "source": {"titre": "Mission Jaravel-Ragot-Tavernier-Valla (juillet 2026), section 3.3 et tableau 8", "url": "https://www.igf.gouv.fr/files/igf/files/contributed/Rapports%20de%20mission/2026/Transparence-finances-publiques.pdf", "ouverte": true},
+      "notes": "Dans le scenario d'ajustement preventif le deficit nominal passe sous 3 % en 2031 ; dans le scenario 'preventif important' en 2029 (hypotheses tres favorables, multiplicateur nul) ; en ajustement uniforme jamais pendant la consolidation. La Cour (fevrier 2026) : meme avec -0,6 pt/an a partir de 2027, retour en 2035 seulement au niveau de 2025. HCFP/RAA 2026 : pas de trajectoire actualisee au-dela de 2026. 152,5 Md EUR est bien le deficit 2025 constate ; le prendre comme point de depart est coherent, mais 2026 sera plus haut (5,4 %)."
+    }
+  },
+  "trajectoire_deficit": [
+    {"annee": 2025, "valeur": 5.1, "unite": "% du PIB", "nature": "constate Insee", "source": {"titre": "Insee IR n 78", "url": "https://www.insee.fr/fr/statistiques/fichier/version-html/8956575/IR78-APU-ann%C3%A9e2025.pdf", "ouverte": true}, "notes": "152,5 Md EUR"},
+    {"annee": 2026, "valeur": 5.4, "unite": "% du PIB", "nature": "prevision PLF 2027 (oct. 2026)", "source": {"titre": "PLF 2027 n 3210", "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi.pdf", "ouverte": true}, "notes": "RAA avril 2026 : 5,0 % ; PSMT/RAA 2025 : 4,6 %"},
+    {"annee": 2027, "valeur": 5.0, "unite": "% du PIB", "nature": "cible PLF 2027", "source": {"titre": "PLF 2027 n 3210", "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi.pdf", "ouverte": true}, "notes": "PSMT/RAA 2025 visait 4,1 %"},
+    {"annee": 2028, "valeur": 3.4, "unite": "% du PIB", "nature": "objectif PSMT/RAA 2025 (OBSOLETE)", "source": {"titre": "Rapport d'avancement annuel 2025, tableau 18", "url": "https://www.tresor.economie.gouv.fr/Articles/f6e70afa-7b97-4eaa-8ce3-892a4be60211/files/10caa42b-c3c8-44ca-8a6e-9847f4f55b34", "ouverte": true}, "notes": "Non actualise : le RAA 2026 ne contient plus de trajectoire au-dela de 2026 (HCFP-2026-3). Cour : retour sous 3 % en 2029 hors d'atteinte sans nouveau cadrage."},
+    {"annee": 2029, "valeur": 2.8, "unite": "% du PIB", "nature": "objectif PSMT/RAA 2025 (OBSOLETE)", "source": {"titre": "Rapport d'avancement annuel 2025, tableau 18", "url": "https://www.tresor.economie.gouv.fr/Articles/f6e70afa-7b97-4eaa-8ce3-892a4be60211/files/10caa42b-c3c8-44ca-8a6e-9847f4f55b34", "ouverte": true}, "notes": "Engagement europeen (PSMT 2025-2029) : <3 % en 2029."},
+    {"annee": "2026-2030", "valeur": {"2026": 5.0, "2027": 5.9, "2028": 6.2, "2029": 6.6, "2030": 6.8}, "unite": "% du PIB", "nature": "scenario 'a politique inchangee' (mission economistes, 2026 partant de 5,0 %)", "source": {"titre": "Mission Jaravel-Ragot-Tavernier-Valla, tableau 5", "url": "https://www.igf.gouv.fr/files/igf/files/contributed/Rapports%20de%20mission/2026/Transparence-finances-publiques.pdf", "ouverte": true}, "notes": "Dette 118,4 -> 130,5 % du PIB. Solde primaire ~ -3,0 %."}
+  ],
+  "taux": {
+    "taux_apparent_dette_apu": {
+      "valeur": {"2026": 2.2, "2027": 2.4, "2028": 2.7, "2029": 2.9, "2030": 3.1}, "unite": "% (charge d'interets / dette)", "annee": "2026-2030",
+      "source": {"titre": "Mission Jaravel-Ragot-Tavernier-Valla, tableau 6 (base RAA)", "url": "https://www.igf.gouv.fr/files/igf/files/contributed/Rapports%20de%20mission/2026/Transparence-finances-publiques.pdf", "ouverte": true},
+      "notes": "Mission : taux apparent ~2,3 % et OAT 10 ans 3,7 % a la date de la mission (juin-juillet 2026). Duree de vie moyenne de la dette 8,5 ans. Taux apparent 2025 non publie directement ; ordre de grandeur 64,7 / ~3 380 (dette moyenne) ~1,9-2,0 % (DERIVE, a ne pas utiliser sans verification). Le taux apparent AFT n'a pas pu etre ouvert."
+    },
+    "oat_10_ans": {
+      "valeur": {"hypothese_fin_2026_RAA_avril": 3.9, "mission_juillet_2026": 3.7, "marche_debut_oct_2026_presse": 4.77}, "unite": "%", "annee": 2026,
+      "source": {"titre": "Rapport d'avancement annuel 2026, hypotheses de taux (OAT 10 ans 3,9 % fin 2026, BTF 3 mois 3,0 %)", "url": "https://www.tresor.economie.gouv.fr/Articles/b16f3103-ed47-4c37-9362-11ff01e12ae5/files/1d29351b-0187-4837-a3cd-e4ea7b0e4ce1", "ouverte": true},
+      "notes": "4,77 % (debut octobre 2026) vient de La Finance pour tous (secondaire, https://www.lafinancepourtous.com/2026/10/08/projet-de-loi-de-finances-le-budget-2027-sous-haute-tension/ , ouverte) ; ecart avec hypothese de 3,9 % = +0,9 pt, donc charge de la dette plausiblement sous-estimee. Taux MOYEN des emissions OAT 10 ans 2026 (AFT) : NON TROUVE (AFT/Banque de France inaccessibles). Un snippet de recherche cite TEC10 = 4,08 % au 18 aout 2026 (bulletin AFT, non ouvert, non verifie)."
+    }
+  },
+  "charge_dette": {
+    "charge_interets_apu_2025": {
+      "valeur": 64.7, "unite": "Md EUR", "annee": 2025, "pct_pib": 2.2,
+      "source": {"titre": "Insee IR n 78 (+11,2 % apres +13,9 %, +6,5 Md EUR)", "url": "https://www.insee.fr/fr/statistiques/fichier/version-html/8956575/IR78-APU-ann%C3%A9e2025.pdf", "ouverte": true},
+      "notes": "Hausse portee par l'Etat (+6,8 Md EUR). Figure 4 de l'Insee : 64,7 Md EUR (hors correction Sifim, selon WebFetch ; a reverifier sur la figure). La Cour parle de 'pres de 65 Md EUR'."
+    },
+    "charge_interets_apu_projetee": {
+      "valeur": {"2026": 78, "2027": 89, "2028": 101, "2029": 112, "2030": 124}, "unite": "Md EUR", "annee": "2026-2030",
+      "source": {"titre": "Mission Jaravel-Ragot-Tavernier-Valla, tableau 4 (politique inchangee)", "url": "https://www.igf.gouv.fr/files/igf/files/contributed/Rapports%20de%20mission/2026/Transparence-finances-publiques.pdf", "ouverte": true},
+      "notes": "+46 Md EUR (+59 %) de 2026 a 2030, soit ~11-12 Md EUR/an ; a la croissance potentielle ce serait +11 %. La mission juge cette hausse 'inelectable' (refinancement). Presse sur le PLF 2027 : APU 79,2 -> 91,2 Md EUR (2026 -> 2027) ; Etat (credits) 58,6 (LFI 2026) -> 72,4 Md EUR (PLF 2027 n 3210, programme 117). Cour (fev. 2026) : >100 Md EUR en 2029."
+    },
+    "charge_etat_maastricht": {
+      "valeur": {"2024": 44.5, "2025": 51.8, "2026": 63.6}, "unite": "Md EUR", "annee": "2024-2026",
+      "source": {"titre": "Rapport d'avancement annuel 2026, tableau 19", "url": "https://www.tresor.economie.gouv.fr/Articles/b16f3103-ed47-4c37-9362-11ff01e12ae5/files/1d29351b-0187-4837-a3cd-e4ea7b0e4ce1", "ouverte": true},
+      "notes": "Perimetre Etat seul, comptabilite maastrichtienne (different de la charge APU)."
+    },
+    "sensibilite_taux_AFT_PLF2026": {
+      "valeur": {"1_an": 3.2, "5_ans": 23.5, "9_ans": 33.5}, "unite": "Md EUR pour +1 pt de taux sur toute la courbe", "annee": 2026,
+      "source": {"titre": "Senat, rapport PLF 2026 (cite l'AFT, rapport sur la dette annexe au PLF 2026)", "url": "https://www.senat.fr/rap/l25-139-312/l25-139-312_mono.html", "ouverte": true},
+      "notes": "Dette de l'Etat (OAT+BTF). A 5 ans : 2,0 court terme + 21,5 moyen-long terme. Autre estimation : RAA 2026 = +18 Md EUR apres 5 ans pour +100 pb (charge en comptabilite nationale, dette negociable). Cour (fev. 2026) : +55 pb deja constates = +1,6 Md EUR en 2026, +4 en 2027, +8 en 2029. Sensibilite PLF 2027 non retrouvee."
+    },
+    "lien_economies_charge": {
+      "valeur": "Economiser reduit la charge seulement par moindre emprunt et eventuelle baisse de prime de risque : ordre de grandeur DERIVE = economie cumulee x taux marginal d'emprunt (3,5-4,8 %) ; 10 Md EUR economises/an cumules = ~0,4 Md EUR la 1ere annee, ~2 Md EUR a 5 ans, ~4 Md EUR a 10 ans.",
+      "unite": "texte", "annee": 2026, "derive": true,
+      "source": {"titre": "Mission Jaravel et al., encadre 4 (hypothese d'une baisse des taux de 0,4 pt en cas de consolidation credible)", "url": "https://www.igf.gouv.fr/files/igf/files/contributed/Rapports%20de%20mission/2026/Transparence-finances-publiques.pdf", "ouverte": true},
+      "notes": "Calcul de notre part, aucun document officiel ne chiffre 'X Md EUR d'economie = Y Md EUR de charge en moins'. A traiter comme hypothese de modele, non comme donnee sourcee. Effet de prime: 0,4 pt de baisse du 10 ans ~ -10 Md EUR a 5 ans (par proportionnalite avec 23,5 Md EUR/pt, DERIVE)."
+    }
+  },
+  "retraites": {
+    "part_pib_2025": {
+      "valeur": 14.1, "unite": "% du PIB (422,2 Md EUR, depenses brutes)", "annee": 2025,
+      "source": {"titre": "COR, Rapport annuel juin 2026, partie 2 chapitre 1", "url": "https://www.cor-retraites.fr/sites/default/files/2026-06/RA_Part2_Chap1.pdf", "ouverte": true},
+      "notes": "401 Md EUR de prestations de base+complementaire hors Aspa ; 394 Md EUR (13,2 % du PIB) nettes de prelevements. 24,3 % des depenses publiques."
+    },
+    "part_pib_projetee": {
+      "valeur": {"2030": 14.1, "2045": 14.2, "2070": 15.3}, "unite": "% du PIB", "annee": "2030-2070",
+      "source": {"titre": "COR, Rapport annuel juin 2026, partie 2 chapitre 1 et figure 2.13 (chapitre 3)", "url": "https://www.cor-retraites.fr/sites/default/files/2026-06/RA_Part2_Chap1.pdf", "ouverte": true},
+      "notes": "Part STABLE jusqu'en 2045. Le solde du systeme se creuse (-0,2 pt = -6,8 Md EUR en 2030) car les ressources baissent (13,9 -> ~13,9 % puis 13,3 % en 2045), pas parce que les depenses explosent (https://www.cor-retraites.fr/sites/default/files/2026-06/RA_Part2_Chap3.pdf , ouverte)."
+    },
+    "croissance_reelle": {
+      "valeur": {"depenses_2025_2030": 0.9, "nombre_retraites": 0.5, "pension_moyenne_reelle": 0.5, "pib_volume": 1.1}, "unite": "% par an en euros constants", "annee": "2025-2030",
+      "source": {"titre": "COR, Rapport annuel juin 2026, tableau 2.1", "url": "https://www.cor-retraites.fr/sites/default/files/2026-06/RA_Part2_Chap1.pdf", "ouverte": true},
+      "notes": "REPONSE (b) : oui, les depenses de retraite croissent plus vite que l'inflation (+0,9 %/an REEL, soit ~+2,7 a 2,9 % nominal avec ~1,75-1,9 % d'inflation), mais PAS plus vite que le PIB (1,1 %/an en volume) : la part dans le PIB reste 14,1 %. Pensions indexees sur l'inflation n-1/n-2. Mission economistes : retraites 354 -> 401 Md EUR 2026-2030 (+47 Md EUR, +13 %, ~+3,2 %/an nominal, ~+11-12 Md EUR/an), 'legerement plus vite que la croissance potentielle' (+0,2 pt de PIB sur 2027-2030) du fait de la suspension de la reforme de 2023 jusqu'en 2028 (hypothese de la mission, plus pessimiste que le COR)."
+    }
+  },
+  "tendanciel": {
+    "derive_deficit_politique_inchangee": {
+      "valeur": {"2027_PLF": "environ -1 pt de PIB (~-31 Md EUR) sans mesures", "2027_mission": "-0,9 pt (5,0 -> 5,9 %)", "2028_2030_mission": "environ -0,3 pt par an (~10 Md EUR/an), dont 0,25-0,3 pt de charge de la dette"}, "unite": "pt de PIB / Md EUR", "annee": "2027-2030",
+      "source": {"titre": "PLF 2027 n 3210 (orientations generales) et mission Jaravel et al. section 2.3", "url": "https://www.igf.gouv.fr/files/igf/files/contributed/Rapports%20de%20mission/2026/Transparence-finances-publiques.pdf", "ouverte": true},
+      "notes": "Deficit structurel primaire: -2,1 % (2026) -> -2,9 % (2030), soit +0,8 pt de PIB (~27 Md EUR) de derive HORS interets en 4 ans. Les ~31 Md EUR de 2027 sont DERIVES de 1 pt x 3 132."
+    },
+    "hausse_tendancielle_par_poste_2026_2030": {
+      "valeur": {"charge_dette": 46, "retraites": 47, "sante_ondam": 40, "loi_programmation_militaire": 19, "prelevement_UE": 10, "credits_ministeres": 43, "apul": 32, "chomage": 1, "prestations_familiales": 2}, "unite": "Md EUR cumules 2026->2030", "annee": "2026-2030",
+      "source": {"titre": "Mission Jaravel-Ragot-Tavernier-Valla, tableau 4", "url": "https://www.igf.gouv.fr/files/igf/files/contributed/Rapports%20de%20mission/2026/Transparence-finances-publiques.pdf", "ouverte": true},
+      "notes": "Niveaux 2026: dette 78, retraites 354, sante 273, LPM 57, ministeres 412, APUL 300. Somme des hausses de ces postes ~ +240 Md EUR en 4 ans = ~60 Md EUR/an en nominal (DERIVE, certains postes se recoupent via CAS pensions/APUL ; ne pas additionner sans precaution). Charge + retraites + sante = +133 Md EUR, ~33 Md EUR/an."
+    },
+    "croissance_depense_primaire": {
+      "valeur": {"2026_volume": 1.3, "2026_hausse_Md": 40}, "unite": "% en volume / Md EUR", "annee": 2026,
+      "source": {"titre": "Cour des comptes, La situation des finances publiques debut 2026 - synthese (fevrier 2026)", "url": "https://www.ccomptes.fr/sites/default/files/2026-02/20260219-synthese-situation-des-finances-publiques-debut-2026_0.pdf", "ouverte": true},
+      "notes": "Depense primaire +1,3 % en volume en 2026 (+40 Md EUR), superieure a l'activite. Depense publique totale hors CI: 1 694 (2025) -> 1 742 (2026) -> 1 782 Md EUR (2027), soit +48 puis +40 Md EUR (+2,8 % puis +2,3 %), PLF 2027 n 3210 (avec mesures). Insee 2025 : +2,5 % en valeur (+41,4 Md EUR)."
+    },
+    "effort_requis": {
+      "valeur": {"retour_sous_3pct_Cour_fev_2026": "~80 Md EUR (en plus de 2025)", "stabiliser_dette_2032_mission": "126 Md EUR avec tendanciel (100 sans), soit ~20-35 Md EUR par an", "stabiliser_dette_plus_marge": "160 Md EUR"}, "unite": "Md EUR", "annee": "2027-2032",
+      "source": {"titre": "Cour des comptes (fevrier 2026) ; Mission Jaravel et al. tableaux 7-8", "url": "https://www.igf.gouv.fr/files/igf/files/contributed/Rapports%20de%20mission/2026/Transparence-finances-publiques.pdf", "ouverte": true},
+      "notes": "Effort annuel par rapport au tendanciel (tableau 8) : uniforme 19,5-22,2 Md EUR/an ; preventif 28,4 puis decroissant ; preventif important 34,7/32,5/33,4 puis 7. Cour (synthese fev. 2026): ~80 Md EUR restent a produire pour passer sous 3 %. Cour juin 2026 : stabiliser la dette = 3 pts de PIB (89,6 Md EUR) selon presse, non ouvert."
+    }
+  }
+}
